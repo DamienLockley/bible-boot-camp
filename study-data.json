@@ -1154,11 +1154,23 @@
     },
     {
       "id": 3,
-      "title": "The Sanctuary Jer 29:13; Ps 77:13",
+      "title": "The Sanctuary",
       "units": [
         {
           "kind": "heading",
-          "text": "The Sanctuary Jer 29:13; Ps 77:13",
+          "text": "The Sanctuary",
+          "images": []
+        }
+      ],
+      "verses": []
+    },
+    {
+      "id": 4,
+      "title": "Read first - Jer 29:13 & Ps 77:13",
+      "units": [
+        {
+          "kind": "heading",
+          "text": "Read first - Jer 29:13 & Ps 77:13",
           "images": []
         },
         {
@@ -1873,7 +1885,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "The Plan of Salvation",
       "units": [
         {
@@ -2207,7 +2219,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "The Law",
       "units": [
         {
@@ -2612,7 +2624,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Antichrist",
       "units": [
         {
@@ -4537,7 +4549,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "The Seventy Week Prophecy",
       "units": [
         {
@@ -5147,7 +5159,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Historicity of Jesus",
       "units": [
         {
@@ -5424,7 +5436,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "The Judgement",
       "units": [
         {
@@ -5816,7 +5828,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "1844",
       "units": [
         {
@@ -6273,7 +6285,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "America in Bible Prophecy",
       "units": [
         {
@@ -7206,7 +7218,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "The Blue Stone:",
       "units": [
         {
@@ -7345,7 +7357,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "The Sabbath (day of grace, An intimate place in time, eternity enfolded in time)",
       "units": [
         {
@@ -8068,7 +8080,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 15,
       "title": "The Second Coming",
       "units": [
         {
@@ -8291,7 +8303,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "The Nature of Man",
       "units": [
         {
@@ -8525,7 +8537,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 17,
       "title": "The Mark of the Beast",
       "units": [
         {
@@ -9499,7 +9511,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 18,
       "title": "The Millennium",
       "units": [
         {
@@ -9721,7 +9733,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": 19,
       "title": "Hell – Is God a Sadist?",
       "units": [
         {
@@ -10360,7 +10372,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 20,
       "title": "The Gift of Prophecy",
       "units": [
         {
@@ -10871,7 +10883,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 21,
       "title": "The Remnant Church",
       "units": [
         {
@@ -11366,7 +11378,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 22,
       "title": "Christian living",
       "units": [
         {
@@ -11667,7 +11679,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 23,
       "title": "Prayer",
       "units": [
         {
@@ -11894,7 +11906,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 24,
       "title": "Health",
       "units": [
         {
@@ -12365,7 +12377,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 25,
       "title": "Baptism",
       "units": [
         {
@@ -12597,7 +12609,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 26,
       "title": "The Godhead",
       "units": [
         {
@@ -12913,7 +12925,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 27,
       "title": "Stewardship",
       "units": [
         {
@@ -13047,7 +13059,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 28,
       "title": "Witnessing",
       "units": [
         {
