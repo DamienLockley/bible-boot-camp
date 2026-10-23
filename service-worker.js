@@ -1,4 +1,4 @@
-const CACHE = 'bbc-teacher-dc07f3e5a2cf';
+const CACHE = 'bbc-teacher-727994b4699c';
 const CORE = ["./", "./index.html", "./study-data.json", "./kjv-verses.json", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./assets/image-001.jpg", "./assets/image-002.jpg", "./assets/image-003.jpg", "./assets/image-004.jpg", "./assets/image-005.jpg", "./assets/image-006.gif", "./assets/image-007.jpg", "./assets/image-008.jpg", "./assets/image-009.jpg", "./assets/image-010.jpg", "./assets/image-011.jpg", "./assets/image-012.jpg", "./assets/image-013.jpg", "./assets/image-014.gif", "./assets/image-018.png", "./assets/image-019.png", "./assets/image-015.jpg", "./assets/image-016.jpg", "./assets/image-017.png", "./assets/image-020.png"];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));

@@ -1160,18 +1160,6 @@
           "kind": "heading",
           "text": "The Sanctuary",
           "images": []
-        }
-      ],
-      "verses": []
-    },
-    {
-      "id": 4,
-      "title": "Read first - Jer 29:13 & Ps 77:13",
-      "units": [
-        {
-          "kind": "heading",
-          "text": "Read first - Jer 29:13 & Ps 77:13",
-          "images": []
         },
         {
           "kind": "text",
@@ -1181,6 +1169,11 @@
         {
           "kind": "text",
           "text": "Centred on: Jesus. How God deals with the separation problem.",
+          "images": []
+        },
+        {
+          "kind": "text",
+          "text": "Read first - Jer 29:13 & Ps 77:13",
           "images": []
         },
         {
@@ -1885,7 +1878,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "title": "The Plan of Salvation",
       "units": [
         {
@@ -2219,7 +2212,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "The Law",
       "units": [
         {
@@ -2624,7 +2617,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "title": "Antichrist",
       "units": [
         {
@@ -4549,7 +4542,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 7,
       "title": "The Seventy Week Prophecy",
       "units": [
         {
@@ -5159,7 +5152,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "title": "Historicity of Jesus",
       "units": [
         {
@@ -5436,7 +5429,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 9,
       "title": "The Judgement",
       "units": [
         {
@@ -5828,7 +5821,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 10,
       "title": "1844",
       "units": [
         {
@@ -6285,7 +6278,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 11,
       "title": "America in Bible Prophecy",
       "units": [
         {
@@ -7218,7 +7211,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 12,
       "title": "The Blue Stone:",
       "units": [
         {
@@ -7357,7 +7350,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 13,
       "title": "The Sabbath (day of grace, An intimate place in time, eternity enfolded in time)",
       "units": [
         {
@@ -8080,7 +8073,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 14,
       "title": "The Second Coming",
       "units": [
         {
@@ -8303,7 +8296,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 15,
       "title": "The Nature of Man",
       "units": [
         {
@@ -8537,7 +8530,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 16,
       "title": "The Mark of the Beast",
       "units": [
         {
@@ -9511,7 +9504,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": 17,
       "title": "The Millennium",
       "units": [
         {
@@ -9733,7 +9726,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 18,
       "title": "Hell – Is God a Sadist?",
       "units": [
         {
@@ -10372,7 +10365,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 19,
       "title": "The Gift of Prophecy",
       "units": [
         {
@@ -10883,7 +10876,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 20,
       "title": "The Remnant Church",
       "units": [
         {
@@ -11378,7 +11371,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 21,
       "title": "Christian living",
       "units": [
         {
@@ -11679,7 +11672,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 22,
       "title": "Prayer",
       "units": [
         {
@@ -11906,7 +11899,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 23,
       "title": "Health",
       "units": [
         {
@@ -12377,7 +12370,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 24,
       "title": "Baptism",
       "units": [
         {
@@ -12609,7 +12602,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 25,
       "title": "The Godhead",
       "units": [
         {
@@ -12925,7 +12918,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 26,
       "title": "Stewardship",
       "units": [
         {
@@ -13059,7 +13052,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 27,
       "title": "Witnessing",
       "units": [
         {
