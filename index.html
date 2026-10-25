@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dceffa"><base target="_top"><style>
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dceffa"><link rel="manifest" href="manifest.webmanifest"><style>
 :root{font-family:system-ui,-apple-system,Arial,sans-serif;color:#17324a;background:#f3f8fd}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:2;background:#dceffa;padding:13px 16px;box-shadow:0 2px 7px #1232;display:flex;justify-content:space-between;align-items:center}.wrap{max-width:850px;margin:auto;padding:15px}.panel{background:white;border:1px solid #dce7ef;border-radius:15px;padding:16px;margin-bottom:13px;box-shadow:0 2px 5px #1231}button,input{font:inherit}button{cursor:pointer;border:1px solid #8cb5d2;border-radius:10px;background:white;color:#17527c;padding:11px;font-weight:650}button.primary,.selected{background:#1672ad;color:white;border-color:#1672ad}button:disabled{opacity:.4}input{width:100%;padding:13px;border:1px solid #adc7d9;border-radius:10px}.bar{display:flex;gap:7px;flex-wrap:wrap}.bar button{flex:1;min-width:110px}.title{font-size:22px;font-weight:750;margin:8px 0}.muted{font-size:13px;color:#647c8d}.item{width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px;margin:6px 0}.hidden{display:none!important}.content{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}.heading{font-weight:750;color:#145c8e}.bible-ref{cursor:pointer;border:0;background:none;padding:0;font:inherit;display:inline;text-align:left;color:#0869b2;font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.question{font-weight:700}.answer{background:#eff7fc;padding:12px;border-radius:9px;white-space:pre-wrap}details{margin:10px 0}summary{cursor:pointer;color:#17527c;font-weight:700}.nav{position:sticky;bottom:0;background:#f3f8fdee;padding:12px 0;display:flex;gap:8px}.nav button{flex:1}.versetable{width:100%;border-collapse:collapse}.versetable th,.versetable td{padding:10px;border-bottom:1px solid #dce7ef;text-align:left}.versetable th{background:#eff7fc}#modal{position:fixed;inset:0;background:#000b;z-index:10;overflow:auto;padding:14px}#modal .panel{max-width:900px;margin:auto}#modal img{max-width:100%;height:auto;display:block;margin:15px auto}.imggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.imggrid img{width:100%;height:150px;object-fit:contain;background:#f5f7fa;border-radius:8px}.kjv-verse{padding:7px 0;border-bottom:1px solid #e0ebf2;line-height:1.65}.kjv-verse b{color:#145c8e;margin-right:8px}small{font-size:12px}
 
 :root{--ink:#18364f;--blue:#125d93;--line:#d7e4ee}header{padding:15px max(16px,calc((100vw - 850px)/2));background:linear-gradient(115deg,#e4f2fb,#f4faff);box-shadow:0 3px 14px #173b5620}header strong{font-size:21px;letter-spacing:-.4px}.wrap{padding-top:20px}.panel{border-color:var(--line);box-shadow:0 4px 18px #1637500b;padding:20px;border-radius:16px}button{transition:background .15s,border-color .15s,transform .12s}button:hover:not(:disabled){border-color:#146da3;background:#eaf4fc}button.primary:hover,.selected:hover{background:#135e94;color:white}button:focus-visible,.bible-ref:focus-visible{outline:3px solid #e1a443;outline-offset:3px}.bar button{min-width:145px}.title{letter-spacing:-.4px}.image-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0}.image-controls button{min-width:105px}#modal img{max-height:70vh;object-fit:contain}#modal .panel{max-width:960px}#pic{text-align:center;min-height:160px}#pic img{border-radius:9px}#verse-modal .panel{max-width:760px!important}
@@ -39,71 +39,40 @@ body.pdf-open{overflow:hidden}
 @media(max-width:480px){#study-pdf-viewer .pdf-toolbar{flex-wrap:wrap}#study-pdf-viewer .pdf-toolbar strong{width:100%}#study-pdf-viewer .pdf-toolbar button{padding:8px}}
 </style></head><body><header><div><strong>📖 Bible Studies</strong><div class="muted">Teacher's Guide</div></div><div class="header-actions"><button onclick="home()">Home</button><button class="refresh-button" title="Check for latest version" aria-label="Refresh to latest version" onclick="refreshBibleStudies(this)">↻</button></div></header><div class="wrap"><div id="loading" class="panel">Loading study material…</div><div id="library" class="hidden"><div class="panel"><div class="title">Study Library</div><input id="search" placeholder="Search studies and text…" oninput="library()"><div id="list"></div></div></div><div id="study" class="hidden"><div class="panel"><div class="muted" id="counter"></div><div class="title" id="title"></div><div class="bar" style="margin-bottom:11px"><button class="primary" onclick="shareStudyPdf()">↗ Share Study PDF</button><button onclick="downloadStudyPdf()">↓ Download PDF</button></div><div class="bar"><button id="guided" onclick="setMode('guided')">Guided Teaching</button><button id="reference" onclick="setMode('reference')">Scrollable Reference</button><button id="verses" onclick="setMode('verses')">Bible Verses</button></div></div><div id="body"></div></div></div><div id="verse-modal" class="hidden" style="position:fixed;inset:0;background:#000b;z-index:20;overflow:auto;padding:14px" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel" style="max-width:680px;margin:5vh auto"><button onclick="closeVerse()">Close ✕</button><h3 id="verse-title"></h3><div id="verse-text"></div></div></div><div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div class="panel"><div class="image-toolbar"><button onclick="closeModal()">Close ✕</button><button id="image-fullscreen" onclick="toggleImageFullscreen()">⛶ Full Screen</button></div><div id="pic"></div><div id="image-controls" class="image-controls hidden"><button id="image-prev" onclick="stepImage(-1)">← Previous</button><span id="image-count" class="muted"></span><button id="image-next" onclick="stepImage(1)">Next →</button></div></div></div><div id="study-pdf-viewer" class="hidden" role="dialog" aria-modal="true" aria-label="Study PDF viewer">
  <div class="pdf-toolbar"><strong id="study-pdf-title">Study PDF</strong><div class="pdf-actions">
- <button onclick="openStudyPdfExternal()" title="Open in browser for saving or sharing">Save PDF ↓</button>
+ <button onclick="openStudyPdfExternal()" title="Open in browser for saving or sharing">Open externally ↗</button>
  <button class="primary" onclick="closeStudyPdf()">Close ✕</button></div></div>
  <iframe id="study-pdf-frame" title="Current study PDF"></iframe>
- <div class="pdf-hint">If the PDF does not display, use Save PDF. Close returns to your study.</div>
+ <div class="pdf-hint">If the PDF does not display on your device, choose Open externally. Close returns to your study.</div>
 </div><script>
 let data,section=0,mode='guided',idx=0,kjv=null,kjvStatus='Loading stored KJV verses…';const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-// This Apps Script edition obtains the PDF from its OWN Google Drive folder.
-// Nothing in the Google edition depends on the GitHub repository.
-let currentStudyPdfUrl=null;
-let currentStudyPdfFile=null;
-function pdfFileName(){return 'Study_'+String(section+1).padStart(2,'0')+'.pdf'}
-function pdfBase64ToFile(base64){
- const binary=atob(base64),buffer=new Uint8Array(binary.length);
- for(let i=0;i<binary.length;i++)buffer[i]=binary.charCodeAt(i);
- return new File([buffer],pdfFileName(),{type:'application/pdf'});
-}
-function getCurrentStudyPdf(onReady){
- if(currentStudyPdfFile && currentStudyPdfFile.name===pdfFileName()){onReady(currentStudyPdfFile);return;}
- google.script.run.withSuccessHandler(function(base64){
-   try{currentStudyPdfFile=pdfBase64ToFile(base64);onReady(currentStudyPdfFile)}
-   catch(e){alert('Unable to open study PDF: '+e.message)}
- }).withFailureHandler(function(error){
-   alert('Cannot load '+pdfFileName()+' from Google Drive: '+(error?.message||error));
- }).getStudyPdf(section+1);
-}
+// PDFs are built from the original PDF, not from the simplified app text.
+const pdfBase = './study-pdfs/';
+function studyPdfUrl(){return pdfBase+'Study_'+String(section+1).padStart(2,'0')+'.pdf'}
 function downloadStudyPdf(){
+ // View inside the app, retaining an always-visible Close button.
+ const viewer=$('study-pdf-viewer');
  $('study-pdf-title').textContent='Study '+(section+1)+' — '+(data?.sections?.[section]?.title||'Bible Study');
- $('study-pdf-frame').removeAttribute('src');
- $('study-pdf-viewer').classList.remove('hidden');document.body.classList.add('pdf-open');
- getCurrentStudyPdf(function(file){
-   if(currentStudyPdfUrl)URL.revokeObjectURL(currentStudyPdfUrl);
-   currentStudyPdfUrl=URL.createObjectURL(file);
-   $('study-pdf-frame').src=currentStudyPdfUrl;
- });
+ $('study-pdf-frame').src=studyPdfUrl();
+ viewer.classList.remove('hidden');document.body.classList.add('pdf-open');
 }
 function closeStudyPdf(){
  $('study-pdf-viewer').classList.add('hidden');
  $('study-pdf-frame').removeAttribute('src');
  document.body.classList.remove('pdf-open');
- if(currentStudyPdfUrl){URL.revokeObjectURL(currentStudyPdfUrl);currentStudyPdfUrl=null;}
 }
-function openStudyPdfExternal(){
- getCurrentStudyPdf(function(file){
-   const url=URL.createObjectURL(file),a=document.createElement('a');
-   a.href=url;a.download=file.name;document.body.appendChild(a);a.click();a.remove();
-   setTimeout(function(){URL.revokeObjectURL(url)},30000);
- });
-}
-function shareStudyPdf(){
- getCurrentStudyPdf(async function(file){
-  if(navigator.share && navigator.canShare && navigator.canShare({files:[file]})){
-    try {await navigator.share({title:'Bible Studies — '+data.sections[section].title,files:[file]});return;}
-    catch(e){if(e.name==='AbortError')return;}
-  }
-  const url=URL.createObjectURL(file),a=document.createElement('a');
-  a.href=url;a.download=file.name;document.body.appendChild(a);a.click();a.remove();
-  setTimeout(function(){URL.revokeObjectURL(url)},30000);
-  alert('Your PDF has been downloaded. You can attach it to a message or email.');
- });
+function openStudyPdfExternal(){window.open(studyPdfUrl(),'_blank','noopener,noreferrer')}
+
+async function shareStudyPdf(){
+ const title=data.sections[section].title;
+ const url=studyPdfUrl();
+ if(navigator.share){try{await navigator.share({title:'Bible Studies — '+title,text:'Study '+(section+1)+': '+title,url});return}catch(e){if(e.name==='AbortError')return}}
+ try{await navigator.clipboard.writeText(url);alert('Study PDF link copied. You can paste it into a message or email.')}catch(e){window.prompt('Copy this study PDF link:',url)}
 }
 
 function library(){const q=$('search').value.toLowerCase().trim();$('list').innerHTML=data.sections.filter(s=>!q||s.title.toLowerCase().includes(q)||s.units.some(u=>u.text.toLowerCase().includes(q))).map(s=>`<button class="item" onclick="openStudy(${s.id})"><span>${s.id+1}. ${esc(s.title)}</span><span>›</span></button>`).join('')||'<p>No matches</p>'}
 function home(){$('study').classList.add('hidden');$('library').classList.remove('hidden');library()}
-function openStudy(n){currentStudyPdfFile=null;section=n;idx=0;mode=['guided','reference','verses'].includes(localStorage.getItem('bbc-mode'))?localStorage.getItem('bbc-mode'):'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
+function openStudy(n){section=n;idx=0;mode=['guided','reference','verses'].includes(localStorage.getItem('bbc-mode'))?localStorage.getItem('bbc-mode'):'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
 function setMode(m){mode=m;idx=0;localStorage.setItem('bbc-mode',m);render()}
 function imageButton(names){return names.length?`<button onclick='showImages(${JSON.stringify(names)})'>▧ Image</button>`:''}
 // Colour scripture references without changing the original wording or adding links.
@@ -142,7 +111,7 @@ function expandReferences(ref){
 }
 function showVerse(ref){
  $('verse-modal').classList.remove('hidden');$('verse-title').textContent=ref+' — KJV';
- if(!kjv){$('verse-text').textContent=kjvStatus;return}
+ if(!kjv){$('verse-text').textContent=kjvStatus;loadKjvOnce();return}
  const refs=expandReferences(ref);
  if(!refs.length){$('verse-text').textContent='This reference could not be interpreted.';return}
  $('verse-text').innerHTML=refs.map(key=>kjv[key]
@@ -150,7 +119,9 @@ function showVerse(ref){
  :`<p>Verse not found in stored KJV: ${esc(key)}</p>`).join('');
 }
 function closeVerse(){$('verse-modal').classList.add('hidden')}
-function loadKjv(){google.script.run.withSuccessHandler(v=>{kjv=v;kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}).withFailureHandler(e=>{kjvStatus='KJV could not be loaded: '+e.message;$('verse-text').textContent=kjvStatus}).getKjvData()}
+let kjvPromise=null;
+function loadKjvOnce(){if(!kjvPromise)kjvPromise=loadKjv();return kjvPromise;}
+async function loadKjv(){try{const r=await fetch('kjv-verses.json');if(!r.ok)throw Error('KJV data not yet added');kjv=await r.json();kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}catch(e){kjvStatus='KJV text is not installed in this package yet. Add kjv-verses.json from your Google Drive folder before publishing. '+e.message; if(!$('verse-modal').classList.contains('hidden'))$('verse-text').textContent=kjvStatus}}
 
 
 function imageGroup(units,start){const names=[];let i=start;
@@ -181,7 +152,7 @@ function renderImage(){const n=imageNames[imageIndex],serial=++imageSerial;
  $('pic').textContent='Loading image…';
  loadImage(n,src=>{if(serial!==imageSerial)return;$('pic').innerHTML=src?`<img src="${src}" alt="Study illustration">`:'<p>Image unavailable.</p>'})
 }
-function loadImage(n,callback){google.script.run.withSuccessHandler(callback).withFailureHandler(()=>callback(null)).getImage(n)}
+function loadImage(n,callback){callback('assets/'+encodeURIComponent(n))}
 function toggleImageFullscreen(){
  const active=$('modal').classList.toggle('full-image');
  $('image-fullscreen').textContent=active?'⤢ Exit Full Screen':'⛶ Full Screen';
@@ -192,29 +163,27 @@ window.addEventListener('keydown',e=>{
  else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowLeft')stepImage(-1);
  else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowRight')stepImage(1);
 });
-loadKjv();google.script.run.withSuccessHandler(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).withFailureHandler(e=>$('loading').textContent='Could not load data: '+e.message).getStudyData();
+fetch('study-data.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).catch(e=>$('loading').textContent='Could not load data: '+e.message);
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.warn))}
 
-// Reload study data INSIDE the Apps Script iframe; do not reload the iframe itself.
-function refreshBibleStudies(button){
+// Check online content first; the service worker uses network-first for app files.
+async function refreshBibleStudies(button){
  if(button.disabled)return;
  button.disabled=true;button.classList.add('refreshing');button.textContent='…';
- google.script.run.withSuccessHandler(function(updated){
-   button.disabled=false;button.classList.remove('refreshing');button.textContent='↻';
-   if(!updated||!Array.isArray(updated.sections)){
-     alert('The study data response was incomplete. The previous studies remain available.');return;
+ try{
+   const response=await fetch('./study-data.json?refresh='+Date.now(),{cache:'no-store'});
+   if(!response.ok)throw Error('Website returned HTTP '+response.status);
+   const updated=await response.json();
+   if(!updated||!Array.isArray(updated.sections))throw Error('Invalid study file');
+   if('serviceWorker' in navigator){
+     const registration=await navigator.serviceWorker.getRegistration();
+     if(registration)await registration.update();
    }
-   const wasStudy=!$('study').classList.contains('hidden');
-   data=updated;
-   if(wasStudy&&data.sections.length){
-     section=Math.min(section,data.sections.length-1);
-     idx=Math.min(idx,Math.max(0,data.sections[section].units.length-1));
-     render();
-   }else{home();}
-   alert('Study material refreshed. To update app design or buttons, publish a new Apps Script deployment version.');
- }).withFailureHandler(function(error){
+   location.reload();
+ }catch(error){
+   alert('Unable to reach the latest study files. Your offline studies are still available.\n\n'+error.message);
    button.disabled=false;button.classList.remove('refreshing');button.textContent='↻';
-   alert('Could not update the study data: '+(error&&error.message||error));
- }).getStudyData();
+ }
 }
 
 </script></body></html>

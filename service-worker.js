@@ -1,5 +1,5 @@
-const CACHE = 'bbc-teacher-generated-ecefdbf78cef';
-const CORE = ["./", "./index.html", "./study-data.json", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
+const CACHE = 'bbc-teacher-generated-90de1955ce0b';
+const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });
@@ -12,6 +12,11 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   if(event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin)return;
   const url=new URL(event.request.url);
+  // PDF pages are fetched only when opened; never pre-cache or store them.
+  if(url.pathname.includes('/study-pdfs/') && url.pathname.endsWith('.pdf')) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
   const fresh=/\/(?:index\.html|study-data\.json|service-worker\.js)$/.test(url.pathname)||url.pathname.endsWith('/');
   if(fresh){
     event.respondWith(fetch(event.request).then(response => {
