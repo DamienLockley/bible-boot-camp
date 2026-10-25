@@ -1,4 +1,4 @@
-const CACHE = 'bbc-teacher-bb7e294e9d95';
+const CACHE = 'bbc-teacher-generated-ecefdbf78cef';
 const CORE = ["./", "./index.html", "./study-data.json", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
