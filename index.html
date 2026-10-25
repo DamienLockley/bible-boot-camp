@@ -22,7 +22,7 @@
 .image-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 body.image-open{overflow:hidden}
 
-/* Compact refresh control next to Home. */
+/* Header refresh control */
 .header-actions{display:flex;align-items:center;gap:7px;flex-shrink:0}
 .header-actions .refresh-button{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;min-width:42px;border-radius:9px;font-size:21px;line-height:1}
 .refresh-button.refreshing{opacity:.75;cursor:wait}
@@ -135,33 +135,24 @@ window.addEventListener('keydown',e=>{
 loadKjv();fetch('study-data.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).catch(e=>$('loading').textContent='Could not load data: '+e.message);
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.warn))}
 
-// The refresh control checks the network BEFORE clearing any offline content.
-// Once online, it updates the service worker and resets its cached study files.
+// Check online content first; the service worker uses network-first for app files.
 async function refreshBibleStudies(button){
  if(button.disabled)return;
- button.disabled=true;button.classList.add('refreshing');
- button.textContent='…';button.setAttribute('aria-label','Checking for updates');
+ button.disabled=true;button.classList.add('refreshing');button.textContent='…';
  try{
-   const stamp=Date.now();
-   const probe=await fetch('./index.html?bbc_online_check='+stamp,{cache:'no-store'});
-   if(!probe.ok)throw Error('Cannot reach the updated website (HTTP '+probe.status+').');
+   const response=await fetch('./study-data.json?refresh='+Date.now(),{cache:'no-store'});
+   if(!response.ok)throw Error('Website returned HTTP '+response.status);
+   const updated=await response.json();
+   if(!updated||!Array.isArray(updated.sections))throw Error('Invalid study file');
    if('serviceWorker' in navigator){
-     const reg=await navigator.serviceWorker.getRegistration();
-     if(reg)await reg.update();
+     const registration=await navigator.serviceWorker.getRegistration();
+     if(registration)await registration.update();
    }
-   // Clear the old offline cache only after a successful online check.
-   // This forces a fresh app and fresh JSON data at the next page load.
-   if('caches' in window){
-     const names=await caches.keys();
-     await Promise.all(names.filter(n=>n.startsWith('bbc-teacher-')).map(n=>caches.delete(n)));
-   }
-   const u=new URL(location.href);
-   u.searchParams.set('bbc_refresh',String(stamp));
-   location.replace(u.href);
- }catch(err){
-   alert('Could not check for the latest version. Your saved offline studies are unchanged. Connect to the internet and try again.\n\n'+err.message);
-   button.disabled=false;button.classList.remove('refreshing');
-   button.textContent='↻';button.setAttribute('aria-label','Refresh to latest version');
+   location.reload();
+ }catch(error){
+   alert('Unable to reach the latest study files. Your offline studies are still available.\n\n'+error.message);
+   button.disabled=false;button.classList.remove('refreshing');button.textContent='↻';
  }
 }
+
 </script></body></html>
