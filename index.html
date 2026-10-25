@@ -1,39 +1,130 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dceffa"><link rel="manifest" href="manifest.webmanifest"><style>
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dceffa"><base target="_top"><style>
 :root{font-family:system-ui,-apple-system,Arial,sans-serif;color:#17324a;background:#f3f8fd}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:2;background:#dceffa;padding:13px 16px;box-shadow:0 2px 7px #1232;display:flex;justify-content:space-between;align-items:center}.wrap{max-width:850px;margin:auto;padding:15px}.panel{background:white;border:1px solid #dce7ef;border-radius:15px;padding:16px;margin-bottom:13px;box-shadow:0 2px 5px #1231}button,input{font:inherit}button{cursor:pointer;border:1px solid #8cb5d2;border-radius:10px;background:white;color:#17527c;padding:11px;font-weight:650}button.primary,.selected{background:#1672ad;color:white;border-color:#1672ad}button:disabled{opacity:.4}input{width:100%;padding:13px;border:1px solid #adc7d9;border-radius:10px}.bar{display:flex;gap:7px;flex-wrap:wrap}.bar button{flex:1;min-width:110px}.title{font-size:22px;font-weight:750;margin:8px 0}.muted{font-size:13px;color:#647c8d}.item{width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px;margin:6px 0}.hidden{display:none!important}.content{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}.heading{font-weight:750;color:#145c8e}.bible-ref{cursor:pointer;border:0;background:none;padding:0;font:inherit;display:inline;text-align:left;color:#0869b2;font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.question{font-weight:700}.answer{background:#eff7fc;padding:12px;border-radius:9px;white-space:pre-wrap}details{margin:10px 0}summary{cursor:pointer;color:#17527c;font-weight:700}.nav{position:sticky;bottom:0;background:#f3f8fdee;padding:12px 0;display:flex;gap:8px}.nav button{flex:1}.versetable{width:100%;border-collapse:collapse}.versetable th,.versetable td{padding:10px;border-bottom:1px solid #dce7ef;text-align:left}.versetable th{background:#eff7fc}#modal{position:fixed;inset:0;background:#000b;z-index:10;overflow:auto;padding:14px}#modal .panel{max-width:900px;margin:auto}#modal img{max-width:100%;height:auto;display:block;margin:15px auto}.imggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.imggrid img{width:100%;height:150px;object-fit:contain;background:#f5f7fa;border-radius:8px}.kjv-verse{padding:7px 0;border-bottom:1px solid #e0ebf2;line-height:1.65}.kjv-verse b{color:#145c8e;margin-right:8px}small{font-size:12px}
-</style></head><body><header><div><strong>📖 Bible Boot Camp</strong><div class="muted">Teacher's Guide · Original Word document</div></div><button onclick="home()">Studies</button></header><div class="wrap"><div id="loading" class="panel">Loading study material…</div><div id="library" class="hidden"><div class="panel"><div class="title">Study Library</div><input id="search" placeholder="Search studies and text…" oninput="library()"><div id="list"></div></div></div><div id="study" class="hidden"><div class="panel"><div class="muted" id="counter"></div><div class="title" id="title"></div><div class="bar"><button id="guided" onclick="setMode('guided')">Guided Teaching</button><button id="reference" onclick="setMode('reference')">Scrollable Reference</button><button id="verses" onclick="setMode('verses')">Bible Verses</button><button id="images" onclick="setMode('images')">Images</button></div></div><div id="body"></div><div class="nav"><button onclick="prev()">← Previous</button><button onclick="home()">Studies</button><button class="primary" onclick="next()">Next →</button></div></div></div><div id="verse-modal" class="hidden" style="position:fixed;inset:0;background:#000b;z-index:20;overflow:auto;padding:14px" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel" style="max-width:680px;margin:5vh auto"><button onclick="closeVerse()">Close ✕</button><h3 id="verse-title"></h3><div id="verse-text"></div></div></div><div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div class="panel"><button onclick="closeModal()">Close ✕</button><div id="pic"></div></div></div><script>
+
+:root{--ink:#18364f;--blue:#125d93;--line:#d7e4ee}header{padding:15px max(16px,calc((100vw - 850px)/2));background:linear-gradient(115deg,#e4f2fb,#f4faff);box-shadow:0 3px 14px #173b5620}header strong{font-size:21px;letter-spacing:-.4px}.wrap{padding-top:20px}.panel{border-color:var(--line);box-shadow:0 4px 18px #1637500b;padding:20px;border-radius:16px}button{transition:background .15s,border-color .15s,transform .12s}button:hover:not(:disabled){border-color:#146da3;background:#eaf4fc}button.primary:hover,.selected:hover{background:#135e94;color:white}button:focus-visible,.bible-ref:focus-visible{outline:3px solid #e1a443;outline-offset:3px}.bar button{min-width:145px}.title{letter-spacing:-.4px}.image-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0}.image-controls button{min-width:105px}#modal img{max-height:70vh;object-fit:contain}#modal .panel{max-width:960px}#pic{text-align:center;min-height:160px}#pic img{border-radius:9px}#verse-modal .panel{max-width:760px!important}
+
+/* Active view: readable, strongly highlighted instead of faded. */
+.bar button.selected,.bar button.selected:hover,.bar button.selected:focus,.bar button.selected:active{
+ background:#08659d!important;color:#ffffff!important;border-color:#064d78!important;
+ box-shadow:inset 0 0 0 1px #ffffff50,0 2px 7px #164a712e;opacity:1!important;
+}
+.bar button:not(.selected){background:#fff;color:#17527c;opacity:1}
+/* Image expanded view fills the viewport but keeps visible, accessible controls. */
+#modal.full-image{padding:0;background:#071625;overflow:hidden}
+#modal.full-image .panel{width:100%;max-width:none;height:100vh;height:100dvh;margin:0;border-radius:0;background:#071625;color:white;display:flex;flex-direction:column;padding:12px 16px}
+#modal.full-image #pic{flex:1;min-height:0;display:flex;justify-content:center;align-items:center;overflow:hidden}
+#modal.full-image #pic img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;margin:0}
+#modal.full-image .image-controls{color:white;flex-shrink:0;padding:8px 0 max(8px,env(safe-area-inset-bottom))}
+#modal.full-image .image-controls .muted{color:#e6f3ff}
+#modal.full-image .image-toolbar{flex-shrink:0}
+#modal.full-image button{background:#e4f2fc;color:#124b75;border-color:#bcdcf2}
+#modal.full-image button:disabled{opacity:.4}
+.image-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+body.image-open{overflow:hidden}
+</style></head><body><header><div><strong>📖 Bible Studies</strong><div class="muted">Teacher's Guide</div></div><button onclick="home()">Home</button></header><div class="wrap"><div id="loading" class="panel">Loading study material…</div><div id="library" class="hidden"><div class="panel"><div class="title">Study Library</div><input id="search" placeholder="Search studies and text…" oninput="library()"><div id="list"></div></div></div><div id="study" class="hidden"><div class="panel"><div class="muted" id="counter"></div><div class="title" id="title"></div><div class="bar" style="margin-bottom:11px"><button class="primary" onclick="shareStudyPdf()">↗ Share Study PDF</button><button onclick="downloadStudyPdf()">↓ Download PDF</button></div><div class="bar"><button id="guided" onclick="setMode('guided')">Guided Teaching</button><button id="reference" onclick="setMode('reference')">Scrollable Reference</button><button id="verses" onclick="setMode('verses')">Bible Verses</button></div></div><div id="body"></div></div></div><div id="verse-modal" class="hidden" style="position:fixed;inset:0;background:#000b;z-index:20;overflow:auto;padding:14px" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel" style="max-width:680px;margin:5vh auto"><button onclick="closeVerse()">Close ✕</button><h3 id="verse-title"></h3><div id="verse-text"></div></div></div><div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div class="panel"><div class="image-toolbar"><button onclick="closeModal()">Close ✕</button><button id="image-fullscreen" onclick="toggleImageFullscreen()">⛶ Full Screen</button></div><div id="pic"></div><div id="image-controls" class="image-controls hidden"><button id="image-prev" onclick="stepImage(-1)">← Previous</button><span id="image-count" class="muted"></span><button id="image-next" onclick="stepImage(1)">Next →</button></div></div></div><script>
 let data,section=0,mode='guided',idx=0,kjv=null,kjvStatus='Loading stored KJV verses…';const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+// PDFs are built from the original PDF, not from the simplified app text.
+const pdfBase = 'https://damienlockley.github.io/bible-boot-camp/study-pdfs/';
+function studyPdfUrl(){return pdfBase+'Study_'+String(section+1).padStart(2,'0')+'.pdf'}
+function downloadStudyPdf(){window.open(studyPdfUrl(),'_blank','noopener')}
+async function shareStudyPdf(){
+ const title=data.sections[section].title;
+ const url=studyPdfUrl();
+ if(navigator.share){try{await navigator.share({title:'Bible Studies — '+title,text:'Study '+(section+1)+': '+title,url});return}catch(e){if(e.name==='AbortError')return}}
+ try{await navigator.clipboard.writeText(url);alert('Study PDF link copied. You can paste it into a message or email.')}catch(e){window.prompt('Copy this study PDF link:',url)}
+}
+
 function library(){const q=$('search').value.toLowerCase().trim();$('list').innerHTML=data.sections.filter(s=>!q||s.title.toLowerCase().includes(q)||s.units.some(u=>u.text.toLowerCase().includes(q))).map(s=>`<button class="item" onclick="openStudy(${s.id})"><span>${s.id+1}. ${esc(s.title)}</span><span>›</span></button>`).join('')||'<p>No matches</p>'}
 function home(){$('study').classList.add('hidden');$('library').classList.remove('hidden');library()}
-function openStudy(n){section=n;idx=0;mode=localStorage.getItem('bbc-mode')||'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
-function setMode(m){mode=m;localStorage.setItem('bbc-mode',m);render()}
-function imageButton(names){return names.length?`<button onclick='showImages(${JSON.stringify(names)})'>▧ Images (${names.length})</button>`:''}
+function openStudy(n){section=n;idx=0;mode=['guided','reference','verses'].includes(localStorage.getItem('bbc-mode'))?localStorage.getItem('bbc-mode'):'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
+function setMode(m){mode=m;idx=0;localStorage.setItem('bbc-mode',m);render()}
+function imageButton(names){return names.length?`<button onclick='showImages(${JSON.stringify(names)})'>▧ Image</button>`:''}
 // Colour scripture references without changing the original wording or adding links.
 // Operates on HTML-escaped plain text, before it is inserted into the page.
 const bibleBook = String.raw`(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Songs?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Nah|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev)`;
-const bibleRefRegex = new RegExp(String.raw`\b${bibleBook}\.?\s+\d+(?:\s*[:：]\s*\d+(?:\s*[-–]\s*\d+)?(?:\s*[,;]\s*\d+(?:\s*[-–]\s*\d+)?)*)?(?:\s*[-–]\s*\d+)?`, 'gi');
+const bibleRefRegex = new RegExp(String.raw`\b${bibleBook}\.?\s+\d+(?:\s*[:：]\s*\d+(?:\s*[-–]\s*\d+)?(?:\s*[,;]\s*\d+(?:\s*[:：]\s*\d+)?(?:\s*[-–]\s*\d+)?)*)?(?:\s*[-–]\s*\d+)?`, 'gi');
 function highlightRefs(plain){return esc(plain).replace(bibleRefRegex,match=>`<button class="bible-ref" title="Read King James Version" onclick="showVerse(this.textContent)">${match}</button>`)}
 const bookNames=['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','Judges','Ruth','1 Samuel','2 Samuel','1 Kings','2 Kings','1 Chronicles','2 Chronicles','Ezra','Nehemiah','Esther','Job','Psalms','Proverbs','Ecclesiastes','Song of Solomon','Isaiah','Jeremiah','Lamentations','Ezekiel','Daniel','Hosea','Joel','Amos','Obadiah','Jonah','Micah','Nahum','Habakkuk','Zephaniah','Haggai','Zechariah','Malachi','Matthew','Mark','Luke','John','Acts','Romans','1 Corinthians','2 Corinthians','Galatians','Ephesians','Philippians','Colossians','1 Thessalonians','2 Thessalonians','1 Timothy','2 Timothy','Titus','Philemon','Hebrews','James','1 Peter','2 Peter','1 John','2 John','3 John','Jude','Revelation'];
 const shortNames=['Gen','Ex','Lev','Num','Deut','Josh','Judg','Ruth','1 Sam','2 Sam','1 Kgs','2 Kgs','1 Chron','2 Chron','Ezra','Neh','Est','Job','Ps','Prov','Eccl','Song','Isa','Jer','Lam','Ezek','Dan','Hos','Joel','Amos','Obad','Jonah','Mic','Nah','Hab','Zeph','Hag','Zech','Mal','Matt','Mark','Luke','John','Acts','Rom','1 Cor','2 Cor','Gal','Eph','Phil','Col','1 Thess','2 Thess','1 Tim','2 Tim','Titus','Philem','Heb','James','1 Pet','2 Pet','1 John','2 John','3 John','Jude','Rev'];
 const aliasMap={};bookNames.forEach((n,i)=>{aliasMap[n.toLowerCase().replace(/[^a-z0-9]/g,'')]=n;aliasMap[shortNames[i].toLowerCase().replace(/[^a-z0-9]/g,'')]=n});
 Object.assign(aliasMap,{psalm:'Psalms',psalms:'Psalms',ps:'Psalms',mat:'Matthew',mt:'Matthew',mk:'Mark',lk:'Luke',jn:'John',revelations:'Revelation',songofsolomon:'Song of Solomon',songs:'Song of Solomon',samuel:'1 Samuel',kings:'1 Kings',chronicles:'1 Chronicles',corinthians:'1 Corinthians',thessalonians:'1 Thessalonians',timothy:'1 Timothy',peter:'1 Peter',john:'John',acts:'Acts',romans:'Romans',hebrews:'Hebrews',james:'James'});
 function resolveBook(name){return aliasMap[name.toLowerCase().replace(/[^a-z0-9]/g,'')]||null}
-function showVerse(ref){$('verse-modal').classList.remove('hidden');$('verse-title').textContent=ref+' — KJV';if(!kjv){$('verse-text').textContent=kjvStatus;return}
- const m=ref.trim().match(/^(.+?)\.?\s+(\d+)(?:\s*[:：]\s*(\d+)(?:\s*[-–]\s*(\d+))?)?/);if(!m){$('verse-text').textContent='This reference could not be interpreted.';return}
- const book=resolveBook(m[1]),ch=Number(m[2]),first=m[3]?Number(m[3]):1,last=m[4]?Number(m[4]):first;
- if(!book){$('verse-text').textContent='Book not recognised: '+m[1];return}
- const rows=[];for(let v=first;v<=Math.min(last,first+99);v++){const key=`${book} ${ch}:${v}`;let t=kjv[key];if(!t){if(v===first)rows.push(`<p>Verse not found in stored KJV: ${esc(key)}</p>`);break}rows.push(`<div class="kjv-verse"><b>${v}</b>${esc(String(t).replace(/^#\s*/,''))}</div>`)}
- $('verse-text').innerHTML=rows.join('')||'<p>No verse found.</p>';
+// Parse comma-separated verses and semicolon-separated chapter changes.
+// E.g. John 3:16,19; 4:20 => 3:16, 3:19, 4:20.
+function expandReferences(ref){
+ const m=ref.trim().match(/^(.+?)\.?\s+(\d+)\s*[:：]\s*(.+)$/);
+ if(!m)return [];
+ const book=resolveBook(m[1]);if(!book)return [];
+ let chapter=Number(m[2]), verses=[], limit=0;
+ for(const segment of m[3].split(/\s*;\s*/)){
+   if(!segment.trim())continue;
+   const items=segment.split(/\s*,\s*/);
+   for(let j=0;j<items.length;j++){
+     const token=items[j].trim();
+     const chapterToken=token.match(/^(\d+)\s*[:：]\s*(\d+)(?:\s*[-–]\s*(\d+))?$/);
+     const verseToken=token.match(/^(\d+)(?:\s*[-–]\s*(\d+))?$/);
+     if(chapterToken){chapter=Number(chapterToken[1]);}
+     if(!chapterToken&&!verseToken)continue;
+     const first=Number(chapterToken?chapterToken[2]:verseToken[1]);
+     const last=Number((chapterToken?chapterToken[3]:verseToken[2])||first);
+     if(first<1||last<first||last-first>150)continue;
+     for(let v=first;v<=last&&limit<300;v++,limit++)verses.push(`${book} ${chapter}:${v}`);
+   }
+ }
+ return [...new Set(verses)];
+}
+function showVerse(ref){
+ $('verse-modal').classList.remove('hidden');$('verse-title').textContent=ref+' — KJV';
+ if(!kjv){$('verse-text').textContent=kjvStatus;return}
+ const refs=expandReferences(ref);
+ if(!refs.length){$('verse-text').textContent='This reference could not be interpreted.';return}
+ $('verse-text').innerHTML=refs.map(key=>kjv[key]
+ ?`<div class="kjv-verse"><b>${esc(key)}</b> ${esc(String(kjv[key]).replace(/^#\s*/,''))}</div>`
+ :`<p>Verse not found in stored KJV: ${esc(key)}</p>`).join('');
 }
 function closeVerse(){$('verse-modal').classList.add('hidden')}
-async function loadKjv(){try{const r=await fetch('kjv-verses.json');if(!r.ok)throw Error('KJV data not yet added');kjv=await r.json();kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}catch(e){kjvStatus='KJV text is not installed in this package yet. Add kjv-verses.json from your Google Drive folder before publishing. '+e.message; if(!$('verse-modal').classList.contains('hidden'))$('verse-text').textContent=kjvStatus}}
+function loadKjv(){google.script.run.withSuccessHandler(v=>{kjv=v;kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}).withFailureHandler(e=>{kjvStatus='KJV could not be loaded: '+e.message;$('verse-text').textContent=kjvStatus}).getKjvData()}
 
 
+function imageGroup(units,start){const names=[];let i=start;
+ while(i<units.length){const u=units[i];if((u.text||'').trim()||!u.images||!u.images.length)break;names.push(...u.images);i++}
+ return {names,next:i};
+}
+function unitsWithImageGroups(units,hide){let html='';for(let i=0;i<units.length;){
+ const u=units[i], names=[...(u.images||[])];let next=i+1;
+ // Subsequent image-only units belong to the same image gallery.
+ if(names.length)while(next<units.length&&!(units[next].text||'').trim()&&units[next].images.length){names.push(...units[next].images);next++}
+ const main=unit({...u,images:[]},hide);
+ html+=`<div class="panel" id="unit-${i}">${main}${names.length?`<div style="margin-top:12px">${imageButton(names)}</div>`:''}</div>`;
+ i=next;
+ }return html;
+}
 function unit(u,hide){let txt=highlightRefs(u.text);let main=u.kind==='answer'&&hide?`<details><summary>Reveal Answer</summary><div class="answer">${txt}</div></details>`:`<div class="content ${u.kind}">${txt}</div>`;return main+(u.images.length?'<div style="margin-top:12px">'+imageButton(u.images)+'</div>':'')}
-function render(){const s=data.sections[section];for(const m of ['guided','reference','verses','images'])$(m).classList.toggle('selected',m===mode);$('counter').textContent=`Study ${section+1} of ${data.sections.length}`;let h='';if(mode==='verses'){h=`<div class="panel"><h3>Bible Verses</h3><p class="muted">References identified from this study, in document order. Check against the original Word document for completeness.</p><table class="versetable"><tr><th>#</th><th>Reference</th></tr>${s.verses.map((v,i)=>`<tr><td>${i+1}</td><td>${highlightRefs(v)}</td></tr>`).join('')}</table></div>`}else if(mode==='images'){let imgs=s.units.flatMap(u=>u.images);h=`<div class="panel"><h3>Study Images (${imgs.length})</h3>${imgs.length?'<div class="imggrid">'+imgs.map(n=>`<button onclick='showImages(["${n}"])'>🖼 ${esc(n)}</button>`).join('')+'</div>':'<p>No embedded images in this study.</p>'}</div>`}else if(mode==='guided'){let u=s.units[idx];h=`<div class="panel"><p class="muted">Teaching item ${idx+1} of ${s.units.length}</p>${unit(u,true)}</div>`}else{h=s.units.map((u,i)=>`<div class="panel" id="unit-${i}">${unit(u,false)}</div>`).join('')}$('body').innerHTML=h;localStorage.setItem('bbc-progress',JSON.stringify({section,idx}));if(mode!=='reference')scrollTo(0,0)}
-function next(){if(mode==='verses'||mode==='images')return;const s=data.sections[section];idx=Math.min(idx+1,s.units.length-1);if(mode==='guided')render();else document.getElementById('unit-'+idx)?.scrollIntoView({behavior:'smooth'})}
-function prev(){if(mode==='verses'||mode==='images')return;idx=Math.max(idx-1,0);if(mode==='guided')render();else document.getElementById('unit-'+idx)?.scrollIntoView({behavior:'smooth'})}
-function showImages(names){$('modal').classList.remove('hidden');$('pic').innerHTML=names.map(n=>`<figure><img loading="lazy" src="assets/${encodeURIComponent(n)}" alt="Original document illustration"><figcaption>${esc(n)}</figcaption></figure>`).join('')}
-function closeModal(){$('modal').classList.add('hidden')}
-loadKjv();fetch('study-data.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).catch(e=>$('loading').textContent='Could not load data: '+e.message);
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.warn))}
+function render(){const s=data.sections[section];for(const m of ['guided','reference','verses'])$(m).classList.toggle('selected',m===mode);$('counter').textContent=`Study ${section+1} of ${data.sections.length}`;let h='';if(mode==='verses'){h=`<div class="panel"><h3>Bible Verses</h3><p class="muted">References identified from this study, in document order.</p><table class="versetable"><tr><th>#</th><th>Reference</th></tr>${s.verses.map((v,i)=>`<tr><td>${i+1}</td><td>${highlightRefs(v)}</td></tr>`).join('')}</table></div>`}else if(mode==='guided'){let u=s.units[idx];let i=idx;while(i>0&&s.units[i-1].images.length&&!(s.units[i-1].text||'').trim()&&!(s.units[i].text||'').trim())i--;const group=imageGroup(s.units,i);if(group.names.length&&idx<group.next){h=`<div class="panel"><p class="muted">Teaching item ${i+1} of ${s.units.length}</p>${imageButton(group.names)}</div>`}else{h=`<div class="panel"><p class="muted">Teaching item ${idx+1} of ${s.units.length}</p>${unit(u,true)}</div>`}}else{h=unitsWithImageGroups(s.units,false)}if(mode==='guided')h+=`<div class="panel"><div class="bar"><button onclick="guidedStep(-1)" ${idx===0?'disabled':''}>← Back</button><button class="primary" onclick="guidedStep(1)" ${idx>=s.units.length-1?'disabled':''}>Continue →</button></div></div>`;$('body').innerHTML=h;localStorage.setItem('bbc-progress',JSON.stringify({section,idx}));if(mode!=='reference')scrollTo(0,0)}
+function guidedStep(delta){idx=Math.max(0,Math.min(data.sections[section].units.length-1,idx+delta));if(delta>0){const g=imageGroup(data.sections[section].units,idx);if(g.names.length&&idx>0&&imageGroup(data.sections[section].units,idx-1).next>idx)idx=g.next-1;}render()}
+function next(){if(mode!=='reference')return;const s=data.sections[section];idx=Math.min(idx+1,s.units.length-1);document.getElementById('unit-'+idx)?.scrollIntoView({behavior:'smooth'})}
+function prev(){if(mode!=='reference')return;idx=Math.max(idx-1,0);document.getElementById('unit-'+idx)?.scrollIntoView({behavior:'smooth'})}
+let imageNames=[],imageIndex=0,imageSerial=0;
+function showImages(names){imageNames=names;imageIndex=0;$('modal').classList.remove('hidden');document.body.classList.add('image-open');renderImage()}
+function stepImage(delta){imageIndex=Math.max(0,Math.min(imageNames.length-1,imageIndex+delta));renderImage()}
+function renderImage(){const n=imageNames[imageIndex],serial=++imageSerial;
+ $('image-controls').classList.toggle('hidden',imageNames.length<2);
+ $('image-count').textContent=`${imageIndex+1} of ${imageNames.length}`;
+ $('image-prev').disabled=imageIndex===0;$('image-next').disabled=imageIndex===imageNames.length-1;
+ $('pic').textContent='Loading image…';
+ loadImage(n,src=>{if(serial!==imageSerial)return;$('pic').innerHTML=src?`<img src="${src}" alt="Study illustration">`:'<p>Image unavailable.</p>'})
+}
+function loadImage(n,callback){google.script.run.withSuccessHandler(callback).withFailureHandler(()=>callback(null)).getImage(n)}
+function toggleImageFullscreen(){
+ const active=$('modal').classList.toggle('full-image');
+ $('image-fullscreen').textContent=active?'⤢ Exit Full Screen':'⛶ Full Screen';
+}
+function closeModal(){imageSerial++;$('modal').classList.add('hidden');$('modal').classList.remove('full-image');document.body.classList.remove('image-open');$('image-fullscreen').textContent='⛶ Full Screen'}
+window.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&!$('modal').classList.contains('hidden'))closeModal();
+ else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowLeft')stepImage(-1);
+ else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowRight')stepImage(1);
+});
+loadKjv();google.script.run.withSuccessHandler(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).withFailureHandler(e=>$('loading').textContent='Could not load data: '+e.message).getStudyData();
 </script></body></html>

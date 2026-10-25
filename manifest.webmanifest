@@ -1,7 +1,7 @@
 {
-  "name": "Bible Boot Camp \u2014 Teacher Guide",
-  "short_name": "Bible Boot Camp",
-  "description": "Offline Bible Boot Camp teacher study guide",
+  "name": "Bible Studies \u2014 Teacher's Guide",
+  "short_name": "Bible Studies",
+  "description": "Offline Bible Studies Teacher's Guide",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
