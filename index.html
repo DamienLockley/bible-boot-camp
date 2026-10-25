@@ -44,6 +44,37 @@ let data,section=0,mode='guided',idx=0,kjv=null,kjvStatus='Loading stored KJV ve
 const pdfBase = './study-pdfs/';
 function studyPdfUrl(){return pdfBase+'Study_'+String(section+1).padStart(2,'0')+'.pdf'}
 
+// Share a direct link to the PDF for the CURRENT study. Never open or download it here.
+async function shareStudyPdf(){
+  if(!data || !Array.isArray(data.sections) || !data.sections[section]){
+    alert('Please open a study before sharing.');
+    return;
+  }
+  const study = data.sections[section];
+  const pdfUrl = new URL(studyPdfUrl(), document.baseURI).href;
+  const payload = {title: 'Bible Studies — ' + study.title,
+                   text: 'Bible study: ' + study.title,
+                   url: pdfUrl};
+  try {
+    if(navigator.share){
+      await navigator.share(payload);
+      return;
+    }
+  } catch(err) {
+    if(err && err.name === 'AbortError') return; // User closed share sheet.
+    // Other sharing failures fall back to copying or displaying the link.
+  }
+  try {
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      await navigator.clipboard.writeText(pdfUrl);
+      alert('Study PDF link copied. You can paste it into a message or email.');
+      return;
+    }
+  } catch(err) { /* A blocked clipboard still gets a usable link below. */ }
+  window.prompt('Copy this link to share the current study PDF:', pdfUrl);
+}
+
+
 function library(){const q=$('search').value.toLowerCase().trim();$('list').innerHTML=data.sections.filter(s=>!q||s.title.toLowerCase().includes(q)||s.units.some(u=>u.text.toLowerCase().includes(q))).map(s=>`<button class="item" onclick="openStudy(${s.id})"><span>${s.id+1}. ${esc(s.title)}</span><span>›</span></button>`).join('')||'<p>No matches</p>'}
 function home(){$('study').classList.add('hidden');$('library').classList.remove('hidden');library()}
 function openStudy(n){section=n;idx=0;mode=['guided','reference','verses'].includes(localStorage.getItem('bbc-mode'))?localStorage.getItem('bbc-mode'):'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
