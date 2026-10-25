@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dceffa"><base target="_top"><style>
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dceffa"><link rel="manifest" href="manifest.webmanifest"><style>
 :root{font-family:system-ui,-apple-system,Arial,sans-serif;color:#17324a;background:#f3f8fd}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:2;background:#dceffa;padding:13px 16px;box-shadow:0 2px 7px #1232;display:flex;justify-content:space-between;align-items:center}.wrap{max-width:850px;margin:auto;padding:15px}.panel{background:white;border:1px solid #dce7ef;border-radius:15px;padding:16px;margin-bottom:13px;box-shadow:0 2px 5px #1231}button,input{font:inherit}button{cursor:pointer;border:1px solid #8cb5d2;border-radius:10px;background:white;color:#17527c;padding:11px;font-weight:650}button.primary,.selected{background:#1672ad;color:white;border-color:#1672ad}button:disabled{opacity:.4}input{width:100%;padding:13px;border:1px solid #adc7d9;border-radius:10px}.bar{display:flex;gap:7px;flex-wrap:wrap}.bar button{flex:1;min-width:110px}.title{font-size:22px;font-weight:750;margin:8px 0}.muted{font-size:13px;color:#647c8d}.item{width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px;margin:6px 0}.hidden{display:none!important}.content{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}.heading{font-weight:750;color:#145c8e}.bible-ref{cursor:pointer;border:0;background:none;padding:0;font:inherit;display:inline;text-align:left;color:#0869b2;font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.question{font-weight:700}.answer{background:#eff7fc;padding:12px;border-radius:9px;white-space:pre-wrap}details{margin:10px 0}summary{cursor:pointer;color:#17527c;font-weight:700}.nav{position:sticky;bottom:0;background:#f3f8fdee;padding:12px 0;display:flex;gap:8px}.nav button{flex:1}.versetable{width:100%;border-collapse:collapse}.versetable th,.versetable td{padding:10px;border-bottom:1px solid #dce7ef;text-align:left}.versetable th{background:#eff7fc}#modal{position:fixed;inset:0;background:#000b;z-index:10;overflow:auto;padding:14px}#modal .panel{max-width:900px;margin:auto}#modal img{max-width:100%;height:auto;display:block;margin:15px auto}.imggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.imggrid img{width:100%;height:150px;object-fit:contain;background:#f5f7fa;border-radius:8px}.kjv-verse{padding:7px 0;border-bottom:1px solid #e0ebf2;line-height:1.65}.kjv-verse b{color:#145c8e;margin-right:8px}small{font-size:12px}
 
 :root{--ink:#18364f;--blue:#125d93;--line:#d7e4ee}header{padding:15px max(16px,calc((100vw - 850px)/2));background:linear-gradient(115deg,#e4f2fb,#f4faff);box-shadow:0 3px 14px #173b5620}header strong{font-size:21px;letter-spacing:-.4px}.wrap{padding-top:20px}.panel{border-color:var(--line);box-shadow:0 4px 18px #1637500b;padding:20px;border-radius:16px}button{transition:background .15s,border-color .15s,transform .12s}button:hover:not(:disabled){border-color:#146da3;background:#eaf4fc}button.primary:hover,.selected:hover{background:#135e94;color:white}button:focus-visible,.bible-ref:focus-visible{outline:3px solid #e1a443;outline-offset:3px}.bar button{min-width:145px}.title{letter-spacing:-.4px}.image-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0}.image-controls button{min-width:105px}#modal img{max-height:70vh;object-fit:contain}#modal .panel{max-width:960px}#pic{text-align:center;min-height:160px}#pic img{border-radius:9px}#verse-modal .panel{max-width:760px!important}
@@ -21,7 +21,13 @@
 #modal.full-image button:disabled{opacity:.4}
 .image-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 body.image-open{overflow:hidden}
-</style></head><body><header><div><strong>📖 Bible Studies</strong><div class="muted">Teacher's Guide</div></div><button onclick="home()">Home</button></header><div class="wrap"><div id="loading" class="panel">Loading study material…</div><div id="library" class="hidden"><div class="panel"><div class="title">Study Library</div><input id="search" placeholder="Search studies and text…" oninput="library()"><div id="list"></div></div></div><div id="study" class="hidden"><div class="panel"><div class="muted" id="counter"></div><div class="title" id="title"></div><div class="bar" style="margin-bottom:11px"><button class="primary" onclick="shareStudyPdf()">↗ Share Study PDF</button><button onclick="downloadStudyPdf()">↓ Download PDF</button></div><div class="bar"><button id="guided" onclick="setMode('guided')">Guided Teaching</button><button id="reference" onclick="setMode('reference')">Scrollable Reference</button><button id="verses" onclick="setMode('verses')">Bible Verses</button></div></div><div id="body"></div></div></div><div id="verse-modal" class="hidden" style="position:fixed;inset:0;background:#000b;z-index:20;overflow:auto;padding:14px" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel" style="max-width:680px;margin:5vh auto"><button onclick="closeVerse()">Close ✕</button><h3 id="verse-title"></h3><div id="verse-text"></div></div></div><div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div class="panel"><div class="image-toolbar"><button onclick="closeModal()">Close ✕</button><button id="image-fullscreen" onclick="toggleImageFullscreen()">⛶ Full Screen</button></div><div id="pic"></div><div id="image-controls" class="image-controls hidden"><button id="image-prev" onclick="stepImage(-1)">← Previous</button><span id="image-count" class="muted"></span><button id="image-next" onclick="stepImage(1)">Next →</button></div></div></div><script>
+
+/* Compact refresh control next to Home. */
+.header-actions{display:flex;align-items:center;gap:7px;flex-shrink:0}
+.header-actions .refresh-button{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;min-width:42px;border-radius:9px;font-size:21px;line-height:1}
+.refresh-button.refreshing{opacity:.75;cursor:wait}
+@media(max-width:390px){header strong{font-size:18px}.header-actions button:not(.refresh-button){padding:10px}}
+</style></head><body><header><div><strong>📖 Bible Studies</strong><div class="muted">Teacher's Guide</div></div><div class="header-actions"><button onclick="home()">Home</button><button class="refresh-button" title="Check for latest version" aria-label="Refresh to latest version" onclick="refreshBibleStudies(this)">↻</button></div></header><div class="wrap"><div id="loading" class="panel">Loading study material…</div><div id="library" class="hidden"><div class="panel"><div class="title">Study Library</div><input id="search" placeholder="Search studies and text…" oninput="library()"><div id="list"></div></div></div><div id="study" class="hidden"><div class="panel"><div class="muted" id="counter"></div><div class="title" id="title"></div><div class="bar" style="margin-bottom:11px"><button class="primary" onclick="shareStudyPdf()">↗ Share Study PDF</button><button onclick="downloadStudyPdf()">↓ Download PDF</button></div><div class="bar"><button id="guided" onclick="setMode('guided')">Guided Teaching</button><button id="reference" onclick="setMode('reference')">Scrollable Reference</button><button id="verses" onclick="setMode('verses')">Bible Verses</button></div></div><div id="body"></div></div></div><div id="verse-modal" class="hidden" style="position:fixed;inset:0;background:#000b;z-index:20;overflow:auto;padding:14px" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel" style="max-width:680px;margin:5vh auto"><button onclick="closeVerse()">Close ✕</button><h3 id="verse-title"></h3><div id="verse-text"></div></div></div><div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div class="panel"><div class="image-toolbar"><button onclick="closeModal()">Close ✕</button><button id="image-fullscreen" onclick="toggleImageFullscreen()">⛶ Full Screen</button></div><div id="pic"></div><div id="image-controls" class="image-controls hidden"><button id="image-prev" onclick="stepImage(-1)">← Previous</button><span id="image-count" class="muted"></span><button id="image-next" onclick="stepImage(1)">Next →</button></div></div></div><script>
 let data,section=0,mode='guided',idx=0,kjv=null,kjvStatus='Loading stored KJV verses…';const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 // PDFs are built from the original PDF, not from the simplified app text.
@@ -84,7 +90,7 @@ function showVerse(ref){
  :`<p>Verse not found in stored KJV: ${esc(key)}</p>`).join('');
 }
 function closeVerse(){$('verse-modal').classList.add('hidden')}
-function loadKjv(){google.script.run.withSuccessHandler(v=>{kjv=v;kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}).withFailureHandler(e=>{kjvStatus='KJV could not be loaded: '+e.message;$('verse-text').textContent=kjvStatus}).getKjvData()}
+async function loadKjv(){try{const r=await fetch('kjv-verses.json');if(!r.ok)throw Error('KJV data not yet added');kjv=await r.json();kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}catch(e){kjvStatus='KJV text is not installed in this package yet. Add kjv-verses.json from your Google Drive folder before publishing. '+e.message; if(!$('verse-modal').classList.contains('hidden'))$('verse-text').textContent=kjvStatus}}
 
 
 function imageGroup(units,start){const names=[];let i=start;
@@ -115,7 +121,7 @@ function renderImage(){const n=imageNames[imageIndex],serial=++imageSerial;
  $('pic').textContent='Loading image…';
  loadImage(n,src=>{if(serial!==imageSerial)return;$('pic').innerHTML=src?`<img src="${src}" alt="Study illustration">`:'<p>Image unavailable.</p>'})
 }
-function loadImage(n,callback){google.script.run.withSuccessHandler(callback).withFailureHandler(()=>callback(null)).getImage(n)}
+function loadImage(n,callback){callback('assets/'+encodeURIComponent(n))}
 function toggleImageFullscreen(){
  const active=$('modal').classList.toggle('full-image');
  $('image-fullscreen').textContent=active?'⤢ Exit Full Screen':'⛶ Full Screen';
@@ -126,5 +132,36 @@ window.addEventListener('keydown',e=>{
  else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowLeft')stepImage(-1);
  else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowRight')stepImage(1);
 });
-loadKjv();google.script.run.withSuccessHandler(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).withFailureHandler(e=>$('loading').textContent='Could not load data: '+e.message).getStudyData();
+loadKjv();fetch('study-data.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).catch(e=>$('loading').textContent='Could not load data: '+e.message);
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.warn))}
+
+// The refresh control checks the network BEFORE clearing any offline content.
+// Once online, it updates the service worker and resets its cached study files.
+async function refreshBibleStudies(button){
+ if(button.disabled)return;
+ button.disabled=true;button.classList.add('refreshing');
+ button.textContent='…';button.setAttribute('aria-label','Checking for updates');
+ try{
+   const stamp=Date.now();
+   const probe=await fetch('./index.html?bbc_online_check='+stamp,{cache:'no-store'});
+   if(!probe.ok)throw Error('Cannot reach the updated website (HTTP '+probe.status+').');
+   if('serviceWorker' in navigator){
+     const reg=await navigator.serviceWorker.getRegistration();
+     if(reg)await reg.update();
+   }
+   // Clear the old offline cache only after a successful online check.
+   // This forces a fresh app and fresh JSON data at the next page load.
+   if('caches' in window){
+     const names=await caches.keys();
+     await Promise.all(names.filter(n=>n.startsWith('bbc-teacher-')).map(n=>caches.delete(n)));
+   }
+   const u=new URL(location.href);
+   u.searchParams.set('bbc_refresh',String(stamp));
+   location.replace(u.href);
+ }catch(err){
+   alert('Could not check for the latest version. Your saved offline studies are unchanged. Connect to the internet and try again.\n\n'+err.message);
+   button.disabled=false;button.classList.remove('refreshing');
+   button.textContent='↻';button.setAttribute('aria-label','Refresh to latest version');
+ }
+}
 </script></body></html>
