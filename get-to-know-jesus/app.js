@@ -229,11 +229,22 @@ function submitConnectForm(e){
   connectForm.submit();
 }
 window.addEventListener('message',event=>{
-  // The confirmation contains the nonce that was included with this submission.
-  // The destination email never appears in the public page.
   const data=event.data;
   if(!data||data.source!=='rooted-hope-contact'||!window.pendingContact||data.nonce!==window.pendingContact)return;
-  if(!/^https:\/\/(script\.googleusercontent\.com|script\.google\.com)$/.test(event.origin))return;
+  // Apps Script HTML responses can originate from Google-hosted subdomains or
+  // a sandboxed iframe ('null' origin). A sandboxed response is only trusted
+  // when it comes from our own dedicated response frame, and all responses
+  // must include the unpredictable per-submission nonce.
+  let trustedGoogleOrigin=false;
+  try{
+    const url=new URL(event.origin);
+    trustedGoogleOrigin=url.protocol==='https:' &&
+      (url.hostname==='script.google.com' || url.hostname==='script.googleusercontent.com' ||
+       url.hostname.endsWith('.googleusercontent.com') || url.hostname.endsWith('.google.com'));
+  }catch{}
+  const frame=document.getElementById('contactResponseFrame');
+  const fromOwnFrame=event.source===frame.contentWindow;
+  if(!trustedGoogleOrigin && !(event.origin==='null' && fromOwnFrame))return;
   clearTimeout(window.contactWatchdog);
   window.pendingContact=null;
   connectForm.querySelector('[type="submit"]').disabled=false;
