@@ -97,9 +97,22 @@ async function flush(){if(!client||!current||hydrating)return;const data=window.
 function scheduleSync(){if(hydrating||!current)return;clearTimeout(syncTimer);syncTimer=setTimeout(flush,800)}
 window.BIBLE_ACCOUNT={save:scheduleSync,isSignedIn:()=>!!current};
 async function onSession(user){const prior=current?.id;current=user||null;
+ // Always reset overrides while switching account or signing out.
+ window.BIBLE_ALL_UNLOCKED=false;
+ window.dispatchEvent(new Event('bible-access-changed'));
  // Never discard the password recovery view while Supabase refreshes a session.
  if(!recovery)mode(current?'signed':'signin',true);
  if(current&&prior!==current.id)await loadCloud(current);
+ if(!current||!client)return;
+ const requestedUserId=current.id;
+ try {
+   const {data,error}=await client.from('study_access')
+     .select('all_studies_unlocked').eq('user_id',requestedUserId).maybeSingle();
+   if(error)throw error;
+   if(current?.id!==requestedUserId)return;
+   window.BIBLE_ALL_UNLOCKED=data?.all_studies_unlocked===true;
+   window.dispatchEvent(new Event('bible-access-changed'));
+ } catch(e) { console.warn('Could not check special study access:',e); }
 }
 function enterRecovery(){recoveryEventSeen=true;recovery=true;mode('recovery');msg('Your reset link is verified. Choose a new password.');open();setTimeout(()=>$('accountPassword').focus(),0)}
 if(url&&key){

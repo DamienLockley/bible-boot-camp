@@ -44,9 +44,15 @@ function unlockedIndex(){return Math.min(firstIncompleteIndex(), ORDER.length-1)
 function isUnlocked(id){
   const ix=ORDER.findIndex(s=>s.id===id);
   if(ix===-1) return false;
+  // Administrator-approved accounts may open every study.
+  if(window.BIBLE_ALL_UNLOCKED === true) return true;
   if(completed(id)) return true;
   return ix<=unlockedIndex();
 }
+
+// Rebuild study buttons after account permissions change.
+window.addEventListener('bible-access-changed',()=>route());
+
 function nextStudy(){
   const ix=firstIncompleteIndex();
   if(ix>=ORDER.length) return null;
