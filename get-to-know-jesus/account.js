@@ -5,6 +5,8 @@
 const conf=window.SITE_CONFIG||{};
 const url=conf.supabaseUrl||'',key=conf.supabasePublishableKey||'';
 let client=null,current=null,hydrating=false,view='signin',recovery=false,syncTimer;
+const recoveryLink=/[?&]password-recovery=1(?:&|$)/.test(location.search)||/[#&]type=recovery(?:&|$)/.test(location.hash);
+let recoveryEventSeen=false;
 const button=document.createElement('button');
 button.type='button';button.className='btn btn-outline';button.textContent='My account';
 button.style.cssText='padding:9px 13px;white-space:nowrap;font-size:.83rem';
@@ -71,7 +73,7 @@ $('accountForm').onsubmit=async e=>{e.preventDefault();if(!client){msg('Accounts
  if(view!=='forgot'&&password.length<8){msg('Password must be at least 8 characters long.');return}
  if(view==='recovery'&&password!==$('accountConfirmPassword').value){msg('The new passwords do not match.');return}
  $('accountPrimary').disabled=true;msg('Working…');try{
-   let response;const redirectTo=location.origin+location.pathname;
+   let response;const redirectTo=location.origin+location.pathname+(view==='forgot'?'?password-recovery=1':'');
    if(view==='signin')response=await client.auth.signInWithPassword({email,password});
    if(view==='signup')response=await client.auth.signUp({email,password,options:{emailRedirectTo:redirectTo}});
    if(view==='forgot')response=await client.auth.resetPasswordForEmail(email,{redirectTo});
@@ -83,7 +85,7 @@ $('accountForm').onsubmit=async e=>{e.preventDefault();if(!client){msg('Accounts
    if(view==='recovery'){
       recovery=false;$('accountPassword').value='';$('accountConfirmPassword').value='';
       // Remove recovery tokens from history once the client has processed the link.
-      if(location.hash&&/access_token=|type=recovery|error=/.test(location.hash))history.replaceState(null,'',location.pathname+location.search);
+      if(recoveryLink || (location.hash&&/access_token=|type=recovery|error=/.test(location.hash)))history.replaceState(null,'',location.pathname);
       mode(current?'signed':'signin',true);msg('Password updated successfully. You can now continue your studies.');open();
    }
  }catch(err){msg(err?.message||'Account request failed. Please try again.')}finally{$('accountPrimary').disabled=false}
@@ -99,15 +101,23 @@ async function onSession(user){const prior=current?.id;current=user||null;
  if(!recovery)mode(current?'signed':'signin',true);
  if(current&&prior!==current.id)await loadCloud(current);
 }
-function enterRecovery(){recovery=true;mode('recovery');msg('Your reset link is verified. Choose a new password.');open();setTimeout(()=>$('accountPassword').focus(),0)}
+function enterRecovery(){recoveryEventSeen=true;recovery=true;mode('recovery');msg('Your reset link is verified. Choose a new password.');open();setTimeout(()=>$('accountPassword').focus(),0)}
 if(url&&key){
  if(!window.supabase?.createClient){msg('Account library unavailable. Check your internet connection and reload.');return}
  client=window.supabase.createClient(url,key,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
  // The recovery event arrives asynchronously after the Supabase client processes the URL.
  client.auth.onAuthStateChange((event,session)=>{setTimeout(()=>{
    if(event==='PASSWORD_RECOVERY'){current=session?.user||current;enterRecovery();return}
+   if(recoveryLink && session?.user && !recoveryEventSeen){current=session.user;enterRecovery();return}
    onSession(session?.user||null);
  },0)});
- client.auth.getUser().then(({data})=>{if(!recovery)onSession(data?.user||null)}).catch(()=>{});
+ client.auth.getSession().then(({data,error})=>{
+   if(recoveryLink){
+     if(data?.session?.user){current=data.session.user;enterRecovery()}
+     else if(!recoveryEventSeen){
+       mode('signin');msg(error?.message||'This password-reset link has expired or could not be verified. Select Forgot password? to request a fresh link.');open();
+     }
+   } else if(!recovery){onSession(data?.session?.user||null)}
+ }).catch(err=>{if(recoveryLink){mode('signin');msg(err?.message||'Password reset could not be verified. Request a new link.');open()}});
 }
 })();
