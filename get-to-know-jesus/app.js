@@ -198,8 +198,8 @@ function fallbackCopy(t){const ta=document.createElement('textarea');ta.value=t;
 function exportProgress(){const blob=new Blob([JSON.stringify({application:'Rooted in Hope',version:2,exported:new Date().toISOString(),...user},null,2)],{type:'application/json'});const objectUrl=URL.createObjectURL(blob);const a=document.createElement('a');a.href=objectUrl;a.download='my-bible-study-journey.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(objectUrl),1000);toast('Progress file prepared')}
 function importProgress(file){if(!file)return;const reader=new FileReader();reader.onload=()=>{try{const dat=JSON.parse(reader.result);if(!dat||!Array.isArray(dat.completed)||typeof dat.notes!=='object')throw Error();const received=new Set(dat.completed);user.completed=ORDER.map(s=>s.id).filter((id,i)=>ORDER.slice(0,i+1).every(x=>received.has(x.id)));user.read=(dat.read&&typeof dat.read==='object')?Object.fromEntries(Object.entries(dat.read).filter(([id,v])=>ORDER.some(s=>s.id===id)&&Array.isArray(v)).map(([id,v])=>[id,v.filter(n=>Number.isInteger(n)&&n>=0&&n<6)])):{};user.notes=Object.fromEntries(Object.entries(dat.notes).filter(([key,val])=>STUDIES.some(s=>s.id===key)&&typeof val==='string').map(([k,v])=>[k,v.slice(0,50000)]));save();route();toast('Saved progress imported')}catch{toast('This does not appear to be a valid journey export file')}};reader.readAsText(file)}
 
-function openConnect(){document.getElementById('contactStarted').value=Date.now();modal.hidden=false;document.body.classList.add('modal-open');setTimeout(()=>document.getElementById('connectEmail')?.focus(),25)}
-function closeConnect(){modal.hidden=true;document.body.classList.remove('modal-open');connectStatus.textContent='';}
+function openConnect(){clearTimeout(window.contactSuccessTimer);document.getElementById('contactStarted').value=Date.now();modal.hidden=false;document.body.classList.add('modal-open');setTimeout(()=>document.getElementById('connectEmail')?.focus(),25)}
+function closeConnect(){clearTimeout(window.contactSuccessTimer);modal.hidden=true;document.body.classList.remove('modal-open');connectStatus.textContent='';}
 
 function submitConnectForm(e){
   e.preventDefault();
@@ -249,7 +249,17 @@ window.addEventListener('message',event=>{
   window.pendingContact=null;
   connectForm.querySelector('[type="submit"]').disabled=false;
   connectStatus.textContent=data.ok?'Your message has been sent. Thank you.':(data.message||'The message could not be sent. Please try again.');
-  if(data.ok){connectForm.reset();document.getElementById('contactStarted').value=Date.now();}
+  if(data.ok){
+    connectForm.reset();
+    document.getElementById('contactStarted').value=Date.now();
+    // Show confirmation briefly before closing, without hiding failed submissions.
+    clearTimeout(window.contactSuccessTimer);
+    window.contactSuccessTimer=setTimeout(()=>{
+      if(modal.hidden)return;
+      closeConnect();
+      toast('Your message has been sent. Thank you.');
+    },1400);
+  }
 });
 
 document.body.addEventListener('click',e=>{
