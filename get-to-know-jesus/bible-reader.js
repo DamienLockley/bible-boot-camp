@@ -1,0 +1,9 @@
+// Scripture popup. Prefer configured seely1991 compatible endpoint. Default uses public-domain KJV.
+(()=>{'use strict';
+const dlg=document.createElement('dialog');dlg.className='bible-reader-dialog';dlg.innerHTML='<div class="bible-reader-inner"><button class="bible-reader-close" aria-label="Close">×</button><h2 id="bibleReaderRef"></h2><div id="bibleReaderText" class="bible-reader-text"></div><p id="bibleReaderCredit" class="bible-reader-credit"></p></div>';document.body.append(dlg);dlg.querySelector('button').onclick=()=>dlg.close();
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-bible-ref]');if(!b)return; e.preventDefault();const ref=b.dataset.bibleRef;dlg.querySelector('#bibleReaderRef').textContent=ref;const text=dlg.querySelector('#bibleReaderText');const credit=dlg.querySelector('#bibleReaderCredit');text.textContent='Loading Scripture…';credit.textContent='';dlg.showModal();try{
+const endpoint=(window.SITE_CONFIG?.bibleApiBaseUrl||'').replace(/\/$/,'');
+const url=endpoint?endpoint+'/'+encodeURIComponent(ref):'https://bible-api.com/'+encodeURIComponent(ref)+'?translation=kjv';
+const resp=await fetch(url,{headers:{Accept:'application/json'}});if(!resp.ok)throw Error('Bible service responded '+resp.status);const result=await resp.json();const output=result.text || result.passage || (Array.isArray(result.verses)?result.verses.map(v=>`${v.verse||''} ${v.text||''}`).join('\n'):'');if(!output)throw Error('No passage returned by configured API');text.textContent=output;credit.textContent=result.translation_name|| (endpoint?'Bible text — configured provider':'King James Version (public domain)');
+}catch(error){text.textContent='This passage could not be loaded right now. Please try again or read it in your own Bible.';credit.textContent=String(error.message||error)} });
+})();
