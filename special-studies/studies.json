@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "daniel",
+    "title": "Daniel",
+    "description": "A comprehensive verse-by-verse reference",
+    "status": "ready"
+  },
+  {
+    "slug": "revelation",
+    "title": "Revelation",
+    "description": "A detailed study of Revelation",
+    "status": "coming_soon"
+  },
+  {
+    "slug": "future1",
+    "title": "Future 1",
+    "description": "Additional Bible studies",
+    "status": "coming_soon"
+  },
+  {
+    "slug": "future2",
+    "title": "Future 2",
+    "description": "Additional Bible studies",
+    "status": "coming_soon"
+  },
+  {
+    "slug": "future3",
+    "title": "Future 3",
+    "description": "Additional Bible studies",
+    "status": "coming_soon"
+  }
+]
