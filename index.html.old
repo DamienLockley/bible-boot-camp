@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#21483e" />
+  <meta name="description" content="Get to Know Jesus — clear, Bible-based studies for learners." />
+  <title>Get to Know Jesus</title>
+  <link rel="stylesheet" href="styles.css?v=20" />
+
+  <!-- V13: retire old root-scoped Teacher Guide service worker -->
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+      try {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        for (const reg of regs) {
+          if (new URL(reg.scope).pathname === '/') await reg.unregister();
+        }
+      } catch (error) { console.warn('Service worker cleanup:', error); }
+    });
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the Bible studies</a>
+  <header class="site-header">
+    <div class="shell topbar">
+      <button class="brand" id="brandButton" type="button" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span><strong>Get to Know Jesus</strong><small>BIBLE-BASED STUDY JOURNEY</small></span>
+      </button>
+      <nav aria-label="Main navigation" class="main-nav">
+        <button id="homeTab" class="nav-link active" type="button">Studies</button>
+        <button id="progressTab" class="nav-link" type="button">My journey</button>
+        <button id="aboutTab" class="nav-link" type="button">About</button>
+      </nav>
+      <div class="header-actions">
+        <button id="connectButton" class="icon-button" type="button" data-action="connect" aria-label="Connect or get help" title="Connect or Get Help">✉</button>
+        <button id="fontButton" class="icon-button" type="button" aria-label="Change reading text size" title="Change text size">Aa</button>
+        <button id="themeButton" class="icon-button" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="shell" tabindex="-1" aria-live="polite"></main>
+  <footer class="site-footer shell">
+    <div><strong>Get to Know Jesus</strong></div>
+    <div>Simple Bible-based studies to help people discover truth step by step.</div>
+  </footer>
+
+  <div id="connectModal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="connectTitle">
+      <div class="modal-head">
+        <h2 id="connectTitle">Connect / Get Help</h2>
+        <button class="icon-button" type="button" data-modal-close aria-label="Close">✕</button>
+      </div>
+      <p class="modal-copy">Ask a question, request prayer or get in touch. Your email address is required so we can reply. Other details are optional and will be shared only if you choose to include them.</p>
+      <form id="connectForm" class="connect-form" method="post" target="contactResponseFrame">
+        <input type="hidden" name="nonce" id="contactNonce" value="">
+        <input type="hidden" name="startedAt" id="contactStarted" value="">
+        <div class="honeypot" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <label>Email address
+          <input id="connectEmail" name="email" type="email" required placeholder="your@email.com" />
+        </label>
+        <label>Name (optional)
+          <input name="name" type="text" placeholder="Your name" />
+        </label>
+        <label>Phone (optional)
+          <input name="phone" type="text" placeholder="Phone number" />
+        </label>
+        <label>Location (optional)
+          <input name="location" type="text" placeholder="Town, city or region" />
+        </label>
+        <label>How can we help?
+          <select name="helpType">
+            <option value="General question">General question</option>
+            <option value="Prayer request">Prayer request</option>
+            <option value="Bible study help">Bible study help</option>
+            <option value="Want to talk">I would like someone to contact me</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" required placeholder="Tell us whatever you would like us to know."></textarea>
+        </label>
+        <div class="modal-actions">
+          <button class="btn btn-dark" type="submit">Send message</button>
+          <button class="btn btn-outline" type="button" data-modal-close>Cancel</button>
+        </div>
+        <div id="connectStatus" class="form-status" aria-live="polite"></div>
+      </form>
+      <iframe id="contactResponseFrame" name="contactResponseFrame" title="Contact form response" hidden></iframe>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="lessons.js"></script>
+  <script src="image-map.js"></script>
+  <script src="lesson-depth.js"></script>
+  <script src="principles.js"></script>
+  <script src="site-config.js"></script>
+  <script src="app.js?v=11"></script>
+  <script src="bible-reader.js"></script>
+  <script src="image-gallery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="account.js?v=20"></script>
+  </body>
+</html>
