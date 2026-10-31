@@ -20,13 +20,13 @@ const STUDIES = [
         "2 Timothy 3:16; 2 Peter 1:21"
       ],
       [
-        "Look at the picture of God",
-        "One of its central claims is that God is love. Jesus’ life and sacrifice bring that claim into focus. Test what you learn against the character of Jesus.",
+        "Let’s take a look at the picture of God as portrayed in the Bible",
+        "One of its central claims is that God is love. Jesus’ life and sacrifice bring that claim into focus.",
         "1 John 4:8; John 3:16"
       ],
       [
-        "Examine the evidence",
-        "The original study considers fulfilled prophecy, the Bible’s unity, its transmission and lives changed by its message. Daniel 2 introduces a sequence of kingdoms and a final kingdom God Himself establishes.",
+        "What about some evidence",
+        "The harmony of the Bible throughout the ages, despite being written by different authors, testifies to its unity. The countless lives changed by its message further strengthen its reliability. But one of the greatest pieces of evidence of the Bible's trustworthiness is prophecy! Daniel chapter 2 gives us a remarkable example of this, revealing a succession of world kingdoms and ultimately a final kingdom that God Himself will establish.",
         "Daniel 2:31–45"
       ]
     ],

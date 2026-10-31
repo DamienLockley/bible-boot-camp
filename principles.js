@@ -14,7 +14,7 @@ const CONNECTIONS = {
     [
       "A connected message across history",
       "Luke 24:25–27; Daniel 2:36–45",
-      "The Bible has different kinds of writing: history tells what happened, poetry expresses worship and pain, letters address real communities, and prophecy calls people back to God and points forward. We should not read every kind of writing as though it were identical. Daniel 2, for example, uses a statue to portray the succession and limits of human kingdoms; the climax is that God establishes a kingdom that will not pass away. The lasting hope matters more than excitement over a chart."
+      "The Bible has different kinds of writing: history tells what happened, poetry expresses worship and pain, letters address real communities, and prophecy calls people back to God and points forward. We should not read every kind of writing as though it were identical. Daniel 2, for example, uses a statue to portray the succession and limits of human kingdoms; the climax is that God establishes a kingdom that will not pass away."
     ],
     [
       "A thoughtful way to study",

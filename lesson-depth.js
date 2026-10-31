@@ -13,7 +13,7 @@ const DEPTH = {
       [
         "1 John 4:8; John 3:16–17; Romans 8:38–39",
         "Start with the character of God",
-        "The document tests Scripture first by its picture of God: unselfish love. John does not say that God learned to love us after Jesus died. He says that love was the reason Jesus came. This matters when someone approaches the Bible fearing an angry, distant God.",
+        "Understand Scripture first by its picture of God: unselfish love. John does not say that God learned to love us after Jesus died. He says that love was the reason Jesus came. This matters when someone approaches the Bible fearing an angry, distant God.",
         "Does John say God loved us before or after the sacrifice of Jesus?",
         "God loved us first; the giving of Jesus reveals that love rather than creating it."
       ],
@@ -27,7 +27,7 @@ const DEPTH = {
       [
         "Daniel 2:1–23, 31–45",
         "The king’s dream and Daniel’s faith",
-        "Nebuchadnezzar dreamed of a great statue made of different materials. Daniel was unable to solve the mystery by intelligence alone; he sought God with his friends and then gave God the credit. The statue outlines successive kingdoms, ending with a kingdom established by God. Notice that the heart of the chapter is not the metal but the King who outlasts every human empire.",
+        "Nebuchadnezzar dreamed of a great statue made of different materials. Daniel was unable to solve the mystery by intelligence alone; he sought God with his friends and then gave God the credit. The statue outlines successive kingdoms, ending with a kingdom established by God. Notice that the heart of the chapter is not the metal man but the King who outlasts every human empire.",
         "What did Daniel do before giving the king an answer, and who received the credit?",
         "He prayed with his friends for mercy and wisdom, then praised God for revealing the mystery."
       ],
@@ -41,12 +41,12 @@ const DEPTH = {
       [
         "Acts 17:10–12; 2 Timothy 2:15",
         "Test what you hear",
-        "Evidence for the Bible involves more than a quotation or a striking number. Manuscripts and historical claims should be checked carefully, and differences between ancient copies do exist. The Bereans were commended because they examined the Scriptures daily. You may do the same with everything on this website.",
-        "How did the Bereans respond when they heard a religious claim?",
-        "They listened and then examined Scripture for themselves rather than accepting a claim untested."
+        "Evidence for the Bible involves more than a quotation or a striking number.  The Bereans were commended because they examined the Scriptures daily. You may do the same with everything on this website.",
+        "How did the Bereans respond when they heard a religious teaching or claim?",
+        "They listened and then examined Scripture for themselves rather than accepting it untested."
       ]
     ],
-    "practice": "Read Daniel 2 in one sitting. Write down (1) what troubles the king, (2) Daniel’s response, (3) the sequence of the statue, and (4) what God’s final kingdom reveals about His plans."
+    "practice": "Read Daniel 2 in one sitting. Write down (1) what troubles the king, (2) Daniel’s response, (3) the sequence of the statue kingdoms, and (4) what God’s final kingdom reveals about His plans."
   },
   "controversy": {
     "principle": "Love cannot be forced. Scripture presents evil as a real enemy of God’s good creation, not as a part of God’s original purpose. Jesus reveals God’s answer through self-sacrificing love and the promise that evil will end.",
