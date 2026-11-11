@@ -23,19 +23,13 @@ const START_HERE = {
     {
       "heading": "Your personal journey",
       "paragraphs": [
-        "You can write private reflections as you study. If you sign in, your study progress and notes can be saved to your account. If you prefer not to register, they can be stored in this browser, but clearing browser data may erase them. You’ll need to create an account to move to the next studies."
-      ]
-    },
-    {
-      "heading": "Worried about your future or what’s really happening in the world?",
-      "paragraphs": [
-        "Take the journey just like I did over 15 years ago and you won’t regret it. Jesus said you will find what you are looking for (Matt 7:7). If you want answers, assurance of salvation and peace that you cannot find in the world, then you’ve come to the right place. The Bible has clear explanations of where we are in time and what’s coming next and what you should do to prepare."
+        "You can write private reflections as you study. If you sign in, your study progress and notes can be saved to your account. If you prefer not to register, they can be stored in this browser, but clearing browser data may erase them."
       ]
     },
     {
       "heading": "A simple invitation",
       "paragraphs": [
-        "Jesus said, “Come unto me, all ye that labour and are heavy laden, and I will give you rest” (Matthew 11:28, KJV). You are invited to discover for yourself who He is and what His power can do to transform your life."
+        "Jesus said, “Come unto me, all ye that labour and are heavy laden, and I will give you rest” (Matthew 11:28, KJV). You are invited to discover for yourself who He is and what His love means for your life."
       ]
     }
   ]

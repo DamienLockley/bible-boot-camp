@@ -34,7 +34,7 @@ const DEPTH = {
       [
         "Psalm 119:105; Luke 24:27; John 20:30–31",
         "One message across many books",
-        "The Bible displays unity across centuries, cultures and writers. The Bible includes poetry, history, letters and prophecy, yet repeatedly directs us toward God’s work to save. Jesus explained Scripture by showing how it pointed to Himself. Read passages in their setting rather than using a single isolated phrase to prove a point.",
+        "The document points to Scripture’s unity across centuries, cultures and writers. The Bible includes poetry, history, letters and prophecy, yet repeatedly directs us toward God’s work to save. Jesus explained Scripture by showing how it pointed to Himself. Read passages in their setting rather than using a single isolated phrase to prove a point.",
         "What unifying person and purpose should guide the way we read the Bible?",
         "Jesus and God’s saving work give the Bible its central story."
       ],

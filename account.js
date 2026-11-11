@@ -1,13 +1,12 @@
-/* Getting to Know Jesus: Firebase Authentication and Firestore account sync.
-   Firebase client configuration is public; never place service-account or Resend
-   secrets in browser code. */
+/* Get to Know Jesus - accounts and guided password recovery.
+   Supabase project URL and publishable key are read from site-config.js.
+   NEVER put service-role or Resend secrets in browser code. */
 (()=>{'use strict';
 const conf=window.SITE_CONFIG||{};
-let auth=null,db=null,current=null,hydrating=false,authFlow=false,view='signin',syncTimer=null;
-let actionCode='',actionMode='';
-const query=new URLSearchParams(location.search);
-const requestedAction=query.get('mode')||'';
-const requestedCode=query.get('oobCode')||'';
+const url=conf.supabaseUrl||'',key=conf.supabasePublishableKey||'';
+let client=null,current=null,hydrating=false,view='signin',recovery=false,syncTimer;
+const recoveryLink=/[?&]password-recovery=1(?:&|$)/.test(location.search)||/[#&]type=recovery(?:&|$)/.test(location.hash);
+let recoveryEventSeen=false;
 const button=document.createElement('button');
 button.type='button';button.className='btn btn-outline';button.textContent='My account';
 button.style.cssText='padding:9px 13px;white-space:nowrap;font-size:.83rem';
@@ -46,19 +45,12 @@ const css=document.createElement('style');css.textContent=`
 .account-dialog #accountPrimary{width:100%;justify-content:center}
 `;document.head.append(css);
 const $=id=>dialog.querySelector('#'+id),msg=text=>{$('accountStatus').textContent=text||''};
-function open(){if(!dialog.open)dialog.showModal()}
-function cleanActionUrl(){history.replaceState(null,'',location.pathname+location.hash)}
+function open(){if(!dialog.open)dialog.showModal();}
 function mode(next,keepMessage=false){
  view=next;const signed=!!current;
  const titles={signin:'Welcome back',signup:'Create your account',forgot:'Forgot your password?',recovery:'Choose a new password',signed:'My Bible study account'};
  $('accountHeading').textContent=titles[next]||titles.signin;
- $('accountDescription').textContent=({
-   signin:'Sign in to continue your Bible studies on any device.',
-   signup:'Create a free account to save your progress.',
-   forgot:'Enter your email address and we will send you a password reset link.',
-   recovery:'Enter and confirm a new password to finish resetting your account.',
-   signed:`Signed in as ${current?.email||''}. Your progress is stored in your account.`
- })[next];
+ $('accountDescription').textContent=({signin:'Sign in to continue your Bible studies on any device.',signup:'Create a free account to save your progress.',forgot:'Enter your email address and we will send you a password reset link.',recovery:'Enter and confirm a new password to finish resetting your account.',signed:`Signed in as ${current?.email||''}. Your progress is stored in your account.`})[next];
  $('accountForm').hidden=next==='signed';$('accountLogout').hidden=next!=='signed';
  $('accountEmailLabel').hidden=next==='recovery';
  $('accountPasswordLabel').hidden=next==='forgot';$('accountConfirmLabel').hidden=next!=='recovery';
@@ -72,131 +64,60 @@ function mode(next,keepMessage=false){
  button.textContent=signed?'My account ✓':'My account';
 }
 function showNormal(){mode(current?'signed':'signin');open()}
-button.onclick=()=>{if(actionMode==='resetPassword')mode('recovery',true);else showNormal();open()};
+button.onclick=()=>{if(recovery)mode('recovery',true);else showNormal();open()};
 $('accountClose').onclick=()=>dialog.close();
 $('accountForgot').onclick=()=>mode('forgot');$('accountRegister').onclick=()=>mode('signup');$('accountBack').onclick=()=>mode('signin');
-function firebaseError(error){
- const messages={
-  'auth/invalid-credential':'Email or password is incorrect.',
-  'auth/invalid-email':'Enter a valid email address.',
-  'auth/user-disabled':'This account is disabled. Please contact the website owner.',
-  'auth/too-many-requests':'Too many attempts. Wait a little while and try again.',
-  'auth/weak-password':'Choose a stronger password with at least 8 characters.',
-  'auth/email-already-in-use':'An account already exists for this email. Try signing in or resetting the password.',
-  'auth/expired-action-code':'This email link has expired. Request a new one.',
-  'auth/invalid-action-code':'This email link is invalid or has already been used. Request a new one if needed.'
- };
- return messages[error?.code]||error?.message||'The account request failed. Please try again.';
-}
-$('accountForm').onsubmit=async e=>{
- e.preventDefault();if(!auth||!db){msg('Firebase is not configured. Please contact the website owner.');return}
- const email=$('accountEmail').value.trim(),password=$('accountPassword').value;
+$('accountForm').onsubmit=async e=>{e.preventDefault();if(!client){msg('Accounts are not configured. Please contact the website owner.');return}
+ const email=$('accountEmail').value.trim();const password=$('accountPassword').value;
  if(view!=='recovery'&&!email){msg('Enter your email address.');return}
  if(view!=='forgot'&&password.length<8){msg('Password must be at least 8 characters long.');return}
  if(view==='recovery'&&password!==$('accountConfirmPassword').value){msg('The new passwords do not match.');return}
- $('accountPrimary').disabled=true;msg('Working…');
- try{
-   if(view==='signin'){
-     authFlow=true;
-     const credential=await auth.signInWithEmailAndPassword(email,password);
-     if(!credential.user.emailVerified){
-       await credential.user.sendEmailVerification({url:location.origin+location.pathname,handleCodeInApp:false});
-       await auth.signOut();current=null;authFlow=false;await onSession(null);
-       mode('signin',true);$('accountEmail').value=email;
-       msg('Please verify your email using the link we sent. We sent a fresh verification email just now.');open();return;
-     }
-     authFlow=false;
-     await onSession(credential.user);
-     msg('Signed in. Loading your saved progress…');mode('signed',true);
-   }
-   if(view==='signup'){
-     authFlow=true;
-     const credential=await auth.createUserWithEmailAndPassword(email,password);
-     await credential.user.sendEmailVerification({url:location.origin+location.pathname,handleCodeInApp:false});
-     await auth.signOut();current=null;authFlow=false;await onSession(null);
-     mode('signin',true);$('accountEmail').value=email;
-     msg('Your account is ready. Check your inbox and verify your email before signing in.');
-   }
-   if(view==='forgot'){
-     await auth.sendPasswordResetEmail(email,{url:location.origin+location.pathname,handleCodeInApp:false});
-     msg('If that address has an account, a password reset link will be emailed to you.');
-   }
+ $('accountPrimary').disabled=true;msg('Working…');try{
+   let response;const redirectTo=location.origin+location.pathname+(view==='forgot'?'?password-recovery=1':'');
+   if(view==='signin')response=await client.auth.signInWithPassword({email,password});
+   if(view==='signup')response=await client.auth.signUp({email,password,options:{emailRedirectTo:redirectTo}});
+   if(view==='forgot')response=await client.auth.resetPasswordForEmail(email,{redirectTo});
+   if(view==='recovery')response=await client.auth.updateUser({password});
+   if(response?.error)throw response.error;
+   if(view==='signup')msg('Check your inbox for your confirmation link.');
+   if(view==='forgot')msg('If that address has an account, a reset link will be emailed to you.');
+   if(view==='signin'){msg('Signed in. Loading your saved progress…');mode('signed',true)}
    if(view==='recovery'){
-     if(!actionCode)throw new Error('The password reset link could not be verified. Request a new reset email.');
-     await auth.confirmPasswordReset(actionCode,password);
-     actionCode='';actionMode='';cleanActionUrl();
-     $('accountPassword').value='';$('accountConfirmPassword').value='';
-     mode('signin',true);msg('Password updated successfully. You can now sign in.');open();
+      recovery=false;$('accountPassword').value='';$('accountConfirmPassword').value='';
+      // Remove recovery tokens from history once the client has processed the link.
+      if(recoveryLink || (location.hash&&/access_token=|type=recovery|error=/.test(location.hash)))history.replaceState(null,'',location.pathname);
+      mode(current?'signed':'signin',true);msg('Password updated successfully. You can now continue your studies.');open();
    }
- }catch(error){authFlow=false;msg(firebaseError(error))}
- finally{$('accountPrimary').disabled=false}
+ }catch(err){msg(err?.message||'Account request failed. Please try again.')}finally{$('accountPrimary').disabled=false}
 };
-$('accountLogout').onclick=async()=>{
- if(!auth)return;try{await auth.signOut();current=null;clearTimeout(syncTimer);mode('signin');msg('You have signed out.');}
- catch(error){msg(firebaseError(error))}
-};
+$('accountLogout').onclick=async()=>{if(!client)return;const {error}=await client.auth.signOut();if(error){msg(error.message);return}current=null;recovery=false;mode('signin');msg('You have signed out.');};
 function mergeData(cloud){const app=window.BIBLE_PROGRESS;if(!app)return;if(cloud&&typeof cloud==='object')app.replace(cloud);else scheduleSync()}
-async function loadCloud(user){
- if(!db||!user)return;hydrating=true;
- let hasCloudProgress=false,readSucceeded=false;
- try{
-   const snap=await db.collection('study_progress').doc(user.uid).get();
-   readSucceeded=true;
-   const cloud=snap.exists?snap.data()?.progress:null;
-   if(cloud&&typeof cloud==='object'){window.BIBLE_PROGRESS?.replace(cloud);hasCloudProgress=true}
- }
- catch(error){msg('Could not load online progress: '+firebaseError(error))}
- finally{hydrating=false;if(readSucceeded&&!hasCloudProgress)scheduleSync()}
-}
-async function flush(){
- if(!db||!current||hydrating)return;const data=window.BIBLE_PROGRESS?.get();if(!data)return;
- try{await db.collection('study_progress').doc(current.uid).set({progress:data,updated_at:firebase.firestore.FieldValue.serverTimestamp()})}
- catch(error){console.warn('Account save failed',error);msg('Online saving failed. Progress remains on this device.')}
-}
+async function loadCloud(user){if(!client||!user)return;hydrating=true;try{const {data,error}=await client.from('study_progress').select('progress').eq('user_id',user.id).maybeSingle();if(error)throw error;mergeData(data?.progress||null)}catch(e){msg('Could not load online progress: '+e.message)}finally{hydrating=false}}
+async function flush(){if(!client||!current||hydrating)return;const data=window.BIBLE_PROGRESS?.get();if(!data)return;const {error}=await client.from('study_progress').upsert({user_id:current.id,progress:data,updated_at:new Date().toISOString()},{onConflict:'user_id'});if(error){console.warn('Account save failed',error);msg('Online saving failed. Progress remains on this device.')}}
 function scheduleSync(){if(hydrating||!current)return;clearTimeout(syncTimer);syncTimer=setTimeout(flush,800)}
 window.BIBLE_ACCOUNT={save:scheduleSync,isSignedIn:()=>!!current};
-async function onSession(user){
- const nextUser=user?.emailVerified?user:null;
- const changed=current?.uid!==nextUser?.uid;
- if(changed){clearTimeout(syncTimer);hydrating=true}
- current=nextUser;
- window.BIBLE_ALL_UNLOCKED=false;window.dispatchEvent(new Event('bible-access-changed'));
- if(actionMode!=='resetPassword')mode(current?'signed':'signin',true);
- if(!current){hydrating=false;return}
- if(changed)await loadCloud(current);
- const requestedUid=current?.uid;if(!requestedUid)return;
- try{
-   const snap=await db.collection('study_access').doc(requestedUid).get();
-   if(current?.uid!==requestedUid)return;
-   window.BIBLE_ALL_UNLOCKED=snap.exists&&snap.data()?.all_studies_unlocked===true;
-   window.dispatchEvent(new Event('bible-access-changed'));
- }catch(error){console.warn('Could not check special study access:',error)}
- finally{hydrating=false}
+async function onSession(user){const prior=current?.id;current=user||null;
+ // Never discard the password recovery view while Supabase refreshes a session.
+ if(!recovery)mode(current?'signed':'signin',true);
+ if(current&&prior!==current.id)await loadCloud(current);
 }
-async function handleEmailAction(){
- if(!requestedAction||!requestedCode)return;
- actionMode=requestedAction;actionCode=requestedCode;open();
- try{
-   if(requestedAction==='verifyEmail'){
-     await auth.applyActionCode(requestedCode);actionCode='';actionMode='';cleanActionUrl();
-     mode('signin',true);msg('Email verified. You can now sign in.');return;
-   }
-   if(requestedAction==='resetPassword'){
-     const email=await auth.verifyPasswordResetCode(requestedCode);
-     $('accountEmail').value=email;mode('recovery');msg('Enter a new password to finish resetting your account.');return;
-   }
-   actionCode='';actionMode='';cleanActionUrl();mode('signin',true);
-   msg('This email link type is not supported here. Return to the site and request a new link.');
- }catch(error){
-   actionCode='';actionMode='';cleanActionUrl();mode('signin',true);msg(firebaseError(error));
- }
+function enterRecovery(){recoveryEventSeen=true;recovery=true;mode('recovery');msg('Your reset link is verified. Choose a new password.');open();setTimeout(()=>$('accountPassword').focus(),0)}
+if(url&&key){
+ if(!window.supabase?.createClient){msg('Account library unavailable. Check your internet connection and reload.');return}
+ client=window.supabase.createClient(url,key,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+ // The recovery event arrives asynchronously after the Supabase client processes the URL.
+ client.auth.onAuthStateChange((event,session)=>{setTimeout(()=>{
+   if(event==='PASSWORD_RECOVERY'){current=session?.user||current;enterRecovery();return}
+   if(recoveryLink && session?.user && !recoveryEventSeen){current=session.user;enterRecovery();return}
+   onSession(session?.user||null);
+ },0)});
+ client.auth.getSession().then(({data,error})=>{
+   if(recoveryLink){
+     if(data?.session?.user){current=data.session.user;enterRecovery()}
+     else if(!recoveryEventSeen){
+       mode('signin');msg(error?.message||'This password-reset link has expired or could not be verified. Select Forgot password? to request a fresh link.');open();
+     }
+   } else if(!recovery){onSession(data?.session?.user||null)}
+ }).catch(err=>{if(recoveryLink){mode('signin');msg(err?.message||'Password reset could not be verified. Request a new link.');open()}});
 }
-if(window.firebase&&conf.firebaseConfig?.apiKey){
- try{
-   const app=window.firebase.apps.length?window.firebase.app():window.firebase.initializeApp(conf.firebaseConfig);
-   auth=app.auth();db=app.firestore();
-   auth.onAuthStateChanged(user=>{if(authFlow)return;if(user&&!user.emailVerified){auth.signOut();return}onSession(user)});
-   if(requestedAction&&requestedCode)handleEmailAction();
- }catch(error){console.error('Firebase account startup failed:',error);msg('Account services could not be started. Please reload or contact the website owner.')}
-}else{console.error('Firebase SDK or public configuration is missing.')}
 })();
