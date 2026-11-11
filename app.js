@@ -102,9 +102,15 @@ function renderCards(){
   el.innerHTML=results.length?results.map((s,i)=>card(s,ORDER.indexOf(s))).join(''):`<div class="empty" style="grid-column:1/-1"><h3>No matching studies</h3><p class="muted">Try a simpler search.</p><button class="btn btn-outline" data-action="clear-search">Clear search</button></div>`;
 }
 
+function renderStartHere(){
+  const items=(START_HERE.sections||[]).map(s=>`<section class="panel"><h2>${esc(s.heading)}</h2>${(s.paragraphs||[]).map(p=>`<p>${bibleRef(esc(p))}</p>`).join('')}</section>`).join('');
+  main.innerHTML=`<header class="detail-head"><a class="back-button" href="#">← Back to studies</a><span class="kicker">WELCOME • START HERE</span><h1>Getting to Know Jesus</h1><p class="lead">Your introduction to the Bible study journey</p></header><div class="detail-main">${items}<div class="foot-actions"><a class="btn btn-primary" href="#study=${esc(ORDER[0].id)}">Begin Study 1 →</a></div></div>`;
+}
+
 function renderHome(){
   const next=nextStudy()||ORDER[0];
   main.innerHTML=`<section class="hero"><div class="hero-copy"><span class="kicker">BIBLE STUDIES TO DISCOVER TRUTH</span><h1>Discover God.<br>Discover truth.</h1><p>Clear Bible studies for people who want to understand Scripture step by step. Each lesson unlocks after the one before it is completed.</p><button class="btn btn-primary" data-study="${esc(next.id)}">${user.completed.length?'Continue with '+esc(next.title):'Begin with '+esc(next.title)} <span aria-hidden="true">→</span></button><div class="hero-stats"><span>✦ ${ORDER.length} studies</span><i class="dot"></i><span>Bible based</span><i class="dot"></i><span>One lesson at a time</span></div></div><div class="hero-art"><div class="verse">“You shall know the truth, and the truth shall make you free.”<span>JOHN 8:32</span></div></div></section>
+    <section class="panel" style="margin:18px 0 24px;padding:22px;border:2px solid #4a8f80"><span class="kicker">NEW HERE? BEGIN HERE</span><h2 style="margin:9px 0">Start Here — Introduction</h2><p>A friendly welcome and guide to using the Bible studies. Always available, and not part of the 28 numbered studies.</p><a class="btn btn-primary" href="#start-here">Open Start Here →</a></section>
     ${progressBanner()}
     <section class="feature-row" aria-label="How these studies work"><div class="feature"><div class="glyph">📖</div><div><strong>Simple Bible teaching</strong><p>Each study explains the topic in plain language without assuming prior knowledge.</p></div></div><div class="feature"><div class="glyph">💬</div><div><strong>Real-life questions</strong><p>Each lesson answers honest questions people commonly ask when discovering faith.</p></div></div><div class="feature"><div class="glyph">🔓</div><div><strong>Guided pathway</strong><p>Studies stay in order so each lesson builds naturally on the one before it.</p></div></div></section>
     <div id="library" class="section-head"><div><span class="kicker">YOUR STUDY PATHWAY</span><h2>Study in order</h2><p>Search the library below. Locked studies will open as you complete each lesson in sequence.</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div>
@@ -184,6 +190,8 @@ function route(){
   if(study&&STUDIES.some(x=>x.id===study)){
     if(!isUnlocked(study)){document.getElementById('homeTab').classList.add('active');renderHome();toast(`Complete the earlier studies first to unlock that lesson.`)}
     else{document.getElementById('homeTab').classList.add('active');renderStudy(STUDIES.find(s=>s.id===study));}
+  }else if(hash==='#start-here'){
+    document.getElementById('homeTab').classList.add('active');renderStartHere();
   }else if(hash==='#journey'){
     document.getElementById('progressTab').classList.add('active');renderJourney();
   }else if(hash==='#about'){
