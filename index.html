@@ -1,94 +1,62 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#21483e" />
-  <meta name="description" content="Get to Know Jesus — clear, Bible-based studies for learners." />
-  <title>Get to Know Jesus</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21483e">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Get to Know Jesus is temporarily under review. Please come back later.">
+  <title>Get to Know Jesus — Site Under Review</title>
+  <style>
+    :root { color-scheme:light; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:#f5f7f3; color:#253c32; display:flex; flex-direction:column; }
+    .site-header { background:#21483e; color:#fff; box-shadow:0 2px 8px #1b3d3025; }
+    .topbar { max-width:1160px; margin:auto; padding:18px 24px; display:flex; gap:13px; align-items:center; }
+    .mark { width:43px;height:43px; flex:none; display:grid;place-items:center; border:1px solid #c9dbbb90; border-radius:13px; color:#e8d4a6; font-size:26px; }
+    .brand strong { display:block; letter-spacing:.01em; font-size:19px; }
+    .brand small { display:block; letter-spacing:.12em; font-size:10px; margin-top:4px; color:#d6e4d9; }
+    main { flex:1; width:100%; display:grid;place-items:center; padding:54px 20px 68px; }
+    .panel { width:min(100%,780px); text-align:center; padding:clamp(32px,6vw,66px) clamp(22px,5vw,55px); background:#fff; border:1px solid #e0e7de; border-radius:23px; box-shadow:0 14px 50px #21483e0e; }
+    .symbol { display:grid;place-items:center; width:70px;height:70px;margin:0 auto 22px; border-radius:50%; background:#edf4ed; font-size:30px; color:#2f6755; }
+    .eyebrow { font-size:12px; text-transform:uppercase; font-weight:750;letter-spacing:.16em; color:#467563; }
+    h1 { font-size:clamp(31px,5vw,47px);letter-spacing:-.035em;line-height:1.13;margin:17px 0 20px;color:#21483e; }
+    p { color:#4a5e55; font-size:clamp(16px,2vw,19px); line-height:1.7; margin:0 auto;max-width:560px; }
+    .line { width:56px;height:3px;background:#c9b17c;border-radius:10px;margin:28px auto; }
+    .thanks { font-size:16px; }
+    footer { text-align:center; color:#6c7d73; padding:0 20px 28px; font-size:13px; }
+    @media(max-width:600px) { .topbar{padding:15px 18px}.brand strong{font-size:17px}main{padding:30px 15px 45px}.panel{border-radius:17px} }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to the Bible studies</a>
   <header class="site-header">
-    <div class="shell topbar">
-      <button class="brand" id="brandButton" type="button" aria-label="Go to home">
-        <span class="brand-mark" aria-hidden="true">✦</span>
-        <span><strong>Get to Know Jesus</strong><small>BIBLE-BASED STUDY JOURNEY</small></span>
-      </button>
-      <nav aria-label="Main navigation" class="main-nav">
-        <button id="homeTab" class="nav-link active" type="button">Studies</button>
-        <button id="progressTab" class="nav-link" type="button">My journey</button>
-        <button id="aboutTab" class="nav-link" type="button">About</button>
-      </nav>
-      <div class="header-actions">
-        <button id="connectButton" class="icon-button" type="button" data-action="connect" aria-label="Connect or get help" title="Connect or Get Help">✉</button>
-        <button id="fontButton" class="icon-button" type="button" aria-label="Change reading text size" title="Change text size">Aa</button>
-        <button id="themeButton" class="icon-button" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
-      </div>
+    <div class="topbar">
+      <span class="mark" aria-hidden="true">✦</span>
+      <span class="brand"><strong>Get to Know Jesus</strong><small>BIBLE-BASED STUDY JOURNEY</small></span>
     </div>
   </header>
-  <main id="main" class="shell" tabindex="-1" aria-live="polite"></main>
-  <footer class="site-footer shell">
-    <div><strong>Get to Know Jesus</strong></div>
-    <div>Simple Bible-based studies to help people discover truth step by step.</div>
-  </footer>
-
-  <div id="connectModal" class="modal" hidden>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="connectTitle">
-      <div class="modal-head">
-        <h2 id="connectTitle">Connect / Get Help</h2>
-        <button class="icon-button" type="button" data-modal-close aria-label="Close">✕</button>
-      </div>
-      <p class="modal-copy">Ask a question, request prayer or get in touch. Your email address is required so we can reply. Other details are optional and will be shared only if you choose to include them.</p>
-      <form id="connectForm" class="connect-form" method="post" target="contactResponseFrame">
-        <input type="hidden" name="nonce" id="contactNonce" value="">
-        <input type="hidden" name="startedAt" id="contactStarted" value="">
-        <div class="honeypot" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-        <label>Email address
-          <input id="connectEmail" name="email" type="email" required placeholder="your@email.com" />
-        </label>
-        <label>Name (optional)
-          <input name="name" type="text" placeholder="Your name" />
-        </label>
-        <label>Phone (optional)
-          <input name="phone" type="text" placeholder="Phone number" />
-        </label>
-        <label>Location (optional)
-          <input name="location" type="text" placeholder="Town, city or region" />
-        </label>
-        <label>How can we help?
-          <select name="helpType">
-            <option value="General question">General question</option>
-            <option value="Prayer request">Prayer request</option>
-            <option value="Bible study help">Bible study help</option>
-            <option value="Want to talk">I would like someone to contact me</option>
-          </select>
-        </label>
-        <label>Message
-          <textarea name="message" required placeholder="Tell us whatever you would like us to know."></textarea>
-        </label>
-        <div class="modal-actions">
-          <button class="btn btn-dark" type="submit">Send message</button>
-          <button class="btn btn-outline" type="button" data-modal-close>Cancel</button>
-        </div>
-        <div id="connectStatus" class="form-status" aria-live="polite"></div>
-      </form>
-      <iframe id="contactResponseFrame" name="contactResponseFrame" title="Contact form response" hidden></iframe>
-    </div>
-  </div>
-
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="lessons.js"></script>
-  <script src="start-here.js"></script>
-  <script src="image-map.js"></script>
-  <script src="lesson-depth.js"></script>
-  <script src="principles.js"></script>
-  <script src="site-config.js"></script>
-  <script src="app.js?v=12"></script>
-  <script src="bible-reader.js"></script>
-  <script src="image-gallery.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-  <script src="account.js?v=12"></script>
+  <main>
+    <section class="panel" aria-labelledby="page-title">
+      <div class="symbol" aria-hidden="true">✦</div>
+      <div class="eyebrow">A short break while we improve our studies</div>
+      <h1 id="page-title">Site Under Review</h1>
+      <p>We're taking some time to review and improve our Bible studies so they are clearer and easier to follow.</p>
+      <div class="line" aria-hidden="true"></div>
+      <p class="thanks">Thank you for your patience. Please come back later.</p>
+    </section>
+  </main>
+  <footer>Get to Know Jesus · Getting to know Him through His Word</footer>
+  <script>
+    // If an older installable version of the student site is controlling this URL,
+    // unregister its root-scope service worker so this temporary page can appear.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(registrations => {
+        registrations.forEach(registration => {
+          const scope = new URL(registration.scope);
+          if (scope.origin === location.origin && scope.pathname === '/') registration.unregister();
+        });
+      }).catch(() => {});
+    }
+  </script>
 </body>
 </html>
