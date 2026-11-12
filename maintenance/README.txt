@@ -1,0 +1,36 @@
+GETTING TO KNOW JESUS - MAINTENANCE SWITCH
+
+1. Copy this entire maintenance folder into the ROOT of your local
+   bible-boot-camp GitHub repository, beside its index.html file.
+2. Double-click ENABLE_MAINTENANCE.bat to save the current root index.html
+   as maintenance/index-normal.html and activate the maintenance page.
+3. In GitHub Desktop, review, commit and push the changes.
+4. When finished, double-click RESTORE_WEBSITE.bat and commit/push again.
+
+IMPORTANT:
+- This is a homepage maintenance notice, not a security lockout.
+  Other pages and Firebase services may still be reachable directly.
+- The included index-normal.html is a starter copy from the V21 converter.
+  ENABLE_MAINTENANCE replaces it with YOUR actual current root homepage.
+- If you update or rebuild the normal website while maintenance is active,
+  do not run RESTORE_WEBSITE blindly: the saved homepage may be older.
+  Restore your latest rebuilt homepage instead.
+- Keep this folder at the repository root; do not run it inside the
+  converter's site output folder unless that is the actual GitHub root.
+- The maintenance page does not load Firebase or Supabase scripts.
+
+
+bible-boot-camp/
+¦
++-- index.html                  ? Active website
++-- app.js
++-- account.js
++-- site-config.js
++-- ... other website files
+¦
++-- maintenance/
+    +-- index-normal.html
+    +-- index-maintenance.html
+    +-- ENABLE_MAINTENANCE.bat
+    +-- RESTORE_WEBSITE.bat
+    +-- README.txt

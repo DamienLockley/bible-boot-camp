@@ -105,7 +105,10 @@ function renderHome(){
   const next=nextStudy()||ORDER[0];
   main.innerHTML=`<section class="hero"><div class="hero-copy"><span class="kicker">BIBLE STUDIES TO DISCOVER TRUTH</span><h1>Discover God.<br>Discover truth.</h1><p>Clear Bible studies for people who want to understand Scripture step by step. Each lesson unlocks after the one before it is completed.</p><button class="btn btn-primary" data-study="${esc(next.id)}">${user.completed.length?'Continue with '+esc(next.title):'Begin with '+esc(next.title)} <span aria-hidden="true">→</span></button><div class="hero-stats"><span>✦ ${ORDER.length} studies</span><i class="dot"></i><span>Bible based</span><i class="dot"></i><span>One lesson at a time</span></div></div><div class="hero-art"><div class="verse">“You shall know the truth, and the truth shall make you free.”<span>JOHN 8:32</span></div></div></section>
     <section class="panel" style="margin:18px 0 24px;padding:22px;border:2px solid #4a8f80"><span class="kicker">NEW HERE? BEGIN HERE</span><h2 style="margin:9px 0">Start Here — Introduction</h2><p>A friendly welcome and guide to using the Bible studies. Always available, and not part of the 28 numbered studies.</p><a class="btn btn-primary" href="#start-here">Open Start Here →</a></section>
-    ${progressBanner()}
+    <div class="welcome-guide-grid">
+      <section class="panel how-guide-panel"><span class="kicker">BEFORE YOU BEGIN</span><h2>How Do You Study the Bible?</h2><p>Ten practical principles to help you read Scripture, understand its meaning and discover the truth for yourself. This is a free introductory guide, not a numbered study.</p><a class="btn btn-primary" href="how-to-study-the-bible.html">Read How to Study →</a></section>
+      <div class="welcome-progress">${progressBanner()}</div>
+    </div>
     <section class="feature-row" aria-label="How these studies work"><div class="feature"><div class="glyph">📖</div><div><strong>Simple Bible teaching</strong><p>Each study explains the topic in plain language without assuming prior knowledge.</p></div></div><div class="feature"><div class="glyph">💬</div><div><strong>Real-life questions</strong><p>Each lesson answers honest questions people commonly ask when discovering faith.</p></div></div><div class="feature"><div class="glyph">🔓</div><div><strong>Guided pathway</strong><p>Studies stay in order so each lesson builds naturally on the one before it.</p></div></div></section>
     <div id="library" class="section-head"><div><span class="kicker">YOUR STUDY PATHWAY</span><h2>Study in order</h2><p>Search the library below. Locked studies will open as you complete each lesson in sequence.</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div>
     <div class="library-control"><div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Search a topic or question..." aria-label="Search Bible study topics" value="${esc(state.search)}" /></div></div>
@@ -328,3 +331,6 @@ window.BIBLE_PROGRESS={get:()=>JSON.parse(JSON.stringify(user)),replace:(data)=>
 applyTheme();
 route();
 })();
+
+// Direct links from the introductory guide to the existing Get Help form.
+window.addEventListener('load',()=>{if(location.hash==='#help'){document.querySelector('[data-action="connect"]')?.click();}});

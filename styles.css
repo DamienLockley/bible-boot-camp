@@ -84,3 +84,13 @@ button:disabled{cursor:not-allowed;opacity:.5}
 .image-zoom-modal .zoom-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:5px 0 10px}
 .image-zoom-modal button{background:#fff;color:#19362e;border:0;padding:8px 13px;border-radius:9px;cursor:pointer}
 @media(max-width:500px){.study-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.study-gallery .image-zoom-button img{height:135px}.study-gallery{padding:10px}}
+
+/* Introductory guide beside progress, responsive on phones */
+.welcome-guide-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:stretch;margin:0 0 25px}
+.welcome-guide-grid .how-guide-panel{margin:0;border:2px solid #4a8f80;padding:22px;display:flex;flex-direction:column;align-items:flex-start}
+.welcome-guide-grid .how-guide-panel h2{font-size:clamp(1.5rem,2.5vw,2rem);margin:9px 0}
+.welcome-guide-grid .how-guide-panel p{font-size:.94rem;line-height:1.6;flex:1}
+.welcome-guide-grid .welcome-progress{min-width:0}
+.welcome-guide-grid .progress-banner{height:100%;margin:0;gap:16px;flex-wrap:wrap;align-content:center}
+.welcome-guide-grid .progress-caption{flex:1;min-width:150px}
+@media(max-width:800px){.welcome-guide-grid{grid-template-columns:1fr}.welcome-guide-grid .progress-banner{min-height:110px}}
