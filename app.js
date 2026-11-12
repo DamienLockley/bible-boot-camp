@@ -18,6 +18,7 @@ const user={
 };
 const state={search:''};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+window.GTKJ_STUDY_CHOICES=STUDIES.map(s=>({id:s.id,title:s.title}));
 const ORDER=STUDIES; // The original document’s heading order is the course order.
 const STUDY_ART={
  word:'word', controversy:'controversy', spirit:'spirit', sanctuary:'sanctuary',
@@ -45,6 +46,8 @@ function isUnlocked(id){
   const ix=ORDER.findIndex(s=>s.id===id);
   if(ix===-1) return false;
   if(completed(id)) return true;
+  if(window.BIBLE_ALL_UNLOCKED===true) return true;
+  if(Array.isArray(window.BIBLE_SELECTED_STUDIES)&&window.BIBLE_SELECTED_STUDIES.includes(id)) return true;
   return ix<=unlockedIndex();
 }
 function nextStudy(){
@@ -323,6 +326,7 @@ document.getElementById('aboutTab').addEventListener('click',()=>nav('about'));
 document.getElementById('themeButton').addEventListener('click',()=>{user.theme=user.theme==='light'?'dark':'light';save();applyTheme()});
 document.getElementById('fontButton').addEventListener('click',()=>{user.font=(user.font+1)%4;save();applyTheme();toast(['Standard text','Larger text','Even larger text','Extra-large text'][user.font])});
 window.addEventListener('hashchange',route);
+window.addEventListener('bible-access-changed',route);
 modal.addEventListener('click',e=>{if(e.target===modal) closeConnect()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden) closeConnect()});
 connectForm.addEventListener('submit',submitConnectForm);

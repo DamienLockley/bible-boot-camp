@@ -160,7 +160,7 @@ async function onSession(user){
  const changed=current?.uid!==nextUser?.uid;
  if(changed){clearTimeout(syncTimer);hydrating=true}
  current=nextUser;
- window.BIBLE_ALL_UNLOCKED=false;window.dispatchEvent(new Event('bible-access-changed'));
+ window.BIBLE_SELECTED_STUDIES=[];window.BIBLE_ALL_UNLOCKED=false;window.dispatchEvent(new Event('bible-access-changed'));
  if(actionMode!=='resetPassword')mode(current?'signed':'signin',true);
  if(!current){hydrating=false;return}
  if(changed)await loadCloud(current);
@@ -169,6 +169,7 @@ async function onSession(user){
    const snap=await db.collection('study_access').doc(requestedUid).get();
    if(current?.uid!==requestedUid)return;
    window.BIBLE_ALL_UNLOCKED=snap.exists&&snap.data()?.all_studies_unlocked===true;
+   window.BIBLE_SELECTED_STUDIES=Array.isArray(snap.data()?.selected_studies)?snap.data().selected_studies:[];
    window.dispatchEvent(new Event('bible-access-changed'));
  }catch(error){console.warn('Could not check special study access:',error)}
  finally{hydrating=false}
