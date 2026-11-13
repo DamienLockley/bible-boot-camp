@@ -25,10 +25,39 @@ Object.assign(aliases,{psalm:'Psalms',mat:'Matthew',mt:'Matthew',mk:'Mark',lk:'L
 const bookExpr=String.raw`(?:(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev))`;
 const refPattern=new RegExp(String.raw`\b${bookExpr}\.?\s*\d{1,3}(?:\s*[:：]\s*\d{1,3}(?:\s*[-–]\s*\d{1,3})?(?:\s*[,;]\s*\d{1,3}(?:\s*[:：]\s*\d{1,3})?(?:\s*[-–]\s*\d{1,3})?)*)?`,'gi');
 function extractReferences(h){const tmp=document.createElement('div');tmp.innerHTML=h;const text=tmp.textContent||'';return [...new Set((text.match(refPattern)||[]).map(s=>stamp(s)).filter(s=>/\d/.test(s)))].slice(0,160)}
-function enhanceNotes(root){for(const p of root.querySelectorAll('p')){const t=p.textContent.trim();if(/^Question\s*:/i.test(t))p.classList.add('question-line');if(/^Answer\s*:/i.test(t))p.classList.add('answer-line')}
-const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];let n;while(n=walker.nextNode()){if(!n.nodeValue.trim()||n.parentElement.closest('button,a,code,pre,script,style'))continue;refPattern.lastIndex=0;if(refPattern.test(n.nodeValue))nodes.push(n)}for(const node of nodes){refPattern.lastIndex=0;const text=node.nodeValue,fragment=document.createDocumentFragment();let last=0,hit;while((hit=refPattern.exec(text))!==null){fragment.append(document.createTextNode(text.slice(last,hit.index)));const b=document.createElement('button');b.className='verse-ref';b.type='button';b.dataset.scripture=hit[0].trim();b.textContent=hit[0];b.title='Read in King James Version';fragment.append(b);last=hit.index+hit[0].length}fragment.append(document.createTextNode(text.slice(last)));node.replaceWith(fragment)}}
+function enhanceNotes(root){
+  // Word exports can split a reference between adjacent formatted runs:
+  // <strong>Ephesians 1: 1</strong><strong>3-14</strong>.
+  // Match against the paragraph's combined text, then replace the entire DOM range.
+  for(const p of root.querySelectorAll('p, li, td')){
+    const label=p.textContent.trim();
+    if(/^Question\s*:/i.test(label))p.classList.add('question-line');
+    if(/^Answer\s*:/i.test(label))p.classList.add('answer-line');
+    if(p.querySelector('a, button, script, style, code, pre'))continue;
+    const walker=document.createTreeWalker(p,NodeFilter.SHOW_TEXT);
+    const nodes=[];let node,text='';
+    while((node=walker.nextNode())){nodes.push({node,start:text.length,end:text.length+node.nodeValue.length});text+=node.nodeValue}
+    refPattern.lastIndex=0;
+    const matches=[...text.matchAll(refPattern)];
+    // Work backwards so later replacements cannot change earlier node offsets.
+    for(let i=matches.length-1;i>=0;i--){
+      const hit=matches[i],from=hit.index,to=from+hit[0].length;
+      const first=nodes.find(n=>n.start<=from&&from<n.end);
+      const last=nodes.find(n=>n.start<to&&to<=n.end);
+      if(!first||!last)continue;
+      const range=document.createRange();
+      range.setStart(first.node,from-first.start);
+      range.setEnd(last.node,to-last.start);
+      const b=document.createElement('button');
+      b.className='verse-ref';b.type='button';
+      b.dataset.scripture=hit[0].trim();b.textContent=hit[0];
+      b.title='Read in King James Version';
+      range.deleteContents();range.insertNode(b);
+    }
+  }
+}
 async function ensureKjv(){if(kjv)return kjv;if(!kjvLoading)kjvLoading=fetch('kjv-verses.json').then(r=>{if(!r.ok)throw Error('Bible file unavailable');return r.json()}).then(x=>kjv=x);return kjvLoading}
-function refToKeys(reference){let m=stamp(reference).match(/^(.+?)\.?\s*(\d{1,3})(?:\s*:\s*(.+))?$/);if(!m)return[];const book=aliases[m[1].toLowerCase().replace(/[^a-z0-9]/g,'')];if(!book)return[];let chapter=+m[2],keys=[];if(!m[3]){for(let v=1;v<=176;v++){let key=`${book} ${chapter}:${v}`;if(kjv[key])keys.push(key);else if(v>1)break}return keys.slice(0,176)}let rest=m[3].replace(/[–—]/g,'-');for(const part of rest.split(/[;,]/)){const t=part.trim();if(!t)continue;const withChapter=t.match(/^(\d+)\s*:\s*(\d+)(?:-(\d+))?$/);const only=t.match(/^(\d+)(?:-(\d+))?$/);if(withChapter)chapter=+withChapter[1];if(!withChapter&&!only)continue;const start=+(withChapter?withChapter[2]:only[1]),end=+(withChapter?(withChapter[3]||withChapter[2]):(only[2]||only[1]));if(start<1||end<start||end-start>150)continue;for(let v=start;v<=end&&keys.length<200;v++)keys.push(`${book} ${chapter}:${v}`)}return [...new Set(keys)]}
+function refToKeys(reference){let m=stamp(reference).match(/^(.+?)\.?\s*(\d{1,3})(?:\s*:\s*(.+))?$/);if(!m)return[];const book=aliases[m[1].toLowerCase().replace(/[^a-z0-9]/g,'')];if(!book)return[];let chapter=+m[2],keys=[];if(!m[3]){for(let v=1;v<=176;v++){let key=`${book} ${chapter}:${v}`;if(kjv[key])keys.push(key);else if(v>1)break}return keys.slice(0,176)}let rest=m[3].replace(/[–—−]/g,'-').replace(/\s*-\s*/g,'-').replace(/\s*[:：]\s*/g,':');for(const part of rest.split(/[;,]/)){const t=part.trim();if(!t)continue;const withChapter=t.match(/^(\d+)\s*:\s*(\d+)(?:-(\d+))?$/);const only=t.match(/^(\d+)(?:-(\d+))?$/);if(withChapter)chapter=+withChapter[1];if(!withChapter&&!only)continue;const start=+(withChapter?withChapter[2]:only[1]),end=+(withChapter?(withChapter[3]||withChapter[2]):(only[2]||only[1]));if(start<1||end<start||end-start>150)continue;for(let v=start;v<=end&&keys.length<200;v++)keys.push(`${book} ${chapter}:${v}`)}return [...new Set(keys)]}
 async function openVerse(ref){$('verseTitle').textContent=`${ref} — King James Version`;$('verseModal').classList.add('open');$('verseBody').innerHTML='<p class="status">Loading locally stored King James Version…</p>';try{await ensureKjv();let keys=refToKeys(ref);if(!keys.length){$('verseBody').innerHTML='<p class="status">This reference could not be interpreted. Please check the passage in your Bible.</p>';return}let found=keys.filter(k=>kjv[k]);if(!found.length){$('verseBody').innerHTML='<p class="status">That passage was not found in the stored KJV file. Please check the original reference.</p>';return}$('verseBody').innerHTML=found.map(k=>`<div class="bible-row"><b>${esc(k)}</b>${esc(kjv[k])}</div>`).join('')+(found.length<keys.length?'<p class="status">Some verses in this reference were unavailable.</p>':'')}catch(e){$('verseBody').innerHTML=`<p class="status">Could not open the local KJV text: ${esc(e.message)}. Please check that kjv-verses.json is present.</p>`}}
 function closeVerse(){$('verseModal').classList.remove('open')}
 function quickAccess(){const picks=[0,1,3,9,14];$('quickAccess').innerHTML=picks.map(i=>`<button class="navbtn side-link" data-open="${i}"><span class="side-icon">▤</span> ${esc(studies[i].title)}</button>`).join('')}
