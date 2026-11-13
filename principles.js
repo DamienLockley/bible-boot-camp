@@ -31,7 +31,7 @@ const CONNECTIONS = {
     [
       "Freedom makes love possible",
       "Joshua 24:15; Isaiah 14:12–15; Philippians 2:5–8",
-      "Loyalty obtained by force would be outward compliance, not genuine love. The contrast between self-exaltation and the humility of Jesus runs through this study. Scripture portrays the enemy seeking a position that belongs to God, while Christ chooses to serve and give Himself. The question is not merely who has greater power, but whose character can be trusted. Freedom involves the possibility of choosing wrongly, and those choices can harm others."
+      "Loyalty obtained by force would be outward compliance, not genuine love. The contrast between self-exaltation and the humility of Jesus is evident when we compare these passages. Scripture portrays the enemy seeking a position that belongs to God, while Christ chooses to serve and give Himself. The question is not merely who has greater power, but whose character can be trusted. Freedom involves the possibility of choosing wrong, and those choices can harm others."
     ],
     [
       "The cross answers accusations",
@@ -141,7 +141,7 @@ const CONNECTIONS = {
     [
       "The danger of religious power",
       "2 Thessalonians 2:3–12; Daniel 7:8, 24–25",
-      "These passages describe rebellion clothed with religious claims and power that opposes God. The study follows the successive kingdoms of Daniel before considering the later religious-political power. In that approach, the symbols concern systems and claims of authority rather than judging the heart of every person connected to an institution. God alone knows individuals. We can oppose false claims and religious coercion while treating people of every faith with dignity and love."
+      "These passages describe rebellion clothed with religious claims and power that opposes God. Daniel presents successive kingdoms before describing a later power that combines religious claims with political authority. In that approach, the symbols concern systems and claims of authority rather than judging the heart of every person connected to an institution. God alone knows individuals. We can oppose false claims and religious coercion while treating people of every faith with dignity and love."
     ],
     [
       "Worship cannot be compelled",
@@ -163,7 +163,7 @@ const CONNECTIONS = {
     [
       "Why the seventy weeks are understood as years",
       "Daniel 9:24–27; Numbers 14:34; Ezekiel 4:6",
-      "Seventy weeks contain 490 days. The study uses the prophetic day-for-year principle to understand that period as 490 years. This is an interpretive step that should be shown, not assumed: the examples in Numbers and Ezekiel illustrate how a day can stand for a year in a prophetic setting. After identifying the proposed starting decree, readers can follow the reasoning and check whether the resulting timeline fits the ministry of Jesus."
+      "Seventy weeks contain 490 days. In this interpretation, the prophetic day-for-year principle is used to understand that period as 490 years. This is an interpretive step that should be shown, not assumed: the examples in Numbers and Ezekiel illustrate how a day can stand for a year in a prophetic setting. After identifying the proposed starting decree, readers can follow the reasoning and check whether the resulting timeline fits the ministry of Jesus."
     ],
     [
       "The centre is the Messiah",
@@ -173,7 +173,7 @@ const CONNECTIONS = {
     [
       "The good news is for all people",
       "Acts 7:54–60; 8:1–8; 13:46–48",
-      "The source study associates the close of the seventy weeks with AD 34 and the widening proclamation after Stephen’s death. Acts shows both heartbreaking resistance and the gospel spreading beyond its earlier boundaries. It is important not to suggest that Jewish people ceased to matter to God or that individual Jewish believers were excluded. The message of Jesus is offered to Jew and Gentile alike. The lesson ends with confidence that God keeps His promise and calls every person."
+      "This prophetic interpretation associates the close of the seventy weeks with AD 34 and the widening proclamation after Stephen’s death. Acts shows both heartbreaking resistance and the gospel spreading beyond its earlier boundaries. It is important not to suggest that Jewish people ceased to matter to God or that individual Jewish believers were excluded. The message of Jesus is offered to Jew and Gentile alike. The lesson ends with confidence that God keeps His promise and calls every person."
     ]
   ],
   "history": [
@@ -234,7 +234,7 @@ const CONNECTIONS = {
     [
       "Follow the calculation carefully",
       "Daniel 8:14; 9:24–27",
-      "The study connects Daniel’s 2,300 prophetic evenings and mornings to the seventy-week prophecy. Using the day-for-year principle and the starting date of 457 BC, the longer period reaches 1844. The link between the chapters, the symbolic time principle and the historical starting point are interpretive steps. They need to be explained openly so learners can evaluate the Bible passages and reasoning for themselves. Do not confuse those steps with a date printed directly in the Bible."
+      "In the historicist interpretation, Daniel’s 2,300 evenings and mornings are connected to the seventy-week prophecy. Using the day-for-year principle and the starting date of 457 BC, the longer period reaches 1844. The link between the chapters, the symbolic time principle and the historical starting point are interpretive steps. They need to be explained openly so learners can evaluate the Bible passages and reasoning for themselves. Do not confuse those steps with a date printed directly in the Bible."
     ],
     [
       "Confidence in our High Priest",
@@ -251,7 +251,7 @@ const CONNECTIONS = {
     [
       "How the identification is reasoned",
       "Revelation 13:10–12; 17:15",
-      "The original study connects the beast’s emergence, geography and later influence with the rise of the United States. To follow the argument, keep the symbols and chronology separate: the sea is associated with peoples, the earth suggests a contrasting setting, and the second power becomes prominent as the first suffers captivity. Those clues are used in the historical identification; the verse itself does not name a modern country. Explaining the evidence carefully is more useful than presenting conclusions without a trail."
+      "The historicist interpretation connects the beast’s emergence, geography and later influence with the rise of the United States. To follow the argument, keep the symbols and chronology separate: the sea is associated with peoples, the earth suggests a contrasting setting, and the second power becomes prominent as the first suffers captivity. Those clues are used in the historical identification; the verse itself does not name a modern country. Explaining the evidence carefully is more useful than presenting conclusions without a trail."
     ],
     [
       "Liberty is a gift worth protecting",
@@ -261,14 +261,14 @@ const CONNECTIONS = {
     [
       "The lasting choice is whom we trust",
       "Revelation 14:6–12; John 8:31–36",
-      "The final appeal of prophecy is positive: worship the Creator and remain faithful to Jesus. A person can understand every symbol and still miss that centre. This study therefore asks what pressures today make people compromise conscience—fear of rejection, financial security, popular opinion—and how trust in Christ can prepare us to act with courage, humility and love."
+      "The final appeal of prophecy is positive: worship the Creator and remain faithful to Jesus. A person can understand every symbol and still miss that centre. We should therefore ask what pressures today make people compromise conscience—fear of rejection, financial security, popular opinion—and how trust in Christ can prepare us to act with courage, humility and love."
     ]
   ],
   "blue-stone": [
     [
       "Why this unusual lesson matters",
       "Exodus 24:9–12; 31:18",
-      "This study uses the imagery of stone, colour and the sanctuary to draw attention to the Ten Commandments and their connection with God’s rule. Scripture explicitly says that God gave Moses stone tablets written by His finger. It also describes a sapphire-like pavement in the vision of His glory. The suggestion that the tablets themselves were made of blue sapphire is a connection, not something Exodus states plainly. We should appreciate the illustration without treating the colour of the tablets as a test of faith."
+      "The biblical imagery of stone, colour and the sanctuary draws attention to the Ten Commandments and their connection with God’s rule. Scripture explicitly says that God gave Moses stone tablets written by His finger. It also describes a sapphire-like pavement in the vision of His glory. The suggestion that the tablets themselves were made of blue sapphire is a connection, not something Exodus states plainly. We should appreciate the illustration without treating the colour of the tablets as a test of faith."
     ],
     [
       "The law belongs near mercy",
@@ -278,7 +278,7 @@ const CONNECTIONS = {
     [
       "Symbolism must be tested by Scripture",
       "Exodus 28:31–35; Numbers 15:37–41; Revelation 17:1–6",
-      "The priests’ garments and Israel’s garments included colours with symbolic reminders. Revelation uses striking clothing imagery for a corrupt religious power. The source lesson compares these descriptions as an illustration of lost faithfulness to God’s law. Such visual parallels can help us remember a principle, but an absent colour is not an explicit biblical definition of a prophecy. Read the passages as they stand before drawing the connection."
+      "The priests’ garments and Israel’s garments included colours with symbolic reminders. Revelation uses striking clothing imagery for a corrupt religious power. Comparing these descriptions can illustrate the loss of faithfulness to God’s law. Such visual parallels can help us remember a principle, but an absent colour is not an explicit biblical definition of a prophecy. Read the passages as they stand before drawing the connection."
     ],
     [
       "The deeper issue is love and loyalty",
@@ -334,7 +334,7 @@ const CONNECTIONS = {
     [
       "What makes a human being alive?",
       "Genesis 2:7; Ecclesiastes 12:7",
-      "Genesis describes God forming the man from dust and breathing life into him; the man becomes a living being. This study understands a person as a whole created life rather than an immortal soul temporarily imprisoned in a body. Death reverses the gift of life: the body returns to dust and the life-giving breath belongs to God. That is not a statement that a person becomes less valuable after death. It emphasises our complete dependence on the Creator."
+      "Genesis describes God forming the man from dust and breathing life into him; the man becomes a living being. These passages portray a person as a whole created life rather than an immortal soul temporarily imprisoned in a body. Death reverses the gift of life: the body returns to dust and the life-giving breath belongs to God. That is not a statement that a person becomes less valuable after death. It emphasises our complete dependence on the Creator."
     ],
     [
       "What do the dead know?",
@@ -383,7 +383,7 @@ const CONNECTIONS = {
     [
       "What does binding Satan mean?",
       "Revelation 20:1–3; Jeremiah 4:23–27",
-      "Revelation uses symbolic language about an angel, a chain and an abyss. The original study connects Satan’s binding with the desolation of the earth and the absence of people he can deceive during that period. A literal iron chain is not the point: Satan’s opportunities for deception are restrained. Reading the symbol beside the wider biblical sequence is more helpful than imagining details the chapter does not supply."
+      "Revelation uses symbolic language about an angel, a chain and an abyss. One prophetic interpretation connects Satan’s binding with the desolation of the earth and the absence of people he can deceive during that period. A literal iron chain is not the point: Satan’s opportunities for deception are restrained. Reading the symbol beside the wider biblical sequence is more helpful than imagining details the chapter does not supply."
     ],
     [
       "God makes His judgments understandable",
@@ -400,7 +400,7 @@ const CONNECTIONS = {
     [
       "Begin with the God revealed in Jesus",
       "1 John 4:8–10; John 3:16–17",
-      "Questions about hell often arise when someone has imagined a God who takes pleasure in the endless suffering of people. The study begins elsewhere: Scripture describes God as love, giving His Son to save rather than to condemn the world. Whatever we conclude about the final destruction of evil must be understood alongside that revelation of His character. We cannot simply ignore passages about judgment, but neither should we interpret them in ways that make God delight in cruelty."
+      "Questions about hell often arise when someone has imagined a God who takes pleasure in the endless suffering of people. Begin with what Scripture says about God: He is love, giving His Son to save rather than to condemn the world. Whatever we conclude about the final destruction of evil must be understood alongside that revelation of His character. We cannot simply ignore passages about judgment, but neither should we interpret them in ways that make God delight in cruelty."
     ],
     [
       "The contrast is life and death",
@@ -454,7 +454,7 @@ const CONNECTIONS = {
     [
       "Revelation describes the last-day people of God",
       "Revelation 12:17; 14:6–12",
-      "The book of Revelation pictures a people who hold to God’s commandments and the faith of Jesus while proclaiming an urgent message about the Creator, judgment and true worship. The lesson traces the connection between gospel faith, obedience and mission. These are characteristics to take seriously, not excuses for contempt toward Christians of other communities. God knows people in every place, and His call is to all who will hear Him."
+      "The book of Revelation pictures a people who hold to God’s commandments and the faith of Jesus while proclaiming an urgent message about the Creator, judgment and true worship. These passages reveal the connection between gospel faith, obedience and mission. These are characteristics to take seriously, not excuses for contempt toward Christians of other communities. God knows people in every place, and His call is to all who will hear Him."
     ],
     [
       "Identity should produce service and humility",
@@ -471,7 +471,7 @@ const CONNECTIONS = {
     [
       "Beauty is not inherently evil",
       "Ezekiel 16:8–14; Revelation 21:18–21",
-      "Scripture can use jewellery, rich materials and beauty positively. It can also warn of decoration used for self-glory and spiritual unfaithfulness. The source study makes this contrast in order to question when adornment moves from appreciation to self-exaltation. That means we should not claim every ornament is automatically sinful, while also recognising that outward display can become an idol. Simplicity can be a valuable expression of humility and wise stewardship."
+      "Scripture can use jewellery, rich materials and beauty positively. It can also warn of decoration used for self-glory and spiritual unfaithfulness. These biblical contrasts invite us to question when adornment moves from appreciation to self-exaltation. That means we should not claim every ornament is automatically sinful, while also recognising that outward display can become an idol. Simplicity can be a valuable expression of humility and wise stewardship."
     ],
     [
       "A renewed life changes priorities",
@@ -515,7 +515,7 @@ const CONNECTIONS = {
     [
       "Stewardship begins with everyday choices",
       "1 Corinthians 6:19–20; Romans 12:1",
-      "Paul speaks of the believer’s body as belonging to God and being a place where the Spirit is honoured. That gives meaning to eating, activity, sleep and avoiding harmful substances. The source study uses the memory guide NEWSTART—nutrition, exercise, water, sunlight, temperance, air, rest and trust in God—to organise practical habits. It is a helpful reminder, not a substitute for individual medical advice."
+      "Paul speaks of the believer’s body as belonging to God and being a place where the Spirit is honoured. That gives meaning to eating, activity, sleep and avoiding harmful substances. The memory guide NEWSTART summarises these healthy habits—nutrition, exercise, water, sunlight, temperance, air, rest and trust in God—to organise practical habits. It is a helpful reminder, not a substitute for individual medical advice."
     ],
     [
       "Self-control is a gift for service",
@@ -586,7 +586,7 @@ const CONNECTIONS = {
     [
       "Understand the tithe principle",
       "Genesis 14:18–20; Malachi 3:8–12; Leviticus 27:30",
-      "The Bible speaks of a tithe, a tenth, set apart for God. The source lesson follows the principle through Abraham, Israel and the stewardship of God’s people. As with every biblical practice, read the original covenant setting before applying it today. The aim is not to purchase blessings with money or make people feel condemned when they are poor. Giving should express gratitude, trust and a desire to support God’s work faithfully."
+      "The Bible speaks of a tithe, a tenth, set apart for God. The biblical passages trace the principle through Abraham, Israel and the stewardship of God’s people. As with every biblical practice, read the original covenant setting before applying it today. The aim is not to purchase blessings with money or make people feel condemned when they are poor. Giving should express gratitude, trust and a desire to support God’s work faithfully."
     ],
     [
       "Our whole life can honour God",

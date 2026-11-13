@@ -68,7 +68,7 @@ const STUDIES = [
       ],
       [
         "Love does not force loyalty",
-        "The study connects Lucifer’s rebellion with pride and a desire for worship. Genuine love allows a meaningful choice, even though wrong choices can cause damage.",
+        "This rebellion stems from pride and the desire for worship. Genuine love allows a meaningful choice, even though wrong choices can cause damage.",
         "Isaiah 14:12–14; Matthew 4:8–10"
       ],
       [
@@ -80,15 +80,15 @@ const STUDIES = [
     "qa": [
       [
         "Did God create Satan evil?",
-        "The study teaches that God created a good angel with freedom, not a devil programmed to do wrong. Scripture describes rebellion, while leaving the ultimate reason for sin unexplained."
+        "God created Lucifer not Satan. Scripture presents Satan as a fallen being who rebelled against God, rather than as someone created to do evil. Scripture describes rebellion, while leaving the ultimate reason for sin unexplained."
       ],
       [
         "Why doesn’t God stop every tragedy immediately?",
-        "The Bible does not give a neat explanation for each person’s pain. It says God opposes evil, respects freedom and promises a final end to suffering. We should respond to suffering with compassion, not blame."
+        "The Bible does not give a neat explanation for each person’s pain. It says God opposes evil, respects freedom and promises a final end to suffering. We should respond to suffering with compassion, not blame. God created us as free moral agents, his mercy will limit the evil but it must be understood what it is otherwise God becomes a controller of our freedom not a creator of it. Love requires freedom which involves risk but if Love is returned then it grows even more so. God promises to stop evil, we should leave it to Him."
       ],
       [
         "Does suffering mean God is punishing me?",
-        "Not necessarily. We should not assume someone’s hardship is a direct penalty for personal sin. Jesus met suffering people with compassion."
+        "Not at all. Suffering is related to sin. We live in a fallen world and will suffer because of it. Jesus suffered more than all to show the effects of a fallen world. We should not assume someone’s hardship is a direct penalty for personal sin. Jesus met suffering people with compassion. God doesn’t cause evil or sin but if we desire Him and His way he will guide us through the valley of death (Psalm 23)"
       ]
     ],
     "act": "Think of a painful situation in the world. Pray for the people involved and choose one practical act of kindness.",
@@ -186,7 +186,7 @@ const STUDIES = [
         "It portrays salvation and Jesus’ ongoing ministry, keeping His grace and love at the centre."
       ]
     ],
-    "act": "Read Hebrews 10:10. In your own words, explain why the study keeps bringing us back to Jesus.",
+    "act": "Read Hebrews 10:10. In your own words, explain why the sanctuary message directs our attention to Jesus.",
     "art": "sanctuary"
   },
   {
@@ -289,7 +289,7 @@ const STUDIES = [
     "title": "Antichrist",
     "tag": "Understanding prophecy",
     "lead": "How can a false religion take attention away from Jesus?",
-    "intro": "The word antichrist points to opposition to Christ and, in the study’s historicist reading, to efforts to take His place. The vital question is always whether a teaching brings us toward Jesus or away from Him.",
+    "intro": "The word antichrist points to opposition to Christ and, in the historicist understanding of these prophecies, to efforts to take His place. The vital question is always whether a teaching brings us toward Jesus or away from Him.",
     "verses": [
       "1 John 2:18–22",
       "2 Thessalonians 2:3–12",
@@ -305,7 +305,7 @@ const STUDIES = [
       ],
       [
         "A historicist understanding",
-        "The source study applies Daniel 7 and Revelation 13 to the rise of papal religious-political authority. This historical application should be tested against the biblical identifying marks and reliable history; interpretations of these prophecies differ.",
+        "A historicist reading applies Daniel 7 and Revelation 13 to the rise of papal religious-political authority. This historical application should be tested against the biblical identifying marks and reliable history; interpretations of these prophecies differ.",
         "Daniel 7:8–25; Revelation 13:1–10"
       ],
       [
@@ -317,7 +317,7 @@ const STUDIES = [
     "qa": [
       [
         "Are Catholic people the enemy?",
-        "No. Our neighbours are people worthy of respect and love. This study critiques historic structures and claims of authority; it must not be used to judge individual people or their sincerity."
+        "No. Our neighbours are people worthy of respect and love. The warning concerns historic structures and claims of authority; it must not be used to judge individual people or their sincerity."
       ],
       [
         "Why do Christians interpret these prophecies differently?",
@@ -347,7 +347,7 @@ const STUDIES = [
     "ideas": [
       [
         "The prophecy has a starting point",
-        "The study identifies Artaxerxes’ decree associated with rebuilding Jerusalem in 457 BC as the beginning of a 490-year period, using the day-year principle.",
+        "The historicist interpretation identifies Artaxerxes’ decree associated with rebuilding Jerusalem in 457 BC as the beginning of a 490-year period, using the day-year principle.",
         "Daniel 9:24–25; Ezra 7:11–26"
       ],
       [
@@ -357,7 +357,7 @@ const STUDIES = [
       ],
       [
         "The good news goes wider",
-        "The source connects the end of the seventy weeks with AD 34 and the gospel reaching beyond Israel. These exact dates form part of this prophetic interpretation and should be explained, not merely asserted.",
+        "On this prophetic timeline, the seventy weeks end around AD 34, as the gospel begins spreading beyond Jerusalem. These exact dates form part of this prophetic interpretation and should be explained, not merely asserted.",
         "Acts 7–8; Acts 13:46–47"
       ]
     ],
@@ -398,7 +398,7 @@ const STUDIES = [
       ],
       [
         "Other ancient voices matter",
-        "The original study discusses Roman and Jewish writers such as Tacitus, Pliny and Josephus. They provide outside context for early Christianity; they do not independently prove every Christian belief.",
+        "Roman and Jewish writers such as Tacitus, Pliny and Josephus provide historical evidence about the early Christian setting. They provide outside context for early Christianity; they do not independently prove every Christian belief.",
         "Luke 1:1–4 (compare historical sources)"
       ],
       [
@@ -429,7 +429,7 @@ const STUDIES = [
     "title": "The Judgement",
     "tag": "Understanding prophecy",
     "lead": "Should God’s judgement make us afraid?",
-    "intro": "The Bible speaks of judgement, but the original study also asks what judgement reveals about God. The Christian hope is not that we have never failed, but that Jesus is faithful and just.",
+    "intro": "The Bible speaks of judgement and invites us to consider what it reveals about God. The Christian hope is not that we have never failed, but that Jesus is faithful and just.",
     "verses": [
       "Hebrews 9:27",
       "Daniel 7:9–14",
@@ -445,7 +445,7 @@ const STUDIES = [
       ],
       [
         "God already knows us",
-        "The biblical picture of opened books is not about an uninformed God needing to learn facts. The source emphasises that His decisions and character will be shown to be fair.",
+        "The biblical picture of opened books is not about an uninformed God needing to learn facts. The scene points to the fairness of God’s decisions and character.",
         "Daniel 7:9–10"
       ],
       [
@@ -461,7 +461,7 @@ const STUDIES = [
       ],
       [
         "If God knows everything, why a judgement?",
-        "The study explains it as a demonstration of justice to the wider universe, not the discovery of hidden information by God."
+        "The heavenly courtroom picture can be understood as revealing God’s justice to the wider universe, not as God discovering hidden information."
       ],
       [
         "What does judgement mean for someone treated unfairly?",
@@ -476,7 +476,7 @@ const STUDIES = [
     "title": "1844 and the Heavenly Sanctuary",
     "tag": "Understanding prophecy",
     "lead": "How does the sanctuary prophecy lead to 1844?",
-    "intro": "Daniel 8:14 and the sanctuary services are studied as pointing to a final phase of Christ’s heavenly ministry beginning in 1844. The study connects this to judgement and the good news about Jesus.",
+    "intro": "Daniel 8:14 and the sanctuary services are studied as pointing to a final phase of Christ’s heavenly ministry beginning in 1844. This interpretation connects the prophecy with judgement and the good news about Jesus.",
     "verses": [
       "Daniel 8:14",
       "Daniel 9:24–27",
@@ -487,17 +487,17 @@ const STUDIES = [
     "ideas": [
       [
         "The sanctuary has two patterns of service",
-        "Ancient Israel had daily services and a yearly Day of Atonement. The source uses them to explain Christ’s work in heaven.",
+        "Ancient Israel had daily services and a yearly Day of Atonement. These sanctuary services help us understand the biblical teaching about Christ’s work in heaven.",
         "Leviticus 16:29–34; Hebrews 8:1–2"
       ],
       [
         "Understanding the date",
-        "Using the year-day approach in this course, the 2300 prophetic days start in 457 BC and end in 1844. The Bible does not explicitly print the year 1844; it comes from that interpretive calculation.",
+        "Using the year-day approach in this interpretation, the 2300 prophetic days start in 457 BC and end in 1844. The Bible does not explicitly print the year 1844; it comes from that interpretive calculation.",
         "Daniel 8:14; Daniel 9:24–27"
       ],
       [
         "Keep the gospel in the centre",
-        "The point is not to make Jesus seem distant or uncertain. The source presents His heavenly ministry as the continuation of the salvation He accomplished on the cross.",
+        "The point is not to make Jesus seem distant or uncertain. Hebrews presents Jesus as our heavenly High Priest, continually ministering on the basis of His once-for-all sacrifice.",
         "Hebrews 9:24; Revelation 14:6–7"
       ]
     ],
@@ -523,7 +523,7 @@ const STUDIES = [
     "title": "America in Bible Prophecy",
     "tag": "Understanding prophecy",
     "lead": "What does Revelation say about power and freedom?",
-    "intro": "The study examines the earth beast of Revelation 13 and the identifying evidence for a rising power connected with the United States. The moral concern is the danger of religious power joined to state coercion.",
+    "intro": "Revelation 13 describes a beast rising from the earth, which historicist interpreters identify with the rise of the United States. The moral concern is the danger of religious power joined to state coercion.",
     "verses": [
       "Revelation 13:11–17",
       "Revelation 17:15",
@@ -533,12 +533,12 @@ const STUDIES = [
     "ideas": [
       [
         "A lamb-like appearance",
-        "Revelation describes a beast with two horns like a lamb but speaking like a dragon. The lesson asks how a nation can begin with ideals of freedom and later contradict them.",
+        "Revelation describes a beast with two horns like a lamb but speaking like a dragon. The contrast raises a question: how can a nation begin with ideals of freedom and later contradict them?",
         "Revelation 13:11"
       ],
       [
         "Identifying the second beast",
-        "The source connects the rise of this power with the United States in the late eighteenth century. This is a historical application of the prophecy; Revelation itself does not name a modern country directly.",
+        "The historicist reading connects the rise of this power with the United States in the late eighteenth century. This is a historical application of the prophecy; Revelation itself does not name a modern country directly.",
         "Revelation 13:11–12"
       ],
       [
@@ -585,7 +585,7 @@ const STUDIES = [
       ],
       [
         "A picture is not always a proof",
-        "The source connects a sapphire-like heavenly pavement to the tablets of the law. Exodus describes sapphire under God’s feet but does not explicitly say the tablets themselves were blue. Treat this as illustration, not a verified fact.",
+        "Some Bible students have suggested a connection between the sapphire-like pavement under God’s feet and the stone tablets of His law. Exodus describes sapphire under God’s feet but does not explicitly say the tablets themselves were blue. Treat this as illustration, not a verified fact.",
         "Exodus 24:10–12"
       ],
       [
@@ -746,7 +746,7 @@ const STUDIES = [
       ],
       [
         "What is the difference between a soul and a person?",
-        "In Genesis 2:7, humanity becomes a living being when God gives the breath of life. The original study reads “soul” in this integrated sense."
+        "In Genesis 2:7, humanity becomes a living being when God gives the breath of life. In this account, “soul” describes the living person as a whole."
       ]
     ],
     "act": "Read 1 Thessalonians 4:13–18. Write a short message of comfort based on Paul’s words.",
@@ -772,7 +772,7 @@ const STUDIES = [
       ],
       [
         "The final test of worship",
-        "The original study links the Sabbath–Sunday question to the future mark of the beast. This reading concerns a future crisis of informed choice and coercion; it does not mean everyone worshipping on Sunday already has the mark.",
+        "The historicist interpretation connects the Sabbath–Sunday question with the future mark of the beast. This reading concerns a future crisis of informed choice and coercion; it does not mean everyone worshipping on Sunday already has the mark.",
         "Exodus 20:8–11; Revelation 14:12"
       ],
       [
@@ -788,7 +788,7 @@ const STUDIES = [
       ],
       [
         "Is the mark just a barcode or computer chip?",
-        "The source study understands it primarily in terms of worship, authority and allegiance, not a particular consumer technology."
+        "In this interpretation, it concerns worship, authority and allegiance, not a particular consumer technology."
       ],
       [
         "What should I focus on?",
@@ -812,12 +812,12 @@ const STUDIES = [
     "ideas": [
       [
         "The thousand years follow Christ’s victory",
-        "The source places this time between the resurrection of the saved at Jesus’ return and the final judgement of evil.",
+        "In this prophetic interpretation, the thousand years fall between the resurrection of the saved at Jesus’ return and the final judgement of evil.",
         "Revelation 20:1–6"
       ],
       [
         "God’s decisions can be understood",
-        "Paul speaks of the saints participating in judgement. The lesson emphasises God’s fairness and transparency.",
+        "Paul speaks of the saints participating in judgement. The passage draws our attention to God’s fairness and transparency.",
         "1 Corinthians 6:2–3"
       ],
       [
@@ -848,7 +848,7 @@ const STUDIES = [
     "title": "Hell — Is God a Sadist?",
     "tag": "Our future hope",
     "lead": "Would a loving God torment people forever?",
-    "intro": "The study asks a painful question about God’s justice. The passages teach that the final punishment destroys evil permanently rather than keeping people alive in endless torture.",
+    "intro": "The subject raises a painful question about God’s justice. The passages teach that the final punishment destroys evil permanently rather than keeping people alive in endless torture.",
     "verses": [
       "Malachi 4:1–3",
       "Jude 7",
@@ -864,7 +864,7 @@ const STUDIES = [
       ],
       [
         "Destruction, not endless cruelty",
-        "Malachi speaks of burning up and ashes. The original study interprets “eternal fire” through the lasting results of judgement, as with Sodom.",
+        "Malachi speaks of burning up and ashes. Comparing the language of “eternal fire” with Sodom suggests a judgement whose results are permanent.",
         "Malachi 4:1–3; Jude 7"
       ],
       [
@@ -942,7 +942,7 @@ const STUDIES = [
     "title": "The Remnant Church",
     "tag": "Following Jesus",
     "lead": "How can I recognise a faithful Christian community?",
-    "intro": "Jesus calls His followers to hear His voice, trust His word and show His character. The source sees Revelation’s remnant language as describing God’s faithful end-time people and their mission.",
+    "intro": "Jesus calls His followers to hear His voice, trust His word and show His character. Revelation’s remnant language can be understood as describing God’s faithful end-time people and their mission.",
     "verses": [
       "John 10:11–16",
       "1 Timothy 3:15",
@@ -958,7 +958,7 @@ const STUDIES = [
       ],
       [
         "Faithfulness has visible fruit",
-        "The source points to loyalty to God’s commandments and the testimony of Jesus. Truth, love and mission belong together.",
+        "Revelation points to loyalty to God’s commandments and the testimony of Jesus. Truth, love and mission belong together.",
         "Revelation 12:17; Revelation 14:12"
       ],
       [
@@ -1017,7 +1017,7 @@ const STUDIES = [
     "qa": [
       [
         "Is every piece of jewellery automatically sinful?",
-        "The original study asks this question and notes biblical examples of ornamentation. It argues for caution about pride and display rather than assuming every instance has the same meaning."
+        "The Bible includes examples of ornamentation as well as warnings against pride and display. Each passage should be read in context rather than assuming every instance has the same meaning."
       ],
       [
         "How do I know whether something is appropriate?",
@@ -1083,7 +1083,7 @@ const STUDIES = [
     "title": "Health",
     "tag": "Following Jesus",
     "lead": "Does God care about my everyday wellbeing?",
-    "intro": "Jesus cared for bodies as well as hearts. The study presents caring for ourselves as a way to honour the life God has given—not as a method of earning salvation or judging those who are unwell.",
+    "intro": "Jesus cared for bodies as well as hearts. Caring for ourselves is one way to honour the life God has given—not as a method of earning salvation or judging those who are unwell.",
     "verses": [
       "John 10:10",
       "Matthew 4:23",
@@ -1099,7 +1099,7 @@ const STUDIES = [
       ],
       [
         "Everyday habits make a difference",
-        "The source describes NEWSTART: nutrition, exercise, water, sunlight, temperance, air, rest and trust in God. These are general wellness themes, not guarantees against illness.",
+        "A useful general wellness reminder is NEWSTART: nutrition, exercise, water, sunlight, temperance, air, rest and trust in God. These are general wellness themes, not guarantees against illness.",
         "1 Corinthians 6:19–20"
       ],
       [
@@ -1115,7 +1115,7 @@ const STUDIES = [
       ],
       [
         "Must everyone follow an identical diet?",
-        "The source encourages a healthful diet and discusses nutrition. A plant-centred way of eating may be helpful, but personal medical needs and wise practical choices matter."
+        "The Bible encourages responsible care for the bodies God has given us. A plant-centred way of eating may be helpful, but personal medical needs and wise practical choices matter."
       ],
       [
         "Is this medical advice?",
@@ -1166,7 +1166,7 @@ const STUDIES = [
       ],
       [
         "Why immersion?",
-        "The original study connects immersion with the picture of burial and resurrection in Romans 6 and the baptisms described in Acts."
+        "Romans 6 connects immersion with the picture of burial and resurrection in Romans 6 and the baptisms described in Acts."
       ]
     ],
     "act": "Read Romans 6:3–4. Write what “newness of life” would look like in one everyday relationship.",
@@ -1240,7 +1240,7 @@ const STUDIES = [
       ],
       [
         "Tithe and generosity",
-        "The source explains tithe as one tenth and teaches returning it to God. It also encourages offerings and practical care for others.",
+        "In Scripture, tithe means one tenth, set apart for God. It also encourages offerings and practical care for others.",
         "Leviticus 27:30; Malachi 3:10"
       ],
       [
@@ -1252,7 +1252,7 @@ const STUDIES = [
     "qa": [
       [
         "Will God make me wealthy if I tithe?",
-        "The lesson does not promise a guaranteed financial return. Giving expresses faith and gratitude, not a transaction that obligates God to enrich us."
+        "The Bible does not promise a guaranteed financial return for every gift. Giving expresses faith and gratitude, not a transaction that obligates God to enrich us."
       ],
       [
         "What if I am struggling to pay necessities?",
