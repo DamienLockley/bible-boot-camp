@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "daniel",
+    "title": "Daniel",
+    "description": "A comprehensive verse-by-verse reference",
+    "status": "coming_soon"
+  },
+  {
+    "slug": "revelation",
+    "title": "Revelation",
+    "description": "A detailed study of Revelation",
+    "status": "coming_soon"
+  }
+]
