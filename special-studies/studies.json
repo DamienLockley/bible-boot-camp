@@ -10,5 +10,11 @@
     "title": "Revelation",
     "description": "A detailed study of Revelation",
     "status": "coming_soon"
+  },
+  {
+    "slug": "give-a-study",
+    "title": "Give a Study",
+    "description": "Bible study and teaching resources",
+    "status": "coming_soon"
   }
 ]
