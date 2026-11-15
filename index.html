@@ -1,13 +1,163 @@
-<!doctype html>
-<html lang="en-AU">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#21483e" />
-  <meta name="description" content="Get to Know Jesus — clear, Bible-based studies for learners." />
+<!DOCTYPE html>
+<html lang="en-AU"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21483e">
+  <meta name="description" content="Get to Know Jesus — clear, Bible-based studies for learners.">
   <title>Get to Know Jesus</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <link rel="stylesheet" href="styles.css">
+<script type="application/json" data-graphical-editor-overrides="">[{"selector":"#main > header:nth-of-type(1) > p:nth-of-type(1)","tag":"p","original":"This site exists to help people discover Bible truth in a clear, step-by-step way. It is designed for learners who want simple explanations, honest questions and practical Bible-based guidance.","style":{},"attributes":{},"text":"This site exists to help people discover Bible truth in a clear, step-by-step way. It is designed for those who want simple explanations, honest questions and practical Bible-based guidance.","route":"#about"},{"selector":"#main > div:nth-of-type(1) > p:nth-of-type(2)","tag":"p","original":"All material is intended to be Bible based. Readers are encouraged to compare every lesson with the Bible for themselves.","style":{},"attributes":{},"text":"All material is Bible based. Readers are encouraged to compare every lesson with the Bible for themselves.","route":"#about"},{"selector":"#main > section:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1)","tag":"button","deleted":true,"route":""},{"selector":"#main > div:nth-of-type(1) > section:nth-of-type(1) > h2:nth-of-type(1)","tag":"h2","original":"How Do You Study the Bible?","style":{},"attributes":{},"text":"How To Study the Bible?","route":""},{"selector":"#main > div:nth-of-type(1) > section:nth-of-type(1) > p:nth-of-type(1)","tag":"p","original":"Ten practical principles to help you read Scripture, understand its meaning and discover the truth for yourself. This is a free introductory guide, not a numbered study.","style":{},"attributes":{},"text":"Ten practical principles to help you read Scripture, understand its meaning and discover the truth for yourself. This is an introductory guide, not a numbered study.","route":""},{"selector":"#main > header:nth-of-type(1) > span:nth-of-type(1)","tag":"span","style":{"transform":"translate(45px, 2px) matrix(1, 0, 0, 1, 198, -8)","box-sizing":"border-box","width":"212px","height":"26px","display":"inline-block"},"route":"#start-here","attributes":{}},{"selector":"#main > header:nth-of-type(1) > h1:nth-of-type(1)","tag":"h1","style":{"transform":"translate(30px, -6px) matrix(1, 0, 0, 1, 238, 1)","box-sizing":"border-box","width":"599px","height":"61px"},"route":"#start-here","attributes":{}},{"selector":"#main > header:nth-of-type(1) > p:nth-of-type(1)","tag":"p","style":{"box-sizing":"border-box","width":"420px","height":"49px","transform":"translate(324px, -2px)"},"route":"#start-here","attributes":{}},{"paste":{"items":[{"tag":"a","html":"\u003ca class=\"btn btn-primary\" href=\"/how-to-study-the-bible.html\" style=\"\">Read How to Study →\u003c/a>","href":"/how-to-study-the-bible.html","button":false,"icon":false,"id":"visual-copy-d14ac0ac-a529-4b8c-b849-057707be474b"}],"anchor":"","position":"end"},"route":"#start-here","style":{},"attributes":{}},{"selector":"#visual-copy-d14ac0ac-a529-4b8c-b849-057707be474b","tag":"a","style":{"transform":"translate(11px, 11px) matrix(1, 0, 0, 1, 63, -116)"},"route":"#start-here","attributes":{}},{"paste":{"items":[{"tag":"a","html":"\u003ca class=\"secondary\" href=\"/index.html\" style=\"\">← Back to Home\u003c/a>","href":"/index.html","button":false,"icon":false,"id":"visual-copy-0742e6c1-1b9b-4b7b-a575-8e6450c54341"}],"anchor":"#main > header:nth-of-type(1)","position":"inside"},"route":"#start-here"},{"selector":"#visual-copy-0742e6c1-1b9b-4b7b-a575-8e6450c54341","tag":"a","style":{"transform":"translate(-77px, 10px) matrix(1, 0, 0, 1, 83, -113)","box-sizing":"border-box","width":"145px","height":"34px","display":"inline-block"},"route":"#start-here","attributes":{},"deleted":true},{"selector":"#main > header:nth-of-type(1) > a:nth-of-type(1)","tag":"a","original":"← Back to studies","style":{},"attributes":{"href":"/index.html"},"text":"← Back to Home","route":"#start-here"},{"selector":"#main > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)","tag":"a","deleted":true,"route":"#start-here"},{"selector":"html > body:nth-of-type(1) > footer:nth-of-type(1)","tag":"footer","style":{"transform":"translate(4px, 35px)"},"route":"#start-here"}]</script><script data-graphical-editor-runner="">(() => {
+  const patches = JSON.parse(document.querySelector('script[data-graphical-editor-overrides]').textContent);
+  const insertions = patches.filter(patch => patch.insert);
+  let activeRoute;
+  const undoRoute = [];
+  const seen = new WeakMap();
+  function remember(node, key, restore) {
+    let keys = seen.get(node);
+    if (!keys) { keys = new Map(); seen.set(node, keys); }
+    if (keys.get(key) === undoRoute) return;
+    keys.set(key, undoRoute);
+    undoRoute.push(() => { restore(); keys.delete(key); });
+  }
+  function setStyle(node, name, value, scoped) {
+    const before = node.style.getPropertyValue(name);
+    const priority = node.style.getPropertyPriority(name);
+    if (before === value && priority === 'important') return;
+    if (scoped) remember(node,'style:'+name,() => {
+      if (node.style.getPropertyValue(name) === value) node.style.setProperty(name,before,priority);
+    });
+    node.style.setProperty(name,value,'important');
+  }
+  function placeCopy(copy, id, target, position, scoped) {
+    const ids = new Map();
+    if (copy.id) ids.set(copy.id,id);
+    copy.id = id;
+    let suffix = 0;
+    for (const child of copy.querySelectorAll('[id]')) {
+      const oldId = child.id;
+      child.id = id + '-' + (++suffix);
+      if (!ids.has(oldId)) ids.set(oldId,child.id);
+    }
+    for (const node of [copy,...copy.querySelectorAll('*')]) {
+      for (const name of ['for','headers','aria-labelledby','aria-describedby','aria-controls','aria-owns','aria-activedescendant','aria-details','aria-errormessage']) {
+        const value = node.getAttribute(name);
+        if (value) node.setAttribute(name,value.split(/\s+/).map(part => ids.get(part) || part).join(' '));
+      }
+      for (const name of ['href','xlink:href']) {
+        const value = node.getAttribute(name);
+        if (value?.startsWith('#') && ids.has(value.slice(1))) node.setAttribute(name,'#'+ids.get(value.slice(1)));
+      }
+    }
+    const wrapper = document.createElement('visual-editor-item');
+    wrapper.style.display = 'contents';
+    wrapper.append(copy);
+    if (position === 'inside' || position === 'end') target.append(wrapper);
+    else (target.parentElement?.localName === 'visual-editor-item' ? target.parentElement : target)[position](wrapper);
+    if (scoped) undoRoute.push(() => wrapper.remove());
+  }
+  const apply = () => {
+    const route = location.search + location.hash;
+    if (route !== activeRoute) {
+      while (undoRoute.length) undoRoute.pop()();
+      activeRoute = route;
+    }
+    for (const patch of insertions) {
+      if (patch.route !== undefined && patch.route !== route) continue;
+      const {id, anchor, position, tag, text, attributes, title} = patch.insert;
+      if (document.getElementById(id)) continue;
+      const target = position === 'end' ? document.body : document.querySelector(anchor);
+      if (!target) continue;
+      const wrapper = document.createElement('visual-editor-item');
+      wrapper.style.display = ['span','a'].includes(tag) ? 'inline-block' : 'block';
+      const element = document.createElement(tag);
+      element.id = id;
+      if (tag === 'ul' || tag === 'ol') {
+        for (const line of text.split('\n').filter(line => line.trim())) {
+          const item = document.createElement('li');
+          item.textContent = line.trim();
+          element.append(item);
+        }
+      } else if (tag === 'details') {
+        const summary = document.createElement('summary');
+        summary.textContent = title;
+        const content = document.createElement('p');
+        content.textContent = text;
+        content.style.whiteSpace = 'pre-wrap';
+        element.append(summary,content);
+      } else if (text && tag !== 'img' && tag !== 'hr') element.textContent = text;
+      for (const [key,value] of Object.entries(attributes)) element.setAttribute(key,value);
+      wrapper.append(element);
+      if (patch.route !== undefined) undoRoute.push(() => wrapper.remove());
+      if (position === 'inside' || position === 'end') target.append(wrapper);
+      else (target.closest('visual-editor-item') || target)[position](wrapper);
+    }
+    for (const patch of patches) {
+      if (patch.route !== undefined && patch.route !== route) continue;
+      if (patch.duplicate) {
+        const {id,anchor,tag} = patch.duplicate;
+        const original = document.querySelector(anchor);
+        if (!document.getElementById(id) && original?.localName === tag)
+          placeCopy(original.cloneNode(true),id,original,'after',patch.route !== undefined);
+      }
+      if (patch.paste) {
+        const {items,anchor,position} = patch.paste;
+        const target = position === 'end' ? document.body : document.querySelector(anchor);
+        if (target) {
+          for (const item of position === 'after' ? [...items].reverse() : items) {
+            if (document.getElementById(item.id)) continue;
+            const template = document.createElement('template');
+            template.innerHTML = item.html;
+            const copy = template.content.firstElementChild;
+            if (copy?.localName === item.tag) placeCopy(copy,item.id,target,position,patch.route !== undefined);
+          }
+        }
+        continue;
+      }
+      const node = document.querySelector(patch.selector);
+      if (!node || node.localName !== patch.tag) continue;
+      if (patch.deleted) {
+        const target = node.parentElement?.localName === 'visual-editor-item' ? node.parentElement : node;
+        setStyle(target,'display','none',patch.route !== undefined);
+        continue;
+      }
+      if (patch.text !== undefined && [...node.children].every(child => child.localName === 'br')) {
+        const text = [...node.childNodes].map(child => child.nodeName === 'BR' ? '\n' : child.textContent).join('');
+        if (text !== patch.text && (text === patch.original || text.trim() === patch.original)) {
+          if (patch.route !== undefined) {
+            const before = [...node.childNodes];
+            remember(node,'text',() => {
+              const current = [...node.childNodes].map(child => child.nodeName === 'BR' ? '\n' : child.textContent).join('');
+              if (current === patch.text) node.replaceChildren(...before);
+            });
+          }
+          node.replaceChildren(...patch.text.split('\n').flatMap((line,index) => index ? [document.createElement('br'), line] : [line]));
+        }
+      }
+      for (const [name, value] of Object.entries(patch.attributes || {})) {
+        const before = node.getAttribute(name);
+        if (before === value) continue;
+        if (patch.route !== undefined) remember(node,'attribute:'+name,() => {
+          if (node.getAttribute(name) !== value) return;
+          if (before === null) node.removeAttribute(name);
+          else node.setAttribute(name,before);
+        });
+        node.setAttribute(name, value);
+      }
+      for (const [name, value] of Object.entries(patch.style || {})) {
+        setStyle(node,name,value,patch.route !== undefined);
+      }
+    }
+  };
+  let queued = false;
+  new MutationObserver(() => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => { queued = false; apply(); });
+  }).observe(document.documentElement, {childList: true, subtree: true, characterData: true});
+  window.addEventListener('hashchange', apply);
+  window.addEventListener('popstate', apply);
+  apply();
+})();</script></head>
 <body>
   <a class="skip-link" href="#main">Skip to the Bible studies</a>
   <header class="site-header">
@@ -35,11 +185,11 @@
     <div>Simple Bible-based studies to help people discover truth step by step.</div>
   </footer>
 
-  <div id="connectModal" class="modal" hidden>
+  <div id="connectModal" class="modal" hidden="">
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="connectTitle">
       <div class="modal-head">
         <h2 id="connectTitle">Connect / Get Help</h2>
-        <button class="icon-button" type="button" data-modal-close aria-label="Close">?</button>
+        <button class="icon-button" type="button" data-modal-close="" aria-label="Close">?</button>
       </div>
       <p class="modal-copy">Ask a question, request prayer or get in touch. Your email address is required so we can reply. Other details are optional and will be shared only if you choose to include them.</p>
       <form id="connectForm" class="connect-form" method="post" target="contactResponseFrame">
@@ -47,16 +197,16 @@
         <input type="hidden" name="startedAt" id="contactStarted" value="">
         <div class="honeypot" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <label>Email address
-          <input id="connectEmail" name="email" type="email" required placeholder="your@email.com" />
+          <input id="connectEmail" name="email" type="email" required="" placeholder="your@email.com">
         </label>
         <label>Name (optional)
-          <input name="name" type="text" placeholder="Your name" />
+          <input name="name" type="text" placeholder="Your name">
         </label>
         <label>Phone (optional)
-          <input name="phone" type="text" placeholder="Phone number" />
+          <input name="phone" type="text" placeholder="Phone number">
         </label>
         <label>Location (optional)
-          <input name="location" type="text" placeholder="Town, city or region" />
+          <input name="location" type="text" placeholder="Town, city or region">
         </label>
         <label>How can we help?
           <select name="helpType">
@@ -67,15 +217,15 @@
           </select>
         </label>
         <label>Message
-          <textarea name="message" required placeholder="Tell us whatever you would like us to know."></textarea>
+          <textarea name="message" required="" placeholder="Tell us whatever you would like us to know."></textarea>
         </label>
         <div class="modal-actions">
           <button class="btn btn-dark" type="submit">Send message</button>
-          <button class="btn btn-outline" type="button" data-modal-close>Cancel</button>
+          <button class="btn btn-outline" type="button" data-modal-close="">Cancel</button>
         </div>
         <div id="connectStatus" class="form-status" aria-live="polite"></div>
       </form>
-      <iframe id="contactResponseFrame" name="contactResponseFrame" title="Contact form response" hidden></iframe>
+      <iframe id="contactResponseFrame" name="contactResponseFrame" title="Contact form response" hidden=""></iframe>
     </div>
   </div>
 
@@ -95,5 +245,5 @@
   <script src="account.js?v=21"></script>
   <script src="https://www.gstatic.com/firebasejs/13.2.0/firebase-functions-compat.js"></script>
   <script src="admin.js?v=1"></script>
-</body>
-</html>
+
+</body></html>
