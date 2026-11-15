@@ -34,7 +34,7 @@ const DEPTH = {
       [
         "Psalm 119:105; Luke 24:27; John 20:30–31",
         "One message across many books",
-        "The document points to Scripture’s unity across centuries, cultures and writers. The Bible includes poetry, history, letters and prophecy, yet repeatedly directs us toward God’s work to save. Jesus explained Scripture by showing how it pointed to Himself. Read passages in their setting rather than using a single isolated phrase to prove a point.",
+        "Across centuries, cultures and writers, Scripture presents a remarkably unified message. The Bible includes poetry, history, letters and prophecy, yet repeatedly directs us toward God’s work to save. Jesus explained Scripture by showing how it pointed to Himself. Read passages in their setting rather than using a single isolated phrase to prove a point.",
         "What unifying person and purpose should guide the way we read the Bible?",
         "Jesus and God’s saving work give the Bible its central story."
       ],
@@ -68,7 +68,7 @@ const DEPTH = {
       [
         "Ezekiel 28:12–17; Isaiah 14:12–15",
         "Pride and self-exaltation",
-        "These passages speak directly of the kings of Tyre and Babylon. The study also reads their language as illustrating the deeper pride and rebellion of Satan. Keep the immediate setting in view when making that connection. The repeated “I will” of Isaiah highlights the desire to rise above proper limits.",
+        "These passages speak directly of the kings of Tyre and Babylon. These descriptions have also been understood as illustrating the deeper pride and rebellion of Satan. Keep the immediate setting in view when making that connection. The repeated “I will” of Isaiah highlights the desire to rise above proper limits.",
         "How is self-exaltation different from the character of God?",
         "Self-exaltation seeks power for oneself; God’s character is revealed in love for others."
       ],
@@ -342,42 +342,42 @@ const DEPTH = {
       [
         "Daniel 8:13–14, 26–27; Daniel 9:20–23",
         "The setting of the prophecy",
-        "Daniel was troubled by a vision and asked for understanding. Gabriel returned during Daniel’s prayer. The document connects the unexplained time period in Daniel 8 to the explanation in Daniel 9. Read both chapters rather than treating the numbers by themselves.",
+        "Daniel was troubled by a vision and asked for understanding. Gabriel returned during Daniel’s prayer. Reading Daniel 8 alongside Daniel 9 offers a way to examine the unexplained time period and Gabriel’s later explanation. Read both chapters rather than treating the numbers by themselves.",
         "What is Daniel doing when Gabriel comes to him?",
         "He is praying, confessing and seeking understanding."
       ],
       [
         "Daniel 9:24; Numbers 14:34; Ezekiel 4:6",
         "The prophetic time principle",
-        "The seventy weeks contain 490 days. The document applies a day-for-a-year principle to this symbolic prophetic period, making 490 years. This reading is argued from biblical prophetic examples; it should be explained rather than simply assumed.",
+        "The seventy weeks contain 490 days. Using the prophetic day-for-a-year principle, the seventy weeks are understood as 490 years. This reading is argued from biblical prophetic examples; it should be explained rather than simply assumed.",
         "What six purposes for the seventy weeks appear in Daniel 9:24?",
         "They concern ending sin, making reconciliation, bringing righteousness, confirming prophecy and anointing the holy."
       ],
       [
         "Daniel 9:25; Ezra 7:11–26",
         "Finding the starting point",
-        "Daniel points to a command concerning the restoration of Jerusalem. The document uses Artaxerxes’ decree associated with 457 BC as the beginning of the period. Following the years forward leads to the expected appearance of the Messiah.",
+        "Daniel points to a command concerning the restoration of Jerusalem. This historicist calculation uses Artaxerxes’ decree associated with 457 BC as the beginning of the period. Following the years forward leads to the expected appearance of the Messiah.",
         "Why does the starting decree matter?",
         "A timeline cannot be checked without knowing the event from which to count."
       ],
       [
         "Luke 3:21–22; Acts 10:37–38; Daniel 9:25",
         "The anointed One",
-        "Messiah means “Anointed One”. Jesus’ baptism and anointing by the Holy Spirit mark the beginning of His public ministry. The study places this in AD 27, at the end of the first 69 prophetic weeks. The focus is on who Jesus is, not number puzzles for their own sake.",
+        "Messiah means “Anointed One”. Jesus’ baptism and anointing by the Holy Spirit mark the beginning of His public ministry. This prophetic chronology places this in AD 27, at the end of the first 69 prophetic weeks. The focus is on who Jesus is, not number puzzles for their own sake.",
         "What happened at Jesus’ baptism that fits the title Messiah?",
         "The Holy Spirit came upon Him as He began His public ministry."
       ],
       [
         "Daniel 9:26–27; Matthew 27:50–51; Hebrews 10:1–10",
         "The Messiah is cut off",
-        "Daniel’s prophecy speaks of the Messiah being cut off. The study connects the middle of the final prophetic week with Jesus’ death, and the torn temple curtain with the end of the old sacrificial system’s role as a signpost to the coming Lamb.",
+        "Daniel’s prophecy speaks of the Messiah being cut off. In this prophetic interpretation, the middle of the final week points to Jesus’ death, and the torn temple curtain with the end of the old sacrificial system’s role as a signpost to the coming Lamb.",
         "How does the death of Jesus change the meaning of animal sacrifices?",
         "They pointed forward to Him; His once-for-all sacrifice fulfils their purpose."
       ],
       [
         "Acts 7:54–60; Acts 8:1–4; Genesis 22:18",
         "The message goes to the nations",
-        "The original study connects the close of the 490 years with the events surrounding Stephen and the spreading of the gospel beyond Jerusalem around AD 34. The date is part of its prophetic chronology; Acts itself highlights the widening mission. God’s blessing was always intended to reach every nation.",
+        "This interpretation connects the close of the 490 years with the events surrounding Stephen and the spreading of the gospel beyond Jerusalem around AD 34. The date is part of its prophetic chronology; Acts itself highlights the widening mission. God’s blessing was always intended to reach every nation.",
         "What did persecution unexpectedly lead to in Acts 8?",
         "Believers scattered and carried the word into more places."
       ]
@@ -481,28 +481,28 @@ const DEPTH = {
     "practice": "Write down the difference between “God has a true judgment” and “I must save myself by perfection”. Read Romans 8:31–34 whenever fear of judgment returns."
   },
   "1844": {
-    "principle": "The study connects Daniel’s long prophecy with Jesus’ ongoing priestly ministry and the call to take God’s judgment seriously. Jesus remains the centre of the message.",
+    "principle": "Daniel’s long prophecy is considered alongside the biblical teaching about Jesus’ ongoing priestly ministry and the call to take God’s judgment seriously. Jesus remains the centre of the message.",
     "steps": [
       [
         "Daniel 8:13–14, 26–27",
         "A long prophetic period",
-        "Daniel hears of 2,300 evenings and mornings and is troubled by the vision. The document applies its day-for-a-year approach to this prophetic period. Before considering dates, note the sanctuary theme and Daniel’s need for understanding.",
+        "Daniel hears of 2,300 evenings and mornings and is troubled by the vision. The historicist reading applies a day-for-a-year approach to this prophetic period. Before considering dates, note the sanctuary theme and Daniel’s need for understanding.",
         "What two things stand out in this scene?",
         "The sanctuary and an unexplained period that Daniel struggles to understand."
       ],
       [
         "Daniel 9:20–27",
         "The connection with seventy weeks",
-        "Gabriel gives Daniel understanding concerning the time of the Messiah. The study treats the seventy weeks as the opening portion of the longer prophetic period. This relationship needs to be followed through the chapters, not assumed from the number alone.",
+        "Gabriel gives Daniel understanding concerning the time of the Messiah. In this interpretation, the seventy weeks are understood as the opening portion of the longer prophetic period. This relationship needs to be followed through the chapters, not assumed from the number alone.",
         "Why is the Messiah the key to the time prophecy?",
         "The dates lead to His ministry and sacrifice, which give the prophecy its meaning."
       ],
       [
         "Ezra 7:11–26; Daniel 9:25",
         "Counting from the restoration",
-        "The starting point used in the original study is 457 BC, associated with the decree to restore Jerusalem. Applying the symbolic year-day reading to 2,300 days leads to AD 1844. The calculation should be distinguished from the Bible’s direct wording so students can examine each step.",
+        "This calculation begins in 457 BC, associated with the decree to restore Jerusalem. Applying the symbolic year-day reading to 2,300 days leads to AD 1844. The calculation should be distinguished from the Bible’s direct wording so students can examine each step.",
         "What assumption is required to make the 2,300 days a long span of years?",
-        "The prophetic day-for-a-year method used in this study."
+        "The prophetic day-for-a-year method applied in this historicist interpretation."
       ],
       [
         "Leviticus 16:29–34; Hebrews 9:23–28",
@@ -534,14 +534,14 @@ const DEPTH = {
       [
         "Daniel 7:17, 23; Revelation 17:15",
         "Let Scripture explain symbols",
-        "In Daniel, beasts represent kingdoms; Revelation uses waters as a symbol of peoples and nations. The original document reads Revelation 13 through the same symbolic framework. Begin with these definitions before identifying any modern power.",
+        "In Daniel, beasts represent kingdoms; Revelation uses waters as a symbol of peoples and nations. These prophetic symbols provide a framework for examining Revelation 13. Begin with these definitions before identifying any modern power.",
         "What do beasts represent according to Daniel?",
         "Political kingdoms or powers."
       ],
       [
         "Revelation 13:1–10, 11",
         "Two beasts in sequence",
-        "The first beast rises from the sea; the second rises from the earth and has two horns like a lamb. The study connects the second beast with the rise of the United States. This is an application of the prophetic symbols, not a country named directly in the text.",
+        "The first beast rises from the sea; the second rises from the earth and has two horns like a lamb. The historicist interpretation connects the second beast with the rise of the United States. This is an application of the prophetic symbols, not a country named directly in the text.",
         "What difference do you notice between the second beast’s appearance and speech?",
         "It looks lamb-like but speaks like a dragon."
       ],
@@ -577,7 +577,7 @@ const DEPTH = {
     "practice": "Write down the differences between persuasion, invitation and coercion. Compare Revelation 13:11–17 with Revelation 14:6–12."
   },
   "blue-stone": {
-    "principle": "The colours and materials surrounding God’s law are used in this study as visual reminders of His holiness. We must distinguish what Scripture states from an illustration drawn from it.",
+    "principle": "The colours and materials surrounding God’s law can serve as visual reminders of His holiness. We must distinguish what Scripture states from an illustration drawn from it.",
     "steps": [
       [
         "Exodus 24:9–12",
@@ -617,7 +617,7 @@ const DEPTH = {
       [
         "Jeremiah 31:31–34; 2 Corinthians 3:3",
         "From stone to heart",
-        "God promises to write His law on the heart. The new covenant is not about making new physical tablets, but forming people who know Him and respond in love. This is where the study’s imagery should finally take us.",
+        "God promises to write His law on the heart. The new covenant is not about making new physical tablets, but forming people who know Him and respond in love. This is where the biblical imagery should finally direct our thoughts.",
         "Where does God most want His will to be written?",
         "On the hearts of people who belong to Him."
       ]
@@ -740,7 +740,7 @@ const DEPTH = {
       [
         "Ecclesiastes 9:5–6, 10; Psalm 146:3–4",
         "The condition of the dead",
-        "Ecclesiastes describes the dead as having no ongoing participation in earthly knowledge or activity. This study understands death as an unconscious state while the person awaits God’s resurrection power.",
+        "Ecclesiastes describes the dead as having no ongoing participation in earthly knowledge or activity. Read together, these passages portray death as an unconscious state while the person awaits God’s resurrection power.",
         "What does Ecclesiastes say about knowledge and activity in the grave?",
         "It says the dead know nothing and earthly activity ends."
       ],
@@ -788,7 +788,7 @@ const DEPTH = {
       [
         "Exodus 20:8–11; Revelation 14:7",
         "The Creator is worthy of worship",
-        "The fourth commandment gives creation as the reason for Sabbath rest. Revelation 14 calls people to worship the One who made heaven, earth, sea and springs. The study connects these passages as part of its understanding of last-day loyalty.",
+        "The fourth commandment gives creation as the reason for Sabbath rest. Revelation 14 calls people to worship the One who made heaven, earth, sea and springs. Comparing these passages helps explain the question of last-day loyalty.",
         "Which repeated theme joins these passages?",
         "God’s identity as Creator and His right to our worship."
       ],
@@ -829,7 +829,7 @@ const DEPTH = {
       [
         "Revelation 20:1–6",
         "The thousand years",
-        "John sees Satan bound and the faithful reigning with Christ for a thousand years. The original study understands the redeemed to be with Christ in heaven during this period while the earth is desolate. Read the text closely and separate the described events from conclusions about their setting.",
+        "John sees Satan bound and the faithful reigning with Christ for a thousand years. In this understanding, the redeemed are with Christ in heaven during this period while the earth is desolate. Read the text closely and separate the described events from conclusions about their setting.",
         "Who is shown reigning with Christ?",
         "Those who take part in the first resurrection."
       ],
@@ -843,7 +843,7 @@ const DEPTH = {
       [
         "Jeremiah 4:23–26; Revelation 20:1–3",
         "The desolate earth",
-        "The document connects Jeremiah’s imagery of desolation with the state of the earth during the millennium. Jeremiah’s immediate passage concerns judgment on Judah, so this is a prophetic comparison rather than a passage naming the millennium.",
+        "Jeremiah’s imagery of desolation is sometimes compared with the state of the earth during the millennium. Jeremiah’s immediate passage concerns judgment on Judah, so this is a prophetic comparison rather than a passage naming the millennium.",
         "How does careful Bible reading handle a prophetic comparison?",
         "It examines the original setting and then the reason for connecting passages."
       ],
@@ -865,7 +865,7 @@ const DEPTH = {
     "practice": "Make a simple sequence: Christ returns; resurrection; thousand years; final judgment; new earth. Put biblical references beside each stage."
   },
   "hell": {
-    "principle": "God’s final judgment is real and just, but the study teaches that the wicked will finally perish rather than remain alive in endless torture. The picture of God must be consistent with His love and justice.",
+    "principle": "God’s final judgment is real and just, and these passages are understood to teach that the wicked will finally perish rather than remain alive in endless torture. The picture of God must be consistent with His love and justice.",
     "steps": [
       [
         "1 John 4:8; John 3:16–17",
@@ -877,7 +877,7 @@ const DEPTH = {
       [
         "Romans 6:23; Matthew 10:28",
         "Death or life",
-        "Paul contrasts the wages of sin—death—with the gift of eternal life. Jesus speaks of God’s power to destroy both soul and body. The original study understands destruction as the final end of sin and sinners, rather than eternal conscious life in torment.",
+        "Paul contrasts the wages of sin—death—with the gift of eternal life. Jesus speaks of God’s power to destroy both soul and body. In this understanding, destruction means the final end of sin and sinners, rather than eternal conscious life in torment.",
         "What two outcomes does Romans 6:23 contrast?",
         "Death and eternal life in Christ."
       ],
@@ -891,14 +891,14 @@ const DEPTH = {
       [
         "Jude 7; Genesis 19:24–29",
         "Everlasting fire and its result",
-        "Jude calls Sodom an example of eternal fire, yet the cities are not still burning. This study distinguishes everlasting results from a fire that must burn without end. Words such as “eternal” should be read in the context of what the passage says is lasting.",
+        "Jude calls Sodom an example of eternal fire, yet the cities are not still burning. These passages distinguish everlasting results from a fire that must burn without end. Words such as “eternal” should be read in the context of what the passage says is lasting.",
         "What continues after the historical fire of Sodom has ceased?",
         "The lasting consequences of its destruction."
       ],
       [
         "Luke 16:19–31; Matthew 13:34–35",
         "What about the rich man and Lazarus?",
-        "Jesus uses a striking story involving a rich man, a poor man, Abraham and a great gulf. The original study reads it as a teaching story warning against selfishness and refusing God’s word, rather than a literal map of the afterlife. The story’s ending stresses listening to Moses and the prophets.",
+        "Jesus uses a striking story involving a rich man, a poor man, Abraham and a great gulf. The story can be understood as a warning warning against selfishness and refusing God’s word, rather than a literal map of the afterlife. The story’s ending stresses listening to Moses and the prophets.",
         "What did the rich man’s brothers already have that they were told to hear?",
         "Moses and the prophets—that is, God’s revealed word."
       ],
@@ -1009,7 +1009,7 @@ const DEPTH = {
     "practice": "Write how you would explain a “faithful remnant” to a friend without making them feel unwelcome. Include Revelation 14:6 and John 10:16."
   },
   "living": {
-    "principle": "Following Jesus changes priorities, appearance and habits. The study especially examines adornment, modesty and humility, asking what helps or distracts from a Christ-centred life.",
+    "principle": "Following Jesus changes priorities, appearance and habits. The Bible also encourages us to consider adornment, modesty and humility, asking what helps or distracts from a Christ-centred life.",
     "steps": [
       [
         "1 Corinthians 10:31; Romans 12:1–2",
@@ -1021,7 +1021,7 @@ const DEPTH = {
       [
         "Ezekiel 28:12–17",
         "Pride can distort good gifts",
-        "The study draws a warning from the poetic description of the king of Tyre, using it as an illustration of pride and self-exaltation. Beauty itself is not evil. The danger comes when gifts turn our attention inward and make us forget God or other people.",
+        "The poetic description of the king of Tyre can also illustrate the danger of pride and self-exaltation, using it as an illustration of pride and self-exaltation. Beauty itself is not evil. The danger comes when gifts turn our attention inward and make us forget God or other people.",
         "What changes a good gift into a spiritual danger?",
         "When it becomes a source of pride, idolatry or self-centredness."
       ],
@@ -1117,7 +1117,7 @@ const DEPTH = {
       [
         "Genesis 1:29; 2:15",
         "Care and stewardship",
-        "Genesis begins with a plant-rich diet and the responsibility to care for creation. The study uses this picture of God’s original design to encourage thoughtful choices and stewardship rather than rigid claims about every individual’s medical needs.",
+        "Genesis begins with a plant-rich diet and the responsibility to care for creation. This picture of God’s original design can encourage to encourage thoughtful choices and stewardship rather than rigid claims about every individual’s medical needs.",
         "What responsibility is given to humanity in the garden?",
         "To tend and care for what God provided."
       ],
@@ -1172,7 +1172,7 @@ const DEPTH = {
       [
         "Romans 6:3–6; Colossians 2:12",
         "Buried and raised with Christ",
-        "Going down into the water pictures burial with Jesus; coming up pictures resurrection into new life. This is why the study emphasises immersion as fitting the biblical imagery. The water does not do the saving—Jesus does.",
+        "Going down into the water pictures burial with Jesus; coming up pictures resurrection into new life. This is why immersion expresses as fitting the biblical imagery. The water does not do the saving—Jesus does.",
         "What does coming up out of the water symbolise?",
         "New life through Christ’s resurrection power."
       ],
@@ -1268,7 +1268,7 @@ const DEPTH = {
       [
         "Leviticus 27:30; Malachi 3:8–12",
         "Tithes and trust",
-        "The Old Testament describes tithes as belonging to God and associates faithful giving with supporting His work. The study presents tithing as a spiritual discipline of recognising God’s ownership, not as a magical formula for wealth.",
+        "The Old Testament describes tithes as belonging to God and associates faithful giving with supporting His work. Tithing can be practised as a spiritual discipline of recognising God’s ownership, not as a magical formula for wealth.",
         "What principle is expressed by returning a portion to God?",
         "Recognising His ownership and trusting Him as provider."
       ],

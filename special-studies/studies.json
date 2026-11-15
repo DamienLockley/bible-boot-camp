@@ -3,7 +3,7 @@
     "slug": "daniel",
     "title": "Daniel",
     "description": "A comprehensive verse-by-verse reference",
-    "status": "ready"
+    "status": "coming_soon"
   },
   {
     "slug": "revelation",
@@ -12,21 +12,9 @@
     "status": "coming_soon"
   },
   {
-    "slug": "future1",
-    "title": "Future 1",
-    "description": "Additional Bible studies",
-    "status": "coming_soon"
-  },
-  {
-    "slug": "future2",
-    "title": "Future 2",
-    "description": "Additional Bible studies",
-    "status": "coming_soon"
-  },
-  {
-    "slug": "future3",
-    "title": "Future 3",
-    "description": "Additional Bible studies",
+    "slug": "give-a-study",
+    "title": "Give a Study",
+    "description": "Bible study and teaching resources",
     "status": "coming_soon"
   }
 ]
