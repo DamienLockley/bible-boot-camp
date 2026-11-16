@@ -19,15 +19,15 @@ This requires Python installed and opens http://localhost:8765/.
 You may instead use your existing localhost server.
 
 IMPORTANT REVIEW SAFETY
-- Local review notes and progress are kept in a SEPARATE browser storage key.
+- IMPORTANT: The draft now uses the SAME browser progress storage and Firebase account sync as the existing live website. Review changes to progress and notes may affect your real account.
 - All 28 studies are unlocked for your review.
-- Firebase account login/synchronization and admin functions are disabled in the
-  desktop review. Your production account is not accessed.
-- Contact form submissions are disabled: no emails will be sent.
+- Firebase sign-in, saved progress and admin integrations use the same setup as the live website. These functions may require an authorized localhost domain in Firebase.
+- The Connect/Get Help form is live: sending a test will send a real message.
 - Scripture popups need teachers-guide/kjv-verses.json in this extracted site;
   do not copy only index.html into an empty folder.
 - Keep the full extracted folder structure, assets and scripts together.
-- Online integrations are not tested by this local preview.
+- Authentication requires your normal Firebase configuration and localhost authorization.
+- This review branch allows opening all 28 studies for content review only; it does not change server-side permissions.
 - Any later Word-to-site conversion could replace these draft changes.
 - The public English and Tagalog sites remain unchanged.
 
