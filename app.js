@@ -1,8 +1,8 @@
 (()=>{
 'use strict';
 
-const STORAGE='discover-truth-v3';
-const CONNECT_ENDPOINT=(window.SITE_CONFIG && window.SITE_CONFIG.contactWebAppUrl)||''; // Public Apps Script endpoint, never an email address.
+const STORAGE='gtk-desktop-review-v1';
+const CONNECT_ENDPOINT=''; // Public Apps Script endpoint, never an email address.
 const main=document.getElementById('main');
 const modal=document.getElementById('connectModal');
 const connectForm=document.getElementById('connectForm');
@@ -113,7 +113,7 @@ function renderHome(){
       <div class="welcome-progress">${progressBanner()}</div>
     </div>
     <section class="feature-row" aria-label="How these studies work"><div class="feature"><div class="glyph">📖</div><div><strong>Simple Bible teaching</strong><p>Each study explains the topic in plain language without assuming prior knowledge.</p></div></div><div class="feature"><div class="glyph">💬</div><div><strong>Real-life questions</strong><p>Each lesson answers honest questions people commonly ask when discovering faith.</p></div></div><div class="feature"><div class="glyph">🔓</div><div><strong>Guided pathway</strong><p>Studies stay in order so each lesson builds naturally on the one before it.</p></div></div></section>
-    <div id="library" class="section-head"><div><span class="kicker">YOUR STUDY PATHWAY</span><h2>Study in order</h2><p>Search the library below. Locked studies will open as you complete each lesson in sequence.</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div>
+    <div id="library" class="section-head"><div><span class="kicker">YOUR STUDY PATHWAY</span><h2>Study in order</h2><p>Search the library below. All 28 studies are open for desktop review.</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div>
     <div class="library-control"><div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Search a topic or question..." aria-label="Search Bible study topics" value="${esc(state.search)}" /></div></div>
     <div class="course-grid" id="courseGrid"></div>`;
   renderCards();
@@ -201,7 +201,7 @@ function renderStudy(s){
     <div class="read-count" id="readCount">${checkedCount(s.id)} of ${(DEPTH[s.id]?.steps||[]).length} passages studied</div>
   </section>
   <section class="panel"><div class="panel-header"><span class="small-round">03</span><h2>Real-life questions</h2></div><p class="muted">Tap a question to explore a suggested answer.</p>${s.qa.map(({0:q,1:a})=>`<details class="qitem"><summary>${esc(q)}</summary><div class="answer"><strong>A Bible-based response:</strong> ${esc(a)}</div>${addedPics(s.id,'qa',s.qa.findIndex(z=>z[0]===q))}</details>`).join('')}</section>
-  <section class="panel"><div class="panel-header"><span class="small-round">04</span><h2>Make it personal</h2></div><div class="prompt">${esc(s.act)}</div><div class="prompt" style="margin-top:12px"><strong>Extended personal exercise:</strong> ${esc(DEPTH[s.id]?.practice||s.act)}</div>${addedPics(s.id,'end',0)}<div class="journal-title" style="margin-top:21px"><strong>My private reflection</strong><span>Saved in your account when signed in, otherwise on this device</span></div><textarea id="studyNotes" placeholder="What stood out? What questions do you still have?" aria-label="Private reflection notes"></textarea><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="study-notice" id="notesStatus">Saved in this browser</span><button class="mini-link" type="button" data-action="save-notes">Save notes</button></div></section>
+  <section class="panel"><div class="panel-header"><span class="small-round">04</span><h2>Make it personal</h2></div><div class="prompt">${esc(s.act)}</div><div class="prompt" style="margin-top:12px"><strong>Extended personal exercise:</strong> ${esc(DEPTH[s.id]?.practice||s.act)}</div>${addedPics(s.id,'end',0)}<div class="journal-title" style="margin-top:21px"><strong>My private reflection</strong><span>Saved only in this desktop review browser</span></div><textarea id="studyNotes" placeholder="What stood out? What questions do you still have?" aria-label="Private reflection notes"></textarea><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="study-notice" id="notesStatus">Saved locally in review mode</span><button class="mini-link" type="button" data-action="save-notes">Save notes</button></div></section>
   ${renderReviewBoxes(s)}
   <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)?'disabled':''}>${completed(s.id)?'✓ Study completed':allRead(s.id)?'✓ Finish study & unlock next':'Review all passages to finish'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Share this study ↗</button></div>
   <div class="study-notice" id="finishHint">${completed(s.id)?'You can revisit this study at any time.':allRead(s.id)?'You have worked through the readings. Take time for reflection, then finish the study.':'Complete all six reading checkpoints to unlock the next study.'}</div>
@@ -216,7 +216,7 @@ function renderStudy(s){
 
 function renderJourney(){
   const current=nextStudy();
-  main.innerHTML=`<header class="article-hero"><span class="kicker">YOUR PERSONAL STUDY JOURNEY</span><h1>One step at a time.</h1><p>Your progress and notes are saved in your online account when signed in, otherwise in this browser.</p></header>${progressBanner()}<section class="reading-card"><h3>Continue where you left off</h3><p>${current?`Your next study is <b>${esc(current.title)}</b>.`:'All studies are complete. You can review any topic at any time.'}</p>${current?`<button class="btn btn-dark" data-study="${esc(current.id)}">Continue with ${esc(current.title)} →</button>`:''}</section><div class="section-head"><div><h2>All studies</h2><p>${user.completed.length} completed · ${ORDER.length-user.completed.length} still ahead</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div><div class="my-list">${ORDER.map((s,index)=>{const locked=!isUnlocked(s.id);const label=completed(s.id)?'✓ Completed':locked?'🔒 Locked':'▶ Current';return `<div class="my-item ${locked?'is-locked-row':''}"><div><strong>${label} · Study ${String(index+1).padStart(2,'0')} — ${esc(s.title)}</strong><small>${user.notes[s.id]?'Personal reflection saved':'No reflection recorded'}</small></div><button ${locked?'disabled':''} data-study="${esc(s.id)}">${locked?'Locked':'Open study →'}</button></div>`}).join('')}</div><section class="reading-card"><h3>Keep a copy of your reflections</h3><p>Export your notes and progress as a JSON file to save privately. You can import that file later, including on another device.</p><div class="foot-actions" style="justify-content:start"><button class="btn btn-outline" data-action="export">Export my progress</button><button class="btn btn-outline" data-action="import">Import saved progress</button><input id="importFile" type="file" accept="application/json,.json" hidden></div></section><div class="privacy"><b>Your privacy:</b> An account is optional. When signed in, progress and personal notes are saved in your private account; otherwise they remain in this browser. Clearing browser data may erase progress saved only locally.</div>`;
+  main.innerHTML=`<header class="article-hero"><span class="kicker">YOUR PERSONAL STUDY JOURNEY</span><h1>One step at a time.</h1><p>This review stores progress and notes locally in this browser. It never changes your live website account.</p></header>${progressBanner()}<section class="reading-card"><h3>Continue where you left off</h3><p>${current?`Your next study is <b>${esc(current.title)}</b>.`:'All studies are complete. You can review any topic at any time.'}</p>${current?`<button class="btn btn-dark" data-study="${esc(current.id)}">Continue with ${esc(current.title)} →</button>`:''}</section><div class="section-head"><div><h2>All studies</h2><p>${user.completed.length} completed · ${ORDER.length-user.completed.length} still ahead</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div><div class="my-list">${ORDER.map((s,index)=>{const locked=!isUnlocked(s.id);const label=completed(s.id)?'✓ Completed':locked?'🔒 Locked':'▶ Current';return `<div class="my-item ${locked?'is-locked-row':''}"><div><strong>${label} · Study ${String(index+1).padStart(2,'0')} — ${esc(s.title)}</strong><small>${user.notes[s.id]?'Personal reflection saved':'No reflection recorded'}</small></div><button ${locked?'disabled':''} data-study="${esc(s.id)}">${locked?'Locked':'Open study →'}</button></div>`}).join('')}</div><section class="reading-card"><h3>Keep a copy of your reflections</h3><p>Export your notes and progress as a JSON file to save privately. You can import that file later, including on another device.</p><div class="foot-actions" style="justify-content:start"><button class="btn btn-outline" data-action="export">Export my progress</button><button class="btn btn-outline" data-action="import">Import saved progress</button><input id="importFile" type="file" accept="application/json,.json" hidden></div></section><div class="privacy"><b>Your privacy:</b> This draft uses separate, browser-local review storage. Nothing here is synced to your live account. Clearing browser data may erase review notes.</div>`;
 }
 
 function renderAbout(){
@@ -228,7 +228,7 @@ function route(){
   const study=hash.startsWith('#study=')?hash.slice(7):null;
   ['homeTab','progressTab','aboutTab'].forEach(x=>document.getElementById(x).classList.remove('active'));
   if(study&&STUDIES.some(x=>x.id===study)){
-    if(!isUnlocked(study)){document.getElementById('homeTab').classList.add('active');renderHome();toast(`Complete the earlier studies first to unlock that lesson.`)}
+    if(!isUnlocked(study)){document.getElementById('homeTab').classList.add('active');renderHome();toast(`This review gives access to all 28 lessons.`)}
     else{document.getElementById('homeTab').classList.add('active');renderStudy(STUDIES.find(s=>s.id===study));}
   }else if(hash==='#start-here'){
     document.getElementById('homeTab').classList.add('active');renderStartHere();
@@ -256,6 +256,8 @@ function openConnect(){clearTimeout(window.contactSuccessTimer);document.getElem
 function closeConnect(){clearTimeout(window.contactSuccessTimer);modal.hidden=true;document.body.classList.remove('modal-open');connectStatus.textContent='';}
 
 function submitConnectForm(e){
+  e.preventDefault(); connectStatus.textContent='Review mode: messages are not sent. Test the live site separately for email delivery.'; return;
+
   e.preventDefault();
   if(window.pendingContact){connectStatus.textContent='A message is still awaiting confirmation.';return;}
   if(!CONNECT_ENDPOINT){
