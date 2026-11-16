@@ -141,6 +141,45 @@ function media(s){
   return `<div class="media-box"><img src="${esc(image.src)}" loading="lazy" alt="${esc(image.alt||image.credit||s.title)}" onerror="this.closest('.media-box').style.display='none'"></div>`;
 }
 
+
+// REVIEW BRANCH ONLY: proposed additions. The published site is unchanged.
+const REVIEW_ANALOGIES={
+  "1844": "A classroom diagram shows the stages of a complex process, but only the real process accomplishes its purpose. The earthly sanctuary helps us study Christ's heavenly work without replacing Him with the diagram.",
+  "word": "Think of a reliable map on a long journey: you can examine its landmarks and follow its guidance, but you must actually consult it rather than merely carry it.",
+  "controversy": "A parent who truly loves an adult child cannot manufacture the child's love by force. Genuine loyalty requires freedom, even though choices have consequences.",
+  "spirit": "A healthy fruit tree does not attach fruit with string. As it receives water, light and nourishment, fruit develops; likewise, spiritual change grows from ongoing life with God.",
+  "sanctuary": "An architectural model can show how an actual building works without being the building itself. The sanctuary's symbols point beyond themselves to the work of Jesus.",
+  "salvation": "Imagine a lost child whose parent searches for them and opens the door when they return. The child does not purchase belonging; they receive the welcome offered in love.",
+  "law": "Traffic rules do not create the value of human life; they help protect it. Likewise, God's law makes love practical without becoming the price of His grace.",
+  "antichrist": "A counterfeit banknote may look convincing at first glance. The best way to recognize it is to know the genuine article carefully, just as knowing Christ helps us test competing religious claims.",
+  "seventy-weeks": "A timetable only makes sense when you know its starting date and how to read its units. Daniel's prophecy likewise needs its context, time principle and historical anchor.",
+  "history": "A court may hear several witnesses to the same event. The accounts should be read carefully and compared, rather than dismissed because the witnesses emphasize different details.",
+  "judgement": "In a just court the truth matters, but someone facing the court also needs an advocate. The Bible presents Jesus as the believer's compassionate Advocate, not an indifferent observer.",
+  "america": "A government may begin by promising liberty, yet abandon its own principles if it forces conscience. The illustration is a warning to judge power by what it does, not just by its appearance.",
+  "blue-stone": "A wedding ring reminds someone of a promise, but the ring is not the marriage. Biblical colours and objects may direct attention to spiritual commitments without proving every suggested connection.",
+  "sabbath": "A family deliberately sets aside time to be together because the relationship matters. The Sabbath likewise makes room to remember God, rest and care for others.",
+  "second-coming": "A traveller awaiting a loved one's promised arrival can prepare with joyful expectation without inventing an arrival minute. Christian readiness is faithful living, not date-setting.",
+  "nature": "A lamp gives light while connected to its source of power. The light is real but not self-sustaining; likewise, human life depends on the life-giving God.",
+  "mark": "A person's allegiance becomes visible when choosing between conflicting instructions. The issue is not an outward label alone but whom someone trusts and follows when tested.",
+  "millennium": "A public review of a difficult decision does not change facts, but it can reveal why the decision was just. The judgement scenes emphasize God's transparent justice before evil ends.",
+  "hell": "When a fire destroys a building, the destruction may be permanent even after the flames cease. Distinguish a lasting result from an event that must continue forever.",
+  "prophecy-gift": "A measuring ruler tests whether an object is the claimed length. Scripture serves as the measuring standard for spiritual claims; the confidence of the speaker does not replace the measurement.",
+  "remnant": "A lighthouse exists to guide vessels safely, not to boast about being taller than them. A faithful community exists to point people toward Jesus.",
+  "living": "A window's value is not in attracting attention to its frame but in allowing light through. Our appearance and choices should point to character, not self-display.",
+  "prayer": "A friendship grows through regular, honest conversation rather than a list of demands. Prayer similarly cultivates trust and openness with God.",
+  "health": "A tool kept in good condition is better able to serve its purpose, but a damaged tool is not worthless. Caring for health supports service without diminishing anyone's dignity.",
+  "baptism": "A wedding ceremony publicly expresses a commitment; it does not create genuine love by itself. Baptism publicly expresses faith and new life in Christ.",
+  "godhead": "An orchestra's music can be described through distinct instrumental parts yet heard as one harmonious work. This only illustrates coordinated action, not the nature or essence of God.",
+  "stewardship": "A trusted caretaker manages another person's property responsibly and generously. Stewardship recognizes God's ownership and our responsibility for what He entrusts to us.",
+  "witnessing": "A gardener can prepare soil, plant and water, but cannot force a seed to grow. Likewise, we can share faithfully and lovingly while trusting God with the outcome."
+};
+function renderReviewBoxes(s){
+ const d=DEPTH[s.id]||{};
+ const ideas=(s.ideas||[]).map((p,i)=>'<li><strong>'+esc(p[0])+'</strong> — '+esc(p[1])+'</li>').join('');
+ const steps=(d.steps||[]).map((p,i)=>'<li><strong>'+esc(p[1])+'</strong> — '+esc(p[2])+'</li>').join('');
+ return '<section class="panel review-main-points"><div class="panel-header"><span class="small-round">★</span><h2>Main Points — Review Draft</h2></div><p class="review-label">PROPOSED · original teaching is preserved above</p><div class="review-summary-box"><strong>Central principle</strong><p>'+esc(d.principle||s.intro)+'</p><strong>The three core ideas</strong><ol>'+ideas+'</ol><strong>The six teaching points</strong><ol>'+steps+'</ol></div></section><section class="panel review-analogy"><div class="panel-header"><span class="small-round">✦</span><h2>Proposed Analogy — Review Draft</h2></div><p>'+esc(REVIEW_ANALOGIES[s.id]||'Analogy to be reviewed')+'</p><p class="review-label">This illustration is a proposed addition, not yet approved.</p></section>';
+}
+
 function renderStudy(s){
   const ix=ORDER.findIndex(x=>x.id===s.id);
   const next=ORDER[ix+1];
@@ -163,6 +202,7 @@ function renderStudy(s){
   </section>
   <section class="panel"><div class="panel-header"><span class="small-round">03</span><h2>Real-life questions</h2></div><p class="muted">Tap a question to explore a suggested answer.</p>${s.qa.map(({0:q,1:a})=>`<details class="qitem"><summary>${esc(q)}</summary><div class="answer"><strong>A Bible-based response:</strong> ${esc(a)}</div>${addedPics(s.id,'qa',s.qa.findIndex(z=>z[0]===q))}</details>`).join('')}</section>
   <section class="panel"><div class="panel-header"><span class="small-round">04</span><h2>Make it personal</h2></div><div class="prompt">${esc(s.act)}</div><div class="prompt" style="margin-top:12px"><strong>Extended personal exercise:</strong> ${esc(DEPTH[s.id]?.practice||s.act)}</div>${addedPics(s.id,'end',0)}<div class="journal-title" style="margin-top:21px"><strong>My private reflection</strong><span>Saved in your account when signed in, otherwise on this device</span></div><textarea id="studyNotes" placeholder="What stood out? What questions do you still have?" aria-label="Private reflection notes"></textarea><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="study-notice" id="notesStatus">Saved in this browser</span><button class="mini-link" type="button" data-action="save-notes">Save notes</button></div></section>
+  ${renderReviewBoxes(s)}
   <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)?'disabled':''}>${completed(s.id)?'✓ Study completed':allRead(s.id)?'✓ Finish study & unlock next':'Review all passages to finish'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Share this study ↗</button></div>
   <div class="study-notice" id="finishHint">${completed(s.id)?'You can revisit this study at any time.':allRead(s.id)?'You have worked through the readings. Take time for reflection, then finish the study.':'Complete all six reading checkpoints to unlock the next study.'}</div>
   <div class="foot-actions">${previous?`<button class="btn btn-outline" data-study="${esc(previous.id)}">← Previous</button>`:'<span></span>'}${next?`<button class="btn btn-outline" ${nextLocked?'disabled':''} data-study="${esc(next.id)}">${nextLocked?'Complete this study to unlock next':'Next study →'}</button>`:`<button class="btn btn-outline" data-action="journey">View journey →</button>`}</div>
