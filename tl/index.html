@@ -1,78 +1,247 @@
-<!doctype html>
-<html lang="tl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Pagkilala kay Jesus — 28 pag-aaral sa Biblia, Tagalog na edisyong sinusuri.">
-<title>Pagkilala kay Jesus | 28 Pag-aaral sa Biblia</title>
-<style>
-:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#233d35;background:#f4f8f5;--dark:#17483e;--green:#21735e;--gold:#e6ba73;--line:#d9e6df}
-*{box-sizing:border-box}body{margin:0;line-height:1.65}button,input,textarea{font:inherit}button{cursor:pointer}a{color:var(--green)}
-header{background:linear-gradient(110deg,#123a33,#215f51);color:white;position:sticky;top:0;z-index:5;border-bottom:3px solid var(--gold)}
-.head{max-width:1240px;margin:auto;min-height:72px;padding:11px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{color:white;text-decoration:none;font-weight:800;font-size:20px;line-height:1.3}.brand small{display:block;font-size:11px;color:#d5ebe3;font-weight:500;letter-spacing:.05em}
-.links{display:flex;gap:10px;flex-wrap:wrap}.links a{color:white;text-decoration:none;border:1px solid #ffffff60;padding:8px 13px;border-radius:8px;font-size:13px}.links a:hover{background:#ffffff1c}
-main{max-width:1240px;margin:auto;padding:30px 24px 70px}.hero{background:linear-gradient(115deg,#d5eee4,#f9faf3);border:1px solid #bddacf;border-radius:23px;padding:clamp(25px,4vw,55px);display:grid;grid-template-columns:1fr 180px;gap:28px;align-items:center}
-.eyebrow{font-weight:750;text-transform:uppercase;color:#257764;font-size:12px;letter-spacing:.12em}.hero h1{font:500 clamp(2.25rem,5vw,3.7rem)/1.15 Georgia,serif;color:#123e34;margin:10px 0 16px}.hero p{max-width:710px;margin:0;color:#3f6258;font-size:17px}.hero-icon{font-size:100px;text-align:center;filter:drop-shadow(0 8px 7px #115b4933)}
-.notice{background:#fff8e9;border:1px solid #e7cb91;padding:15px 19px;border-radius:12px;color:#665024;margin:20px 0}.notice strong{color:#5a441c}
-.controls{display:flex;gap:12px;align-items:center;justify-content:space-between;margin:28px 0 18px;flex-wrap:wrap}.controls h2{margin:0;font:500 26px Georgia,serif;color:#20483c}
-input[type=search]{border:1px solid #c7d9cf;border-radius:12px;background:white;padding:12px 14px;min-width:min(360px,85vw)}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
-.card{display:block;text-align:left;border:1px solid #d6e4d9;box-shadow:0 6px 20px #163c290c;background:white;border-radius:17px;overflow:hidden;transition:transform .12s,border-color .12s;color:inherit;padding:0}.card:hover{transform:translateY(-3px);border-color:#5ca98b}
-.card img{width:100%;height:150px;object-fit:cover;background:#dfebe5;display:block}.card-content{padding:18px}.card small{color:#387b67;font-weight:750}.card h3{font:500 24px Georgia,serif;margin:7px 0}.card p{font-size:14px;color:#5f7167;margin:0}
-.reader{display:none;grid-template-columns:minmax(190px,255px) minmax(0,1fr);gap:24px}.reader.active{display:grid}.reader-nav{align-self:start;position:sticky;top:90px;max-height:calc(100vh - 110px);overflow:auto;padding:15px;background:white;border:1px solid var(--line);border-radius:14px}.reader-nav button{width:100%;text-align:left;padding:8px 9px;display:block;border:0;background:transparent;border-radius:8px;color:#35594b;font-size:13px}.reader-nav button.selected{background:#e0f2e7;color:#174c3c;font-weight:750}
-.panel{background:white;border:1px solid var(--line);border-radius:17px;padding:clamp(20px,3.5vw,36px);margin-bottom:15px;box-shadow:0 2px 10px #142b2008}.panel h2{font:500 28px Georgia,serif;color:#1b4b3e;margin:0 0 15px}.panel h3{color:#205b4e;margin:20px 0 8px}.study-title{font:500 clamp(32px,4vw,48px) Georgia,serif;color:#183f36;margin:0 0 8px}
-.meta{color:#52766b;font-size:13px;font-weight:700}.lead{font-size:19px;color:#406657}.verses{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.verse{border:1px solid #adcfbc;color:#145e4a;background:#eef8f1;padding:5px 9px;border-radius:9px;font-weight:650;font-size:13px}.verse:hover{background:#d2eddb}
-.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:19px 0}.tabs button,.button{background:white;border:1px solid #a5c6b3;color:#165b48;border-radius:10px;padding:9px 12px;font-weight:700}.tabs button.active,.button.primary{background:#1f715c;color:white;border-color:#1f715c}
-.study-illustration{width:100%;max-height:320px;object-fit:contain;border-radius:12px;background:#f5f9f6;margin:18px 0}
-article.block{border-bottom:1px solid var(--line);padding:12px 0}article.block:last-child{border:0}article.block h3{margin:0 0 8px;font-size:17px}
-details{border:1px solid var(--line);background:#fbfdfa;border-radius:10px;padding:12px 15px;margin:10px 0}summary{cursor:pointer;color:#174e3e;font-weight:750}details p{margin:10px 0 0}
-.review{border-top:3px solid #e8c887}.review textarea{width:100%;min-height:115px;border:1px solid #bbcebf;border-radius:10px;padding:12px}.review .button{margin-top:8px}
-.footer-buttons{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:17px 0}
-#bibleDialog{border:1px solid #bdd7c9;border-radius:18px;max-width:min(720px,94vw);max-height:88vh;padding:0;box-shadow:0 24px 70px #0006}#bibleDialog::backdrop{background:#10271eb9}.dialog-head{padding:15px 20px;background:#205c4c;color:white;display:flex;justify-content:space-between;align-items:center}.dialog-head button{background:white;color:#205c4c;border:0;padding:7px 11px;border-radius:8px}.dialog-body{padding:20px;overflow-y:auto;max-height:70vh}.dialog-body p{border-bottom:1px solid #e5eee7;padding:7px 0;margin:0}.dialog-body b{color:#20634f}
-footer{text-align:center;color:#6a857a;padding:28px;font-size:13px}
-.hide{display:none!important}
-@media(max-width:700px){.head{flex-wrap:wrap}.hero{grid-template-columns:1fr}.hero-icon{display:none}main{padding:15px 12px 50px}.reader{grid-template-columns:1fr}.reader-nav{display:none}.panel{padding:20px}.head{padding:10px 14px}}
-</style></head>
+<!DOCTYPE html>
+
+<html lang="tl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#21483e" name="theme-color"/>
+<meta content="Get to Know Jesus — clear, Bible-based studies for learners." name="description"/>
+<title>Pagkilala kay Hesus</title>
+<link href="styles.css" rel="stylesheet"/>
+<script data-graphical-editor-overrides="" type="application/json">[{"selector": "#main > header:nth-of-type(1) > p:nth-of-type(1)", "tag": "p", "original": "Layunin ng website na ito na tulungan ang mga tao na matuklasan ang katotohanan ng Biblia nang malinaw at sunod-sunod. Para ito sa mga nagnanais ng payak na paliwanag, tapat na mga tanong at praktikal na gabay mula sa Biblia.", "style": {}, "attributes": {}, "text": "Layunin ng website na ito na tulungan ang mga tao na matuklasan ang katotohanan ng Biblia nang malinaw at sunod-sunod. Para ito sa mga nagnanais ng payak na paliwanag, tapat na mga tanong at praktikal na gabay mula sa Biblia.", "route": "#about"}, {"selector": "#main > div:nth-of-type(1) > p:nth-of-type(2)", "tag": "p", "original": "Batay sa Biblia ang mga aralin. Hinihikayat ang mga mambabasa na ihambing mismo ang bawat aralin sa Biblia.", "style": {}, "attributes": {}, "text": "Batay sa Biblia ang mga aralin. Hinihikayat ang mga mambabasa na ihambing mismo ang bawat aralin sa Biblia.", "route": "#about"}, {"selector": "#main > section:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1)", "tag": "button", "deleted": true, "route": ""}, {"selector": "#main > div:nth-of-type(1) > section:nth-of-type(1) > h2:nth-of-type(1)", "tag": "h2", "original": "Paano Mag-aral ng Biblia?", "style": {}, "attributes": {}, "text": "Paano Mag-aral ng Biblia?", "route": ""}, {"selector": "#main > div:nth-of-type(1) > section:nth-of-type(1) > p:nth-of-type(1)", "tag": "p", "original": "Sampung praktikal na prinsipyo sa pagbabasa at pag-unawa sa Kasulatan at sa pagtuklas ng katotohanan. Ito ay libreng gabay, hindi isang bilang na aralin.", "style": {}, "attributes": {}, "text": "Sampung praktikal na prinsipyo sa pagbabasa at pag-unawa sa Kasulatan at sa pagtuklas ng katotohanan. Ito ay panimulang gabay, hindi isang bilang na aralin.", "route": ""}, {"selector": "#main > header:nth-of-type(1) > span:nth-of-type(1)", "tag": "span", "style": {"display": "block", "text-align": "center"}, "route": "#start-here", "attributes": {}}, {"selector": "#main > header:nth-of-type(1) > h1:nth-of-type(1)", "tag": "h1", "style": {"text-align": "center", "margin-left": "auto", "margin-right": "auto"}, "route": "#start-here", "attributes": {}}, {"selector": "#main > header:nth-of-type(1) > p:nth-of-type(1)", "tag": "p", "style": {"text-align": "center"}, "route": "#start-here", "attributes": {}}, {"paste": {"items": [{"tag": "a", "html": "<a class=\"btn btn-primary\" href=\"how-to-study-the-bible.html\" style=\"\">Basahin ang Gabay →<\/a>", "href": "how-to-study-the-bible.html", "button": false, "icon": false, "id": "visual-copy-d14ac0ac-a529-4b8c-b849-057707be474b"}], "anchor": "", "position": "end"}, "route": "#start-here", "style": {}, "attributes": {}}, {"selector": "#visual-copy-d14ac0ac-a529-4b8c-b849-057707be474b", "tag": "a", "style": {"transform": "translate(11px, 11px) matrix(1, 0, 0, 1, 63, -116)"}, "route": "#start-here", "attributes": {}}, {"paste": {"items": [{"tag": "a", "html": "<a class=\"secondary\" href=\"index.html\" style=\"\">← Bumalik sa Unang Pahina<\/a>", "href": "index.html", "button": false, "icon": false, "id": "visual-copy-0742e6c1-1b9b-4b7b-a575-8e6450c54341"}], "anchor": "#main > header:nth-of-type(1)", "position": "inside"}, "route": "#start-here"}, {"selector": "#visual-copy-0742e6c1-1b9b-4b7b-a575-8e6450c54341", "tag": "a", "style": {"transform": "translate(-77px, 10px) matrix(1, 0, 0, 1, 83, -113)", "box-sizing": "border-box", "width": "145px", "height": "34px", "display": "inline-block"}, "route": "#start-here", "attributes": {}, "deleted": true}, {"selector": "#main > header:nth-of-type(1) > a:nth-of-type(1)", "tag": "a", "original": "← Bumalik sa mga Aralin", "style": {}, "attributes": {"href": "index.html"}, "text": "← Bumalik sa Unang Pahina", "route": "#start-here"}, {"selector": "#main > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)", "tag": "a", "deleted": true, "route": "#start-here"}, {"selector": "html > body:nth-of-type(1) > footer:nth-of-type(1)", "tag": "footer", "style": {"transform": "translate(4px, 35px)"}, "route": "#start-here"}]</script><script data-graphical-editor-runner="">(() => {
+  const patches = JSON.parse(document.querySelector('script[data-graphical-editor-overrides]').textContent);
+  const insertions = patches.filter(patch => patch.insert);
+  let activeRoute;
+  const undoRoute = [];
+  const seen = new WeakMap();
+  function remember(node, key, restore) {
+    let keys = seen.get(node);
+    if (!keys) { keys = new Map(); seen.set(node, keys); }
+    if (keys.get(key) === undoRoute) return;
+    keys.set(key, undoRoute);
+    undoRoute.push(() => { restore(); keys.delete(key); });
+  }
+  function setStyle(node, name, value, scoped) {
+    const before = node.style.getPropertyValue(name);
+    const priority = node.style.getPropertyPriority(name);
+    if (before === value && priority === 'important') return;
+    if (scoped) remember(node,'style:'+name,() => {
+      if (node.style.getPropertyValue(name) === value) node.style.setProperty(name,before,priority);
+    });
+    node.style.setProperty(name,value,'important');
+  }
+  function placeCopy(copy, id, target, position, scoped) {
+    const ids = new Map();
+    if (copy.id) ids.set(copy.id,id);
+    copy.id = id;
+    let suffix = 0;
+    for (const child of copy.querySelectorAll('[id]')) {
+      const oldId = child.id;
+      child.id = id + '-' + (++suffix);
+      if (!ids.has(oldId)) ids.set(oldId,child.id);
+    }
+    for (const node of [copy,...copy.querySelectorAll('*')]) {
+      for (const name of ['for','headers','aria-labelledby','aria-describedby','aria-controls','aria-owns','aria-activedescendant','aria-details','aria-errormessage']) {
+        const value = node.getAttribute(name);
+        if (value) node.setAttribute(name,value.split(/\s+/).map(part => ids.get(part) || part).join(' '));
+      }
+      for (const name of ['href','xlink:href']) {
+        const value = node.getAttribute(name);
+        if (value?.startsWith('#') && ids.has(value.slice(1))) node.setAttribute(name,'#'+ids.get(value.slice(1)));
+      }
+    }
+    const wrapper = document.createElement('visual-editor-item');
+    wrapper.style.display = 'contents';
+    wrapper.append(copy);
+    if (position === 'inside' || position === 'end') target.append(wrapper);
+    else (target.parentElement?.localName === 'visual-editor-item' ? target.parentElement : target)[position](wrapper);
+    if (scoped) undoRoute.push(() => wrapper.remove());
+  }
+  const apply = () => {
+    const route = location.search + location.hash;
+    if (route !== activeRoute) {
+      while (undoRoute.length) undoRoute.pop()();
+      activeRoute = route;
+    }
+    for (const patch of insertions) {
+      if (patch.route !== undefined && patch.route !== route) continue;
+      const {id, anchor, position, tag, text, attributes, title} = patch.insert;
+      if (document.getElementById(id)) continue;
+      const target = position === 'end' ? document.body : document.querySelector(anchor);
+      if (!target) continue;
+      const wrapper = document.createElement('visual-editor-item');
+      wrapper.style.display = ['span','a'].includes(tag) ? 'inline-block' : 'block';
+      const element = document.createElement(tag);
+      element.id = id;
+      if (tag === 'ul' || tag === 'ol') {
+        for (const line of text.split('\n').filter(line => line.trim())) {
+          const item = document.createElement('li');
+          item.textContent = line.trim();
+          element.append(item);
+        }
+      } else if (tag === 'details') {
+        const summary = document.createElement('summary');
+        summary.textContent = title;
+        const content = document.createElement('p');
+        content.textContent = text;
+        content.style.whiteSpace = 'pre-wrap';
+        element.append(summary,content);
+      } else if (text && tag !== 'img' && tag !== 'hr') element.textContent = text;
+      for (const [key,value] of Object.entries(attributes)) element.setAttribute(key,value);
+      wrapper.append(element);
+      if (patch.route !== undefined) undoRoute.push(() => wrapper.remove());
+      if (position === 'inside' || position === 'end') target.append(wrapper);
+      else (target.closest('visual-editor-item') || target)[position](wrapper);
+    }
+    for (const patch of patches) {
+      if (patch.route !== undefined && patch.route !== route) continue;
+      if (patch.duplicate) {
+        const {id,anchor,tag} = patch.duplicate;
+        const original = document.querySelector(anchor);
+        if (!document.getElementById(id) && original?.localName === tag)
+          placeCopy(original.cloneNode(true),id,original,'after',patch.route !== undefined);
+      }
+      if (patch.paste) {
+        const {items,anchor,position} = patch.paste;
+        const target = position === 'end' ? document.body : document.querySelector(anchor);
+        if (target) {
+          for (const item of position === 'after' ? [...items].reverse() : items) {
+            if (document.getElementById(item.id)) continue;
+            const template = document.createElement('template');
+            template.innerHTML = item.html;
+            const copy = template.content.firstElementChild;
+            if (copy?.localName === item.tag) placeCopy(copy,item.id,target,position,patch.route !== undefined);
+          }
+        }
+        continue;
+      }
+      const node = document.querySelector(patch.selector);
+      if (!node || node.localName !== patch.tag) continue;
+      if (patch.deleted) {
+        const target = node.parentElement?.localName === 'visual-editor-item' ? node.parentElement : node;
+        setStyle(target,'display','none',patch.route !== undefined);
+        continue;
+      }
+      if (patch.text !== undefined && [...node.children].every(child => child.localName === 'br')) {
+        const text = [...node.childNodes].map(child => child.nodeName === 'BR' ? '\n' : child.textContent).join('');
+        if (text !== patch.text && (text === patch.original || text.trim() === patch.original)) {
+          if (patch.route !== undefined) {
+            const before = [...node.childNodes];
+            remember(node,'text',() => {
+              const current = [...node.childNodes].map(child => child.nodeName === 'BR' ? '\n' : child.textContent).join('');
+              if (current === patch.text) node.replaceChildren(...before);
+            });
+          }
+          node.replaceChildren(...patch.text.split('\n').flatMap((line,index) => index ? [document.createElement('br'), line] : [line]));
+        }
+      }
+      for (const [name, value] of Object.entries(patch.attributes || {})) {
+        const before = node.getAttribute(name);
+        if (before === value) continue;
+        if (patch.route !== undefined) remember(node,'attribute:'+name,() => {
+          if (node.getAttribute(name) !== value) return;
+          if (before === null) node.removeAttribute(name);
+          else node.setAttribute(name,before);
+        });
+        node.setAttribute(name, value);
+      }
+      for (const [name, value] of Object.entries(patch.style || {})) {
+        setStyle(node,name,value,patch.route !== undefined);
+      }
+    }
+  };
+  let queued = false;
+  new MutationObserver(() => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => { queued = false; apply(); });
+  }).observe(document.documentElement, {childList: true, subtree: true, characterData: true});
+  window.addEventListener('hashchange', apply);
+  window.addEventListener('popstate', apply);
+  apply();
+})();</script><meta content="noindex,nofollow" name="robots"/></head>
 <body>
-<header><div class="head"><a class="brand" href="./">📖 Pagkilala kay Jesus<small>Getting to Know Jesus · Tagalog</small></a>
-<nav class="links" aria-label="Language and site navigation"><a href="../" lang="en" hreflang="en" aria-label="Switch to English">🇬🇧 English</a><a href="how-to-study-the-bible.html">Paano Mag-aral ng Biblia</a><a href="#" id="homeBtn">Mga Aralin</a></nav></div></header>
-<main><section id="home">
-<div class="hero"><div><div class="eyebrow">28 pag-aaral sa Salita ng Diyos</div><h1>Halina't kilalanin si Jesus</h1>
-<p>Tuklasin ang mga turo ng Biblia sa pamamagitan ng 28 sunod-sunod na aralin. Basahin ang mga talata sa <strong>Ang Dating Biblia (1905)</strong>, magtanong, at suriin ang mga paliwanag.</p></div><div class="hero-icon">📖</div></div>
-<p class="notice"><strong>Edisyong sinusuri / Translation in progress.</strong> Ang mga pamagat at panimula ay paunang salin sa Tagalog. Ang mga detalyadong paliwanag at sagot ay pansamantalang nasa English habang nirerepaso ang pagsasalin. Maaaring mag-iwan ng tala sa bawat aralin at i-export ang mga ito para sa pagwawasto.</p>
-<div class="controls"><h2>Mga Pag-aaral <span id="total"></span></h2><input id="search" type="search" aria-label="Maghanap ng aralin" placeholder="Maghanap ng aralin…"></div>
-<div class="cards" id="cards"></div></section>
-<section class="reader" id="reader"><aside class="reader-nav" id="readerNav"></aside><div id="readerMain"></div></section></main>
-<dialog id="bibleDialog"><div class="dialog-head"><strong id="refTitle">Ang Biblia</strong><button id="closeBible" type="button">Isara ✕</button></div><div class="dialog-body" id="verseText"></div></dialog>
-<footer>Ang Dating Biblia (1905) · Pansamantalang Tagalog na edisyon para sa pagsusuri · <a href="../">English version</a></footer>
-<script>
-'use strict';
-let STUDIES=[],BIBLE_INDEX=null,current=0,tab='read';const $=id=>document.getElementById(id);const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const img=s=>'../assets/custom/'+encodeURIComponent(s.id)+'.jpg';
-const fileBase='gtk-tl-review:';
-const aliases={'Psalm':'Psalms','Ps':'Psalms','Psalms':'Psalms','Song':'Song of Solomon','Rev':'Revelation','Jn':'John','Mt':'Matthew','Matt':'Matthew','Mk':'Mark','Lk':'Luke','Eph':'Ephesians','Gen':'Genesis','Dan':'Daniel','Ex':'Exodus','1 Cor':'1 Corinthians','2 Cor':'2 Corinthians','1 Thess':'1 Thessalonians','2 Thess':'2 Thessalonians'};
-const bibleParts=new Map();
-async function openBible(ref){$('refTitle').textContent=ref+' — Ang Dating Biblia (1905)';$('verseText').textContent='Binubuksan ang talata…';if(!$('bibleDialog').open)$('bibleDialog').showModal();
-try{const keys=expand(ref);if(!keys.length)throw Error('Hindi mabasa ang sanggunian.');if(!BIBLE_INDEX)BIBLE_INDEX=await (await fetch('verses.json')).json();
-const groups=new Map();for(const key of keys){const book=key.replace(/\s+\d+:\d+$/,'');const part=BIBLE_INDEX.bookParts[book];if(!part)continue;if(!groups.has(part))groups.set(part,[]);groups.get(part).push(key);}
-const html=[];for(const [part,items] of groups){if(!bibleParts.has(part)){const res=await fetch('bible/part-'+part+'.json');if(!res.ok)throw Error('Bible file '+part+' could not load');bibleParts.set(part,await res.json())}const data=bibleParts.get(part);items.forEach(key=>html.push('<p><b>'+escapeHtml(key)+'</b> '+escapeHtml(data[key]||'Walang talata sa file.')+'</p>'));}
-$('verseText').innerHTML=html.join('')||'<p>Hindi nahanap ang talata.</p>';
-}catch(error){$('verseText').textContent='Hindi mabuksan ang talata: '+error.message}}
-function expand(raw){const fragments=String(raw).replace(/[–—−]/g,'-').split(/\s*;\s*/);const out=[];let lastBook='',chapter=0;for(const f of fragments){const m=f.match(/^\s*((?:[1-3]\s*)?[A-Za-z][A-Za-z ]+?)\.?\s+(\d+):\s*(.+)$/);let detail;if(m){lastBook=m[1].trim().replace(/\s+/g,' ');lastBook=aliases[lastBook]||lastBook;chapter=Number(m[2]);detail=m[3]}else{const c=f.match(/^\s*(\d+):\s*(.+)$/);detail=c?(chapter=Number(c[1]),c[2]):f}if(!lastBook||!chapter)continue;for(const item of detail.split(',')){const v=item.trim().match(/^(\d+)(?:\s*-\s*(\d+))?$/);if(!v)continue;const start=+v[1],end=+(v[2]||v[1]);if(start<1||end<start||end-start>120)continue;for(let n=start;n<=end&&out.length<300;n++)out.push(lastBook+' '+chapter+':'+n);}}return [...new Set(out)]}
-function splitRefs(str){let parts=String(str||'').split(/\s*;\s*/).filter(Boolean);let book='';let chapter='';return parts.map(s=>{if(/^\s*(?:[1-3]\s*)?[A-Za-z]/.test(s)){const m=s.match(/^(.*?)(\d+)\s*:/);if(m){book=m[1].trim();chapter=m[2]}return s}if(/^\d+\s*:/.test(s))return book+' '+s;if(/^\d+/.test(s)&&book&&chapter)return book+' '+chapter+':'+s;return s;});}
-function refs(str){return '<div class="verses">'+splitRefs(str).map(s=>'<button type="button" class="verse" data-ref="'+escapeHtml(s)+'">'+escapeHtml(s)+'</button>').join('')+'</div>'}
-function buttons(items){return items.map((s,i)=>'<button class="card" data-study="'+i+'"><img src="'+img(s)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'"><div class="card-content"><small>ARALIN '+(i+1)+' / 28</small><h3>'+escapeHtml(s.title)+'</h3><p>'+escapeHtml(s.lead)+'</p></div></button>').join('')}
-function list(){const q=$('search').value.toLocaleLowerCase();$('cards').innerHTML=buttons(STUDIES.filter(s=>[s.title,s.title_en,s.lead,s.tag].join(' ').toLowerCase().includes(q)).map(s=>s));/* indexes reset below */$('cards').querySelectorAll('[data-study]').forEach((b,i)=>{const title=b.querySelector('h3').textContent;b.dataset.study=STUDIES.findIndex(s=>s.title===title)})}
-function openStudy(i,push=true){current=Math.max(0,Math.min(STUDIES.length-1,i));$('home').classList.add('hide');$('reader').classList.add('active');$('readerNav').innerHTML=STUDIES.map((s,j)=>'<button class="'+(j===current?'selected':'')+'" data-study="'+j+'">'+(j+1)+'. '+escapeHtml(s.title)+'</button>').join('');renderStudy();if(push)history.replaceState(null,'','#study-'+STUDIES[current].id);window.scrollTo(0,0)}
-function home(){ $('reader').classList.remove('active');$('home').classList.remove('hide');history.replaceState(null,'',location.pathname);window.scrollTo(0,0)}
-function renderStudy(){const s=STUDIES[current],d=s.depth||{},steps=d.steps||[];const isEnglish='<p class="notice" style="margin:12px 0"><strong>English reference text:</strong> Hindi pa nasusuri ang pagsasalin ng mas detalyadong bahagi. Ito ay mula sa kasalukuyang English na aralin.</p>';let detail='';
-if(tab==='read'){detail='<div class="panel"><h2>Mga pangunahing ideya</h2>'+s.ideas.map(p=>'<article class="block"><h3>'+escapeHtml(p[0])+'</h3><p>'+escapeHtml(p[1])+'</p>'+refs(p[2])+'</article>').join('')+'</div><div class="panel"><h2>Pagbasa at pag-aaral ng Biblia</h2>'+isEnglish+steps.map((p,i)=>'<article class="block"><h3>'+(i+1)+'. '+escapeHtml(p[1])+'</h3>'+refs(p[0])+'<p>'+escapeHtml(p[2])+'</p><details><summary>'+escapeHtml(p[3])+'</summary><p>'+escapeHtml(p[4])+'</p></details></article>').join('')+'</div>'}
-else if(tab==='questions'){detail='<div class="panel"><h2>Mga tanong at sagot</h2>'+isEnglish+s.qa.map((p,i)=>'<details><summary>'+(i+1)+'. '+escapeHtml(p[0])+'</summary><p>'+escapeHtml(p[1])+'</p></details>').join('')+'<h3>Mga tanong mula sa mga talata</h3>'+steps.map(p=>'<details><summary>'+escapeHtml(p[3])+'</summary><p>'+escapeHtml(p[4])+'</p>'+refs(p[0])+'</details>').join('')+'</div>'}
-else if(tab==='scriptures'){detail='<div class="panel"><h2>Mga sanggunian sa Biblia</h2><p>Pindutin ang isang talata upang basahin sa Ang Dating Biblia (1905).</p>'+refs(s.verses.join('; '))+steps.map(p=>'<article class="block"><strong>'+escapeHtml(p[1])+'</strong>'+refs(p[0])+'</article>').join('')+'</div>'}
-else if(tab==='notes'){detail='<div class="panel review"><h2>Mga tala sa pagsusuri</h2><p>Isulat kung aling mga salin o paliwanag ang dapat baguhin. Naka-save ang mga tala sa browser na ito lamang. I-export ang mga tala upang maibahagi sa editor ng Word.</p><textarea id="note" aria-label="Mga tala sa pagsusuri" placeholder="Mga mungkahi sa pagsasalin, katanungan, o pagbabago…"></textarea><button id="saveNote" class="button primary">I-save ang tala</button> <button class="button" id="exportNotes">I-export ang lahat ng tala (.txt)</button></div>'}
-$('readerMain').innerHTML='<div class="panel"><button class="button" id="backBtn">← Lahat ng aralin</button><div class="meta" style="margin-top:18px">ARALIN '+(current+1)+' NG 28 · '+escapeHtml(s.tag)+'</div><h1 class="study-title">'+escapeHtml(s.title)+'</h1><p class="lead">'+escapeHtml(s.lead)+'</p><p>'+escapeHtml(s.intro)+'</p><img class="study-illustration" src="'+img(s)+'" alt="'+escapeHtml(s.title)+'" onerror="this.style.display=\'none\'"><h3>Mga pangunahing talata</h3>'+refs(s.verses.join('; '))+'<div class="tabs">'+[['read','Pag-aaral'],['questions','Mga Tanong'],['scriptures','Mga Talata'],['notes','Mga Tala']].map(([id,label])=>'<button class="'+(tab===id?'active':'')+'" data-tab="'+id+'">'+label+'</button>').join('')+'</div></div>'+detail+'<div class="footer-buttons"><button class="button" id="prev" '+(current===0?'disabled':'')+'>← Nakaraang aralin</button><button class="button primary" id="next" '+(current===STUDIES.length-1?'disabled':'')+'>Susunod na aralin →</button></div>';
-$('backBtn').onclick=home;$('prev').onclick=()=>openStudy(current-1);$('next').onclick=()=>openStudy(current+1);
-if(tab==='notes'){$('note').value=localStorage.getItem(fileBase+s.id)||'';$('saveNote').onclick=()=>{localStorage.setItem(fileBase+s.id,$('note').value);alert('Nai-save ang tala sa browser na ito.')};$('exportNotes').onclick=()=>{const lines=STUDIES.filter(z=>localStorage.getItem(fileBase+z.id)).map(z=>'=== '+z.title+' ('+z.id+') ===\n'+localStorage.getItem(fileBase+z.id));if(!lines.length){alert('Wala pang tala.');return}const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([lines.join('\n\n')],{type:'text/plain;charset=utf-8'}));a.download='GTKJ-Tagalog-review-notes.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2500)}}
-}
-document.addEventListener('click',e=>{const v=e.target.closest('[data-ref]');if(v){openBible(v.dataset.ref);return}const study=e.target.closest('[data-study]');if(study){openStudy(+study.dataset.study);return}const t=e.target.closest('[data-tab]');if(t){tab=t.dataset.tab;renderStudy();return}});
-$('closeBible').onclick=()=>$('bibleDialog').close();$('homeBtn').onclick=e=>{e.preventDefault();home()};$('search').oninput=list;
-(async()=>{try{const response=await fetch('studies.json');if(!response.ok)throw Error(response.status);STUDIES=await response.json();$('total').textContent='('+STUDIES.length+')';list();const slug=decodeURIComponent(location.hash.replace('#study-',''));const idx=STUDIES.findIndex(s=>s.id===slug);if(location.hash.startsWith('#study-')&&idx>=0)openStudy(idx,false)}catch(e){$('cards').textContent='Hindi ma-load ang mga aralin. '+e.message}})();
-</script></body></html>
+<a class="skip-link" href="#main">Lumaktaw sa mga aralin sa Biblia</a>
+<header class="site-header">
+<div class="shell topbar">
+<button aria-label="Bumalik sa unang pahina" class="brand" id="brandButton" type="button">
+<span aria-hidden="true" class="brand-mark">?</span>
+<span><strong>Pagkilala kay Hesus</strong><small>PAGLALAKBAY SA PAG-AARAL NG BIBLIA</small></span>
+</button>
+<nav aria-label="Pangunahing nabigasyon" class="main-nav">
+<button class="nav-link active" id="homeTab" type="button">Mga Aralin</button>
+<a class="nav-link" href="how-to-study-the-bible.html">Paano Mag-aral</a>
+<button class="nav-link" id="progressTab" type="button">Aking Paglalakbay</button>
+<button class="nav-link" id="aboutTab" type="button">Tungkol Dito</button>
+</nav>
+<div class="header-actions">
+<button aria-label="Humingi ng Tulong" class="icon-button" data-action="connect" id="connectButton" title="Humingi ng Tulong" type="button">?</button>
+<button aria-label="Baguhin ang laki ng teksto" class="icon-button" id="fontButton" title="Baguhin ang laki ng teksto" type="button">Aa</button>
+<button aria-label="Palitan ang maliwanag o madilim na tema" class="icon-button" id="themeButton" title="Palitan ang maliwanag o madilim na tema" type="button">?</button>
+</div>
+</div>
+</header>
+<main aria-live="polite" class="shell" id="main" tabindex="-1"></main>
+<footer class="site-footer shell">
+<div><strong>Pagkilala kay Hesus</strong></div>
+<div>Payak na mga aralin sa Biblia upang matuklasan ang katotohanan nang sunod-sunod.</div>
+</footer>
+<div class="modal" hidden="" id="connectModal">
+<div aria-labelledby="connectTitle" aria-modal="true" class="modal-card" role="dialog">
+<div class="modal-head">
+<h2 id="connectTitle">Humingi ng Tulong</h2>
+<button aria-label="Isara" class="icon-button" data-modal-close="" type="button">?</button>
+</div>
+<p class="modal-copy">Magtanong, humiling ng panalangin o makipag-ugnayan. Kailangan ang iyong email upang makatugon kami. Opsiyonal ang iba pang detalye at ibabahagi lamang kung isasama mo.</p>
+<form class="connect-form" id="connectForm" method="post" target="contactResponseFrame">
+<input id="contactNonce" name="nonce" type="hidden" value=""/>
+<input id="contactStarted" name="startedAt" type="hidden" value=""/>
+<div aria-hidden="true" class="honeypot"><label>Website<input autocomplete="off" name="website" tabindex="-1" type="text"/></label></div>
+<label>Email address
+          <input id="connectEmail" name="email" placeholder="your@email.com" required="" type="email"/>
+</label>
+<label>Pangalan (opsiyonal)
+          <input name="name" placeholder="Iyong pangalan" type="text"/>
+</label>
+<label>Telepono (opsiyonal)
+          <input name="phone" placeholder="Numero ng telepono" type="text"/>
+</label>
+<label>Lokasyon (opsiyonal)
+          <input name="location" placeholder="Bayan, lungsod o rehiyon" type="text"/>
+</label>
+<label>Paano kami makatutulong?
+          <select name="helpType">
+<option value="General question">Pangkalahatang tanong</option>
+<option value="Prayer request">Kahilingan sa panalangin</option>
+<option value="Bible study help">Tulong sa pag-aaral ng Biblia</option>
+<option value="Want to talk">Nais kong may makipag-ugnayan sa akin</option>
+</select>
+</label>
+<label>Mensahe
+          <textarea name="message" placeholder="Sabihin ang nais mong ipaalam sa amin." required=""></textarea>
+</label>
+<div class="modal-actions">
+<button class="btn btn-dark" type="submit">Ipadala ang mensahe</button>
+<button class="btn btn-outline" data-modal-close="" type="button">Kanselahin</button>
+</div>
+<div aria-live="polite" class="form-status" id="connectStatus"></div>
+</form>
+<iframe hidden="" id="contactResponseFrame" name="contactResponseFrame" title="Tugon sa form ng pakikipag-ugnayan"></iframe>
+</div>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="lessons.js"></script>
+<script src="start-here.js"></script>
+<script src="image-map.js"></script>
+<script src="lesson-depth.js"></script>
+<script src="principles.js"></script>
+<script src="site-config.js"></script>
+<script src="app.js?v=12"></script>
+<script src="bible-reader.js"></script>
+<script src="image-gallery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/13.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/13.2.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/13.2.0/firebase-firestore-compat.js"></script>
+<script src="account.js?v=21"></script>
+<script src="https://www.gstatic.com/firebasejs/13.2.0/firebase-functions-compat.js"></script>
+<script src="admin.js?v=1"></script>
+</body></html>

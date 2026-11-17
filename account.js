@@ -150,7 +150,7 @@ async function loadCloud(user){
 }
 async function flush(){
  if(!db||!current||hydrating)return;const data=window.BIBLE_PROGRESS?.get();if(!data)return;
- try{await db.collection('study_progress').doc(current.uid).set({progress:data,updated_at:firebase.firestore.FieldValue.serverTimestamp()})}
+ try{await db.collection('study_progress').doc(current.uid).set({progress:data,updated_at:firebase.firestore.FieldValue.serverTimestamp()},{mergeFields:['progress.completed','progress.notes','progress.read','progress.theme','progress.font','updated_at']})}
  catch(error){console.warn('Account save failed',error);msg('Online saving failed. Progress remains on this device.')}
 }
 function scheduleSync(){if(hydrating||!current)return;clearTimeout(syncTimer);syncTimer=setTimeout(flush,800)}
