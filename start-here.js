@@ -17,7 +17,7 @@ const START_HERE = {
     {
       "heading": "Read the Bible for yourself",
       "paragraphs": [
-        "You are encouraged to check every teaching against Scripture. Select Bible references on the website to read them, and ask questions wherever something is unclear. God welcomes those who sincerely seek to understand His Word."
+        "You are encouraged to check every teaching against Scripture. Select Bible references on the website to read and ask questions wherever something is unclear. God welcomes those who sincerely seek to understand His Word."
       ]
     },
     {
