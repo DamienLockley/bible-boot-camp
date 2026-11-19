@@ -15,3 +15,23 @@
 .day-back{display:inline-flex;margin-top:22px;padding:10px 18px;background:white;border:1px solid #bedff2;border-radius:11px;color:#225c83;font-weight:750}
 /* Matching single card width on phones; equal dimensions on all levels */
 @media(max-width:700px){.large-card-grid{grid-template-columns:1fr;gap:14px}.large-image-card{min-height:164px;aspect-ratio:2.35/1}.large-image-card strong{font-size:clamp(1.55rem,6vw,2.15rem)}.day-container{padding-top:18px}}
+
+/* Reuse the existing, unchanged Creation home-page paradise artwork on
+   every section, day, and question-page banner. This doesn't alter .hero. */
+.day-top,.study-top{
+  background-image:
+    linear-gradient(90deg,rgba(7,34,40,.83) 0%,rgba(9,52,53,.55) 48%,rgba(8,47,42,.17) 100%),
+    url('../editor-backgrounds/e31b17effcb14509ddeafadf9ca41413b0464c89cad59097a7c6ad27fddc32d3.png');
+  background-position:center,center 54%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#fff;
+}
+.day-top{min-height:210px;display:flex;align-items:center;padding:34px 0}
+.day-top .wrap{width:100%}
+.day-top h1,.study-top h1{color:#fff;text-shadow:0 2px 9px rgba(0,20,28,.75)}
+.day-top .back,.study-top .back{color:#fff;text-shadow:0 1px 4px rgba(0,20,28,.7)}
+@media(max-width:700px){
+ .day-top{min-height:190px;padding:30px 0}
+ .day-top,.study-top{background-position:center,53% center}
+}
