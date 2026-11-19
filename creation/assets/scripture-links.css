@@ -1,0 +1,13 @@
+.creation-scripture-refs{padding:10px 0 1px;margin-top:12px;border-top:1px solid #dbeaf5;font-size:.94rem;line-height:1.9}
+.creation-scripture-refs a{color:#136aa8;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;display:inline-block;padding:2px 1px;font-weight:650}
+.creation-scripture-refs a:hover,.creation-scripture-refs a:focus-visible{color:#064777;background:#e9f6ff;border-radius:4px}
+.creation-bible-dialog{border:0;border-radius:17px;padding:0;width:min(92vw,690px);max-height:85dvh;box-shadow:0 20px 70px #071b3566;color:#23455b;background:white}
+.creation-bible-dialog::backdrop{background:rgba(4,22,40,.7)}
+.creation-bible-inner{padding:25px 25px 21px;overflow:auto;max-height:85dvh}
+.creation-bible-close{float:right;width:42px;height:42px;line-height:1;font-size:29px;color:#1c6798;border:1px solid #bad9ed;background:#f1f9ff;border-radius:50%;cursor:pointer}
+.creation-bible-heading{font:700 1.55rem Georgia,serif;margin:6px 52px 18px 0}
+.creation-bible-verses{line-height:1.73;white-space:normal;font-size:1.04rem}
+.creation-bible-verses p{padding:0 0 12px;margin:0 0 12px;border-bottom:1px solid #e6f1f7}
+.creation-bible-verses strong{color:#236b9e}
+.creation-bible-credit{font-size:.84rem;color:#657f91;margin:14px 0 0}
+@media(max-width:600px){.creation-bible-inner{padding:20px 17px 17px}.creation-bible-heading{font-size:1.35rem}}
