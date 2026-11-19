@@ -118,3 +118,11 @@ button:disabled{cursor:not-allowed;opacity:.5}
 .media-box img[data-image-fit="landscape"],.study-gallery .image-zoom-button img[data-image-fit="landscape"],.inserted-illustration img[data-image-fit="landscape"],.study-gallery-grid img[data-image-fit="landscape"]{width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:cover!important;max-height:none!important;}
 .media-box img[data-image-fit="portrait"],.study-gallery .image-zoom-button img[data-image-fit="portrait"],.inserted-illustration img[data-image-fit="portrait"],.study-gallery-grid img[data-image-fit="portrait"]{width:100%!important;height:auto!important;aspect-ratio:3/4!important;object-fit:cover!important;max-height:none!important;}
 /* WEBSITE-MANAGER-IMAGE-FIT-END */
+
+/* Small Creation studies link on the GTKJ home screen. */
+.creation-promo{display:flex;gap:20px;align-items:center;margin:16px 0 24px;padding:13px!important;border:1px solid #d4e6de;overflow:hidden}
+.creation-promo img{width:min(34%,270px);height:146px;flex:none;object-fit:cover;border-radius:13px}
+.creation-promo-copy{flex:1;min-width:0}.creation-promo h2{font-size:clamp(1.2rem,2.5vw,1.65rem);margin:3px 0 5px}
+.creation-promo p{margin:0 0 11px;line-height:1.45;color:var(--muted)}
+.creation-promo-actions{display:flex;flex-wrap:wrap;gap:9px}.creation-promo-actions .btn{padding:9px 18px}
+@media(max-width:600px){.creation-promo{gap:12px;padding:11px!important;align-items:stretch}.creation-promo img{width:34%;height:auto;min-height:150px}.creation-promo h2{font-size:1.22rem}.creation-promo p{font-size:.88rem}.creation-promo-actions .btn{padding:9px 12px;font-size:.84rem}}
