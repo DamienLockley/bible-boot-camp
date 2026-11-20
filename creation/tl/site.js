@@ -8,3 +8,5 @@ expand?.addEventListener('click',()=>{const displayed=questions.filter(q=>!q.cla
 
 /* Load shared clickable Scripture references and verse popups. */
 (()=>{const script=document.createElement('script');script.src='/creation/assets/scripture-links.js?v=2';document.body.append(script);})();
+
+(()=>{const script=document.createElement('script');script.src='/scripture-auto.js?v=1';document.body.append(script);})();
