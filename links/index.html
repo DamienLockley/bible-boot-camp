@@ -34,6 +34,8 @@
     align-items: end;
     isolation: isolate;
     overflow: hidden;
+    width: 100%;
+    min-width: 0;
     min-height: 160px;
     aspect-ratio: 1.55;
     border: 1px solid var(--tile-border, #f2d9a9);
@@ -57,8 +59,15 @@
     .tile:hover { transform: translateY(-4px); border-color: #ffe3a6; }
   }
   .tile:focus-visible { outline: 3px solid #ffe3a6; outline-offset: 4px; }
-  @media (max-width: 760px) { .links { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 350px) { .links { grid-template-columns: 1fr; } }
+  @media (max-width: 760px) {
+    main { padding: 24px clamp(12px, 4vw, 28px) 32px; }
+    header { margin-bottom: 20px; }
+    .emblem { width: 58px; margin-bottom: 8px; }
+    h1 { font-size: clamp(2.4rem, 8vw, 3.2rem); }
+    .links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(10px, 2.7vw, 16px); }
+    .tile { aspect-ratio: 1.38; min-height: 106px; border-radius: 12px; }
+    .tile span { min-width: 0; padding: 10px; font-size: clamp(1rem, 4.3vw, 1.45rem); }
+  }
   @media (prefers-reduced-motion: reduce) { .tile { transition: none; } .tile:hover { transform: none; } }
 </style>
 </head>
