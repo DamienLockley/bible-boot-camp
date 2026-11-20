@@ -16,5 +16,11 @@
     "title": "Give a Study",
     "description": "Bible study and teaching resources",
     "status": "coming_soon"
+  },
+  {
+    "slug": "creation",
+    "title": "Creation",
+    "description": "Bible study and teaching resources",
+    "status": "ready"
   }
 ]

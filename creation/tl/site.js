@@ -7,6 +7,6 @@ input?.addEventListener('input',()=>{const term=input.value.toLocaleLowerCase('t
 expand?.addEventListener('click',()=>{const displayed=questions.filter(q=>!q.classList.contains('hidden'));const shouldOpen=displayed.some(q=>!q.open);displayed.forEach(q=>q.open=shouldOpen);expand.textContent=shouldOpen?'Isara lahat ng sagot':'Buksan lahat ng sagot';});
 
 /* Load shared clickable Scripture references and verse popups. */
-(()=>{const script=document.createElement('script');script.src='/creation/assets/scripture-links.js?v=2';document.body.append(script);})();
+(()=>{const script=document.createElement('script');script.src='/creation/tl/scripture-word-reader.js?v=1';document.body.append(script);})();
 
-(()=>{const script=document.createElement('script');script.src='/scripture-auto.js?v=1';document.body.append(script);})();
+(()=>{const script=document.createElement('script');script.src='/creation/tl/scripture-auto.js?v=1';document.body.append(script);})();
