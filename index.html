@@ -157,7 +157,40 @@
   window.addEventListener('hashchange', apply);
   window.addEventListener('popstate', apply);
   apply();
-})();</script></head>
+})();</script><style id="gtkj-language-flags">
+  .header-actions .gtkj-language-flag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: center;
+    flex: 0 0 auto;
+    width: 88px;
+    height: 44px;
+    padding: 4px;
+    border: 1px solid #68746d;
+    border-radius: 8px;
+    background: center / 100% 100% no-repeat;
+    text-decoration: none;
+  }
+  .header-actions .gtkj-language-flag span {
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: #101b20;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .header-actions .gtkj-language-flag:hover span { background: #304b3e; }
+  .header-actions .gtkj-language-flag:focus-visible {
+    outline: 3px solid var(--ink, #20332a);
+    outline-offset: 3px;
+  }
+  @media (max-width: 650px) {
+    .header-actions .gtkj-language-flag { width: 80px; }
+  }
+</style>
+</head>
 <body>
   <a class="skip-link" href="#main">Skip to the Bible studies</a>
   <header class="site-header">
@@ -173,6 +206,7 @@
         <button id="aboutTab" class="nav-link" type="button">About</button>
       </nav>
       <div class="header-actions">
+  <a class="gtkj-language-flag" href="./tl/" hreflang="tl" lang="tl" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9Ii0yOCAtNDUgMTgwIDkwIiBmaWxsPSIjZmNkMTE2Ij4KCTx0aXRsZT5GbGFnIG9mIHRoZSBQaGlsaXBwaW5lczwvdGl0bGU+Cgk8cGF0aCBmaWxsPSIjMDAzOGE4IiBkPSJtLTI4LTQ1aDE4MFYwTDAgNDR6Ii8+Cgk8cGF0aCBmaWxsPSIjY2UxMTI2IiBkPSJtMCAwaDE1MnY0NUgtMjh6Ii8+Cgk8cGF0aCBmaWxsPSIjZmZmIiBkPSJtNDkuOTQyIDBMLTI4IDQ1di05MHoiLz4KCTxjaXJjbGUgcj0iOSIvPgoJPGcgaWQ9ImMiPgoJCTxnIGlkPSJiIj4KCQkJPHBhdGggaWQ9ImEiIGQ9Im0wIDAtMy4xNjQtMTUuOTA5Ljk0NS0uOTQ2emwtMS4xNjktMTcuODMxTDAtMTlsMS4xNjkgMS4xNjl6bDIuMjE5LTE2Ljg1NS45NDUuOTQ2eiIvPgoJCQk8dXNlIHRyYW5zZm9ybT0ic2NhbGUoLTEpIiB4bGluazpocmVmPSIjYSIvPgoJCTwvZz4KCQk8dXNlIHRyYW5zZm9ybT0icm90YXRlKDkwKSIgeGxpbms6aHJlZj0iI2IiLz4KCTwvZz4KCTx1c2UgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIiB4bGluazpocmVmPSIjYyIvPgoJPHBhdGggaWQ9InMiIGQ9Im00MC45NDIgMC0zLjM4MiAxLjE3NkwzNy40ODcgNC43NTVsLTIuMTYzLTIuODUzLTMuNDI3IDEuMDM3TDMzLjk0MiAwbC0yLjA0NS0yLjkzOSAzLjQyNyAxLjAzNyAyLjE2My0yLjg1M0wzNy41Ni0xLjE3NnoiLz4KCTx1c2UgdHJhbnNmb3JtPSJyb3RhdGUoMTIwLC0yLjAxOSwwKSIgeGxpbms6aHJlZj0iI3MiLz4KCTx1c2UgdHJhbnNmb3JtPSJyb3RhdGUoMjQwLC0yLjAxOSwwKSIgeGxpbms6aHJlZj0iI3MiLz4KPC9zdmc+Cg==)"><span>Tagalog</span></a>
         <button id="connectButton" class="icon-button" type="button" data-action="connect" aria-label="Connect or get help" title="Connect or Get Help">?</button>
         <button id="fontButton" class="icon-button" type="button" aria-label="Change reading text size" title="Change text size">Aa</button>
         <button id="themeButton" class="icon-button" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">?</button>
