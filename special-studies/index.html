@@ -1,6 +1,5 @@
-<!doctype html>
-<html lang="en-AU">
-<head><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="manifest" href="manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Special Studies">
+<!DOCTYPE html>
+<html lang="en-AU"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Special Studies | End Time Bible Studies</title>
@@ -20,7 +19,245 @@ h1{font:500 clamp(43px,5.6vw,66px)/1.1 Georgia,serif;margin:12px 0 18px}
 .tile span{font-size:13px;color:#215e40;font-weight:750}.tile.is-soon{background:#fafaf7;border-style:dashed}.tile.is-soon small,.tile.is-soon span{color:#829086}
 footer{color:#829087;font-size:12px;margin-top:44px}a:focus-visible{outline:3px solid #bd9c59;outline-offset:3px}
 </style>
-</head>
+<script type="application/json" data-graphical-editor-overrides="">[{"selector":"#study-grid > a:nth-of-type(1)","tag":"a","original":"AVAILABLE STUDYDanielA comprehensive verse-by-verse referenceOpen study ›","style":{"color":"#e3edeb"},"attributes":{},"background":{"mode":"cover","x":50,"y":50,"zoom":100,"fade":"#ffffff","fadeStrength":24,"direction":"to right","tint":"#000000","tintStrength":37,"removed":false,"path":"editor-backgrounds/7fabc7727d2050f24e314a6ae1a0031f76144ab2bd8c744e3cce30952d852b4b.png","name":"Daniel and His Friends in Babylon_reduced.png","width":1264,"height":848},"route":""},{"selector":"#study-grid > a:nth-of-type(1) > p:nth-of-type(1)","tag":"p","original":"A comprehensive verse-by-verse reference","style":{"color":"#fcfcfc","text-align":"center"},"attributes":{},"route":"","text":"A comprehensive Section by Section Reference"},{"selector":"#study-grid > a:nth-of-type(1) > h2:nth-of-type(1)","tag":"h2","original":"Daniel","style":{"color":"#fcfcfc","text-align":"center","font-size":"35px","transform":"translate(1px, -23px)"},"attributes":{},"route":""},{"selector":"#study-grid > a:nth-of-type(1) > span:nth-of-type(1)","tag":"span","original":"Open study ›","style":{"color":"#fcfcfc"},"attributes":{},"route":""},{"selector":"#study-grid > a:nth-of-type(1) > small:nth-of-type(1)","tag":"small","original":"AVAILABLE STUDY","style":{},"attributes":{},"text":"","route":""}]</script><script data-graphical-editor-runner="" data-graphical-editor-depth="0">(() => {
+  function paintBoxBackground(node, settings, imageUrl, preview = false) {
+  const slot = Symbol.for('graphical-html-editor.background');
+  if (preview && settings?.reset) {
+    const installed = node[slot];
+    installed?.();
+    return () => installed?.resume();
+  }
+  if (!preview) node[slot]?.();
+  if (!settings) return () => {};
+
+  const size = preview ? '--ghe-preview-size' : '--ghe-image-size';
+  const names = ['background-image', 'background-size', 'background-repeat',
+    'background-position', 'background-origin', 'background-attachment', 'background-blend-mode', size];
+  const before = names.map(name => [name, node.style.getPropertyValue(name), node.style.getPropertyPriority(name)]);
+  const set = (name, value) => node.style.setProperty(name, value, 'important');
+  let observer;
+  if (settings.removed) {
+    set('background-image', 'none');
+  } else if (imageUrl) {
+    const layers = [];
+    const withOpacity = (hex, strength) => hex + Math.round(strength * 255 / 100).toString(16).padStart(2, '0');
+    if (settings.tintStrength) {
+      const tint = withOpacity(settings.tint, settings.tintStrength);
+      layers.push('linear-gradient(' + tint + ', ' + tint + ')');
+    }
+    if (settings.fadeStrength) {
+      const fade = withOpacity(settings.fade, settings.fadeStrength);
+      layers.push('linear-gradient(' + settings.direction + ', ' + fade + ', ' + settings.fade + '00 78%)');
+    }
+    const full = layers.map(() => '100% 100%');
+    const repeats = layers.map(() => 'no-repeat');
+    const positions = layers.map(() => 'center');
+    const tile = settings.mode === 'tile';
+    set('background-image', [...layers, 'url(' + JSON.stringify(imageUrl) + ')'].join(', '));
+    set('background-size', [...full, 'var(' + size + ', ' + (tile ? 'auto' : settings.mode) + ')'].join(', '));
+    set('background-repeat', [...repeats, tile ? 'repeat' : 'no-repeat'].join(', '));
+    set('background-position', [...positions, settings.x + '% ' + settings.y + '%'].join(', '));
+    set('background-origin', 'padding-box');
+    set('background-attachment', 'scroll');
+    set('background-blend-mode', 'normal');
+
+    if (tile || settings.zoom !== 100) {
+      const resize = () => {
+        const ratio = settings.width / settings.height;
+        const boxWidth = node.clientWidth || node.offsetWidth;
+        const boxHeight = node.clientHeight || node.offsetHeight;
+        const base = tile ? 160 : settings.mode === 'contain'
+          ? Math.min(boxWidth, boxHeight * ratio) : Math.max(boxWidth, boxHeight * ratio);
+        set(size, Math.max(1, base * settings.zoom / 100) + 'px auto');
+      };
+      resize();
+      observer = new ResizeObserver(resize);
+      observer.observe(node);
+    }
+  }
+
+  let active = true;
+  const restore = () => {
+    if (!active) return;
+    active = false;
+    observer?.disconnect();
+    for (const [name, value, priority] of before) node.style.setProperty(name, value, priority);
+    if (!preview && node[slot] === restore) delete node[slot];
+  };
+  if (!preview) {
+    restore.resume = () => paintBoxBackground(node, settings, imageUrl);
+    node[slot] = restore;
+  }
+  return restore;
+}
+  const depth = Number(document.currentScript.getAttribute('data-graphical-editor-depth'));
+  const backgroundNodes = new Map();
+  const patches = JSON.parse(document.querySelector('script[data-graphical-editor-overrides]').textContent);
+  const insertions = patches.filter(patch => patch.insert);
+  let activeRoute;
+  const undoRoute = [];
+  const seen = new WeakMap();
+  function remember(node, key, restore) {
+    let keys = seen.get(node);
+    if (!keys) { keys = new Map(); seen.set(node, keys); }
+    if (keys.get(key) === undoRoute) return;
+    keys.set(key, undoRoute);
+    undoRoute.push(() => { restore(); keys.delete(key); });
+  }
+  function setStyle(node, name, value, scoped) {
+    const before = node.style.getPropertyValue(name);
+    const priority = node.style.getPropertyPriority(name);
+    if (before === value && priority === 'important') return;
+    if (scoped) remember(node,'style:'+name,() => {
+      if (node.style.getPropertyValue(name) === value) node.style.setProperty(name,before,priority);
+    });
+    node.style.setProperty(name,value,'important');
+  }
+  function placeCopy(copy, id, target, position, scoped) {
+    const ids = new Map();
+    if (copy.id) ids.set(copy.id,id);
+    copy.id = id;
+    let suffix = 0;
+    for (const child of copy.querySelectorAll('[id]')) {
+      const oldId = child.id;
+      child.id = id + '-' + (++suffix);
+      if (!ids.has(oldId)) ids.set(oldId,child.id);
+    }
+    for (const node of [copy,...copy.querySelectorAll('*')]) {
+      for (const name of ['for','headers','aria-labelledby','aria-describedby','aria-controls','aria-owns','aria-activedescendant','aria-details','aria-errormessage']) {
+        const value = node.getAttribute(name);
+        if (value) node.setAttribute(name,value.split(/\s+/).map(part => ids.get(part) || part).join(' '));
+      }
+      for (const name of ['href','xlink:href']) {
+        const value = node.getAttribute(name);
+        if (value?.startsWith('#') && ids.has(value.slice(1))) node.setAttribute(name,'#'+ids.get(value.slice(1)));
+      }
+    }
+    const wrapper = document.createElement('visual-editor-item');
+    wrapper.style.display = 'contents';
+    wrapper.append(copy);
+    if (position === 'inside' || position === 'end') target.append(wrapper);
+    else (target.parentElement?.localName === 'visual-editor-item' ? target.parentElement : target)[position](wrapper);
+    if (scoped) undoRoute.push(() => wrapper.remove());
+  }
+  const apply = () => {
+    const route = location.search + location.hash;
+    if (route !== activeRoute) {
+      for (const node of backgroundNodes.keys()) paintBoxBackground(node, null);
+      backgroundNodes.clear();
+      while (undoRoute.length) undoRoute.pop()();
+      activeRoute = route;
+    }
+    for (const patch of insertions) {
+      if (patch.route !== undefined && patch.route !== route) continue;
+      const {id, anchor, position, tag, text, attributes, title} = patch.insert;
+      if (document.getElementById(id)) continue;
+      const target = position === 'end' ? document.body : document.querySelector(anchor);
+      if (!target) continue;
+      const wrapper = document.createElement('visual-editor-item');
+      wrapper.style.display = ['span','a'].includes(tag) ? 'inline-block' : 'block';
+      const element = document.createElement(tag);
+      element.id = id;
+      if (tag === 'ul' || tag === 'ol') {
+        for (const line of text.split('\n').filter(line => line.trim())) {
+          const item = document.createElement('li');
+          item.textContent = line.trim();
+          element.append(item);
+        }
+      } else if (tag === 'details') {
+        const summary = document.createElement('summary');
+        summary.textContent = title;
+        const content = document.createElement('p');
+        content.textContent = text;
+        content.style.whiteSpace = 'pre-wrap';
+        element.append(summary,content);
+      } else if (text && tag !== 'img' && tag !== 'hr') element.textContent = text;
+      for (const [key,value] of Object.entries(attributes)) element.setAttribute(key,value);
+      wrapper.append(element);
+      if (patch.route !== undefined) undoRoute.push(() => wrapper.remove());
+      if (position === 'inside' || position === 'end') target.append(wrapper);
+      else (target.closest('visual-editor-item') || target)[position](wrapper);
+    }
+    const backgrounds = new Map();
+    for (const patch of patches) {
+      if (patch.route !== undefined && patch.route !== route) continue;
+      if (patch.duplicate) {
+        const {id,anchor,tag} = patch.duplicate;
+        const original = document.querySelector(anchor);
+        if (!document.getElementById(id) && original?.localName === tag)
+          placeCopy(original.cloneNode(true),id,original,'after',patch.route !== undefined);
+      }
+      if (patch.paste) {
+        const {items,anchor,position} = patch.paste;
+        const target = position === 'end' ? document.body : document.querySelector(anchor);
+        if (target) {
+          for (const item of position === 'after' ? [...items].reverse() : items) {
+            if (document.getElementById(item.id)) continue;
+            const template = document.createElement('template');
+            template.innerHTML = item.html;
+            const copy = template.content.firstElementChild;
+            if (copy?.localName === item.tag) placeCopy(copy,item.id,target,position,patch.route !== undefined);
+          }
+        }
+        continue;
+      }
+      const node = document.querySelector(patch.selector);
+      if (!node || node.localName !== patch.tag) continue;
+      if ('background' in patch) backgrounds.set(node, patch.background);
+      if (patch.deleted) {
+        const target = node.parentElement?.localName === 'visual-editor-item' ? node.parentElement : node;
+        setStyle(target,'display','none',patch.route !== undefined);
+        continue;
+      }
+      if (patch.text !== undefined && [...node.children].every(child => child.localName === 'br')) {
+        const text = [...node.childNodes].map(child => child.nodeName === 'BR' ? '\n' : child.textContent).join('');
+        if (text !== patch.text && (text === patch.original || text.trim() === patch.original)) {
+          if (patch.route !== undefined) {
+            const before = [...node.childNodes];
+            remember(node,'text',() => {
+              const current = [...node.childNodes].map(child => child.nodeName === 'BR' ? '\n' : child.textContent).join('');
+              if (current === patch.text) node.replaceChildren(...before);
+            });
+          }
+          node.replaceChildren(...patch.text.split('\n').flatMap((line,index) => index ? [document.createElement('br'), line] : [line]));
+        }
+      }
+      for (const [name, value] of Object.entries(patch.attributes || {})) {
+        const before = node.getAttribute(name);
+        if (before === value) continue;
+        if (patch.route !== undefined) remember(node,'attribute:'+name,() => {
+          if (node.getAttribute(name) !== value) return;
+          if (before === null) node.removeAttribute(name);
+          else node.setAttribute(name,before);
+        });
+        node.setAttribute(name, value);
+      }
+      for (const [name, value] of Object.entries(patch.style || {})) {
+        setStyle(node,name,value,patch.route !== undefined);
+      }
+    }
+    for (const node of backgroundNodes.keys()) {
+      if (backgrounds.has(node)) continue;
+      paintBoxBackground(node, null);
+      backgroundNodes.delete(node);
+    }
+    for (const [node, settings] of backgrounds) {
+      if (backgroundNodes.has(node) && backgroundNodes.get(node) === settings) continue;
+      const url = settings?.path ? new URL('../'.repeat(depth) + settings.path, location.href).href : '';
+      paintBoxBackground(node, settings, url);
+      backgroundNodes.set(node, settings);
+    }
+  };
+  let queued = false;
+  new MutationObserver(() => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => { queued = false; apply(); });
+  }).observe(document.documentElement, {childList: true, subtree: true, characterData: true});
+  window.addEventListener('hashchange', apply);
+  window.addEventListener('popstate', apply);
+  apply();
+})();</script></head>
 <body>
 <header class="site-head"><a href="../">Student Site</a><a href="../teachers-guide/">Teachers’ Guide</a></header>
 <main>
@@ -62,5 +299,6 @@ footer{color:#829087;font-size:12px;margin-top:44px}a:focus-visible{outline:3px 
  }catch(err){console.warn('Showing built-in Special Studies directory:',err)}
 })();
 </script>
-<script defer src="/scripture-auto.js?v=1"></script></body>
-</html>
+
+
+</body></html>
