@@ -30,3 +30,92 @@ body{background:#f2faff;color:var(--ink)}
 .study-nav a{border-color:#b9daee}
 .footer{color:#678095}
 @media(max-width:740px){.section-cards{grid-template-columns:1fr}.section-card{min-height:170px}.section-card h3{font-size:1.65rem}.main-sections{padding-top:32px}.brand{font-size:1.55rem}}
+
+
+/* GTKJ-style navigation, adapted to Creation's blue theme.
+   Shared by all Creation study pages and the Tagalog edition. */
+.top{
+  background:rgba(248,252,255,.97);
+  border-bottom:1px solid #cfe5f5;
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.top-inner{
+  min-height:78px;
+  padding:12px 22px;
+  gap:20px;
+}
+.top .brand{
+  flex:0 0 auto;
+  font-size:clamp(1.35rem,2.5vw,1.85rem);
+  letter-spacing:.085em;
+  color:#216d9f;
+  line-height:1.2;
+}
+.top-links{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:5px;
+  background:#e3f2fc;
+  border:1px solid #d4e8f6;
+  border-radius:100px;
+  padding:5px;
+  font-size:.86rem;
+  font-weight:700;
+  color:#376784;
+}
+.top-links a{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:37px;
+  padding:8px 15px;
+  border-radius:100px;
+  line-height:1.2;
+  white-space:nowrap;
+  transition:background-color .18s,color .18s,box-shadow .18s;
+}
+.top-links a[href="index.html"]{
+  background:#fff;
+  color:#185d8d;
+  box-shadow:0 1px 6px #15547a1c;
+}
+.top-links a:hover{
+  background:#fff;
+  color:#145c90;
+}
+.top-links a:focus-visible,
+.top .brand:focus-visible{
+  outline:3px solid #278cd1;
+  outline-offset:3px;
+}
+@media(max-width:740px){
+  .top-inner{
+    min-height:0;
+    flex-direction:column;
+    gap:10px;
+    padding:12px 15px 11px;
+  }
+  .top .brand{font-size:1.45rem}
+  .top-links{
+    width:100%;
+    max-width:540px;
+    gap:3px;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    padding:4px;
+    font-size:.78rem;
+  }
+  .top-links a{
+    flex:1 1 auto;
+    min-width:0;
+    min-height:37px;
+    padding:7px 8px;
+  }
+}
+@media(max-width:390px){
+  .top-links{font-size:.72rem}
+  .top-links a{padding:7px 5px}
+}
