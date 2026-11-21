@@ -119,3 +119,28 @@ body{background:#f2faff;color:var(--ink)}
   .top-links{font-size:.72rem}
   .top-links a{padding:7px 5px}
 }
+
+/* Flag language switches: same visual cue as GTKJ, blue Creation styling. */
+.top-links a[hreflang="tl"],
+.top-links a[hreflang="en"]{
+  background:#fff;
+  border:1px solid #c4e1f3;
+  box-shadow:0 1px 5px #15547a14;
+  color:#185d8d;
+  gap:7px;
+}
+.top-links a[hreflang="tl"]::before,
+.top-links a[hreflang="en"]::before{
+  display:inline-block;
+  font-size:1.35rem;
+  line-height:1;
+  flex:0 0 auto;
+}
+.top-links a[hreflang="tl"]::before{content:"🇵🇭"}
+.top-links a[hreflang="en"]::before{content:"🇦🇺"}
+@media(max-width:740px){
+  .top-links a[hreflang="tl"],
+  .top-links a[hreflang="en"]{gap:5px}
+  .top-links a[hreflang="tl"]::before,
+  .top-links a[hreflang="en"]::before{font-size:1.15rem}
+}
