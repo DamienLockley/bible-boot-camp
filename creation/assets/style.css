@@ -144,3 +144,48 @@ body{background:#f2faff;color:var(--ink)}
   .top-links a[hreflang="tl"]::before,
   .top-links a[hreflang="en"]::before{font-size:1.15rem}
 }
+
+/* Uniform four-button navigation on every Creation page (EN and TL). */
+.top-links{
+  display:grid;
+  grid-template-columns:repeat(4,max-content);
+  align-items:center;
+  gap:5px;
+}
+.top-links a{
+  min-height:40px;
+  text-align:center;
+  font-size:.85rem;
+  border-radius:999px;
+}
+.top-links .language-switch{
+  background:#fff;
+  border:1px solid #bfdef2;
+  color:#195d8b;
+  box-shadow:0 1px 6px #174c7215;
+  gap:7px;
+}
+.top-links .language-switch::before{content:none!important;display:none!important}
+.top-links .language-switch .flag{
+  display:inline-block;
+  font-family:system-ui,"Apple Color Emoji","Segoe UI Emoji",sans-serif;
+  font-size:1.35rem;
+  line-height:1;
+}
+@media(max-width:740px){
+  .top-links{
+    width:100%;
+    max-width:540px;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:3px;
+  }
+  .top-links a{
+    min-width:0;
+    padding:8px 4px;
+    font-size:clamp(.62rem,2.7vw,.83rem);
+    white-space:normal;
+    line-height:1.15;
+  }
+  .top-links .language-switch{gap:3px}
+  .top-links .language-switch .flag{font-size:1.15rem}
+}
