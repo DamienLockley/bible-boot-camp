@@ -102,14 +102,10 @@ button:disabled{cursor:not-allowed;opacity:.5}
 /* GTKJ-TL-ASPECT-BEGIN */
 .media-box img,.study-gallery .image-zoom-button img,.inserted-illustration img{width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;display:block}
 .media-box .image-zoom-button{width:100%;padding:0;border:0;background:transparent}
-.topbar,.header-actions,.hero-stats{flex-wrap:wrap}
-.main-nav{flex-wrap:wrap;justify-content:center}
-.brand strong{white-space:normal}
 .detail-main,.detail-grid>*{min-width:0}
-.btn,.nav-link{white-space:normal;overflow-wrap:normal}
+.btn{white-space:normal;overflow-wrap:normal}
 .section-head{flex-wrap:wrap}.section-head>div{flex:1 1 240px}.section-head>.btn{flex-shrink:0}
 .card-footer button{min-width:90px}
-@media(max-width:600px){.topbar{gap:12px;padding-top:12px;padding-bottom:12px}.hero-stats{gap:10px}.hero-copy{padding:28px 22px}.shell{padding-left:16px;padding-right:16px}}
 /* GTKJ-TL-ASPECT-END */
 
 /* WEBSITE-MANAGER-IMAGE-FIT-START */
