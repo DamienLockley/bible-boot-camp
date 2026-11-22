@@ -77,8 +77,8 @@ async function shareStudyPdf(){
 
 
 function library(){const q=$('search').value.toLowerCase().trim();$('list').innerHTML=data.sections.filter(s=>!q||s.title.toLowerCase().includes(q)||s.units.some(u=>u.text.toLowerCase().includes(q))).map(s=>`<button class="item" onclick="openStudy(${s.id})"><span>${s.id+1}. ${esc(s.title)}</span><span>›</span></button>`).join('')||'<p>No matches</p>'}
-function home(){$('study').classList.add('hidden');$('library').classList.remove('hidden');library()}
-function openStudy(n){section=n;idx=0;mode=['guided','reference','verses'].includes(localStorage.getItem('bbc-mode'))?localStorage.getItem('bbc-mode'):'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
+function home(){localStorage.setItem('bbc-view','home');$('study').classList.add('hidden');$('library').classList.remove('hidden');library()}
+function openStudy(n){localStorage.setItem('bbc-view','study');section=n;idx=0;mode=['guided','reference','verses'].includes(localStorage.getItem('bbc-mode'))?localStorage.getItem('bbc-mode'):'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
 function setMode(m){mode=m;idx=0;localStorage.setItem('bbc-mode',m);render()}
 function imageButton(names){return names.length?`<button onclick='showImages(${JSON.stringify(names)})'>▧ Image</button>`:''}
 // Colour scripture references without changing the original wording or adding links.
@@ -169,7 +169,7 @@ window.addEventListener('keydown',e=>{
  else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowLeft')stepImage(-1);
  else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowRight')stepImage(1);
 });
-fetch('study-data.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');home();try{const p=JSON.parse(localStorage.getItem('bbc-progress'));if(p&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).catch(e=>$('loading').textContent='Could not load data: '+e.message);
+fetch('study-data.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');const resumeStudy=localStorage.getItem('bbc-view')==='study';home();try{const p=resumeStudy?JSON.parse(localStorage.getItem('bbc-progress')):null;if(p&&Number.isInteger(p.section)&&p.section>=0&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).catch(e=>$('loading').textContent='Could not load data: '+e.message);
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.warn))}
 
 // Check online content first; the service worker uses network-first for app files.
