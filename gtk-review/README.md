@@ -35,12 +35,25 @@ The existing Daniel and Revelation study objectives and the owner's Scripture-fi
 - The review is in English only. Tagalog translation and real-learner integration should follow the owner's approval of the instructional design and questions.
 - No external instructional sources were consulted or introduced for this review. Bible references are those already found in the approved studies.
 
+## Review 2 — main teaching points (23 November 2026)
+
+The second pass has now replaced Review 1's repeated lesson headings with **four concise, source-grounded learning outcomes for each of the 28 lessons (112 total)**. Each outcome has an accompanying Bible reference already present in the site's approved study data or connections. The fourth outcome explicitly addresses God's character.
+
+These new teaching points live only in `review-pass2.js`. The 140 demonstration questions and analogies remain in `review-data.js`. The 28 original lessons remain sourced from the main GTKJ site's Word-generated JavaScript files; no production study text was changed.
+
+**Review status:** Proposed, not approved. The output is a faithful review draft, not a completed independent audit of every previously provided Ellen White, Daniel, Revelation, or original authority document. Those full masters were not all accessible in this session, so no new interpretations or outside research have been silently blended into the summaries.
+
+### Recommended review order
+
+Read a study's **Four truths to remember**, then its original Bible readings and the analogy, and finally try the five-question check. Review the fourth point especially: whether it really vindicates God's character and combats a relevant deception without overstating a passage. Use **My comments on this study** and **Export review notes** to send suggested corrections.
+
 ## Files
 
 - `index.html`: review entry page
 - `review.css`: separate responsive review styles
 - `review-app.js`: independent lesson rendering, quiz, unlock demo and feedback export
 - `review-data.js`: proposed analogies and five questions per lesson
+- `review-pass2.js`: four Scripture-supported learning outcomes for each of the 28 studies, separated for theological review
 
 ## Safe feedback workflow
 
