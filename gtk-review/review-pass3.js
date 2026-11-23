@@ -21,9 +21,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone fears the judgment means Jesus no longer cares. How do you help?",
         "correct": "Point to Jesus as the living High Priest who invites us to receive mercy.",
         "wrong": [
-          "Do not turn 1844 into fear or place dates above Jesus.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Conclude that Jesus stopped caring when the judgment began.",
+          "Treat a guessed date as more important than Scripture and the gospel.",
+          "Assume salvation depends on personally calculating a prophetic timeline."
         ]
       }
     },
@@ -37,9 +37,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A confident speaker teaches something surprising. What should you do?",
         "correct": "Listen respectfully and examine Scripture in context.",
         "wrong": [
-          "Do not accept teachings just because a speaker sounds convincing.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Accept the speaker's claim without checking the Bible.",
+          "Reject the person before understanding what they said.",
+          "Treat a personal opinion as the final authority."
         ]
       }
     },
@@ -53,9 +53,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone disagrees with your beliefs. How should you respond?",
         "correct": "Explain faithfully and kindly, respecting their freedom to choose.",
         "wrong": [
-          "Reject the self-exaltation and coercion that mark Satan's rebellion.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Force the person to agree before continuing the conversation.",
+          "Mock them for holding a different belief.",
+          "Hide your convictions just to avoid a respectful discussion."
         ]
       }
     },
@@ -69,9 +69,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You realise you spoke harshly. What follows the Spirit's leading?",
         "correct": "Confess your wrong and seek to make things right.",
         "wrong": [
-          "Do not mistake guilt or impressive appearances for spiritual fruit.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Pretend the harsh words did no harm.",
+          "Blame the other person instead of acknowledging your choice.",
+          "Wait for a feeling to change without apologising or making amends."
         ]
       }
     },
@@ -85,9 +85,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You feel too guilty to come to God. What should you do?",
         "correct": "Come honestly to Jesus, seeking His mercy and a changed heart.",
         "wrong": [
-          "Do not depend on ceremonies or religious appearances to purchase forgiveness.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Stay away from Jesus until you feel worthy.",
+          "Try to pay for forgiveness through a religious ceremony.",
+          "Conclude that guilt makes mercy impossible."
         ]
       }
     },
@@ -101,9 +101,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Which part of David's example should a Christian follow?",
         "correct": "His repentance and desire for a clean heart, not his wrongdoing.",
         "wrong": [
-          "Never treat a biblical account of sin as approval of that sin.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Copy David's wrongdoing because the Bible records it.",
+          "Use repentance to excuse the harm caused.",
+          "Try to earn God's acceptance by good deeds."
         ]
       }
     },
@@ -117,9 +117,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You know God's law but are tempted to boast. What should change?",
         "correct": "Allow love to shape both your obedience and your treatment of others.",
         "wrong": [
-          "Do not make obedience a way to earn salvation or shame others.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Obey in order to earn salvation.",
+          "Use the commandments to shame other people.",
+          "Treat God's law as meaningless because grace is offered."
         ]
       }
     },
@@ -133,9 +133,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A religious leader says no one may question them. What should you do?",
         "correct": "Test the claim by Scripture while treating the person respectfully.",
         "wrong": [
-          "Reject unquestioning allegiance to religious power or contempt for individual believers.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Accept the claim because the speaker holds a religious office.",
+          "Attack everyone who belongs to the leader's community.",
+          "Treat every disagreement as proof of antichrist."
         ]
       }
     },
@@ -149,9 +149,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A beginner cannot follow the seventy weeks. What is a Christlike response?",
         "correct": "Patiently trace the evidence together and keep Jesus central.",
         "wrong": [
-          "Do not use prophetic calculations for self-importance or speculation.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Dismiss the evidence because prophecy takes effort to understand.",
+          "Skip the passage context and repeat a date without explanation.",
+          "Use the calculation to set a new date for Christ's return."
         ]
       }
     },
@@ -165,9 +165,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone asks if ancient historians independently confirm every miracle. What should you do?",
         "correct": "Explain accurately what the sources establish without exaggeration.",
         "wrong": [
-          "Do not exaggerate what historical witnesses can prove or mock honest questions.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Claim the sources prove details they do not mention.",
+          "Dismiss all historical evidence without examining it.",
+          "Tell the person that honest questions show a lack of faith."
         ]
       }
     },
@@ -181,9 +181,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You treated someone unfairly and fear exposure. What should you do?",
         "correct": "Acknowledge the wrong, seek to repair it, and trust Jesus.",
         "wrong": [
-          "Do not hide harm or use forgiveness to dismiss another person's suffering.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Hide the wrongdoing and hope it stays unknown.",
+          "Blame the person who was harmed.",
+          "Use forgiveness to avoid repairing damage where possible."
         ]
       }
     },
@@ -197,9 +197,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Authorities want to force everyone to worship alike. What should you defend?",
         "correct": "Freedom of conscience and faithfulness to God.",
         "wrong": [
-          "Reject efforts to force religious loyalty, even for your own group.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Force others to worship as you do.",
+          "Give up your own faith to keep everyone comfortable.",
+          "Condemn ordinary people because of a prophecy about a power."
         ]
       }
     },
@@ -213,9 +213,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A picture claims Exodus proves the tablets were blue sapphire. What should you do?",
         "correct": "Distinguish the illustration from what the biblical text actually states.",
         "wrong": [
-          "Do not present a suggested colour of the tablets as an explicit biblical fact.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "State that the Bible explicitly calls the tablets blue sapphire.",
+          "Treat an illustration as proof of a detail Scripture does not give.",
+          "Ignore the passage and repeat the picture's claim."
         ]
       }
     },
@@ -229,9 +229,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone needs compassionate help on Sabbath. What reflects Jesus?",
         "correct": "Help with mercy while honouring God's gift of sacred time.",
         "wrong": [
-          "Do not neglect holy time or turn it into a burden used to condemn others.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Refuse needed help because it is the Sabbath.",
+          "Condemn the person who asked for compassionate help.",
+          "Ignore sacred time and its purpose of worship and rest."
         ]
       }
     },
@@ -245,9 +245,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone predicts the date and asks you to neglect your family. What should you do?",
         "correct": "Refuse date-setting and continue loving, responsible service.",
         "wrong": [
-          "Reject date-setting rumours and abandonment of ordinary responsibilities.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Announce a date Scripture does not give.",
+          "Neglect family and daily responsibilities because of the prediction.",
+          "Spread fear instead of pointing to Jesus' promise."
         ]
       }
     },
@@ -261,9 +261,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A friend has just lost a loved one. What should you do?",
         "correct": "Offer compassion and the biblical hope of resurrection.",
         "wrong": [
-          "Do not exploit someone's grief or use the teaching as a harsh debate.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Turn the moment into a harsh argument.",
+          "Tell the grieving person their sorrow shows weak faith.",
+          "Use their loss to prove a point without listening."
         ]
       }
     },
@@ -277,9 +277,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone claims a normal electronic device automatically gives the mark. What should you do?",
         "correct": "Return to Scripture's concerns about worship and informed allegiance.",
         "wrong": [
-          "Do not spread unfounded claims or pronounce judgment on Sunday worshippers.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Claim that an ordinary device automatically gives the mark.",
+          "Declare that people who worship on Sunday already have the mark.",
+          "Use fear or accusation instead of examining the prophecy."
         ]
       }
     },
@@ -293,9 +293,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You see someone treated unjustly. What attitude fits this lesson?",
         "correct": "Seek justice while trusting God to bring evil to a final end.",
         "wrong": [
-          "Do not take pleasure in punishment or imagine evil lasts forever.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Take pleasure in people suffering punishment.",
+          "Imagine that evil and suffering continue forever.",
+          "Ignore victims because justice can wait."
         ]
       }
     },
@@ -309,9 +309,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone is terrified God enjoys torturing people forever. What should you do?",
         "correct": "Begin with God's love and study the biblical evidence gently.",
         "wrong": [
-          "Do not frighten people into submission or make jokes about their fear.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Use frightening threats to force a response.",
+          "Mock the person's fear instead of listening.",
+          "Claim that God enjoys endless torture without examining Scripture."
         ]
       }
     },
@@ -325,9 +325,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A popular teacher says their message cannot be tested. What do you do?",
         "correct": "Check it by Scripture and its fruits with humility.",
         "wrong": [
-          "Do not place a charismatic messenger above the Bible.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Trust the messenger without testing the message.",
+          "Reject every prophetic gift without considering Scripture.",
+          "Treat charisma as proof that a claim is true."
         ]
       }
     },
@@ -341,9 +341,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "Someone says church membership proves they are better than everyone else. What should you say?",
         "correct": "Remnant identity should show truth, love, humility and service.",
         "wrong": [
-          "Do not use church identity to despise sincere Christians elsewhere.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Boast that a church label makes you superior.",
+          "Despise sincere Christians who belong to other communities.",
+          "Assume membership alone guarantees a faithful life."
         ]
       }
     },
@@ -357,9 +357,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You want an expensive item mostly to impress people. What should you ask?",
         "correct": "Does this choice express humility, loving stewardship and a Christlike priority?",
         "wrong": [
-          "Do not measure someone's spiritual value by clothing, jewellery or wealth.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Judge someone's spiritual worth by clothing or wealth.",
+          "Buy the item mainly to impress people.",
+          "Treat possessions as the measure of success."
         ]
       }
     },
@@ -373,9 +373,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You have a difficult decision. What reflects Jesus' prayer life?",
         "correct": "Pray honestly, seek God's will and be willing to follow His guidance.",
         "wrong": [
-          "Do not use prayer to impress others or manipulate God.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Pray to impress other people.",
+          "Demand that God follow your preferred plan.",
+          "Stop seeking God because an answer was not immediate."
         ]
       }
     },
@@ -389,9 +389,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A believer gets sick despite careful habits. How should you respond?",
         "correct": "Offer compassion and support without judging their faith.",
         "wrong": [
-          "Do not blame people for illness or boast about habits as proof of holiness.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Blame the sick person for their illness.",
+          "Treat perfect health habits as proof of greater holiness.",
+          "Withhold support because the person is unwell."
         ]
       }
     },
@@ -405,9 +405,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A person feels pressured into baptism but does not understand it. What do you do?",
         "correct": "Explain Jesus' invitation patiently and allow an informed, willing response.",
         "wrong": [
-          "Do not pressure someone or treat baptismal water as a magical guarantee.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Pressure the person to be baptised before they understand.",
+          "Claim the water works like magic regardless of faith.",
+          "Dismiss baptism as an empty act with no meaning."
         ]
       }
     },
@@ -421,9 +421,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You understand the doctrine but treat questioners with contempt. What needs to change?",
         "correct": "Let Christ's love, humility and patience shape your response.",
         "wrong": [
-          "Do not use the mystery of God as an excuse for pride or contempt.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Ridicule the person for asking a sincere question.",
+          "Use the doctrine to claim that Father, Son and Spirit compete with one another.",
+          "Refuse to show patience or humility when explaining the belief."
         ]
       }
     },
@@ -437,9 +437,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "You have resources that could help another person. What should you do?",
         "correct": "Use them willingly and responsibly as gifts entrusted by God.",
         "wrong": [
-          "Do not give for praise or imagine gifts purchase salvation.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Keep resources only for personal display.",
+          "Give mainly to receive praise from others.",
+          "Treat a donation as a purchase of salvation."
         ]
       }
     },
@@ -453,9 +453,9 @@ window.GTKJ_REVIEW_PASS3 = {
         "question": "A friend isn't ready to accept your beliefs. What should you do?",
         "correct": "Respect their freedom, remain caring and offer to study together.",
         "wrong": [
-          "Do not pressure people or end friendship when they are unconvinced.",
-          "Do nothing practical with the teaching and focus only on passing the quiz.",
-          "Make outward appearances more important than God's character and truth."
+          "Pressure the friend to agree immediately.",
+          "End the friendship because they are not ready.",
+          "Pretend to agree with them just to win their trust."
         ]
       }
     }
