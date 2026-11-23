@@ -140,4 +140,8 @@ button:disabled{cursor:not-allowed;opacity:.5}
  .site-header #connectButton {grid-column:4;grid-row:1;margin:0!important}
 }
 /* GTKJ-EN-TL-HEADER-UNIFIED-END */
-
+/* Give desktop study pages room to read comfortably; smaller layouts keep the existing single-column rules. */
+@media (min-width:931px) {
+  #main:has(.detail-grid) { max-width:1440px; }
+  #main:has(.detail-grid) .detail-grid { grid-template-columns:minmax(0,1fr) 305px; gap:32px; }
+}
