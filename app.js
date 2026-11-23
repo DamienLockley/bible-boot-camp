@@ -13,13 +13,15 @@ const user={
   completed:Array.isArray(saved.completed)?saved.completed:[],
   notes:(saved.notes&&typeof saved.notes==='object')?saved.notes:{},
   read:(saved.read&&typeof saved.read==='object')?saved.read:{},
+  quizPassed:(saved.quizPassed&&typeof saved.quizPassed==='object')?saved.quizPassed:{},
   theme:saved.theme||'light',
   font:Number(saved.font)||0
 };
 const state={search:''};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 window.GTKJ_STUDY_CHOICES=STUDIES.map(s=>({id:s.id,title:s.title}));
-const ORDER=STUDIES; // The original document’s heading order is the course order.
+const COURSE_ORDER_IDS=["word","history","controversy","salvation","spirit","sanctuary","blue-stone","law","sabbath","prayer","baptism","living","health","stewardship","nature","second-coming","millennium","hell","seventy-weeks","judgement","1844","antichrist","america","mark","prophecy-gift","godhead","remnant","witnessing"];
+const ORDER=COURSE_ORDER_IDS.map(id=>STUDIES.find(s=>s.id===id)).filter(Boolean);
 const STUDY_ART={
  word:'word', controversy:'controversy', spirit:'spirit', sanctuary:'sanctuary',
  salvation:'salvation',law:'law',antichrist:'antichrist','seventy-weeks':'seventy-weeks',
@@ -88,7 +90,7 @@ function progressBanner(){
 function card(s,index){
   const locked=!isUnlocked(s.id);
   const isNext=nextStudy()?.id===s.id;
-  return `<article class="course-card ${locked?'is-locked':''}"><div class="card-inside"><div class="card-top"><span class="eyebrow">STUDY ${String(index+1).padStart(2,'0')} · ${esc(s.tag)}</span>${completed(s.id)?'<span class="done-mark">✓ Complete</span>':locked?'<span class="lock-mark">🔒 Locked</span>':isNext?'<span class="next-mark">Next</span>':''}</div><div class="card-title">${esc(s.title)}</div><p class="card-lead">${esc(s.lead)}</p></div><div class="card-footer"><span>${locked?'COMPLETE PREVIOUS STUDY':'30–45 MIN GUIDED STUDY'}</span><button type="button" ${locked?'disabled':''} data-study="${esc(s.id)}" aria-label="${locked?'Locked: ':'Open '}${esc(s.title)}">${locked?'Locked':'Open study →'}</button></div></article>`;
+  return `<article class="course-card ${locked?'is-locked':''}"><div class="card-inside"><div class="card-top"><span class="eyebrow">STUDY ${String(index+1).padStart(2,'0')} · ${esc(s.tag)}</span>${completed(s.id)?'<span class="done-mark">✓ Complete</span>':locked?'<span class="lock-mark">↗ Up ahead</span>':isNext?'<span class="next-mark">Next</span>':''}</div><div class="card-title">${esc(s.title)}</div><p class="card-lead">${esc(s.lead)}</p></div><div class="card-footer"><span>${locked?'OPENS AS YOU CONTINUE':'30–45 MIN GUIDED STUDY'}</span><button type="button" ${locked?'disabled':''} data-study="${esc(s.id)}" aria-label="${locked?'Up ahead: ':'Open '}${esc(s.title)}">${locked?'Up ahead':'Open study →'}</button></div></article>`;
 }
 
 function renderCards(){
@@ -114,7 +116,7 @@ function renderHome(){
     </div>
     <section class="panel creation-promo" aria-label="Creation studies"><img src="/creation/assets/cards/creation-week.jpg" alt="A beautiful landscape depicting creation" loading="lazy"><div class="creation-promo-copy"><span class="kicker">MORE BIBLE STUDIES</span><h2>Creation to Re-creation</h2><p>Explore the seven days of Creation, the Flood and redemption.</p><div class="creation-promo-actions"><a class="btn btn-primary" href="/creation/">Creation</a></div></div></section>
     <section class="feature-row" aria-label="How these studies work"><div class="feature"><div class="glyph">📖</div><div><strong>Simple Bible teaching</strong><p>Each study explains the topic in plain language without assuming prior knowledge.</p></div></div><div class="feature"><div class="glyph">💬</div><div><strong>Real-life questions</strong><p>Each lesson answers honest questions people commonly ask when discovering faith.</p></div></div><div class="feature"><div class="glyph">🔓</div><div><strong>Guided pathway</strong><p>Studies stay in order so each lesson builds naturally on the one before it.</p></div></div></section>
-    <div id="library" class="section-head"><div><span class="kicker">YOUR STUDY PATHWAY</span><h2>Study in order</h2><p>Search the library below. Locked studies will open as you complete each lesson in sequence.</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div>
+    <div id="library" class="section-head"><div><span class="kicker">YOUR STUDY PATHWAY</span><h2>Study in order</h2><p>Search the library below. Upcoming studies become available as you continue through the lessons.</p></div><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div>
     <div class="library-control"><div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Search a topic or question..." aria-label="Search Bible study topics" value="${esc(state.search)}" /></div></div>
     <div class="course-grid" id="courseGrid"></div>`;
   renderCards();
@@ -164,11 +166,12 @@ function renderStudy(s){
   </section>
   <section class="panel"><div class="panel-header"><span class="small-round">03</span><h2>Real-life questions</h2></div><p class="muted">Tap a question to explore a suggested answer.</p>${s.qa.map(({0:q,1:a})=>`<details class="qitem"><summary>${esc(q)}</summary><div class="answer"><strong>A Bible-based response:</strong> ${esc(a)}</div>${addedPics(s.id,'qa',s.qa.findIndex(z=>z[0]===q))}</details>`).join('')}</section>
   <section class="panel"><div class="panel-header"><span class="small-round">04</span><h2>Make it personal</h2></div><div class="prompt">${esc(s.act)}</div><div class="prompt" style="margin-top:12px"><strong>Extended personal exercise:</strong> ${esc(DEPTH[s.id]?.practice||s.act)}</div>${addedPics(s.id,'end',0)}<div class="journal-title" style="margin-top:21px"><strong>My private reflection</strong><span>Saved in your account when signed in, otherwise on this device</span></div><textarea id="studyNotes" placeholder="What stood out? What questions do you still have?" aria-label="Private reflection notes"></textarea><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="study-notice" id="notesStatus">Saved in this browser</span><button class="mini-link" type="button" data-action="save-notes">Save notes</button></div></section>
-  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)?'disabled':''}>${completed(s.id)?'✓ Study completed':allRead(s.id)?'✓ Finish study & unlock next':'Review all passages to finish'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Share this study ↗</button></div>
-  <div class="study-notice" id="finishHint">${completed(s.id)?'You can revisit this study at any time.':allRead(s.id)?'You have worked through the readings. Take time for reflection, then finish the study.':'Complete all six reading checkpoints to unlock the next study.'}</div>
-  <div class="foot-actions">${previous?`<button class="btn btn-outline" data-study="${esc(previous.id)}">← Previous</button>`:'<span></span>'}${next?`<button class="btn btn-outline" ${nextLocked?'disabled':''} data-study="${esc(next.id)}">${nextLocked?'Complete this study to unlock next':'Next study →'}</button>`:`<button class="btn btn-outline" data-action="journey">View journey →</button>`}</div>
+  ${window.GTKJ_RENDER_COURSE_ADDONS?window.GTKJ_RENDER_COURSE_ADDONS(s,ix):''}
+  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)||!user.quizPassed[s.id]?'disabled':''}>${completed(s.id)?'✓ Study completed':!allRead(s.id)?'Review all passages to finish':!user.quizPassed[s.id]?'Complete the five questions first':'✓ Finish study & unlock next'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Share this study ↗</button></div>
+  <div class="study-notice" id="finishHint">${completed(s.id)?'You can revisit this study at any time.':!allRead(s.id)?'Complete all six reading checkpoints, then answer five short questions.':!user.quizPassed[s.id]?'You have worked through the readings. Complete the short review to finish.':'You have worked through the readings and review. You can finish the study now.'}</div>
+  <div class="foot-actions">${previous?`<button class="btn btn-outline" data-study="${esc(previous.id)}">← Previous</button>`:'<span></span>'}${next?`<button class="btn btn-outline" ${nextLocked?'disabled':''} data-study="${esc(next.id)}">${nextLocked?'Your next study will be ready after this one':'Next study →'}</button>`:`<button class="btn btn-outline" data-action="journey">View journey →</button>`}</div>
   <p class="study-notice">These studies are written to help people discover Bible truth clearly and simply. Check every teaching by Scripture in context.</p>
-  </div><aside class="detail-side" aria-label="Study support"><div class="side-card"><h3>Your pathway</h3><p>${completed(s.id)?'This study is complete. You can review it any time.':`You are currently on Study ${String(ix+1).padStart(2,'0')} of ${ORDER.length}.`}</p><p>${nextLocked?'Complete this study to unlock the next lesson.':next?`Next lesson: <b>${esc(next.title)}</b>.`:'You are on the final lesson.'}</p><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div></aside></div>`;
+  </div><aside class="detail-side" aria-label="Study support"><div class="side-card"><h3>Your pathway</h3><p>${completed(s.id)?'This study is complete. You can review it any time.':`You are currently on Study ${String(ix+1).padStart(2,'0')} of ${ORDER.length}.`}</p><p>${nextLocked?'Your next study will be ready after this lesson.':next?`Next lesson: <b>${esc(next.title)}</b>.`:'You are on the final lesson.'}</p><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div></aside></div>`;
   const field=document.getElementById('studyNotes');
   field.value=user.notes[s.id]||'';
   let savedTimer;
@@ -293,7 +296,7 @@ document.body.addEventListener('click',e=>{
   if(a==='complete'){
     const id=target.dataset.id;
     if(completed(id)) return;
-    if(!isUnlocked(id)||!allRead(id)){toast('Work through all six readings before completing this study.');return;}
+    if(!isUnlocked(id)||!allRead(id)||!user.quizPassed[id]){toast('Complete the six readings and five questions before finishing this study.');return;}
     user.completed.push(id);
     save();
     const unlocked=nextStudy();
@@ -305,6 +308,20 @@ document.body.addEventListener('click',e=>{
   if(a==='connect') openConnect();
 });
 
+main.addEventListener('submit',e=>{
+ if(!e.target.matches('.gtk-study-quiz'))return;
+ e.preventDefault();const form=e.target,id=form.dataset.quizId,result=form.querySelector('[data-quiz-result]');
+ const answers=Array.from({length:5},(_,i)=>form.querySelector('input[name="q'+i+'"]:checked'));
+ const labels=window.GTKJ_COURSE_ADDON_STRINGS?window.GTKJ_COURSE_ADDON_STRINGS(false):null;
+ if(answers.some(a=>!a)){if(result)result.textContent=labels?labels.all:'Please answer all five questions first.';return;}
+ const score=answers.reduce((n,a)=>n+(a.value==='1'?1:0),0);
+ if(score===5){user.quizPassed[id]=true;save();if(result)result.textContent=labels?labels.success:'✓ All answers correct.';}
+ else if(result)result.textContent=(labels?labels.retry:'Review the key ideas and try again.')+' ('+score+'/5)';
+ const btn=document.getElementById('completeStudyBtn');
+ if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Review all passages to finish':!user.quizPassed[id]?'Complete the five questions first':'✓ Finish study & unlock next';}
+ const hint=document.getElementById('finishHint');
+ if(hint&&!completed(id)&&user.quizPassed[id])hint.textContent='You have worked through the readings and review. You can finish the study now.';
+});
 main.addEventListener('change',e=>{
  if(e.target.id==='importFile'){importProgress(e.target.files?.[0]);return;}
  if(e.target.matches('[data-stepcheck]')){
@@ -316,7 +333,7 @@ main.addEventListener('change',e=>{
    user.read[id]=Array.from(set).sort((a,b)=>a-b);save();
    const cnt=document.getElementById('readCount');if(cnt)cnt.textContent=`${checkedCount(id)} of ${(DEPTH[id]?.steps||[]).length} passages studied`;
    const btn=document.getElementById('completeStudyBtn');
-   if(btn&&!completed(id)){btn.disabled=!allRead(id);btn.textContent=allRead(id)?'✓ Finish study & unlock next':'Review all passages to finish';}
+   if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Review all passages to finish':!user.quizPassed[id]?'Complete the five questions first':'✓ Finish study & unlock next';}
    const hint=document.getElementById('finishHint');if(hint)hint.textContent=allRead(id)?'You have worked through the readings. Take time for reflection, then finish the study.':'Complete all six reading checkpoints to unlock the next study.';
  }
 });
@@ -332,7 +349,7 @@ modal.addEventListener('click',e=>{if(e.target===modal) closeConnect()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden) closeConnect()});
 connectForm.addEventListener('submit',submitConnectForm);
 
-window.BIBLE_PROGRESS={get:()=>JSON.parse(JSON.stringify(user)),replace:(data)=>{if(!data||typeof data!=='object')return;const set=new Set(Array.isArray(data.completed)?data.completed:[]);user.completed=ORDER.map(x=>x.id).filter((id,i)=>ORDER.slice(0,i+1).every(x=>set.has(x.id)));user.read=(data.read&&typeof data.read==='object')?data.read:{};user.notes=(data.notes&&typeof data.notes==='object')?data.notes:{};save();route()}};
+window.BIBLE_PROGRESS={get:()=>JSON.parse(JSON.stringify(user)),replace:(data)=>{if(!data||typeof data!=='object')return;const set=new Set(Array.isArray(data.completed)?data.completed:[]);user.completed=ORDER.map(x=>x.id).filter(id=>set.has(id));user.read=(data.read&&typeof data.read==='object')?data.read:{};user.notes=(data.notes&&typeof data.notes==='object')?data.notes:{};user.quizPassed=(data.quizPassed&&typeof data.quizPassed==='object')?data.quizPassed:{};save();route()}};
 applyTheme();
 route();
 })();
