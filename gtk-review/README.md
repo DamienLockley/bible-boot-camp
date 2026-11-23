@@ -6,9 +6,9 @@
 
 This is an **isolated English review edition**. Nothing in the current GTKJ English or Tagalog learner pages, Firebase, approved account progress, or website manager has been modified. There is deliberately no link from the main GTKJ homepage until the owner approves the concept.
 
-The original order of all 28 doctrinal studies remains unchanged in the interactive lesson reader: line upon line, building understanding gradually. Every study focuses on the primary truth, biblical evidence, its application to lived experience, and what it reveals about God's character.
+The interactive review reader now follows the proposed pathway in `sequence-review.html`, with all 28 stable study IDs and their lesson data preserved. It is an isolated preview for trying the sequence; the live English and Tagalog learner sites remain unchanged.
 
-A separate **Study Pathway Proposal** now audits the current sequence and shows an alternative order for owner review. The interactive lesson reader continues to use the original order; the alternative is not applied to either the review reader or the live learner site. It also demonstrates warmer “Coming up” wording while keeping future lessons unavailable in learner mode.
+A separate **Study Pathway Proposal** now audits the current sequence and shows an alternative order for owner review. The interactive review reader follows the proposed order, while the live learner sites keep their current order. It demonstrates warmer “Coming up” wording while keeping future lessons unavailable in learner mode.
 
 ## What the reviewer can inspect
 
