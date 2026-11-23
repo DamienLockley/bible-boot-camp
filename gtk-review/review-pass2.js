@@ -20,7 +20,7 @@ window.GTKJ_REVIEW_PASS2 = {
           "focus": "Central teaching"
         },
         {
-          "text": "God's last-day judgment belongs with the gospel: the living Jesus remains our High Priest",
+          "text": "The pre-Advent judgment is a new phase of Christ’s ministry: His sacrifice is complete, and He continues as our merciful High Priest.",
           "ref": "Revelation 14:6–7; Hebrews 8:1–2",
           "focus": "God's character"
         }
