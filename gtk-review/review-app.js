@@ -4,6 +4,7 @@
 const STORE='gtkj-educational-review-v1';
 const ids=STUDIES.map(s=>s.id);
 const model=window.GTKJ_REVIEW;
+const transform=window.GTKJ_REVIEW_PASS3;
 const nav=document.getElementById('lessonNav');
 const content=document.getElementById('lessonContent');
 const reviewer=document.getElementById('reviewerMode');
@@ -52,15 +53,32 @@ function stepCard(x,i){return '<section class="step" id="step-'+i+'"><small>READ
 function noteArea(id){
  return '<section class="section review-note" id="reviewNotes"><div class="eyebrow-dark">FOR REVIEWERS</div><h3>My comments on this study</h3><p>Record wording changes, questions or doctrinal points for further checking. Notes stay only in this browser until you export them.</p><textarea id="myNotes" placeholder="What should be clearer? What is missing from the central message? Do the questions accurately test the teaching?" aria-label="Your review notes">'+E(state.notes[id]||'')+'</textarea><small>Saved locally as you type · Use Export review notes at the top to keep a copy.</small></section>';
 }
+function quizQuestions(id){
+ const base=arr(model.quizzes[id]).map(q=>q.slice());
+ const applied=transform?.studies?.[id]?.quiz;
+ if(base.length===5&&applied){base[4]=[applied.question,applied.correct,...applied.wrong]}
+ return base;
+}
 function quizHtml(s){
- const questions=arr(model.quizzes[s.id]);
+ const questions=quizQuestions(s.id);
  if(questions.length!==5)return '<div class="warning">This study has not yet received its five review questions.</div>';
  const fields=questions.map((q,i)=>{
  const choices=q.slice(1).map((t,j)=>({t,correct:j===0}));
  const shift=(i*3+s.id.length)%4;const order=choices.slice(shift).concat(choices.slice(0,shift));
  return '<fieldset class="quiz-item"><legend>'+(i+1)+'. '+E(q[0])+'</legend>'+order.map((c,j)=>'<label class="choice"><input type="radio" name="q'+i+'" value="'+(c.correct?'1':'0')+'" data-answer="'+j+'"><span>'+E(c.t)+'</span></label>').join('')+'</fieldset>'
  }).join('');
- return '<section class="section" id="quiz"><div class="quiz"><div class="eyebrow-dark">CHECK YOUR UNDERSTANDING</div><h3>Five important questions</h3><p class="quiz-intro">These questions test the main message, Bible evidence, possible misunderstandings, and what the doctrine reveals about God. You need 5 / 5 to unlock the next study in learner mode. Try as often as you like.</p><form id="quizForm">'+fields+'<button class="btn" type="submit">Check my answers →</button></form><div id="quizResult" role="status" aria-live="polite"></div></div></section>';
+ return '<section class="section" id="quiz"><div class="quiz"><div class="eyebrow-dark">CHECK YOUR UNDERSTANDING</div><h3>Five important questions</h3><p class="quiz-intro">These questions test the biblical teaching, possible misunderstandings, and a practical response. The fifth question concerns how the truth should shape your character. A correct response demonstrates understanding, not proven transformation. You need 5 / 5 to unlock the next study in learner mode. Try as often as you like.</p><form id="quizForm">'+fields+'<button class="btn" type="submit">Check my answers →</button></form><div id="quizResult" role="status" aria-live="polite"></div></div></section>';
+}
+function transformationHtml(id){
+ const t=transform?.studies?.[id];
+ if(!t)return '';
+ const cards=[
+ ['What this reveals about God',t.reveal,'✦'],
+ ['Follow this biblical example',t.follow,'✓'],
+ ['Learn from this warning',t.avoid,'!'],
+ ['A response in my life',t.response,'→']
+ ];
+ return '<section class="section" id="becoming"><div class="becoming"><div class="eyebrow-dark">THE GOSPEL CHANGES US · REVIEW 3</div><h3>Becoming More Like Jesus</h3><p class="becoming-intro">Knowing the teaching is only the beginning. By abiding in Christ, we learn to reflect His character in the way we live.</p><div class="becoming-rows">'+cards.map(c=>'<div><span class="becoming-icon">'+E(c[2])+'</span><strong>'+E(c[0])+'</strong><p>'+E(c[1])+'</p></div>').join('')+'</div><p class="refs">READ AND COMPARE: '+E(t.refs)+'</p><p class="transform-footer">Christ is our standard. We follow people only as they follow Christ (1 Corinthians 11:1). Transformation is the work of the Holy Spirit as we respond to Him, not a score produced by this quiz.</p></div></section>';
 }
 function render(){
  let id=currentId();
@@ -80,7 +98,7 @@ function render(){
  const extra='<section class="section connections"><div class="eyebrow-dark">SCRIPTURE CONNECTIONS</div><h3>Understanding the wider picture</h3>'+conn.map(x=>'<details><summary>'+E(x[0])+'</summary><p class="refs">'+E(x[1])+'</p><p>'+E(x[2])+'</p></details>').join('')+'</section>';
  const qa='<section class="section"><div class="eyebrow-dark">APPLYING THE TEACHING</div><h3>Questions people really ask</h3>'+arr(s.qa).map(x=>'<div class="idea"><h4>'+E(x[0])+'</h4><p>'+E(x[1])+'</p></div>').join('')+'<div class="recap"><h3>Put it into practice</h3><p>'+E(s.act||'')+'</p><p><strong>Further reflection:</strong> '+E(d.practice||'')+'</p></div></section>';
  const recap='<section class="section"><div class="recap"><div class="eyebrow-dark">BEFORE MOVING ON</div><h3>Remember the main truth</h3><p class="principle">'+E(d.principle)+'</p><p>Return to the Scripture readings if this teaching is not yet clear. Understanding matters more than speed.</p></div></section>';
- const shell='<article class="lesson-inner">'+intro+'<div class="lesson-body">'+main+analogy+img+ideas+reading+extra+qa+recap+quizHtml(s)+noteArea(id)+'<div class="page-nav">'+prev+'<a class="btn secondary" href="../#study='+encodeURIComponent(id)+'">Open current GTKJ study ↗</a>'+next+'</div></div></article>';
+ const shell='<article class="lesson-inner">'+intro+'<div class="lesson-body">'+main+analogy+img+ideas+reading+extra+qa+transformationHtml(id)+recap+quizHtml(s)+noteArea(id)+'<div class="page-nav">'+prev+'<a class="btn secondary" href="../#study='+encodeURIComponent(id)+'">Open current GTKJ study ↗</a>'+next+'</div></div></article>';
  content.innerHTML=shell;
  content.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.go)));
  const ta=document.getElementById('myNotes');
@@ -91,7 +109,7 @@ function render(){
  document.title=s.title+' — GTKJ Review';
 }
 function grade(s,form){
- const qs=model.quizzes[s.id];
+ const qs=quizQuestions(s.id);
  let selected=[],missing=[];
  for(let i=0;i<5;i++){
  const checked=form.querySelector('input[name="q'+i+'"]:checked');
@@ -108,12 +126,12 @@ function grade(s,form){
  });
  if(wrong.length){
  result.className='result bad';
- result.innerHTML='<strong>'+ (5-wrong.length)+'/5 correct — review these key ideas</strong><ul>'+wrong.map(i=>'<li><strong>Question '+(i+1)+':</strong> '+E(qs[i][1])+'</li>').join('')+'</ul><p>Revisit the Bible readings above, change any answers and choose Check my answers again. There is no penalty.</p>';
+ result.innerHTML='<strong>'+ (5-wrong.length)+'/5 correct — review these key ideas</strong><ul>'+wrong.map(i=>'<li><strong>Question '+(i+1)+':</strong> '+E(qs[i][1])+'</li>').join('')+'</ul><p>Revisit the Bible readings and the Becoming More Like Jesus section, change any answers and choose Check my answers again. There is no penalty.</p>';
  }else{
  state.passed[s.id]=true;save();renderNav();
  const idx=ids.indexOf(s.id);
  result.className='result good';
- result.innerHTML='<strong>✓ 5/5 — all answers correct!</strong><p>You have demonstrated understanding of this study’s main truths. '+(idx<27?'The next study is now unlocked in learner mode.':'You have completed all 28 study checks!')+'</p>'+(idx<27?'<button type="button" class="btn" id="quizNext">Continue to study '+(idx+2)+' →</button>':'');
+ result.innerHTML='<strong>✓ 5/5 — all answers correct!</strong><p>You have answered the understanding questions correctly. Character transformation grows through trust in Jesus and the Holy Spirit. '+(idx<27?'The next study is now unlocked in learner mode.':'You have completed all 28 study checks!')+'</p>'+(idx<27?'<button type="button" class="btn" id="quizNext">Continue to study '+(idx+2)+' →</button>':'');
  const go=document.getElementById('quizNext');if(go)go.addEventListener('click',()=>navigate(ids[idx+1]));
  }
  result.scrollIntoView({behavior:'smooth',block:'nearest'});
