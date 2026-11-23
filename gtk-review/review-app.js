@@ -36,7 +36,7 @@ function currentId(){
  const v=decodeURIComponent((location.hash||'').replace(/^#study=/,''));
  return ids.includes(v)?v:ids[0];
 }
-function navigate(id){if(!canOpen(id)){alert('Complete the previous study with all five correct answers to unlock this lesson. Switch on Reviewer access to inspect any lesson.');return;}
+function navigate(id){if(!canOpen(id)){alert('You are moving through the studies one step at a time. Finish the study before this one, and this lesson will be ready next.');return;}
  if(location.hash==='#study='+encodeURIComponent(id)){render();return;}
  location.hash='#study='+encodeURIComponent(id);
 }
@@ -44,7 +44,7 @@ function renderNav(){
  const active=currentId();
  progress.textContent=countPassed()+' / '+ids.length+' passed';
  fill.style.width=(countPassed()/ids.length*100)+'%';
- nav.innerHTML=STUDIES.map((s,i)=>'<button type="button" class="navbtn '+(s.id===active?'active ':'')+(!canOpen(s.id)?'locked':'')+'" data-id="'+E(s.id)+'" '+(!canOpen(s.id)?'aria-label="Locked study '+(i+1)+'"':'')+'><span class="navnum">'+String(i+1).padStart(2,'0')+'</span><span>'+E(s.title)+'</span><span class="mark">'+(state.passed[s.id]?'✓':canOpen(s.id)?'›':'🔒')+'</span></button>').join('');
+ nav.innerHTML=STUDIES.map((s,i)=>'<button type="button" class="navbtn '+(s.id===active?'active ':'')+(!canOpen(s.id)?'locked':'')+'" data-id="'+E(s.id)+'" '+(!canOpen(s.id)?'aria-label="Study '+(i+1)+', coming up after Study '+(unlockedAt()+1)+'."':'')+'><span class="navnum">'+String(i+1).padStart(2,'0')+'</span><span>'+E(s.title)+'</span><span class="mark">'+(state.passed[s.id]?'✓':canOpen(s.id)?(ids.indexOf(s.id)===unlockedAt()?'Next':'Open'):'Up ahead')+'</span></button>').join('');
  nav.querySelectorAll('[data-id]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.id)));
 }
 function verseChips(verses){return '<div class="versechips">'+arr(verses).map(x=>'<span>'+E(x)+'</span>').join('')+'</div>'}
@@ -67,7 +67,7 @@ function quizHtml(s){
  const shift=(i*3+s.id.length)%4;const order=choices.slice(shift).concat(choices.slice(0,shift));
  return '<fieldset class="quiz-item"><legend>'+(i+1)+'. '+E(q[0])+'</legend>'+order.map((c,j)=>'<label class="choice"><input type="radio" name="q'+i+'" value="'+(c.correct?'1':'0')+'" data-answer="'+j+'"><span>'+E(c.t)+'</span></label>').join('')+'</fieldset>'
  }).join('');
- return '<section class="section" id="quiz"><div class="quiz"><div class="eyebrow-dark">CHECK YOUR UNDERSTANDING</div><h3>Five important questions</h3><p class="quiz-intro">These questions test the biblical teaching, possible misunderstandings, and a practical response. The fifth question concerns how the truth should shape your character. A correct response demonstrates understanding, not proven transformation. You need 5 / 5 to unlock the next study in learner mode. Try as often as you like.</p><form id="quizForm">'+fields+'<button class="btn" type="submit">Check my answers →</button></form><div id="quizResult" role="status" aria-live="polite"></div></div></section>';
+ return '<section class="section" id="quiz"><div class="quiz"><div class="eyebrow-dark">CHECK YOUR UNDERSTANDING</div><h3>Five important questions</h3><p class="quiz-intro">These questions test the biblical teaching, possible misunderstandings, and a practical response. The fifth question concerns how the truth should shape your character. A correct response demonstrates understanding, not proven transformation. Complete all five questions to continue to the next study. Try as often as you like; there is no penalty.</p><form id="quizForm">'+fields+'<button class="btn" type="submit">Check my answers →</button></form><div id="quizResult" role="status" aria-live="polite"></div></div></section>';
 }
 function transformationHtml(id){
  const t=transform?.studies?.[id];
