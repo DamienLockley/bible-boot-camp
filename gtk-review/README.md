@@ -35,6 +35,12 @@ The existing Daniel and Revelation study objectives and the owner's Scripture-fi
 - The review is in English only. Tagalog translation and real-learner integration should follow the owner's approval of the instructional design and questions.
 - No external instructional sources were consulted or introduced for this review. Bible references are those already found in the approved studies.
 
+## Review 3 — Becoming More Like Jesus (23 November 2026)
+
+All 28 lessons now propose a **Becoming More Like Jesus** section: what the teaching reveals about God, a biblical example to follow, a warning not to imitate the sin of biblical characters, and a practical response empowered by Christ. In Study 5 the user explicitly requested following David's repentance, not his adultery and wrongdoing toward Uriah (2 Samuel 11–12; Psalm 51).
+
+The fifth multiple-choice question in each study is now an applied character scenario, so the course still has 140 questions. The other four questions remain unchanged. Correct answers assess understanding, **not the reality of character transformation**. This entire educational pass is proposed for review; no live GTKJ accounts or production files were changed.
+
 ## Review 2 — main teaching points (23 November 2026)
 
 The second pass has now replaced Review 1's repeated lesson headings with **four concise, source-grounded learning outcomes for each of the 28 lessons (112 total)**. Each outcome has an accompanying Bible reference already present in the site's approved study data or connections. The fourth outcome explicitly addresses God's character.
@@ -54,6 +60,7 @@ Read a study's **Four truths to remember**, then its original Bible readings and
 - `review-app.js`: independent lesson rendering, quiz, unlock demo and feedback export
 - `review-data.js`: proposed analogies and five questions per lesson
 - `review-pass2.js`: four Scripture-supported learning outcomes for each of the 28 studies, separated for theological review
+- `review-pass3.js`: the 28 character transformation examples, warnings, practical applications and fifth-question replacements
 
 ## Safe feedback workflow
 
