@@ -187,12 +187,22 @@ function renderAbout(){
   main.innerHTML=`<header class="article-hero"><span class="kicker">TUNGKOL SA WEBSITE NA ITO</span><h1>Pagkilala kay Hesus</h1><p>Layunin ng website na ito na tulungan ang mga tao na matuklasan ang katotohanan ng Biblia nang malinaw at sunod-sunod. Para ito sa mga nagnanais ng payak na paliwanag, tapat na mga tanong at praktikal na gabay mula sa Biblia.</p></header><div class="reading-card"><h3>Layunin</h3><p>Ipinapakilala ng mga araling ito ang mahahalagang turo ng Biblia sa payak na wika, na nakasentro sa Kasulatan.</p><p>Batay sa Biblia ang mga aralin. Hinihikayat ang mga mambabasa na ihambing mismo ang bawat aralin sa Biblia.</p><button class="btn btn-dark" data-action="home">Tuklasin ang mga aralin →</button></div>`;
 }
 
+
+function renderSharedStudyNotice(id){
+  const shared=STUDIES.find(s=>s.id===id),current=nextStudy();
+  if(!shared||!current){renderHome();return}
+  const currentIndex=ORDER.findIndex(s=>s.id===current.id)+1;
+  const sharedIndex=ORDER.findIndex(s=>s.id===shared.id)+1;
+  main.innerHTML='<header class="article-hero"><span class="kicker">MAY NAGBAHAGI SA IYO NG ISANG ARALIN</span><h1>Unahin muna ang mga pundasyon.</h1><p>Ibinahagi sa iyo ng isang tao ang Aralin '+String(sharedIndex).padStart(2,'0')+' — <strong>'+esc(shared.title)+'</strong>. Nakabatay ang araling ito sa mga naunang pag-aaral ng Biblia. Upang matuklasan ang mga katotohanang ito nang sunod-sunod, magsimula sa Aralin '+String(currentIndex).padStart(2,'0')+' at magpatuloy ayon sa pagkakasunod. Magiging handa ang Aralin '+String(sharedIndex).padStart(2,'0')+' kapag narating mo ito.</p></header><section class="reading-card"><h3>Ang susunod mong aralin: Aralin '+String(currentIndex).padStart(2,'0')+' — '+esc(current.title)+'</h3><p>Tapusin ang mga aralin ayon sa pagkakasunod upang mabuo ang iyong pagkaunawa, isa-isang hakbang.</p><div class="foot-actions" style="justify-content:start"><button class="btn btn-dark" data-study="'+esc(current.id)+'">Magsimula sa Aralin '+String(currentIndex).padStart(2,'0')+'</button><button class="btn btn-outline" data-action="journey">Tingnan ang landas ng pag-aaral</button></div></section>';
+}
+
 function route(){
   const hash=decodeURIComponent(location.hash||'');
   const study=hash.startsWith('#study=')?hash.slice(7):null;
+  const sharedStudy=new URLSearchParams(location.search).get('sharedStudy');
   ['homeTab','progressTab','aboutTab'].forEach(x=>document.getElementById(x).classList.remove('active'));
   if(study&&STUDIES.some(x=>x.id===study)){
-    if(!isUnlocked(study)){document.getElementById('homeTab').classList.add('active');renderHome();toast(`Tapusin muna ang mga naunang aralin upang mabuksan ang araling iyon.`)}
+    if(!isUnlocked(study)){document.getElementById('homeTab').classList.add('active');if(sharedStudy===study)renderSharedStudyNotice(study);else{renderHome();toast('Tapusin muna ang mga naunang aralin upang mabuksan ang araling iyon.')}}
     else{document.getElementById('homeTab').classList.add('active');renderStudy(STUDIES.find(s=>s.id===study));}
   }else if(hash==='#start-here'){
     document.getElementById('homeTab').classList.add('active');renderStartHere();
@@ -207,7 +217,7 @@ function route(){
 }
 
 function shareStudy(id){
-  const link=location.href.split('#')[0]+'#study='+encodeURIComponent(id);
+  const sharedUrl=new URL(location.href);sharedUrl.searchParams.set('sharedStudy',id);sharedUrl.hash='study='+encodeURIComponent(id);const link=sharedUrl.toString();
   if(navigator.share){navigator.share({title:STUDIES.find(s=>s.id===id)?.title||'Bible study',url:link}).catch(()=>{});return}
   if(navigator.clipboard?.writeText){navigator.clipboard.writeText(link).then(()=>toast('Nakopya ang link ng aralin')).catch(()=>fallbackCopy(link))}
   else fallbackCopy(link);
