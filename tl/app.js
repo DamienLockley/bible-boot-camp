@@ -13,13 +13,15 @@ const user={
   completed:Array.isArray(saved.completed)?saved.completed:[],
   notes:(saved.notes&&typeof saved.notes==='object')?saved.notes:{},
   read:(saved.read&&typeof saved.read==='object')?saved.read:{},
+  quizPassed:(saved.quizPassed&&typeof saved.quizPassed==='object')?saved.quizPassed:{},
   theme:saved.theme||'light',
   font:Number(saved.font)||0
 };
 const state={search:''};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 window.GTKJ_STUDY_CHOICES=STUDIES.map(s=>({id:s.id,title:s.title}));
-const ORDER=STUDIES; // The original document’s heading order is the course order.
+const COURSE_ORDER_IDS=["word","history","controversy","salvation","spirit","sanctuary","blue-stone","law","sabbath","prayer","baptism","living","health","stewardship","nature","second-coming","millennium","hell","seventy-weeks","judgement","1844","antichrist","america","mark","prophecy-gift","godhead","remnant","witnessing"];
+const ORDER=COURSE_ORDER_IDS.map(id=>STUDIES.find(s=>s.id===id)).filter(Boolean);
 const STUDY_ART={
  word:'word', controversy:'controversy', spirit:'spirit', sanctuary:'sanctuary',
  salvation:'salvation',law:'law',antichrist:'antichrist','seventy-weeks':'seventy-weeks',
@@ -88,7 +90,7 @@ function progressBanner(){
 function card(s,index){
   const locked=!isUnlocked(s.id);
   const isNext=nextStudy()?.id===s.id;
-  return `<article class="course-card ${locked?'is-locked':''}"><div class="card-inside"><div class="card-top"><span class="eyebrow">ARALIN ${String(index+1).padStart(2,'0')} · ${esc(s.tag)}</span>${completed(s.id)?'<span class="done-mark">✓ Tapos na</span>':locked?'<span class="lock-mark">🔒 Naka-lock</span>':isNext?'<span class="next-mark">Susunod</span>':''}</div><div class="card-title">${esc(s.title)}</div><p class="card-lead">${bibleRef(esc(s.lead))}</p></div><div class="card-footer"><span>${locked?'TAPUSIN MUNA ANG NAUNANG ARALIN':'30–45 MINUTONG PAG-AARAL'}</span><button type="button" ${locked?'disabled':''} data-study="${esc(s.id)}" aria-label="${locked?'Naka-lock: ':'Buksan '}${esc(s.title)}">${locked?'Naka-lock':'Buksan ang aralin →'}</button></div></article>`;
+  return `<article class="course-card ${locked?'is-locked':''}"><div class="card-inside"><div class="card-top"><span class="eyebrow">ARALIN ${String(index+1).padStart(2,'0')} · ${esc(s.tag)}</span>${completed(s.id)?'<span class="done-mark">✓ Tapos na</span>':locked?'<span class="lock-mark">↗ Sa susunod</span>':isNext?'<span class="next-mark">Susunod</span>':''}</div><div class="card-title">${esc(s.title)}</div><p class="card-lead">${bibleRef(esc(s.lead))}</p></div><div class="card-footer"><span>${locked?'MAGIGING BUKAS SA PAGPAPATULOY':'30–45 MINUTONG PAG-AARAL'}</span><button type="button" ${locked?'disabled':''} data-study="${esc(s.id)}" aria-label="${locked?'Sa susunod: ':'Buksan '}${esc(s.title)}">${locked?'Sa susunod':'Buksan ang aralin →'}</button></div></article>`;
 }
 
 function renderCards(){
@@ -164,11 +166,12 @@ function renderStudy(s){
   </section>
   <section class="panel"><div class="panel-header"><span class="small-round">03</span><h2>Mga tanong sa buhay</h2></div><p class="muted">Pindutin ang tanong upang makita ang iminungkahing sagot.</p>${s.qa.map(({0:q,1:a})=>`<details class="qitem"><summary>${bibleRef(esc(q))}</summary><div class="answer"><strong>Sagot na batay sa Biblia:</strong> ${bibleRef(esc(a))}</div>${addedPics(s.id,'qa',s.qa.findIndex(z=>z[0]===q))}</details>`).join('')}</section>
   <section class="panel"><div class="panel-header"><span class="small-round">04</span><h2>Isabuhay ang aralin</h2></div><div class="prompt">${bibleRef(esc(s.act))}</div><div class="prompt" style="margin-top:12px"><strong>Karagdagang personal na gawain:</strong> ${bibleRef(esc(DEPTH[s.id]?.practice||s.act))}</div>${addedPics(s.id,'end',0)}<div class="journal-title" style="margin-top:21px"><strong>Aking pribadong pagninilay</strong><span>Naka-save sa iyong account kung naka-sign in; kung hindi, sa device na ito</span></div><textarea id="studyNotes" placeholder="Ano ang tumatak sa iyo? Anong mga tanong ang mayroon ka pa?" aria-label="Pribadong tala ng pagninilay"></textarea><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="study-notice" id="notesStatus">Naka-save sa browser na ito</span><button class="mini-link" type="button" data-action="save-notes">I-save ang tala</button></div></section>
-  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)?'disabled':''}>${completed(s.id)?'✓ Natapos ang aralin':allRead(s.id)?'✓ Tapusin at buksan ang kasunod':'Basahin muna ang lahat ng talata'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Ibahagi ang araling ito ↗</button></div>
-  <div class="study-notice" id="finishHint">${completed(s.id)?'Maaari mong balikan ang araling ito anumang oras.':allRead(s.id)?'Natapos mo ang mga pagbasa. Maglaan ng oras upang magmuni-muni, saka tapusin ang aralin.':'Tapusin ang lahat ng anim na pagbasa upang mabuksan ang kasunod.'}</div>
-  <div class="foot-actions">${previous?`<button class="btn btn-outline" data-study="${esc(previous.id)}">← Nakaraan</button>`:'<span></span>'}${next?`<button class="btn btn-outline" ${nextLocked?'disabled':''} data-study="${esc(next.id)}">${nextLocked?'Tapusin ang aralin upang mabuksan ang kasunod':'Susunod na aralin →'}</button>`:`<button class="btn btn-outline" data-action="journey">Tingnan ang paglalakbay →</button>`}</div>
+  ${window.GTKJ_RENDER_COURSE_ADDONS?window.GTKJ_RENDER_COURSE_ADDONS(s,ix):''}
+  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)||!user.quizPassed[s.id]?'disabled':''}>${completed(s.id)?'✓ Natapos ang aralin':!allRead(s.id)?'Basahin muna ang lahat ng talata':!user.quizPassed[s.id]?'Sagutan muna ang limang tanong':'✓ Tapusin at buksan ang kasunod'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Ibahagi ang araling ito ↗</button></div>
+  <div class="study-notice" id="finishHint">${completed(s.id)?'Maaari mong balikan ang araling ito anumang oras.':!allRead(s.id)?'Tapusin ang anim na pagbasa, saka sagutan ang limang maikling tanong.':!user.quizPassed[s.id]?'Natapos mo na ang mga pagbasa. Sagutan ang maikling pagsusuri upang matapos.':'Natapos mo na ang mga pagbasa at pagsusuri. Maaari mo nang tapusin ang aralin.'}</div>
+  <div class="foot-actions">${previous?`<button class="btn btn-outline" data-study="${esc(previous.id)}">← Nakaraan</button>`:'<span></span>'}${next?`<button class="btn btn-outline" ${nextLocked?'disabled':''} data-study="${esc(next.id)}">${nextLocked?'Magiging handa ang kasunod pagkatapos nito':'Susunod na aralin →'}</button>`:`<button class="btn btn-outline" data-action="journey">Tingnan ang paglalakbay →</button>`}</div>
   <p class="study-notice">Tinutulungan ka ng mga araling ito na maunawaan ang katotohanan ng Biblia. Suriin ang bawat turo ayon sa konteksto ng Kasulatan.</p>
-  </div><aside class="detail-side" aria-label="Tulong sa pag-aaral"><div class="side-card"><h3>Iyong paglalakbay</h3><p>${completed(s.id)?'Tapos na ang araling ito. Maaari mo itong balikan anumang oras.':`Ikaw ay nasa Aralin ${String(ix+1).padStart(2,'0')} sa ${ORDER.length}.`}</p><p>${nextLocked?'Tapusin ang araling ito upang mabuksan ang kasunod.':next?`Susunod na aralin: <b>${esc(next.title)}</b>.`:'Ikaw ay nasa huling aralin.'}</p><button class="btn btn-outline" data-action="connect">Humingi ng Tulong</button></div></aside></div>`;
+  </div><aside class="detail-side" aria-label="Tulong sa pag-aaral"><div class="side-card"><h3>Iyong paglalakbay</h3><p>${completed(s.id)?'Tapos na ang araling ito. Maaari mo itong balikan anumang oras.':`Ikaw ay nasa Aralin ${String(ix+1).padStart(2,'0')} sa ${ORDER.length}.`}</p><p>${nextLocked?'Magiging handa ang kasunod pagkatapos ng araling ito.':next?`Susunod na aralin: <b>${esc(next.title)}</b>.`:'Ikaw ay nasa huling aralin.'}</p><button class="btn btn-outline" data-action="connect">Humingi ng Tulong</button></div></aside></div>`;
   const field=document.getElementById('studyNotes');
   field.value=user.notes[s.id]||'';
   let savedTimer;
@@ -293,7 +296,7 @@ document.body.addEventListener('click',e=>{
   if(a==='complete'){
     const id=target.dataset.id;
     if(completed(id)) return;
-    if(!isUnlocked(id)||!allRead(id)){toast('Tapusin ang anim na pagbasa bago markahang tapos ang aralin.');return;}
+    if(!isUnlocked(id)||!allRead(id)||!user.quizPassed[id]){toast('Tapusin ang anim na pagbasa at sagutan ang limang tanong bago matapos ang aralin.');return;}
     user.completed.push(id);
     save();
     const unlocked=nextStudy();
@@ -305,6 +308,20 @@ document.body.addEventListener('click',e=>{
   if(a==='connect') openConnect();
 });
 
+main.addEventListener('submit',e=>{
+ if(!e.target.matches('.gtk-study-quiz'))return;
+ e.preventDefault();const form=e.target,id=form.dataset.quizId,result=form.querySelector('[data-quiz-result]');
+ const answers=Array.from({length:5},(_,i)=>form.querySelector('input[name="q'+i+'"]:checked'));
+ const labels=window.GTKJ_COURSE_ADDON_STRINGS?window.GTKJ_COURSE_ADDON_STRINGS(true):null;
+ if(answers.some(a=>!a)){if(result)result.textContent=labels?labels.all:'Sagutan muna ang limang tanong.';return;}
+ const score=answers.reduce((n,a)=>n+(a.value==='1'?1:0),0);
+ if(score===5){user.quizPassed[id]=true;save();if(result)result.textContent=labels?labels.success:'✓ Tama ang lahat ng sagot.';}
+ else if(result)result.textContent=(labels?labels.retry:'Suriin muli ang mga punto at subukan muli.')+' ('+score+'/5)';
+ const btn=document.getElementById('completeStudyBtn');
+ if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Basahin muna ang lahat ng talata':!user.quizPassed[id]?'Sagutan muna ang limang tanong':'✓ Tapusin at buksan ang kasunod';}
+ const hint=document.getElementById('finishHint');
+ if(hint&&!completed(id)&&user.quizPassed[id])hint.textContent='Natapos mo na ang mga pagbasa at pagsusuri. Maaari mo nang tapusin ang aralin.';
+});
 main.addEventListener('change',e=>{
  if(e.target.id==='importFile'){importProgress(e.target.files?.[0]);return;}
  if(e.target.matches('[data-stepcheck]')){
@@ -316,7 +333,7 @@ main.addEventListener('change',e=>{
    user.read[id]=Array.from(set).sort((a,b)=>a-b);save();
    const cnt=document.getElementById('readCount');if(cnt)cnt.textContent=`${checkedCount(id)} sa ${(DEPTH[id]?.steps||[]).length} talatang napag-aralan`;
    const btn=document.getElementById('completeStudyBtn');
-   if(btn&&!completed(id)){btn.disabled=!allRead(id);btn.textContent=allRead(id)?'✓ Tapusin at buksan ang kasunod':'Basahin muna ang lahat ng talata';}
+   if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Basahin muna ang lahat ng talata':!user.quizPassed[id]?'Sagutan muna ang limang tanong':'✓ Tapusin at buksan ang kasunod';}
    const hint=document.getElementById('finishHint');if(hint)hint.textContent=allRead(id)?'Natapos mo ang mga pagbasa. Maglaan ng oras upang magmuni-muni, saka tapusin ang aralin.':'Tapusin ang lahat ng anim na pagbasa upang mabuksan ang kasunod.';
  }
 });
@@ -332,7 +349,7 @@ modal.addEventListener('click',e=>{if(e.target===modal) closeConnect()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden) closeConnect()});
 connectForm.addEventListener('submit',submitConnectForm);
 
-window.BIBLE_PROGRESS={get:()=>JSON.parse(JSON.stringify(user)),replace:(data)=>{if(!data||typeof data!=='object')return;const set=new Set(Array.isArray(data.completed)?data.completed:[]);user.completed=ORDER.map(x=>x.id).filter((id,i)=>ORDER.slice(0,i+1).every(x=>set.has(x.id)));user.read=(data.read&&typeof data.read==='object')?data.read:{};user.notes=(data.notes&&typeof data.notes==='object')?data.notes:{};save();route()}};
+window.BIBLE_PROGRESS={get:()=>JSON.parse(JSON.stringify(user)),replace:(data)=>{if(!data||typeof data!=='object')return;const set=new Set(Array.isArray(data.completed)?data.completed:[]);user.completed=ORDER.map(x=>x.id).filter(id=>set.has(id));user.read=(data.read&&typeof data.read==='object')?data.read:{};user.notes=(data.notes&&typeof data.notes==='object')?data.notes:{};user.quizPassed=(data.quizPassed&&typeof data.quizPassed==='object')?data.quizPassed:{};save();route()}};
 applyTheme();
 route();
 })();
