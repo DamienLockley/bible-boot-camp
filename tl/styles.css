@@ -145,3 +145,17 @@ button:disabled{cursor:not-allowed;opacity:.5}
   #main:has(.detail-grid) { max-width:1440px; }
   #main:has(.detail-grid) .detail-grid { grid-template-columns:minmax(0,1fr) 305px; gap:32px; }
 }
+/* On desktop, place the pathway beside the study heading and let the lesson span the full reading area. */
+@media (min-width:931px) {
+  #main:has(.detail-grid) {
+    max-width:1440px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 305px;
+    column-gap:32px;
+    align-items:start;
+  }
+  #main:has(.detail-grid) .detail-head { grid-column:1; grid-row:1; }
+  #main:has(.detail-grid) .detail-grid { display:contents; }
+  #main:has(.detail-grid) .detail-main { grid-column:1 / -1; grid-row:2; margin-bottom:70px; }
+  #main:has(.detail-grid) .detail-side { grid-column:2; grid-row:1; align-self:center; margin-top:24px; }
+}
