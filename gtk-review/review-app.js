@@ -2,7 +2,7 @@
 (() => {
 'use strict';
 const STORE='gtkj-educational-review-v1';
-const ids=STUDIES.map(s=>s.id);
+const COURSE_IDS=['word','history','controversy','salvation','spirit','sanctuary','blue-stone','law','sabbath','prayer','baptism','living','health','stewardship','nature','second-coming','millennium','hell','seventy-weeks','judgement','1844','antichrist','america','mark','prophecy-gift','godhead','remnant','witnessing'];\nconst COURSE=COURSE_IDS.map(id=>STUDIES.find(s=>s.id===id));\nconst ids=COURSE_IDS;
 const model=window.GTKJ_REVIEW;
 const transform=window.GTKJ_REVIEW_PASS3;
 const nav=document.getElementById('lessonNav');
@@ -10,7 +10,7 @@ const content=document.getElementById('lessonContent');
 const reviewer=document.getElementById('reviewerMode');
 const progress=document.getElementById('progressCount');
 const fill=document.getElementById('progressFill');
-if(!Array.isArray(STUDIES)||STUDIES.length!==28||!model||!model.quizzes){
+if(!Array.isArray(STUDIES)||STUDIES.length!==28||COURSE.some(s=>!s)||new Set(COURSE_IDS).size!==28||!model||!model.quizzes){
   content.innerHTML='<div class="warning"><strong>Review data could not be loaded.</strong><p>Check that the current website files lessons.js, lesson-depth.js, principles.js and gtk-review/review-data.js are present.</p></div>';return;
 }
 let state={passed:{},notes:{},reviewer:true};
@@ -44,7 +44,7 @@ function renderNav(){
  const active=currentId();
  progress.textContent=countPassed()+' / '+ids.length+' passed';
  fill.style.width=(countPassed()/ids.length*100)+'%';
- nav.innerHTML=STUDIES.map((s,i)=>'<button type="button" class="navbtn '+(s.id===active?'active ':'')+(!canOpen(s.id)?'locked':'')+'" data-id="'+E(s.id)+'" '+(!canOpen(s.id)?'aria-label="Study '+(i+1)+', coming up after Study '+(unlockedAt()+1)+'."':'')+'><span class="navnum">'+String(i+1).padStart(2,'0')+'</span><span>'+E(s.title)+'</span><span class="mark">'+(state.passed[s.id]?'✓':canOpen(s.id)?(ids.indexOf(s.id)===unlockedAt()?'Next':'Open'):'Up ahead')+'</span></button>').join('');
+ nav.innerHTML=COURSE.map((s,i)=>'<button type="button" class="navbtn '+(s.id===active?'active ':'')+(!canOpen(s.id)?'locked':'')+'" data-id="'+E(s.id)+'" '+(!canOpen(s.id)?'aria-label="Study '+(i+1)+', coming up after Study '+(unlockedAt()+1)+'."':'')+'><span class="navnum">'+String(i+1).padStart(2,'0')+'</span><span>'+E(s.title)+'</span><span class="mark">'+(state.passed[s.id]?'✓':canOpen(s.id)?(ids.indexOf(s.id)===unlockedAt()?'Next':'Open'):'Up ahead')+'</span></button>').join('');
  nav.querySelectorAll('[data-id]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.id)));
 }
 function verseChips(verses){return '<div class="versechips">'+arr(verses).map(x=>'<span>'+E(x)+'</span>').join('')+'</div>'}
