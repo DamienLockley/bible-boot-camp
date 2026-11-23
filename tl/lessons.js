@@ -5,7 +5,7 @@ const STUDIES = [
     "title": "Ang Salita ng Diyos",
     "tag": "Pagsisimula",
     "lead": "Mapagkakatiwalaan ba ang Biblia?",
-    "intro": "Ang Biblia ay higit pa sa kalipunan ng matatandang kuwentong panrelihiyon. Sinasabi nitong nagsalita ang Diyos sa pamamagitan ng mga taong sumulat nito upang makilala natin Siya. Hindi mo kailangang isantabi ang iyong mga tanong bago mo ito basahin.",
+    "intro": "Ang Biblia ay higit pa sa isang kalipunan ng mga sinaunang kuwentong panrelihiyon. Ayon dito, nagsalita ang Diyos sa pamamagitan ng mga taong sumulat nito upang makilala natin Siya. Maaari mong simulan ang pagbabasa kahit marami ka pang tanong.",
     "verses": [
       "2 Timothy 3:16",
       "2 Peter 1:19–21",
@@ -15,36 +15,81 @@ const STUDIES = [
     ],
     "ideas": [
       [
-        "Isang kahanga-hangang pahayag",
-        "Ipinahahayag ng Biblia na ito ay kinasihan ng Diyos bagaman isinulat ng tunay na mga tao sa kani-kanilang panahon at wika. Inaanyayahan tayo nitong magbasa nang maingat, hindi basta maniwala nang walang pagsusuri.",
+        "Isang pahayag na dapat pag-isipan",
+        "Ayon sa Biblia, ang Diyos ang nagbigay ng inspirasyon sa mga sumulat nito. Bawat isa sa kanila ay nabuhay sa sarili niyang panahon at sumulat sa sarili niyang wika. Kaya mahalagang basahin nang mabuti ang kanilang isinulat bago ito tanggapin.",
         "2 Timothy 3:16; 2 Peter 1:21"
       ],
       [
-        "Tingnan natin ang larawan ng Diyos na ipinakikita ng Biblia",
-        "Isa sa mga pangunahing pahayag nito ay ang Diyos ay pag-ibig. Lalong nagiging malinaw ito sa buhay at sakripisyo ni Hesus.",
+        "Paano inilalarawan ng Biblia ang Diyos?",
+        "Isa sa mga pangunahing itinuturo ng Biblia na ang Diyos ay pag-ibig. Makikita natin ang kahulugan nito sa buhay at sakripisyo ni Hesus.",
         "1 John 4:8; John 3:16"
       ],
       [
-        "Paano naman ang mga katibayan?",
-        "Ang pagkakaisa ng mensahe ng Biblia sa paglipas ng mga panahon, sa kabila ng iba't ibang sumulat nito, ay nagpapatotoo sa pagkakaugnay nito. Pinatitibay din ng di-mabilang na mga buhay na nabago ng mensahe nito ang pagiging mapagkakatiwalaan nito. Isa sa pinakamahalagang katibayan ay ang propesiya. Isang kamangha-manghang halimbawa ang Daniel 2: ipinakikita nito ang sunod-sunod na mga kaharian sa daigdig at, sa huli, ang kahariang itatatag mismo ng Diyos.",
+        "Ano ang mga katibayan?",
+        "Iba-iba ang sumulat ng Biblia sa paglipas ng mga siglo, ngunit magkakaugnay ang kanilang mga mensahe. Ang napakaraming buhay na binago ng mensahe nito ay isa pang dahilan upang pagtiwalaan ito. Isa sa pinakamahalagang katibayan ay ang propesiya. Sa ikalawang kabanata ng Daniel, halimbawa, inilalarawan ang sunod-sunod na paglitaw ng mga kaharian sa daigdig hanggang sa dumating ang kahariang itatatag ng Diyos mismo.",
         "Daniel 2:31–45"
       ]
     ],
     "qa": [
       [
-        "May mga pag-aalinlangan ako. Ibig bang sabihin ay kulang ako sa pananampalataya?",
-        "Hindi. Ang matapat na tanong ay maaaring maging simula ng tunay na pananampalataya. Basahin ang talata sa konteksto, alamin ang talagang sinasabi nito at suriin ang ebidensiya sa halip na magkunwaring tiyak sa lahat."
+        "May mga pag-aalinlangan ako. Ibig bang sabihin ay kulang ang pananampalataya ko?",
+        "Hindi. Maaaring magsimula ang tapat na pananampalataya sa isang tanong na pinag-isipan mong mabuti. Basahin ang talata sa konteksto nito. Alamin kung ano talaga ang sinasabi nito at suriin ang mga katibayan. Maaari kang maging tapat tungkol sa mga bagay na hindi mo pa tiyak."
       ],
       [
-        "Paano kung magkaiba ang paliwanag ng mga Kristiyano sa iisang talata?",
-        "Nangyayari iyan. Ihambing ang mas malawak na konteksto, ang iba pang Kasulatan at ang halimbawa ni Hesus. Kilalanin ang mga tanong na hindi mo pa nalulutas."
+        "Paano kung magkakaiba ang paliwanag ng mga Kristiyano sa iisang talata?",
+        "Nangyayari iyan. Basahin ang buong bahaging kinabibilangan ng talata. Ihambing ang mga paliwanag sa iba pang bahagi ng Kasulatan at sa halimbawang ipinakita ni Hesus. Maging tapat tungkol sa mga tanong na hindi mo pa nasasagot."
       ],
       [
-        "Saan ako magsisimula kung tila napakahirap unawain ang Biblia?",
-        "Magsimula sa isang Ebanghelyo, gaya ng Juan. Magbasa ng maikling bahagi araw-araw at itanong kung ano ang ipinakikita nito tungkol sa Diyos, sa mga tao at sa susunod mong hakbang."
+        "Saan ako magsisimula kung parang napakahirap basahin ng Biblia?",
+        "Magsimula sa isa sa mga Ebanghelyo, gaya ng Ebanghelyo ni Juan. Magbasa ng maikling bahagi bawat araw. Ano ang ipinakikita nito tungkol sa Diyos at sa mga tao? Anong hakbang ang maaari mong gawin ngayon?"
       ]
     ],
-    "act": "Basahing dahan-dahan ang Juan 3:16–17. Isulat ang isang bagay na sinasabi nito tungkol sa saloobin ng Diyos sa iyo."
+    "act": "Basahin nang dahan-dahan ang Juan 3:16–17. Isulat ang isang bagay na sinasabi nito tungkol sa pagtingin ng Diyos sa iyo."
+  },
+  {
+    "id": "history",
+    "title": "Ang Makasaysayang Katotohanan tungkol kay Hesus",
+    "tag": "Pagsisimula",
+    "lead": "Tunay bang nabuhay si Hesus bilang tao sa kasaysayan?",
+    "intro": "Ang pananampalataya kay Hesus ay hindi kuwentong kathang-isip na hiwalay sa tunay na mundo. Gumagawa ang kuwento ng Kristiyanismo ng mga pahayag tungkol sa isang totoong taong nabuhay sa Judea noong unang siglo.",
+    "verses": [
+      "Luke 1:1–4",
+      "John 20:30–31",
+      "1 Corinthians 15:3–8",
+      "Acts 2:22–24"
+    ],
+    "ideas": [
+      [
+        "Nagsasalaysay ng kasaysayan ang mga Ebanghelyo",
+        "Sinabi ni Lucas na maingat niyang siniyasat ang mga patotoo. Nais ng mga sumulat ng Ebanghelyo na malaman ng mambabasa kung ano ang nangyari at bakit ito mahalaga.",
+        "Luke 1:1–4"
+      ],
+      [
+        "Mahalaga rin ang iba pang sinaunang mga manunulat",
+        "Nagbibigay ng makasaysayang katibayan sa konteksto ng unang Kristiyanismo ang mga manunulat na Romano at Judio tulad nina Tacitus, Pliny at Josephus. Nakatutulong sila sa panlabas na kasaysayan, ngunit hindi nila hiwalay na napapatunayan ang bawat paniniwalang Kristiyano.",
+        "Luke 1:1–4 (compare historical sources)"
+      ],
+      [
+        "Magkaugnay ngunit magkaiba ang kasaysayan at pananampalataya",
+        "Tumutulong ang ebidensiya upang suriin kung talagang nabuhay si Hesus at maagang sinamba Siya ng mga Kristiyano. Ang paniniwalang muling nabuhay Siya ay karagdagang pahayag na kailangang timbangin sa liwanag ng patotoo at kahulugan nito.",
+        "1 Corinthians 15:3–8"
+      ]
+    ],
+    "qa": [
+      [
+        "Mali bang maghanap ng ebidensiya?",
+        "Hindi. Maaaring tanggapin ng mga Kristiyano ang tapat na pagsisiyasat sa kasaysayan. Dapat suriin ang mga pahayag ayon sa ebidensiya, hindi ilayo sa mga tanong."
+      ],
+      [
+        "Napapatunayan ba ng mga istoryador na Romano ang muling pagkabuhay?",
+        "Hindi. Sinusuportahan nila ang ilang katotohanan sa kasaysayan tungkol kay Hesus at sa mga unang Kristiyano. Ang pahayag ng muling pagkabuhay ay higit na nakasalalay sa patotoo ng mga unang Kristiyano."
+      ],
+      [
+        "Paano kung hindi pa ako handang paniwalaan ang lahat?",
+        "Magbasa ng isang Ebanghelyo, itala ang mga pahayag na maaari mong suriin at magpatuloy sa makatarungang pagtatanong. Mahalaga ang maingat na proseso."
+      ]
+    ],
+    "act": "Basahin ang Lucas 1:1–4 at itala ang sinabi ni Lucas tungkol sa kaniyang paraan ng pagsulat."
   },
   {
     "id": "controversy",
@@ -91,6 +136,53 @@ const STUDIES = [
       ]
     ],
     "act": "Isipin ang isang masakit na pangyayari sa mundo. Ipanalangin ang mga taong nasangkot at pumili ng isang praktikal na gawa ng kabutihan."
+  },
+  {
+    "id": "salvation",
+    "title": "Ang Plano ng Kaligtasan",
+    "tag": "Pagsisimula",
+    "lead": "Paano ako mapapatawad at makapagsisimulang muli?",
+    "intro": "Nagsisimula ang ebanghelyo sa pag-ibig ng Diyos, hindi sa kakayahan nating gawing karapat-dapat ang sarili. Dumating si Hesus upang pagalingin ang nasira nating ugnayan sa Diyos at ialok ang kapatawaran at bagong buhay bilang kaloob.",
+    "verses": [
+      "Genesis 3:7–15",
+      "Romans 3:23",
+      "Romans 6:23",
+      "John 3:16–17",
+      "2 Corinthians 5:17–21",
+      "Ephesians 2:8–10"
+    ],
+    "ideas": [
+      [
+        "Kailangan nating lahat ng tulong",
+        "Inilalarawan ng Genesis kung paano humantong ang kawalan ng pagtitiwala sa kahihiyan, takot at pagtatago. Pamilyar ito sa atin kapag nagkakamali tayo ngayon.",
+        "Genesis 3:7–15; Romans 3:23"
+      ],
+      [
+        "Lumalapit ang Diyos sa atin",
+        "Ipinakikita ng krus ang kahandaan ng Diyos na pasanin ang halaga ng pagkakasundo. Dumating si Hesus upang magligtas, hindi upang hikayatin ang isang Diyos na ayaw magmahal sa atin.",
+        "John 3:16–17; 2 Corinthians 5:19"
+      ],
+      [
+        "Nagdudulot ng bagong buhay ang biyaya",
+        "Naliligtas tayo sa biyaya ng Diyos sa pamamagitan ng pananampalataya, hindi dahil pinaghirapan natin ito. Ang mabubuting gawa ay bunga ng pagbabagong ginagawa ng Diyos, hindi bayad upang tanggapin Niya tayo.",
+        "Ephesians 2:8–10"
+      ]
+    ],
+    "qa": [
+      [
+        "May mga nagawa akong pinagsisisihan. Talaga bang mapapatawad ako ng Diyos?",
+        "Oo. Ang paanyaya ng ebanghelyo ay para sa mga makasalanang bumabaling sa Diyos nang may pagtitiwala at pagsisisi. Hindi nangangahulugang walang nasaktang tao kapag pinatawad; hangga't maaari, ituwid din natin ang nagawang mali."
+      ],
+      [
+        "Kailangan ko bang maging mabuti muna bago lumapit kay Hesus?",
+        "Hindi. Lumapit ka kung ano ka ngayon. Ang pagtanggap kay Kristo ang nagsisimula ng pagbabagong ginagawa Niya sa atin."
+      ],
+      [
+        "Bakit mahalaga ang mga kautusan kung libre ang kaligtasan?",
+        "Dahil binabago ng pag-ibig ang pakikitungo natin sa Diyos at kapwa. Lumalago ang pagsunod mula sa tiwala at pasasalamat; hindi nito nabibili ang kaligtasan."
+      ]
+    ],
+    "act": "Basahin ang Efeso 2:8–10. Sumulat ng maikling panalangin ng pasasalamat sa Diyos sa regalong hindi mo kayang paghirapan."
   },
   {
     "id": "spirit",
@@ -186,51 +278,50 @@ const STUDIES = [
     "act": "Basahin ang Hebreo 10:10. Ipaliwanag sa sarili mong salita kung bakit itinuturo ng santuwaryo ang ating pansin kay Hesus."
   },
   {
-    "id": "salvation",
-    "title": "Ang Plano ng Kaligtasan",
-    "tag": "Pagsisimula",
-    "lead": "Paano ako mapapatawad at makapagsisimulang muli?",
-    "intro": "Nagsisimula ang ebanghelyo sa pag-ibig ng Diyos, hindi sa kakayahan nating gawing karapat-dapat ang sarili. Dumating si Hesus upang pagalingin ang nasira nating ugnayan sa Diyos at ialok ang kapatawaran at bagong buhay bilang kaloob.",
+    "id": "blue-stone",
+    "title": "Ang Asul na Bato",
+    "tag": "Pag-unawa sa propesiya",
+    "lead": "Paano inuugnay ng mga simbolo sa santuwaryo ang pagsamba at kautusan ng Diyos?",
+    "intro": "Sa mas espesyalisadong araling ito, inihahambing ang mga kulay ng kasuotan ng mga saserdote at ng simbolikong babae sa Apocalipsis 17 upang pag-isipan ang kahalagahan ng kautusan ng Diyos. Hindi tuwirang nakasaad sa Kasulatan ang bawat simbolikong ugnayan.",
     "verses": [
-      "Genesis 3:7–15",
-      "Romans 3:23",
-      "Romans 6:23",
-      "John 3:16–17",
-      "2 Corinthians 5:17–21",
-      "Ephesians 2:8–10"
+      "Exodus 24:9–12",
+      "Exodus 28:31–33",
+      "Daniel 7:25",
+      "Revelation 17:3–6",
+      "Deuteronomy 10:4–5"
     ],
     "ideas": [
       [
-        "Kailangan nating lahat ng tulong",
-        "Inilalarawan ng Genesis kung paano humantong ang kawalan ng pagtitiwala sa kahihiyan, takot at pagtatago. Pamilyar ito sa atin kapag nagkakamali tayo ngayon.",
-        "Genesis 3:7–15; Romans 3:23"
+        "Pansinin ang mga kulay sa Biblia",
+        "May kulay asul, ube at pula ang kasuotan ng mga saserdote. Gumagamit ang Apocalipsis 17 ng ilan sa mga kulay na ito upang ilarawan ang isang naiibang simbolikong larawan.",
+        "Exodus 28:31–33; Revelation 17:4"
       ],
       [
-        "Lumalapit ang Diyos sa atin",
-        "Ipinakikita ng krus ang kahandaan ng Diyos na pasanin ang halaga ng pagkakasundo. Dumating si Hesus upang magligtas, hindi upang hikayatin ang isang Diyos na ayaw magmahal sa atin.",
-        "John 3:16–17; 2 Corinthians 5:19"
+        "Hindi palaging katibayan ang isang larawan",
+        "May mga mag-aaral ng Biblia na nagmungkahi ng ugnayan ng sahig na tila sapiro sa ilalim ng mga paa ng Diyos at ng mga tapyas na bato ng Kaniyang kautusan. Inilalarawan ng Exodo ang sapiro sa ilalim ng mga paa ng Diyos ngunit hindi nito tahasang sinasabing asul ang mga tapyas. Ituring itong larawan, hindi napatunayang katotohanan.",
+        "Exodus 24:10–12"
       ],
       [
-        "Nagdudulot ng bagong buhay ang biyaya",
-        "Naliligtas tayo sa biyaya ng Diyos sa pamamagitan ng pananampalataya, hindi dahil pinaghirapan natin ito. Ang mabubuting gawa ay bunga ng pagbabagong ginagawa ng Diyos, hindi bayad upang tanggapin Niya tayo.",
-        "Ephesians 2:8–10"
+        "Ang mas malawak na prinsipyo",
+        "Dapat maging tapat sa Diyos ang pagsamba, at walang awtoridad ng tao ang maaaring pumalit sa Kaniyang salita. Inuugnay ng mahalagang prinsipyong ito ang aralin sa kautusan at propesiya.",
+        "Deuteronomy 10:4–5; Daniel 7:25"
       ]
     ],
     "qa": [
       [
-        "May mga nagawa akong pinagsisisihan. Talaga bang mapapatawad ako ng Diyos?",
-        "Oo. Ang paanyaya ng ebanghelyo ay para sa mga makasalanang bumabaling sa Diyos nang may pagtitiwala at pagsisisi. Hindi nangangahulugang walang nasaktang tao kapag pinatawad; hangga't maaari, ituwid din natin ang nagawang mali."
+        "Nakasulat ba ang Sampung Utos sa asul na sapiro?",
+        "Sinasabi ng Biblia na nakasulat ang mga iyon sa mga tapyas na bato. Hindi tahasang ibinibigay ng mga talatang iyon ang eksaktong materyal at kulay."
       ],
       [
-        "Kailangan ko bang maging mabuti muna bago lumapit kay Hesus?",
-        "Hindi. Lumapit ka kung ano ka ngayon. Ang pagtanggap kay Kristo ang nagsisimula ng pagbabagong ginagawa Niya sa atin."
+        "Awtomatikong kinikilala ba ng mga kulay ang isang simbahan?",
+        "Hindi. Kailangan ang buong konteksto ng mga simbolo. Hindi sapat ang magkatulad na kulay upang mapatunayan ang isang pagpapakahulugan."
       ],
       [
-        "Bakit mahalaga ang mga kautusan kung libre ang kaligtasan?",
-        "Dahil binabago ng pag-ibig ang pakikitungo natin sa Diyos at kapwa. Lumalago ang pagsunod mula sa tiwala at pasasalamat; hindi nito nabibili ang kaligtasan."
+        "Bakit isinama pa ang araling ito?",
+        "Iniuugnay nito ang mga larawan ng santuwaryo, kautusan ng Diyos at usapin ng pagsamba. Mas mabuting pag-aralan ito matapos ang mga pangunahing aralin nang maingat sa aktuwal na sinasabi ng Kasulatan."
       ]
     ],
-    "act": "Basahin ang Efeso 2:8–10. Sumulat ng maikling panalangin ng pasasalamat sa Diyos sa regalong hindi mo kayang paghirapan."
+    "act": "Ihambing ang Exodo 24:10–12 at Deuteronomio 10:4–5. Pag-ibahin ang mga napansin at mga inakala lamang."
   },
   {
     "id": "law",
@@ -279,50 +370,462 @@ const STUDIES = [
     "act": "Pumili ng isang utos mula sa Exodo 20. Ilarawan ang mapagmahal na prinsipyong nasa likod nito."
   },
   {
-    "id": "antichrist",
-    "title": "Antikristo",
-    "tag": "Pag-unawa sa propesiya",
-    "lead": "Paano nailalayo ng maling relihiyon ang pansin kay Hesus?",
-    "intro": "Ang salitang antikristo ay tumutukoy sa pagsalungat kay Kristo at, ayon sa historisistang pagkaunawa sa mga propesiyang ito, sa pagsisikap na agawin ang Kaniyang lugar. Ang mahalagang tanong ay kung inilalapit tayo ng isang aral kay Hesus o inilalayo sa Kaniya.",
+    "id": "sabbath",
+    "title": "Ang Sabbath",
+    "tag": "Pagsunod kay Hesus",
+    "lead": "Maaari bang maging kaloob ng Diyos ang isang araw bawat linggo?",
+    "intro": "Higit sa pagtigil sa trabaho ang Sabbath. Inilalarawan ng Kasulatan ang ikapitong araw bilang panahon upang alalahanin ang Manlilikha, ipagdiwang ang kalayaan at magalak sa pakikisama sa Diyos at kapwa.",
     "verses": [
-      "1 John 2:18–22",
-      "2 Thessalonians 2:3–12",
-      "Daniel 7:8–25",
-      "Revelation 13:1–10",
-      "John 14:6"
+      "Genesis 2:1–3",
+      "Exodus 20:8–11",
+      "Deuteronomy 5:12–15",
+      "Mark 2:27–28",
+      "Isaiah 58:13–14"
     ],
     "ideas": [
       [
-        "Magsimula kay Hesus",
-        "Nagbabala si Juan tungkol sa maraming antikristong nagtatanggi kay Kristo. Tinatawag niya ang mga mananampalataya na manatiling tapat sa katotohanan tungkol kay Hesus.",
-        "1 John 2:18–22"
+        "Nagsimula ang pamamahinga sa paglikha",
+        "Pinagpala ng Diyos ang ikapitong araw sa salaysay ng paglikha. Ipinapaalala ng Sabbath na hindi lamang sa dami ng nagagawa nasusukat ang ating halaga.",
+        "Genesis 2:1–3"
       ],
       [
-        "Isang historisistang pagkaunawa",
-        "Iniuugnay ng historisistang pagbasa ang Daniel 7 at Apocalipsis 13 sa pag-usbong ng kapangyarihang panrelihiyon at pampulitika ng kapapahan. Dapat subukin ang paglalapat na ito sa mga palatandaan sa Biblia at mapagkakatiwalaang kasaysayan; magkakaiba ang mga pagpapakahulugan sa mga propesiyang ito.",
-        "Daniel 7:8–25; Revelation 13:1–10"
+        "Alalahanin ang paglikha at pagliligtas",
+        "Iniuugnay ng mga kautusan ang Sabbath sa Diyos bilang Manlilikha; iniuugnay rin ng Deuteronomio ang pamamahinga sa kalayaan mula sa pagkaalipin.",
+        "Exodus 20:8–11; Deuteronomy 5:12–15"
       ],
       [
-        "Hindi kailanman dapat ipilit ang katotohanan",
-        "Mahalagang usapin ang pagsamba, awtoridad at pamimilit. Malaya ang paanyaya ni Hesus at hindi gumagamit ng takot o dahas. Ang pagpuna sa isang sistemang panrelihiyon ay hindi dapat maging pagkapoot sa mga indibiduwal na mananampalataya.",
-        "Matthew 11:28–30; Revelation 13:15"
+        "Ipinakikita ni Hesus ang layunin nito",
+        "Sinabi ni Hesus na ginawa ang Sabbath para sa tao. Nananatiling pagpapala ang ikapitong araw, Sabado, para sa pagsamba, habag at pagpapanumbalik.",
+        "Mark 2:27–28"
       ]
     ],
     "qa": [
       [
-        "Kaaway ba ang mga Katoliko?",
-        "Hindi. Karapat-dapat ang ating kapwa sa paggalang at pag-ibig. Ang babala ay tungkol sa mga makasaysayang sistema at pag-aangkin ng awtoridad; hindi ito dapat gamitin upang hatulan ang mga tao o ang kanilang katapatan."
+        "Bakit Sabado at hindi Linggo?",
+        "Tinutukoy ng utos ng Sabbath ang ikapitong araw. Ang araw na tinutukoy ng ikaapat na utos ay ang Sabado. Walang utos sa Biblia na naglilipat ng kabanalan ng Sabbath sa Linggo."
       ],
       [
-        "Bakit magkakaiba ang pagpapakahulugan ng mga Kristiyano sa mga propesiyang ito?",
-        "Gumagamit sila ng iba't ibang paraan ng pagpapakahulugan. Sundan ang mga simbolo ng Daniel sa konteksto at suriin ang mga pagkakakilanlan sa kasaysayan gamit ang mapagkakatiwalaang katibayan."
+        "Maaari ba akong gumawa ng mabuti para sa iba sa Sabbath?",
+        "Oo. Ipinakita ni Hesus na ang habag at paggawa ng mabuti ay angkop sa Sabbath."
       ],
       [
-        "Paano ko maiiwasang malinlang?",
-        "Ituon ang pansin kay Hesus, basahin ang Kasulatan sa konteksto at tanggihan ang sinumang humihingi ng walang-tanong na katapatan sa relihiyon."
+        "Nagliligtas ba sa akin ang pag-iingat ng Sabbath?",
+        "Hindi. Ang kaligtasan ay sa biyaya sa pamamagitan ng pananampalataya. Ang pag-iingat ng Sabbath ay tugon ng pag-ibig at pagtitiwala, hindi bayad upang makarating sa langit."
       ]
     ],
-    "act": "Basahin ang 1 Juan 2:18–22. Itanong, “Ano ang tuwirang sinasabi ng talata, at ano ang idinagdag ng mga sumunod na pagpapakahulugan?”"
+    "act": "Magplano ng mapayapang gawain sa Sabbath na magpapalalim sa pagsamba, ugnayan o paglilingkod."
+  },
+  {
+    "id": "prayer",
+    "title": "Panalangin",
+    "tag": "Pagsisimula",
+    "lead": "Paano ako makikipag-usap sa Diyos na hindi ko nakikita?",
+    "intro": "Ang panalangin ay tapat na pakikipag-usap sa Diyos. Maaaring kasama rito ang pasasalamat, mga tanong, pagtatapat, dalamhati at tahimik na pakikinig. Naglaan si Hesus ng oras upang manalangin kahit abala ang Kaniyang buhay.",
+    "verses": [
+      "Mark 1:35",
+      "Luke 6:12",
+      "Matthew 6:9–13",
+      "Matthew 7:7–11",
+      "1 John 5:14"
+    ],
+    "ideas": [
+      [
+        "Nanalangin si Hesus",
+        "Naglaan Siya ng tahimik na panahon para sa Ama, lalo na bago gumawa ng mahahalagang pasiya. Ang panalangin ay ugnayan, hindi pagtatanghal.",
+        "Mark 1:35; Luke 6:12"
+      ],
+      [
+        "Maaari kang patuloy na humingi",
+        "Inaanyayahan ni Hesus ang mga tao na humingi, humanap at kumatok. Ang matiyagang panalangin ay nagpapatibay ng pagtitiwala, hindi pamimilit sa Diyos.",
+        "Matthew 7:7–11"
+      ],
+      [
+        "Hindi makina ng mga kahilingan ang Diyos",
+        "Itinuro ni Hesus na ipanalangin ang kalooban ng Diyos at ang ating pang-araw-araw na pangangailangan. Hindi lahat ng hinihiling ay sinasagot ayon sa ating inaasahan o sa gusto nating panahon.",
+        "Matthew 6:9–13; 1 John 5:14"
+      ]
+    ],
+    "qa": [
+      [
+        "Paano kung hindi ko alam ang tamang mga salita?",
+        "Magsimula nang simple: “Diyos, narito ako. Kailangan ko ng tulong.” Nagturo si Hesus ng huwarang panalangin, hindi komplikadong pormula."
+      ],
+      [
+        "Paano kung tila walang sagot ang panalangin ko?",
+        "Maaaring masakit iyon. Hinihikayat ng Biblia ang matiyagang pagtitiwala ngunit hindi ipinangangako ang bawat resultang gusto natin. Humingi ng suporta sa mga nagmamalasakit sa iyo at magpatuloy sa tapat na pakikipag-usap sa Diyos."
+      ],
+      [
+        "Maaari ba akong manalangin kapag may nagawa akong mali?",
+        "Oo. Lumapit nang mapagpakumbaba at tapat. Lalong mahalaga ang panalangin kapag kailangan natin ng kapatawaran at bagong simula."
+      ]
+    ],
+    "act": "Maglaan ng limang tahimik na minuto: magpasalamat sa Diyos, sabihin ang isang alalahanin, humingi ng karunungan at makinig."
+  },
+  {
+    "id": "baptism",
+    "title": "Bautismo",
+    "tag": "Pagsunod kay Hesus",
+    "lead": "Ano ang kahulugan ng bautismo, at handa na ba ako?",
+    "intro": "Ang bautismo ay hayagang pagpapahayag ng bagong ugnayan kay Hesus. Ginagawa ang bautismo sa paglulubog sa tubig bilang larawan ng pag-iwan sa dating buhay at pagsisimula ng bagong buhay kasama ni Kristo.",
+    "verses": [
+      "Matthew 3:13–17",
+      "Matthew 28:19–20",
+      "John 3:3–8",
+      "Romans 6:3–4",
+      "Acts 8:26–39"
+    ],
+    "ideas": [
+      [
+        "Nagbigay si Hesus ng halimbawa",
+        "Si Hesus mismo ay nabautismuhan at kalaunan ay inutusan ang mga alagad na bautismuhan ang mga sumusunod sa Kaniya.",
+        "Matthew 3:13–17; Matthew 28:19–20"
+      ],
+      [
+        "Inilalarawan ng tubig ang bagong buhay",
+        "Ang paglubog at pag-ahon mula sa tubig ay sumasagisag sa pagkamatay sa dating buhay at muling pagkabuhay kasama ni Kristo.",
+        "Romans 6:3–4"
+      ],
+      [
+        "Nauuna ang pananampalataya sa simbolo",
+        "May kahulugan ang bautismo bilang tugon sa pananampalataya, pagsisisi at pagpapasiya na sumunod. Hindi mahikang gawain ang tubig na nagbibigay ng kaligtasan.",
+        "Acts 8:26–39"
+      ]
+    ],
+    "qa": [
+      [
+        "Kailangan ko bang malaman muna ang bawat turo ng Biblia?",
+        "Dapat pag-isipan ang bautismo at gawin nang may kaalaman, ngunit walang nakauunawa sa lahat. Makipag-usap sa pastor o tagapayo tungkol sa mahahalagang paniniwala at tanong."
+      ],
+      [
+        "Paano kung nahihirapan pa rin ako sa dating mga gawi?",
+        "Hindi nangangako ang bautismo ng buhay na walang pakikibaka. Tanda ito ng pasiyang magtiwala kay Kristo at lumago sa tulong Niya."
+      ],
+      [
+        "Bakit paglulubog sa tubig?",
+        "Iniuugnay ng Roma 6 ang bautismo sa larawan ng paglilibing at muling pagkabuhay, na angkop sa mga bautismong inilalarawan sa Mga Gawa."
+      ]
+    ],
+    "act": "Basahin ang Roma 6:3–4. Isulat kung ano ang magiging anyo ng “bagong buhay” sa isang pang-araw-araw mong ugnayan."
+  },
+  {
+    "id": "living",
+    "title": "Pamumuhay Kristiyano",
+    "tag": "Pagsunod kay Hesus",
+    "lead": "Paano dapat makaapekto ang pananampalataya sa ating mga pagpili at hitsura?",
+    "intro": "Binabago ng pagsunod kay Hesus ang ating mga priyoridad, kabilang ang paggamit ng pera, pagpili ng libangan at paraan ng pagpapakita ng sarili. Nakatutok ang orihinal na aralin sa alahas at palamuti; ang mas malaking tanong ay kung saan natin nakikita ang ating halaga.",
+    "verses": [
+      "1 Peter 3:3–4",
+      "1 Timothy 2:9–10",
+      "1 Corinthians 10:31",
+      "Ezekiel 28:17",
+      "Romans 12:1–2"
+    ],
+    "ideas": [
+      [
+        "Pinakamahalaga ang kagandahan ng kalooban",
+        "Itinuturo ni Pedro ang pansin sa maamo at tapat na espiritu sa halip na panlabas na pagpapakitang-tao.",
+        "1 Peter 3:3–4"
+      ],
+      [
+        "Ipinakikita ng mga pagpili ang ating pinahahalagahan",
+        "Hinihikayat ng Kasulatan ang pagiging simple, kahinhinan at maingat na pangangasiwa. Maaaring itanong kung pinauunlad ng ating mga pagpili ang pagpapakumbaba o ang pagmamalaki sa katayuan.",
+        "1 Timothy 2:9–10"
+      ],
+      [
+        "Huwag gawing kalupitan ang mga prinsipyo",
+        "Hindi natin dapat sukatin ang espirituwal na halaga ng tao sa damit, yaman o hitsura. Ang tunay na pagbabago ay nagmumula sa pakikipag-ugnayan kay Hesus.",
+        "Romans 12:1–2"
+      ]
+    ],
+    "qa": [
+      [
+        "Awtomatikong kasalanan ba ang bawat alahas?",
+        "May mga halimbawa sa Biblia ng palamuti at may mga babala laban sa pagmamataas at pagpapakitang-tao. Dapat basahin ang bawat talata sa konteksto sa halip na ipagpalagay na pareho ang lahat."
+      ],
+      [
+        "Paano ko malalaman kung ang isang bagay ay angkop?",
+        "Itanong kung ano ang motibo mo, anong mensahe ang ibinibigay nito, kung responsable ito at kung pinararangalan nito ang Diyos at kapwa. Humanap ng karunungan nang hindi humahatol sa hitsura."
+      ],
+      [
+        "Tinatanggap lang ba ako ng Diyos kung sa partikular na paraan ako manamit?",
+        "Hindi. Mahal ng Diyos ang mga tao bago pa mabago ang kanilang panlabas na gawi. Hindi dapat maging kahihiyan o panlipunang pamimilit ang paglago ng katangiang Kristiyano."
+      ]
+    ],
+    "act": "Kilalanin ang isang pang-araw-araw na pagpili kung saan maaari mong unahin ang bukas-palad na pagbibigay o pagiging simple kaysa katayuan."
+  },
+  {
+    "id": "health",
+    "title": "Kalusugan",
+    "tag": "Pagsunod kay Hesus",
+    "lead": "Mahalaga ba sa Diyos ang aking kalusugan at kapakanan araw-araw?",
+    "intro": "Nagmalasakit si Hesus sa katawan at puso ng mga tao. Ang pag-aalaga sa sarili ay isang paraan upang parangalan ang buhay na ibinigay ng Diyos—hindi paraan upang paghirapan ang kaligtasan o hatulan ang mga may sakit.",
+    "verses": [
+      "John 10:10",
+      "Matthew 4:23",
+      "1 Corinthians 6:19–20",
+      "Genesis 2:15",
+      "3 John 2"
+    ],
+    "ideas": [
+      [
+        "Mahalaga sa Diyos ang buong pagkatao",
+        "Nagpagaling si Hesus ng mga tao at nais Niyang maranasan nila ang masaganang buhay. Mahalaga ang pisikal na kalusugan kasabay ng espirituwal na kalusugan.",
+        "John 10:10; Matthew 4:23"
+      ],
+      [
+        "Mahalaga ang araw-araw na mga gawi",
+        "Isang kapaki-pakinabang na paalala tungkol sa kalusugan ang NEWSTART: wastong pagkain, ehersisyo, tubig, sikat ng araw, pagpipigil sa sarili, sariwang hangin, pahinga at pagtitiwala sa Diyos. Pangkalahatang gabay ang mga ito, hindi garantiya laban sa sakit.",
+        "1 Corinthians 6:19–20"
+      ],
+      [
+        "Dapat humantong sa habag ang pangangalaga sa kalusugan",
+        "Maaaring suportahan ng pag-aalaga sa katawan ang paglilingkod at pasasalamat. Hindi patunay ng mahinang pananampalataya ang sakit, at mahalaga pa rin ang tulong ng mga propesyonal sa kalusugan.",
+        "3 John 2"
+      ]
+    ],
+    "qa": [
+      [
+        "Kung magkasakit ako, ibig bang sabihin ay nabigo ako sa espirituwal?",
+        "Hindi. Maraming sanhi ang sakit at hindi ito dapat gamitin bilang sukatan ng pananampalataya. Magpakita ng habag at angkop na pangangalaga."
+      ],
+      [
+        "Kailangan bang magkapareho ang pagkain ng lahat?",
+        "Hinihikayat ng Biblia ang responsableng pangangalaga sa katawan. Maaaring makatulong ang pagkain na nakatuon sa halaman, ngunit mahalaga ang personal na pangangailangang medikal at matalinong pagpili."
+      ],
+      [
+        "Medikal na payo ba ito?",
+        "Hindi. Aralin ito sa pananampalataya at kalusugan, hindi diyagnosis o kapalit ng payo mula sa mga kwalipikadong tagapag-alagang medikal."
+      ]
+    ],
+    "act": "Pumili ng isang makatotohanang hakbang ng pangangalaga sa sarili ngayong linggo, tulad ng regular na pahinga, tubig, paglalakad o masustansiyang pagkain."
+  },
+  {
+    "id": "stewardship",
+    "title": "Pangangasiwa ng mga Kaloob ng Diyos",
+    "tag": "Pagsunod kay Hesus",
+    "lead": "Ano ang kaugnayan ng pananampalataya sa pera at panahon?",
+    "intro": "Ang mabuting pangangasiwa ay tapat na pag-aalaga sa mga ipinagkatiwala sa atin—pera, oras, kakayahan, pagkakataon at daigdig. Ang pagbibigay ay pagpapahayag ng pasasalamat at tiwala, hindi pagbili ng pabor ng Diyos.",
+    "verses": [
+      "Psalm 24:1",
+      "1 Corinthians 6:20",
+      "Leviticus 27:30",
+      "Malachi 3:8–12",
+      "2 Corinthians 9:7"
+    ],
+    "ideas": [
+      [
+        "Kaloob ang lahat",
+        "Inilalarawan ng Biblia na ang lupa ay pag-aari ng Diyos. Tayo ay mga tagapangalaga, hindi lubos na may-ari.",
+        "Psalm 24:1"
+      ],
+      [
+        "Ikapu at pagkabukas-palad",
+        "Sa Kasulatan, ang ikapu ay ikasampung bahagi na ibinubukod para sa Diyos. Hinihikayat din nito ang mga handog at praktikal na pangangalaga sa kapwa.",
+        "Leviticus 27:30; Malachi 3:10"
+      ],
+      [
+        "Magbigay mula sa kusang-loob na puso",
+        "Binibigyang-diin ni Pablo ang masaya at kusang-loob na pagbibigay. Hindi kailanman pahintulot ang pagbibigay sa pagmamanipula o garantiya ng kayamanang pinansiyal.",
+        "2 Corinthians 9:7"
+      ]
+    ],
+    "qa": [
+      [
+        "Payayamanin ba ako ng Diyos kung magbibigay ako ng ikapu?",
+        "Hindi ipinangangako ng Biblia ang garantisadong perang babalik sa bawat handog. Ipinapahayag ng pagbibigay ang pananampalataya at pasasalamat, hindi transaksiyong nag-oobliga sa Diyos na payamanin tayo."
+      ],
+      [
+        "Paano kung nahihirapan akong bayaran ang pangunahing pangangailangan?",
+        "Alam ng Diyos ang iyong kalagayan. Humingi ng matalinong tulong sa pananalapi, kumilos nang responsable at makipag-usap sa mapagkakatiwalaang pinuno ng simbahan sa halip na magpadala sa pamimilit."
+      ],
+      [
+        "Pera lamang ba ang pangangasiwa?",
+        "Hindi. Kabilang din ang oras, mga kaloob, pag-aalaga sa mga tao at pangangalaga sa nilikha."
+      ]
+    ],
+    "act": "Ilista ang tatlong bagay na ipinagkatiwala sa iyo at isang mabuting paraan upang gamitin ang bawat isa ngayong linggo."
+  },
+  {
+    "id": "nature",
+    "title": "Ang Kalikasan ng Tao",
+    "tag": "Ang ating pag-asa sa hinaharap",
+    "lead": "Ano tayo, at ano ang nangyayari kapag namatay tayo?",
+    "intro": "Inilalarawan ng Kasulatan ang buhay ng tao bilang kaloob ng Diyos. Itinuturo ng mga talata na hindi likas na imortal ang tao; ang buhay na walang hanggan ay tinatanggap sa pamamagitan ni Kristo.",
+    "verses": [
+      "Genesis 2:7",
+      "Ecclesiastes 9:5–6",
+      "1 Timothy 6:15–16",
+      "John 11:11–14",
+      "1 Thessalonians 4:13–18"
+    ],
+    "ideas": [
+      [
+        "Kaloob ang buhay",
+        "Inilalarawan ng Genesis ang paghubog ng Diyos sa tao at pagbibigay ng hininga ng buhay. Ang tao ay isang buhay na nilalang, hindi lamang katawan na may kaluluwang hindi maaaring mamatay.",
+        "Genesis 2:7"
+      ],
+      [
+        "Inilalarawan ang kamatayan bilang pagtulog",
+        "Tinukoy ni Hesus ang kamatayan ni Lazaro bilang pagtulog. Ang mga patay ay inilalarawang natutulog habang naghihintay ng muling pagkabuhay.",
+        "John 11:11–14; Ecclesiastes 9:5"
+      ],
+      [
+        "Ang muling pagkabuhay ang pag-asa",
+        "Inaaliw ni Pablo ang nagdadalamhating mga Kristiyano sa pagtuturo sa pagbabalik ni Kristo at sa muling pagkabuhay, hindi sa pagtingin sa kamatayan bilang katapusan ng lahat ng pag-asa.",
+        "1 Thessalonians 4:13–18"
+      ]
+    ],
+    "qa": [
+      [
+        "Binabantayan ba ako mula sa langit ng mahal kong namatay?",
+        "Inilalarawan ng Eclesiastes 9:5 at Juan 11 ang kamatayan bilang pahingang walang kamalayan hanggang sa muling pagkabuhay. Ang nagdadalamhati ay nangangailangan ng kaamuan, hindi pakikipagtalo."
+      ],
+      [
+        "Makikita ko pa bang muli ang mga mahal ko sa buhay?",
+        "Ipinangangako ng Biblia ang muling pagkabuhay kay Kristo. Dahilan ito ng pag-asa kahit habang tayo ay nagluluksa."
+      ],
+      [
+        "Ano ang pagkakaiba ng kaluluwa at tao?",
+        "Sa Genesis 2:7, naging buhay na nilalang ang tao nang ibigay ng Diyos ang hininga ng buhay. Sa salaysay na ito, ang “kaluluwa” ay tumutukoy sa buong buhay na tao."
+      ]
+    ],
+    "act": "Basahin ang 1 Tesalonica 4:13–18. Sumulat ng maikling mensahe ng kaaliwan batay sa mga salita ni Pablo."
+  },
+  {
+    "id": "second-coming",
+    "title": "Ang Ikalawang Pagparito",
+    "tag": "Ang ating pag-asa sa hinaharap",
+    "lead": "Ano ang magiging katangian ng pagbabalik ni Hesus?",
+    "intro": "Ipinangangako ng Biblia na babalik si Hesus. Inilalarawan ng Kasulatan ang Kaniyang pagparito bilang tunay, nakikita at makapangyarihan—hindi lihim na pangyayaring huhulaan lamang mula sa mga sabi-sabi.",
+    "verses": [
+      "John 14:1–3",
+      "Acts 1:9–11",
+      "1 Thessalonians 4:16–17",
+      "Revelation 1:7",
+      "Matthew 24:36"
+    ],
+    "ideas": [
+      [
+        "Nangako si Hesus",
+        "Sinabi Niya sa mga tagasunod na Siya ay muling darating at tatanggapin sila sa Kaniya. Ang hinaharap ng Kristiyano ay muling pagsasama, hindi pag-iwan.",
+        "John 14:1–3"
+      ],
+      [
+        "Hindi lihim o pangkaraniwan",
+        "Gumagamit ang Kasulatan ng mga larawang may sigaw, trumpeta at pagkakita ng buong mundo kay Kristo.",
+        "1 Thessalonians 4:16–17; Revelation 1:7"
+      ],
+      [
+        "Pag-asang walang pagtatakda ng petsa",
+        "Sinabi ni Hesus na walang nakaaalam ng araw o oras. Ang paghahanda ay matapat na pamumuhay ngayon, hindi pagkakapit sa walang katapusang nakatatakot na mga hula.",
+        "Matthew 24:36"
+      ]
+    ],
+    "qa": [
+      [
+        "Dapat ba akong matakot na hindi ko mapansin ang pagbabalik ni Hesus?",
+        "Inilalarawan ng mga talata ang isang hayagan at hindi mapagkakamalang pangyayari. Ang paanyaya ay magtiwala sa Kaniya, hindi maghabol sa mga lihim na tanda."
+      ],
+      [
+        "Maaari bang kalkulahin ng isang tao ang eksaktong petsa?",
+        "Hindi. Nagbabala si Hesus laban sa pag-aangking alam ang araw o oras."
+      ],
+      [
+        "Paano kung mahirap ang buhay ngayon?",
+        "Ipinangangako ng pagbabalik ni Kristo ang wakas ng pagkakahiwalay, pagdadalamhati at pagkasira ng mundong nararanasan natin."
+      ]
+    ],
+    "act": "Basahin ang Juan 14:1–3 at ilarawan ang bahagi ng pangako ni Hesus na nagbibigay sa iyo ng pinakamalaking kaaliwan."
+  },
+  {
+    "id": "millennium",
+    "title": "Ang Milenyo",
+    "tag": "Ang ating pag-asa sa hinaharap",
+    "lead": "Ano ang mangyayari sa loob ng isang libong taon?",
+    "intro": "Inilalarawan ng Apocalipsis 20 ang isang libong taon. Nauunawaan ito bilang panahon pagkatapos ng pagbabalik ni Hesus, kung kailan kasama Niya ang mga tinubos at malinaw na makikita ang katarungan ng Diyos bago tuluyang matapos ang kasamaan.",
+    "verses": [
+      "Revelation 20:1–10",
+      "1 Corinthians 6:2–3",
+      "Revelation 21:1–4"
+    ],
+    "ideas": [
+      [
+        "Kasunod ng tagumpay ni Kristo ang isang libong taon",
+        "Sa pagpapakahulugang ito, ang isang libong taon ay nasa pagitan ng muling pagkabuhay ng mga naligtas sa pagparito ni Hesus at ng panghuling paghuhukom sa kasamaan.",
+        "Revelation 20:1–6"
+      ],
+      [
+        "Maaaring maunawaan ang mga pasiya ng Diyos",
+        "Binabanggit ni Pablo ang pakikibahagi ng mga banal sa paghuhukom. Itinuturo nito ang ating pansin sa pagiging makatarungan at hayagan ng Diyos.",
+        "1 Corinthians 6:2–3"
+      ],
+      [
+        "Magtatapos ang kasamaan; magsisimula ang bagong mundo",
+        "Hindi nagtatapos kay Satanas ang kuwento. Nagtatapos ang Apocalipsis sa paninirahan ng Diyos kasama ng Kaniyang bayan sa bagong lupa.",
+        "Revelation 20:7–15; Revelation 21:1–4"
+      ]
+    ],
+    "qa": [
+      [
+        "Kailangan ko bang isaulo ang lahat ng pangyayari ayon sa pagkakasunod?",
+        "Hindi. Unahin ang malaking larawan: babalik si Kristo, magiging malinaw ang katarungan ng Diyos at tuluyang magwawakas ang kasamaan."
+      ],
+      [
+        "Bakit may panahon para sa pagsusuri?",
+        "Ipinakikita ng pagsusuri na makatarungan at hindi pabigla-bigla ang paghuhukom ng Diyos."
+      ],
+      [
+        "Ano ang pinakahuling layunin?",
+        "Isang sansinukob na malaya sa kasalanan, na naibalik ang buhay at pakikisama sa Diyos."
+      ]
+    ],
+    "act": "Basahin ang Apocalipsis 21:1–4. Ilista ang mga bagay na ipinangako ng Diyos na hindi na magkakaroon."
+  },
+  {
+    "id": "hell",
+    "title": "Impiyerno — Malupit ba ang Diyos?",
+    "tag": "Ang ating pag-asa sa hinaharap",
+    "lead": "Pahihirapan ba ng mapagmahal na Diyos ang mga tao magpakailanman?",
+    "intro": "Nagbubukas ang paksang ito ng masakit na tanong tungkol sa katarungan ng Diyos. Itinuturo ng mga talata na ang huling parusa ay permanenteng wawasak sa kasamaan sa halip na panatilihing buhay ang mga tao sa walang hanggang pagpapahirap.",
+    "verses": [
+      "Malachi 4:1–3",
+      "Jude 7",
+      "John 3:16–17",
+      "Romans 6:23",
+      "Revelation 20:9–15"
+    ],
+    "ideas": [
+      [
+        "Sineseryoso ng Biblia ang paghuhukom",
+        "May bunga ang kasamaan at hindi nagkukunwari ang Diyos na wala itong pinsala. Tinatawag ng Biblia ang panghuling kalagayan na ikalawang kamatayan.",
+        "Revelation 20:14"
+      ],
+      [
+        "Pagkawasak, hindi walang hanggang kalupitan",
+        "Binabanggit ni Malakias ang pagkasunog hanggang sa maging abo. Ang paghahambing sa “walang hanggang apoy” at Sodoma ay nagpapahiwatig ng paghatol na permanente ang resulta.",
+        "Malachi 4:1–3; Jude 7"
+      ],
+      [
+        "Nais ng Diyos ang kaligtasan",
+        "Sinasabi ng ebanghelyo na ibinigay ng Diyos ang Kaniyang Anak upang magkaroon ng buhay ang mga tao sa halip na mapahamak. Dapat unawain ang katarungan ng Diyos kasama ng Kaniyang katangian ng pag-ibig.",
+        "John 3:16–17; Romans 6:23"
+      ]
+    ],
+    "qa": [
+      [
+        "Itinuturo ba ng Biblia ang walang hanggang pagpapahirap na may kamalayan?",
+        "Hindi, ayon sa mga talatang ito. Inihahambing nila ang kaloob na imortalidad sa panghuling pagkawasak ng masasama, hindi sa walang hanggang pagpapahirap na may kamalayan."
+      ],
+      [
+        "Ibig bang sabihin ay walang halaga ang maling mga gawa?",
+        "Hindi. Seryoso pa rin ang paghuhukom. Ang pagkakaiba ay tungkol sa uri at tagal ng panghuling parusa."
+      ],
+      [
+        "Paano ako makikipag-usap sa taong natatakot sa impiyerno?",
+        "Magsimula sa pag-ibig ng Diyos at pangako ni Hesus ng buhay. Seryosohin ang kaniyang takot, iwasan ang pagbabanta at mag-aral ng Kasulatan nang may kaamuan."
+      ]
+    ],
+    "act": "Ihambing ang Roma 6:23 at Juan 3:16. Pansinin ang pagkakaiba ng kamatayan at buhay."
   },
   {
     "id": "seventy-weeks",
@@ -369,51 +872,6 @@ const STUDIES = [
       ]
     ],
     "act": "Basahin ang Daniel 9:24–27 at gumuhit ng payak na linya na may mga petsang 457 BC → AD 27 → AD 31 → AD 34."
-  },
-  {
-    "id": "history",
-    "title": "Ang Makasaysayang Katotohanan tungkol kay Hesus",
-    "tag": "Pagsisimula",
-    "lead": "Tunay bang nabuhay si Hesus bilang tao sa kasaysayan?",
-    "intro": "Ang pananampalataya kay Hesus ay hindi kuwentong kathang-isip na hiwalay sa tunay na mundo. Gumagawa ang kuwento ng Kristiyanismo ng mga pahayag tungkol sa isang totoong taong nabuhay sa Judea noong unang siglo.",
-    "verses": [
-      "Luke 1:1–4",
-      "John 20:30–31",
-      "1 Corinthians 15:3–8",
-      "Acts 2:22–24"
-    ],
-    "ideas": [
-      [
-        "Nagsasalaysay ng kasaysayan ang mga Ebanghelyo",
-        "Sinabi ni Lucas na maingat niyang siniyasat ang mga patotoo. Nais ng mga sumulat ng Ebanghelyo na malaman ng mambabasa kung ano ang nangyari at bakit ito mahalaga.",
-        "Luke 1:1–4"
-      ],
-      [
-        "Mahalaga rin ang iba pang sinaunang mga manunulat",
-        "Nagbibigay ng makasaysayang katibayan sa konteksto ng unang Kristiyanismo ang mga manunulat na Romano at Judio tulad nina Tacitus, Pliny at Josephus. Nakatutulong sila sa panlabas na kasaysayan, ngunit hindi nila hiwalay na napapatunayan ang bawat paniniwalang Kristiyano.",
-        "Luke 1:1–4 (compare historical sources)"
-      ],
-      [
-        "Magkaugnay ngunit magkaiba ang kasaysayan at pananampalataya",
-        "Tumutulong ang ebidensiya upang suriin kung talagang nabuhay si Hesus at maagang sinamba Siya ng mga Kristiyano. Ang paniniwalang muling nabuhay Siya ay karagdagang pahayag na kailangang timbangin sa liwanag ng patotoo at kahulugan nito.",
-        "1 Corinthians 15:3–8"
-      ]
-    ],
-    "qa": [
-      [
-        "Mali bang maghanap ng ebidensiya?",
-        "Hindi. Maaaring tanggapin ng mga Kristiyano ang tapat na pagsisiyasat sa kasaysayan. Dapat suriin ang mga pahayag ayon sa ebidensiya, hindi ilayo sa mga tanong."
-      ],
-      [
-        "Napapatunayan ba ng mga istoryador na Romano ang muling pagkabuhay?",
-        "Hindi. Sinusuportahan nila ang ilang katotohanan sa kasaysayan tungkol kay Hesus at sa mga unang Kristiyano. Ang pahayag ng muling pagkabuhay ay higit na nakasalalay sa patotoo ng mga unang Kristiyano."
-      ],
-      [
-        "Paano kung hindi pa ako handang paniwalaan ang lahat?",
-        "Magbasa ng isang Ebanghelyo, itala ang mga pahayag na maaari mong suriin at magpatuloy sa makatarungang pagtatanong. Mahalaga ang maingat na proseso."
-      ]
-    ],
-    "act": "Basahin ang Lucas 1:1–4 at itala ang sinabi ni Lucas tungkol sa kaniyang paraan ng pagsulat."
   },
   {
     "id": "judgement",
@@ -508,6 +966,52 @@ const STUDIES = [
     "act": "Isulat ang dalawang talata sa Biblia na batayan ng pagkalkula sa 1844 at isang tanong na mayroon ka pa."
   },
   {
+    "id": "antichrist",
+    "title": "Antikristo",
+    "tag": "Pag-unawa sa propesiya",
+    "lead": "Paano nailalayo ng maling relihiyon ang pansin kay Hesus?",
+    "intro": "Ang salitang antikristo ay tumutukoy sa pagsalungat kay Kristo at, ayon sa historisistang pagkaunawa sa mga propesiyang ito, sa pagsisikap na agawin ang Kaniyang lugar. Ang mahalagang tanong ay kung inilalapit tayo ng isang aral kay Hesus o inilalayo sa Kaniya.",
+    "verses": [
+      "1 John 2:18–22",
+      "2 Thessalonians 2:3–12",
+      "Daniel 7:8–25",
+      "Revelation 13:1–10",
+      "John 14:6"
+    ],
+    "ideas": [
+      [
+        "Magsimula kay Hesus",
+        "Nagbabala si Juan tungkol sa maraming antikristong nagtatanggi kay Kristo. Tinatawag niya ang mga mananampalataya na manatiling tapat sa katotohanan tungkol kay Hesus.",
+        "1 John 2:18–22"
+      ],
+      [
+        "Isang historisistang pagkaunawa",
+        "Iniuugnay ng historisistang pagbasa ang Daniel 7 at Apocalipsis 13 sa pag-usbong ng kapangyarihang panrelihiyon at pampulitika ng kapapahan. Dapat subukin ang paglalapat na ito sa mga palatandaan sa Biblia at mapagkakatiwalaang kasaysayan; magkakaiba ang mga pagpapakahulugan sa mga propesiyang ito.",
+        "Daniel 7:8–25; Revelation 13:1–10"
+      ],
+      [
+        "Hindi kailanman dapat ipilit ang katotohanan",
+        "Mahalagang usapin ang pagsamba, awtoridad at pamimilit. Malaya ang paanyaya ni Hesus at hindi gumagamit ng takot o dahas. Ang pagpuna sa isang sistemang panrelihiyon ay hindi dapat maging pagkapoot sa mga indibiduwal na mananampalataya.",
+        "Matthew 11:28–30; Revelation 13:15"
+      ]
+    ],
+    "qa": [
+      [
+        "Kaaway ba ang mga Katoliko?",
+        "Hindi. Karapat-dapat ang ating kapwa sa paggalang at pag-ibig. Ang babala ay tungkol sa mga makasaysayang sistema at pag-aangkin ng awtoridad; hindi ito dapat gamitin upang hatulan ang mga tao o ang kanilang katapatan."
+      ],
+      [
+        "Bakit magkakaiba ang pagpapakahulugan ng mga Kristiyano sa mga propesiyang ito?",
+        "Gumagamit sila ng iba't ibang paraan ng pagpapakahulugan. Sundan ang mga simbolo ng Daniel sa konteksto at suriin ang mga pagkakakilanlan sa kasaysayan gamit ang mapagkakatiwalaang katibayan."
+      ],
+      [
+        "Paano ko maiiwasang malinlang?",
+        "Ituon ang pansin kay Hesus, basahin ang Kasulatan sa konteksto at tanggihan ang sinumang humihingi ng walang-tanong na katapatan sa relihiyon."
+      ]
+    ],
+    "act": "Basahin ang 1 Juan 2:18–22. Itanong, “Ano ang tuwirang sinasabi ng talata, at ano ang idinagdag ng mga sumunod na pagpapakahulugan?”"
+  },
+  {
     "id": "america",
     "title": "Ang Amerika sa Propesiya ng Biblia",
     "tag": "Pag-unawa sa propesiya",
@@ -553,190 +1057,6 @@ const STUDIES = [
     "act": "Pagnilayan ang pagkakaiba ng malayang pagbabahagi ng pananampalataya at pamimilit sa isang tao na maniwala."
   },
   {
-    "id": "blue-stone",
-    "title": "Ang Asul na Bato",
-    "tag": "Pag-unawa sa propesiya",
-    "lead": "Paano inuugnay ng mga simbolo sa santuwaryo ang pagsamba at kautusan ng Diyos?",
-    "intro": "Sa mas espesyalisadong araling ito, inihahambing ang mga kulay ng kasuotan ng mga saserdote at ng simbolikong babae sa Apocalipsis 17 upang pag-isipan ang kahalagahan ng kautusan ng Diyos. Hindi tuwirang nakasaad sa Kasulatan ang bawat simbolikong ugnayan.",
-    "verses": [
-      "Exodus 24:9–12",
-      "Exodus 28:31–33",
-      "Daniel 7:25",
-      "Revelation 17:3–6",
-      "Deuteronomy 10:4–5"
-    ],
-    "ideas": [
-      [
-        "Pansinin ang mga kulay sa Biblia",
-        "May kulay asul, ube at pula ang kasuotan ng mga saserdote. Gumagamit ang Apocalipsis 17 ng ilan sa mga kulay na ito upang ilarawan ang isang naiibang simbolikong larawan.",
-        "Exodus 28:31–33; Revelation 17:4"
-      ],
-      [
-        "Hindi palaging katibayan ang isang larawan",
-        "May mga mag-aaral ng Biblia na nagmungkahi ng ugnayan ng sahig na tila sapiro sa ilalim ng mga paa ng Diyos at ng mga tapyas na bato ng Kaniyang kautusan. Inilalarawan ng Exodo ang sapiro sa ilalim ng mga paa ng Diyos ngunit hindi nito tahasang sinasabing asul ang mga tapyas. Ituring itong larawan, hindi napatunayang katotohanan.",
-        "Exodus 24:10–12"
-      ],
-      [
-        "Ang mas malawak na prinsipyo",
-        "Dapat maging tapat sa Diyos ang pagsamba, at walang awtoridad ng tao ang maaaring pumalit sa Kaniyang salita. Inuugnay ng mahalagang prinsipyong ito ang aralin sa kautusan at propesiya.",
-        "Deuteronomy 10:4–5; Daniel 7:25"
-      ]
-    ],
-    "qa": [
-      [
-        "Nakasulat ba ang Sampung Utos sa asul na sapiro?",
-        "Sinasabi ng Biblia na nakasulat ang mga iyon sa mga tapyas na bato. Hindi tahasang ibinibigay ng mga talatang iyon ang eksaktong materyal at kulay."
-      ],
-      [
-        "Awtomatikong kinikilala ba ng mga kulay ang isang simbahan?",
-        "Hindi. Kailangan ang buong konteksto ng mga simbolo. Hindi sapat ang magkatulad na kulay upang mapatunayan ang isang pagpapakahulugan."
-      ],
-      [
-        "Bakit isinama pa ang araling ito?",
-        "Iniuugnay nito ang mga larawan ng santuwaryo, kautusan ng Diyos at usapin ng pagsamba. Mas mabuting pag-aralan ito matapos ang mga pangunahing aralin nang maingat sa aktuwal na sinasabi ng Kasulatan."
-      ]
-    ],
-    "act": "Ihambing ang Exodo 24:10–12 at Deuteronomio 10:4–5. Pag-ibahin ang mga napansin at mga inakala lamang."
-  },
-  {
-    "id": "sabbath",
-    "title": "Ang Sabbath",
-    "tag": "Pagsunod kay Hesus",
-    "lead": "Maaari bang maging kaloob ng Diyos ang isang araw bawat linggo?",
-    "intro": "Higit sa pagtigil sa trabaho ang Sabbath. Inilalarawan ng Kasulatan ang ikapitong araw bilang panahon upang alalahanin ang Manlilikha, ipagdiwang ang kalayaan at magalak sa pakikisama sa Diyos at kapwa.",
-    "verses": [
-      "Genesis 2:1–3",
-      "Exodus 20:8–11",
-      "Deuteronomy 5:12–15",
-      "Mark 2:27–28",
-      "Isaiah 58:13–14"
-    ],
-    "ideas": [
-      [
-        "Nagsimula ang pamamahinga sa paglikha",
-        "Pinagpala ng Diyos ang ikapitong araw sa salaysay ng paglikha. Ipinapaalala ng Sabbath na hindi lamang sa dami ng nagagawa nasusukat ang ating halaga.",
-        "Genesis 2:1–3"
-      ],
-      [
-        "Alalahanin ang paglikha at pagliligtas",
-        "Iniuugnay ng mga kautusan ang Sabbath sa Diyos bilang Manlilikha; iniuugnay rin ng Deuteronomio ang pamamahinga sa kalayaan mula sa pagkaalipin.",
-        "Exodus 20:8–11; Deuteronomy 5:12–15"
-      ],
-      [
-        "Ipinakikita ni Hesus ang layunin nito",
-        "Sinabi ni Hesus na ginawa ang Sabbath para sa tao. Nananatiling pagpapala ang ikapitong araw, Sabado, para sa pagsamba, habag at pagpapanumbalik.",
-        "Mark 2:27–28"
-      ]
-    ],
-    "qa": [
-      [
-        "Bakit Sabado at hindi Linggo?",
-        "Tinutukoy ng utos ng Sabbath ang ikapitong araw. Ang araw na tinutukoy ng ikaapat na utos ay ang Sabado. Walang utos sa Biblia na naglilipat ng kabanalan ng Sabbath sa Linggo."
-      ],
-      [
-        "Maaari ba akong gumawa ng mabuti para sa iba sa Sabbath?",
-        "Oo. Ipinakita ni Hesus na ang habag at paggawa ng mabuti ay angkop sa Sabbath."
-      ],
-      [
-        "Nagliligtas ba sa akin ang pag-iingat ng Sabbath?",
-        "Hindi. Ang kaligtasan ay sa biyaya sa pamamagitan ng pananampalataya. Ang pag-iingat ng Sabbath ay tugon ng pag-ibig at pagtitiwala, hindi bayad upang makarating sa langit."
-      ]
-    ],
-    "act": "Magplano ng mapayapang gawain sa Sabbath na magpapalalim sa pagsamba, ugnayan o paglilingkod."
-  },
-  {
-    "id": "second-coming",
-    "title": "Ang Ikalawang Pagparito",
-    "tag": "Ang ating pag-asa sa hinaharap",
-    "lead": "Ano ang magiging katangian ng pagbabalik ni Hesus?",
-    "intro": "Ipinangangako ng Biblia na babalik si Hesus. Inilalarawan ng Kasulatan ang Kaniyang pagparito bilang tunay, nakikita at makapangyarihan—hindi lihim na pangyayaring huhulaan lamang mula sa mga sabi-sabi.",
-    "verses": [
-      "John 14:1–3",
-      "Acts 1:9–11",
-      "1 Thessalonians 4:16–17",
-      "Revelation 1:7",
-      "Matthew 24:36"
-    ],
-    "ideas": [
-      [
-        "Nangako si Hesus",
-        "Sinabi Niya sa mga tagasunod na Siya ay muling darating at tatanggapin sila sa Kaniya. Ang hinaharap ng Kristiyano ay muling pagsasama, hindi pag-iwan.",
-        "John 14:1–3"
-      ],
-      [
-        "Hindi lihim o pangkaraniwan",
-        "Gumagamit ang Kasulatan ng mga larawang may sigaw, trumpeta at pagkakita ng buong mundo kay Kristo.",
-        "1 Thessalonians 4:16–17; Revelation 1:7"
-      ],
-      [
-        "Pag-asang walang pagtatakda ng petsa",
-        "Sinabi ni Hesus na walang nakaaalam ng araw o oras. Ang paghahanda ay matapat na pamumuhay ngayon, hindi pagkakapit sa walang katapusang nakatatakot na mga hula.",
-        "Matthew 24:36"
-      ]
-    ],
-    "qa": [
-      [
-        "Dapat ba akong matakot na hindi ko mapansin ang pagbabalik ni Hesus?",
-        "Inilalarawan ng mga talata ang isang hayagan at hindi mapagkakamalang pangyayari. Ang paanyaya ay magtiwala sa Kaniya, hindi maghabol sa mga lihim na tanda."
-      ],
-      [
-        "Maaari bang kalkulahin ng isang tao ang eksaktong petsa?",
-        "Hindi. Nagbabala si Hesus laban sa pag-aangking alam ang araw o oras."
-      ],
-      [
-        "Paano kung mahirap ang buhay ngayon?",
-        "Ipinangangako ng pagbabalik ni Kristo ang wakas ng pagkakahiwalay, pagdadalamhati at pagkasira ng mundong nararanasan natin."
-      ]
-    ],
-    "act": "Basahin ang Juan 14:1–3 at ilarawan ang bahagi ng pangako ni Hesus na nagbibigay sa iyo ng pinakamalaking kaaliwan."
-  },
-  {
-    "id": "nature",
-    "title": "Ang Kalikasan ng Tao",
-    "tag": "Ang ating pag-asa sa hinaharap",
-    "lead": "Ano tayo, at ano ang nangyayari kapag namatay tayo?",
-    "intro": "Inilalarawan ng Kasulatan ang buhay ng tao bilang kaloob ng Diyos. Itinuturo ng mga talata na hindi likas na imortal ang tao; ang buhay na walang hanggan ay tinatanggap sa pamamagitan ni Kristo.",
-    "verses": [
-      "Genesis 2:7",
-      "Ecclesiastes 9:5–6",
-      "1 Timothy 6:15–16",
-      "John 11:11–14",
-      "1 Thessalonians 4:13–18"
-    ],
-    "ideas": [
-      [
-        "Kaloob ang buhay",
-        "Inilalarawan ng Genesis ang paghubog ng Diyos sa tao at pagbibigay ng hininga ng buhay. Ang tao ay isang buhay na nilalang, hindi lamang katawan na may kaluluwang hindi maaaring mamatay.",
-        "Genesis 2:7"
-      ],
-      [
-        "Inilalarawan ang kamatayan bilang pagtulog",
-        "Tinukoy ni Hesus ang kamatayan ni Lazaro bilang pagtulog. Ang mga patay ay inilalarawang natutulog habang naghihintay ng muling pagkabuhay.",
-        "John 11:11–14; Ecclesiastes 9:5"
-      ],
-      [
-        "Ang muling pagkabuhay ang pag-asa",
-        "Inaaliw ni Pablo ang nagdadalamhating mga Kristiyano sa pagtuturo sa pagbabalik ni Kristo at sa muling pagkabuhay, hindi sa pagtingin sa kamatayan bilang katapusan ng lahat ng pag-asa.",
-        "1 Thessalonians 4:13–18"
-      ]
-    ],
-    "qa": [
-      [
-        "Binabantayan ba ako mula sa langit ng mahal kong namatay?",
-        "Inilalarawan ng Eclesiastes 9:5 at Juan 11 ang kamatayan bilang pahingang walang kamalayan hanggang sa muling pagkabuhay. Ang nagdadalamhati ay nangangailangan ng kaamuan, hindi pakikipagtalo."
-      ],
-      [
-        "Makikita ko pa bang muli ang mga mahal ko sa buhay?",
-        "Ipinangangako ng Biblia ang muling pagkabuhay kay Kristo. Dahilan ito ng pag-asa kahit habang tayo ay nagluluksa."
-      ],
-      [
-        "Ano ang pagkakaiba ng kaluluwa at tao?",
-        "Sa Genesis 2:7, naging buhay na nilalang ang tao nang ibigay ng Diyos ang hininga ng buhay. Sa salaysay na ito, ang “kaluluwa” ay tumutukoy sa buong buhay na tao."
-      ]
-    ],
-    "act": "Basahin ang 1 Tesalonica 4:13–18. Sumulat ng maikling mensahe ng kaaliwan batay sa mga salita ni Pablo."
-  },
-  {
     "id": "mark",
     "title": "Ang Tanda ng Hayop",
     "tag": "Pag-unawa sa propesiya",
@@ -780,96 +1100,6 @@ const STUDIES = [
       ]
     ],
     "act": "Ihambing ang Apocalipsis 14:7 at Exodo 20:11. Anong magkatulad na paksa ang napapansin mo?"
-  },
-  {
-    "id": "millennium",
-    "title": "Ang Milenyo",
-    "tag": "Ang ating pag-asa sa hinaharap",
-    "lead": "Ano ang mangyayari sa loob ng isang libong taon?",
-    "intro": "Inilalarawan ng Apocalipsis 20 ang isang libong taon. Nauunawaan ito bilang panahon pagkatapos ng pagbabalik ni Hesus, kung kailan kasama Niya ang mga tinubos at malinaw na makikita ang katarungan ng Diyos bago tuluyang matapos ang kasamaan.",
-    "verses": [
-      "Revelation 20:1–10",
-      "1 Corinthians 6:2–3",
-      "Revelation 21:1–4"
-    ],
-    "ideas": [
-      [
-        "Kasunod ng tagumpay ni Kristo ang isang libong taon",
-        "Sa pagpapakahulugang ito, ang isang libong taon ay nasa pagitan ng muling pagkabuhay ng mga naligtas sa pagparito ni Hesus at ng panghuling paghuhukom sa kasamaan.",
-        "Revelation 20:1–6"
-      ],
-      [
-        "Maaaring maunawaan ang mga pasiya ng Diyos",
-        "Binabanggit ni Pablo ang pakikibahagi ng mga banal sa paghuhukom. Itinuturo nito ang ating pansin sa pagiging makatarungan at hayagan ng Diyos.",
-        "1 Corinthians 6:2–3"
-      ],
-      [
-        "Magtatapos ang kasamaan; magsisimula ang bagong mundo",
-        "Hindi nagtatapos kay Satanas ang kuwento. Nagtatapos ang Apocalipsis sa paninirahan ng Diyos kasama ng Kaniyang bayan sa bagong lupa.",
-        "Revelation 20:7–15; Revelation 21:1–4"
-      ]
-    ],
-    "qa": [
-      [
-        "Kailangan ko bang isaulo ang lahat ng pangyayari ayon sa pagkakasunod?",
-        "Hindi. Unahin ang malaking larawan: babalik si Kristo, magiging malinaw ang katarungan ng Diyos at tuluyang magwawakas ang kasamaan."
-      ],
-      [
-        "Bakit may panahon para sa pagsusuri?",
-        "Ipinakikita ng pagsusuri na makatarungan at hindi pabigla-bigla ang paghuhukom ng Diyos."
-      ],
-      [
-        "Ano ang pinakahuling layunin?",
-        "Isang sansinukob na malaya sa kasalanan, na naibalik ang buhay at pakikisama sa Diyos."
-      ]
-    ],
-    "act": "Basahin ang Apocalipsis 21:1–4. Ilista ang mga bagay na ipinangako ng Diyos na hindi na magkakaroon."
-  },
-  {
-    "id": "hell",
-    "title": "Impiyerno — Malupit ba ang Diyos?",
-    "tag": "Ang ating pag-asa sa hinaharap",
-    "lead": "Pahihirapan ba ng mapagmahal na Diyos ang mga tao magpakailanman?",
-    "intro": "Nagbubukas ang paksang ito ng masakit na tanong tungkol sa katarungan ng Diyos. Itinuturo ng mga talata na ang huling parusa ay permanenteng wawasak sa kasamaan sa halip na panatilihing buhay ang mga tao sa walang hanggang pagpapahirap.",
-    "verses": [
-      "Malachi 4:1–3",
-      "Jude 7",
-      "John 3:16–17",
-      "Romans 6:23",
-      "Revelation 20:9–15"
-    ],
-    "ideas": [
-      [
-        "Sineseryoso ng Biblia ang paghuhukom",
-        "May bunga ang kasamaan at hindi nagkukunwari ang Diyos na wala itong pinsala. Tinatawag ng Biblia ang panghuling kalagayan na ikalawang kamatayan.",
-        "Revelation 20:14"
-      ],
-      [
-        "Pagkawasak, hindi walang hanggang kalupitan",
-        "Binabanggit ni Malakias ang pagkasunog hanggang sa maging abo. Ang paghahambing sa “walang hanggang apoy” at Sodoma ay nagpapahiwatig ng paghatol na permanente ang resulta.",
-        "Malachi 4:1–3; Jude 7"
-      ],
-      [
-        "Nais ng Diyos ang kaligtasan",
-        "Sinasabi ng ebanghelyo na ibinigay ng Diyos ang Kaniyang Anak upang magkaroon ng buhay ang mga tao sa halip na mapahamak. Dapat unawain ang katarungan ng Diyos kasama ng Kaniyang katangian ng pag-ibig.",
-        "John 3:16–17; Romans 6:23"
-      ]
-    ],
-    "qa": [
-      [
-        "Itinuturo ba ng Biblia ang walang hanggang pagpapahirap na may kamalayan?",
-        "Hindi, ayon sa mga talatang ito. Inihahambing nila ang kaloob na imortalidad sa panghuling pagkawasak ng masasama, hindi sa walang hanggang pagpapahirap na may kamalayan."
-      ],
-      [
-        "Ibig bang sabihin ay walang halaga ang maling mga gawa?",
-        "Hindi. Seryoso pa rin ang paghuhukom. Ang pagkakaiba ay tungkol sa uri at tagal ng panghuling parusa."
-      ],
-      [
-        "Paano ako makikipag-usap sa taong natatakot sa impiyerno?",
-        "Magsimula sa pag-ibig ng Diyos at pangako ni Hesus ng buhay. Seryosohin ang kaniyang takot, iwasan ang pagbabanta at mag-aral ng Kasulatan nang may kaamuan."
-      ]
-    ],
-    "act": "Ihambing ang Roma 6:23 at Juan 3:16. Pansinin ang pagkakaiba ng kamatayan at buhay."
   },
   {
     "id": "prophecy-gift",
@@ -918,6 +1148,52 @@ const STUDIES = [
     "act": "Basahin ang 1 Tesalonica 5:19–21. Anong dalawang pananagutan ang pinagsasama nito?"
   },
   {
+    "id": "godhead",
+    "title": "Ang Pagka-Diyos",
+    "tag": "Pagsisimula",
+    "lead": "Sino ang Ama, Anak at Banal na Espiritu?",
+    "intro": "Itinuturo ng Biblia na iisa ang Diyos at nagsasalita ito tungkol sa Ama, kay Hesus na Anak at sa Banal na Espiritu. Nagkakaisa ang Ama, Anak at Banal na Espiritu sa pag-ibig at layunin.",
+    "verses": [
+      "Deuteronomy 6:4",
+      "Genesis 1:1–2,26",
+      "John 1:1–14",
+      "Matthew 28:19",
+      "2 Corinthians 13:14"
+    ],
+    "ideas": [
+      [
+        "Iisang Diyos",
+        "Ipinahayag ng Israel na iisa ang Panginoon. Patuloy na sumasamba ang mga Kristiyano sa iisang Diyos, hindi sa tatlong diyos na magkakatunggali.",
+        "Deuteronomy 6:4"
+      ],
+      [
+        "Inihahayag ni Hesus ang Diyos",
+        "Inilalarawan ni Juan ang Salita bilang kasama ng Diyos at Diyos mismo, at sinasabi niyang ang Salita ay naging tao kay Hesus.",
+        "John 1:1–14"
+      ],
+      [
+        "Ama, Anak at Espiritu",
+        "Pinangalanan ni Hesus ang Ama, Anak at Banal na Espiritu sa utos ng bautismo. Binubuod ng doktrina ng Trinidad ang huwarang ito sa Biblia, bagaman ang Diyos ay higit sa ganap nating pagkaunawa.",
+        "Matthew 28:19; 2 Corinthians 13:14"
+      ]
+    ],
+    "qa": [
+      [
+        "Tatlong diyos ba ang sinasamba ng mga Kristiyano?",
+        "Hindi. Inihahayag ng Kasulatan ang iisang Diyos bilang Ama, Anak at Banal na Espiritu."
+      ],
+      [
+        "Mas mababa ba si Hesus kaysa Diyos?",
+        "Ganap at walang hanggan ang pagka-Diyos ni Hesus, ngunit tunay din Siyang naging tao para sa ating kaligtasan."
+      ],
+      [
+        "Kailangan ko bang maunawaan ang bawat detalye bago manampalataya?",
+        "Hindi. Hindi mo kailangang maunawaan ang bawat hiwaga o malutas ang bawat usaping teolohikal bago magsimulang magtiwala kay Hesus. Nagbibigay-babala ang Kasulatan laban sa pagtanggi sa Anak (1 Juan 2:23) at seryoso nitong tinatalakay ang paglaban sa Espiritu, ngunit hindi dapat gamiting pagsusulit ang araling ito upang hatulan ang mga taos-pusong nag-aaral. Patuloy na hanapin ang Diyos sa pamamagitan ni Hesus nang may pagpapakumbaba."
+      ]
+    ],
+    "act": "Basahin ang Juan 1:1–14 at pansinin ang sinasabi nito tungkol kay Hesus bago at matapos Siyang maging tao."
+  },
+  {
     "id": "remnant",
     "title": "Ang Nalabing Iglesia",
     "tag": "Pagsunod kay Hesus",
@@ -962,282 +1238,6 @@ const STUDIES = [
       ]
     ],
     "act": "Basahin ang Juan 10:16. Sumulat ng dalawang paraan kung paano mas magiging tulad ng Mabuting Pastol ang isang simbahan."
-  },
-  {
-    "id": "living",
-    "title": "Pamumuhay Kristiyano",
-    "tag": "Pagsunod kay Hesus",
-    "lead": "Paano dapat makaapekto ang pananampalataya sa ating mga pagpili at hitsura?",
-    "intro": "Binabago ng pagsunod kay Hesus ang ating mga priyoridad, kabilang ang paggamit ng pera, pagpili ng libangan at paraan ng pagpapakita ng sarili. Nakatutok ang orihinal na aralin sa alahas at palamuti; ang mas malaking tanong ay kung saan natin nakikita ang ating halaga.",
-    "verses": [
-      "1 Peter 3:3–4",
-      "1 Timothy 2:9–10",
-      "1 Corinthians 10:31",
-      "Ezekiel 28:17",
-      "Romans 12:1–2"
-    ],
-    "ideas": [
-      [
-        "Pinakamahalaga ang kagandahan ng kalooban",
-        "Itinuturo ni Pedro ang pansin sa maamo at tapat na espiritu sa halip na panlabas na pagpapakitang-tao.",
-        "1 Peter 3:3–4"
-      ],
-      [
-        "Ipinakikita ng mga pagpili ang ating pinahahalagahan",
-        "Hinihikayat ng Kasulatan ang pagiging simple, kahinhinan at maingat na pangangasiwa. Maaaring itanong kung pinauunlad ng ating mga pagpili ang pagpapakumbaba o ang pagmamalaki sa katayuan.",
-        "1 Timothy 2:9–10"
-      ],
-      [
-        "Huwag gawing kalupitan ang mga prinsipyo",
-        "Hindi natin dapat sukatin ang espirituwal na halaga ng tao sa damit, yaman o hitsura. Ang tunay na pagbabago ay nagmumula sa pakikipag-ugnayan kay Hesus.",
-        "Romans 12:1–2"
-      ]
-    ],
-    "qa": [
-      [
-        "Awtomatikong kasalanan ba ang bawat alahas?",
-        "May mga halimbawa sa Biblia ng palamuti at may mga babala laban sa pagmamataas at pagpapakitang-tao. Dapat basahin ang bawat talata sa konteksto sa halip na ipagpalagay na pareho ang lahat."
-      ],
-      [
-        "Paano ko malalaman kung ang isang bagay ay angkop?",
-        "Itanong kung ano ang motibo mo, anong mensahe ang ibinibigay nito, kung responsable ito at kung pinararangalan nito ang Diyos at kapwa. Humanap ng karunungan nang hindi humahatol sa hitsura."
-      ],
-      [
-        "Tinatanggap lang ba ako ng Diyos kung sa partikular na paraan ako manamit?",
-        "Hindi. Mahal ng Diyos ang mga tao bago pa mabago ang kanilang panlabas na gawi. Hindi dapat maging kahihiyan o panlipunang pamimilit ang paglago ng katangiang Kristiyano."
-      ]
-    ],
-    "act": "Kilalanin ang isang pang-araw-araw na pagpili kung saan maaari mong unahin ang bukas-palad na pagbibigay o pagiging simple kaysa katayuan."
-  },
-  {
-    "id": "prayer",
-    "title": "Panalangin",
-    "tag": "Pagsisimula",
-    "lead": "Paano ako makikipag-usap sa Diyos na hindi ko nakikita?",
-    "intro": "Ang panalangin ay tapat na pakikipag-usap sa Diyos. Maaaring kasama rito ang pasasalamat, mga tanong, pagtatapat, dalamhati at tahimik na pakikinig. Naglaan si Hesus ng oras upang manalangin kahit abala ang Kaniyang buhay.",
-    "verses": [
-      "Mark 1:35",
-      "Luke 6:12",
-      "Matthew 6:9–13",
-      "Matthew 7:7–11",
-      "1 John 5:14"
-    ],
-    "ideas": [
-      [
-        "Nanalangin si Hesus",
-        "Naglaan Siya ng tahimik na panahon para sa Ama, lalo na bago gumawa ng mahahalagang pasiya. Ang panalangin ay ugnayan, hindi pagtatanghal.",
-        "Mark 1:35; Luke 6:12"
-      ],
-      [
-        "Maaari kang patuloy na humingi",
-        "Inaanyayahan ni Hesus ang mga tao na humingi, humanap at kumatok. Ang matiyagang panalangin ay nagpapatibay ng pagtitiwala, hindi pamimilit sa Diyos.",
-        "Matthew 7:7–11"
-      ],
-      [
-        "Hindi makina ng mga kahilingan ang Diyos",
-        "Itinuro ni Hesus na ipanalangin ang kalooban ng Diyos at ang ating pang-araw-araw na pangangailangan. Hindi lahat ng hinihiling ay sinasagot ayon sa ating inaasahan o sa gusto nating panahon.",
-        "Matthew 6:9–13; 1 John 5:14"
-      ]
-    ],
-    "qa": [
-      [
-        "Paano kung hindi ko alam ang tamang mga salita?",
-        "Magsimula nang simple: “Diyos, narito ako. Kailangan ko ng tulong.” Nagturo si Hesus ng huwarang panalangin, hindi komplikadong pormula."
-      ],
-      [
-        "Paano kung tila walang sagot ang panalangin ko?",
-        "Maaaring masakit iyon. Hinihikayat ng Biblia ang matiyagang pagtitiwala ngunit hindi ipinangangako ang bawat resultang gusto natin. Humingi ng suporta sa mga nagmamalasakit sa iyo at magpatuloy sa tapat na pakikipag-usap sa Diyos."
-      ],
-      [
-        "Maaari ba akong manalangin kapag may nagawa akong mali?",
-        "Oo. Lumapit nang mapagpakumbaba at tapat. Lalong mahalaga ang panalangin kapag kailangan natin ng kapatawaran at bagong simula."
-      ]
-    ],
-    "act": "Maglaan ng limang tahimik na minuto: magpasalamat sa Diyos, sabihin ang isang alalahanin, humingi ng karunungan at makinig."
-  },
-  {
-    "id": "health",
-    "title": "Kalusugan",
-    "tag": "Pagsunod kay Hesus",
-    "lead": "Mahalaga ba sa Diyos ang aking kalusugan at kapakanan araw-araw?",
-    "intro": "Nagmalasakit si Hesus sa katawan at puso ng mga tao. Ang pag-aalaga sa sarili ay isang paraan upang parangalan ang buhay na ibinigay ng Diyos—hindi paraan upang paghirapan ang kaligtasan o hatulan ang mga may sakit.",
-    "verses": [
-      "John 10:10",
-      "Matthew 4:23",
-      "1 Corinthians 6:19–20",
-      "Genesis 2:15",
-      "3 John 2"
-    ],
-    "ideas": [
-      [
-        "Mahalaga sa Diyos ang buong pagkatao",
-        "Nagpagaling si Hesus ng mga tao at nais Niyang maranasan nila ang masaganang buhay. Mahalaga ang pisikal na kalusugan kasabay ng espirituwal na kalusugan.",
-        "John 10:10; Matthew 4:23"
-      ],
-      [
-        "Mahalaga ang araw-araw na mga gawi",
-        "Isang kapaki-pakinabang na paalala tungkol sa kalusugan ang NEWSTART: wastong pagkain, ehersisyo, tubig, sikat ng araw, pagpipigil sa sarili, sariwang hangin, pahinga at pagtitiwala sa Diyos. Pangkalahatang gabay ang mga ito, hindi garantiya laban sa sakit.",
-        "1 Corinthians 6:19–20"
-      ],
-      [
-        "Dapat humantong sa habag ang pangangalaga sa kalusugan",
-        "Maaaring suportahan ng pag-aalaga sa katawan ang paglilingkod at pasasalamat. Hindi patunay ng mahinang pananampalataya ang sakit, at mahalaga pa rin ang tulong ng mga propesyonal sa kalusugan.",
-        "3 John 2"
-      ]
-    ],
-    "qa": [
-      [
-        "Kung magkasakit ako, ibig bang sabihin ay nabigo ako sa espirituwal?",
-        "Hindi. Maraming sanhi ang sakit at hindi ito dapat gamitin bilang sukatan ng pananampalataya. Magpakita ng habag at angkop na pangangalaga."
-      ],
-      [
-        "Kailangan bang magkapareho ang pagkain ng lahat?",
-        "Hinihikayat ng Biblia ang responsableng pangangalaga sa katawan. Maaaring makatulong ang pagkain na nakatuon sa halaman, ngunit mahalaga ang personal na pangangailangang medikal at matalinong pagpili."
-      ],
-      [
-        "Medikal na payo ba ito?",
-        "Hindi. Aralin ito sa pananampalataya at kalusugan, hindi diyagnosis o kapalit ng payo mula sa mga kwalipikadong tagapag-alagang medikal."
-      ]
-    ],
-    "act": "Pumili ng isang makatotohanang hakbang ng pangangalaga sa sarili ngayong linggo, tulad ng regular na pahinga, tubig, paglalakad o masustansiyang pagkain."
-  },
-  {
-    "id": "baptism",
-    "title": "Bautismo",
-    "tag": "Pagsunod kay Hesus",
-    "lead": "Ano ang kahulugan ng bautismo, at handa na ba ako?",
-    "intro": "Ang bautismo ay hayagang pagpapahayag ng bagong ugnayan kay Hesus. Ginagawa ang bautismo sa paglulubog sa tubig bilang larawan ng pag-iwan sa dating buhay at pagsisimula ng bagong buhay kasama ni Kristo.",
-    "verses": [
-      "Matthew 3:13–17",
-      "Matthew 28:19–20",
-      "John 3:3–8",
-      "Romans 6:3–4",
-      "Acts 8:26–39"
-    ],
-    "ideas": [
-      [
-        "Nagbigay si Hesus ng halimbawa",
-        "Si Hesus mismo ay nabautismuhan at kalaunan ay inutusan ang mga alagad na bautismuhan ang mga sumusunod sa Kaniya.",
-        "Matthew 3:13–17; Matthew 28:19–20"
-      ],
-      [
-        "Inilalarawan ng tubig ang bagong buhay",
-        "Ang paglubog at pag-ahon mula sa tubig ay sumasagisag sa pagkamatay sa dating buhay at muling pagkabuhay kasama ni Kristo.",
-        "Romans 6:3–4"
-      ],
-      [
-        "Nauuna ang pananampalataya sa simbolo",
-        "May kahulugan ang bautismo bilang tugon sa pananampalataya, pagsisisi at pagpapasiya na sumunod. Hindi mahikang gawain ang tubig na nagbibigay ng kaligtasan.",
-        "Acts 8:26–39"
-      ]
-    ],
-    "qa": [
-      [
-        "Kailangan ko bang malaman muna ang bawat turo ng Biblia?",
-        "Dapat pag-isipan ang bautismo at gawin nang may kaalaman, ngunit walang nakauunawa sa lahat. Makipag-usap sa pastor o tagapayo tungkol sa mahahalagang paniniwala at tanong."
-      ],
-      [
-        "Paano kung nahihirapan pa rin ako sa dating mga gawi?",
-        "Hindi nangangako ang bautismo ng buhay na walang pakikibaka. Tanda ito ng pasiyang magtiwala kay Kristo at lumago sa tulong Niya."
-      ],
-      [
-        "Bakit paglulubog sa tubig?",
-        "Iniuugnay ng Roma 6 ang bautismo sa larawan ng paglilibing at muling pagkabuhay, na angkop sa mga bautismong inilalarawan sa Mga Gawa."
-      ]
-    ],
-    "act": "Basahin ang Roma 6:3–4. Isulat kung ano ang magiging anyo ng “bagong buhay” sa isang pang-araw-araw mong ugnayan."
-  },
-  {
-    "id": "godhead",
-    "title": "Ang Pagka-Diyos",
-    "tag": "Pagsisimula",
-    "lead": "Sino ang Ama, Anak at Banal na Espiritu?",
-    "intro": "Itinuturo ng Biblia na iisa ang Diyos at nagsasalita ito tungkol sa Ama, kay Hesus na Anak at sa Banal na Espiritu. Nagkakaisa ang Ama, Anak at Banal na Espiritu sa pag-ibig at layunin.",
-    "verses": [
-      "Deuteronomy 6:4",
-      "Genesis 1:1–2,26",
-      "John 1:1–14",
-      "Matthew 28:19",
-      "2 Corinthians 13:14"
-    ],
-    "ideas": [
-      [
-        "Iisang Diyos",
-        "Ipinahayag ng Israel na iisa ang Panginoon. Patuloy na sumasamba ang mga Kristiyano sa iisang Diyos, hindi sa tatlong diyos na magkakatunggali.",
-        "Deuteronomy 6:4"
-      ],
-      [
-        "Inihahayag ni Hesus ang Diyos",
-        "Inilalarawan ni Juan ang Salita bilang kasama ng Diyos at Diyos mismo, at sinasabi niyang ang Salita ay naging tao kay Hesus.",
-        "John 1:1–14"
-      ],
-      [
-        "Ama, Anak at Espiritu",
-        "Pinangalanan ni Hesus ang Ama, Anak at Banal na Espiritu sa utos ng bautismo. Binubuod ng doktrina ng Trinidad ang huwarang ito sa Biblia, bagaman ang Diyos ay higit sa ganap nating pagkaunawa.",
-        "Matthew 28:19; 2 Corinthians 13:14"
-      ]
-    ],
-    "qa": [
-      [
-        "Tatlong diyos ba ang sinasamba ng mga Kristiyano?",
-        "Hindi. Inihahayag ng Kasulatan ang iisang Diyos bilang Ama, Anak at Banal na Espiritu."
-      ],
-      [
-        "Mas mababa ba si Hesus kaysa Diyos?",
-        "Ganap at walang hanggan ang pagka-Diyos ni Hesus, ngunit tunay din Siyang naging tao para sa ating kaligtasan."
-      ],
-      [
-        "Kailangan ko bang maunawaan ang bawat detalye bago manampalataya?",
-        "Hindi. Magsimula sa pagkakilala sa Diyos na inihayag kay Hesus. May mga hiwagang inaasahan kapag pinag-uusapan ang Diyos."
-      ]
-    ],
-    "act": "Basahin ang Juan 1:1–14 at pansinin ang sinasabi nito tungkol kay Hesus bago at matapos Siyang maging tao."
-  },
-  {
-    "id": "stewardship",
-    "title": "Pangangasiwa ng mga Kaloob ng Diyos",
-    "tag": "Pagsunod kay Hesus",
-    "lead": "Ano ang kaugnayan ng pananampalataya sa pera at panahon?",
-    "intro": "Ang mabuting pangangasiwa ay tapat na pag-aalaga sa mga ipinagkatiwala sa atin—pera, oras, kakayahan, pagkakataon at daigdig. Ang pagbibigay ay pagpapahayag ng pasasalamat at tiwala, hindi pagbili ng pabor ng Diyos.",
-    "verses": [
-      "Psalm 24:1",
-      "1 Corinthians 6:20",
-      "Leviticus 27:30",
-      "Malachi 3:8–12",
-      "2 Corinthians 9:7"
-    ],
-    "ideas": [
-      [
-        "Kaloob ang lahat",
-        "Inilalarawan ng Biblia na ang lupa ay pag-aari ng Diyos. Tayo ay mga tagapangalaga, hindi lubos na may-ari.",
-        "Psalm 24:1"
-      ],
-      [
-        "Ikapu at pagkabukas-palad",
-        "Sa Kasulatan, ang ikapu ay ikasampung bahagi na ibinubukod para sa Diyos. Hinihikayat din nito ang mga handog at praktikal na pangangalaga sa kapwa.",
-        "Leviticus 27:30; Malachi 3:10"
-      ],
-      [
-        "Magbigay mula sa kusang-loob na puso",
-        "Binibigyang-diin ni Pablo ang masaya at kusang-loob na pagbibigay. Hindi kailanman pahintulot ang pagbibigay sa pagmamanipula o garantiya ng kayamanang pinansiyal.",
-        "2 Corinthians 9:7"
-      ]
-    ],
-    "qa": [
-      [
-        "Payayamanin ba ako ng Diyos kung magbibigay ako ng ikapu?",
-        "Hindi ipinangangako ng Biblia ang garantisadong perang babalik sa bawat handog. Ipinapahayag ng pagbibigay ang pananampalataya at pasasalamat, hindi transaksiyong nag-oobliga sa Diyos na payamanin tayo."
-      ],
-      [
-        "Paano kung nahihirapan akong bayaran ang pangunahing pangangailangan?",
-        "Alam ng Diyos ang iyong kalagayan. Humingi ng matalinong tulong sa pananalapi, kumilos nang responsable at makipag-usap sa mapagkakatiwalaang pinuno ng simbahan sa halip na magpadala sa pamimilit."
-      ],
-      [
-        "Pera lamang ba ang pangangasiwa?",
-        "Hindi. Kabilang din ang oras, mga kaloob, pag-aalaga sa mga tao at pangangalaga sa nilikha."
-      ]
-    ],
-    "act": "Ilista ang tatlong bagay na ipinagkatiwala sa iyo at isang mabuting paraan upang gamitin ang bawat isa ngayong linggo."
   },
   {
     "id": "witnessing",

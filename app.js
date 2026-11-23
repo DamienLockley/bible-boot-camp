@@ -159,19 +159,19 @@ function renderStudy(s){
   </section>
   <section class="panel depth-panel">
     <div class="panel-header"><span class="small-round">02</span><h2>Explore the Bible step by step</h2></div>
-    <p class="reading-guidance">Allow about 3–5 minutes for each Bible reading. Read the passage in context, work through the explanation, then reveal the suggested answer. Tick each reading after you have considered it. The six readings and reflection make this a guided 30–45 minute study.</p>
+    <p class="reading-guidance">Allow about 3–5 minutes for each Bible reading. Read the passage in context, work through the explanation, then reveal the suggested answer. The readings and reflection make this a guided 30–45 minute study.</p>
     <div class="principle-box"><span class="kicker">THE PRINCIPLE TO UNDERSTAND</span><p>${esc(DEPTH[s.id]?.principle||s.intro)}</p>${addedPics(s.id,'principle',0)}</div>
-    ${((DEPTH[s.id]&&DEPTH[s.id].steps)||[]).map((st,i)=>`<article class="bible-stop" id="stop-${i}"><div class="stop-head"><span class="step-number">${String(i+1).padStart(2,'0')}</span><div><div class="stop-ref">READ · ${bibleRef(st[0])}</div><h3>${esc(st[1])}</h3></div></div><p>${esc(st[2])}</p>${addedPics(s.id,'step',i)}<div class="look-closer"><strong>Think it through</strong><p>${esc(st[3])}</p><details class="answer-reveal"><summary>See a suggested answer</summary><p>${esc(st[4])}</p></details></div><label class="read-toggle"><input type="checkbox" data-stepcheck="${i}" ${((user.read[s.id]||[]).includes(i))?'checked':''}><span>I’ve read and considered this passage</span></label></article>`).join('')}
-    <div class="read-count" id="readCount">${checkedCount(s.id)} of ${(DEPTH[s.id]?.steps||[]).length} passages studied</div>
+    ${((DEPTH[s.id]&&DEPTH[s.id].steps)||[]).map((st,i)=>`<article class="bible-stop" id="stop-${i}"><div class="stop-head"><span class="step-number">${String(i+1).padStart(2,'0')}</span><div><div class="stop-ref">READ · ${bibleRef(st[0])}</div><h3>${esc(st[1])}</h3></div></div><p>${esc(st[2])}</p>${addedPics(s.id,'step',i)}<div class="look-closer"><strong>Think it through</strong><p>${esc(st[3])}</p><details class="answer-reveal"><summary>See a suggested answer</summary><p>${esc(st[4])}</p></details></div></article>`).join('')}
+    
   </section>
   <section class="panel"><div class="panel-header"><span class="small-round">03</span><h2>Real-life questions</h2></div><p class="muted">Tap a question to explore a suggested answer.</p>${s.qa.map(({0:q,1:a})=>`<details class="qitem"><summary>${esc(q)}</summary><div class="answer"><strong>A Bible-based response:</strong> ${esc(a)}</div>${addedPics(s.id,'qa',s.qa.findIndex(z=>z[0]===q))}</details>`).join('')}</section>
   <section class="panel"><div class="panel-header"><span class="small-round">04</span><h2>Make it personal</h2></div><div class="prompt">${esc(s.act)}</div><div class="prompt" style="margin-top:12px"><strong>Extended personal exercise:</strong> ${esc(DEPTH[s.id]?.practice||s.act)}</div>${addedPics(s.id,'end',0)}<div class="journal-title" style="margin-top:21px"><strong>My private reflection</strong><span>Saved in your account when signed in, otherwise on this device</span></div><textarea id="studyNotes" placeholder="What stood out? What questions do you still have?" aria-label="Private reflection notes"></textarea><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="study-notice" id="notesStatus">Saved in this browser</span><button class="mini-link" type="button" data-action="save-notes">Save notes</button></div></section>
   ${window.GTKJ_RENDER_COURSE_ADDONS?window.GTKJ_RENDER_COURSE_ADDONS(s,ix):''}
-  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)||!user.quizPassed[s.id]?'disabled':''}>${completed(s.id)?'✓ Study completed':!allRead(s.id)?'Review all passages to finish':!user.quizPassed[s.id]?'Complete the five questions first':'✓ Finish study & unlock next'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Share this study ↗</button></div>
-  <div class="study-notice" id="finishHint">${completed(s.id)?'You can revisit this study at any time.':!allRead(s.id)?'Complete all six reading checkpoints, then answer five short questions.':!user.quizPassed[s.id]?'You have worked through the readings. Complete the short review to finish.':'You have worked through the readings and review. You can finish the study now.'}</div>
+  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||(!window.GTKJ_HAS_NO_QUIZ?.(s.id) && !user.quizPassed[s.id])?'disabled':''}>${completed(s.id)?'✓ Study completed':(!window.GTKJ_HAS_NO_QUIZ?.(s.id) && !user.quizPassed[s.id])?'Complete the review questions first':'✓ Finish study & unlock next'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Share this study ↗</button></div>
+  <div class="study-notice" id="finishHint">${completed(s.id)?'You can revisit this study at any time.':(!window.GTKJ_HAS_NO_QUIZ?.(s.id) && !user.quizPassed[s.id])?'Answer all questions correctly to finish this study.':'You can finish the study now.'}</div>
   <div class="foot-actions">${previous?`<button class="btn btn-outline" data-study="${esc(previous.id)}">← Previous</button>`:'<span></span>'}${next?`<button class="btn btn-outline" ${nextLocked?'disabled':''} data-study="${esc(next.id)}">${nextLocked?'Your next study will be ready after this one':'Next study →'}</button>`:`<button class="btn btn-outline" data-action="journey">View journey →</button>`}</div>
   <p class="study-notice">These studies are written to help people discover Bible truth clearly and simply. Check every teaching by Scripture in context.</p>
-  </div><aside class="detail-side" aria-label="Study support"><div class="side-card"><h3>Your pathway</h3><p>${completed(s.id)?'This study is complete. You can review it any time.':`You are currently on Study ${String(ix+1).padStart(2,'0')} of ${ORDER.length}.`}</p><p>${nextLocked?'Your next study will be ready after this lesson.':next?`Next lesson: <b>${esc(next.title)}</b>.`:'You are on the final lesson.'}</p><button class="btn btn-outline" data-action="connect">Connect / Get Help</button></div></aside></div>`;
+  </div></div>`;
   const field=document.getElementById('studyNotes');
   field.value=user.notes[s.id]||'';
   let savedTimer;
@@ -296,7 +296,7 @@ document.body.addEventListener('click',e=>{
   if(a==='complete'){
     const id=target.dataset.id;
     if(completed(id)) return;
-    if(!isUnlocked(id)||!allRead(id)||!user.quizPassed[id]){toast('Complete the six readings and five questions before finishing this study.');return;}
+    if(!isUnlocked(id)||(!window.GTKJ_HAS_NO_QUIZ?.(id) && !user.quizPassed[id])){toast('Answer all questions correctly to finish this study.');return;}
     user.completed.push(id);
     save();
     const unlocked=nextStudy();
@@ -308,19 +308,26 @@ document.body.addEventListener('click',e=>{
   if(a==='connect') openConnect();
 });
 
-main.addEventListener('submit',e=>{
- if(!e.target.matches('.gtk-study-quiz'))return;
- e.preventDefault();const form=e.target,id=form.dataset.quizId,result=form.querySelector('[data-quiz-result]');
- const answers=Array.from({length:5},(_,i)=>form.querySelector('input[name="q'+i+'"]:checked'));
- const labels=window.GTKJ_COURSE_ADDON_STRINGS?window.GTKJ_COURSE_ADDON_STRINGS(false):null;
- if(answers.some(a=>!a)){if(result)result.textContent=labels?labels.all:'Please answer all five questions first.';return;}
- const score=answers.reduce((n,a)=>n+(a.value==='1'?1:0),0);
- if(score===5){user.quizPassed[id]=true;save();if(result)result.textContent=labels?labels.success:'✓ All answers correct.';}
- else if(result)result.textContent=(labels?labels.retry:'Review the key ideas and try again.')+' ('+score+'/5)';
- const btn=document.getElementById('completeStudyBtn');
- if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Review all passages to finish':!user.quizPassed[id]?'Complete the five questions first':'✓ Finish study & unlock next';}
- const hint=document.getElementById('finishHint');
- if(hint&&!completed(id)&&user.quizPassed[id])hint.textContent='You have worked through the readings and review. You can finish the study now.';
+main.addEventListener('submit',event=>{
+ const form=event.target;
+ if(!form.matches('.gtk-study-quiz'))return;
+ event.preventDefault();
+ const id=form.dataset.quizId, result=form.querySelector('[data-quiz-result]');
+ const text=window.GTKJ_COURSE_ADDON_STRINGS(document.documentElement.lang.startsWith('tl'));
+ const answers=Array.from(form.querySelectorAll('fieldset'),item=>item.querySelector('input:checked'));
+ if(!answers.length || answers.some(answer=>!answer)){result.textContent=text.all;return;}
+ const score=answers.filter(answer=>answer.value==='1').length;
+ if(score!==answers.length){result.textContent=text.retry+' ('+score+'/'+answers.length+')';return;}
+ user.quizPassed[id]=true;
+ save();
+ result.textContent=text.success;
+ if(!completed(id)){
+  const button=document.getElementById('completeStudyBtn');
+  button.disabled=false;
+  button.textContent="\u2713 Finish study & unlock next";
+  const hint=document.getElementById('finishHint');
+  if(hint)hint.textContent=text.success;
+ }
 });
 main.addEventListener('change',e=>{
  if(e.target.id==='importFile'){importProgress(e.target.files?.[0]);return;}
@@ -333,7 +340,7 @@ main.addEventListener('change',e=>{
    user.read[id]=Array.from(set).sort((a,b)=>a-b);save();
    const cnt=document.getElementById('readCount');if(cnt)cnt.textContent=`${checkedCount(id)} of ${(DEPTH[id]?.steps||[]).length} passages studied`;
    const btn=document.getElementById('completeStudyBtn');
-   if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Review all passages to finish':!user.quizPassed[id]?'Complete the five questions first':'✓ Finish study & unlock next';}
+   if(btn&&!completed(id)){btn.disabled=(!window.GTKJ_HAS_NO_QUIZ?.(id) && !user.quizPassed[id]);btn.textContent=(!window.GTKJ_HAS_NO_QUIZ?.(id) && !user.quizPassed[id])?'Complete the review questions first':'✓ Finish study & unlock next';}
    const hint=document.getElementById('finishHint');if(hint)hint.textContent=allRead(id)?'You have worked through the readings. Take time for reflection, then finish the study.':'Complete all six reading checkpoints to unlock the next study.';
  }
 });

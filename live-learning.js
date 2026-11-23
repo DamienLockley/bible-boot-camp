@@ -11,7 +11,7 @@
   }
   function strings(tl) {
     return tl ? {
-      points:'APAT NA PUNTONG DAPAT MAALALA', pointsTitle:'Ano ang matututuhan mo',
+      points:'MGA PUNTONG DAPAT MAALALA', pointsTitle:'Ano ang matututuhan mo',
       principle:'Pangunahing prinsipyo', analogy:'Isang paghahalintulad',
       transformation:'NAGBABAGO TAYO SA PAMAMAGITAN NG EBANGHELYO',
       transformationTitle:'Nagiging higit na katulad ni Jesus',
@@ -19,18 +19,18 @@
       follow:'Tularan ang halimbawang ito sa Biblia',
       avoid:'Matuto mula sa babalang ito',
       response:'Isang tugon sa aking buhay',
-      quiz:'SURIIN ANG IYONG PAG-UNAWA', quizTitle:'Limang tanong para pag-isipan',
+      quiz:'SURIIN ANG IYONG PAG-UNAWA', quizTitle:'Mga tanong para pag-isipan',
       quizIntro:'Sinasaklaw ng mga tanong ang mga pagbasa at kung paano isasabuhay ang aralin. Maaari mong subukan muli; walang parusa sa maling sagot.',
-      check:'Suriin ang aking mga sagot →', all:'Pakisagutan muna ang limang tanong.',
+      check:'Suriin ang aking mga sagot →', all:'Pakisagutan muna ang mga tanong.',
       retry:'Suriing muli ang mahahalagang punto, baguhin ang mga sagot at subukan muli. Walang parusa.',
-      success:'✓ 5 sa 5 ang tama. Naunawaan mo ang mga pangunahing punto.',
+      success:'✓ Tama ang lahat ng sagot. Naunawaan mo ang mga pangunahing punto.',
       more:'Natututuhan natin ang pagbabago ng pagkatao sa pagtitiwala kay Jesus at sa tulong ng Espiritu Santo.',
       q5:'Aling tugon ang pinakamainam na nagsasabuhay ng katotohanang ito?',
       wrong:['Gamitin ang aralin upang laitin ang iba.','Umasa lamang sa sariling lakas at huwag humingi ng tulong kay Jesus.','Balewalain ang natutuhan kapag mahirap itong isagawa.'],
       lead:'Basahin at pag-isipan ang talata, saka piliin ang sagot na pinakamainam na nagpapaliwanag dito.', readRef:'Basahin:',
-      after:'Pagkatapos mong pag-aralan ang anim na pagbasa, sagutan ang maikling pagsusuri bago tapusin ang aralin.'
+      after:'Pagkatapos mong pag-aralan ang mga pagbasa, sagutan ang maikling pagsusuri bago tapusin ang aralin.'
     } : {
-      points:'FOUR TRUTHS TO REMEMBER', pointsTitle:'What you will discover',
+      points:'TRUTHS TO REMEMBER', pointsTitle:'What you will discover',
       principle:'The principle to understand', analogy:'A helpful comparison',
       transformation:'THE GOSPEL CHANGES US',
       transformationTitle:'Becoming More Like Jesus',
@@ -38,19 +38,22 @@
       follow:'Follow this biblical example',
       avoid:'Learn from this warning',
       response:'A response in my life',
-      quiz:'CHECK YOUR UNDERSTANDING', quizTitle:'Five questions to consider',
+      quiz:'CHECK YOUR UNDERSTANDING', quizTitle:'Questions to consider',
       quizIntro:'These questions cover the readings and how to live out the lesson. You can try again; there is no penalty for a wrong answer.',
-      check:'Check my answers →', all:'Please answer all five questions first.',
+      check:'Check my answers →', all:'Please answer all questions first.',
       retry:'Review the key ideas, change your answers and try again. There is no penalty.',
-      success:'✓ 5 out of 5 correct. You have understood the key ideas.',
+      success:'✓ All answers correct. You have understood the key ideas.',
       more:'Character transformation grows through trust in Jesus and the help of the Holy Spirit.',
       q5:'Which response best puts this truth into practice?',
       wrong:['Use the lesson to shame someone else.','Rely only on your own effort and refuse Christ’s help.','Ignore the truth when it is difficult to follow.'],
       lead:'Read and consider the passage, then choose the answer that best explains it.', readRef:'Read:',
-      after:'After studying the six readings, complete this short check before finishing the study.'
+      after:'After studying the readings, complete this short check before finishing the study.'
     };
   }
   function pointsFor(study, tl, s) {
+    if (tl && window.GTKJ_TL_CONTENT && window.GTKJ_TL_CONTENT.outcomes && window.GTKJ_TL_CONTENT.outcomes[study]) {
+      return window.GTKJ_TL_CONTENT.outcomes[study].map(function (p) { return [p[0], p[1]]; });
+    }
     if (!tl) {
       var p2 = window.GTKJ_REVIEW_PASS2 && window.GTKJ_REVIEW_PASS2.studies[study];
       if (p2 && Array.isArray(p2.points)) return p2.points.map(function (p) { return [p.text, p.ref]; });
@@ -61,17 +64,14 @@
     ideas.push([principle, ref]);
     return ideas;
   }
-  function quizFor(s, tl, t, text) {
-    var depth = (typeof DEPTH !== 'undefined' && DEPTH[s.id]) ? DEPTH[s.id].steps : [];
-    if (!tl && window.GTKJ_REVIEW && window.GTKJ_REVIEW.quizzes && window.GTKJ_REVIEW.quizzes[s.id]) {
-      return window.GTKJ_REVIEW.quizzes[s.id].map(function (item) {
-        return {question:item[0], correct:item[1], wrong:item.slice(2)};
-      });
-    }
-    var q = depth.slice(0, 4).map(function (step) { return {question:step[3], correct:step[4], wrong:text.wrong}; });
-    q.push({question:text.q5, correct:(t && t.response) || s.act, wrong:text.wrong});
-    return q;
+  function quizRows(id) {
+    var review=isTagalog()?window.GTKJ_TL_CONTENT:window.GTKJ_REVIEW;
+    return review && review.quizzes && review.quizzes[id];
   }
+  window.GTKJ_HAS_NO_QUIZ = function(id) {
+    var rows=quizRows(id);
+    return Array.isArray(rows) && rows.length===0;
+  };
   function render(study, index) {
     var tl = isTagalog(), text = strings(tl);
     var s = (typeof STUDIES !== 'undefined') ? STUDIES.find(function (item) { return item.id === study.id; }) : null;
@@ -81,6 +81,7 @@
     var html = '<section class="panel learning-outcomes"><div class="panel-header"><span class="small-round">✦</span><h2>'+text.pointsTitle+'</h2></div><p class="reading-guidance">'+text.points+'</p><ol>';
     points.forEach(function (p) { html += '<li><p>'+esc(p[0])+'</p><div class="scripture">'+text.readRef+' '+esc(p[1] || '')+'</div></li>'; });
     html += '</ol></section>';
+    if (!points.length) html='';
     if (analogy) html += '<section class="panel learning-analogy"><div class="panel-header"><span class="small-round">≈</span><h2>'+text.analogy+'</h2></div><p>'+esc(analogy)+'</p></section>';
     if (t) {
       var cards = [[text.reveal,t.reveal],[text.follow,t.follow],[text.avoid,t.avoid],[text.response,t.response]];
@@ -88,13 +89,19 @@
       cards.forEach(function (card) { html += '<article><h3>'+card[0]+'</h3><p>'+esc(card[1])+'</p></article>'; });
       html += '</div></section>';
     }
-    var questions = quizFor(study, tl, t, text);
+    var questions = quizRows(study.id);
+    if (!Array.isArray(questions)) {
+      return html + '<section class="panel learning-quiz" role="status"><h2>'+text.quizTitle+'</h2><p>'+
+        (tl ? 'Hindi maikarga ang mga tanong. I-refresh ang pahina upang subukang muli.' :
+              'The review questions could not be loaded. Refresh this page to try again.')+'</p></section>';
+    }
+    if (!questions.length) return html;
     html += '<section class="panel learning-quiz"><div class="panel-header"><span class="small-round">05</span><h2>'+text.quizTitle+'</h2></div><p class="reading-guidance">'+text.quizIntro+' '+text.after+'</p><form class="gtk-study-quiz" data-quiz-id="'+esc(study.id)+'"><div class="eyebrow">'+text.quiz+'</div>';
     questions.forEach(function (item, i) {
-      var choices = [{value:item.correct,correct:true}].concat(item.wrong.map(function (value) { return {value:value,correct:false}; }));
+      var choices = [{value:item[1],correct:true}].concat(item.slice(2).map(function (value) { return {value:value,correct:false}; }));
       var shift = (i * 3 + study.id.length) % choices.length;
       choices = choices.slice(shift).concat(choices.slice(0, shift));
-      html += '<fieldset class="gtk-quiz-item"><legend>'+(i+1)+'. '+esc(item.question)+'</legend>';
+      html += '<fieldset class="gtk-quiz-item"><legend>'+(i+1)+'. '+esc(item[0])+'</legend>';
       choices.forEach(function (choice, j) {
         html += '<label class="gtk-quiz-choice"><input type="radio" name="q'+i+'" value="'+(choice.correct?'1':'0')+'"><span>'+esc(choice.value)+'</span></label>';
       });

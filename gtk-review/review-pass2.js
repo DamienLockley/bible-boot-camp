@@ -1,31 +1,6 @@
-/* GTKJ REVIEW — educational learning outcomes, pass 2; review-only and not live learner content. */
 window.GTKJ_REVIEW_PASS2 = {
-  "version": "Review 2 • learning outcomes • 23 November 2026",
+  "version": "GTKJ Word Master learning outcomes",
   "studies": {
-    "1844": {
-      "points": [
-        {
-          "text": "Daniel's 2,300 prophetic days are read as years in this historicist interpretation",
-          "ref": "Daniel 8:14; Ezekiel 4:6",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "The calculation uses the same 457 BC starting point and reaches AD 1844",
-          "ref": "Daniel 9:24–27",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "The Day of Atonement provides a pattern for understanding cleansing and judgment",
-          "ref": "Leviticus 16:29–34; Hebrews 9:23–24",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "The pre-Advent judgment is a new phase of Christ’s ministry: His sacrifice is complete, and He continues as our merciful High Priest.",
-          "ref": "Revelation 14:6–7; Hebrews 8:1–2",
-          "focus": "God's character"
-        }
-      ]
-    },
     "word": {
       "points": [
         {
@@ -34,18 +9,42 @@ window.GTKJ_REVIEW_PASS2 = {
           "focus": "Central teaching"
         },
         {
-          "text": "Scripture's many books form a connected message that leads us toward Jesus",
-          "ref": "Luke 24:25–27",
+          "text": "God knows the end from the beginning and gives people reason to believe when His words come true",
+          "ref": "Isaiah 46:9–10; John 14:29",
           "focus": "Central teaching"
         },
         {
-          "text": "Daniel 2 provides a prophetic example readers can examine, not merely repeat",
+          "text": "The succession of empires and the division after Rome give us reason to trust God’s promise of a lasting kingdom",
           "ref": "Daniel 2:31–45",
           "focus": "Central teaching"
         },
         {
           "text": "God makes Himself known, reveals His love, and invites us to investigate honestly",
           "ref": "1 John 4:8; Acts 17:10–12",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "history": {
+      "points": [
+        {
+          "text": "The Gospel writers intended readers to consider testimony about real events",
+          "ref": "Luke 1:1–4; John 20:30–31",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The earliest Christian proclamation centred on Jesus' death and resurrection",
+          "ref": "1 Corinthians 15:3–8",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Ancient witnesses offer context, but their evidence must not be exaggerated",
+          "ref": "Acts 18:12–17",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God invites sincere investigation that can lead beyond facts to trust in Jesus",
+          "ref": "John 20:24–31",
           "focus": "God's character"
         }
       ]
@@ -70,6 +69,30 @@ window.GTKJ_REVIEW_PASS2 = {
         {
           "text": "The cross reveals God's self-giving character and His promise to end evil",
           "ref": "Romans 5:6–8; Revelation 21:1–4",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "salvation": {
+      "points": [
+        {
+          "text": "Sin damages trust and separates people from the God who gives life",
+          "ref": "Genesis 3:7–15; Isaiah 59:2",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God acts first to rescue people; Jesus shows that the Father already loves us",
+          "ref": "John 3:16–17; Romans 5:6–8",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Salvation is received by grace through faith, never purchased by good works",
+          "ref": "Ephesians 2:8–10",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The same loving God who forgives also transforms people and welcomes them home",
+          "ref": "2 Corinthians 5:17–21; Luke 15:11–24",
           "focus": "God's character"
         }
       ]
@@ -122,26 +145,26 @@ window.GTKJ_REVIEW_PASS2 = {
         }
       ]
     },
-    "salvation": {
+    "blue-stone": {
       "points": [
         {
-          "text": "Sin damages trust and separates people from the God who gives life",
-          "ref": "Genesis 3:7–15; Isaiah 59:2",
+          "text": "Exodus says that God wrote His commandments on stone tablets",
+          "ref": "Exodus 31:18; Deuteronomy 10:4–5",
           "focus": "Central teaching"
         },
         {
-          "text": "God acts first to rescue people; Jesus shows that the Father already loves us",
-          "ref": "John 3:16–17; Romans 5:6–8",
+          "text": "The sapphire-like pavement is described under God's feet; the tablets' colour is not stated",
+          "ref": "Exodus 24:9–12",
           "focus": "Central teaching"
         },
         {
-          "text": "Salvation is received by grace through faith, never purchased by good works",
-          "ref": "Ephesians 2:8–10",
+          "text": "A blue thread was a reminder to Israel to remember God's commandments",
+          "ref": "Numbers 15:37–41",
           "focus": "Central teaching"
         },
         {
-          "text": "The same loving God who forgives also transforms people and welcomes them home",
-          "ref": "2 Corinthians 5:17–21; Luke 15:11–24",
+          "text": "God wants His law treasured and written on our hearts, not merely pictured by objects",
+          "ref": "Jeremiah 31:31–34; Psalm 119:97–104",
           "focus": "God's character"
         }
       ]
@@ -170,150 +193,6 @@ window.GTKJ_REVIEW_PASS2 = {
         }
       ]
     },
-    "antichrist": {
-      "points": [
-        {
-          "text": "John warns against teaching that denies or displaces the real Jesus",
-          "ref": "1 John 2:18–23",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Daniel and Revelation warn of power that claims religious authority and seeks worship",
-          "ref": "Daniel 7:8–25; Revelation 13:1–10",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Scripture's prophetic descriptions must be examined before applying them to history",
-          "ref": "Daniel 7:17–25",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God's truth calls for fidelity to Jesus and freedom of conscience, not coercion",
-          "ref": "Revelation 13:15–17; John 14:6",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "seventy-weeks": {
-      "points": [
-        {
-          "text": "In the historicist reading, seventy prophetic weeks represent 490 years",
-          "ref": "Daniel 9:24–27; Numbers 14:34",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "This timeline begins with the Jerusalem restoration decree associated with 457 BC",
-          "ref": "Ezra 7:11–26; Daniel 9:25",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Its milestones centre on Jesus' anointing, sacrifice and the gospel going to the nations",
-          "ref": "Luke 3:21–22; Acts 7–8",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God's prophetic promise draws attention to the Messiah and the faithfulness of His saving purpose",
-          "ref": "Daniel 9:25–27",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "history": {
-      "points": [
-        {
-          "text": "The Gospel writers intended readers to consider testimony about real events",
-          "ref": "Luke 1:1–4; John 20:30–31",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "The earliest Christian proclamation centred on Jesus' death and resurrection",
-          "ref": "1 Corinthians 15:3–8",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Ancient witnesses offer context, but their evidence must not be exaggerated",
-          "ref": "Acts 18:12–17",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God invites sincere investigation that can lead beyond facts to trust in Jesus",
-          "ref": "John 20:24–31",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "judgement": {
-      "points": [
-        {
-          "text": "God's judgment takes evil, victims and human choices seriously",
-          "ref": "Ecclesiastes 12:13–14; Hebrews 9:27",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "The opened books picture fairness and truth, not a God who forgot the facts",
-          "ref": "Daniel 7:9–14; Revelation 20:11–12",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Jesus is the believer's Advocate; we approach God through His grace",
-          "ref": "1 John 2:1–2; Romans 8:31–34",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God's justice and mercy belong together: judgment need not hide Christ's love",
-          "ref": "Revelation 14:6–7; Hebrews 4:14–16",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "america": {
-      "points": [
-        {
-          "text": "Daniel uses beasts to represent kingdoms; Revelation 13 describes a second power",
-          "ref": "Daniel 7:17; Revelation 13:11",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "The historicist interpretation identifies this lamb-like, dragon-speaking power with America",
-          "ref": "Revelation 13:11–12",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "A power that demands worship contradicts the freedom with which Jesus invites people",
-          "ref": "Revelation 13:15–17; Acts 5:29",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God honours conscience and asks for worship that is free, truthful and faithful",
-          "ref": "Revelation 14:6–12; John 8:31–36",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "blue-stone": {
-      "points": [
-        {
-          "text": "Exodus says that God wrote His commandments on stone tablets",
-          "ref": "Exodus 31:18; Deuteronomy 10:4–5",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "The sapphire-like pavement is described under God's feet; the tablets' colour is not stated",
-          "ref": "Exodus 24:9–12",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "A blue thread was a reminder to Israel to remember God's commandments",
-          "ref": "Numbers 15:37–41",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God wants His law treasured and written on our hearts, not merely pictured by objects",
-          "ref": "Jeremiah 31:31–34; Psalm 119:97–104",
-          "focus": "God's character"
-        }
-      ]
-    },
     "sabbath": {
       "points": [
         {
@@ -338,26 +217,122 @@ window.GTKJ_REVIEW_PASS2 = {
         }
       ]
     },
-    "second-coming": {
+    "prayer": {
       "points": [
         {
-          "text": "Jesus promised to return personally to receive His followers",
-          "ref": "John 14:1–3; Acts 1:9–11",
+          "text": "Jesus made regular time to pray and taught us to approach God as Father",
+          "ref": "Mark 1:35; Matthew 6:9–13",
           "focus": "Central teaching"
         },
         {
-          "text": "His coming will be visible and unmistakable, not a secret event",
-          "ref": "Matthew 24:23–31; Revelation 1:7",
+          "text": "Prayer includes honouring God's name, seeking His will and bringing real needs",
+          "ref": "Matthew 6:9–13",
           "focus": "Central teaching"
         },
         {
-          "text": "Those who have died in Christ will rise, and believers will be reunited with Him",
-          "ref": "1 Thessalonians 4:13–18",
+          "text": "We are invited to ask persistently, with trust rather than demands",
+          "ref": "Matthew 7:7–11; 1 John 5:14–15",
           "focus": "Central teaching"
         },
         {
-          "text": "God keeps His promises: we prepare with hope and love, not invented dates",
-          "ref": "Matthew 24:36–44",
+          "text": "God welcomes honest communion, confession, gratitude and concerns in relationship",
+          "ref": "Philippians 4:6–7; Psalm 62:8",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "baptism": {
+      "points": [
+        {
+          "text": "Jesus was baptised and commanded His followers to make disciples and baptise",
+          "ref": "Matthew 3:13–17; 28:19–20",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Immersion pictures being buried with Christ and raised to new life",
+          "ref": "Romans 6:3–6; Colossians 2:12",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Faith and repentance should come before a willing baptismal decision",
+          "ref": "Acts 2:37–41; Acts 8:26–39",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God grants new life by grace; baptism expresses belonging and begins ongoing discipleship",
+          "ref": "Galatians 3:26–29; 2 Corinthians 5:17",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "living": {
+      "points": [
+        {
+          "text": "God looks at the heart, and outward choices reveal what we treasure",
+          "ref": "1 Samuel 16:7; Matthew 6:19–24",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Scripture values modesty, simplicity, generosity and inward beauty",
+          "ref": "1 Peter 3:3–4; 1 Timothy 2:9–10",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Adornments or possessions can become idols; judging people's worth by appearance is also wrong",
+          "ref": "Romans 12:1–2",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God renews character from within so our choices increasingly reflect Jesus",
+          "ref": "Philippians 2:3–8; 1 Corinthians 10:31",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "health": {
+      "points": [
+        {
+          "text": "Jesus cared for physical suffering as well as spiritual needs",
+          "ref": "Matthew 4:23; John 10:10",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Everyday habits such as nutrition, water, movement and rest can support wellbeing",
+          "ref": "1 Corinthians 6:19–20; Mark 6:31",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Temperance and self-control support clear judgment and faithful service",
+          "ref": "Galatians 5:22–23; Proverbs 23:29–35",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God values the whole person; sickness is never evidence of lesser spiritual worth",
+          "ref": "3 John 2; Luke 10:27",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "stewardship": {
+      "points": [
+        {
+          "text": "Everything belongs to God, who entrusts life and resources to humanity",
+          "ref": "Psalm 24:1; 1 Corinthians 4:2",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Stewardship includes time, talents, money and responsibility for creation",
+          "ref": "Genesis 2:15; Matthew 25:14–30",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Giving and tithing express trust, worship and support for God's work, not purchase of salvation",
+          "ref": "Malachi 3:8–10; 2 Corinthians 9:6–8",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God is generous and asks us to reflect His character with willing service",
+          "ref": "2 Corinthians 9:7; Matthew 6:19–21",
           "focus": "God's character"
         }
       ]
@@ -386,26 +361,26 @@ window.GTKJ_REVIEW_PASS2 = {
         }
       ]
     },
-    "mark": {
+    "second-coming": {
       "points": [
         {
-          "text": "Revelation's final warning concerns worship, allegiance and pressure on conscience",
-          "ref": "Revelation 13:15–17; 14:6–12",
+          "text": "Jesus promised to return personally to receive His followers",
+          "ref": "John 14:1–3; Acts 1:9–11",
           "focus": "Central teaching"
         },
         {
-          "text": "The everlasting gospel and call to worship the Creator stand beside the warning",
-          "ref": "Revelation 14:6–7; Exodus 20:8–11",
+          "text": "His coming will be visible and unmistakable, not a secret event",
+          "ref": "Matthew 24:23–31; Revelation 1:7",
           "focus": "Central teaching"
         },
         {
-          "text": "In this historicist interpretation the Sabbath–Sunday conflict concerns a future informed choice, not a mark everyone already possesses",
-          "ref": "Revelation 14:12",
+          "text": "Those who have died in Christ will rise, and believers will be reunited with Him",
+          "ref": "1 Thessalonians 4:13–18",
           "focus": "Central teaching"
         },
         {
-          "text": "God seeks faithful love and conscience, not frightened guesses about technology",
-          "ref": "John 14:15; Daniel 3:1–18",
+          "text": "God keeps His promises: we prepare with hope and love, not invented dates",
+          "ref": "Matthew 24:36–44",
           "focus": "God's character"
         }
       ]
@@ -458,6 +433,150 @@ window.GTKJ_REVIEW_PASS2 = {
         }
       ]
     },
+    "seventy-weeks": {
+      "points": [
+        {
+          "text": "In the historicist reading, seventy prophetic weeks represent 490 years",
+          "ref": "Daniel 9:24–27; Numbers 14:34",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "This timeline begins with the Jerusalem restoration decree associated with 457 BC",
+          "ref": "Ezra 7:11–26; Daniel 9:25",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Its milestones centre on Jesus' anointing, sacrifice and the gospel going to the nations",
+          "ref": "Luke 3:21–22; Acts 7–8",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God's prophetic promise draws attention to the Messiah and the faithfulness of His saving purpose",
+          "ref": "Daniel 9:25–27",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "judgement": {
+      "points": [
+        {
+          "text": "God's judgment takes evil, victims and human choices seriously",
+          "ref": "Ecclesiastes 12:13–14; Hebrews 9:27",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The opened books picture fairness and truth, not a God who forgot the facts",
+          "ref": "Daniel 7:9–14; Revelation 20:11–12",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Jesus is the believer's Advocate; we approach God through His grace",
+          "ref": "1 John 2:1–2; Romans 8:31–34",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God's justice and mercy belong together: judgment need not hide Christ's love",
+          "ref": "Revelation 14:6–7; Hebrews 4:14–16",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "1844": {
+      "points": [
+        {
+          "text": "Daniel's 2,300 prophetic days are read as years in this historicist interpretation",
+          "ref": "Daniel 8:14; Ezekiel 4:6",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The calculation uses the same 457 BC starting point and reaches AD 1844",
+          "ref": "Daniel 9:24–27",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The Day of Atonement provides a pattern for understanding cleansing and judgment",
+          "ref": "Leviticus 16:29–34; Hebrews 9:23–24",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The pre-Advent judgment is a new phase of Christ’s ministry: His sacrifice is complete, and He continues as our merciful High Priest.",
+          "ref": "Revelation 14:6–7; Hebrews 8:1–2",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "antichrist": {
+      "points": [
+        {
+          "text": "John warns against teaching that denies or displaces the real Jesus",
+          "ref": "1 John 2:18–23",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Daniel and Revelation warn of power that claims religious authority and seeks worship",
+          "ref": "Daniel 7:8–25; Revelation 13:1–10",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "Scripture's prophetic descriptions must be examined before applying them to history",
+          "ref": "Daniel 7:17–25",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God's truth calls for fidelity to Jesus and freedom of conscience, not coercion",
+          "ref": "Revelation 13:15–17; John 14:6",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "america": {
+      "points": [
+        {
+          "text": "Daniel uses beasts to represent kingdoms; Revelation 13 describes a second power",
+          "ref": "Daniel 7:17; Revelation 13:11",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The historicist interpretation identifies this lamb-like, dragon-speaking power with America",
+          "ref": "Revelation 13:11–12",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "A power that demands worship contradicts the freedom with which Jesus invites people",
+          "ref": "Revelation 13:15–17; Acts 5:29",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God honours conscience and asks for worship that is free, truthful and faithful",
+          "ref": "Revelation 14:6–12; John 8:31–36",
+          "focus": "God's character"
+        }
+      ]
+    },
+    "mark": {
+      "points": [
+        {
+          "text": "Revelation's final warning concerns worship, allegiance and pressure on conscience",
+          "ref": "Revelation 13:15–17; 14:6–12",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "The everlasting gospel and call to worship the Creator stand beside the warning",
+          "ref": "Revelation 14:6–7; Exodus 20:8–11",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "In this historicist interpretation the Sabbath–Sunday conflict concerns a future informed choice, not a mark everyone already possesses",
+          "ref": "Revelation 14:12",
+          "focus": "Central teaching"
+        },
+        {
+          "text": "God seeks faithful love and conscience, not frightened guesses about technology",
+          "ref": "John 14:15; Daniel 3:1–18",
+          "focus": "God's character"
+        }
+      ]
+    },
     "prophecy-gift": {
       "points": [
         {
@@ -478,126 +597,6 @@ window.GTKJ_REVIEW_PASS2 = {
         {
           "text": "God directs genuine prophetic gifts toward Jesus and faithful service, not unquestioned human authority",
           "ref": "Revelation 19:10; John 5:39",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "remnant": {
-      "points": [
-        {
-          "text": "Revelation describes faithful people keeping God's commandments and the faith of Jesus",
-          "ref": "Revelation 12:17; 14:12",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Their mission is to proclaim the everlasting gospel to every people and nation",
-          "ref": "Revelation 14:6–7",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Jesus knows and gathers His sheep, including those outside one visible community",
-          "ref": "John 10:11–16",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God calls a remnant to humble service and truth, never pride in a religious label",
-          "ref": "John 13:34–35; Micah 6:8",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "living": {
-      "points": [
-        {
-          "text": "God looks at the heart, and outward choices reveal what we treasure",
-          "ref": "1 Samuel 16:7; Matthew 6:19–24",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Scripture values modesty, simplicity, generosity and inward beauty",
-          "ref": "1 Peter 3:3–4; 1 Timothy 2:9–10",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Adornments or possessions can become idols; judging people's worth by appearance is also wrong",
-          "ref": "Romans 12:1–2",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God renews character from within so our choices increasingly reflect Jesus",
-          "ref": "Philippians 2:3–8; 1 Corinthians 10:31",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "prayer": {
-      "points": [
-        {
-          "text": "Jesus made regular time to pray and taught us to approach God as Father",
-          "ref": "Mark 1:35; Matthew 6:9–13",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Prayer includes honouring God's name, seeking His will and bringing real needs",
-          "ref": "Matthew 6:9–13",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "We are invited to ask persistently, with trust rather than demands",
-          "ref": "Matthew 7:7–11; 1 John 5:14–15",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God welcomes honest communion, confession, gratitude and concerns in relationship",
-          "ref": "Philippians 4:6–7; Psalm 62:8",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "health": {
-      "points": [
-        {
-          "text": "Jesus cared for physical suffering as well as spiritual needs",
-          "ref": "Matthew 4:23; John 10:10",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Everyday habits such as nutrition, water, movement and rest can support wellbeing",
-          "ref": "1 Corinthians 6:19–20; Mark 6:31",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Temperance and self-control support clear judgment and faithful service",
-          "ref": "Galatians 5:22–23; Proverbs 23:29–35",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God values the whole person; sickness is never evidence of lesser spiritual worth",
-          "ref": "3 John 2; Luke 10:27",
-          "focus": "God's character"
-        }
-      ]
-    },
-    "baptism": {
-      "points": [
-        {
-          "text": "Jesus was baptised and commanded His followers to make disciples and baptise",
-          "ref": "Matthew 3:13–17; 28:19–20",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Immersion pictures being buried with Christ and raised to new life",
-          "ref": "Romans 6:3–6; Colossians 2:12",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "Faith and repentance should come before a willing baptismal decision",
-          "ref": "Acts 2:37–41; Acts 8:26–39",
-          "focus": "Central teaching"
-        },
-        {
-          "text": "God grants new life by grace; baptism expresses belonging and begins ongoing discipleship",
-          "ref": "Galatians 3:26–29; 2 Corinthians 5:17",
           "focus": "God's character"
         }
       ]
@@ -626,26 +625,26 @@ window.GTKJ_REVIEW_PASS2 = {
         }
       ]
     },
-    "stewardship": {
+    "remnant": {
       "points": [
         {
-          "text": "Everything belongs to God, who entrusts life and resources to humanity",
-          "ref": "Psalm 24:1; 1 Corinthians 4:2",
+          "text": "Revelation describes faithful people keeping God's commandments and the faith of Jesus",
+          "ref": "Revelation 12:17; 14:12",
           "focus": "Central teaching"
         },
         {
-          "text": "Stewardship includes time, talents, money and responsibility for creation",
-          "ref": "Genesis 2:15; Matthew 25:14–30",
+          "text": "Their mission is to proclaim the everlasting gospel to every people and nation",
+          "ref": "Revelation 14:6–7",
           "focus": "Central teaching"
         },
         {
-          "text": "Giving and tithing express trust, worship and support for God's work, not purchase of salvation",
-          "ref": "Malachi 3:8–10; 2 Corinthians 9:6–8",
+          "text": "Jesus knows and gathers His sheep, including those outside one visible community",
+          "ref": "John 10:11–16",
           "focus": "Central teaching"
         },
         {
-          "text": "God is generous and asks us to reflect His character with willing service",
-          "ref": "2 Corinthians 9:7; Matthew 6:19–21",
+          "text": "God calls a remnant to humble service and truth, never pride in a religious label",
+          "ref": "John 13:34–35; Micah 6:8",
           "focus": "God's character"
         }
       ]

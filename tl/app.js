@@ -159,19 +159,19 @@ function renderStudy(s){
   </section>
   <section class="panel depth-panel">
     <div class="panel-header"><span class="small-round">02</span><h2>Pag-aralan ang Biblia nang sunod-sunod</h2></div>
-    <p class="reading-guidance">Maglaan ng mga 3–5 minuto sa bawat pagbasa. Basahin sa konteksto, pag-isipan ang paliwanag, at saka tingnan ang iminungkahing sagot. Markahan ang bawat pagbasa kapag natapos mo na.</p>
+    <p class="reading-guidance">Maglaan ng mga 3–5 minuto sa bawat pagbasa. Basahin sa konteksto, pag-isipan ang paliwanag, at saka tingnan ang iminungkahing sagot.</p>
     <div class="principle-box"><span class="kicker">PRINSIPYONG DAPAT MAUNAWAAN</span><p>${bibleRef(esc(DEPTH[s.id]?.principle||s.intro))}</p>${addedPics(s.id,'principle',0)}</div>
-    ${((DEPTH[s.id]&&DEPTH[s.id].steps)||[]).map((st,i)=>`<article class="bible-stop" id="stop-${i}"><div class="stop-head"><span class="step-number">${String(i+1).padStart(2,'0')}</span><div><div class="stop-ref">BASAHIN · ${bibleRef(st[0])}</div><h3>${esc(st[1])}</h3></div></div><p>${bibleRef(esc(st[2]))}</p>${addedPics(s.id,'step',i)}<div class="look-closer"><strong>Pag-isipan ito</strong><p>${bibleRef(esc(st[3]))}</p><details class="answer-reveal"><summary>Tingnan ang iminungkahing sagot</summary><p>${bibleRef(esc(st[4]))}</p></details></div><label class="read-toggle"><input type="checkbox" data-stepcheck="${i}" ${((user.read[s.id]||[]).includes(i))?'checked':''}><span>Nabasa at napag-isipan ko ang talatang ito</span></label></article>`).join('')}
-    <div class="read-count" id="readCount">${checkedCount(s.id)} sa ${(DEPTH[s.id]?.steps||[]).length} talatang napag-aralan</div>
+    ${((DEPTH[s.id]&&DEPTH[s.id].steps)||[]).map((st,i)=>`<article class="bible-stop" id="stop-${i}"><div class="stop-head"><span class="step-number">${String(i+1).padStart(2,'0')}</span><div><div class="stop-ref">BASAHIN · ${bibleRef(st[0])}</div><h3>${esc(st[1])}</h3></div></div><p>${bibleRef(esc(st[2]))}</p>${addedPics(s.id,'step',i)}<div class="look-closer"><strong>Pag-isipan ito</strong><p>${bibleRef(esc(st[3]))}</p><details class="answer-reveal"><summary>Tingnan ang iminungkahing sagot</summary><p>${bibleRef(esc(st[4]))}</p></details></div></article>`).join('')}
+    
   </section>
   <section class="panel"><div class="panel-header"><span class="small-round">03</span><h2>Mga tanong sa buhay</h2></div><p class="muted">Pindutin ang tanong upang makita ang iminungkahing sagot.</p>${s.qa.map(({0:q,1:a})=>`<details class="qitem"><summary>${bibleRef(esc(q))}</summary><div class="answer"><strong>Sagot na batay sa Biblia:</strong> ${bibleRef(esc(a))}</div>${addedPics(s.id,'qa',s.qa.findIndex(z=>z[0]===q))}</details>`).join('')}</section>
   <section class="panel"><div class="panel-header"><span class="small-round">04</span><h2>Isabuhay ang aralin</h2></div><div class="prompt">${bibleRef(esc(s.act))}</div><div class="prompt" style="margin-top:12px"><strong>Karagdagang personal na gawain:</strong> ${bibleRef(esc(DEPTH[s.id]?.practice||s.act))}</div>${addedPics(s.id,'end',0)}<div class="journal-title" style="margin-top:21px"><strong>Aking pribadong pagninilay</strong><span>Naka-save sa iyong account kung naka-sign in; kung hindi, sa device na ito</span></div><textarea id="studyNotes" placeholder="Ano ang tumatak sa iyo? Anong mga tanong ang mayroon ka pa?" aria-label="Pribadong tala ng pagninilay"></textarea><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="study-notice" id="notesStatus">Naka-save sa browser na ito</span><button class="mini-link" type="button" data-action="save-notes">I-save ang tala</button></div></section>
   ${window.GTKJ_RENDER_COURSE_ADDONS?window.GTKJ_RENDER_COURSE_ADDONS(s,ix):''}
-  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||!allRead(s.id)||!user.quizPassed[s.id]?'disabled':''}>${completed(s.id)?'✓ Natapos ang aralin':!allRead(s.id)?'Basahin muna ang lahat ng talata':!user.quizPassed[s.id]?'Sagutan muna ang limang tanong':'✓ Tapusin at buksan ang kasunod'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Ibahagi ang araling ito ↗</button></div>
-  <div class="study-notice" id="finishHint">${completed(s.id)?'Maaari mong balikan ang araling ito anumang oras.':!allRead(s.id)?'Tapusin ang anim na pagbasa, saka sagutan ang limang maikling tanong.':!user.quizPassed[s.id]?'Natapos mo na ang mga pagbasa. Sagutan ang maikling pagsusuri upang matapos.':'Natapos mo na ang mga pagbasa at pagsusuri. Maaari mo nang tapusin ang aralin.'}</div>
+  <div class="foot-actions"><button class="btn btn-dark" id="completeStudyBtn" data-action="complete" data-id="${esc(s.id)}" ${completed(s.id)||(!window.GTKJ_HAS_NO_QUIZ?.(s.id) && !user.quizPassed[s.id])?'disabled':''}>${completed(s.id)?'✓ Natapos ang aralin':(!window.GTKJ_HAS_NO_QUIZ?.(s.id) && !user.quizPassed[s.id])?'Sagutan muna ang mga tanong':'✓ Tapusin at buksan ang kasunod'}</button><button class="btn btn-outline" data-action="share" data-id="${esc(s.id)}">Ibahagi ang araling ito ↗</button></div>
+  <div class="study-notice" id="finishHint">${completed(s.id)?'Maaari mong balikan ang araling ito anumang oras.':(!window.GTKJ_HAS_NO_QUIZ?.(s.id) && !user.quizPassed[s.id])?'Sagutin nang tama ang mga tanong upang matapos ang aralin.':'Maaari mo nang tapusin ang aralin.'}</div>
   <div class="foot-actions">${previous?`<button class="btn btn-outline" data-study="${esc(previous.id)}">← Nakaraan</button>`:'<span></span>'}${next?`<button class="btn btn-outline" ${nextLocked?'disabled':''} data-study="${esc(next.id)}">${nextLocked?'Magiging handa ang kasunod pagkatapos nito':'Susunod na aralin →'}</button>`:`<button class="btn btn-outline" data-action="journey">Tingnan ang paglalakbay →</button>`}</div>
   <p class="study-notice">Tinutulungan ka ng mga araling ito na maunawaan ang katotohanan ng Biblia. Suriin ang bawat turo ayon sa konteksto ng Kasulatan.</p>
-  </div><aside class="detail-side" aria-label="Tulong sa pag-aaral"><div class="side-card"><h3>Iyong paglalakbay</h3><p>${completed(s.id)?'Tapos na ang araling ito. Maaari mo itong balikan anumang oras.':`Ikaw ay nasa Aralin ${String(ix+1).padStart(2,'0')} sa ${ORDER.length}.`}</p><p>${nextLocked?'Magiging handa ang kasunod pagkatapos ng araling ito.':next?`Susunod na aralin: <b>${esc(next.title)}</b>.`:'Ikaw ay nasa huling aralin.'}</p><button class="btn btn-outline" data-action="connect">Humingi ng Tulong</button></div></aside></div>`;
+  </div></div>`;
   const field=document.getElementById('studyNotes');
   field.value=user.notes[s.id]||'';
   let savedTimer;
@@ -296,7 +296,7 @@ document.body.addEventListener('click',e=>{
   if(a==='complete'){
     const id=target.dataset.id;
     if(completed(id)) return;
-    if(!isUnlocked(id)||!allRead(id)||!user.quizPassed[id]){toast('Tapusin ang anim na pagbasa at sagutan ang limang tanong bago matapos ang aralin.');return;}
+    if(!isUnlocked(id)||(!window.GTKJ_HAS_NO_QUIZ?.(id) && !user.quizPassed[id])){toast('Sagutin nang tama ang mga tanong upang matapos ang aralin.');return;}
     user.completed.push(id);
     save();
     const unlocked=nextStudy();
@@ -308,19 +308,26 @@ document.body.addEventListener('click',e=>{
   if(a==='connect') openConnect();
 });
 
-main.addEventListener('submit',e=>{
- if(!e.target.matches('.gtk-study-quiz'))return;
- e.preventDefault();const form=e.target,id=form.dataset.quizId,result=form.querySelector('[data-quiz-result]');
- const answers=Array.from({length:5},(_,i)=>form.querySelector('input[name="q'+i+'"]:checked'));
- const labels=window.GTKJ_COURSE_ADDON_STRINGS?window.GTKJ_COURSE_ADDON_STRINGS(true):null;
- if(answers.some(a=>!a)){if(result)result.textContent=labels?labels.all:'Sagutan muna ang limang tanong.';return;}
- const score=answers.reduce((n,a)=>n+(a.value==='1'?1:0),0);
- if(score===5){user.quizPassed[id]=true;save();if(result)result.textContent=labels?labels.success:'✓ Tama ang lahat ng sagot.';}
- else if(result)result.textContent=(labels?labels.retry:'Suriin muli ang mga punto at subukan muli.')+' ('+score+'/5)';
- const btn=document.getElementById('completeStudyBtn');
- if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Basahin muna ang lahat ng talata':!user.quizPassed[id]?'Sagutan muna ang limang tanong':'✓ Tapusin at buksan ang kasunod';}
- const hint=document.getElementById('finishHint');
- if(hint&&!completed(id)&&user.quizPassed[id])hint.textContent='Natapos mo na ang mga pagbasa at pagsusuri. Maaari mo nang tapusin ang aralin.';
+main.addEventListener('submit',event=>{
+ const form=event.target;
+ if(!form.matches('.gtk-study-quiz'))return;
+ event.preventDefault();
+ const id=form.dataset.quizId, result=form.querySelector('[data-quiz-result]');
+ const text=window.GTKJ_COURSE_ADDON_STRINGS(document.documentElement.lang.startsWith('tl'));
+ const answers=Array.from(form.querySelectorAll('fieldset'),item=>item.querySelector('input:checked'));
+ if(!answers.length || answers.some(answer=>!answer)){result.textContent=text.all;return;}
+ const score=answers.filter(answer=>answer.value==='1').length;
+ if(score!==answers.length){result.textContent=text.retry+' ('+score+'/'+answers.length+')';return;}
+ user.quizPassed[id]=true;
+ save();
+ result.textContent=text.success;
+ if(!completed(id)){
+  const button=document.getElementById('completeStudyBtn');
+  button.disabled=false;
+  button.textContent="\u2713 Tapusin at buksan ang kasunod";
+  const hint=document.getElementById('finishHint');
+  if(hint)hint.textContent=text.success;
+ }
 });
 main.addEventListener('change',e=>{
  if(e.target.id==='importFile'){importProgress(e.target.files?.[0]);return;}
@@ -333,7 +340,7 @@ main.addEventListener('change',e=>{
    user.read[id]=Array.from(set).sort((a,b)=>a-b);save();
    const cnt=document.getElementById('readCount');if(cnt)cnt.textContent=`${checkedCount(id)} sa ${(DEPTH[id]?.steps||[]).length} talatang napag-aralan`;
    const btn=document.getElementById('completeStudyBtn');
-   if(btn&&!completed(id)){btn.disabled=!allRead(id)||!user.quizPassed[id];btn.textContent=!allRead(id)?'Basahin muna ang lahat ng talata':!user.quizPassed[id]?'Sagutan muna ang limang tanong':'✓ Tapusin at buksan ang kasunod';}
+   if(btn&&!completed(id)){btn.disabled=(!window.GTKJ_HAS_NO_QUIZ?.(id) && !user.quizPassed[id]);btn.textContent=(!window.GTKJ_HAS_NO_QUIZ?.(id) && !user.quizPassed[id])?'Sagutan muna ang mga tanong':'✓ Tapusin at buksan ang kasunod';}
    const hint=document.getElementById('finishHint');if(hint)hint.textContent=allRead(id)?'Natapos mo ang mga pagbasa. Maglaan ng oras upang magmuni-muni, saka tapusin ang aralin.':'Tapusin ang lahat ng anim na pagbasa upang mabuksan ang kasunod.';
  }
 });
