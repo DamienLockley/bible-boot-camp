@@ -159,5 +159,6 @@
     "3 John",
     "Jude",
     "Revelation"
-  ]
+  ],
+  "verseNumberingSource": "https://api.getbible.net/v2/tagalog.json"
 }
