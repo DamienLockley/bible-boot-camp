@@ -37,7 +37,7 @@ for(const [book, sizes] of Object.entries(chapters))sizes.forEach((n,i)=>counts[
     + singleChapter + ')\\s+|(?:(?<=\\()|(?<=\\bin )|(?<=\\bat )|(?<=\\bsa )|(?<=\\bsee )|(?<=\\bcompare ))(' + chapter + '))';
   const citation = new RegExp(starts + '(' + span + ')(?!\\w)', 'gi');
   const continuation = new RegExp('^(?:\\s*[,;]\\s*|\\s+(?:and|at)\\s+(?=' + chapter
-    + '))(' + chapter + ')?(' + span + ')(?!\\w|\\s*:)', 'i');
+    + '|' + span + '(?=\\s*(?:$|[).,;!?])))' + ')(' + chapter + ')?(' + span + ')(?!\\w|\\s*:)', 'i');
   const nextBook = new RegExp('^\\s*[,;]\\s*(?:' + names + ')\\s+' + number, 'i');
   const verseSpan = new RegExp('^(' + number + ')(?:\\s*' + dash
     + '\\s*(?:(' + number + ')\\s*:\\s*)?(' + number + '))?$');
