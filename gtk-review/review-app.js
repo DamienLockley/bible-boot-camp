@@ -2,7 +2,9 @@
 (() => {
 'use strict';
 const STORE='gtkj-educational-review-v1';
-const COURSE_IDS=['word','history','controversy','salvation','spirit','sanctuary','blue-stone','law','sabbath','prayer','baptism','living','health','stewardship','nature','second-coming','millennium','hell','seventy-weeks','judgement','1844','antichrist','america','mark','prophecy-gift','godhead','remnant','witnessing'];\nconst COURSE=COURSE_IDS.map(id=>STUDIES.find(s=>s.id===id));\nconst ids=COURSE_IDS;
+const COURSE_IDS=['word','history','controversy','salvation','spirit','sanctuary','blue-stone','law','sabbath','prayer','baptism','living','health','stewardship','nature','second-coming','millennium','hell','seventy-weeks','judgement','1844','antichrist','america','mark','prophecy-gift','godhead','remnant','witnessing'];
+const COURSE=COURSE_IDS.map(id=>STUDIES.find(s=>s.id===id));
+const ids=COURSE_IDS;
 const model=window.GTKJ_REVIEW;
 const transform=window.GTKJ_REVIEW_PASS3;
 const nav=document.getElementById('lessonNav');
