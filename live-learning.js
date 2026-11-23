@@ -63,10 +63,13 @@
   }
   function quizFor(s, tl, t, text) {
     var depth = (typeof DEPTH !== 'undefined' && DEPTH[s.id]) ? DEPTH[s.id].steps : [];
+    if (!tl && window.GTKJ_REVIEW && window.GTKJ_REVIEW.quizzes && window.GTKJ_REVIEW.quizzes[s.id]) {
+      return window.GTKJ_REVIEW.quizzes[s.id].map(function (item) {
+        return {question:item[0], correct:item[1], wrong:item.slice(2)};
+      });
+    }
     var q = depth.slice(0, 4).map(function (step) { return {question:step[3], correct:step[4], wrong:text.wrong}; });
-    var p3 = !tl && window.GTKJ_REVIEW_PASS3 && window.GTKJ_REVIEW_PASS3.studies[s.id];
-    if (p3 && p3.quiz) q.push({question:p3.quiz.question, correct:p3.quiz.correct, wrong:p3.quiz.wrong});
-    else q.push({question:text.q5, correct:(t && t.response) || s.act, wrong:text.wrong});
+    q.push({question:text.q5, correct:(t && t.response) || s.act, wrong:text.wrong});
     return q;
   }
   function render(study, index) {
