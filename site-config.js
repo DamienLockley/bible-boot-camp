@@ -11,3 +11,14 @@ window.SITE_CONFIG = {
   }
 };
 
+
+// Creation section and lesson pages share this configuration.
+if (location.pathname.startsWith('/creation/')) {
+  const loadCreationReader = () => {
+    const reader = document.createElement('script');
+    reader.src = '/scripture-auto.js?v=2';
+    document.head.append(reader);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadCreationReader);
+  else loadCreationReader();
+}
