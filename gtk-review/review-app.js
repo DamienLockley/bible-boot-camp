@@ -67,13 +67,13 @@ function render(){
  if(!canOpen(id)){id=ids[Math.min(unlockedAt(),ids.length-1)];history.replaceState(null,'','#study='+encodeURIComponent(id))}
  const s=byId(id),d=DEPTH[id],conn=arr(CONNECTIONS[id]),i=ids.indexOf(id);
  if(!s||!d){content.innerHTML='<div class="warning">A source study is missing. The main website was not changed.</div>';return}
- const mainPoints=arr(s.ideas).slice(0,3);
+ const mainPoints=arr(window.GTKJ_REVIEW_PASS2?.studies?.[id]?.points);
  const art=encodeURIComponent(s.art||id);
  const img='<figure class="illustration"><img src="../assets/custom/'+art+'.jpg" loading="lazy" alt="Illustration for '+E(s.title)+'" onerror="this.closest(\'.illustration\').hidden=true"><figcaption>Illustration from the existing GTKJ study • original proportions preserved</figcaption></figure>';
  const prev=i>0?'<button class="btn alt" type="button" data-go="'+E(ids[i-1])+'">← Previous study</button>':'';
  const next=i<27?'<button class="btn alt" type="button" data-go="'+E(ids[i+1])+'">Next study →</button>':'';
  const intro='<section class="lesson-cover"><div class="kicker">STUDY '+String(i+1).padStart(2,'0')+' OF 28 · '+E(s.tag)+'</div><h2>'+E(s.title)+'</h2><p class="lead">'+E(s.lead)+'</p><p>'+E(s.intro)+'</p>'+verseChips(s.verses)+'</section>';
- const main='<section class="section"><div class="points"><div class="eyebrow-dark">WHAT YOU WILL DISCOVER · PROPOSED SUMMARY</div><h3>Hold on to these truths</h3><p class="principle">'+E(d.principle)+'</p><ol>'+mainPoints.map(t=>'<li><strong>'+E(t[0])+'</strong> — '+E(t[1])+'</li>').join('')+'</ol></div></section>';
+ const main='<section class="section"><div class="points"><div class="eyebrow-dark">WHAT YOU WILL DISCOVER · PROPOSED MAIN POINTS — REVIEW 2</div><h3>Four truths to remember</h3><p class="principle">'+E(d.principle)+'</p><ol>'+mainPoints.map((t,i)=>'<li class="outcome"><strong>'+E(t.text)+'</strong><small>READ: '+E(t.ref)+'</small>'+(i===3?'<span class="god-character">✦ What this teaches us about God</span>':'')+'</li>').join('')+'</ol></div></section>';
  const analogy='<section class="section"><div class="analogy"><div class="eyebrow-dark">MAKING IT REAL · PROPOSED ILLUSTRATION</div><h3>Think about this</h3><p>'+E(model.analogy[id]||'')+'</p></div></section>';
  const ideas='<section class="section"><div class="eyebrow-dark">BUILDING THE FOUNDATION</div><h3>Three introductory teaching points</h3>'+arr(s.ideas).map(cardIdea).join('')+'</section>';
  const reading='<section class="section"><div class="eyebrow-dark">READ THE SCRIPTURE FOR YOURSELF</div><h3>Guided Bible readings</h3><p>Six readings build the understanding gradually. Open each suggested answer only after considering the Bible question yourself.</p>'+arr(d.steps).map(stepCard).join('')+'</section>';
