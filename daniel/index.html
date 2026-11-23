@@ -348,32 +348,123 @@ const el=id=>document.getElementById(id);let view='home';
 function esc(s){return String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
 function label(s){return `${s.chapter}:${s.start}${s.end!==s.start?'–'+s.end:''}`}
 function refHTML(ref){return `<button type="button" class="scripture" data-ref="${esc(ref)}">${esc(ref.replace(/-(\d+)$/, '–$1'))}</button>`}
-const DANIEL_BOOK_ALIASES={'song of solomon':"Solomon's Song",'song of songs':"Solomon's Song",'psalm':'Psalms'};
-const DANIEL_BOOK_CANONICAL={};
-for(const key of Object.keys(KJV_SOURCE.counts)){
-  const name=key.replace(/\s+\d+$/,'');
-  DANIEL_BOOK_CANONICAL[name.toLowerCase()]=name;
-}
-const DANIEL_BOOK_PATTERN=Object.keys(DANIEL_BOOK_CANONICAL).concat(Object.keys(DANIEL_BOOK_ALIASES))
-  .sort((a,b)=>b.length-a.length).map(name=>name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|');
-const DANIEL_REFERENCE_RE=new RegExp('\\b('+DANIEL_BOOK_PATTERN+')\\s+(\\d+):(\\d+)(?:\\s*[-–]\\s*(\\d+))?','gi');
-function linkify(raw){
-  const txt=String(raw||'');let result='',cursor=0;
-  DANIEL_REFERENCE_RE.lastIndex=0;
-  for(const m of txt.matchAll(DANIEL_REFERENCE_RE)){
-    result+=esc(txt.slice(cursor,m.index));
-    const book=DANIEL_BOOK_CANONICAL[m[1].toLowerCase()]||DANIEL_BOOK_ALIASES[m[1].toLowerCase()];
-    const chapter=Number(m[2]),start=Number(m[3]),end=Number(m[4]||m[3]);
-    const available=KJV_SOURCE.counts[book+' '+chapter]||0;
-    if(available&&start>=1&&end>=start&&end<=available&&end-start<=90){
-      const reference=book+' '+chapter+':'+start+(m[4]?'-'+end:'');
-      result+='<button type="button" class="scripture inline-ref" data-ref="'+esc(reference)+'">'+esc(m[0])+'</button>';
-    }else result+=esc(m[0]);
-    cursor=m.index+m[0].length;
+/* scripture-reader:start */
+function scriptureReader(counts) {
+  const books = new Map();
+  for (const key of Object.keys(counts)) {
+    const book = key.replace(/ \d+$/, '');
+    books.set(book.toLowerCase(), book);
   }
-  return result+esc(txt.slice(cursor));
-}
+  for (const alias of ['song of solomon', 'song of songs', 'solomon’s song']) {
+    books.set(alias, "Solomon's Song");
+  }
+  books.set('psalm', 'Psalms');
 
+  const names = [...books.keys()].sort((a, b) => b.length - a.length)
+    .map(name => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+')).join('|');
+  const dash = '[-‐‑‒–—−]';
+  const number = '\\d{1,3}(?!\\d)';
+  const chapter = number + '\\s*:\\s*';
+  const span = number + '(?:\\s*' + dash + '\\s*(?:' + chapter + ')?' + number + ')?';
+  const singleChapter = 'Obadiah|Philemon|2\\s+John|3\\s+John|Jude';
+  const starts = '(?<![\\w:])(?:(' + names + ')\\s+(' + chapter + ')|('
+    + singleChapter + ')\\s+|(?:(?<=\\()|(?<=\\bin )|(?<=\\bat )|(?<=\\bsee )|(?<=\\bcompare ))(' + chapter + '))';
+  const citation = new RegExp(starts + '(' + span + ')(?!\\w)', 'gi');
+  const continuation = new RegExp('^(?:\\s*[,;]\\s*|\\s+and\\s+(?=' + chapter
+    + '))(' + chapter + ')?(' + span + ')(?!\\w|\\s*:)', 'i');
+  const nextBook = new RegExp('^\\s*[,;]\\s*(?:' + names + ')\\s+' + number, 'i');
+  const verseSpan = new RegExp('^(' + number + ')(?:\\s*' + dash
+    + '\\s*(?:(' + number + ')\\s*:\\s*)?(' + number + '))?$');
+
+  function expand(book, firstChapter, spanText) {
+    const match = verseSpan.exec(spanText);
+    if (!match) return [];
+    const start = Number(match[1]);
+    const lastChapter = Number(match[2] || firstChapter);
+    const end = Number(match[3] || start);
+    if (start < 1 || end < 1 || lastChapter < firstChapter ||
+        start > (counts[book + ' ' + firstChapter] || 0) ||
+        end > (counts[book + ' ' + lastChapter] || 0) ||
+        (firstChapter === lastChapter && end < start)) return [];
+    const verses = [];
+    for (let ch = firstChapter; ch <= lastChapter; ch++) {
+      const first = ch === firstChapter ? start : 1;
+      const last = ch === lastChapter ? end : counts[book + ' ' + ch];
+      for (let verse = first; verse <= last; verse++) verses.push(book + ' ' + ch + ':' + verse);
+    }
+    return verses;
+  }
+
+  function find(text, contextBook) {
+    const matches = [];
+    let end = 0;
+    for (const match of text.matchAll(citation)) {
+      if (match.index < end) continue;
+      const book = match[1] || match[3]
+        ? books.get((match[1] || match[3]).toLowerCase().replace(/\s+/g, ' '))
+        : contextBook;
+      if (!book) continue;
+      let ch = parseInt(match[2] || match[4] || '1', 10);
+      const verses = expand(book, ch, match[5]);
+      if (!verses.length) continue;
+      let nextEnd = match.index + match[0].length;
+      if (!match[1] && !match[4] && counts[book + ' 2']) continue;
+      for (let next; !nextBook.test(text.slice(nextEnd)) &&
+          (next = continuation.exec(text.slice(nextEnd)));) {
+        const nextChapter = next[1] ? parseInt(next[1], 10) : ch;
+        const more = expand(book, nextChapter, next[2]);
+        if (!more.length) break;
+        ch = nextChapter;
+        verses.push(...more);
+        nextEnd += next[0].length;
+      }
+      if (match[4] && text[match.index - 1] === '(' && !/^\s*\)/.test(text.slice(nextEnd))) continue;
+      end = nextEnd;
+      matches.push({from: match.index, to: end, verses: [...new Set(verses)]});
+    }
+    return matches;
+  }
+
+  function keys(reference) {
+    const text = reference.trim();
+    const match = find(text)[0];
+    if (match && match.from === 0 && match.to === text.length) return match.verses;
+    const entire = new RegExp('^(.+?)\\s+(' + number + ')(?:\\s*'
+      + dash + '\\s*(' + number + '))?$').exec(text);
+    if (!entire) return [];
+    const book = books.get(entire[1].toLowerCase().replace(/\s+/g, ' '));
+    const first = Number(entire[2]), last = Number(entire[3] || first);
+    if (!counts[book + ' ' + first] || !counts[book + ' ' + last] || last < first) return [];
+    const verses = [];
+    for (let ch = first; ch <= last; ch++) {
+      for (let verse = 1; verse <= counts[book + ' ' + ch]; verse++) {
+        verses.push(book + ' ' + ch + ':' + verse);
+      }
+    }
+    return verses;
+  }
+
+  return {find, keys};
+}
+const danielScripture = scriptureReader(KJV_SOURCE.counts);
+function danielInlineReferences(text){
+  return danielScripture.find(text, 'Daniel').map(ref => ({
+    from: ref.from, to: ref.to, value: /^\d+\s*:/.test(text.slice(ref.from, ref.to))
+      ? 'Daniel ' + text.slice(ref.from, ref.to) : text.slice(ref.from, ref.to)
+  }));
+}
+function linkify(raw){
+  const text = String(raw || '');
+  let result = '', cursor = 0;
+  for(const ref of danielInlineReferences(text)){
+    result += esc(text.slice(cursor, ref.from));
+    result += '<button type="button" class="scripture inline-ref" data-ref="'
+      + esc(ref.value) + '">' + esc(text.slice(ref.from, ref.to)) + '</button>';
+    cursor = ref.to;
+  }
+  return result + esc(text.slice(cursor));
+}
+/* scripture-reader:end */
 // Preserve Word paragraph breaks, bold/italic phrases and numbered items.
 // Inline references are matched across formatting runs, so a Bible book name
 // can be bold while its chapter/verse number remains normal.
@@ -384,16 +475,7 @@ function danielWordInline(block){
     content=String(block.text||'');runs=[{t:content}];
   }
   if(!content)return '';
-  const refs=[];
-  for(const match of content.matchAll(DANIEL_REFERENCE_RE)){
-    const book=DANIEL_BOOK_CANONICAL[match[1].toLowerCase()]||DANIEL_BOOK_ALIASES[match[1].toLowerCase()];
-    const chapter=+match[2],start=+match[3],end=+(match[4]||match[3]);
-    const count=KJV_SOURCE.counts[book+' '+chapter]||0;
-    if(count && start>=1 && end>=start && end<=count && end-start<=90){
-      refs.push({from:match.index,to:match.index+match[0].length,
-        value:book+' '+chapter+':'+start+(match[4]?'-'+end:'')});
-    }
-  }
+  const refs=danielInlineReferences(content);
   const runRanges=[];let offset=0;
   for(const run of runs){
     const next=offset+String(run.t||'').length;
@@ -441,7 +523,15 @@ function danielWordBlocks(blocks,plain){
   }).join('');
 }
 
-function verseHTML(ref,KJV){const m=/^(.+)\s+(\d+):(\d+)(?:[-–](\d+))?$/.exec(ref);if(!m)return `<p>Unknown reference</p>`;const book=m[1],ch=Number(m[2]),a=Number(m[3]),b=Number(m[4]||m[3]);if(b<a||b-a>90)return '<p>Invalid range</p>';let out='';for(let i=a;i<=b;i++){const key=`${book} ${ch}:${i}`,t=KJV[key];out+=t===undefined?`<p class="verse">Verse unavailable: ${esc(key)}</p>`:`<p class="verse"><sup>${i}</sup>${esc(t)}</p>`}return out}
+function verseHTML(ref,KJV){
+  const verses=danielScripture.keys(ref);
+  if(!verses.length)return '<p>Unknown reference</p>';
+  return verses.map(key=>{
+    const text=KJV[key], number=key.split(':').pop();
+    return text===undefined?'<p class="verse">Verse unavailable: '+esc(key)+'</p>'
+      :'<p class="verse"><sup>'+esc(number)+'</sup>'+esc(text)+'</p>';
+  }).join('');
+}
 async function openBible(ref){
   const request=++scriptureRequest, dialog=el('verseDialog'), text=el('modalText');
   el('modalTitle').textContent=ref;
