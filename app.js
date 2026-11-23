@@ -187,12 +187,22 @@ function renderAbout(){
   main.innerHTML=`<header class="article-hero"><span class="kicker">ABOUT THIS SITE</span><h1>Get to Know Jesus</h1><p>This site exists to help people discover Bible truth in a clear, step-by-step way. It is designed for learners who want simple explanations, honest questions and practical Bible-based guidance.</p></header><div class="reading-card"><h3>Purpose</h3><p>These studies are built to introduce people to key Bible teachings in plain language while keeping Scripture at the centre.</p><p>All material is intended to be Bible based. Readers are encouraged to compare every lesson with the Bible for themselves.</p><button class="btn btn-dark" data-action="home">Explore the studies →</button></div>`;
 }
 
+
+function renderSharedStudyNotice(id){
+  const shared=STUDIES.find(s=>s.id===id),current=nextStudy();
+  if(!shared||!current){renderHome();return}
+  const currentIndex=ORDER.findIndex(s=>s.id===current.id)+1;
+  const sharedIndex=ORDER.findIndex(s=>s.id===shared.id)+1;
+  main.innerHTML='<header class="article-hero"><span class="kicker">A STUDY WAS SHARED WITH YOU</span><h1>Build the foundations first.</h1><p>Someone shared Study '+String(sharedIndex).padStart(2,'0')+' — <strong>'+esc(shared.title)+'</strong> — with you. This lesson builds on earlier Bible studies. To discover these truths step by step, start with Study '+String(currentIndex).padStart(2,'0')+' and continue in order. Study '+String(sharedIndex).padStart(2,'0')+' will be ready when you reach it.</p></header><section class="reading-card"><h3>Your next study: Study '+String(currentIndex).padStart(2,'0')+' — '+esc(current.title)+'</h3><p>Complete the studies in order and build your understanding one step at a time.</p><div class="foot-actions" style="justify-content:start"><button class="btn btn-dark" data-study="'+esc(current.id)+'">Start with Study '+String(currentIndex).padStart(2,'0')+'</button><button class="btn btn-outline" data-action="journey">View the study pathway</button></div></section>';
+}
+
 function route(){
   const hash=decodeURIComponent(location.hash||'');
   const study=hash.startsWith('#study=')?hash.slice(7):null;
+  const sharedStudy=new URLSearchParams(location.search).get('sharedStudy');
   ['homeTab','progressTab','aboutTab'].forEach(x=>document.getElementById(x).classList.remove('active'));
   if(study&&STUDIES.some(x=>x.id===study)){
-    if(!isUnlocked(study)){document.getElementById('homeTab').classList.add('active');renderHome();toast(`Complete the earlier studies first to unlock that lesson.`)}
+    if(!isUnlocked(study)){document.getElementById('homeTab').classList.add('active');if(sharedStudy===study)renderSharedStudyNotice(study);else{renderHome();toast('Complete the earlier studies first to unlock that lesson.')}}
     else{document.getElementById('homeTab').classList.add('active');renderStudy(STUDIES.find(s=>s.id===study));}
   }else if(hash==='#start-here'){
     document.getElementById('homeTab').classList.add('active');renderStartHere();
@@ -207,7 +217,7 @@ function route(){
 }
 
 function shareStudy(id){
-  const link=location.href.split('#')[0]+'#study='+encodeURIComponent(id);
+  const sharedUrl=new URL(location.href);sharedUrl.searchParams.set('sharedStudy',id);sharedUrl.hash='study='+encodeURIComponent(id);const link=sharedUrl.toString();
   if(navigator.share){navigator.share({title:STUDIES.find(s=>s.id===id)?.title||'Bible study',url:link}).catch(()=>{});return}
   if(navigator.clipboard?.writeText){navigator.clipboard.writeText(link).then(()=>toast('Study link copied')).catch(()=>fallbackCopy(link))}
   else fallbackCopy(link);
