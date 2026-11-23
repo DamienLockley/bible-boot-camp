@@ -27,7 +27,7 @@
       more:'Natututuhan natin ang pagbabago ng pagkatao sa pagtitiwala kay Jesus at sa tulong ng Espiritu Santo.',
       q5:'Aling tugon ang pinakamainam na nagsasabuhay ng katotohanang ito?',
       wrong:['Gamitin ang aralin upang laitin ang iba.','Umasa lamang sa sariling lakas at huwag humingi ng tulong kay Jesus.','Balewalain ang natutuhan kapag mahirap itong isagawa.'],
-      lead:'Basahin at pag-isipan ang talata, saka piliin ang sagot na pinakamainam na nagpapaliwanag dito.',
+      lead:'Basahin at pag-isipan ang talata, saka piliin ang sagot na pinakamainam na nagpapaliwanag dito.', readRef:'Basahin:',
       after:'Pagkatapos mong pag-aralan ang anim na pagbasa, sagutan ang maikling pagsusuri bago tapusin ang aralin.'
     } : {
       points:'FOUR TRUTHS TO REMEMBER', pointsTitle:'What you will discover',
@@ -46,7 +46,7 @@
       more:'Character transformation grows through trust in Jesus and the help of the Holy Spirit.',
       q5:'Which response best puts this truth into practice?',
       wrong:['Use the lesson to shame someone else.','Rely only on your own effort and refuse Christ’s help.','Ignore the truth when it is difficult to follow.'],
-      lead:'Read and consider the passage, then choose the answer that best explains it.',
+      lead:'Read and consider the passage, then choose the answer that best explains it.', readRef:'Read:',
       after:'After studying the six readings, complete this short check before finishing the study.'
     };
   }
@@ -79,7 +79,7 @@
     var analogy = tl ? (window.GTKJ_TL_CONTENT && window.GTKJ_TL_CONTENT.analogy[study.id]) : (window.GTKJ_REVIEW && window.GTKJ_REVIEW.analogy[study.id]);
     var t = tl ? (window.GTKJ_TL_CONTENT && window.GTKJ_TL_CONTENT.studies[study.id]) : (window.GTKJ_REVIEW_PASS3 && window.GTKJ_REVIEW_PASS3.studies[study.id]);
     var html = '<section class="panel learning-outcomes"><div class="panel-header"><span class="small-round">✦</span><h2>'+text.pointsTitle+'</h2></div><p class="reading-guidance">'+text.points+'</p><ol>';
-    points.forEach(function (p) { html += '<li><p>'+esc(p[0])+'</p><div class="scripture">Read: '+esc(p[1] || '')+'</div></li>'; });
+    points.forEach(function (p) { html += '<li><p>'+esc(p[0])+'</p><div class="scripture">'+text.readRef+' '+esc(p[1] || '')+'</div></li>'; });
     html += '</ol></section>';
     if (analogy) html += '<section class="panel learning-analogy"><div class="panel-header"><span class="small-round">≈</span><h2>'+text.analogy+'</h2></div><p>'+esc(analogy)+'</p></section>';
     if (t) {
