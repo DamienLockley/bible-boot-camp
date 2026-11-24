@@ -78,13 +78,16 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 
 .language-button{white-space:nowrap;padding:7px 10px;background:#e3f4fb;color:#195a75;border:1px solid #96c8e4}
 .language-button:hover{background:#d0ecfb}
+.teacher-language-flag{display:inline-block;width:30px;height:20px;object-fit:cover;vertical-align:middle;flex:0 0 auto;border-radius:2px;border:1px solid #bad0db;box-shadow:0 1px 2px #152b3826}
+.language-button{display:inline-flex;align-items:center;gap:6px}
+@media(max-width:740px){.teacher-language-flag{width:25px;height:17px}}
 .language-notice{max-width:490px!important;text-align:center;padding:26px 25px}
 .language-notice h2{font-size:1.3rem;margin:0 0 15px;color:#174f73}
 .language-notice p{line-height:1.6;margin-bottom:20px}
 </style>
 </head>
 <body>
-<header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teachers’ Guide</strong><div class="tiny">Teaching companion</div></div><div class="head-actions"><div class="global-search" role="search"><label for="search" class="sr-only">Find words in all studies</label><input class="compact-search" id="search" aria-label="Find words in all studies" placeholder="Find words…" autocomplete="off"><button id="clear-search" class="search-clear hidden" type="button" aria-label="Clear search">×</button><div id="search-results" class="search-results hidden" role="region" aria-label="Word search matches"></div></div><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><button class="nav-link language-button" id="teacher-tl-button" type="button" aria-label="Tagalog Teachers' Guide" title="Tagalog Teachers' Guide"><span aria-hidden="true">🇵🇭</span> Tagalog</button><button class="nav-link" id="help-feedback" type="button" title="Teachers' Guide help and feedback">Help / Feedback</button><button id="home" type="button">Home</button></div></div></header>
+<header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teachers’ Guide</strong><div class="tiny">Teaching companion</div></div><div class="head-actions"><div class="global-search" role="search"><label for="search" class="sr-only">Find words in all studies</label><input class="compact-search" id="search" aria-label="Find words in all studies" placeholder="Find words…" autocomplete="off"><button id="clear-search" class="search-clear hidden" type="button" aria-label="Clear search">×</button><div id="search-results" class="search-results hidden" role="region" aria-label="Word search matches"></div></div><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><button class="nav-link language-button" id="teacher-tl-button" type="button" aria-label="Tagalog Teachers' Guide" title="Tagalog Teachers' Guide"><img class="teacher-language-flag" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2030%22%20aria-hidden%3D%22true%22%3E%3Cpath%20fill%3D%22%230038a8%22%20d%3D%22M0%200h60v15H0z%22%2F%3E%3Cpath%20fill%3D%22%23ce1126%22%20d%3D%22M0%2015h60v15H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M0%200%2026%2015%200%2030z%22%2F%3E%3Ccircle%20cx%3D%2210.5%22%20cy%3D%2215%22%20r%3D%223%22%20fill%3D%22%23fcd116%22%2F%3E%3Cg%20stroke%3D%22%23fcd116%22%20stroke-width%3D%221.2%22%3E%3Cpath%20d%3D%22M10.5%209V6m0%2018v-3M4.5%2015h3m6%200h3M6.4%2010.9l2.1%202.1m4%204%202.1%202.1m0-8.2-2.1%202.1m-4%204-2.1%202.1%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fcd116%22%3E%3Cpath%20d%3D%22m2.9%203.2%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3Cpath%20d%3D%22m2.9%2021%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3Cpath%20d%3D%22m21%2013%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="" aria-hidden="true"> Tagalog</button><button class="nav-link" id="help-feedback" type="button" title="Teachers' Guide help and feedback">Help / Feedback</button><button id="home" type="button">Home</button></div></div></header>
 <main>
 <div id="loading" class="panel">Loading Bible studies…</div>
 <section id="library" class="hidden">
@@ -95,7 +98,7 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 <div id="guide-view" class="layout"><aside class="panel side"><h3>Main teaching pathway</h3><div id="core-nav"></div><h3 style="margin-top:20px">Explore deeper • questions</h3><div id="extra-nav"></div></aside><article id="stage" class="panel"></article></div>
 <div id="verses-view" class="panel hidden"></div>
 </section></main>
-<div id="tagalog-notice" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="tagalog-notice-title"><div class="panel language-notice"><h2 id="tagalog-notice-title">🇵🇭 Tagalog Teachers’ Guide</h2><p>The Tagalog Teachers’ Guide is being prepared. For now, all 28 studies are available in English.</p><button type="button" id="close-tagalog-notice">Continue in English</button></div></div>
+<div id="tagalog-notice" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="tagalog-notice-title"><div class="panel language-notice"><h2 id="tagalog-notice-title"><img class="teacher-language-flag" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2030%22%20aria-hidden%3D%22true%22%3E%3Cpath%20fill%3D%22%230038a8%22%20d%3D%22M0%200h60v15H0z%22%2F%3E%3Cpath%20fill%3D%22%23ce1126%22%20d%3D%22M0%2015h60v15H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M0%200%2026%2015%200%2030z%22%2F%3E%3Ccircle%20cx%3D%2210.5%22%20cy%3D%2215%22%20r%3D%223%22%20fill%3D%22%23fcd116%22%2F%3E%3Cg%20stroke%3D%22%23fcd116%22%20stroke-width%3D%221.2%22%3E%3Cpath%20d%3D%22M10.5%209V6m0%2018v-3M4.5%2015h3m6%200h3M6.4%2010.9l2.1%202.1m4%204%202.1%202.1m0-8.2-2.1%202.1m-4%204-2.1%202.1%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fcd116%22%3E%3Cpath%20d%3D%22m2.9%203.2%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3Cpath%20d%3D%22m2.9%2021%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3Cpath%20d%3D%22m21%2013%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="" aria-hidden="true"> Tagalog Teachers’ Guide</h2><p>The Tagalog Teachers’ Guide is being prepared. For now, all 28 studies are available in English.</p><button type="button" id="close-tagalog-notice">Continue in English</button></div></div>
 <div id="feedback-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="feedback-title">
   <div class="panel feedback-panel">
     <div class="row feedback-head">
@@ -611,48 +614,64 @@ function renderGuide(){
  if($('back-core'))$('back-core').onclick=()=>chooseStage('core',0);
 }
 function renderVerses(){
- const study=studyData[current],groups=teachMap.studies[current].groups, units=study.units;
+ const study=studyData[current],groups=teachMap.studies[current].groups,units=study.units;
  const main=[],supplementary=[],seenMain=new Set(),seenSupplementary=new Set();
- const canonical=s=>String(s).toLowerCase().replace(/[\s.]/g,'').replace(/[‐‑‒–—−]/g,'-');
- function add(target,seen,ref){
-  const text=String(ref||'').trim();if(!text)return;
-  const key=canonical(text);if(!key||seen.has(key))return;
-  seen.add(key);target.push(text);
+ const canonical=ref=>{
+  let key=String(ref||'').toLowerCase().replace(/[\s.]/g,'').replace(/[‐‑‒–—−]/g,'-');
+  for(const [a,b] of [['timothy','tim'],['thessalonians','thess'],['corinthians','cor'],['peter','pet'],['matthew','mat'],['revelation','rev'],['romans','rom'],['daniel','dan'],['psalms','ps'],['isaiah','isa'],['genesis','gen'],['john','jn']])key=key.replaceAll(a,b);
+  return key;
+ };
+ function add(bucket,ref){
+  const text=String(ref||'').trim(),key=canonical(text);
+  if(!key)return;
+  const seen=bucket==='main'?seenMain:seenSupplementary;
+  if(seen.has(key))return;
+  seen.add(key);(bucket==='main'?main:supplementary).push(text);
  }
- function collect(text,target,seen){
-  for(const match of String(text||'').matchAll(bibleRefRegex))add(target,seen,match[0]);
- }
- const mainGroups=groups.filter(g=>g.kind==='core'),suppGroups=groups.filter(g=>g.kind==='supplement');
- // The original Word-derived reference list is the primary reading list.
- // Supplemental readings come from additional cited references in the body,
- // optional apologetics, and related teacher notes.
- for(const verse of study.verses||[])add(main,seenMain,verse);
- for(const group of mainGroups)for(let i=group.start;i<=group.end;i++){
-  const u=units[i];if(!u)continue;
-  for(const ref of String(u.text||'').matchAll(bibleRefRegex)){
-   const key=canonical(ref[0]);if(!seenMain.has(key))add(supplementary,seenSupplementary,ref[0]);
+ const collect=(text,bucket)=>{for(const m of String(text||'').matchAll(bibleRefRegex))add(bucket,m[0])};
+ // New Word builds retain a structured classification made from TG Stage,
+ // TG Extra, and optional TG Main/Supplementary Scripture paragraph styles.
+ // Legacy site data use the same stage-aware classification below.
+ if(study.scripture_sections&&Array.isArray(study.scripture_sections.main)&&Array.isArray(study.scripture_sections.supplementary)){
+  study.scripture_sections.main.forEach(ref=>add('main',ref));
+  study.scripture_sections.supplementary.forEach(ref=>add('supplementary',ref));
+ }else{
+  const readingPrefix=/^\s*(?:(?:read|see|compare|read first|read together)\s*(?:first|together|also)?\s*[-–—:]?\s*)?$/i;
+  const connectors=/^[\s,;/&()+\-]*(?:and|or)?[\s,;/&()+\-]*$/i;
+  for(const group of groups){
+   for(let i=group.start;i<=group.end;i++){
+    const u=units[i];if(!u)continue;
+    const body=String(u.text||''),refs=[...body.matchAll(bibleRefRegex)];
+    if(!refs.length)continue;
+    let scriptureLed=readingPrefix.test(body.slice(0,refs[0].index))&&!['heading','question','answer','insight','daniel'].includes(u.kind),prev=null;
+    for(const m of refs){
+     let bucket='supplementary';
+     if(u.scripture_role==='main'||u.scripture_role==='supplementary')bucket=u.scripture_role;
+     else if(group.kind==='core'&&scriptureLed&&(prev===null||connectors.test(body.slice(prev.index+prev[0].length,m.index))))bucket='main';
+     if(bucket!=='main'&&!u.scripture_role)scriptureLed=false;
+     add(bucket,m[0]);prev=m;
+    }
+   }
   }
  }
- for(const group of suppGroups)for(let i=group.start;i<=group.end;i++){
-  const u=units[i];if(u)collect(u.text,supplementary,seenSupplementary);
- }
- const stageNotes=coreEnrichments?.studies?.[current]?.main_stage_additions||[];
- for(const addition of stageNotes){
-  const note=addition.teacher_guidance||{};
-  for(const key of ['reading_reference','explanation','question','suggested_answer'])collect(note[key],supplementary,seenSupplementary);
+ // The GTKJ-guided prompts and prophetic notes are extra teaching references,
+ // not part of the original primary reading sequence.
+ for(const entry of coreEnrichments?.studies?.[current]?.main_stage_additions||[]){
+  const note=entry.teacher_guidance||{};
+  for(const key of ['reading_reference','explanation','question','suggested_answer'])collect(note[key],'supplementary');
  }
  for(const note of historicalNotes?.notes||[]){
   if(note.study_id!==current)continue;
-  for(const key of ['title','text'])collect(note[key],supplementary,seenSupplementary);
+  for(const key of ['title','text'])collect(note[key],'supplementary');
  }
- const leftover=supplementary.filter(ref=>!seenMain.has(canonical(ref)));
+ const supplementalOnly=supplementary.filter(ref=>!seenMain.has(canonical(ref)));
  function groupHTML(title,items,empty){
   return '<section class="verse-group"><h3>'+title+'</h3>'+
-   (items.length?items.map(v=>'<div class="verse-ref-item">'+highlightRefs(v)+'</div>').join(''):'<p class="muted">'+empty+'</p>')+'</section>';
+   (items.length?items.map(ref=>'<div class="verse-ref-item">'+highlightRefs(ref)+'</div>').join(''):'<p class="muted">'+empty+'</p>')+'</section>';
  }
- $('verses-view').innerHTML='<h2>Scriptures</h2><p class="muted">Main study readings and additional passages cited throughout the teaching and supplementary material.</p>'+
-  '<div class="verses-columns">'+groupHTML('Main study Scriptures',main,'No main Scripture references listed.')+
-  groupHTML('Supplementary Scriptures',leftover,'No additional Scripture references in this study.')+'</div>';
+ $('verses-view').innerHTML='<h2>Scriptures</h2><p class="muted">Main readings are separated from additional references in the teaching and optional material.</p>'+
+ '<div class="verses-columns">'+groupHTML('Main study Scriptures',main,'No primary Scripture readings were marked.')+
+ groupHTML('Supplementary Scriptures',supplementalOnly,'No additional Scripture references in this study.')+'</div>';
 }
 document.addEventListener('click',e=>{
  const matched=e.target.closest('[data-match-study]');if(matched){openMatch(Number(matched.dataset.matchStudy),Number(matched.dataset.matchUnit));return}

@@ -53,9 +53,21 @@ async function flush(){
  assert.match(columns[1].textContent,/Supplementary Scriptures/);
  assert.ok(columns[0].querySelectorAll('.bible-ref').length>0,'Missing core Scriptures');
  assert.ok(columns[1].querySelectorAll('.bible-ref').length>0,'Missing supplementary Scriptures');
+ assert.ok(columns[0].querySelectorAll('.bible-ref').length < 12,'Legacy combined Word reference list must not all appear as main readings');
+ assert.match(columns[0].textContent,/2 Tim 3:16/);
+ assert.match(columns[1].textContent,/1 John 4:8|Daniel|John 3:16/);
+ assert.ok(!columns[0].textContent.includes('Acts 17:10'),'GTKJ supplementary reference should not be a primary reading');
+ assert.match(columns[1].textContent,/Acts 17:10/,'GTKJ supporting Scripture should appear in the supplementary list');
+ const originalData=JSON.parse(fs.readFileSync(path.join(root,'teachers-guide/study-data.json'),'utf8'));
+ assert.ok(originalData.sections[0].verses.length>columns[0].querySelectorAll('.bible-ref').length,'Original combined verse list no longer determines main references');
  const language=document.getElementById('teacher-tl-button');
  assert.ok(language,'Tagalog flag language button missing');
- assert.match(language.textContent,/🇵🇭\s*Tagalog/);
+ assert.match(language.textContent,/Tagalog/);
+ const flag=language.querySelector('img.teacher-language-flag');
+ assert.ok(flag,'Real Philippine flag image is missing (emoji-only flags fail on Windows)');
+ assert.ok(flag.getAttribute('src').startsWith('data:image/svg+xml,'),'Flag must have embedded SVG graphics');
+ assert.equal(flag.getAttribute('aria-hidden'),'true');
+ assert.match(html,/\.teacher-language-flag\{/);
  language.click();
  assert.equal(document.getElementById('tagalog-notice').classList.contains('hidden'),false,
    'The unpublished Tagalog edition must not be opened as a broken link');
