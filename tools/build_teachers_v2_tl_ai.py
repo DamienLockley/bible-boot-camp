@@ -238,6 +238,11 @@ def make_word(sections,study_map,asset_dir,out):
         begins={}
         for group in mapped['groups']:
             begins.setdefault(group['start'],[]).append(group)
+        # The opening Word Heading 1 has already supplied unit 0.
+        # Its stage heading must follow the title, before unit 1.
+        for group in begins.pop(0,[]):
+            marker=doc.add_paragraph(group['label'])
+            marker.style='TG Stage' if group['kind']=='core' else 'TG Extra'
         for i,unit in enumerate(study['units']):
             # Heading 1 is itself the first extracted teaching unit. Do not
             # write that first title again or all unit indices would shift.
