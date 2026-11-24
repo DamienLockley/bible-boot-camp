@@ -1,6 +1,6 @@
 {
   "language": "tl",
-  "build_inputs_sha256": "bd632db6052294a5ccc82c7986de9821de5878ad9390bac545a89508bd1b0d9d",
+  "build_inputs_sha256": "f4a867516613ce04895ca1fa0cfcb17b4fd249c09fea5da7f4fc39f35ce0462c",
   "status": "unpublished_first_pass_review",
   "study_count": 28,
   "unit_count": 2662,
@@ -12,8 +12,54 @@
   "study_order_unchanged": true,
   "supplemental_stages_preserved": true,
   "supplementary_gtk_studies_translated": 28,
+  "optional_daniel_contexts_translated": 17,
+  "source_truncation_warnings": [
+    {
+      "study_id": 6,
+      "field": "spiritual_application",
+      "note": "English excerpt ends mid-sentence; translated completed text only with explicit warning."
+    },
+    {
+      "study_id": 10,
+      "context": 0,
+      "field": "history_or_interpretation",
+      "note": "English source ends mid-word after 'final heave'."
+    },
+    {
+      "study_id": 11,
+      "context": 0,
+      "field": "history_or_interpretation",
+      "note": "English source ends in a comma after AD 538."
+    },
+    {
+      "study_id": 11,
+      "context": 0,
+      "field": "spiritual_application",
+      "note": "English source ends mid-sentence after 'Historical identification should'."
+    },
+    {
+      "study_id": 12,
+      "field": "spiritual_application",
+      "note": "English source ends mid-sentence after 'Historical identification should'."
+    },
+    {
+      "study_id": 13,
+      "field": "spiritual_application",
+      "note": "English source ends mid-sentence after 'Historical identification should'."
+    },
+    {
+      "study_id": 16,
+      "field": "spiritual_application",
+      "note": "English source ends with 'Historical identification should'."
+    },
+    {
+      "study_id": 17,
+      "field": "spiritual_application",
+      "note": "English source ends mid-sentence 'Preparation for the final conflict is not an effort to b'."
+    }
+  ],
   "supplementary_gtk_structure_verified": true,
-  "supporting_metadata_note": "All 28 GTKJ supplementary resources translated first-pass; pathway-enrichment prose and remaining site interface still require Tagalog translation/review.",
+  "supporting_metadata_note": "All 28 GTKJ supplementary resources and 17 Daniel context candidates have first-pass Tagalog. Truncated English source excerpts are flagged; interface labels/PDFs need translation and QA.",
   "english_source_sha256": "f7ca52d9ca4fcd873d603cda7e33a3a9f794b2a220db2d1e2a580b59c56f6cdd",
   "word_bytes": 3311278
 }
