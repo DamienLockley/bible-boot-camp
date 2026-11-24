@@ -145,7 +145,7 @@ function numberedQuestionBlock(units,start,end){
 function unitsMarkup(from,to){
  let html='';
  const units=studyData[current].units;
- const tables=(tableLayouts?.tables||[]).filter(t=>t.study_id===current);
+ const tables=(studyData[current].tables?.length ? studyData[current].tables : (tableLayouts?.tables||[]).filter(t=>t.study_id===current));
  for(let j=from;j<=to;j++){
   const table=tables.find(t=>t.start===j);
   if(table){
@@ -335,7 +335,7 @@ Promise.all([
    included.add(x.core_stage_index);
   }
  }
- for(const t of tables.tables){const sec=source.sections[t.study_id];if(!sec||sec.title!==t.study_title||t.rows.flat().length!==t.end-t.start+1||t.rows.flat().some((j,k)=>j!==t.start+k))throw Error('Table source structure changed: '+t.study_title)}
+ for(const t of tables.tables){const sec=source.sections[t.study_id];if(!sec||sec.title!==t.study_title)throw Error('Table study changed: '+t.study_title);if(sec.tables?.length)continue;if(t.rows.flat().length!==t.end-t.start+1||t.rows.flat().some((j,k)=>j!==t.start+k))throw Error('Table source structure changed: '+t.study_title)}
  for(const x of history.notes){if(!map.studies[x.study_id]||!map.studies[x.study_id].groups.filter(g=>g.kind==='core')[x.stage_index])throw Error('Outdated historical note target: '+x.title)}
  studyData=source.sections;teachMap=map;relatedResources=related;coreEnrichments=enriched;tableLayouts=tables;historicalNotes=history;showLibrary();
 }).catch(err=>{$('loading').textContent='Teachers’ Guide could not load: '+err.message+'. Please refresh or contact Help / Feedback if the issue persists.'});
