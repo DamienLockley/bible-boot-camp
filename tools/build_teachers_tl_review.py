@@ -348,8 +348,24 @@ def main():
     assert len(html)>25000 and 'lang="tl"' in html
     assert "fetch('./study-data.json'" in html
     assert "fetch('./teaching-map.json'" in html
+    # Fingerprint source inputs so reproducible builds can avoid noisy
+    # Git commits caused by DOCX/ZIP timestamps alone.
+    input_paths=[
+        Path(__file__), ROOT/"study-data.json", ROOT/"index.html",
+        ROOT/"teaching-map.json", ROOT/"table-layouts.json",
+        ROOT/"related-study-resources.json",ROOT/"main-pathway-enrichments.json",
+        ROOT/"main-historical-notes.json",
+        WORK/"related-study-resources.tl.draft.json",
+    ] + sorted(WORK.glob("study_[0-9][0-9].json"))
+    input_paths += sorted(ROOT.glob("assets/**/*"))
+    fingerprint=hashlib.sha256()
+    for input_path in sorted(p for p in input_paths if p.is_file()):
+        fingerprint.update(str(input_path.relative_to(Path(__file__).resolve().parents[1])).encode("utf-8"))
+        fingerprint.update(b"\0")
+        fingerprint.update(hashlib.sha256(input_path.read_bytes()).digest())
     audit={
         "language":"tl",
+        "build_inputs_sha256":fingerprint.hexdigest(),
         "status":"unpublished_first_pass_review",
         **stats,
         "complete_study_units":True,
