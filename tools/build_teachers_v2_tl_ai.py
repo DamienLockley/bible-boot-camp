@@ -197,6 +197,9 @@ def map_tree(obj,key=''):
         return HEADINGS.get(obj,mem.get(obj,obj))
     return obj
 
+def localized(s):
+    return HEADINGS[s] if s in HEADINGS else mem.get(s,s)
+
 def html_translate(html):
     soup=BeautifulSoup(html,'html.parser')
     soup.html['lang']='tl'
@@ -205,11 +208,11 @@ def html_translate(html):
         if isinstance(node,Comment) or node.parent.name in ('script','style','pre','code','noscript'):
             continue
         if translatable(str(node)):
-            node.replace_with(NavigableString(HEADINGS.get(str(node),mem[str(node)])))
+            node.replace_with(NavigableString(localized(str(node))))
     for item in soup.find_all(True):
         for attr in ('title','alt','aria-label','placeholder'):
             if item.has_attr(attr) and translatable(item[attr]):
-                item[attr]=HEADINGS.get(item[attr],mem[item[attr]])
+                item[attr]=localized(item[attr])
     page=str(soup).replace('src="../site-config.js"','src="../../site-config.js"')
     return page
 
@@ -236,6 +239,10 @@ def make_word(sections,study_map,asset_dir,out):
         for group in mapped['groups']:
             begins.setdefault(group['start'],[]).append(group)
         for i,unit in enumerate(study['units']):
+            # Heading 1 is itself the first extracted teaching unit. Do not
+            # write that first title again or all unit indices would shift.
+            if i == 0 and unit.get('text','').strip() == study['title'].strip():
+                continue
             for group in begins.get(i,[]):
                 marker=doc.add_paragraph(group['label'])
                 marker.style='TG Stage' if group['kind']=='core' else 'TG Extra'
