@@ -243,6 +243,74 @@ def prepare_html(english):
         html=html.replace(">"+a+"<",">"+b+"<")
         html=html.replace("'"+a+"'","'"+b+"'")
         html=html.replace('"'+a+'"','"'+b+'"')
+    # Localize static and generated user-facing copy in the review only.
+    ui_text={
+      "📖 Teachers’ Guide": "📖 Gabay ng Guro",
+      "Teaching companion": "Kasamang gabay sa pagtuturo",
+      "Find words in all studies": "Maghanap ng mga salita sa lahat ng pag-aaral",
+      "Loading Bible studies…": "Ikinakarga ang mga pag-aaral sa Biblia…",
+      "Choose any study, in any order": "Mga pag-aaral ayon sa pagkakasunod-sunod ng GTKJ",
+      "Purpose": "Layunin",
+      "Central truth": "Pangunahing katotohanan",
+      "Main Study": "Pangunahing pag-aaral",
+      "Share": "Ibahagi",
+      "Main teaching pathway": "Pangunahing gabay sa pagtuturo",
+      "Explore deeper • questions": "Palalimin ang pag-aaral • mga tanong",
+      "Teachers’ Guide — Help / Feedback": "Gabay ng Guro — Tulong / Puna",
+      "Ask a question, suggest a correction, or report a problem with this study.": "Magtanong, magmungkahi ng pagwawasto, o mag-ulat ng problema sa pag-aaral.",
+      "Close ×": "Isara ×",
+      "Close ✕": "Isara ✕",
+      "Name (optional)": "Pangalan (opsyonal)",
+      "Select a country": "Pumili ng bansa",
+      "Reason": "Dahilan",
+      "Help with a study": "Tulong sa pag-aaral",
+      "Correction or feedback": "Pagwawasto o puna",
+      "Website problem": "Problema sa website",
+      "Other question": "Iba pang tanong",
+      "Your message": "Ang iyong mensahe",
+      "Send message": "Ipadala ang mensahe",
+      "Questions and answers": "Mga tanong at sagot",
+      "Answer": "Sagot",
+      "View illustration": "Tingnan ang larawan",
+      "No matches found in the studies.": "Walang nakitang tugma sa mga pag-aaral.",
+      "No matching questions.": "Walang kaugnay na tanong.",
+      "MAIN PATHWAY": "PANGUNAHING PAG-AARAL",
+      "OPTIONAL REFERENCE": "KARAGDAGANG SANGGUNIAN",
+      "Teaching insight": "Paliwanag sa pagtuturo",
+      "Discussion question": "Tanong sa talakayan",
+      "Suggested answer": "Iminungkahing sagot",
+      "Prophetic context and deeper applications": "Konteksto ng propesiya at mas malalim na paglalapat",
+      "Explore related passages": "Suriin ang kaugnay na mga talata",
+      "Spiritual application": "Espirituwal na paglalapat",
+      "Invitation / discussion": "Paanyaya / talakayan",
+      "← Previous": "← Nakaraan",
+      "Next →": "Susunod →",
+      "Teaching stage": "Yugto ng pagtuturo",
+      "Reference question": "Pandagdag na tanong",
+      "Return to main pathway": "Bumalik sa pangunahing pag-aaral",
+      "Original teaching illustration": "Orihinal na larawang panturo"
+    }
+    for english,tagalog in ui_text.items():
+        html=html.replace(">"+english+"<",">"+tagalog+"<")
+        html=html.replace("'"+english+"'","'"+tagalog+"'")
+        html=html.replace('"'+english+'"','"'+tagalog+'"')
+    attr_text={
+      "aria-label=\"Find words in all studies\"": "aria-label=\"Maghanap ng mga salita sa lahat ng pag-aaral\"",
+      "placeholder=\"Find words…\"": "placeholder=\"Maghanap ng mga salita…\"",
+      "aria-label=\"Clear search\"": "aria-label=\"Burahin ang paghahanap\"",
+      "aria-label=\"Word search matches\"": "aria-label=\"Mga tugma sa paghahanap\"",
+      "title=\"Other Bible-study websites\"": "title=\"Iba pang website sa pag-aaral ng Biblia\"",
+      "title=\"Teachers' Guide help and feedback\"": "title=\"Tulong at puna para sa Gabay ng Guro\"",
+      "title=\"Share this study PDF\"": "title=\"Ibahagi ang PDF ng pag-aaral (Ingles)\"",
+      "aria-label=\"Close feedback\"": "aria-label=\"Isara ang puna\"",
+      "alt=\"Original teaching illustration\"": "alt=\"Orihinal na larawang panturo\"",
+      ">Name (optional) <input": ">Pangalan (opsyonal) <input",
+      ">Country <select": ">Bansa <select",
+      ">Original teaching content • ": ">Nilalamang panturo • ",
+      "<strong>Read together:</strong>": "<strong>Basahing magkakasama:</strong>"
+    }
+    for english,tagalog in attr_text.items():
+        html=html.replace(english,tagalog)
     # The TL preview links to the English PDFs until new PDFs are prepared.
     html=html.replace("const TEACHERS_TL_URL='../../index.html';",
                       "const TEACHERS_TL_URL='../../index.html';")
