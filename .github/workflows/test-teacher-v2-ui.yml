@@ -1,7 +1,7 @@
 name: Teachers Guide V2 UI regression checks
 on:
   push:
-    branches: [teachers-guide-layout-feedback-20261124]
+    branches: [main, teachers-guide-scripture-groups-20261124]
   pull_request:
     paths:
       - 'teachers-guide/index.html'
