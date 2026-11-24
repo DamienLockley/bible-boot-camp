@@ -6,7 +6,8 @@
 
 - All **28 GTKJ-linked supplementary lesson sections** have now been translated in `related-study-resources.tl.draft.json`, including their introductions, principles, three teaching connections, questions and answers, practices and linked reading titles.
 - The builder incorporates this text into `review/related-study-resources.json`, while explicitly checking that scripture references, source identities, cross-site links, passage anchors and order match the English source.
-- **Not yet completely translated:** `main-pathway-enrichments.json` (draft Daniel teaching candidates), remaining English interface text, and existing English study PDFs. Some original enrichment candidates include visibly **truncated English paragraphs**; do not fill in these gaps without reviewing the approved sources.
+- All **17 optional Daniel context passages** now have first-pass Tagalog translations in `main-pathway-enrichments.tl.draft.json` and are assembled into `review/main-pathway-enrichments.json`. The eight incomplete source fields are explicitly identified in `review/translation-audit.json`; do not invent missing English source text.
+- The Tagalog review interface has translated study/navigation/search and feedback labels, but still requires a complete manual visual and language review. **The original English study PDFs remain placeholders** and must not be presented as translated documents.
 
 ## Editing and review
 
