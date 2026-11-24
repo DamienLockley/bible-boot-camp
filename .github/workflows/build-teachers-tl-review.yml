@@ -99,10 +99,25 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add teachers-guide/_tl_translation_work/study-data.tl.json teachers-guide/_tl_translation_work/review/
-          if ! git diff --cached --quiet; then
-            git commit -m "Build verified unpublished Tagalog Teachers Guide V2 Word and HTML review"
+          # Start from current main. This avoids binary DOCX/ZIP rebase conflicts
+          # when another source or earlier build commits during this workflow.
+          for attempt in 1 2 3; do
             git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+            git reset --hard origin/main
+            python tools/build_teachers_tl_review.py
+            # Do not commit binary changes caused solely by ZIP/DOCX timestamps.
+            if git diff --quiet -- teachers-guide/_tl_translation_work/review/translation-audit.json; then
+              echo "Inputs unchanged: keeping already verified Word/HTML files"
+              break
+            fi
+            git add teachers-guide/_tl_translation_work/study-data.tl.json teachers-guide/_tl_translation_work/review/
+            git commit -m "Build verified unpublished Tagalog Teachers Guide V2 Word and HTML review"
+            if git push origin HEAD:main; then
+              echo "Review sources and package committed"
+              break
+            fi
+            if [ "$attempt" = 3 ]; then
+              echo "Could not push latest regenerated review after three attempts"
+              exit 1
+            fi
+          done
