@@ -1,0 +1,16 @@
+{
+  "language": "tl",
+  "status": "unpublished_first_pass_review",
+  "study_count": 28,
+  "unit_count": 2662,
+  "image_positions": 17,
+  "images_embedded": 17,
+  "image_replacement_slots": 0,
+  "complete_study_units": true,
+  "scripture_metadata_unchanged": true,
+  "study_order_unchanged": true,
+  "supplemental_stages_preserved": true,
+  "supporting_metadata_note": "Supporting enrichment/resource prose still requires separate Tagalog verification.",
+  "english_source_sha256": "f7ca52d9ca4fcd873d603cda7e33a3a9f794b2a220db2d1e2a580b59c56f6cdd",
+  "word_bytes": 3311309
+}
