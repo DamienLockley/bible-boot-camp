@@ -151,15 +151,12 @@ def add_native_tables(word_path, sections):
                 indices = []
                 for cell in row.cells:
                     paras = [p for p in cell.paragraphs if clean(p.text) or p._element.xpath(".//a:blip")]
-                    if len(paras) != 1:
-                        raise ValueError(
-                            "Study %d has a table cell with %d paragraphs. Please "
-                            "combine into one paragraph per cell before conversion; "
-                            "no table content has been silently flattened." %
-                            (section + 1, len(paras))
-                        )
-                    indices.append(unit)
-                    unit += 1
+                    # Zero, one, or many paragraphs per Word cell are all valid.
+                    # Lists of indexes preserve their reading order without
+                    # pretending a multi-paragraph cell is a separate row.
+                    cell_indices = list(range(unit, unit + len(paras)))
+                    indices.append(cell_indices)
+                    unit += len(paras)
                 rows.append(indices)
             if not rows:
                 continue
@@ -178,7 +175,7 @@ def add_native_tables(word_path, sections):
         # A stage must contain the complete table. The website already handles
         # table layout and the builder validates its stage mapping below.
         for table in section.get("tables", []):
-            if sum(map(len, table["rows"])) != table["end"] - table["start"] + 1:
+            if sum(len(cell) for row in table["rows"] for cell in row) != table["end"] - table["start"] + 1:
                 raise ValueError("Table cell mismatch in study %d." % (i+1))
 
 
