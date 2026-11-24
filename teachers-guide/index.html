@@ -376,7 +376,7 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
         </select></label>
         <label class="feedback-wide">Your message <textarea name="message" rows="5" required placeholder="Tell us which study or teaching stage you are referring to."></textarea></label>
       </div>
-      <div class="feedback-actions"><button type="submit">Send message</button><a href="mailto:mail@endtimebiblestudies.org?subject=Teachers%20Guide%20Feedback">Email instead</a></div>
+      <div class="feedback-actions"><button type="submit">Send message</button></div>
       <p id="feedback-status" role="status" aria-live="polite"></p>
     </form>
     <iframe id="feedback-response" name="feedback-response" title="Feedback submission response" hidden></iframe>
@@ -728,7 +728,7 @@ $('feedback-form').addEventListener('submit',e=>{
  e.preventDefault();
  const form=$('feedback-form'),status=$('feedback-status'),endpoint=window.SITE_CONFIG?.contactWebAppUrl;
  if(teacherFeedbackPending){status.textContent='Your previous message is still being processed.';return;}
- if(!endpoint){status.textContent='Online sending is unavailable. Please use Email instead.';return;}
+ if(!endpoint){status.textContent='Online sending is unavailable at present. Please try again later.';return;}
  if(!form.reportValidity())return;
  const nonce=String(Date.now())+'-'+Math.random().toString(36).slice(2);
  $('feedback-nonce').value=nonce;$('feedback-started').value=String(Date.now());
@@ -741,7 +741,7 @@ $('feedback-form').addEventListener('submit',e=>{
   if(teacherFeedbackPending!==nonce)return;
   teacherFeedbackPending=null;
   form.querySelector('[type="submit"]').disabled=false;
-  status.textContent='Delivery could not be confirmed. Check before sending again, or use Email instead.';
+  status.textContent='Delivery could not be confirmed. Check whether your message was received before trying again.';
  },20000);
  form.submit();
 });
