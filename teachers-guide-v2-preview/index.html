@@ -26,6 +26,10 @@ details{border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin:
 .qa-question,.qa-answer{line-height:1.6;overflow-wrap:anywhere}
 .qa-answer{background:#e9f6ec;border-left:4px solid #398963;border-radius:7px;padding:10px 12px}
 .gtk-discussion{background:#fff;padding:13px;border:1px solid #c7e0d0;border-radius:9px;margin:12px 0}
+.history-note.daniel,.resource-depth.daniel{background:#fbf5ed;border-color:#dec8aa;border-left:4px solid #996c3c}
+.history-note.daniel h3,.resource-depth.daniel summary{color:#7c5226}
+.history-note.revelation,.resource-depth.revelation{background:#f0f7ff;border-color:#bed4e9;border-left:4px solid #326c9e}
+.history-note.revelation h3,.resource-depth.revelation summary{color:#245e92}
 </style>
 </head>
 <body>
@@ -203,15 +207,15 @@ function renderGuide(){
   const additions=coreEnrichments?.studies?.[current];
   const x=additions?.main_stage_additions?.find(z=>z.core_stage_index===stageIndex)?.teacher_guidance;
   if(x){
-    html+='<section class="enrichment"><div class="label">GTKJ • Proposed main teaching addition</div><h3>'+esc(x.title)+'</h3><p><strong>Read together:</strong> '+highlightRefs(x.reading_reference)+'</p><p>'+highlightRefs(x.explanation)+'</p><div class="gtk-discussion"><div class="qa-heading">Discussion question</div><div class="qa-question">'+esc(x.question)+'</div><div class="qa-heading answer-label">Suggested answer</div><div class="qa-answer">'+esc(x.suggested_answer)+'</div></div><p class="tiny">Proposed addition from GTKJ; your original teaching content remains above.</p></section>';
+    html+='<section class="enrichment"><div class="label">Teaching insight</div><h3>'+esc(x.title)+'</h3><p><strong>Read together:</strong> '+highlightRefs(x.reading_reference)+'</p><p>'+highlightRefs(x.explanation)+'</p><div class="gtk-discussion"><div class="qa-heading">Discussion question</div><div class="qa-question">'+esc(x.question)+'</div><div class="qa-heading answer-label">Suggested answer</div><div class="qa-answer">'+esc(x.suggested_answer)+'</div></div></section>';
   }
   const stageNotes=(historicalNotes?.notes||[]).filter(z=>z.study_id===current&&z.stage_index===stageIndex);
   for(const n of stageNotes){
-    html+='<section class="history-note"><div class="label">Daniel / Revelation • '+esc(n.type)+' • for review</div><h3>'+esc(n.title)+'</h3><p>'+highlightRefs(n.text)+'</p><div class="resource-links">'+n.sources.map(z=>'<a href="'+esc(z.url)+'" rel="noopener" target="_blank">'+esc(z.label)+'</a>').join('')+'</div></section>';
+    html+='<section class="history-note '+(n.sources.some(z=>z.url.includes('/revelation/'))&&!n.sources.some(z=>z.url.includes('/daniel/'))?'revelation':'daniel')+'"><div class="label">'+esc(n.type)+'</div><h3>'+esc(n.title)+'</h3><p>'+highlightRefs(n.text)+'</p><div class="resource-links">'+n.sources.map(z=>'<a href="'+esc(z.url)+'" rel="noopener" target="_blank">'+esc(z.label)+'</a>').join('')+'</div></section>';
   }
   const lastMain=teachMap.studies[current].groups.filter(z=>z.kind==='core').length-1;
   if(stageIndex===lastMain && additions?.daniel_context_candidates?.length){
-    html+='<details class="resource-depth"><summary>Daniel • prophetic context and deeper applications</summary>';
+    html+='<details class="resource-depth daniel"><summary>Prophetic context and deeper applications</summary>';
     for(const n of additions.daniel_context_candidates){
       html+='<div class="resource-entry"><h4>'+esc(n.title)+'</h4><p>'+highlightRefs(n.history_or_interpretation.slice(0,650))+(n.history_or_interpretation.length>650?'…':'')+'</p><p>'+esc(n.spiritual_application.slice(0,420))+'</p><a href="'+esc(n.url)+'" target="_blank" rel="noopener">Explore '+esc(n.scripture)+' in Daniel</a></div>';
     }
@@ -219,10 +223,10 @@ function renderGuide(){
   }
   if(stageIndex===lastMain&&relatedResources?.items?.[current]?.deep_reading_links?.length){
     const links=relatedResources.items[current].deep_reading_links.filter(n=>n.source==='revelation');
-    if(links.length){html+='<details class="resource-depth"><summary>Explore related passages in Revelation</summary><div class="resource-links">'+links.map(n=>'<a target="_blank" rel="noopener" href="'+esc(n.href)+'">'+esc(n.passage||n.title)+'</a>').join('')+'</div></details>';}
+    if(links.length){html+='<details class="resource-depth revelation"><summary>Explore related passages</summary><div class="resource-links">'+links.map(n=>'<a target="_blank" rel="noopener" href="'+esc(n.href)+'">'+esc(n.passage||n.title)+'</a>').join('')+'</div></details>';}
   }
  }
- if(stageKind==='core'&&last)html+='<section class="teacher-prompt"><strong>Proposed spiritual application</strong><p>'+esc(t.application.text)+'</p><strong>Proposed invitation / discussion</strong><p>'+esc(t.response.text)+'</p><div class="tiny">Draft teacher prompts; not part of the original Word master.</div></section>';
+ if(stageKind==='core'&&last)html+='<section class="teacher-prompt"><strong>Spiritual application</strong><p>'+esc(t.application.text)+'</p><strong>Invitation / discussion</strong><p>'+esc(t.response.text)+'</p></section>';
  html+='<div class="nav-bottom"><button id="prev" '+(first?'disabled':'')+'>← Previous</button><div class="tiny">'+(stageKind==='core'?'Teaching stage':'Reference question')+'</div><button id="next" '+(last?'disabled':'')+'>Next →</button></div>';
  if(stageKind==='supplement')html+='<p><button id="back-core">Return to main pathway</button></p>';
  $('stage').innerHTML=html;
@@ -256,7 +260,14 @@ Promise.all([
  if(!Array.isArray(source.sections)||!Array.isArray(map.studies)||source.sections.length!==map.studies.length)throw Error('Study count mismatch');
  for(let i=0;i<source.sections.length;i++)if(source.sections[i].title!==map.studies[i].title||source.sections[i].units.length!==map.studies[i].source_unit_count)throw Error('Source mismatch: '+i);
  if(related.items.length!==map.studies.length||enriched.studies.length!==map.studies.length)throw Error('Resource count mismatch');
- for(let i=0;i<enriched.studies.length;i++)if(enriched.studies[i].main_stage_additions.length!==map.studies[i].groups.filter(g=>g.kind==='core').length)throw Error('Stage mapping changed: '+i);
+ for(let i=0;i<enriched.studies.length;i++){
+  const stages=map.studies[i].groups.filter(g=>g.kind==='core');
+  const included=new Set();
+  for(const x of enriched.studies[i].main_stage_additions){
+   if(!stages[x.core_stage_index]||included.has(x.core_stage_index))throw Error('Teaching addition mapping changed: '+i);
+   included.add(x.core_stage_index);
+  }
+ }
  for(const t of tables.tables){const sec=source.sections[t.study_id];if(!sec||sec.title!==t.study_title||t.rows.flat().length!==t.end-t.start+1||t.rows.flat().some((j,k)=>j!==t.start+k))throw Error('Table source structure changed: '+t.study_title)}
  for(const x of history.notes){if(!map.studies[x.study_id]||!map.studies[x.study_id].groups.filter(g=>g.kind==='core')[x.stage_index])throw Error('Outdated historical note target: '+x.title)}
  studyData=source.sections;teachMap=map;relatedResources=related;coreEnrichments=enriched;tableLayouts=tables;historicalNotes=history;showLibrary();
