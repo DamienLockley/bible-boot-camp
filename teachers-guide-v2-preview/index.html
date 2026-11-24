@@ -15,7 +15,7 @@ details{border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin:
 .label{font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:750;color:var(--muted)}.ribbon{background:#edf5fb;padding:8px 11px;border-radius:8px;margin-bottom:11px}.nav-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px}.nav-bottom button{min-width:92px}.bible-ref{border:0;padding:0;background:none;color:#056aa5;font:inherit;text-decoration:underline;font-weight:700;display:inline}.bible-ref:hover{background:#e2f1fb}.verse-link{width:100%;text-align:left;margin:5px 0}.hidden{display:none!important}.modal{position:fixed;inset:0;background:#000b;z-index:10;padding:16px;overflow:auto}.modal .panel{max-width:850px;margin:5vh auto}.modal img{max-width:100%;max-height:75vh;object-fit:contain}.kjv-verse{padding:8px 0;border-bottom:1px solid var(--line);line-height:1.6}.kjv-verse b{color:var(--blue);margin-right:7px}.image-btn{display:inline-block;margin:8px 5px 0 0}
 @media(max-width:760px){.layout{display:flex;flex-direction:column}.side{position:static;width:100%;max-height:none}.top-inner{align-items:start}.brand strong{font-size:15px}.heading{font-size:22px}.panel{padding:14px}main{padding:13px 10px 45px}.nav-bottom{position:sticky;bottom:0;background:#f3f7fb;padding:11px 0}}
 .nav-link{font-size:13px;font-weight:700;text-decoration:none;color:#125d88;border-radius:9px;padding:9px 10px;border:1px solid #8cb5d2;background:white;white-space:nowrap}.nav-link:hover{background:#d8ebf7}.compact-search{width:min(240px,44vw);padding:9px 10px}.lib-study{border-bottom:1px solid var(--line);padding:11px 0}.lib-study:last-child{border-bottom:0}.lib-study h3{font-size:16px;margin:2px 0 7px}.snippet{display:block;width:100%;font-weight:400;font-size:13px;color:#2b4a5f;line-height:1.48;text-align:left;margin:5px 0;padding:8px 10px;white-space:normal}.snippet mark{background:#fff1ae;color:#1b3347;border-radius:2px;padding:0 2px}.find-count{font-size:12px;color:var(--muted);margin-left:7px}.table-wrap{overflow-x:auto;margin:15px 0}.study-table{width:100%;border-collapse:collapse;font-size:14px}.study-table th,.study-table td{border:1px solid #b7cbd9;padding:9px 10px;text-align:left;vertical-align:top}.study-table th{background:#e9f3f9;color:#1b4561}.study-table tr:nth-child(even) td{background:#f8fbfd}.study-table caption{text-align:left;font-weight:700;padding:0 0 6px}.table-notice{font-size:12px;color:var(--muted)}@media(max-width:550px){.head-actions{gap:5px}.nav-link{font-size:12px;padding:7px 8px}.compact-search{width:180px}.top-inner{flex-wrap:wrap}.review{padding:4px 6px}}
-</style>
+.enrichment{padding:15px;margin:16px 0;border:1px solid #c0e2ce;border-left:4px solid #39795e;background:#f5fcf8;border-radius:9px}.enrichment h3{margin:5px 0 8px;font-size:17px;color:#225640}.enrichment p{line-height:1.58}.enrichment details{background:white}.resource-depth{background:#f6f9fc}.resource-entry{border-top:1px solid var(--line);padding:12px 0}.resource-entry h4{margin:0 0 8px;color:#195276}.resource-entry p{line-height:1.58}.resource-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.resource-links a{display:inline-block;padding:7px 10px;border:1px solid #b4d1e2;background:white;border-radius:7px;text-decoration:none}.resource-links a:hover{text-decoration:underline}</style>
 </head>
 <body>
 <header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teacher's Guide V2</strong><div class="tiny">Teaching companion • working review</div></div><div class="head-actions"><span class="review">REVIEW ONLY</span><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><a class="nav-link" href="https://endtimebiblestudies.org/#help" title="Contact or get help">Help / Connect</a><button id="home" type="button">Home</button></div></div></header>
@@ -32,7 +32,7 @@ details{border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin:
 <div id="verse-modal" class="modal hidden" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel"><button onclick="closeVerse()">Close ✕</button><h2 id="verse-title"></h2><div id="verse-text"></div></div></div>
 <div id="image-modal" class="modal hidden" onclick="if(event.target.id==='image-modal')closeImage()"><div class="panel"><button onclick="closeImage()">Close ✕</button><div id="image-content" style="text-align:center;margin-top:10px"></div></div></div>
 <script>
-let studyData=null,teachMap=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=true,kjv=null,kjvStatus='Loading stored KJV verses…';
+let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=true,kjv=null,kjvStatus='Loading stored KJV verses…';
 const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const bibleBook = String.raw`(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Songs?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Nah|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev)`;
 const verseSpan = String.raw`\d+(?:\s*[-‐‑‒–—−]\s*(?:\d+\s*[:：]\s*)?\d+)?`;
@@ -151,6 +151,25 @@ function renderGuide(){
  const last=stageIndex===groups.length-1,first=stageIndex===0;
  let html='<div class="row"><div class="title-row"><span class="review">'+(stageKind==='core'?'MAIN PATHWAY':'OPTIONAL REFERENCE')+'</span><span class="tiny">'+(stageIndex+1)+' of '+groups.length+'</span></div></div>';
  html+='<h2>'+esc(g.label)+'</h2><p class="tiny">Original teaching content • '+(g.end-g.start+1)+' items</p>'+unitsMarkup(g.start,g.end);
+ if(stageKind==='core'){
+  const additions=coreEnrichments?.studies?.[current];
+  const x=additions?.main_stage_additions?.find(z=>z.core_stage_index===stageIndex)?.teacher_guidance;
+  if(x){
+    html+='<section class="enrichment"><div class="label">GTKJ • Proposed main teaching addition</div><h3>'+esc(x.title)+'</h3><p><strong>Read together:</strong> '+highlightRefs(x.reading_reference)+'</p><p>'+highlightRefs(x.explanation)+'</p><details class="response-answer"><summary>Discussion: '+esc(x.question)+'</summary><p>'+esc(x.suggested_answer)+'</p></details><p class="tiny">Proposed addition from GTKJ; your original teaching content remains above.</p></section>';
+  }
+  const lastMain=teachMap.studies[current].groups.filter(z=>z.kind==='core').length-1;
+  if(stageIndex===lastMain && additions?.daniel_context_candidates?.length){
+    html+='<details class="resource-depth"><summary>Daniel • prophetic context and deeper applications</summary>';
+    for(const n of additions.daniel_context_candidates){
+      html+='<div class="resource-entry"><h4>'+esc(n.title)+'</h4><p>'+highlightRefs(n.history_or_interpretation.slice(0,650))+(n.history_or_interpretation.length>650?'…':'')+'</p><p>'+esc(n.spiritual_application.slice(0,420))+'</p><a href="'+esc(n.url)+'" target="_blank" rel="noopener">Explore '+esc(n.scripture)+' in Daniel</a></div>';
+    }
+    html+='</details>';
+  }
+  if(stageIndex===lastMain&&relatedResources?.items?.[current]?.deep_reading_links?.length){
+    const links=relatedResources.items[current].deep_reading_links.filter(n=>n.source==='revelation');
+    if(links.length){html+='<details class="resource-depth"><summary>Explore related passages in Revelation</summary><div class="resource-links">'+links.map(n=>'<a target="_blank" rel="noopener" href="'+esc(n.href)+'">'+esc(n.passage||n.title)+'</a>').join('')+'</div></details>';}
+  }
+ }
  if(stageKind==='core'&&last)html+='<section class="teacher-prompt"><strong>Proposed spiritual application</strong><p>'+esc(t.application.text)+'</p><strong>Proposed invitation / discussion</strong><p>'+esc(t.response.text)+'</p><div class="tiny">Draft teacher prompts; not part of the original Word master.</div></section>';
  html+='<div class="nav-bottom"><button id="prev" '+(first?'disabled':'')+'>← Previous</button><div class="tiny">'+(stageKind==='core'?'Teaching stage':'Reference question')+'</div><button id="next" '+(last?'disabled':'')+'>Next →</button></div>';
  if(stageKind==='supplement')html+='<p><button id="back-core">Return to main pathway</button></p>';
@@ -176,11 +195,15 @@ $('pdf-button').onclick=()=>{
 };
 Promise.all([
  fetch('../teachers-guide/study-data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Study data HTTP '+r.status);return r.json()}),
- fetch('./teaching-map.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Teaching map HTTP '+r.status);return r.json()})
-]).then(([source,map])=>{
+ fetch('./teaching-map.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Teaching map HTTP '+r.status);return r.json()}),
+ fetch('./related-study-resources.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Related resources HTTP '+r.status);return r.json()}),
+ fetch('./main-pathway-enrichments.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Main additions HTTP '+r.status);return r.json()})
+]).then(([source,map,related,enriched])=>{
  if(!Array.isArray(source.sections)||!Array.isArray(map.studies)||source.sections.length!==map.studies.length)throw Error('Study count mismatch');
  for(let i=0;i<source.sections.length;i++)if(source.sections[i].title!==map.studies[i].title||source.sections[i].units.length!==map.studies[i].source_unit_count)throw Error('Source mismatch: '+i);
- studyData=source.sections;teachMap=map;showLibrary();
+ if(related.items.length!==map.studies.length||enriched.studies.length!==map.studies.length)throw Error('Resource count mismatch');
+ for(let i=0;i<enriched.studies.length;i++)if(enriched.studies[i].main_stage_additions.length!==map.studies[i].groups.filter(g=>g.kind==='core').length)throw Error('Stage mapping changed: '+i);
+ studyData=source.sections;teachMap=map;relatedResources=related;coreEnrichments=enriched;showLibrary();
 }).catch(err=>{$('loading').textContent='Preview could not load: '+err.message+'. Serve the repository folder using the manager Run Local Site option or a local web server; no live files are changed.'});
 </script>
 </body></html>
