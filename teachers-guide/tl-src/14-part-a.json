@@ -1,0 +1,456 @@
+{
+  "id": 13,
+  "title": "Ang Sabbath",
+  "units": [
+    {
+      "i": 0,
+      "kind": "heading",
+      "text": "Ang Sabbath",
+      "images": []
+    },
+    {
+      "i": 1,
+      "kind": "text",
+      "text": "Layunin: Ipakita mula sa Kasulatan na ang Sabbath ay alaala kapwa ng paglalang at kaligtasan.",
+      "images": []
+    },
+    {
+      "i": 2,
+      "kind": "text",
+      "text": "Pangunahing diwa: Dumating si Hesus sa ating mundo bilang Manlilikha upang muling likhain ang sangkatauhan ayon sa larawan ng Diyos. Sa Kanyang buhay at kamatayan, tinapos Niya ang gawain ng kaligtasan at nagpahinga sa libingan sa araw ng Sabbath.",
+      "images": []
+    },
+    {
+      "i": 3,
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Pinagpala ng Diyos ang ikapitong araw: Inilalarawan sa salaysay ng paglalang na tinapos ng Diyos ang Kanyang gawain, nagpahinga, pinagpala ang ikapitong araw at pinabanal ito. Hindi ibinigay ang pahinga bilang parusa sa pagkabigo ng tao; bahagi ito ng mabuting disenyo ng Diyos mula sa simula.",
+      "images": []
+    },
+    {
+      "i": 4,
+      "kind": "question",
+      "text": "Tanong sa talakayan: Sino ang unang nagpahinga sa salaysay at anong araw ang Kanyang pinagpala?",
+      "images": []
+    },
+    {
+      "i": 5,
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Ang Diyos ay nagpahinga at pinagpala ang ikapitong araw.",
+      "images": []
+    },
+    {
+      "i": 6,
+      "kind": "text",
+      "text": "(Araw ng biyaya; isang lugar ng malapit na pakikisama sa loob ng panahon; kawalang-hangang nakapaloob sa panahon.)",
+      "images": []
+    },
+    {
+      "i": 7,
+      "kind": "text",
+      "text": "Genesis 1:1-5, 2:1-3… May estrukturang magkapares o chiasm (araw 1 at 4, 2 at 5, 3 at 6, at ang ika-7). Ipinakikita nito ang paghubog at pagpuno: lumilikha Siya ng lugar, pagkatapos ay pinupuno ito (liwanag/araw; tubig/isda; lupa/mga hayop at tao; Siya mismo). Pinabanal ang ikapitong araw—ibinukod bilang banal, araw ng pahinga at pagsamba (Lev 23:3).",
+      "images": []
+    },
+    {
+      "i": 8,
+      "kind": "text",
+      "text": "Ang susunod na dalawang talata ay hindi lamang tungkol sa paglalang kundi pati sa kaligtasan.",
+      "images": []
+    },
+    {
+      "i": 9,
+      "kind": "text",
+      "text": "Ex 20:8-11… Pagdiriwang sa paglalang. Mahalaga ito sa Diyos dahil sinabi Niyang “alalahanin,” kilalanin at panatilihin ito.",
+      "images": []
+    },
+    {
+      "i": 10,
+      "kind": "text",
+      "text": "Deut 5:12-15… Ipinakikita ang ugnayan ng paglalang at kaligtasan. Kapangyarihan at lakas ng Diyos ang dahilan, hindi ang sa atin. Pagdiriwang ito ng paglaya at kaligtasan.",
+      "images": []
+    },
+    {
+      "i": 11,
+      "kind": "text",
+      "text": "Mark 2:27,28… Ginawa ang Sabbath para sa tao, hindi ang tao para sa Sabbath. Ibinigay ito pagkatapos ng paglalang para sa ating kapakinabangan.",
+      "images": []
+    },
+    {
+      "i": 12,
+      "kind": "text",
+      "text": "Gen 1:1… Ang salaysay ng paglalang ay may kaugnayan sa John 1:1.",
+      "images": []
+    },
+    {
+      "i": 13,
+      "kind": "text",
+      "text": "John 1:1… Si Hesus ang aktibong Manlilikha sa Lumang Tipan at gayundin sa Bagong Tipan; ang pagliligtas ay tulad ng muling paglalang.",
+      "images": []
+    },
+    {
+      "i": 14,
+      "kind": "text",
+      "text": "Kapansin-pansing gumagamit ang Biblia ng mga salita ng paglalang upang ilarawan ang kaligtasan. Halimbawa:",
+      "images": []
+    },
+    {
+      "i": 15,
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Paglalang at muling paglalang: Itinuturo ni Juan na si Kristo ang banal na Manlilikha, samantalang sinasabi ni Pablo na ang mga mananampalataya ay nagiging bagong nilalang sa Kanya. Ipinaaalala ng Sabbath kapwa ang unang lumalang sa atin at ang nagpapanumbalik sa atin.",
+      "images": []
+    },
+    {
+      "i": 16,
+      "kind": "question",
+      "text": "Tanong sa talakayan: Bakit angkop na tema ng araw na nagpaparangal sa Manlilikha ang muling paglalang?",
+      "images": []
+    },
+    {
+      "i": 17,
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Ang Manlilikha rin ang may kapangyarihang magpanibago ng mga buhay na nasira.",
+      "images": []
+    },
+    {
+      "i": 18,
+      "kind": "text",
+      "text": "Ang susunod na tatlong talata ay tumutukoy hindi lamang sa paglalang kundi sa muling paglalang, na siyang kaligtasan.",
+      "images": []
+    },
+    {
+      "i": 19,
+      "kind": "text",
+      "text": "Psalm 51:10-12… Si David, isang makasalanan, ay nanalangin para sa kaligtasan: “likhain” at “ipanumbalik.” Gumamit si David ng pananalita tungkol sa paglalang sa paghahangad ng kaligtasan.",
+      "images": []
+    },
+    {
+      "i": 20,
+      "kind": "text",
+      "text": "2 Cor 5:17… Ang sinumang na kay Kristo ay isang bagong nilalang. Gumagamit ang kaligtasan ng kapangyarihang lumilikha.",
+      "images": []
+    },
+    {
+      "i": 21,
+      "kind": "text",
+      "text": "Eph 2:8-10… Tayo ay Kanyang gawa, nilikha sa Kanya.",
+      "images": []
+    },
+    {
+      "i": 22,
+      "kind": "text",
+      "text": "Paano naman ang gawain?",
+      "images": []
+    },
+    {
+      "i": 23,
+      "kind": "text",
+      "text": "John 17:4… Tanong: Anong gawain? Sagot: Ang gawain ng kaligtasan.",
+      "images": []
+    },
+    {
+      "i": 24,
+      "kind": "text",
+      "text": "Tanong: Saan nanggaling ang ideya ng gawain? Sagot: Sa Genesis.",
+      "images": []
+    },
+    {
+      "i": 25,
+      "kind": "text",
+      "text": "John 19:30… Tinapos na ni Hesus ang buong gawaing ito ng kaligtasan para sa iyo. Kailangan mo lamang tanggapin iyon. (Luke 23:54-24:3 — kailan ang Sabbath?)",
+      "images": []
+    },
+    {
+      "i": 26,
+      "kind": "text",
+      "text": "Isaiah 56:1-7… Sabbath at tipan.",
+      "images": []
+    },
+    {
+      "i": 27,
+      "kind": "text",
+      "text": "Exodus 31:13; Eze 20:12… Tanda ng pagkakakilanlan ng Manlilikha.",
+      "images": []
+    },
+    {
+      "i": 28,
+      "kind": "text",
+      "text": "Acts 13:13-15… Mga Kristiyanong Hentil na nag-iingat din ng Sabbath.",
+      "images": []
+    },
+    {
+      "i": 29,
+      "kind": "text",
+      "text": "Acts 13:42-44… Hindi lamang mga Judio kundi mga Hentil rin ang nag-iingat ng Sabbath.",
+      "images": []
+    },
+    {
+      "i": 30,
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Pahinga, kaluguran at pagsamba: Tinawag ni Isaias ang Sabbath na kaluguran at iniugnay ang pagsamba sa Diyos sa Kanyang bagong paglalang sa hinaharap. Tinatawag ng Apocalipsis ang lahat na sambahin ang Lumikha ng langit at lupa. Ang layunin ay masayang katapatan, hindi listahan ng mga tuntuning nakikipagpaligsahan sa biyaya.",
+      "images": []
+    },
+    {
+      "i": 31,
+      "kind": "question",
+      "text": "Tanong sa talakayan: Anong pagbabago ng saloobin ang inaanyayahan ni Isaias?",
+      "images": []
+    },
+    {
+      "i": 32,
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Mula sa pagtingin sa banal na panahon bilang abala, patungo sa pagkilala rito bilang kaluguran.",
+      "images": []
+    },
+    {
+      "i": 33,
+      "kind": "text",
+      "text": "Iingatan ba ito ng bayan ng Diyos sa mga huling araw?",
+      "images": []
+    },
+    {
+      "i": 34,
+      "kind": "text",
+      "text": "Rev 12:17; 14:7… Galit si Satanas sa mga taong sumusunod sa kautusan ng Diyos; tinatawag tayong sambahin ang Manlilikha ng lahat, na umaalingawngaw sa Genesis at sa ikaapat na utos.",
+      "images": []
+    },
+    {
+      "i": 35,
+      "kind": "text",
+      "text": "Isaiah 66:22-23… Iingatan ng lahat sa langit ang Sabbath. (Matt 24:20.)",
+      "images": []
+    },
+    {
+      "i": 36,
+      "kind": "text",
+      "text": "Hindi ba napakaganda na inilalarawan ang Diyos bilang Diyos ng biyaya? Ibinigay Niya sa atin ang araw upang alalahanin ang kaloob ng paglalang at pagtubos.",
+      "images": []
+    },
+    {
+      "i": 37,
+      "kind": "text",
+      "text": "Kaya anong araw ang Sabbath?",
+      "images": []
+    },
+    {
+      "i": 38,
+      "kind": "text",
+      "text": "Luke 23:54-24:3… Sabado. (Sa mahigit 150 wika, ang tawag sa Sabado ay Sabbath: Aleman = Samstag; Espanyol = Sábado; Pranses = Samedi; Italyano = Sabato.)",
+      "images": []
+    },
+    {
+      "i": 39,
+      "kind": "text",
+      "text": "At kailan ito iingatan? Kailan nagsisimula at nagtatapos ang araw ayon sa Biblia?",
+      "images": []
+    },
+    {
+      "i": 40,
+      "kind": "text",
+      "text": "Lev 23:32… Katulad ng paglalarawan ng isang araw sa Genesis 1.",
+      "images": []
+    },
+    {
+      "i": 41,
+      "kind": "text",
+      "text": "Paano natin iingatan ang Sabbath?",
+      "images": []
+    },
+    {
+      "i": 42,
+      "kind": "text",
+      "text": "Neh 13:15-19; Isaiah 58:13-14; Ex 20:8-11…",
+      "images": []
+    },
+    {
+      "i": 43,
+      "kind": "text",
+      "text": "Gaano kahalaga ang pag-iingat sa Sabbath, alalahaning bahagi ito ng kautusan?",
+      "images": []
+    },
+    {
+      "i": 44,
+      "kind": "text",
+      "text": "1 John 3:4… Ang kasalanan ay paglabag sa kautusan. “Ang kabayaran ng kasalanan ay kamatayan” (Romans 6:23).",
+      "images": []
+    },
+    {
+      "i": 45,
+      "kind": "text",
+      "text": "James 2:10… Ang paglabag sa isang utos ay pananagutan sa buong kautusan.",
+      "images": []
+    },
+    {
+      "i": 46,
+      "kind": "text",
+      "text": "Hebrews 5:9… Kaligtasan sa lahat ng sumusunod sa Kanya.",
+      "images": []
+    },
+    {
+      "i": 47,
+      "kind": "text",
+      "text": "Ang tanging kaligtasan natin ay ang masigasig na pag-aaral sa Biblia (2 Tim 2:15). Dapat may positibong suporta mula sa Kasulatan ang bawat gawaing Kristiyanong sinusunod natin.",
+      "images": []
+    },
+    {
+      "i": 48,
+      "kind": "text",
+      "text": "Hindi ba dapat nating ipagdiwang ang Linggo bilang paggunita sa pagkabuhay na muli ni Kristo?",
+      "images": []
+    },
+    {
+      "i": 49,
+      "kind": "text",
+      "text": "Romans 6:3-6… Hindi, tulad din na hindi natin pinananatiling banal ang Biyernes dahil sa Kanyang kamatayan. Ibinigay ni Kristo ang seremonya ng bautismo bilang paggunita sa Kanyang kamatayan, paglilibing at muling pagkabuhay.",
+      "images": []
+    },
+    {
+      "i": 50,
+      "kind": "text",
+      "text": "Ano ang pumipigil o nakahahadlang sa atin sa pagsunod sa salita ng Diyos at pagsamba sa Kanya?",
+      "images": []
+    },
+    {
+      "i": 51,
+      "kind": "text",
+      "text": "Sabi ni Hesus, “Hanapin muna ninyo ang kaharian ng Diyos at ang Kanyang katuwiran, at idaragdag sa inyo ang lahat ng ito” (Matt 6:33); at “Masikip ang pintuan at makitid ang daang patungo sa buhay, at kakaunti ang nakasusumpong nito” (Matt 7:14).",
+      "images": []
+    },
+    {
+      "i": 52,
+      "kind": "heading",
+      "text": "Mahihirap na talata:",
+      "images": []
+    },
+    {
+      "i": 53,
+      "kind": "text",
+      "text": "Revelation 1: 10…",
+      "images": []
+    },
+    {
+      "i": 54,
+      "kind": "text",
+      "text": "Totoong nang maglaon sa kasaysayan ng Kristiyanismo, ginamit ang pariralang “Araw ng Panginoon” para sa Linggo. Gayunman, walang malinaw na katibayang ang “Araw ng Panginoon” ay Linggo noong isinusulat ang Bagong Tipan. May ilang halimbawa sa unang kasaysayan ng mga Kristiyano na ginagamit ang pariralang iyon, tulad ng Didache at mga sinulat ni Justin Martyr.",
+      "images": []
+    },
+    {
+      "i": 55,
+      "kind": "text",
+      "text": "Ang isang manwal ng pagtuturo na tinatawag na Didache, na maaaring mula sa unang bahagi ng ikalawang siglo, ay nag-uutos sa kabanata 14 ng sumusunod:",
+      "images": []
+    },
+    {
+      "i": 56,
+      "kind": "text",
+      "text": "“Sa [Araw] ng Panginoon ay magtipon kayo, magputul-putol ng tinapay at magdaos ng Eukaristiya matapos aminin ang inyong mga pagsalangsang upang maging dalisay ang handog. Ngunit ang sinumang may alitan sa kanyang kapatid ay huwag sumama sa pagtitipon hanggang sila ay magkasundo, upang hindi madungisan ang inyong hain. Sapagkat ito ang sinabi ng Panginoon: ‘Sa bawat lugar at panahon ay maghandog sa Akin ng dalisay na hain, sapagkat Ako ay dakilang Hari,’ sabi ng Panginoon, ‘at kahanga-hanga ang Aking pangalan sa mga bansa.’”",
+      "images": []
+    },
+    {
+      "i": 57,
+      "kind": "text",
+      "text": "Sanggunian: The Didache xiv. 1–3, sa Apostolic Fathers, salin ni Kirsopp Lake, Tomo 1 (Cambridge, Massachusetts: Harvard University Press, 1959), p. 331. Muling inilimbag na may pahintulot ng mga tagapaglathala at The Loeb Classical Library.",
+      "images": []
+    },
+    {
+      "i": 58,
+      "kind": "text",
+      "text": "Ipinakahulugan ang siping ito bilang lingguhang pagdiriwang ng Linggo, taunang Paskuwa, o Sabbath ng ikapitong araw. Ngunit ang suliranin: sa orihinal na Griyego ay hindi tuwirang nakasulat ang salitang “ARAW.” Idinagdag ito nang kalaunan ng mga tagapagsaling Ingles. Sa literal na pagbasa: “Ayon sa Panginoon [??] ng Panginoon, magtipon, magputol ng tinapay at magdaos ng Eukaristiya.” Sa konteksto, isa pang maaaring salitang kulang ay “tagubilin” o “utos,” na magbibigay ng kahulugang “ayon sa tagubilin ng Panginoon.”",
+      "images": []
+    },
+    {
+      "i": 59,
+      "kind": "text",
+      "text": "Kaya upang gamitin ang dokumentong ito bilang patunay ng Araw ng Panginoon, kailangang ipalagay na muna ang mismong nais patunayan. Hindi ito magiging tiyak na patunay at dapat basahin kasama ng ibang impormasyon. Nang maglaon, naging pangalan para sa Araw ng Panginoon ang pang-uring Griyego na kuriakē, “ng Panginoon,” ngunit hindi pa ito napatutunayan sa partikular na dokumentong iyon.",
+      "images": []
+    },
+    {
+      "i": 60,
+      "kind": "text",
+      "text": "Sa First Apology ni Justin Martyr noong humigit-kumulang AD 155, may pagbanggit na ang Araw ng Panginoon ay Linggo (tingnan ang apendiks). Ayon sa orihinal na pag-aaral, hindi ito tuwirang nagpapatunay sa unang panahon ng Bagong Tipan sapagkat naimpluwensiyahan na ito ng lumalaking kulturang Kristiyano.",
+      "images": []
+    },
+    {
+      "i": 61,
+      "kind": "text",
+      "text": "Isipin: nagbabago ang kahulugan ng mga salita mula sa isang salinlahi tungo sa iba. Halimbawa, sa dekada 1960, karaniwang ginagamit ang salitang Ingles na “gay” na nangangahulugang “masaya,” ngunit mayroon na itong ibang kahulugan ngayon. Madalas higit ang pagbabago ng wika sa isang bagong lumalaking pamayanan. Noong panahon ng pagyakap ni Emperador Constantino sa Kristiyanismo at pagkilala rito bilang legal, dumami nang napakabilis ang mga pumapasok sa bagong relihiyon. Ngunit dahil sa paglagong iyon, may mga kaugalian ng mga tao na pumasok sa iglesia sa halip na ang iglesia ang magbago sa mga tao. (Tingnan ang apendiks.)",
+      "images": []
+    },
+    {
+      "i": 62,
+      "kind": "text",
+      "text": "Kaya ano ang sinabi ni Hesus tungkol sa Sabbath?",
+      "images": []
+    },
+    {
+      "i": 63,
+      "kind": "text",
+      "text": "Mark 2: 28… Kung si Hesus ang Panginoon ng Sabbath, ang Sabbath ang Araw ng Panginoon!",
+      "images": []
+    },
+    {
+      "i": 64,
+      "kind": "text",
+      "text": "Isaiah 58: 13… Muli, tinawag ng Panginoon ang Sabbath na “Aking banal na araw.” Malinaw na tumutukoy ang Lumang Tipan sa ikapitong araw.",
+      "images": []
+    },
+    {
+      "i": 65,
+      "kind": "text",
+      "text": "Exodus 20: 10… Matibay na sinasabi ng Kasulatan na ang “ikapitong araw” ang Sabbath.",
+      "images": []
+    },
+    {
+      "i": 66,
+      "kind": "text",
+      "text": "1 Corinthians 16: 1-3… Madalas gamitin bilang katibayan na banal ang Linggo, ngunit pansining inutusan lamang silang magtabi ng handog. Pinayuhan ni Pablo silang maghanda ng pera upang hindi magkulang sa panahon ng pangongolekta.",
+      "images": []
+    },
+    {
+      "i": 67,
+      "kind": "text",
+      "text": "Ayon sa ilang historyador, ang mga unang Kristiyano at Judio ay hindi karaniwang nangongolekta ng mga handog sa Sabbath, marahil dahil maraming handog noon ang mga bagay na nangangailangan ng mabigat na gawain, tulad ng ani, hayop at kasuotan, na hindi naaayon sa kanilang pag-iingat ng Sabbath.",
+      "images": []
+    },
+    {
+      "i": 68,
+      "kind": "text",
+      "text": "Romans 14: 5-6… Tungkol sa personal na mga pagpapasiya ang kabanatang ito. Sa pagbabasa ng buong kabanata, hindi nabanggit ang Sabbath. Ang usapin ay pagkain at mga araw ng pag-aayuno. May ilan na pinahahalagahan ang isang araw para sa pag-aayuno, samantalang pantay-pantay ang tingin ng iba. Sinabi ni Pablo na dapat kumbinsido ang bawat isa sa sariling isip at huwag husgahan ang espirituwal na kalagayan ng iba batay sa mga ganitong pasiya. Hindi ito tungkol sa mga utos na tahasang ibinigay ng Diyos.",
+      "images": []
+    },
+    {
+      "i": 69,
+      "kind": "text",
+      "text": "Acts 20: 7… Ang madilim na bahagi ng unang araw ng linggo ay Sabado ng gabi ayon sa biblikal na pagsisimula ng araw sa paglubog ng araw (Genesis 1: 5). Kaya sa pananaw na ito, hindi nito pinatutunayan ang bagong araw ng pagsamba sa Linggo kundi mas umaayon sa pag-iingat sa Sabbath.",
+      "images": []
+    },
+    {
+      "i": 70,
+      "kind": "text",
+      "text": "Mas makatuwirang isipin na ginugol ni Pablo ang huling Sabbath kasama ng iglesia, nagtipon sila buong gabi, naghapunan, nanatili siya hanggang Linggo ng umaga at saka naglakbay dahil tapos na ang Sabbath.",
+      "images": []
+    },
+    {
+      "i": 71,
+      "kind": "text",
+      "text": "Sa pagsusuri sa talata bilang katibayan ng pagsamba sa Linggo sa unang iglesia, sinabi ng bantog na historyador ng iglesia na si Augustus Neander:",
+      "images": []
+    },
+    {
+      "i": 72,
+      "kind": "text",
+      "text": "“Hindi lubos na kapani-paniwala ang talata, sapagkat maaaring pinagsama ng nalalapit na pag-alis ng apostol ang maliit na iglesia sa isang kapatirang hapunan sa paghihiwalay, kung saan nagbigay ang apostol ng huling talumpati, kahit walang natatanging pagdiriwang ng Linggo sa pagkakataong iyon.”",
+      "images": []
+    },
+    {
+      "i": 73,
+      "kind": "text",
+      "text": "The History of the Christian Religion and Church, salin ni Henry John Rose, Tomo 1, p. 337.",
+      "images": []
+    },
+    {
+      "i": 74,
+      "kind": "text",
+      "text": "Colossians 2: 16…",
+      "images": []
+    }
+  ]
+}
