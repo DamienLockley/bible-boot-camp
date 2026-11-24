@@ -47,6 +47,7 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 @media(max-width:800px){.top-inner{flex-wrap:wrap}.top .head-actions{width:100%;justify-content:flex-start}.global-search{flex:1 1 220px}.search-results{left:0;right:auto;max-width:calc(100vw - 22px)}}
 @media(max-width:480px){.top-inner{gap:7px;padding:8px 11px}.brand strong{font-size:15px}.global-search{flex:1 1 100%;order:2}.review{font-size:10px}.nav-link{padding:7px}.top .head-actions{gap:5px}}
 .study-order{font-family:system-ui,sans-serif;font-size:.85em;color:#5d8199;margin-right:5px}
+.table-cell-paragraph{margin:7px 0;border-top:1px solid #d7e1e8}
 </style>
 </head>
 <body>
@@ -152,9 +153,11 @@ function unitsMarkup(from,to){
    if(table.end>to){html+='<p class="table-notice">Table spans beyond this teaching stage. Review stage boundaries before publishing.</p>';continue}
    html+='<div class="table-wrap"><table class="study-table"><caption>'+esc(table.caption)+'</caption>';
    for(let k=0;k<table.rows.length;k++){
-    html+='<tr>'+table.rows[k].map(index=>{
-       const val=highlightRefs(units[index].text||'');
-       return (table.column_headers&&k===0?'<th scope="col" data-unit="'+index+'">':'<td data-unit="'+index+'">')+val+(table.column_headers&&k===0?'</th>':'</td>');
+    html+='<tr>'+table.rows[k].map(cell=>{
+       const indexes=Array.isArray(cell)?cell:[cell];
+       const val=indexes.map(index=>highlightRefs(units[index]?.text||'')).join('<div class="table-cell-paragraph"></div>');
+       const id=indexes.length?' data-unit="'+indexes[0]+'"':'';
+       return (table.column_headers&&k===0?'<th scope="col"'+id+'>':'<td'+id+'>')+val+(table.column_headers&&k===0?'</th>':'</td>');
     }).join('')+'</tr>';
    }
    html+='</table></div>';j=table.end;continue;
