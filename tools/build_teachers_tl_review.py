@@ -333,8 +333,34 @@ def main():
     store(REVIEW/"related-study-resources.json",tl_resources)
     # Historical notes and other enrichment panels still require their own
     # Tagalog review. Preserve the sources instead of pretending they are done.
-    for n in ("main-pathway-enrichments.json","main-historical-notes.json"):
-        shutil.copyfile(ROOT/n,REVIEW/n)
+    # The optional Daniel context panels are review-only supplementary material.
+    # Translate only their text: never alter the Scripture passage, link or order.
+    original_enrichments=load(ROOT/"main-pathway-enrichments.json")
+    tl_enrichments=load(WORK/"main-pathway-enrichments.tl.draft.json")
+    if len(original_enrichments["studies"])!=28 or len(tl_enrichments["studies"])!=28:
+        raise ValueError("Daniel context study count changed")
+    context_count=0
+    for i,(original,translation) in enumerate(zip(original_enrichments["studies"],
+                                                   tl_enrichments["studies"])):
+        if original["study_id"]!=translation["study_id"] or len(original["main_stage_additions"])!=len(translation["main_stage_additions"]):
+            raise ValueError(f"Daniel context {i} changed study ID or main stages")
+        a=original["daniel_context_candidates"]
+        b=translation["daniel_context_candidates"]
+        if len(a)!=len(b):
+            raise ValueError(f"Daniel context {i} changed candidate count")
+        translation["study"]=translated[i]["title"]
+        for j,(en_item,tl_item) in enumerate(zip(a,b)):
+            for field in ("source","scripture","url"):
+                if en_item.get(field)!=tl_item.get(field):
+                    raise ValueError(f"Daniel context {i}/{j} changed {field}")
+            for field in ("title","history_or_interpretation","spiritual_application"):
+                if not tl_item.get(field, "").strip() or en_item[field]==tl_item[field]:
+                    raise ValueError(f"Daniel context {i}/{j} lacks translation for {field}")
+            context_count+=1
+    if context_count!=17 or tl_enrichments.get("translation_progress",{}).get("translated_contexts")!=17:
+        raise ValueError("Expected all 17 optional Daniel context passages")
+    store(REVIEW/"main-pathway-enrichments.json",tl_enrichments)
+    shutil.copyfile(ROOT/"main-historical-notes.json",REVIEW/"main-historical-notes.json")
     html=prepare_html((ROOT/"index.html").read_text("utf-8"))
     (REVIEW/"index.html").write_text(html,encoding="utf-8")
     doc,stats=make_word(sections,translated,mapping,table_data["tables"])
@@ -356,6 +382,7 @@ def main():
         ROOT/"related-study-resources.json",ROOT/"main-pathway-enrichments.json",
         ROOT/"main-historical-notes.json",
         WORK/"related-study-resources.tl.draft.json",
+        WORK/"main-pathway-enrichments.tl.draft.json",
     ] + sorted(WORK.glob("study_[0-9][0-9].json"))
     input_paths += sorted(ROOT.glob("assets/**/*"))
     fingerprint=hashlib.sha256()
@@ -373,8 +400,10 @@ def main():
         "study_order_unchanged":True,
         "supplemental_stages_preserved":True,
         "supplementary_gtk_studies_translated":len(tl_resources["items"]),
+        "optional_daniel_contexts_translated":context_count,
+        "source_truncation_warnings":tl_enrichments["translation_progress"]["source_warnings"],
         "supplementary_gtk_structure_verified":True,
-        "supporting_metadata_note":"All 28 GTKJ supplementary resources translated first-pass; pathway-enrichment prose and remaining site interface still require Tagalog translation/review.",
+        "supporting_metadata_note":"All 28 GTKJ supplementary resources and 17 Daniel context candidates have first-pass Tagalog. Truncated English source excerpts are flagged; interface labels/PDFs need translation and QA.",
         "english_source_sha256":hashlib.sha256((ROOT/"study-data.json").read_bytes()).hexdigest(),
         "word_bytes":word.stat().st_size,
     }
