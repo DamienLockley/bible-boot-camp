@@ -45,10 +45,11 @@ jobs:
           count=sum(1 for p in doc.paragraphs if p.style.name=='Heading 1')
           assert count==28, f'Expected 28 studies, got {count}'
           assert len(doc.tables)>=2, 'Expected original 1844 comparison tables'
-          img=len(doc.part.inline_shapes) if hasattr(doc.part,'inline_shapes') else len(doc.inline_shapes)
-          assert img==20, f'Expected 20 original images, got {img}'
+          embedded=len(doc.inline_shapes)
+          slots=sum(p.text.count('[IMAGE TO REPLACE:') for p in doc.paragraphs)
+          assert embedded+slots==20, f'Expected 20 picture positions, got {embedded} pictures + {slots} placeholders'
           assert file.stat().st_size>150000, 'Word master looks incomplete'
-          print(f'Validated {count} studies, {expected} original units, {len(doc.tables)} tables, {img} pictures and {file.stat().st_size} bytes')
+          print(f'Validated {count} studies, {expected} original units, {len(doc.tables)} tables, {embedded} pictures, {slots} replacement slots and {file.stat().st_size} bytes')
           PY
       - name: Upload editable Word master
         uses: actions/upload-artifact@v4
