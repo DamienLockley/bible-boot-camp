@@ -264,60 +264,60 @@
     },
     {
       "teacher_study_id": 4,
-      "teacher_title": "The Plan of Salvation",
+      "teacher_title": "Ang Plano ng Kaligtasan",
       "gtk_source_id": "salvation",
-      "gtk_title": "The Plan of Salvation",
-      "gtk_lead": "How can I be forgiven and begin again?",
-      "gtk_principle": "We are saved by God’s grace through faith in Jesus, not by religious achievement. The same grace that forgives us begins changing how we live.",
+      "gtk_title": "Ang Plano ng Kaligtasan",
+      "gtk_lead": "Paano ako mapapatawad at makapagsisimulang muli?",
+      "gtk_principle": "Naliligtas tayo sa biyaya ng Diyos sa pamamagitan ng pananampalataya kay Hesus, hindi dahil sa ating mga nagawang panrelihiyon. Ang biyaya ring nagpapatawad sa atin ang nagsisimulang magbago sa paraan ng ating pamumuhay.",
       "gtk_connections": [
         {
-          "title": "The first wound was a broken picture of God",
+          "title": "Ang unang sugat ay ang nasirang pagkakilala sa Diyos",
           "scripture": "Genesis 3:1–13",
-          "insight": "The serpent planted doubt about God’s word and goodness before Adam and Eve ate the fruit. They then moved from trust to fear, hiding and blaming. We recognise the same pattern when we doubt that God wants our good, try to justify ourselves or blame someone else for our choices. Salvation therefore includes more than cancelling a penalty. God must restore our trust, heal our inward selfishness and bring us back into a loving relationship with Him."
+          "insight": "Bago kinain nina Adan at Eva ang bunga, nagtanim muna ang ahas ng pag-aalinlangan sa salita at kabutihan ng Diyos. Mula sa pagtitiwala, napunta sila sa takot, pagtatago, at paninisi. Nakikita natin ang gayunding huwaran kapag nagdududa tayong ninanais ng Diyos ang ating kabutihan, nagsisikap na bigyang-katwiran ang sarili, o sinisisi ang iba sa ating mga pasiya. Kaya ang kaligtasan ay higit pa sa pagpapawalang-bisa ng kaparusahan. Kailangang ibalik ng Diyos ang ating pagtitiwala, pagalingin ang makasariling kalooban, at akayin tayong muli sa mapagmahal na pakikipag-ugnayan sa Kaniya."
         },
         {
-          "title": "God takes the initiative",
+          "title": "Ang Diyos ang unang kumikilos",
           "scripture": "Romans 3:23–26; 5:6–11; John 3:16–17",
-          "insight": "We do not have to persuade an unwilling God to love us. Scripture says that God loved the world and sent His Son while we were still sinners. Jesus did not die to make the Father merciful; His death reveals the Father’s love. This distinction matters to someone who has grown up fearing that God is waiting for a reason to reject them. Grace means God comes to meet a need we could never satisfy by our own effort."
+          "insight": "Hindi natin kailangang hikayatin ang isang Diyos na ayaw magmahal upang mahalin tayo. Sinasabi ng Kasulatan na inibig ng Diyos ang sanlibutan at isinugo ang Kaniyang Anak noong tayo ay mga makasalanan pa. Hindi namatay si Hesus upang gawing maawain ang Ama; inihahayag ng Kaniyang kamatayan ang pag-ibig ng Ama. Mahalaga ang pagkakaibang ito sa taong lumaking natatakot na naghahanap lamang ang Diyos ng dahilan upang siya ay itakwil. Ang biyaya ay nangangahulugang lumalapit ang Diyos upang tugunan ang pangangailangang hindi natin kailanman matutugunan sa sariling pagsisikap."
         },
         {
-          "title": "Forgiveness and new life belong together",
+          "title": "Magkaugnay ang kapatawaran at bagong buhay",
           "scripture": "2 Corinthians 5:17–21; Romans 5:10",
-          "insight": "The Bible speaks of reconciliation—enemies becoming friends—and of a new creation in Christ. The death of Jesus deals with our guilt and estrangement; His risen life is the ground of our hope and continuing transformation. Receiving salvation is not pretending evil never mattered. It is accepting God’s answer to it, turning away from sin and living in a different relationship with Him. Good works flow from that new life; they are not the price we pay to enter it."
+          "insight": "Binabanggit ng Biblia ang pakikipagkasundo—ang dating magkaaway ay nagiging magkaibigan—at ang pagiging bagong nilalang kay Cristo. Tinutugunan ng kamatayan ni Hesus ang ating pagkakasala at pagkakahiwalay; ang Kaniyang muling nabuhay na buhay ang saligan ng ating pag-asa at patuloy na pagbabago. Ang pagtanggap sa kaligtasan ay hindi pagkukunwaring walang kabuluhan ang kasamaan. Ito ay pagtanggap sa tugon ng Diyos dito, pagtalikod sa kasalanan, at pamumuhay sa panibagong pakikipag-ugnayan sa Kaniya. Ang mabubuting gawa ay bunga ng bagong buhay, hindi ang halagang ibinabayad natin upang matamo ito."
         }
       ],
       "gtk_questions": [
         {
-          "question": "I have done things I regret. Can God really forgive me?",
-          "answer": "Yes. The invitation of the gospel is for sinners who turn to God in trust and repentance. Forgiveness does not mean pretending harm never happened; where possible we also make things right."
+          "question": "May mga nagawa akong pinagsisisihan. Mapapatawad ba talaga ako ng Diyos?",
+          "answer": "Oo. Ang paanyaya ng ebanghelyo ay para sa mga makasalanang lumalapit sa Diyos nang may pagtitiwala at pagsisisi. Ang kapatawaran ay hindi pagkukunwaring walang nagawang pinsala; kung maaari, sinisikap din nating ituwid ang ating pagkakamali."
         },
         {
-          "question": "Do I have to become good before I come to Jesus?",
-          "answer": "No. Come as you are. Accepting Christ begins a process in which He changes us."
+          "question": "Kailangan ko bang maging mabuti muna bago lumapit kay Hesus?",
+          "answer": "Hindi. Lumapit ka sa kalagayan mo ngayon. Sa pagtanggap kay Cristo, nagsisimula ang prosesong binabago Niya tayo."
         },
         {
-          "question": "Why do commandments matter if salvation is free?",
-          "answer": "Because love changes how we treat God and other people. Obedience grows out of trust and gratitude; it cannot buy salvation."
+          "question": "Bakit mahalaga pa ang mga utos kung libre ang kaligtasan?",
+          "answer": "Dahil binabago ng pag-ibig ang pakikitungo natin sa Diyos at sa kapwa. Ang pagsunod ay lumalago mula sa pagtitiwala at pasasalamat; hindi nito mabibili ang kaligtasan."
         }
       ],
-      "gtk_practice": "Read Luke 15:11–24. Write a short prayer expressing one thing you need to bring honestly to God, and one promise you want to trust.",
+      "gtk_practice": "Basahin ang Lucas 15:11–24. Sumulat ng maikling panalangin na tapat na nagsasabi ng isang bagay na kailangan mong dalhin sa Diyos at isang pangakong nais mong panghawakan.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 9:24–24: 9:24  The seventy weeks and the work of reconciliation",
+          "title": "Daniel 9:24–24: 9:24 Ang pitumpung linggo at ang gawain ng pakikipagkasundo",
           "href": "../daniel/index.html#section-9-24",
           "anchor": "section-9-24"
         },
         {
           "source": "revelation",
-          "title": "The Lion appears as a slain Lamb",
+          "title": "Ang Leon ay nahayag bilang Korderong pinatay",
           "passage": "Revelation 5:5",
           "href": "../revelation/index.html#rev-5-5",
           "anchor": "rev-5-5"
         },
         {
           "source": "revelation",
-          "title": "Everything made new",
+          "title": "Ginagawang bago ang lahat",
           "passage": "Revelation 21:1",
           "href": "../revelation/index.html#rev-21-1",
           "anchor": "rev-21-1"
@@ -326,60 +326,60 @@
     },
     {
       "teacher_study_id": 5,
-      "teacher_title": "The Law",
+      "teacher_title": "Ang Kautusan",
       "gtk_source_id": "law",
-      "gtk_title": "The Law of God",
-      "gtk_lead": "Are God’s commandments about rules or love?",
-      "gtk_principle": "God’s law reveals the shape of love and freedom. It cannot save us, but the Spirit writes its principles on the hearts of those Christ has saved.",
+      "gtk_title": "Ang Kautusan ng Diyos",
+      "gtk_lead": "Ang mga utos ba ng Diyos ay tungkol lamang sa mga tuntunin, o tungkol sa pag-ibig?",
+      "gtk_principle": "Ipinakikita ng kautusan ng Diyos ang anyo ng pag-ibig at kalayaan. Hindi tayo nito kayang iligtas, ngunit isinusulat ng Espiritu ang mga simulain nito sa puso ng mga iniligtas ni Cristo.",
       "gtk_connections": [
         {
-          "title": "Love gives the commandments their meaning",
+          "title": "Ang pag-ibig ang nagbibigay-kahulugan sa mga utos",
           "scripture": "Matthew 22:36–40; Romans 13:8–10",
-          "insight": "Jesus summarised the law as love for God and neighbour. This does not mean loving feelings replace clear moral guidance. Rather, the commandments show love in action: truthful speech, faithfulness, respect for life, honour for family and freedom from greed protect relationships. A rule followed without love can become cold and proud; love with no concern for others’ wellbeing can become an empty slogan. Jesus brings the two together."
+          "insight": "Binuod ni Hesus ang kautusan bilang pag-ibig sa Diyos at sa kapwa. Hindi nito ibig sabihing papalitan ng damdaming mapagmahal ang malinaw na patnubay sa mabuting asal. Sa halip, ipinakikita ng mga utos ang pag-ibig sa gawa: ang pagsasalita ng katotohanan, katapatan, paggalang sa buhay, pagpaparangal sa pamilya, at pag-iwas sa kasakiman ay nangangalaga sa mga ugnayan. Ang tuntuning sinusunod nang walang pag-ibig ay maaaring maging malamig at mapagmataas; ang pag-ibig na walang malasakit sa kapakanan ng iba ay maaaring maging hungkag na pananalita. Pinag-uugnay ni Hesus ang dalawa."
         },
         {
-          "title": "Rescue came before the commandments",
+          "title": "Nauna ang pagliligtas bago ang mga utos",
           "scripture": "Exodus 20:1–17; Romans 3:20–31",
-          "insight": "Before speaking the Ten Commandments, God reminded Israel that He had brought them out of slavery. The order is important. He did not tell them to obey perfectly so He might consider freeing them. He rescued them and then taught them how free people could live. The law reveals sin and explains God’s will, but cannot wash away guilt or provide the power to change the heart. Salvation is God’s gift; obedience is its fitting response."
+          "insight": "Bago ibinigay ng Diyos ang Sampung Utos, ipinaalala Niya sa Israel na inilabas Niya sila sa pagkaalipin. Mahalaga ang pagkakasunod-sunod na ito. Hindi Niya sinabing kailangan muna silang sumunod nang ganap bago Niya isaalang-alang ang pagpapalaya sa kanila. Iniligtas muna Niya sila, saka itinuro kung paano mamuhay ang mga taong malaya. Ibinubunyag ng kautusan ang kasalanan at ipinapaliwanag ang kalooban ng Diyos, ngunit hindi nito mahuhugasan ang kasalanan o mabibigyan ng kapangyarihang baguhin ang puso. Ang kaligtasan ay kaloob ng Diyos; ang pagsunod ang nararapat na pagtugon."
         },
         {
-          "title": "A law of liberty",
+          "title": "Isang kautusan ng kalayaan",
           "scripture": "James 1:22–25; Psalm 119:32",
-          "insight": "People sometimes imagine that every boundary must be an enemy of freedom. But a world without truthfulness, honesty or faithfulness would leave everyone less safe and less free. Like learning a musical instrument, discipline can open opportunities that carelessness would destroy. James calls God’s instruction a law of liberty because it directs us away from habits that enslave. The question is not simply, “What am I allowed to do?” but “What kind of person is love teaching me to become?”"
+          "insight": "Iniisip minsan ng tao na ang lahat ng hangganan ay kaaway ng kalayaan. Ngunit sa isang mundong walang katotohanan, katapatan, o pagtupad sa pangako, mas mababawasan ang kaligtasan at kalayaan ng bawat isa. Tulad ng pag-aaral tumugtog ng instrumento, ang disiplina ay maaaring magbukas ng mga pagkakataong sinisira ng kawalang-ingat. Tinatawag ni Santiago ang tagubilin ng Diyos na kautusan ng kalayaan sapagkat inilalayo tayo nito sa mga kaugaliang umaalipin. Ang tanong ay hindi lamang, “Ano ang pinapayagan kong gawin?” kundi “Anong uri ng tao ang itinuturo ng pag-ibig na maging ako?”"
         }
       ],
       "gtk_questions": [
         {
-          "question": "Does keeping the commandments make me worthy of salvation?",
-          "answer": "No. Salvation is a gift through Christ. Keeping God’s commands is a response to grace, not a way to purchase it."
+          "question": "Ginagawa ba akong karapat-dapat sa kaligtasan ng pagtupad sa mga utos?",
+          "answer": "Hindi. Ang kaligtasan ay kaloob sa pamamagitan ni Cristo. Ang pagsunod sa mga utos ng Diyos ay tugon sa biyaya, hindi paraan upang bilhin ito."
         },
         {
-          "question": "What if following God feels restrictive?",
-          "answer": "Ask what each command protects: trust, rest, family, life, truth or contentment. Like healthy boundaries in relationships, loving principles make freedom safer."
+          "question": "Paano kung parang naghihigpit sa akin ang pagsunod sa Diyos?",
+          "answer": "Itanong kung ano ang pinangangalagaan ng bawat utos: pagtitiwala, kapahingahan, pamilya, buhay, katotohanan, o pagkakontento. Gaya ng mabubuting hangganan sa mga relasyon, ginagawang mas ligtas ng mapagmahal na mga simulain ang kalayaan."
         },
         {
-          "question": "Are kindness and obedience opposites?",
-          "answer": "No. Jesus showed that true obedience is shaped by mercy, truth and love."
+          "question": "Magkasalungat ba ang kabaitan at pagsunod?",
+          "answer": "Hindi. Ipinakita ni Hesus na ang tunay na pagsunod ay hinuhubog ng awa, katotohanan, at pag-ibig."
         }
       ],
-      "gtk_practice": "Read Exodus 20. For each command, write the positive relationship it protects. Finish by reflecting on how grace changes your motivation.",
+      "gtk_practice": "Basahin ang Exodo 20. Sa bawat utos, isulat ang mabuting ugnayang pinangangalagaan nito. Pagkatapos, pagnilayan kung paano binabago ng biyaya ang dahilan ng iyong pagsunod.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
           "href": "../daniel/index.html#section-7-19",
           "anchor": "section-7-19"
         },
         {
           "source": "revelation",
-          "title": "The remnant and the testimony of Jesus",
+          "title": "Ang nalabi at ang patotoo ni Hesus",
           "passage": "Revelation 12:17",
           "href": "../revelation/index.html#rev-12-17",
           "anchor": "rev-12-17"
         },
         {
           "source": "revelation",
-          "title": "Third angel: a warning against false worship",
+          "title": "Ikatlong anghel: babala laban sa huwad na pagsamba",
           "passage": "Revelation 14:9",
           "href": "../revelation/index.html#rev-14-9",
           "anchor": "rev-14-9"
@@ -388,66 +388,66 @@
     },
     {
       "teacher_study_id": 6,
-      "teacher_title": "Antichrist",
+      "teacher_title": "Ang Anticristo",
       "gtk_source_id": "antichrist",
-      "gtk_title": "Antichrist",
-      "gtk_lead": "How can a false religion take attention away from Jesus?",
-      "gtk_principle": "Jesus alone saves and deserves our ultimate loyalty. Prophecy warns that religious power can counterfeit His authority and redirect worship away from Him.",
+      "gtk_title": "Ang Anticristo",
+      "gtk_lead": "Paano maililihis ng huwad na relihiyon ang pansin mula kay Hesus?",
+      "gtk_principle": "Si Hesus lamang ang nagliligtas at karapat-dapat sa ating pinakamataas na katapatan. Nagbababala ang propesiya na maaaring gayahin ng kapangyarihang panrelihiyon ang Kaniyang awtoridad at ilihis ang pagsamba palayo sa Kaniya.",
       "gtk_connections": [
         {
-          "title": "Begin with the plain passages",
+          "title": "Magsimula sa malinaw na mga talata",
           "scripture": "1 John 2:18–23; 4:1–3",
-          "insight": "John warns that there are many antichrists and directs attention to what people teach about Jesus. The issue begins with truth about Christ, not speculation about an unfamiliar future villain. Someone can use Christian words yet shift trust away from the real Saviour. Before studying prophetic symbols, learn to ask a basic question: does this teaching lead people toward the Jesus revealed in Scripture, or does it place another authority where only He belongs?"
+          "insight": "Nagbabala si Juan na maraming anticristo at itinuon niya ang pansin sa itinuturo ng mga tao tungkol kay Hesus. Nagsisimula ang usapin sa katotohanan tungkol kay Cristo, hindi sa haka-haka tungkol sa isang di-kilalang kontrabida sa hinaharap. Maaaring gumamit ang isang tao ng mga salitang Kristiyano ngunit ilihis ang pagtitiwala mula sa tunay na Tagapagligtas. Bago pag-aralan ang mga sagisag ng propesiya, matutuhang itanong ang pangunahing tanong: inaakay ba ng turong ito ang mga tao sa Hesus na ipinakikilala ng Kasulatan, o inilalagay nito ang ibang awtoridad sa lugar na sa Kaniya lamang nararapat?"
         },
         {
-          "title": "The danger of religious power",
+          "title": "Ang panganib ng kapangyarihang panrelihiyon",
           "scripture": "2 Thessalonians 2:3–12; Daniel 7:8, 24–25",
-          "insight": "These passages describe rebellion clothed with religious claims and power that opposes God. The study follows the successive kingdoms of Daniel before considering the later religious-political power. In that approach, the symbols concern systems and claims of authority rather than judging the heart of every person connected to an institution. God alone knows individuals. We can oppose false claims and religious coercion while treating people of every faith with dignity and love."
+          "insight": "Inilalarawan ng mga talatang ito ang paghihimagsik na nababalutan ng mga pag-aangking panrelihiyon at isang kapangyarihang sumasalungat sa Diyos. Sinusundan ng pag-aaral ang magkakasunod na kaharian sa Daniel bago talakayin ang sumunod na kapangyarihang panrelihiyon at pampolitika. Sa ganitong pag-unawa, ang mga sagisag ay tumutukoy sa mga sistema at pag-aangkin ng awtoridad, hindi sa paghatol sa puso ng bawat taong kaugnay ng isang institusyon. Diyos lamang ang nakaaalam sa bawat tao. Maaari nating tutulan ang mga maling pag-aangkin at pamimilit sa relihiyon habang pinakikitunguhan nang may dignidad at pag-ibig ang mga tao sa lahat ng pananampalataya."
         },
         {
-          "title": "Worship cannot be compelled",
+          "title": "Hindi maaaring ipilit ang pagsamba",
           "scripture": "Revelation 13:11–17; 14:6–12",
-          "insight": "Revelation contrasts a power that applies pressure with God’s call to worship the Creator. Forced religion may create public conformity, but it cannot produce love. This connection brings together earlier lessons about the conflict between good and evil, the gospel, the law and the new covenant. A person who knows Jesus and values conscience is being prepared to choose Him even when that choice is unpopular."
+          "insight": "Inihahambing ng Apocalipsis ang kapangyarihang namimilit sa panawagan ng Diyos na sambahin ang Manlilikha. Maaaring makalikha ng panlabas na pagsunod ang sapilitang relihiyon, ngunit hindi ito makalilikha ng pag-ibig. Pinag-uugnay nito ang mga naunang aralin tungkol sa tunggalian ng mabuti at masama, ebanghelyo, kautusan, at bagong tipan. Ang taong nakakakilala kay Hesus at nagpapahalaga sa kalayaan ng budhi ay inihahandang piliin Siya kahit hindi iyon popular."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Are Catholic people the enemy?",
-          "answer": "No. Our neighbours are people worthy of respect and love. This study critiques historic structures and claims of authority; it must not be used to judge individual people or their sincerity."
+          "question": "Kaaway ba ang mga Katoliko?",
+          "answer": "Hindi. Ang ating kapwa ay mga taong nararapat igalang at mahalin. Sinusuri ng pag-aaral na ito ang makasaysayang mga estruktura at pag-aangkin ng awtoridad; hindi ito dapat gamitin upang hatulan ang mga indibidwal o ang katapatan ng kanilang pananampalataya."
         },
         {
-          "question": "Why do Christians interpret these prophecies differently?",
-          "answer": "They use different interpretive approaches. Follow Daniel’s symbols in context and check historical identifications against credible evidence."
+          "question": "Bakit magkakaiba ang pagkaunawa ng mga Kristiyano sa mga propesiyang ito?",
+          "answer": "Magkakaiba ang ginagamit nilang paraan ng pagpapakahulugan. Sundan ang mga sagisag ng Daniel ayon sa konteksto at suriin ang mga makasaysayang pagtukoy gamit ang mapagkakatiwalaang katibayan."
         },
         {
-          "question": "How do I avoid being deceived?",
-          "answer": "Keep your attention on Jesus, read Scripture in context and resist anyone who demands unquestioning religious loyalty."
+          "question": "Paano ako makaiiwas sa panlilinlang?",
+          "answer": "Ituon ang pansin kay Hesus, basahin ang Kasulatan ayon sa konteksto, at huwag magpadala sa sinumang humihingi ng walang-pasubaling katapatang panrelihiyon."
         }
       ],
-      "gtk_practice": "Make two columns: “the character of Christ” and “claims of counterfeit authority”. Put a verse beside each entry, and pray for faithfulness and love.",
+      "gtk_practice": "Gumawa ng dalawang hanay: “ang karakter ni Cristo” at “mga pag-aangkin ng huwad na awtoridad”. Maglagay ng isang talata sa Biblia sa tabi ng bawat entry at manalangin para sa katapatan at pag-ibig.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 7:7–8: The fourth beast and the little horn",
+          "title": "Daniel 7:7–8: Ang ikaapat na hayop at ang maliit na sungay",
           "href": "../daniel/index.html#section-7-7",
           "anchor": "section-7-7"
         },
         {
           "source": "daniel",
-          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
           "href": "../daniel/index.html#section-7-19",
           "anchor": "section-7-19"
         },
         {
           "source": "revelation",
-          "title": "The sea beast receives authority",
+          "title": "Tumanggap ng kapangyarihan ang hayop mula sa dagat",
           "passage": "Revelation 13:1",
           "href": "../revelation/index.html#rev-13-1",
           "anchor": "rev-13-1"
         },
         {
           "source": "revelation",
-          "title": "The angel explains the beast",
+          "title": "Ipinaliwanag ng anghel ang hayop",
           "passage": "Revelation 17:7",
           "href": "../revelation/index.html#rev-17-7",
           "anchor": "rev-17-7"
@@ -456,59 +456,59 @@
     },
     {
       "teacher_study_id": 7,
-      "teacher_title": "The Seventy Week Prophecy",
+      "teacher_title": "Ang Propesiya ng Pitumpung Linggo",
       "gtk_source_id": "seventy-weeks",
-      "gtk_title": "The Seventy Week Prophecy",
-      "gtk_lead": "What does Daniel’s timeline say about Jesus?",
-      "gtk_principle": "Daniel 9 provides a prophetic timeline focused on the Messiah. Its significance is that Jesus’ ministry and sacrifice stand at the centre of God’s promises.",
+      "gtk_title": "Ang Propesiya ng Pitumpung Linggo",
+      "gtk_lead": "Ano ang ipinahihiwatig ng takdang panahon sa Daniel tungkol kay Hesus?",
+      "gtk_principle": "Nagbibigay ang Daniel 9 ng isang takdang panahon sa propesiya na nakatuon sa Mesiyas. Mahalaga ito sapagkat ang ministeryo at sakripisyo ni Hesus ang sentro ng mga pangako ng Diyos.",
       "gtk_connections": [
         {
-          "title": "The setting is a prayer for restoration",
+          "title": "Ang konteksto ay isang panalangin para sa pagpapanumbalik",
           "scripture": "Daniel 9:1–23",
-          "insight": "Daniel does not begin by trying to solve a puzzle. He confesses sin, remembers God’s mercy and prays for the restoration of Jerusalem. The angel’s explanation comes in the setting of God’s covenant faithfulness. Reading the chapter this way keeps the dates from becoming an isolated exercise. The point of the prophecy is God’s work of reconciliation and the coming Messiah, not the thrill of calculating numbers."
+          "insight": "Hindi nagsimula si Daniel sa pagtatangkang lumutas ng palaisipan. Ipinahayag niya ang kasalanan, inalala ang awa ng Diyos, at nanalangin para sa pagpapanumbalik ng Jerusalem. Dumating ang paliwanag ng anghel sa konteksto ng katapatan ng Diyos sa Kaniyang tipan. Sa ganitong pagbasa, ang mga petsa ay hindi nagiging hiwalay na pagsasanay lamang sa pagkukuwenta. Ang layunin ng propesiya ay ang gawain ng Diyos sa pakikipagkasundo at ang pagdating ng Mesiyas, hindi ang kasabikang magkuwenta ng mga numero."
         },
         {
-          "title": "Why the seventy weeks are understood as years",
+          "title": "Bakit itinuturing na mga taon ang pitumpung linggo",
           "scripture": "Daniel 9:24–27; Numbers 14:34; Ezekiel 4:6",
-          "insight": "Seventy weeks contain 490 days. The study uses the prophetic day-for-year principle to understand that period as 490 years. This is an interpretive step that should be shown, not assumed: the examples in Numbers and Ezekiel illustrate how a day can stand for a year in a prophetic setting. After identifying the proposed starting decree, readers can follow the reasoning and check whether the resulting timeline fits the ministry of Jesus."
+          "insight": "Ang pitumpung linggo ay may 490 araw. Ginagamit ng pag-aaral ang simulaing isang araw para sa isang taon sa propesiya upang unawain ang panahong ito bilang 490 taon. Isa itong hakbang sa pagpapakahulugan na dapat ipaliwanag, hindi basta ipalagay: ipinakikita ng mga halimbawa sa Mga Bilang at Ezekiel kung paano maaaring kumatawan ang isang araw sa isang taon sa konteksto ng propesiya. Pagkatapos tukuyin ang ipinapanukalang panimulang utos, maaaring sundan ng mambabasa ang pangangatwiran at suriin kung naaayon sa ministeryo ni Hesus ang resulta ng takdang panahon."
         },
         {
-          "title": "The centre is the Messiah",
+          "title": "Ang sentro ay ang Mesiyas",
           "scripture": "Ezra 7:11–26; Luke 3:21–23; Daniel 9:25–27",
-          "insight": "The outline begins with the restoration decree associated with 457 BC, moves toward the anointing of Jesus in AD 27, and places His death in the middle of the final prophetic week. The framework rests on historical identification and the day-for-year reading, not on a verse that directly prints all those modern dates. The wonder of the lesson is the role of Christ: the promised King comes to save through sacrifice, not merely to seize a throne."
+          "insight": "Nagsisimula ang balangkas sa utos na may kaugnayan sa pagpapanumbalik noong 457 BC, sumusulong patungo sa pagpapahid kay Hesus noong AD 27, at inilalagay ang Kaniyang kamatayan sa kalagitnaan ng huling linggo ng propesiya. Ang balangkas na ito ay nakasalig sa makasaysayang pagtukoy at sa pagbasa ng isang araw bilang isang taon, hindi sa isang talatang tuwirang nagtatala ng lahat ng makabagong petsang iyon. Ang kahanga-hanga sa aralin ay ang papel ni Cristo: dumarating ang ipinangakong Hari upang magligtas sa pamamagitan ng sakripisyo, hindi lamang upang agawin ang isang trono."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Do I need to understand all the numbers to follow Jesus?",
-          "answer": "No. First see the central message: God keeps His promises and Jesus is the promised Saviour. You can learn the timeline a step at a time."
+          "question": "Kailangan ko bang maunawaan ang lahat ng numero upang sumunod kay Hesus?",
+          "answer": "Hindi. Unawain muna ang pangunahing mensahe: tinutupad ng Diyos ang Kaniyang mga pangako, at si Hesus ang ipinangakong Tagapagligtas. Maaari mong pag-aralan ang takdang panahon nang paisa-isang hakbang."
         },
         {
-          "question": "Are all Christians agreed on the dates?",
-          "answer": "No. Christians differ about Daniel 9 and some historical dates. Compare the verses, the starting decree and the year-day reasoning before deciding what the timeline means."
+          "question": "Nagkakaisa ba ang lahat ng Kristiyano sa mga petsa?",
+          "answer": "Hindi. Magkakaiba ang pagkaunawa ng mga Kristiyano sa Daniel 9 at sa ilang makasaysayang petsa. Ihambing ang mga talata, ang panimulang utos, at ang pangangatwirang isang araw para sa isang taon bago magpasya kung ano ang kahulugan ng takdang panahon."
         },
         {
-          "question": "What is the most important part of the prophecy?",
-          "answer": "Its focus on the Messiah and the meaning of His death—not winning an argument about arithmetic."
+          "question": "Ano ang pinakamahalagang bahagi ng propesiya?",
+          "answer": "Ang pagtutok nito sa Mesiyas at ang kahulugan ng Kaniyang kamatayan—hindi ang pagkapanalo sa pagtatalo tungkol sa mga numero."
         }
       ],
-      "gtk_practice": "Draw a timeline labelled 457 BC, AD 27, AD 31 and AD 34. Beside each point write the relevant event and a supporting biblical passage.",
+      "gtk_practice": "Gumuhit ng takdang panahon na may mga tandang 457 BC, AD 27, AD 31, at AD 34. Sa tabi ng bawat isa, isulat ang kaugnay na pangyayari at isang talata sa Biblia na sumusuporta rito.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 9:24–24: 9:24  The seventy weeks and the work of reconciliation",
+          "title": "Daniel 9:24–24: 9:24 Ang pitumpung linggo at ang gawain ng pakikipagkasundo",
           "href": "../daniel/index.html#section-9-24",
           "anchor": "section-9-24"
         },
         {
           "source": "daniel",
-          "title": "Daniel 9:25–25: 9:25  From the command to restore Jerusalem to Messiah",
+          "title": "Daniel 9:25–25: 9:25 Mula sa utos na ibalik ang Jerusalem hanggang sa Mesiyas",
           "href": "../daniel/index.html#section-9-25",
           "anchor": "section-9-25"
         },
         {
           "source": "revelation",
-          "title": "First angel: everlasting gospel and judgment",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
           "passage": "Revelation 14:6",
           "href": "../revelation/index.html#rev-14-6",
           "anchor": "rev-14-6"
@@ -1724,9 +1724,14 @@
       0,
       1,
       2,
-      3
+      3,
+      4,
+      5,
+      6,
+      7
     ],
     "source_file": "teachers-guide/related-study-resources.json",
-    "unpublished": true
+    "unpublished": true,
+    "note": "First eight supporting resource studies translated; remaining 20 are still English and unpublished."
   }
 }
