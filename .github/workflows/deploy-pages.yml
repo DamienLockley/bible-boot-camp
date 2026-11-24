@@ -17,10 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout website
@@ -31,7 +28,15 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
-      - name: Wait for GitHub Pages artifact to become visible
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Confirm completed upload is indexed by GitHub Actions
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
@@ -40,13 +45,16 @@ jobs:
           for attempt in $(seq 1 36); do
             count="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?per_page=100" --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length' 2>/dev/null || echo 0)"
             if [[ "$count" =~ ^[0-9]+$ ]] && (( count > 0 )); then
-              echo "GitHub Pages artifact is visible to the Actions API."
+              echo "Artifact is visible after build job completion."
+              # The Pages deployment API has a separate artifact index.
+              # Give that index time to catch up before deploy-pages queries it.
+              sleep 30
               exit 0
             fi
-            echo "Artifact indexing pending (attempt $attempt/36); checking again in 5 seconds."
+            echo "Waiting for GitHub Actions artifact indexing ($attempt/36)."
             sleep 5
           done
-          echo "::error::Uploaded github-pages artifact is not visible to the Actions API after 3 minutes."
+          echo "::error::Could not verify github-pages artifact indexing."
           exit 1
       - name: Deploy GitHub Pages
         id: deployment
