@@ -721,7 +721,7 @@ function showVerse(ref){
  $('verse-modal').classList.remove('hidden');$('verse-title').textContent=ref+' — KJV';
  if(!kjv){$('verse-text').textContent=kjvStatus;loadKjvOnce();return}
  const refs=expandReferences(ref);
- if(!refs.length){$('verse-text').textContent='This reference could not be interpreted.';return}
+ if(!refs.length){$('verse-text').textContent='Hindi mabigyang-kahulugan ang sangguniang ito.';return}
  $('verse-text').innerHTML=refs.map(key=>kjv[key]
  ?`<div class="kjv-verse"><b>${esc(key)}</b> ${esc(String(kjv[key]).replace(/^#\s*/,''))}</div>`
  :`<p>Verse not found in stored KJV: ${esc(key)}</p>`).join('');
@@ -729,7 +729,7 @@ function showVerse(ref){
 function closeVerse(){$('verse-modal').classList.add('hidden')}
 let kjvPromise=null;
 function loadKjvOnce(){if(!kjvPromise)kjvPromise=loadKjv();return kjvPromise;}
-async function loadKjv(){try{const r=await fetch('../../kjv-verses.json');if(!r.ok)throw Error('KJV data not yet added');kjv=await r.json();kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}catch(e){kjvStatus='KJV text is not installed in this package yet. Add kjv-verses.json from your Google Drive folder before publishing. '+e.message; if(!$('verse-modal').classList.contains('hidden'))$('verse-text').textContent=kjvStatus}}
+async function loadKjv(){try{const r=await fetch('../../kjv-verses.json');if(!r.ok)throw Error('KJV data not yet added');kjv=await r.json();kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}catch(e){kjvStatus='Wala pang naka-install na tekstong KJV sa paketeng ito. Idagdag ang kjv-verses.json bago ilathala. '+e.message; if(!$('verse-modal').classList.contains('hidden'))$('verse-text').textContent=kjvStatus}}
 
 
 
@@ -1031,8 +1031,8 @@ $('feedback-form').addEventListener('formdata',e=>{
 $('feedback-form').addEventListener('submit',e=>{
  e.preventDefault();
  const form=$('feedback-form'),status=$('feedback-status'),endpoint=window.SITE_CONFIG?.contactWebAppUrl;
- if(teacherFeedbackPending){status.textContent='Your previous message is still being processed.';return;}
- if(!endpoint){status.textContent='Online sending is unavailable at present. Please try again later.';return;}
+ if(teacherFeedbackPending){status.textContent='Pinoproseso pa ang nauna mong mensahe.';return;}
+ if(!endpoint){status.textContent='Hindi magagamit sa ngayon ang pagpapadala online. Pakisubukang muli mamaya.';return;}
  if(!form.reportValidity())return;
  const nonce=String(Date.now())+'-'+Math.random().toString(36).slice(2);
  $('feedback-nonce').value=nonce;$('feedback-started').value=String(Date.now());
@@ -1045,7 +1045,7 @@ $('feedback-form').addEventListener('submit',e=>{
   if(teacherFeedbackPending!==nonce)return;
   teacherFeedbackPending=null;
   form.querySelector('[type="submit"]').disabled=false;
-  status.textContent='Delivery could not be confirmed. Check whether your message was received before trying again.';
+  status.textContent='Hindi makumpirma ang pagpapadala. Tiyaking hindi pa natanggap ang iyong mensahe bago muling sumubok.';
  },20000);
  form.submit();
 });
@@ -1061,7 +1061,7 @@ window.addEventListener('message',event=>{
  if(!trustedGoogle&&!(event.origin==='null'&&event.source===frame.contentWindow))return;
  clearTimeout(teacherFeedbackTimer);teacherFeedbackPending=null;
  $('feedback-form').querySelector('[type="submit"]').disabled=false;
- $('feedback-status').textContent=data.ok?'Naipadala ang mensahe. Salamat.':(data.message||'The message could not be sent.');
+ $('feedback-status').textContent=data.ok?'Naipadala ang mensahe. Salamat.':(data.message||'Hindi naipadala ang mensahe.');
  if(data.ok)$('feedback-form').reset();
 });
 
@@ -1078,7 +1078,7 @@ Promise.all([
  fetch('./table-layouts.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Tables HTTP '+r.status);return r.json()}),
  fetch('./main-historical-notes.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Historical notes HTTP '+r.status);return r.json()})
 ]).then(([source,map,related,enriched,tables,history])=>{
- if(!Array.isArray(source.sections)||!Array.isArray(map.studies)||source.sections.length!==map.studies.length)throw Error('Study count mismatch');
+ if(!Array.isArray(source.sections)||!Array.isArray(map.studies)||source.sections.length!==map.studies.length)throw Error('Hindi tumutugma ang bilang ng mga pag-aaral');
  for(let i=0;i<source.sections.length;i++)if(source.sections[i].title!==map.studies[i].title||source.sections[i].units.length!==map.studies[i].source_unit_count)throw Error('Source mismatch: '+i);
  if(related.items.length!==map.studies.length||enriched.studies.length!==map.studies.length)throw Error('Resource count mismatch');
  const byGtkj=new Map(related.items.map(x=>[x.gtk_source_id,x.teacher_study_id]));
