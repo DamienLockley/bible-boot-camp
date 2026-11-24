@@ -46,6 +46,7 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 .top .head-actions{flex:1;justify-content:flex-end}
 @media(max-width:800px){.top-inner{flex-wrap:wrap}.top .head-actions{width:100%;justify-content:flex-start}.global-search{flex:1 1 220px}.search-results{left:0;right:auto;max-width:calc(100vw - 22px)}}
 @media(max-width:480px){.top-inner{gap:7px;padding:8px 11px}.brand strong{font-size:15px}.global-search{flex:1 1 100%;order:2}.review{font-size:10px}.nav-link{padding:7px}.top .head-actions{gap:5px}}
+.study-order{font-family:system-ui,sans-serif;font-size:.85em;color:#5d8199;margin-right:5px}
 </style>
 </head>
 <body>
@@ -63,8 +64,12 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 <div id="verse-modal" class="modal hidden" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel"><button onclick="closeVerse()">Close ✕</button><h2 id="verse-title"></h2><div id="verse-text"></div></div></div>
 <div id="image-modal" class="modal hidden" onclick="if(event.target.id==='image-modal')closeImage()"><div class="panel"><button onclick="closeImage()">Close ✕</button><div id="image-content" style="text-align:center;margin-top:10px"></div></div></div>
 <script>
-let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,tableLayouts=null,historicalNotes=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=true,kjv=null,kjvStatus='Loading stored KJV verses…';
+let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,tableLayouts=null,historicalNotes=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=false,kjv=null,kjvStatus='Loading stored KJV verses…';
 let searchHits=[],searchExpanded=new Set();
+// Exact published GTKJ study sequence; maps to stable teacher study IDs without reordering their content.
+const GTKJ_ORDER=["word","history","controversy","salvation","spirit","sanctuary","blue-stone","law","sabbath","prayer","baptism","living","health","stewardship","nature","second-coming","millennium","hell","seventy-weeks","judgement","1844","antichrist","america","mark","prophecy-gift","godhead","remnant","witnessing"];
+let gtkjRank=new Map();
+function orderStudies(studies){const sorted=studies.slice();if(sortAZ)sorted.sort((a,b)=>a.title.localeCompare(b.title));else sorted.sort((a,b)=>(gtkjRank.get(a.id)??999)-(gtkjRank.get(b.id)??999));return sorted;}
 const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const bibleBook = String.raw`(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Songs?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Nah|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev)`;
 const verseSpan = String.raw`\d+(?:\s*[-‐‑‒–—−]\s*(?:\d+\s*[:：]\s*)?\d+)?`;
@@ -193,7 +198,7 @@ function renderSearch(){
   }
  }
  searchHits=hits;
- const groups=teachMap.studies.map(study=>({study,hits:hits.filter(x=>x.study===study.id)})).filter(g=>g.hits.length);
+ const groups=orderStudies(teachMap.studies).map(study=>({study,hits:hits.filter(x=>x.study===study.id)})).filter(g=>g.hits.length);
  let html='<div class="search-summary"><strong>'+hits.length+' matching passage'+(hits.length===1?'':'s')+'</strong> in '+groups.length+' studies <button type="button" data-close-search>Close ×</button></div>';
  if(!groups.length)html+='<p class="search-empty">No matches found in the studies.</p>';
  for(const g of groups){
@@ -206,11 +211,11 @@ function renderSearch(){
  panel.innerHTML=html;panel.classList.remove('hidden');$('search').setAttribute('aria-expanded','true');
 }
 function renderLibrary(){
- let arr=teachMap.studies.slice();if(sortAZ)arr.sort((a,b)=>a.title.localeCompare(b.title));
- $('sort').textContent=sortAZ?'A–Z':'Original order';
- $('library-list').innerHTML=arr.map(x=>'<button class="lib-item" data-study="'+x.id+'"><strong>'+esc(x.title)+'</strong><span>'+esc(x.purpose)+'</span></button>').join('');
+ const arr=orderStudies(teachMap.studies);
+ $('sort').textContent=sortAZ?'A–Z':'GTKJ order';
+ $('library-list').innerHTML=arr.map(x=>'<button class="lib-item" data-study="'+x.id+'"><strong><span class="study-order">'+(gtkjRank.get(x.id)??0)+'.</span> '+esc(x.title)+'</strong><span>'+esc(x.purpose)+'</span></button>').join('');
 }
-function openStudy(i){closeSearch();current=i;stageKind='core';stageIndex=0;mode='guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('study-title').textContent=studyData[i].title;$('study-number').textContent='STUDY '+(i+1)+' • freely selected';const t=teachMap.studies[i];$('purpose').textContent=t.purpose;$('central').textContent=t.central_truth;renderMode();scrollTo(0,0)}
+function openStudy(i){closeSearch();current=i;stageKind='core';stageIndex=0;mode='guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('study-title').textContent=studyData[i].title;$('study-number').textContent='STUDY '+(gtkjRank.get(i)??i+1)+' • freely selected';const t=teachMap.studies[i];$('purpose').textContent=t.purpose;$('central').textContent=t.central_truth;renderMode();scrollTo(0,0)}
 function openMatch(studyIndex,unitIndex){
  const words=normalizeSearch($('search').value).split(' ').filter(Boolean);
  openStudy(studyIndex);
@@ -319,6 +324,9 @@ Promise.all([
  if(!Array.isArray(source.sections)||!Array.isArray(map.studies)||source.sections.length!==map.studies.length)throw Error('Study count mismatch');
  for(let i=0;i<source.sections.length;i++)if(source.sections[i].title!==map.studies[i].title||source.sections[i].units.length!==map.studies[i].source_unit_count)throw Error('Source mismatch: '+i);
  if(related.items.length!==map.studies.length||enriched.studies.length!==map.studies.length)throw Error('Resource count mismatch');
+ const byGtkj=new Map(related.items.map(x=>[x.gtk_source_id,x.teacher_study_id]));
+ if(byGtkj.size!==28||new Set(GTKJ_ORDER).size!==28||GTKJ_ORDER.some(id=>!byGtkj.has(id)))throw Error('GTKJ order does not match Teachers Guide resources');
+ gtkjRank=new Map(GTKJ_ORDER.map((id,n)=>[byGtkj.get(id),n+1]));
  for(let i=0;i<enriched.studies.length;i++){
   const stages=map.studies[i].groups.filter(g=>g.kind==='core');
   const included=new Set();
