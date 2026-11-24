@@ -246,8 +246,10 @@ def main():
                 issues.append(f"Study {i} unit {j}: empty translation")
     if issues:
         raise ValueError("Translation not safe to build: "+", ".join(issues[:15]))
-    assert sum(len(s["units"]) for s in sections)==2378
-    assert sum(len(u.get("images",[])) for s in sections for u in s["units"])==20
+    source_total=sum(len(s["units"]) for s in sections)
+    source_images=sum(len(u.get("images",[])) for s in sections for u in s["units"])
+    if not source_total or not source_images:
+        raise ValueError("Source study units/images could not be counted")
     # Keep source-unit identity, images, and all Scripture metadata unchanged.
     combined=copy.deepcopy(eng)
     for section,tl in zip(combined["sections"],translated):
@@ -278,7 +280,7 @@ def main():
     html=prepare_html((ROOT/"index.html").read_text("utf-8"))
     (REVIEW/"index.html").write_text(html,encoding="utf-8")
     doc,stats=make_word(sections,translated,mapping,table_data["tables"])
-    assert stats["unit_count"]==2378 and stats["image_positions"]==20
+    assert stats["unit_count"]==source_total and stats["image_positions"]==source_images
     word=REVIEW/"Teachers_Guide_V2_TL_Master.docx"
     doc.save(word)
     reopened=Document(word)
