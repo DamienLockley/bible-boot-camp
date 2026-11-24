@@ -1,0 +1,89 @@
+name: Build Teachers Guide Tagalog review package
+run-name: Validate 28 Tagalog studies and create Word/HTML review files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-teachers-tl-review.yml'
+      - 'tools/build_teachers_tl_review.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: teachers-tl-local-review
+  cancel-in-progress: false
+
+jobs:
+  review-master:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out English source and Tagalog translations
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Word/image libraries
+        run: python -m pip install python-docx Pillow
+      - name: Check builder syntax
+        run: python -m py_compile tools/build_teachers_tl_review.py
+      - name: Build unpublished Tagalog Word and HTML review
+        run: python tools/build_teachers_tl_review.py
+      - name: Independently audit the review package
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          from docx import Document
+          base=Path('teachers-guide')
+          review=base/'_tl_translation_work'/'review'
+          e=json.loads((base/'study-data.json').read_text('utf-8'))['sections']
+          t=json.loads((review/'study-data.json').read_text('utf-8'))['sections']
+          m=json.loads((review/'teaching-map.json').read_text('utf-8'))['studies']
+          audit=json.loads((review/'translation-audit.json').read_text('utf-8'))
+          assert len(e)==len(t)==len(m)==28
+          assert sum(len(s['units']) for s in e)==sum(len(s['units']) for s in t)==2378
+          assert all(a['id']==b['id']==i and a['verses']==b['verses'] and
+                     [u['kind'] for u in a['units']]==[u['kind'] for u in b['units']] and
+                     [u.get('images',[]) for u in a['units']]==[u.get('images',[]) for u in b['units']]
+                     for i,(a,b) in enumerate(zip(e,t)))
+          assert all(x['title']==y['title']==z['title'] for x,y,z in zip(t,m,t))
+          assert t[-1]['units'][6]['text'].startswith('Matthew 9:35-38')
+          assert t[-1]['units'][16]['text'].startswith('John 1:43-51')
+          assert t[-1]['units'][17]['text'].startswith('Luke 8:37-40')
+          assert audit['image_positions']==20
+          master=Document(review/'Teachers_Guide_V2_TL_Master.docx')
+          assert sum(p.style.name=='Heading 1' for p in master.paragraphs)==28
+          assert sum(p.style.name=='TG Stage' for p in master.paragraphs)>=28
+          assert sum(p.style.name=='TG Extra' for p in master.paragraphs)>0
+          assert len(master.tables)>=2
+          html=(review/'index.html').read_text('utf-8')
+          for needle in ('<html lang="tl"','./study-data.json','./teaching-map.json','../../kjv-verses.json'):
+              assert needle in html,needle
+          assert (review/'Teachers_Guide_V2_TL_Review_Package.zip').stat().st_size>40000
+          print('PASS: 28 studies, 2378 units, main/supplementary, 20 images, Word & HTML')
+          PY
+      - name: Upload Word + HTML review package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Teachers_Guide_TL_V2_Review
+          path: teachers-guide/_tl_translation_work/review/Teachers_Guide_V2_TL_Review_Package.zip
+          if-no-files-found: error
+          retention-days: 30
+      - name: Commit generated review files without publishing the website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add teachers-guide/_tl_translation_work/study-data.tl.json teachers-guide/_tl_translation_work/review/
+          if ! git diff --cached --quiet; then
+            git commit -m "Build verified unpublished Tagalog Teachers Guide V2 Word and HTML review"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
