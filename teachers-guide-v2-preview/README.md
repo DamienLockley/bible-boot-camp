@@ -42,6 +42,7 @@ The review files:
 - `CONTENT_REVIEW.md`: content-led review of all 28 studies
 - `related-study-resources.json`: study-specific GTKJ references, Daniel and Revelation scene links
 - `main-pathway-enrichments.json`: proposed GTKJ main-pathway explanations and Daniel contextual notes
+- `main-historical-notes.json`: nine targeted historical/prophetic and spiritual-application notes, with source references and review labels
 - `table-layouts.json`: two temporary 1844 table recovery overlays (the final converter must read actual Word table grids)
 - `DOCUMENT_WIDE_AUDIT.md`: 28-study formatting/fidelity risk audit
 - `validate_teaching_map.py`: source mapping integrity test
