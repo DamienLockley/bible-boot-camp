@@ -1,0 +1,527 @@
+{
+  "id": 5,
+  "title": "Ang Kautusan",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Ang Kautusan",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Layunin: Ipakita mula sa Kasulatan na ang kautusan ng Diyos ay tungkol sa pag-ibig at kalayaan, na dapat itong isulat sa kalooban at hindi ipilit mula sa labas, at na ito ay walang hanggan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pangunahing diwa: Ang Sampung Utos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Pag-ibig ang sentro: Binuod ni Hesus ang kautusan bilang pag-ibig sa Diyos at sa kapwa. Sinasabi ni Pablo na ang pag-ibig ay hindi gumagawa ng masama. Ang mga utos ay hindi basta magkakahiwalay na pagbabawal; inilalarawan ng mga ito kung paano nakikitungo ang pag-ibig sa Manlilikha at sa ibang tao.",
+      "stage": [
+        "core",
+        "Ang kautusan ng pag-ibig at kalayaan"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Paano ipinapaliwanag ng pag-ibig ang mga utos laban sa pagnanakaw, pagpatay, at pagsisinungaling?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Hinahangad ng pag-ibig ang kabutihan ng ibang tao at tumatangging pagsamantalahan o saktan siya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 22: 36-40… Ang kautusan ng Diyos ay tungkol sa pag-ibig. Ang kalikasan ng ugnayan ay para sa kapakanan ng iba — walang pagkamakasarili (1 Cor 13:4-6). Kautusan = Pag-ibig. (i) Isipin ang isang lungsod na punô ng ganap at walang pagkamakasariling kabutihan. Isa itong positibong pananaw sa kautusan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 13: 10… Kautusan = Pag-ibig = Walang pananakit.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "James 1:25… Kautusan = Kalayaan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Deut 5:29… Kautusan = Kagalingan o kapakanan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Psalm 119:32… Kautusan = Pagpapalawak ng aking puso.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pag-aaral ng isang instrumentong pangmusika… Sa simula ay mabigat, ngunit kapag natutuhan nang lubos ay nagbibigay ito ng kalayaan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ex 20:1… Nagsisimula ang kautusan sa mga salitang: Inilabas kita mula sa pagkaalipin. Paskuwa / ang paghahain sa krus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "(Gal 5:1… Malaya ka dahil sa ginawa ni Cristo para sa iyo.) Sampung pangako, hindi lamang mga regulasyon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Hindi naliligtas sa pagtupad ng mga tuntunin: Ipinakikita ng kautusan ang kasalanan ngunit hindi nito tayo kayang ariing-ganap. Malinaw kay Pablo na ang kaligtasan ay sa pananampalataya at hindi nito ginagawang walang-halaga ang kasalanan. Ang pamumuhay sa ilalim ng biyaya ay hindi nangangahulugang itatanggi ang Diyos na nagligtas sa atin sa pamamagitan ng Kanyang biyaya.",
+      "stage": [
+        "core",
+        "Ang biyaya ay nagbubunga ng pagsunod mula sa puso"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ginagawa bang hindi na kailangan ng biyaya ang pagsunod, o binabago nito ang dahilan ng ating pagsunod?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Binabago nito ang dahilan at pinagmumulan ng pagsunod: pasasalamat at isang binagong puso.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Rom 3:20,28,31… Ibinibigay ng kautusan ang kaalaman tungkol sa kasalanan. Hindi ito ang paraan ng kaligtasan kundi ang paraan ng paghahayag. Hindi ang ating pagsunod ang nagliligtas kundi ang biyaya ng Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang pagsunod ay dumadaloy mula sa kaligtasan; hindi ang kaligtasan ang nagmumula sa pagsunod.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Rom 6:11-23… Ang kaligtasan ay nagbubunga ng katuwiran at pagsunod na nagmumula sa puso.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 8:10-12… Talata 12: ang bagong tipan ay nakasalig sa awa ng Diyos (Rom 5:20… kung saan sumagana ang kasalanan, higit na sumagana ang biyaya). Talata 11: personal na makikilala ng lahat ang Diyos. Talata 10: ang kautusan ay isusulat sa puso at isipan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 14:15… Kayo ay susunod.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hindi ba ninyo nakikita na ang kautusan ng Diyos ay kautusan ng pag-ibig, kalayaan, at kawalang-pagkamakasarili, at nakaugat sa ginawa ng Diyos para sa atin?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "Pagtatanggol sa pananampalataya:",
+      "stage": [
+        "supplement",
+        "Mahalaga pa ba ang kautusan sa ilalim ng bagong tipan?"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Dapat nating itanong: ang pagsulat ba ng kautusan ng Diyos sa puso at isipan ng tao ay isa bang ganap na bagong paraan?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 22: 35-40… Pansinin ang sagot ni Hesus nang tanungin Siya kung alin sa mga utos ang pinakadakila. Madalas maling gamitin ang talatang ito at ipaliwanag na inalis na ang Sampung Utos at pinalitan ng tinatawag na “mga utos ni Cristo.” Iyon ba talaga ang ibig sabihin ni Hesus?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Luke 10: 25-28… May katulad na pag-uusap si Hesus sa isa pang taong bihasa sa kautusan, ngunit naiiba ang paraan ng Kanyang pagtugon. Nang itanong, “Ano ang aking gagawin upang magmana ng buhay na walang hanggan?” sabik na naghintay ang malaking pulutong sa sagot. Inakala ng mga pari at rabbi na mahuhuli nila si Cristo sa tanong na ibinigay sa eksperto sa kautusan. Ngunit hindi nakipagtalo si Hesus. Ipinabalik Niya sa nagtatanong ang sagot: “Ano ang nasusulat sa kautusan? Paano mo ito binabasa?” Patuloy na inaakusahan ng mga Judio si Hesus na hindi Niya pinahahalagahan ang kautusang ibinigay sa Sinai. Ngunit ibinalik Niya ang usapin ng kaligtasan sa pagtupad sa mga utos ng Diyos. Sumagot ang dalubhasa: “Ibigin mo ang Panginoon mong Diyos nang buong puso, buong kaluluwa, buong lakas, at buong pag-iisip, at ang iyong kapwa gaya ng iyong sarili.” Sinabi ni Hesus: “Tama ang sagot mo; gawin mo ito at mabubuhay ka.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa Kanyang sagot tungkol sa mga hinihingi ng kautusan, hindi Niya binigyan ng pagpapahalaga ang maraming tuntuning seremonyal at rituwal. Sa halip, iniharap Niya ang dalawang dakilang prinsipyong kinakapitan ng buong kautusan at ng mga propeta. Dahil pinuri ni Cristo ang sagot, nagkaroon ang Tagapagligtas ng mabuting katayuan sa harap ng mga rabbi. Hindi nila Siya mahatulan dahil sinang-ayunan lamang Niya ang sinabi ng isang tagapagpaliwanag ng kautusan. Ipinakita Niya na ang kautusan ay isang banal na kabuuan at itinuro na hindi maaaring tuparin ang isang utos habang nilalabag ang isa pa, sapagkat iisang prinsipyo ang dumadaloy sa lahat.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Deuteronomy 6: 5-6… Dito ay binubuod ng Diyos ang prinsipyong nasa likod ng pagsunod sa Kanyang mga kautusan. Bukod dito, ipinahihiwatig Niya na ang Kanyang kautusan ay dapat ilagay sa puso.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya ang ideya ng kautusan ng Diyos na nakasulat sa puso ng tao ay hindi nakalaan lamang sa mga tao ng bagong tipan. Itinuturo lamang ni Hesus kung saan dapat nakalagay ang kautusan. Malinaw ito sa nalalabing bahagi ng talata: “Sa dalawang utos na ito (ibig sabihin, mga prinsipyo) nakasalalay ang buong kautusan at ang mga propeta.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang higit na maunawaan ang talatang ito na madalas maling gamitin, isaalang-alang natin ang sinabi ni apostol Pablo noong humigit-kumulang A.D. 57…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 13: 8-10… Pansinin: tuwirang sinipi ni Pablo ang mga utos sa Sampung Utos bago ipinakita ang pinakapundasyon ng mga ito: “Ang pag-ibig ang katuparan ng kautusan”! Kung gagamitin natin ang parehong paraan ng pag-iisip na ginagamit ng ilan sa mga salita ni Hesus, sasabihin ba nating nawalan na rin ng bisa ang naunang dalawang utos ni Cristo dahil mas pinaikli pa ni Pablo ang kautusan? Siyempre hindi! ***Tingnan ang ilustrasyon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kung nauunawaan natin ang mga prinsipyo ng Sampung Utos, malinaw nating makikita na nakasentro ang mga ito sa pag-ibig!",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Napakalinaw ni Hesus nang sabihin Niyang “Hindi Ako naparito upang alisin o sirain ang kautusan kundi upang tuparin ito.” Ang Kanyang saloobin at ganap na pagsunod sa kautusan ng Diyos ang gumawa sa Kanya bilang karapat-dapat na handog na kahalili ng makasalanan. Pawawalang-bisa ba natin ngayon ang kautusan dahil may kahalili tayo?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Huwag nawang mangyari; pinagtitibay natin ang kautusan” (Romans 3: 31).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Iba pang sanggunian mula sa Lumang Tipan na naghahayag ng pagnanais ng Diyos na ilagay ang Kanyang kautusan sa mismong puso ng tao.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Isaiah 51: 7… Ang mga “nakaaalam ng katuwiran” ay inilalarawang may kautusan ng Diyos — isang larawan ng Kanyang karakter — sa kanilang mga puso. Nakaukit sa isip ang Kanyang nahayag na kalooban, at sa karakter ay nagiging katulad nila Siya (tingnan ang Gal 2: 20; Col 1: 27; 1 John 3: 2, 3).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Deuteronomy 30: 6… “Tutuliin ang iyong puso.” Ang pagtutuli sa puso ay nangangahulugang paggising sa espirituwal na pang-unawa at pagpapalambot ng budhi. Ihambing sa Lev. 26:41; Jer. 31:33.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Psalm 51: 10… Lumikha: Hebreo — bara’ (tingnan ang Gen 1: 1). Hindi lamang nililinis ng Diyos ang puso; lumilikha Siya ng bagong puso sa Kanyang pinatawad na anak (tingnan ang Ezekiel 36: 26). Ang mga salitang “Bibigyan ko rin kayo ng bagong puso” ay nangangahulugang “Bibigyan ko kayo ng bagong isip.” Ang pagbabago ng puso ay laging sinasamahan ng malinaw na pagkilala sa tungkulin bilang Cristiano. Dapat samahan ng panalangin para sa pagbabago ng puso at pagpapabanal ang panalangin para sa kapatawaran (tingnan ang Jer 24: 7; 11: 19; Rom 12: 2; Eph 2: 10; 4: 24).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Psalm 37: 31… “Ang kautusan ng kaniyang Diyos ay…” Kautusan: Hebreo — torah (tingnan ang Prov 3: 1).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“…Nasa kaniyang puso.” (Tingnan ang Deut 6: 6; Ps 40: 8.) Isa itong karanasan sa bagong tipan (tingnan ang Heb 8: 8–13).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 13:10",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 22:37-40",
+      "stage": [
+        "supplement",
+        "Inalis ba ni Cristo ang kautusan bilang wakas nito?"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Exodus 20:1-17",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Luther at Calvin",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Malaki ang impluwensiya ni Martin Luther sa teolohiya sa Kanluran, at lubhang hindi niya ginusto ang kautusan ng Diyos. Maraming iglesia ngayon ang malakas pa ring naiimpluwensiyahan ng kanyang mga turo. Samantala, ang mga Puritan ay naimpluwensiyahan ni John Calvin na isang masigasig na guro at tagasuporta ng kautusan ng Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 6: 14… Ayon sa talatang ito, ano ang ibig sabihin ng nasa ilalim ng kautusan? Ano naman ang ibig sabihin ng nasa ilalim ng biyaya? Ipinakikita ng konteksto na ang kaligtasan ay sa biyaya at hindi sa kautusan! Kaya ang simpleng punto ni Pablo ay hindi tayo naliligtas sa kautusan kundi sa biyaya. Siyempre! Iba ang pagsasabing sa isang taong ligtas na sundin ang kautusan ng Diyos kaysa sa pagsasabing sundin ang kautusan upang maligtas. Pagpapatuloy natin ang talata…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 6: 15-16… Hindi sinasabi ni Pablo na balewalain ang kautusan ng Diyos! Sinasabi lamang niyang hindi ang kautusan ang daan sa kaligtasan kundi ang biyaya ng Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 10: 4… Ayon sa talatang ito:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong: Para sa anong layunin si Cristo ang wakas ng kautusan?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Sagot: Para sa katuwiran.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong: Para kanino si Cristo ang wakas ng kautusan?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Sagot: Para sa lahat ng sumasampalataya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Samakatuwid, tinatapos ni Cristo ang isang tiyak na tungkulin ng kautusan para sa mga mananampalataya. Hindi na ginagamit ng mga mananampalataya ang kautusan upang makamit ang katuwiran; ang katuwiran ay nagmumula kay Cristo!",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Sapagkat si Cristo ang wakas ng kautusan.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang pariralang “wakas ng kautusan” ay maaaring unawain bilang “pagwawakas ng kautusan,” na para bang wala na itong bisa. Ngunit kailangang isaalang-alang ang dalawang bagay: ang konteksto ng parirala at ang salitang Griyego na ginamit para sa “wakas.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa talatang ito, inilalarawan ni Pablo ang kapwa niyang mga Judio na sa malaking bahagi ay hindi nakaabot sa kaligtasan. Sinikap nilang sundin ang kautusan ni Moises, ngunit hindi sa pananampalataya, at hindi nila nakamit ang katuwiran. Natisod sila sa “Batong Katitisuran.” Sa pagsisikap na maging matuwid sa pamamagitan ng kautusan, hindi nila nakilala si Cristo bilang Siya na itinuturo ng kautusan ni Moises at ng mga seremonya at paghahain nito (Rom. 9:30–10:4).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Maraming kahulugan ang salitang telos: mula sa pagwawakas hanggang katuparan, tungkulin, layunin, o hantungan. Sa Bagong Tipan, pangunahing kaugnay ito ng “katuparan,” ngunit maaaring isalin din bilang layunin o hantungan, bunga o resulta, wakas o konklusyon. Dapat tandaan na ang layunin at resulta ay magkaugnay na aspekto ng iisang katotohanan. Sa 1 Timothy 1:5, ginagamit ang telos sa pananalitang “ang layunin ng aming utos ay pag-ibig.” Ibig sabihin, pag-ibig ang inaasahang bunga ng aming pangangaral. Kaya ang “wakas” (telos) sa Romans 10:4 ay maaaring tumukoy kay Cristo bilang layuning itinuturo ng buong sistemang rituwal at kautusan ng mga Judio. Si Cristo ang katuparan ng mga larawan at sagisag sa Lumang Tipan, ang sukdulan ng Torah, at hindi ang Siyang mag-aalis ng kautusan at magwawakas sa bisa ng mga hinihingi ng Diyos sa mga tao.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 7: 1-3… Ano ang matagal nang ipinaliliwanag ni Pablo sa naunang kabanata? Romans 6: 4… Inilibing tayo kasama Niya sa pamamagitan ng bautismo patungo sa kamatayan. Kaya sinasabi ni Pablo sa talatang ito, “Namatay ka na.” Sa Romans 7: 4-6, sinasabi ni Pablo na kapag namatay ka, pinalalaya ka mula sa kautusan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tungkol sa talatang ito, maaari kang makarinig ng nagsasabi: “Nabautismuhan ako! Nang mabautismuhan ako, namatay ako, at pinalaya ako ng kamatayang ito mula sa kautusan. Ngayon ay nakipag-isa na ako kay Hesus kaya wala na akong anumang kinalaman sa kautusan ng Diyos.”",
+      "stage": [
+        "supplement",
+        "Ano ang ibig sabihin ng mamatay sa kautusan?"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa unang tingin, maganda ang gayong argumento. Ngunit ano nga ba ang sinasabi ni Pablo? Minsan kailangang kilalanin ang hindi sinasabi ng manunulat upang ganap na maunawaan ang kanyang mensahe. Tingnan ang huling talata ng Romans 7…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya sa buong Romans 6 at 7, ipinahihiwatig ni Pablo ang tatlong bagay:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Namatay ako sa kautusan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pinalaya ako mula sa kautusan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Naglilingkod ako sa kautusan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nakalulungkot, madalas nating makitang itinutulak ng mga tao mula sa isang pananaw panrelihiyon ang isang aspekto lamang ng turo ni Pablo:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pinalaya ako mula sa kautusan at namatay ako sa kautusan!",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Samantala, itinutulak naman ng isa pang pangkat ang ibang aspekto ng turo ni Pablo:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Naglilingkod ako sa kautusan!",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kailangang maipaliwanag ng dalawang pangkat kung paano magiging totoo ang lahat ng tatlong pahayag, sapagkat iyon lamang ang buong mensaheng nais ipabatid ni Pablo sa mga mambabasa. Kung hindi, para lamang nilang sinasabing “wala kaming pakialam sa talagang sinasabi ni Pablo.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya ano ang ibig sabihin ni Pablo nang sabihin niyang namatay siya sa kautusan?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 7: 7-10… Sinasabi ni Pablo na pinalaya siya mula sa kautusan! Ibig bang sabihin, masama ang kautusan kaya kailangan niyang mapalaya rito? “HINDI KAILANMAN!” ang kanyang sagot. Napakahalaga ng kautusan: kung wala ito, hindi niya makikilala ang kasalanan. Bilang halimbawa, binanggit niya ang isa sa mga utos, at kapansin-pansing ang ikasampu ang pinili niya. Ang pag-iimbot lamang ang utos na maaaring labagin nang nasa isip lang! Halimbawa, sinabi ni Hesus na huwag papatay, ngunit ipinaliwanag Niyang pati ang galit ay mahalaga. Sinabi rin Niyang huwag mangangalunya at kabilang dito ang pagtingin nang may pagnanasa. Kaya maaaring labagin ang kautusan sa kilos at sa isip. Ngunit ang pag-iimbot ay nasa isip lamang! Ang punto ni Pablo: hindi niya tunay na naunawaan ang kasalanan hanggang ipinakita ng kautusan kung ano ito. Tungkol ito sa puso.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pansinin ang talata 10 at pagkatapos ay pumunta sa Leviticus 18: 5.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Leviticus 18: 5… Ito ang utos na nangako ng buhay! Ngunit ano ang kabaligtaran? Kapag hindi mo sinunod ang utos, ano ang magiging kapalaran mo? Buong buhay ni Pablo, inakala niyang mabubuhay siya kung masusunod niya ang mga utos. Ngunit dumating ang isang araw na nagkaroon siya ng malinaw na pagkaunawa tungkol sa ikasampung utos: hindi lamang mahalaga kung gaano kabuti ang ginagawa niya sa labas; mahalaga rin ang nasa puso. Nang matuklasan niyang nilalabag pala niya ang kautusan, sinabi ni Pablo na ang utos na nangakong magbibigay sa kanya ng buhay ay sa halip nagdadala sa kanya ng kamatayan! Kaya nakita niyang kailangan niyang mapalaya mula sa kautusan bilang daan ng kaligtasan at makipag-isa kay Cristo bilang daan ng kaligtasan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa wakas, ito ang punto ni Pablo: Namatay ako sa kautusan bilang paraan ng kaligtasan! Pinalaya ako mula sa kautusan bilang paraan ng kaligtasan! Ngayong nakipag-isa na ako kay Cristo bilang daan ng kaligtasan, sinasabi niya… Naglilingkod ako sa kautusan ng Diyos sa pamamagitan ng aking isip.",
+      "stage": null,
+      "images": []
+    }
+  ],
+  "verses": [
+    "Matthew 22: 36-40",
+    "1 Cor 13:4-6",
+    "Romans 13: 10",
+    "James 1:25",
+    "Deut 5:29",
+    "Psalm 119:32",
+    "Ex 20:1",
+    "Gal 5:1",
+    "Rom 3:20,28,31",
+    "Rom 6:11-23",
+    "Hebrews 8:10-12",
+    "Rom 5:20",
+    "John 14:15",
+    "Matthew 22: 35-40",
+    "Luke 10: 25-28",
+    "Deuteronomy 6: 5-6",
+    "Romans 13: 8-10",
+    "Romans 3: 31",
+    "Isaiah 51: 7",
+    "Gal 2: 20",
+    "Col 1: 27",
+    "1 John 3: 2, 3",
+    "Deuteronomy 30: 6",
+    "Lev. 26:41",
+    "Jer. 31:33",
+    "Psalm 51: 10",
+    "Gen 1: 1",
+    "Ezekiel 36: 26",
+    "Jer 24: 7; 11: 19",
+    "Rom 12: 2",
+    "Eph 2: 10; 4: 24",
+    "Psalm 37: 31",
+    "Prov 3: 1",
+    "Deut 6: 6",
+    "Ps 40: 8",
+    "Heb 8: 8–13",
+    "Romans 13:10",
+    "Matthew 22:37-40",
+    "Exodus 20:1-17",
+    "Romans 6: 14",
+    "Romans 6: 15-16",
+    "Romans 10: 4",
+    "Rom. 9:30–10:4",
+    "1 Timothy 1:5",
+    "Romans 10:4",
+    "Romans 7: 1-3",
+    "Romans 6: 4",
+    "Romans 7: 4-6",
+    "Romans 7",
+    "Romans 7: 7-10",
+    "Leviticus 18: 5",
+    "Leviticus 18: 5"
+  ],
+  "application": "Ang pag-ibig sa Diyos ay humuhubog sa pagsunod mula sa binagong puso, hindi sa pamamagitan ng pagtatrabaho para sa kaligtasan.",
+  "response": "Paano maipakikita ng iyong pagsunod ang pag-ibig at pasasalamat sa Diyos?"
+}
