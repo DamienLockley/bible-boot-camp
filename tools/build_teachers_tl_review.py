@@ -235,6 +235,13 @@ def prepare_html(english):
       "No additional Scripture references in this study.":"Walang karagdagang talata sa pag-aaral na ito.",
       "Main readings are separated from additional references in the teaching and optional material.":"Hiwalay ang pangunahing talata at mga karagdagang sanggunian.",
       "Your message has been sent. Thank you.":"Naipadala ang mensahe. Salamat.",
+      "This reference could not be interpreted.":"Hindi mabigyang-kahulugan ang sangguniang ito.",
+      "Your previous message is still being processed.":"Pinoproseso pa ang nauna mong mensahe.",
+      "Online sending is unavailable at present. Please try again later.":"Hindi magagamit sa ngayon ang pagpapadala online. Pakisubukang muli mamaya.",
+      "Delivery could not be confirmed. Check whether your message was received before trying again.":"Hindi makumpirma ang pagpapadala. Tiyaking hindi pa natanggap ang iyong mensahe bago muling sumubok.",
+      "The message could not be sent.":"Hindi naipadala ang mensahe.",
+      "Study count mismatch":"Hindi tumutugma ang bilang ng mga pag-aaral",
+      "KJV text is not installed in this package yet. Add kjv-verses.json from your Google Drive folder before publishing. ":"Wala pang naka-install na tekstong KJV sa paketeng ito. Idagdag ang kjv-verses.json bago ilathala. ",
       "Please refresh or contact Help / Feedback if the issue persists.":"I-refresh ang pahina o gamitin ang Tulong / Puna kung magpapatuloy ang problema.",
     }
     # Avoid altering CSS class names and script identifiers: only literal
