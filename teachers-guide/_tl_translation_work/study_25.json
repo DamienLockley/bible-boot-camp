@@ -1,0 +1,338 @@
+{
+  "id": 24,
+  "title": "Bautismo",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Bautismo",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Layunin: Ipakita na ang seremonya ng bautismo ay simbolo ng pagtalikod sa kasalanan at paglapit sa Panginoon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nakasentro sa: Bautismo sa pamamagitan ng paglulubog sa tubig.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Nagbigay ng halimbawa si Hesus: Nabautismuhan si Hesus sa Jordan at narinig ang pagsang-ayon ng Ama. Bagama't wala Siyang kasalanang ipapahayag, nakiisa Siya sa bayang Kanyang iniligtas at ipinakita ang kahalagahan ng pagsunod sa Diyos.",
+      "stage": [
+        "core",
+        "Ang halimbawa ni Hesus"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang sinabi ng Ama tungkol kay Hesus sa Kanyang bautismo?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Siya ang Kanyang minamahal na Anak na Kanyang kinalulugdan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 22:3-16… Ang bautismo ay isang ordinansang itinakda ng Diyos (tingnan ang Matt 3:15; Mark 16:15-16; John 3:3, 5; Titus 3:5). Gayunman, ang seremonya mismo ay hindi nakapaghuhugas ng kasalanan. Kailangang samahan ito ng pananampalataya, pagsisisi, at pagtanggap sa Banal na Espiritu upang magkaroon ng tunay na kabuluhan (Matt 28:19; Acts 2:38; 3:19; 8:36-37). Ang kamatayan ni Cristo ang nagbukas ng daan upang maalis ang pagkakasala (2 Cor 5:20-21; 1 Peter 2:24; 3:21; 1 John 1:7, 9).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 3:1-17… Magsisi: Griyegong metanoeō, literal na “mag-isip nang iba pagkatapos,” kaya “baguhin ang isip” o “baguhin ang layunin.” Higit ito sa simpleng pagtatapat ng kasalanan, bagama't kasama iyon sa pangangaral ni Juan (talata 6). Sa teolohiya, kabilang dito hindi lamang pagbabago ng isip kundi bagong direksiyon ng kalooban, layunin, at saloobin.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 4:1-2… Sa personal na pagtanggap ng bautismo mula kay Juan, inaprubahan ni Hesus ang seremonya at sinabi, “Pahintulutan mong maging gayon ngayon, sapagkat nararapat sa atin na tuparin ang buong katuwiran” (Matt 3:15). Bukod dito, nagbautismo ang mga alagad ni Hesus sa ilalim ng Kanyang pamamahala (John 3:22; 4:1). Hindi sinabi kung bakit hindi Siya mismo nagbautismo. Maaaring nais Niyang iwasan ang pagkaunawang may mas mataas na awtoridad sa iglesia ang mga taong personal Niyang nabautismuhan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 28:19… Nakita nating si Hesus mismo ay nabautismuhan, sinang-ayunan Niya ang gawain ng mga alagad sa pagbautismo, at pagkatapos ng Kanyang pagkabuhay na mag-uli ay iniutos Niyang magbautismo rin sila.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 3:1-8… Si Nicodemo ay mayamang Fariseo at kasapi ng pambansang konsehong Sanedrin. Pansining lumapit siya sa gabi. Dahil alam niya ang pangkalahatang saloobin ng mga pinuno kay Hesus, inisip niyang makabubuting huwag ilagay sa panganib ang reputasyon at katayuan sa pamamagitan ng paglantad na nais niyang personal na makipag-usap sa Kanya. Siya mismo ay “guro ng Israel” (John 3:10), ngunit handang ituring na kapantay si Hesus na walang pormal na edukasyon ni opisyal na pahintulot na magturo. Ang tanging paliwanag sa pagdalaw ay nadama niya sa kanyang puso na higit si Hesus sa isang karaniwang guro.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa talata 3, hindi pinansin ni Hesus ang papuri at direktang sinagot ang hindi binigkas na paghahanap sa katotohanan na ipinahiwatig ng pagdalaw ni Nicodemo. Sa diwa, sinagot Niya kung paano maliligtas ang isang tao. Dalawang bagay ang binanggit:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tubig.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Espiritu.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pansinin: Ang Griyegong baptizō ay nangangahulugang “isawsaw” o “ilubog.” Binigyang-diin ng ebanghelistang si Juan na si Juan Bautista ay “nagbabautismo sa Enon malapit sa Salim sapagkat maraming tubig doon” (John 3:23). Binanggit din ng apat na manunulat ng Ebanghelyo na karamihan o lahat ng ministeryo ni Juan ay naganap malapit sa Ilog Jordan (Matt 3:6; Mark 1:5, 9; Luke 3:3; John 1:28). Kung hindi paglulubog ang kanyang bautismo, sapat sana ang tubig halos saanman sa Palestina.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang pagsilang sa tubig ay panlabas na simbolo ng panloob na katotohanang namatay na sa sanlibutan at nabubuhay sa buhay na pinuspos ng Espiritu.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 6:3-4… Malinaw na iniuugnay ang kahulugan ng bautismo sa isang uri ng kamatayan. Ipinaliwanag ito sa kasunod na mga talata, lalo na sa 10 at 11, kung saan sinasabi ni Pablo na gaya ni Cristo na namatay sa kasalanan, gayon din dapat ituring ng Cristiano ang sarili na patay na sa kasalanan. Kung ipinakita ng mananampalataya sa bautismo ang pakikibahagi sa kamatayan ni Cristo dahil sa kasalanan para sa kanya (talata 10), hindi na niya dapat ipagpatuloy ang kasalanang naging dahilan ng kamatayang iyon (talata 2).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang maging epektibo sa makasalanan ang sakripisyo ni Cristo, kailangang sadyang makibahagi ang indibidwal na mananampalataya sa kahulugan at karanasang kinakatawan ng kamatayan, paglilibing, at pagkabuhay na mag-uli ni Cristo para sa kanya. Bilang hayagang pagpapahayag ng karanasang ito, nagpapabautismo siya sa pamamagitan ng paglulubog ayon sa utos ni Hesus (Matt 28:19).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 8:26-39… Ang Etiopeng eunuko: Pumasok si Felipe at ang eunuko sa tubig. Hindi inilarawan ng pagwiwisik ang paglilibing. Ang Etiopeng ito ay isang Hentil at eunuko na maaaring hinahamak sa pananaw ng mga Judio, ngunit ipinakikita ng salaysay na bukas ang bautismo sa lahat anuman ang nakaraan o kalagayan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Corinthians 12:13-14… Itinuturo ng Kasulatan na tayong lahat ay binabautismuhan sa iisang katawan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ephesians 5:23… Ang katawan ni Cristo ay ang Kanyang iglesia.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 16:25-34… Kaagad na ipinakita ng tagapagbantay ng bilangguan ang pagbabago ng puso nang siya ay mahikayat. Ang dating matigas na paganong opisyal ay naging mahabaging Cristiano na nagmamalasakit sa kapakanan ng mga nagdurusang ebanghelista. Wala siyang awtoridad na palayain sila, ngunit ginawa niya ang makakaya upang pagaanin ang kanilang sakit sa paghuhugas ng mga sugat sa kanilang likod. Ang mahinahong paglilingkod na ito ay praktikal na katibayan ng kanyang pagbabagong-loob.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Malinaw na masinsinan ang pagtuturong ibinigay nina Pablo at Silas. Tinanggap ito nang buong puso ng sambahayan ng tagapagbantay at nahikayat silang magpabautismo. Siya na naghugas ng sugat ng mga bilanggo ay siya namang, kasama ang mga mahal niya sa buhay, nilinis mula sa mantsa ng kasalanan. Ang pagtutulungang ito ay katangian ng tunay na samahang Cristiano. Hindi malayong isiping may paliguan o imbakan ng tubig sa bilangguan kung saan maaaring maganap ang bautismo sa pamamagitan ng paglulubog.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ephesians 4:4-6… Iisa ang bautismo, ang bautismo sa pamamagitan ng paglulubog.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Inilibing at ibinangon kasama ni Cristo: Ang pagbaba sa tubig ay larawan ng paglilibing kasama ni Hesus; ang pag-ahon ay larawan ng pagkabuhay sa bagong buhay. Kaya binibigyang-diin ng pag-aaral ang paglulubog bilang angkop sa larawang ginamit ng Biblia. Hindi tubig ang nagliligtas—si Hesus.",
+      "stage": [
+        "core",
+        "Inilibing at ibinangon kasama ni Cristo"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang sinasagisag ng pag-ahon mula sa tubig?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Bagong buhay sa pamamagitan ng kapangyarihan ng pagkabuhay na mag-uli ni Cristo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "KONKLUSYON",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang bautismo ay parang pag-aasawa kay Cristo, at nais nating maunawaan ng mga tao ang ibig sabihin nito…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sino Siya? Ano ang inaasahan Niya sa akin? Ano ang aking pinapasok?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "ITUTURO — BABAUTISMUHAN — PATULOY NA ITUTURO",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang pagpapabautismo kay Hesus ay kaugnay ng pagiging bahagi ng iglesia.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "May katibayan ba ng pagbabago sa iyong buhay? Ang Diyos ba ang pinakamahalaga sa iyo?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang bautismo ay tanda ng pagsisisi… Luke 3:7-8.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matt 28:19-20… ISIP — Hindi hiwalay ang bautismo sa pagiging alagad; kailangang mamuhay ang mga tagasunod ayon sa ginawa ni Hesus. Ipinakikita Niyang dapat maunawaan ng tao ang kahulugan ng bautismo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "James 2:19… MGA KAMAY — Dapat tayong umabot kay Hesus. Hindi sapat ang paniniwala o pagsang-ayon sa isip lamang; kailangang lumapit sa Kanya nang may pananampalataya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 2:38… PUSO — Kasama sa paghahanda para sa bautismo ang pagkalungkot sa kasalanan at pagtalikod dito.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Pagiging alagad: Iniutos ni Hesus sa Kanyang mga tagasunod na gumawa ng mga alagad, bautismuhan sila, at turuang sundin ang Kanyang mga utos. Ang bautismo ang simula ng habambuhay na paglalakbay ng pag-aaral at pagsunod sa Kanya sa loob ng isang pamayanan.",
+      "stage": [
+        "core",
+        "Bautismo at habambuhay na pagiging alagad"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang kasunod ng bautismo ayon sa atas ni Hesus?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Patuloy na pagtuturo at pagiging alagad.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "PANAWAGAN",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 8:36",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "SINUSUNDAN MO SI HESUS, NANANAMPALATAYA KA SA KANYA, AT TINALIKURAN MO NA ANG IYONG MGA KASALANAN. MAY ANUMANG HUMAHADLANG PA BA SA IYO UPANG MAGPABAUTISMO?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "IPAGTANGGOL ANG KATOTOHANAN",
+      "stage": [
+        "supplement",
+        "Mga tanong tungkol sa bautismo"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Cor 15:29",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "BAUTISMO PARA SA MGA PATAY.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nakikipagtalo si Pablo sa mga taong tumututol sa pagkabuhay na mag-uli. Ginamit niya ang halimbawa ng mga nagsasagawa ng bautismo para sa mga patay upang ipakita na maging ang mga taong iyon ay naniniwala sa pagkabuhay na mag-uli; kung hindi, hindi nila iyon gagawin.",
+      "stage": null,
+      "images": []
+    }
+  ],
+  "verses": [
+    "Acts 22: 3-16",
+    "Matt. 3:15",
+    "Mark 16:15, 16",
+    "John 3:3, 5",
+    "Titus 3:5",
+    "Matt. 28:19",
+    "Acts 2:38; 3:19; 8:36, 37",
+    "2 Cor. 5:20, 21",
+    "1 Peter 2:24; 3:21",
+    "1 John 1:7, 9",
+    "Matthew 3: 1-17",
+    "John 4: 1, 2",
+    "Matt. 3:15",
+    "John 3:22; 4:1",
+    "Matthew 28: 19",
+    "John 3: 1-8",
+    "John 3:23",
+    "Matt. 3:6",
+    "Mark 1:5, 9",
+    "Luke 3:3",
+    "John 1:28",
+    "Romans 6: 3, 4",
+    "Matt. 28:19",
+    "Acts 8: 26-39",
+    "1 Corinthians 12: 13, 14",
+    "Ephesians 5: 23",
+    "Acts 16: 25-34",
+    "Ephesians 4: 4-6",
+    "Luke 3:7-8",
+    "Matt 28:19-20",
+    "James 2:19",
+    "Acts 2:38",
+    "Acts 8:36",
+    "1 Cor 15:29"
+  ],
+  "application": "Ang bautismo ay hayagang pagpapahayag ng pananampalataya kay Hesus at ng pagsisimula ng bagong buhay na sumusunod sa Kanya.",
+  "response": "Ano ang kahulugan para sa iyo ng pagsunod kay Hesus at pagpapabautismo bilang Kanyang alagad?"
+}
