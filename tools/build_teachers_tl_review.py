@@ -311,6 +311,17 @@ def prepare_html(english):
     }
     for english,tagalog in attr_text.items():
         html=html.replace(english,tagalog)
+    html=html.replace("<button id=\"home\" type=\"button\">Home</button>","<button id=\"home\" type=\"button\">Simula</button>")
+    html=html.replace(">Reason <select",">Dahilan <select")
+    html=html.replace(">Your message <textarea",">Ang iyong mensahe <textarea")
+    html=html.replace("placeholder=\"Tell us which study or teaching stage you are referring to.\"","placeholder=\"Sabihin kung aling pag-aaral o yugto ng pagtuturo ang tinutukoy mo.\"")
+    html=html.replace("title=\"Feedback submission response\"","title=\"Tugon sa ipinadalang puna\"")
+    html=html.replace("+' matching passage'+(hits.length===1?'':'s')+'</strong> in '+groups.length+' studies","+' na tugmang talata</strong> sa '+groups.length+' pag-aaral")
+    html=html.replace("+' matches</span>","+' tugma</span>")
+    html=html.replace("'Show all '+g.hits.length+' matches","'Ipakita ang lahat ng '+g.hits.length+' tugma")
+    html=html.replace("+(stageIndex+1)+' of '+groups.length","+(stageIndex+1)+' sa '+groups.length")
+    html=html.replace("+(g.end-g.start+1)+' items</p>","+(g.end-g.start+1)+' bahagi</p>")
+    html=html.replace("'Explore '+esc(n.scripture)+' in Daniel'","'Suriin ang '+esc(n.scripture)+' sa Daniel'")
     # The TL preview links to the English PDFs until new PDFs are prepared.
     html=html.replace("const TEACHERS_TL_URL='../../index.html';",
                       "const TEACHERS_TL_URL='../../index.html';")
