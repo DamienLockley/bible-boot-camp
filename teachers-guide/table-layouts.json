@@ -1,0 +1,76 @@
+{
+  "status": "Temporary V2 display-only recovery of a confirmed Word table. Permanent converter should read real w:tbl grids from the updated Word master.",
+  "source": "User-supplied Word screenshot of 1844 study plus source study-data.json",
+  "tables": [
+    {
+      "study_id": 10,
+      "study_title": "1844",
+      "start": 48,
+      "end": 71,
+      "caption": "Daniel 2, Daniel 7 and Daniel 8 — prophetic comparison",
+      "column_headers": true,
+      "rows": [
+        [
+          48,
+          49,
+          50
+        ],
+        [
+          51,
+          52,
+          53
+        ],
+        [
+          54,
+          55,
+          56
+        ],
+        [
+          57,
+          58,
+          59
+        ],
+        [
+          60,
+          61,
+          62
+        ],
+        [
+          63,
+          64,
+          65
+        ],
+        [
+          66,
+          67,
+          68
+        ],
+        [
+          69,
+          70,
+          71
+        ]
+      ]
+    },
+    {
+      "study_id": 10,
+      "study_title": "1844",
+      "start": 75,
+      "end": 80,
+      "caption": "Daniel 9, Daniel 8 and Daniel 7 — Christ’s ministry",
+      "column_headers": true,
+      "rows": [
+        [
+          75,
+          76,
+          77
+        ],
+        [
+          78,
+          79,
+          80
+        ]
+      ]
+    }
+  ]
+}

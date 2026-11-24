@@ -1,88 +1,76 @@
-<!doctype html><html><head><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="manifest" href="manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Teachers Guide"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dceffa"><style>:root{font-family:system-ui,-apple-system,Arial,sans-serif;color:#17324a;background:#f3f8fd}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:2;background:#dceffa;padding:13px 16px;box-shadow:0 2px 7px #1232;display:flex;justify-content:space-between;align-items:center}.wrap{max-width:850px;margin:auto;padding:15px}.panel{background:white;border:1px solid #dce7ef;border-radius:15px;padding:16px;margin-bottom:13px;box-shadow:0 2px 5px #1231}button,input{font:inherit}button{cursor:pointer;border:1px solid #8cb5d2;border-radius:10px;background:white;color:#17527c;padding:11px;font-weight:650}button.primary,.selected{background:#1672ad;color:white;border-color:#1672ad}button:disabled{opacity:.4}input{width:100%;padding:13px;border:1px solid #adc7d9;border-radius:10px}.bar{display:flex;gap:7px;flex-wrap:wrap}.bar button{flex:1;min-width:110px}.title{font-size:22px;font-weight:750;margin:8px 0}.muted{font-size:13px;color:#647c8d}.item{width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px;margin:6px 0}.hidden{display:none!important}.content{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}.heading{font-weight:750;color:#145c8e}.bible-ref{cursor:pointer;border:0;background:none;padding:0;font:inherit;display:inline;text-align:left;color:#0869b2;font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.question{font-weight:700}.answer{background:#eff7fc;padding:12px;border-radius:9px;white-space:pre-wrap}details{margin:10px 0}summary{cursor:pointer;color:#17527c;font-weight:700}.nav{position:sticky;bottom:0;background:#f3f8fdee;padding:12px 0;display:flex;gap:8px}.nav button{flex:1}.versetable{width:100%;border-collapse:collapse}.versetable th,.versetable td{padding:10px;border-bottom:1px solid #dce7ef;text-align:left}.versetable th{background:#eff7fc}#modal{position:fixed;inset:0;background:#000b;z-index:10;overflow:auto;padding:14px}#modal .panel{max-width:900px;margin:auto}#modal img{max-width:100%;height:auto;display:block;margin:15px auto}.imggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.imggrid img{width:100%;height:150px;object-fit:contain;background:#f5f7fa;border-radius:8px}.kjv-verse{padding:7px 0;border-bottom:1px solid #e0ebf2;line-height:1.65}.kjv-verse b{color:#145c8e;margin-right:8px}small{font-size:12px}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e7f0f8">
+<title>Teachers’ Guide | End Time Bible Studies</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#1b3347;background:#f3f7fb;--blue:#135d8a;--line:#d8e5ee;--muted:#506a7d}
+*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer;border:1px solid #9ebacf;border-radius:9px;padding:9px 12px;background:#fff;color:var(--blue);font-weight:650}button:hover{background:#eaf4fb}button:focus-visible{outline:3px solid #dfaf55;outline-offset:2px}
+a{color:var(--blue)}.top{position:sticky;top:0;z-index:3;background:#e7f0f8;border-bottom:1px solid var(--line)}.top-inner{max-width:1170px;margin:auto;padding:11px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand strong{font-size:18px}.tiny{font-size:12px;color:var(--muted)}.head-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.review{display:inline-block;background:#f4e7cf;color:#6f4907;border-radius:7px;padding:5px 8px;font-size:11px;font-weight:800;letter-spacing:.02em}
+main{max-width:1170px;padding:20px 16px 60px;margin:auto}.panel{background:white;border:1px solid var(--line);border-radius:13px;padding:17px;margin-bottom:14px;box-shadow:0 2px 14px #25435a08}.intro{line-height:1.5;color:var(--muted);margin:7px 0}.heading{font-size:25px;margin:5px 0 12px}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+input{width:100%;padding:12px;border:1px solid #a8c3d7;border-radius:9px}.lib-item{display:block;width:100%;text-align:left;padding:12px 14px;margin:7px 0}.lib-item strong{display:block;color:#163f61}.lib-item span{display:block;color:var(--muted);font-size:13px;margin-top:3px;font-weight:400}.muted{color:var(--muted)}.mode-buttons{display:flex;gap:8px;flex-wrap:wrap}.selected{background:var(--blue);color:#fff;border-color:var(--blue)}.selected:hover{background:#124c73}.layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:15px;align-items:start}.side{position:sticky;top:84px;max-height:calc(100vh - 104px);overflow:auto}.side h3{font-size:14px;margin:5px 0 10px}.nav-button{display:block;width:100%;text-align:left;margin-bottom:7px;font-weight:600;font-size:13px;line-height:1.35}.nav-button.active{background:#d9eefa;color:#0b4d75;border-color:#3c8cb8}
+details{border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin:12px 0;background:#f8fbfd}summary{font-weight:700;color:var(--blue);cursor:pointer}.text-item{white-space:pre-wrap;line-height:1.65;overflow-wrap:anywhere;margin:10px 0}.text-item.question{border-left:4px solid #8cadc7;padding:7px 12px;background:#eef6fb;border-radius:4px}.text-item.heading{font-size:19px;font-weight:750;color:#14587e;margin:18px 0 7px}.teacher-prompt{border-left:4px solid #bc8c39;background:#fffbf3;padding:13px 15px;border-radius:4px;margin-top:20px}.teacher-prompt p{line-height:1.55}.teacher-prompt strong{color:#775016}.title-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.label{font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:750;color:var(--muted)}.ribbon{background:#edf5fb;padding:8px 11px;border-radius:8px;margin-bottom:11px}.nav-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px}.nav-bottom button{min-width:92px}.bible-ref{border:0;padding:0;background:none;color:#056aa5;font:inherit;text-decoration:underline;font-weight:700;display:inline}.bible-ref:hover{background:#e2f1fb}.verse-link{width:100%;text-align:left;margin:5px 0}.hidden{display:none!important}.modal{position:fixed;inset:0;background:#000b;z-index:10;padding:16px;overflow:auto}.modal .panel{max-width:850px;margin:5vh auto}.modal img{max-width:100%;max-height:75vh;object-fit:contain}.kjv-verse{padding:8px 0;border-bottom:1px solid var(--line);line-height:1.6}.kjv-verse b{color:var(--blue);margin-right:7px}.image-btn{display:inline-block;margin:8px 5px 0 0}
+@media(max-width:760px){.layout{display:flex;flex-direction:column}.side{position:static;width:100%;max-height:none}.top-inner{align-items:start}.brand strong{font-size:15px}.heading{font-size:22px}.panel{padding:14px}main{padding:13px 10px 45px}.nav-bottom{position:sticky;bottom:0;background:#f3f7fb;padding:11px 0}}
+.nav-link{font-size:13px;font-weight:700;text-decoration:none;color:#125d88;border-radius:9px;padding:9px 10px;border:1px solid #8cb5d2;background:white;white-space:nowrap}.nav-link:hover{background:#d8ebf7}.compact-search{width:min(240px,44vw);padding:9px 10px}.lib-study{border-bottom:1px solid var(--line);padding:11px 0}.lib-study:last-child{border-bottom:0}.lib-study h3{font-size:16px;margin:2px 0 7px}.snippet{display:block;width:100%;font-weight:400;font-size:13px;color:#2b4a5f;line-height:1.48;text-align:left;margin:5px 0;padding:8px 10px;white-space:normal}.snippet mark{background:#fff1ae;color:#1b3347;border-radius:2px;padding:0 2px}.find-count{font-size:12px;color:var(--muted);margin-left:7px}.table-wrap{overflow-x:auto;margin:15px 0}.study-table{width:100%;border-collapse:collapse;font-size:14px}.study-table th,.study-table td{border:1px solid #b7cbd9;padding:9px 10px;text-align:left;vertical-align:top}.study-table th{background:#e9f3f9;color:#1b4561}.study-table tr:nth-child(even) td{background:#f8fbfd}.study-table caption{text-align:left;font-weight:700;padding:0 0 6px}.table-notice{font-size:12px;color:var(--muted)}@media(max-width:550px){.head-actions{gap:5px}.nav-link{font-size:12px;padding:7px 8px}.compact-search{width:180px}.top-inner{flex-wrap:wrap}.review{padding:4px 6px}}
+.enrichment{padding:15px;margin:16px 0;border:1px solid #c0e2ce;border-left:4px solid #39795e;background:#f5fcf8;border-radius:9px}.enrichment h3{margin:5px 0 8px;font-size:17px;color:#225640}.enrichment p{line-height:1.58}.enrichment details{background:white}.resource-depth{background:#f6f9fc}.resource-entry{border-top:1px solid var(--line);padding:12px 0}.resource-entry h4{margin:0 0 8px;color:#195276}.resource-entry p{line-height:1.58}.resource-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.resource-links a{display:inline-block;padding:7px 10px;border:1px solid #b4d1e2;background:white;border-radius:7px;text-decoration:none}.resource-links a:hover{text-decoration:underline}.history-note{margin:16px 0;padding:13px 15px;border:1px solid #d2dbea;border-left:4px solid #5076a1;border-radius:9px;background:#f6f9ff}.history-note h3{margin:6px 0;color:#1d507d;font-size:17px}.history-note p{line-height:1.6}.history-note .resource-links a{font-size:13px}
 
-:root{--ink:#18364f;--blue:#125d93;--line:#d7e4ee}header{padding:15px max(16px,calc((100vw - 850px)/2));background:linear-gradient(115deg,#e4f2fb,#f4faff);box-shadow:0 3px 14px #173b5620}header strong{font-size:21px;letter-spacing:-.4px}.wrap{padding-top:20px}.panel{border-color:var(--line);box-shadow:0 4px 18px #1637500b;padding:20px;border-radius:16px}button{transition:background .15s,border-color .15s,transform .12s}button:hover:not(:disabled){border-color:#146da3;background:#eaf4fc}button.primary:hover,.selected:hover{background:#135e94;color:white}button:focus-visible,.bible-ref:focus-visible{outline:3px solid #e1a443;outline-offset:3px}.bar button{min-width:145px}.title{letter-spacing:-.4px}.image-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0}.image-controls button{min-width:105px}#modal img{max-height:70vh;object-fit:contain}#modal .panel{max-width:960px}#pic{text-align:center;min-height:160px}#pic img{border-radius:9px}#verse-modal .panel{max-width:760px!important}
+.text-item.answer{border-left:4px solid #398963;background:#eff9f2;padding:11px 13px;border-radius:5px;margin:8px 0 15px}
+.question-bundle{margin:14px 0 18px}
+.question-bundle h3{font-size:16px;color:#284a64;margin:0 0 10px}
+.qa-pair{border:1px solid #d4e5ec;border-radius:10px;padding:13px 15px;margin:10px 0;background:#fafcfe}
+.qa-heading{font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:750;color:#315b7a;margin-bottom:5px}
+.qa-heading.answer-label{color:#27694d;margin-top:12px}
+.qa-question,.qa-answer{line-height:1.6;overflow-wrap:anywhere}
+.qa-answer{background:#e9f6ec;border-left:4px solid #398963;border-radius:7px;padding:10px 12px}
+.gtk-discussion{background:#fff;padding:13px;border:1px solid #c7e0d0;border-radius:9px;margin:12px 0}
+.history-note.daniel,.resource-depth.daniel{background:#fbf5ed;border-color:#dec8aa;border-left:4px solid #996c3c}
+.history-note.daniel h3,.resource-depth.daniel summary{color:#7c5226}
+.history-note.revelation,.resource-depth.revelation{background:#f0f7ff;border-color:#bed4e9;border-left:4px solid #326c9e}
+.history-note.revelation h3,.resource-depth.revelation summary{color:#245e92}
 
-/* Active view: readable, strongly highlighted instead of faded. */
-.bar button.selected,.bar button.selected:hover,.bar button.selected:focus,.bar button.selected:active{
- background:#08659d!important;color:#ffffff!important;border-color:#064d78!important;
- box-shadow:inset 0 0 0 1px #ffffff50,0 2px 7px #164a712e;opacity:1!important;
-}
-.bar button:not(.selected){background:#fff;color:#17527c;opacity:1}
-/* Image expanded view fills the viewport but keeps visible, accessible controls. */
-#modal.full-image{padding:0;background:#071625;overflow:hidden}
-#modal.full-image .panel{width:100%;max-width:none;height:100vh;height:100dvh;margin:0;border-radius:0;background:#071625;color:white;display:flex;flex-direction:column;padding:12px 16px}
-#modal.full-image #pic{flex:1;min-height:0;display:flex;justify-content:center;align-items:center;overflow:hidden}
-#modal.full-image #pic img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;margin:0}
-#modal.full-image .image-controls{color:white;flex-shrink:0;padding:8px 0 max(8px,env(safe-area-inset-bottom))}
-#modal.full-image .image-controls .muted{color:#e6f3ff}
-#modal.full-image .image-toolbar{flex-shrink:0}
-#modal.full-image button{background:#e4f2fc;color:#124b75;border-color:#bcdcf2}
-#modal.full-image button:disabled{opacity:.4}
-.image-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-body.image-open{overflow:hidden}
-
-/* Header refresh control */
-.student-site-button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:#166a9e;color:#fff;border:1px solid #166a9e;border-radius:10px;padding:10px 13px;font-weight:700;white-space:nowrap;font-size:14px}.student-site-button:hover{background:#0f547f;color:#fff}.student-site-button:focus-visible{outline:3px solid #e1a443;outline-offset:3px}.header-actions{display:flex;align-items:center;gap:7px;flex-shrink:0}
-.header-actions .refresh-button{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;min-width:42px;border-radius:9px;font-size:21px;line-height:1}
-.refresh-button.refreshing{opacity:.75;cursor:wait}
-@media(max-width:480px){header{gap:8px;flex-wrap:wrap}.header-actions{gap:6px}.student-site-button{padding:9px 11px}}@media(max-width:390px){header strong{font-size:18px}.header-actions button:not(.refresh-button){padding:10px}}
-
-/* Study PDF viewer: Close stays visible above embedded PDF, including on phones. */
-#study-pdf-viewer{position:fixed;inset:0;z-index:9999;background:#eff5fa;display:flex;flex-direction:column}
-#study-pdf-viewer .pdf-toolbar{display:flex;gap:8px;align-items:center;justify-content:space-between;background:#dceffa;padding:10px 12px;box-shadow:0 1px 6px #1232;flex:none}
-#study-pdf-viewer .pdf-toolbar strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
-#study-pdf-viewer .pdf-toolbar .pdf-actions{display:flex;gap:6px;align-items:center;flex:none}
-#study-pdf-viewer iframe{flex:1;width:100%;border:0;background:white;min-height:0}
-#study-pdf-viewer .pdf-hint{text-align:center;font-size:12px;padding:6px;color:#425e74;background:#fff}
-body.pdf-open{overflow:hidden}
-@media(max-width:480px){#study-pdf-viewer .pdf-toolbar{flex-wrap:wrap}#study-pdf-viewer .pdf-toolbar strong{width:100%}#study-pdf-viewer .pdf-toolbar button{padding:8px}}
-
-.etbs-links-button{background:#fff!important;color:#125d93!important;border-color:#8cb5d2!important}.etbs-links-button:hover{background:#eaf4fc!important;color:#125d93!important}
-</style></head><body><header><div><strong>📖 Bible Studies</strong><div class="muted">Teacher's Guide</div></div><div class="header-actions"><a class="student-site-button etbs-links-button" href="../links/" title="Browse End Time Bible Studies sites">LINKS</a><a class="student-site-button etbs-links-button" href="https://endtimebiblestudies.org/#help" title="Help / Connect">HELP / CONNECT</a><button onclick="home()">Home</button><button class="refresh-button" title="Check for latest version" aria-label="Refresh to latest version" onclick="refreshBibleStudies(this)">↻</button></div></header><div class="wrap"><div id="loading" class="panel">Loading study material…</div><div id="library" class="hidden"><div class="panel"><div class="title">Study Library</div><input id="search" placeholder="Search studies and text…" oninput="library()"><div id="list"></div></div></div><div id="study" class="hidden"><div class="panel"><div class="muted" id="counter"></div><div class="title" id="title"></div><div class="bar" style="margin-bottom:11px"><button class="primary" onclick="shareStudyPdf()">↗ Share Study PDF</button></div><div class="bar"><button id="guided" onclick="setMode('guided')">Guided Teaching</button><button id="reference" onclick="setMode('reference')">Scrollable Reference</button><button id="verses" onclick="setMode('verses')">Bible Verses</button></div></div><div id="body"></div></div></div><div id="verse-modal" class="hidden" style="position:fixed;inset:0;background:#000b;z-index:20;overflow:auto;padding:14px" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel" style="max-width:680px;margin:5vh auto"><button onclick="closeVerse()">Close ✕</button><h3 id="verse-title"></h3><div id="verse-text"></div></div></div><div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div class="panel"><div class="image-toolbar"><button onclick="closeModal()">Close ✕</button><button id="image-fullscreen" onclick="toggleImageFullscreen()">⛶ Full Screen</button></div><div id="pic"></div><div id="image-controls" class="image-controls hidden"><button id="image-prev" onclick="stepImage(-1)">← Previous</button><span id="image-count" class="muted"></span><button id="image-next" onclick="stepImage(1)">Next →</button></div></div></div><script>
-let data,section=0,mode='guided',idx=0,kjv=null,kjvStatus='Loading stored KJV verses…';const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-
-// PDFs are built from the original PDF, not from the simplified app text.
-const pdfBase = './study-pdfs/';
-function studyPdfUrl(){return pdfBase+'Study_'+String(section+1).padStart(2,'0')+'.pdf'}
-
-// Share a direct link to the PDF for the CURRENT study. Never open or download it here.
-async function shareStudyPdf(){
-  if(!data || !Array.isArray(data.sections) || !data.sections[section]){
-    alert('Please open a study before sharing.');
-    return;
-  }
-  const study = data.sections[section];
-  const pdfUrl = new URL(studyPdfUrl(), document.baseURI).href;
-  const payload = {title: 'Bible Studies — ' + study.title,
-                   text: 'Bible study: ' + study.title,
-                   url: pdfUrl};
-  try {
-    if(navigator.share){
-      await navigator.share(payload);
-      return;
-    }
-  } catch(err) {
-    if(err && err.name === 'AbortError') return; // User closed share sheet.
-    // Other sharing failures fall back to copying or displaying the link.
-  }
-  try {
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      await navigator.clipboard.writeText(pdfUrl);
-      alert('Study PDF link copied. You can paste it into a message or email.');
-      return;
-    }
-  } catch(err) { /* A blocked clipboard still gets a usable link below. */ }
-  window.prompt('Copy this link to share the current study PDF:', pdfUrl);
-}
-
-
-function library(){const q=$('search').value.toLowerCase().trim();$('list').innerHTML=data.sections.filter(s=>!q||s.title.toLowerCase().includes(q)||s.units.some(u=>u.text.toLowerCase().includes(q))).map(s=>`<button class="item" onclick="openStudy(${s.id})"><span>${s.id+1}. ${esc(s.title)}</span><span>›</span></button>`).join('')||'<p>No matches</p>'}
-function home(){localStorage.setItem('bbc-view','home');$('study').classList.add('hidden');$('library').classList.remove('hidden');library()}
-function openStudy(n){localStorage.setItem('bbc-view','study');section=n;idx=0;mode=['guided','reference','verses'].includes(localStorage.getItem('bbc-mode'))?localStorage.getItem('bbc-mode'):'guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('title').textContent=data.sections[n].title;render()}
-function setMode(m){mode=m;idx=0;localStorage.setItem('bbc-mode',m);render()}
-function imageButton(names){return names.length?`<button onclick='showImages(${JSON.stringify(names)})'>▧ Image</button>`:''}
-// Colour scripture references without changing the original wording or adding links.
-// Operates on HTML-escaped plain text, before it is inserted into the page.
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.global-search{position:relative;flex:0 1 220px;min-width:155px;z-index:6}
+.global-search .compact-search{width:100%;padding:8px 30px 8px 12px;font-size:14px;background:#fff;border:1px solid #8cb5d2}
+.global-search .search-clear{position:absolute;right:3px;top:3px;border:0;padding:3px 9px;font-size:18px;color:#315b7a}
+.search-results{position:absolute;right:0;top:calc(100% + 11px);width:min(570px,calc(100vw - 26px));max-height:min(68vh,650px);overflow:auto;background:#fff;border:1px solid #aec8db;border-radius:12px;box-shadow:0 14px 34px #163c5a34;padding:12px;z-index:20}
+.search-summary{position:sticky;top:-12px;background:#fff;z-index:1;border-bottom:1px solid var(--line);padding:8px 4px 12px;display:flex;align-items:center;gap:5px;justify-content:space-between;flex-wrap:wrap;font-size:13px;color:#48617a}
+.search-summary strong{color:#183d5d}.search-summary button{font-size:12px;padding:4px 7px}
+.search-study{border-bottom:1px solid var(--line);padding:10px 0 12px}.search-study:last-child{border-bottom:0}.search-study h3{margin:0 0 5px;font-size:15px;color:#1b4b70}
+.search-study .snippet{border:0;border-radius:7px;padding:9px 10px;margin:3px 0;line-height:1.4}.search-study .snippet:hover,.search-study .snippet:focus-visible{background:#e6f3fb}
+.search-more{font-size:12px;color:#175f8a;border:0;padding:7px 9px}.search-empty{padding:12px;font-size:14px}
+mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2px}
+.search-target{outline:2px solid #f0be54;outline-offset:4px;border-radius:3px;scroll-margin-top:110px}
+.top .head-actions{flex:1;justify-content:flex-end}
+@media(max-width:800px){.top-inner{flex-wrap:wrap}.top .head-actions{width:100%;justify-content:flex-start}.global-search{flex:1 1 220px}.search-results{left:0;right:auto;max-width:calc(100vw - 22px)}}
+@media(max-width:480px){.top-inner{gap:7px;padding:8px 11px}.brand strong{font-size:15px}.global-search{flex:1 1 100%;order:2}.review{font-size:10px}.nav-link{padding:7px}.top .head-actions{gap:5px}}
+.study-order{font-family:system-ui,sans-serif;font-size:.85em;color:#5d8199;margin-right:5px}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teachers’ Guide</strong><div class="tiny">Teaching companion</div></div><div class="head-actions"><div class="global-search" role="search"><label for="search" class="sr-only">Find words in all studies</label><input class="compact-search" id="search" aria-label="Find words in all studies" placeholder="Find words…" autocomplete="off"><button id="clear-search" class="search-clear hidden" type="button" aria-label="Clear search">×</button><div id="search-results" class="search-results hidden" role="region" aria-label="Word search matches"></div></div><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><a class="nav-link" href="https://endtimebiblestudies.org/#help" title="Contact, request help or give feedback">Help / Feedback</a><button id="home" type="button">Home</button></div></div></header>
+<main>
+<div id="loading" class="panel">Loading Bible studies…</div>
+<section id="library" class="hidden">
+<div class="panel"><div class="row"><div><h1 class="heading" style="margin:0">Study Library</h1><div class="tiny">Choose any study, in any order</div></div><button id="sort" type="button" title="Toggle alphabetical or original order">A–Z</button></div></div>
+<div class="panel" id="library-list"></div></section>
+<section id="study" class="hidden">
+<div class="panel"><div id="study-number" class="tiny"></div><h1 id="study-title" class="heading"></h1><div class="ribbon"><div class="label">Purpose</div><div id="purpose"></div></div><div class="ribbon"><div class="label">Central truth</div><div id="central"></div></div><div class="mode-buttons"><button id="mode-guided">Main Study</button><button id="mode-verses">Scriptures</button><button id="pdf-button" title="Shares the existing study PDF during this V2 preview. The redesigned PDF is still in development.">Share</button></div></div>
+<div id="guide-view" class="layout"><aside class="panel side"><h3>Main teaching pathway</h3><div id="core-nav"></div><h3 style="margin-top:20px">Explore deeper • questions</h3><div id="extra-nav"></div></aside><article id="stage" class="panel"></article></div>
+<div id="verses-view" class="panel hidden"></div>
+</section></main>
+<div id="verse-modal" class="modal hidden" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel"><button onclick="closeVerse()">Close ✕</button><h2 id="verse-title"></h2><div id="verse-text"></div></div></div>
+<div id="image-modal" class="modal hidden" onclick="if(event.target.id==='image-modal')closeImage()"><div class="panel"><button onclick="closeImage()">Close ✕</button><div id="image-content" style="text-align:center;margin-top:10px"></div></div></div>
+<script>
+let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,tableLayouts=null,historicalNotes=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=false,kjv=null,kjvStatus='Loading stored KJV verses…';
+let searchHits=[],searchExpanded=new Set();
+// Exact published GTKJ study sequence; maps to stable teacher study IDs without reordering their content.
+const GTKJ_ORDER=["word","history","controversy","salvation","spirit","sanctuary","blue-stone","law","sabbath","prayer","baptism","living","health","stewardship","nature","second-coming","millennium","hell","seventy-weeks","judgement","1844","antichrist","america","mark","prophecy-gift","godhead","remnant","witnessing"];
+let gtkjRank=new Map();
+function orderStudies(studies){const sorted=studies.slice();if(sortAZ)sorted.sort((a,b)=>a.title.localeCompare(b.title));else sorted.sort((a,b)=>(gtkjRank.get(a.id)??999)-(gtkjRank.get(b.id)??999));return sorted;}
+const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const bibleBook = String.raw`(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Songs?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Nah|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev)`;
 const verseSpan = String.raw`\d+(?:\s*[-‐‑‒–—−]\s*(?:\d+\s*[:：]\s*)?\d+)?`;
 const bibleRefRegex = new RegExp(String.raw`\b${bibleBook}\.?\s*\d+(?:\s*[:：]\s*${verseSpan}(?:\s*[,;]\s*(?![123]\s*${bibleBook}\.?\s*\d)(?:\d+\s*[:：]\s*)?${verseSpan})*|\s*[-–—]\s*\d+)?`, 'gi');
@@ -128,69 +116,228 @@ function showVerse(ref){
 function closeVerse(){$('verse-modal').classList.add('hidden')}
 let kjvPromise=null;
 function loadKjvOnce(){if(!kjvPromise)kjvPromise=loadKjv();return kjvPromise;}
-async function loadKjv(){try{const r=await fetch('kjv-verses.json');if(!r.ok)throw Error('KJV data not yet added');kjv=await r.json();kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}catch(e){kjvStatus='KJV text is not installed in this package yet. Add kjv-verses.json from your Google Drive folder before publishing. '+e.message; if(!$('verse-modal').classList.contains('hidden'))$('verse-text').textContent=kjvStatus}}
+async function loadKjv(){try{const r=await fetch('../teachers-guide/kjv-verses.json');if(!r.ok)throw Error('KJV data not yet added');kjv=await r.json();kjvStatus='Ready';if(!$('verse-modal').classList.contains('hidden'))showVerse($('verse-title').textContent.replace(/ — KJV$/,''))}catch(e){kjvStatus='KJV text is not installed in this package yet. Add kjv-verses.json from your Google Drive folder before publishing. '+e.message; if(!$('verse-modal').classList.contains('hidden'))$('verse-text').textContent=kjvStatus}}
 
 
-function imageGroup(units,start){const names=[];let i=start;
- while(i<units.length){const u=units[i];if((u.text||'').trim()||!u.images||!u.images.length)break;names.push(...u.images);i++}
- return {names,next:i};
-}
-function unitsWithImageGroups(units,hide){let html='';for(let i=0;i<units.length;){
- const u=units[i], names=[...(u.images||[])];let next=i+1;
- // Subsequent image-only units belong to the same image gallery.
- if(names.length)while(next<units.length&&!(units[next].text||'').trim()&&units[next].images.length){names.push(...units[next].images);next++}
- const main=unit({...u,images:[]},hide);
- html+=`<div class="panel" id="unit-${i}">${main}${names.length?`<div style="margin-top:12px">${imageButton(names)}</div>`:''}</div>`;
- i=next;
- }return html;
-}
-function unit(u,hide){let txt=highlightRefs(u.text);let main=u.kind==='answer'&&hide?`<details><summary>Reveal Answer</summary><div class="answer">${txt}</div></details>`:`<div class="content ${u.kind}">${txt}</div>`;return main+(u.images.length?'<div style="margin-top:12px">'+imageButton(u.images)+'</div>':'')}
-function render(){const s=data.sections[section];for(const m of ['guided','reference','verses'])$(m).classList.toggle('selected',m===mode);$('counter').textContent=`Study ${section+1} of ${data.sections.length}`;let h='';if(mode==='verses'){h=`<div class="panel"><h3>Bible Verses</h3><p class="muted">References identified from this study, in document order.</p><table class="versetable"><tr><th>#</th><th>Reference</th></tr>${s.verses.map((v,i)=>`<tr><td>${i+1}</td><td>${highlightRefs(v)}</td></tr>`).join('')}</table></div>`}else if(mode==='guided'){let u=s.units[idx];let i=idx;while(i>0&&s.units[i-1].images.length&&!(s.units[i-1].text||'').trim()&&!(s.units[i].text||'').trim())i--;const group=imageGroup(s.units,i);if(group.names.length&&idx<group.next){h=`<div class="panel"><p class="muted">Teaching item ${i+1} of ${s.units.length}</p>${imageButton(group.names)}</div>`}else{h=`<div class="panel"><p class="muted">Teaching item ${idx+1} of ${s.units.length}</p>${unit(u,true)}</div>`}}else{h=unitsWithImageGroups(s.units,false)}if(mode==='guided')h+=`<div class="panel"><div class="bar"><button onclick="guidedStep(-1)" ${idx===0?'disabled':''}>← Back</button><button class="primary" onclick="guidedStep(1)" ${idx>=s.units.length-1?'disabled':''}>Continue →</button></div></div>`;$('body').innerHTML=h;localStorage.setItem('bbc-progress',JSON.stringify({section,idx}));if(mode!=='reference')scrollTo(0,0)}
-function guidedStep(delta){idx=Math.max(0,Math.min(data.sections[section].units.length-1,idx+delta));if(delta>0){const g=imageGroup(data.sections[section].units,idx);if(g.names.length&&idx>0&&imageGroup(data.sections[section].units,idx-1).next>idx)idx=g.next-1;}render()}
-function next(){if(mode!=='reference')return;const s=data.sections[section];idx=Math.min(idx+1,s.units.length-1);document.getElementById('unit-'+idx)?.scrollIntoView({behavior:'smooth'})}
-function prev(){if(mode!=='reference')return;idx=Math.max(idx-1,0);document.getElementById('unit-'+idx)?.scrollIntoView({behavior:'smooth'})}
-let imageNames=[],imageIndex=0,imageSerial=0;
-function showImages(names){imageNames=names;imageIndex=0;$('modal').classList.remove('hidden');document.body.classList.add('image-open');renderImage()}
-function stepImage(delta){imageIndex=Math.max(0,Math.min(imageNames.length-1,imageIndex+delta));renderImage()}
-function renderImage(){const n=imageNames[imageIndex],serial=++imageSerial;
- $('image-controls').classList.toggle('hidden',imageNames.length<2);
- $('image-count').textContent=`${imageIndex+1} of ${imageNames.length}`;
- $('image-prev').disabled=imageIndex===0;$('image-next').disabled=imageIndex===imageNames.length-1;
- $('pic').textContent='Loading image…';
- loadImage(n,src=>{if(serial!==imageSerial)return;$('pic').innerHTML=src?`<img src="${src}" alt="Study illustration">`:'<p>Image unavailable.</p>'})
-}
-function loadImage(n,callback){callback('assets/'+encodeURIComponent(n))}
-function toggleImageFullscreen(){
- const active=$('modal').classList.toggle('full-image');
- $('image-fullscreen').textContent=active?'⤢ Exit Full Screen':'⛶ Full Screen';
-}
-function closeModal(){imageSerial++;$('modal').classList.add('hidden');$('modal').classList.remove('full-image');document.body.classList.remove('image-open');$('image-fullscreen').textContent='⛶ Full Screen'}
-window.addEventListener('keydown',e=>{
- if(e.key==='Escape'&&!$('modal').classList.contains('hidden'))closeModal();
- else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowLeft')stepImage(-1);
- else if(!$('modal').classList.contains('hidden')&&e.key==='ArrowRight')stepImage(1);
-});
-fetch('study-data.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{data=d;$('loading').classList.add('hidden');$('library').classList.remove('hidden');const resumeStudy=localStorage.getItem('bbc-view')==='study';home();try{const p=resumeStudy?JSON.parse(localStorage.getItem('bbc-progress')):null;if(p&&Number.isInteger(p.section)&&p.section>=0&&p.section<data.sections.length){openStudy(p.section);idx=Math.min(p.idx,data.sections[p.section].units.length-1);render()}}catch(e){}}).catch(e=>$('loading').textContent='Could not load data: '+e.message);
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.warn))}
 
-// Check online content first; the service worker uses network-first for app files.
-async function refreshBibleStudies(button){
- if(button.disabled)return;
- button.disabled=true;button.classList.add('refreshing');button.textContent='…';
- try{
-   const response=await fetch('./study-data.json?refresh='+Date.now(),{cache:'no-store'});
-   if(!response.ok)throw Error('Website returned HTTP '+response.status);
-   const updated=await response.json();
-   if(!updated||!Array.isArray(updated.sections))throw Error('Invalid study file');
-   if('serviceWorker' in navigator){
-     const registration=await navigator.serviceWorker.getRegistration();
-     if(registration)await registration.update();
+function numberedQuestionBlock(units,start,end){
+ // Pair numbered questions with numbered answers when both appear in the
+ // same source group. Never change the original Word-derived unit data.
+ if(!/^questions?\s*:?\s*$/i.test((units[start]?.text||'').trim()))return null;
+ const questions=[];let j=start+1;
+ for(;j<=end;j++){
+   const m=(units[j]?.text||'').trim().match(/^#\s*(\d+)\s*[\.\)]?\s*(.+)$/);
+   if(!m)break;questions.push({number:Number(m[1]),text:m[2],unit:j});
+ }
+ if(!questions.length||!/^answers?\s*:?\s*$/i.test((units[j]?.text||'').trim()))return null;
+ const answers=[];j++;
+ for(;j<=end;j++){
+   const m=(units[j]?.text||'').trim().match(/^#\s*(\d+)\s*[\.\)]?\s*(.+)$/);
+   if(!m)break;answers.push({number:Number(m[1]),text:m[2],unit:j});
+ }
+ if(questions.length!==answers.length||questions.some((q,i)=>q.number!==answers[i].number))return null;
+ const html='<div class="question-bundle"><h3>Questions and answers</h3>'+questions.map((q,i)=>
+  '<section class="qa-pair"><div class="qa-heading">Question '+q.number+'</div><div class="qa-question" data-unit="'+q.unit+'">'+highlightRefs(q.text)+'</div>'+
+  '<div class="qa-heading answer-label">Answer</div><div class="qa-answer" data-unit="'+answers[i].unit+'">'+highlightRefs(answers[i].text)+'</div></section>'
+ ).join('')+'</div>';
+ return {html,lastIndex:j-1};
+}
+function unitsMarkup(from,to){
+ let html='';
+ const units=studyData[current].units;
+ const tables=(tableLayouts?.tables||[]).filter(t=>t.study_id===current);
+ for(let j=from;j<=to;j++){
+  const table=tables.find(t=>t.start===j);
+  if(table){
+   if(table.end>to){html+='<p class="table-notice">Table spans beyond this teaching stage. Review stage boundaries before publishing.</p>';continue}
+   html+='<div class="table-wrap"><table class="study-table"><caption>'+esc(table.caption)+'</caption>';
+   for(let k=0;k<table.rows.length;k++){
+    html+='<tr>'+table.rows[k].map(index=>{
+       const val=highlightRefs(units[index].text||'');
+       return (table.column_headers&&k===0?'<th scope="col" data-unit="'+index+'">':'<td data-unit="'+index+'">')+val+(table.column_headers&&k===0?'</th>':'</td>');
+    }).join('')+'</tr>';
    }
-   location.reload();
- }catch(error){
-   alert('Unable to reach the latest study files. Your offline studies are still available.\n\n'+error.message);
-   button.disabled=false;button.classList.remove('refreshing');button.textContent='↻';
+   html+='</table></div>';j=table.end;continue;
+  }
+  if(tables.some(t=>j>t.start&&j<=t.end))continue;
+  const bundle=numberedQuestionBlock(units,j,to);
+  if(bundle){html+=bundle.html;j=bundle.lastIndex;continue}
+  const u=units[j];if(!u)continue;
+  const kind=u.kind||'text', txt=highlightRefs(u.text||'');
+  html+='<div data-unit="'+j+'" class="text-item '+(kind==='heading'?'heading':kind==='question'?'question':kind==='answer'?'answer':'')+'">'+txt+'</div>';
+  if(u.images&&u.images.length)u.images.forEach(name=>{
+   html+='<button class="image-btn" data-image="'+esc(name)+'" type="button">View illustration</button>';
+  });
+ }
+ return html;
+}
+function closeImage(){$('image-modal').classList.add('hidden');$('image-content').textContent=''}
+function showImage(filename){const path='../teachers-guide/assets/'+encodeURIComponent(filename);$('image-content').innerHTML='<img src="'+path+'" alt="Original teaching illustration">';$('image-modal').classList.remove('hidden')}
+function showLibrary(){current=-1;$('loading').classList.add('hidden');$('study').classList.add('hidden');$('library').classList.remove('hidden');renderLibrary();scrollTo(0,0)}
+function normalizeSearch(v){return String(v||'').trim().toLocaleLowerCase().replace(/\s+/g,' ')}
+function highlightedExcerpt(raw,words){
+ raw=String(raw||'');const low=raw.toLocaleLowerCase();
+ const at=words.reduce((n,w)=>{const p=low.indexOf(w);return p<0?n:Math.min(n,p)},Infinity);
+ const from=Number.isFinite(at)?Math.max(0,at-58):0,to=Math.min(raw.length,(Number.isFinite(at)?at:0)+155);
+ const t=raw.slice(from,to),matches=[];
+ for(const word of words){let pos=0;while(word&&pos<t.length){let x=t.toLocaleLowerCase().indexOf(word,pos);if(x<0)break;matches.push([x,x+word.length]);pos=x+word.length}}
+ matches.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);let html='',offset=0;
+ for(const [a,b] of matches){if(a<offset)continue;html+=esc(t.slice(offset,a))+'<mark>'+esc(t.slice(a,b))+'</mark>';offset=b}
+ return (from?'…':'')+html+esc(t.slice(offset))+(to<raw.length?'…':'');
+}
+function closeSearch(){$('search-results').classList.add('hidden');$('search').setAttribute('aria-expanded','false')}
+function renderSearch(){
+ const q=normalizeSearch($('search').value),panel=$('search-results');
+ $('clear-search').classList.toggle('hidden',!q);
+ if(!q||!studyData||!teachMap){searchHits=[];closeSearch();return}
+ const words=q.split(' ').filter(Boolean),hits=[];
+ for(const study of teachMap.studies){
+  for(let i=0;i<studyData[study.id].units.length;i++){
+   const txt=String(studyData[study.id].units[i].text||'');
+   if(words.every(w=>txt.toLocaleLowerCase().includes(w)))hits.push({study:study.id,index:i,text:txt});
+  }
+ }
+ searchHits=hits;
+ const groups=orderStudies(teachMap.studies).map(study=>({study,hits:hits.filter(x=>x.study===study.id)})).filter(g=>g.hits.length);
+ let html='<div class="search-summary"><strong>'+hits.length+' matching passage'+(hits.length===1?'':'s')+'</strong> in '+groups.length+' studies <button type="button" data-close-search>Close ×</button></div>';
+ if(!groups.length)html+='<p class="search-empty">No matches found in the studies.</p>';
+ for(const g of groups){
+  const expanded=searchExpanded.has(g.study.id),shown=expanded?g.hits:g.hits.slice(0,6);
+  html+='<section class="search-study"><h3>'+esc(g.study.title)+' <span class="find-count">'+g.hits.length+' matches</span></h3>';
+  html+=shown.map(hit=>'<button class="snippet" type="button" data-match-study="'+hit.study+'" data-match-unit="'+hit.index+'">'+highlightedExcerpt(hit.text,words)+'</button>').join('');
+  if(!expanded&&g.hits.length>6)html+='<button type="button" class="search-more" data-more-study="'+g.study.id+'">Show all '+g.hits.length+' matches</button>';
+  html+='</section>';
+ }
+ panel.innerHTML=html;panel.classList.remove('hidden');$('search').setAttribute('aria-expanded','true');
+}
+function renderLibrary(){
+ const arr=orderStudies(teachMap.studies);
+ $('sort').textContent=sortAZ?'A–Z':'GTKJ order';
+ $('library-list').innerHTML=arr.map(x=>'<button class="lib-item" data-study="'+x.id+'"><strong><span class="study-order">'+(gtkjRank.get(x.id)??0)+'.</span> '+esc(x.title)+'</strong><span>'+esc(x.purpose)+'</span></button>').join('');
+}
+function openStudy(i){closeSearch();current=i;stageKind='core';stageIndex=0;mode='guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('study-title').textContent=studyData[i].title;$('study-number').textContent='STUDY '+(gtkjRank.get(i)??i+1)+' • freely selected';const t=teachMap.studies[i];$('purpose').textContent=t.purpose;$('central').textContent=t.central_truth;renderMode();scrollTo(0,0)}
+function openMatch(studyIndex,unitIndex){
+ const words=normalizeSearch($('search').value).split(' ').filter(Boolean);
+ openStudy(studyIndex);
+ const groups=teachMap.studies[studyIndex].groups;
+ const found=groups.find(g=>g.start<=unitIndex&&unitIndex<=g.end);
+ if(!found)return;
+ stageKind=found.kind;stageIndex=groups.filter(x=>x.kind===found.kind).indexOf(found);renderGuide();
+ requestAnimationFrame(()=>focusSearchHit(unitIndex,words));
+}
+function focusSearchHit(index,words){
+ const target=$('stage').querySelector('[data-unit="'+index+'"]');
+ if(!target)return;
+ const walker=document.createTreeWalker(target,NodeFilter.SHOW_TEXT);
+ const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+ for(const node of nodes){
+  const text=node.nodeValue,low=text.toLocaleLowerCase(),spans=[];
+  for(const word of words){let pos=0;while(word&&pos<text.length){const at=low.indexOf(word,pos);if(at<0)break;spans.push([at,at+word.length]);pos=at+word.length}}
+  spans.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);let html=document.createDocumentFragment(),offset=0;
+  for(const [a,b] of spans){if(a<offset)continue;html.append(document.createTextNode(text.slice(offset,a)));const mark=document.createElement('mark');mark.className='search-hit';mark.textContent=text.slice(a,b);html.append(mark);offset=b;}
+  if(offset){html.append(document.createTextNode(text.slice(offset)));node.replaceWith(html);}
+ }
+ target.classList.add('search-target');target.scrollIntoView({behavior:'auto',block:'center'});
+}
+function setMode(next){mode=next;renderMode()}
+function renderMode(){
+ ['guided','verses'].forEach(m=>$('mode-'+m).classList.toggle('selected',mode===m));
+ $('guide-view').classList.toggle('hidden',mode!=='guided');$('verses-view').classList.toggle('hidden',mode!=='verses');
+ if(mode==='guided')renderGuide();if(mode==='verses')renderVerses();
+}
+function navButtons(){
+ const all=teachMap.studies[current].groups;
+ for(const [kind,slot] of [['core','core-nav'],['supplement','extra-nav']]){
+  let arr=all.map((g,i)=>({...g,globalIndex:i})).filter(g=>g.kind===kind);
+
+  $(slot).innerHTML=arr.length?arr.map(g=>'<button class="nav-button '+(stageKind===kind && all.filter(x=>x.kind===kind).indexOf(all[g.globalIndex])===stageIndex?'active':'')+'" data-group="'+kind+'" data-index="'+all.filter(x=>x.kind===kind).indexOf(all[g.globalIndex])+'">'+esc(g.label)+'</button>').join(''):(kind==='supplement'?'<p class="tiny">No matching questions.</p>':'');
  }
 }
-
-</script><script defer src="/scripture-auto.js?v=2"></script></body></html>
+function chooseStage(kind,i){stageKind=kind;stageIndex=i;renderGuide();scrollTo(0,0)}
+function renderGuide(){
+ const t=teachMap.studies[current],groups=t.groups.filter(g=>g.kind===stageKind),g=groups[stageIndex];
+ navButtons();if(!g)return;
+ const last=stageIndex===groups.length-1,first=stageIndex===0;
+ let html='<div class="row"><div class="title-row"><span class="review">'+(stageKind==='core'?'MAIN PATHWAY':'OPTIONAL REFERENCE')+'</span><span class="tiny">'+(stageIndex+1)+' of '+groups.length+'</span></div></div>';
+ html+='<h2>'+esc(g.label)+'</h2><p class="tiny">Original teaching content • '+(g.end-g.start+1)+' items</p>'+unitsMarkup(g.start,g.end);
+ if(stageKind==='core'){
+  const additions=coreEnrichments?.studies?.[current];
+  const x=additions?.main_stage_additions?.find(z=>z.core_stage_index===stageIndex)?.teacher_guidance;
+  if(x){
+    html+='<section class="enrichment"><div class="label">Teaching insight</div><h3>'+esc(x.title)+'</h3><p><strong>Read together:</strong> '+highlightRefs(x.reading_reference)+'</p><p>'+highlightRefs(x.explanation)+'</p><div class="gtk-discussion"><div class="qa-heading">Discussion question</div><div class="qa-question">'+esc(x.question)+'</div><div class="qa-heading answer-label">Suggested answer</div><div class="qa-answer">'+esc(x.suggested_answer)+'</div></div></section>';
+  }
+  const stageNotes=(historicalNotes?.notes||[]).filter(z=>z.study_id===current&&z.stage_index===stageIndex);
+  for(const n of stageNotes){
+    html+='<section class="history-note '+(n.sources.some(z=>z.url.includes('/revelation/'))&&!n.sources.some(z=>z.url.includes('/daniel/'))?'revelation':'daniel')+'"><div class="label">'+esc(n.type)+'</div><h3>'+esc(n.title)+'</h3><p>'+highlightRefs(n.text)+'</p><div class="resource-links">'+n.sources.map(z=>'<a href="'+esc(z.url)+'" rel="noopener" target="_blank">'+esc(z.label)+'</a>').join('')+'</div></section>';
+  }
+  const lastMain=teachMap.studies[current].groups.filter(z=>z.kind==='core').length-1;
+  if(stageIndex===lastMain && additions?.daniel_context_candidates?.length){
+    html+='<details class="resource-depth daniel"><summary>Prophetic context and deeper applications</summary>';
+    for(const n of additions.daniel_context_candidates){
+      html+='<div class="resource-entry"><h4>'+esc(n.title)+'</h4><p>'+highlightRefs(n.history_or_interpretation.slice(0,650))+(n.history_or_interpretation.length>650?'…':'')+'</p><p>'+esc(n.spiritual_application.slice(0,420))+'</p><a href="'+esc(n.url)+'" target="_blank" rel="noopener">Explore '+esc(n.scripture)+' in Daniel</a></div>';
+    }
+    html+='</details>';
+  }
+  if(stageIndex===lastMain&&relatedResources?.items?.[current]?.deep_reading_links?.length){
+    const links=relatedResources.items[current].deep_reading_links.filter(n=>n.source==='revelation');
+    if(links.length){html+='<details class="resource-depth revelation"><summary>Explore related passages</summary><div class="resource-links">'+links.map(n=>'<a target="_blank" rel="noopener" href="'+esc(n.href)+'">'+esc(n.passage||n.title)+'</a>').join('')+'</div></details>';}
+  }
+ }
+ if(stageKind==='core'&&last)html+='<section class="teacher-prompt"><strong>Spiritual application</strong><p>'+esc(t.application.text)+'</p><strong>Invitation / discussion</strong><p>'+esc(t.response.text)+'</p></section>';
+ html+='<div class="nav-bottom"><button id="prev" '+(first?'disabled':'')+'>← Previous</button><div class="tiny">'+(stageKind==='core'?'Teaching stage':'Reference question')+'</div><button id="next" '+(last?'disabled':'')+'>Next →</button></div>';
+ if(stageKind==='supplement')html+='<p><button id="back-core">Return to main pathway</button></p>';
+ $('stage').innerHTML=html;
+ $('prev').onclick=()=>chooseStage(stageKind,stageIndex-1);$('next').onclick=()=>chooseStage(stageKind,stageIndex+1);
+ if($('back-core'))$('back-core').onclick=()=>chooseStage('core',0);
+}
+function renderVerses(){
+ const s=studyData[current];$('verses-view').innerHTML='<h2>Bible verses</h2><p class="muted">Scripture references from the original Word study, in document order.</p>'+s.verses.map((v,i)=>'<div class="text-item">'+(i+1)+'. '+highlightRefs(v)+'</div>').join('');
+}
+document.addEventListener('click',e=>{
+ const matched=e.target.closest('[data-match-study]');if(matched){openMatch(Number(matched.dataset.matchStudy),Number(matched.dataset.matchUnit));return}
+ const more=e.target.closest('[data-more-study]');if(more){searchExpanded.add(Number(more.dataset.moreStudy));renderSearch();return}
+ if(e.target.closest('[data-close-search]')){closeSearch();return}
+ const lib=e.target.closest('[data-study]');if(lib){openStudy(Number(lib.dataset.study));return}
+ const nav=e.target.closest('[data-group]');if(nav){chooseStage(nav.dataset.group,Number(nav.dataset.index));return}
+ const img=e.target.closest('[data-image]');if(img){showImage(img.dataset.image);return}
+});
+$('home').onclick=()=>{closeSearch();showLibrary()};
+$('sort').onclick=()=>{sortAZ=!sortAZ;renderLibrary()};
+$('search').oninput=()=>{searchExpanded.clear();renderSearch()};
+$('search').onfocus=()=>{if(normalizeSearch($('search').value))renderSearch()};
+$('search').onkeydown=e=>{if(e.key==='Escape'){closeSearch();$('search').blur()}if(e.key==='Enter'&&searchHits.length)openMatch(searchHits[0].study,searchHits[0].index)};
+$('clear-search').onclick=()=>{$('search').value='';searchExpanded.clear();renderSearch();$('search').focus()};
+document.addEventListener('click',e=>{if(!e.target.closest('.global-search'))closeSearch()});
+$('mode-guided').onclick=()=>setMode('guided');$('mode-verses').onclick=()=>setMode('verses');
+$('pdf-button').onclick=()=>{
+ if(current<0)return;const path='../teachers-guide/study-pdfs/Study_'+String(current+1).padStart(2,'0')+'.pdf';
+ const url=new URL(path,location.href).href;if(navigator.share)navigator.share({title:studyData[current].title,url}).catch(()=>{});else window.prompt('Copy the study PDF link:',url);
+};
+Promise.all([
+ fetch('../teachers-guide/study-data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Study data HTTP '+r.status);return r.json()}),
+ fetch('./teaching-map.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Teaching map HTTP '+r.status);return r.json()}),
+ fetch('./related-study-resources.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Related resources HTTP '+r.status);return r.json()}),
+ fetch('./main-pathway-enrichments.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Main additions HTTP '+r.status);return r.json()}),
+ fetch('./table-layouts.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Tables HTTP '+r.status);return r.json()}),
+ fetch('./main-historical-notes.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Historical notes HTTP '+r.status);return r.json()})
+]).then(([source,map,related,enriched,tables,history])=>{
+ if(!Array.isArray(source.sections)||!Array.isArray(map.studies)||source.sections.length!==map.studies.length)throw Error('Study count mismatch');
+ for(let i=0;i<source.sections.length;i++)if(source.sections[i].title!==map.studies[i].title||source.sections[i].units.length!==map.studies[i].source_unit_count)throw Error('Source mismatch: '+i);
+ if(related.items.length!==map.studies.length||enriched.studies.length!==map.studies.length)throw Error('Resource count mismatch');
+ const byGtkj=new Map(related.items.map(x=>[x.gtk_source_id,x.teacher_study_id]));
+ if(byGtkj.size!==28||new Set(GTKJ_ORDER).size!==28||GTKJ_ORDER.some(id=>!byGtkj.has(id)))throw Error('GTKJ order does not match Teachers Guide resources');
+ gtkjRank=new Map(GTKJ_ORDER.map((id,n)=>[byGtkj.get(id),n+1]));
+ for(let i=0;i<enriched.studies.length;i++){
+  const stages=map.studies[i].groups.filter(g=>g.kind==='core');
+  const included=new Set();
+  for(const x of enriched.studies[i].main_stage_additions){
+   if(!stages[x.core_stage_index]||included.has(x.core_stage_index))throw Error('Teaching addition mapping changed: '+i);
+   included.add(x.core_stage_index);
+  }
+ }
+ for(const t of tables.tables){const sec=source.sections[t.study_id];if(!sec||sec.title!==t.study_title||t.rows.flat().length!==t.end-t.start+1||t.rows.flat().some((j,k)=>j!==t.start+k))throw Error('Table source structure changed: '+t.study_title)}
+ for(const x of history.notes){if(!map.studies[x.study_id]||!map.studies[x.study_id].groups.filter(g=>g.kind==='core')[x.stage_index])throw Error('Outdated historical note target: '+x.title)}
+ studyData=source.sections;teachMap=map;relatedResources=related;coreEnrichments=enriched;tableLayouts=tables;historicalNotes=history;showLibrary();
+}).catch(err=>{$('loading').textContent='Teachers’ Guide could not load: '+err.message+'. Please refresh or contact Help / Feedback if the issue persists.'});
+</script>
+</body></html>

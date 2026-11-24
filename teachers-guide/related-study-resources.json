@@ -1,0 +1,1721 @@
+{
+  "status": "DRAFT supplementary cross-study materials. Original teacher text and PDFs are untouched.",
+  "source_versions": {
+    "gtk_lessons_sha": "a2be0d941c5ac8c1086a5475448050d500aac446",
+    "gtk_depth_sha": "b7d4d910c6ce200641cc7aaeaa4e7587d6094a92",
+    "gtk_connections_sha": "5fdc1f32003c9631db3d81c96cde1559e5b622f7",
+    "daniel_html_sha": "718c9005085eeb8b3a26f5eadf6d8347c0eb737d",
+    "revelation_html_sha": "64f36fff24c48d37e5881aecd9e9e3551ef99a56"
+  },
+  "validation": "Every Daniel and Revelation link points to an anchor defined by the actual source site. GTKJ mapping is by stable study ID, not order.",
+  "editorial": "GTKJ materials are proposed learner-facing insights, not replacements for Teachers' Guide wording. Daniel and Revelation are deeper reading links, not mandatory stops. Avoid duplicated prose; consider differences in interpretation during review.",
+  "items": [
+    {
+      "teacher_study_id": 0,
+      "teacher_title": "The Word of God",
+      "gtk_source_id": "word",
+      "gtk_title": "The Word of God",
+      "gtk_lead": "Can the Bible be trusted?",
+      "gtk_principle": "God knows the end from the beginning. What you can recognise in the history of the kingdoms gives you a reason to trust His promise about the kingdom still to come.",
+      "gtk_connections": [
+        {
+          "title": "A claim worth testing",
+          "scripture": "2 Timothy 3:16–17; 2 Peter 1:19–21",
+          "insight": "Peter describes people speaking under the guidance of the Holy Spirit. Daniel gives you a particular message to examine. You can read his words to the king and weigh the explanation for yourself."
+        },
+        {
+          "title": "A God of self-giving love",
+          "scripture": "1 John 4:7–10; John 3:16–17",
+          "insight": "John says God loved the world and gave His Son. Keep that picture of God in mind as you read about His power over kings. What would it mean for the One who loved you enough to give His Son to have the final say in history?"
+        },
+        {
+          "title": "The king who received a kingdom",
+          "scripture": "Daniel 2:37–39",
+          "insight": "Listen to Daniel’s choice of words. He tells Nebuchadnezzar that the God of heaven has given him his kingdom. For a captive to say that to the ruler who conquered his people took courage. Babylon’s victory had never placed Daniel beyond God’s reach."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "I have doubts. Does that mean I lack faith?",
+          "answer": "No. A thoughtful question can be the beginning of honest faith. Read a passage in context, ask what it actually says, and examine the evidence rather than pretending to be certain."
+        },
+        {
+          "question": "Does the dream tell us which modern country each toe represents?",
+          "answer": "Daniel explains the iron and clay as a divided kingdom, partly strong and partly brittle. He gives no list matching individual toes to countries. His explanation gives you enough to follow the dream to its conclusion."
+        },
+        {
+          "question": "What hope is there in a stone that breaks the statue?",
+          "answer": "For someone living under a cruel ruler, the end of that ruler’s power can be good news. The stone shows that God will judge earthly powers and bring their rule to an end. Daniel 2:44 promises a kingdom that will never be destroyed."
+        }
+      ],
+      "gtk_practice": "If you would like to explore further another day, read Daniel 2 as one story, from the king’s troubled night to his response when he hears the interpretation.\nIllustration (replace this image if desired)\nStudy reflection and review",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 2:31–35: The enormous image and the stone",
+          "href": "../daniel/index.html#section-2-31",
+          "anchor": "section-2-31"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 2:44–45: God establishes the kingdom that will never end",
+          "href": "../daniel/index.html#section-2-44",
+          "anchor": "section-2-44"
+        },
+        {
+          "source": "revelation",
+          "title": "The unveiling and its blessing",
+          "passage": "Revelation 1:1",
+          "href": "../revelation/index.html#rev-1-1",
+          "anchor": "rev-1-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 1,
+      "teacher_title": "The Great Controversy",
+      "gtk_source_id": "controversy",
+      "gtk_title": "The Great Controversy",
+      "gtk_lead": "If God is loving, why is there evil?",
+      "gtk_principle": "Love cannot be forced. Scripture presents evil as a real enemy of God’s good creation, not as a part of God’s original purpose. Jesus reveals God’s answer through self-sacrificing love and the promise that evil will end.",
+      "gtk_connections": [
+        {
+          "title": "Good creation and the intrusion of evil",
+          "scripture": "Genesis 1:31; Matthew 13:24–30, 36–43",
+          "insight": "A natural question is: if God is loving and powerful, why is the world so painful? Genesis begins by describing creation as very good. Jesus’ story about the wheat and weeds says an enemy introduced something destructive into a field planted with good seed. The Bible does not explain every tragedy or excuse wrongdoing, but it asks us not to confuse what God originally intended with the damage caused by rebellion and sin. God is not presented as enjoying suffering."
+        },
+        {
+          "title": "Freedom makes love possible",
+          "scripture": "Joshua 24:15; Isaiah 14:12–15; Philippians 2:5–8",
+          "insight": "Loyalty obtained by force would be outward compliance, not genuine love. The contrast between self-exaltation and the humility of Jesus runs through this study. Scripture portrays the enemy seeking a position that belongs to God, while Christ chooses to serve and give Himself. The question is not merely who has greater power, but whose character can be trusted. Freedom involves the possibility of choosing wrongly, and those choices can harm others."
+        },
+        {
+          "title": "The cross answers accusations",
+          "scripture": "John 12:31–32; Romans 5:6–8",
+          "insight": "A person accused of being selfish may defend themselves with words. Jesus answers the deepest accusations against God by what He does. The One who has every right to receive service enters our broken world and gives His life for those who have turned away. This does not mean every mystery about suffering is now solved. It does mean the cross gives us the clearest evidence of God’s willingness to suffer for His creation rather than abandon it."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Did God create Satan evil?",
+          "answer": "The study teaches that God created a good angel with freedom, not a devil programmed to do wrong. Scripture describes rebellion, while leaving the ultimate reason for sin unexplained."
+        },
+        {
+          "question": "Why doesn’t God stop every tragedy immediately?",
+          "answer": "The Bible does not give a neat explanation for each person’s pain. It says God opposes evil, respects freedom and promises a final end to suffering. We should respond to suffering with compassion, not blame."
+        },
+        {
+          "question": "Does suffering mean God is punishing me?",
+          "answer": "Not necessarily. We should not assume someone’s hardship is a direct penalty for personal sin. Jesus met suffering people with compassion."
+        }
+      ],
+      "gtk_practice": "Think of an experience of unfairness. Write what the distinction between God’s character and evil’s actions changes—or does not yet change—about your understanding.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 3:1–7: A golden image and an order to bow",
+          "href": "../daniel/index.html#section-3-1",
+          "anchor": "section-3-1"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "href": "../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "War in heaven",
+          "passage": "Revelation 12:7",
+          "href": "../revelation/index.html#rev-12-7",
+          "anchor": "rev-12-7"
+        },
+        {
+          "source": "revelation",
+          "title": "The victory of the Lamb",
+          "passage": "Revelation 12:10",
+          "href": "../revelation/index.html#rev-12-10",
+          "anchor": "rev-12-10"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 2,
+      "teacher_title": "The Work of the Holy Spirit",
+      "gtk_source_id": "spirit",
+      "gtk_title": "The Work of the Holy Spirit",
+      "gtk_lead": "How does God change a person from the inside?",
+      "gtk_principle": "The Spirit helps us respond to Jesus, assures us of belonging to God, and forms in us a love that the law alone cannot produce.",
+      "gtk_connections": [
+        {
+          "title": "Conviction is meant to lead to trust",
+          "scripture": "John 16:7–13; John 3:16–17",
+          "insight": "Feeling uncomfortable about something wrong can be a beginning, but guilt alone cannot make anyone new. Jesus said the Spirit would expose sin and lead people into truth. The Spirit’s work is not to crush a person into hopelessness; it is to bring them to the Saviour who can forgive and transform. If conviction makes you aware of a broken relationship or hidden dishonesty, respond by turning toward Jesus, confessing honestly and taking the next faithful step."
+        },
+        {
+          "title": "Belonging comes before spiritual maturity",
+          "scripture": "Ephesians 1:13–14; Romans 8:14–17",
+          "insight": "Paul describes people who hear the good news, believe, and receive the Holy Spirit as a seal of God’s promise. A new believer may still struggle with habits, doubts and emotions. These verses do not teach that we must become perfect before God accepts us. They teach that God welcomes people through Christ and begins working in them. Think of a child learning family ways because they belong, rather than trying to earn the right to become a child."
+        },
+        {
+          "title": "The new covenant changes the inside",
+          "scripture": "Jeremiah 31:31–34; Hebrews 10:15–17",
+          "insight": "God’s promise is not simply a fresh set of external regulations. He offers forgiveness and writes His will on the heart and mind. The same moral principles that expose selfishness become something we desire as the Spirit teaches us to love. This protects two important truths: we are not saved by rule-keeping, and grace does not leave us unchanged. When the heart changes, obedience becomes a grateful response to God’s love rather than an attempt to purchase it."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "I still make mistakes. Is the Spirit absent?",
+          "answer": "Spiritual growth is a journey. Bring failures honestly to God, repent where needed and seek His help to grow. Progress is not the same as instant perfection."
+        },
+        {
+          "question": "How do I recognise the Spirit’s leading?",
+          "answer": "Compare impressions with Scripture and the character of Jesus. Seek wise counsel. The Spirit does not ask us to abandon truth, kindness or integrity."
+        },
+        {
+          "question": "Do I need a dramatic spiritual experience?",
+          "answer": "Not everyone has one. Quiet changes in trust, love and obedience can be genuine evidence of God’s work."
+        }
+      ],
+      "gtk_practice": "Read Galatians 5:22–23. Choose one fruit, pray about it, and record one practical opportunity to show it over the next seven days.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 10:10–12: Fear not: the prayer was heard from the first day",
+          "href": "../daniel/index.html#section-10-10",
+          "anchor": "section-10-10"
+        },
+        {
+          "source": "revelation",
+          "title": "The Saviour at the door",
+          "passage": "Revelation 3:19",
+          "href": "../revelation/index.html#rev-3-19",
+          "anchor": "rev-3-19"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 3,
+      "teacher_title": "The Sanctuary",
+      "gtk_source_id": "sanctuary",
+      "gtk_title": "The Sanctuary",
+      "gtk_lead": "What did the ancient sanctuary teach about Jesus?",
+      "gtk_principle": "The sanctuary tells the story of how God deals with sin in order to restore fellowship. Every part of the service directs attention beyond itself to Jesus.",
+      "gtk_connections": [
+        {
+          "title": "The real problem is separation",
+          "scripture": "Isaiah 59:1–2; Genesis 3:7–10",
+          "insight": "After Adam and Eve disobeyed, they hid. God came looking for them. Their fear and shame show how sin breaks trust and damages relationship. The sanctuary message begins here: how can people who have turned away live in God’s presence again? God’s answer is not to abandon the human family. He gives a visible teaching system to show that sin is serious, mercy is available and fellowship can be restored. It is a story about relationship, not merely ancient religious furniture."
+        },
+        {
+          "title": "The symbols reveal the cost of rescue",
+          "scripture": "Exodus 25:8–9; Leviticus 1:1–5; Hebrews 10:1–10",
+          "insight": "God asked Israel to make a sanctuary so He could dwell among them. Sacrifices taught that wrongdoing has a cost and that the innocent Substitute is central to reconciliation. The repeated animal offerings did not possess saving power of their own. They pointed forward to Jesus, who willingly gave Himself once for all. Understanding this guards against the mistaken impression that people were saved by animal sacrifices in ancient times but by grace today. God’s saving purpose has always depended upon Christ."
+        },
+        {
+          "title": "Every part directs attention to Jesus",
+          "scripture": "John 1:29; John 6:35; John 8:12; Revelation 8:3–4",
+          "insight": "The lamb directs our attention to Jesus’ sacrifice. The washing at the laver suggests cleansing and new life. The bread reminds us that Christ sustains us; the light reminds us that He guides us; the incense helps us understand prayer and intercession. The ark held the commandments, showing that forgiveness does not mean God stopped caring about righteousness. These connections are teaching pictures, not independent sources of authority. Scripture explains their meaning and keeps Jesus at the centre."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Why did people sacrifice animals?",
+          "answer": "The sanctuary system used visible symbols to teach the seriousness of sin and God’s plan to save. Hebrews says repeated sacrifices were shadows that looked ahead to Christ."
+        },
+        {
+          "question": "Do I need a priest to bring me to God today?",
+          "answer": "Jesus is our Saviour and heavenly High Priest. We approach God through Him in faith."
+        },
+        {
+          "question": "Is the sanctuary only ancient history?",
+          "answer": "It portrays salvation and Jesus’ ongoing ministry, keeping His grace and love at the centre."
+        }
+      ],
+      "gtk_practice": "Sketch the courtyard, Holy Place and Most Holy Place. Write beside the sacrifice, laver, bread, lampstand, incense and ark what each teaches you about Jesus.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 8:13–14: How long until the sanctuary is put right?",
+          "href": "../daniel/index.html#section-8-13",
+          "anchor": "section-8-13"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24  The seventy weeks and the work of reconciliation",
+          "href": "../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "revelation",
+          "title": "The seventh trumpet and opened temple",
+          "passage": "Revelation 11:15",
+          "href": "../revelation/index.html#rev-11-15",
+          "anchor": "rev-11-15"
+        },
+        {
+          "source": "revelation",
+          "title": "Silence and prayers at the altar",
+          "passage": "Revelation 8:1",
+          "href": "../revelation/index.html#rev-8-1",
+          "anchor": "rev-8-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 4,
+      "teacher_title": "The Plan of Salvation",
+      "gtk_source_id": "salvation",
+      "gtk_title": "The Plan of Salvation",
+      "gtk_lead": "How can I be forgiven and begin again?",
+      "gtk_principle": "We are saved by God’s grace through faith in Jesus, not by religious achievement. The same grace that forgives us begins changing how we live.",
+      "gtk_connections": [
+        {
+          "title": "The first wound was a broken picture of God",
+          "scripture": "Genesis 3:1–13",
+          "insight": "The serpent planted doubt about God’s word and goodness before Adam and Eve ate the fruit. They then moved from trust to fear, hiding and blaming. We recognise the same pattern when we doubt that God wants our good, try to justify ourselves or blame someone else for our choices. Salvation therefore includes more than cancelling a penalty. God must restore our trust, heal our inward selfishness and bring us back into a loving relationship with Him."
+        },
+        {
+          "title": "God takes the initiative",
+          "scripture": "Romans 3:23–26; 5:6–11; John 3:16–17",
+          "insight": "We do not have to persuade an unwilling God to love us. Scripture says that God loved the world and sent His Son while we were still sinners. Jesus did not die to make the Father merciful; His death reveals the Father’s love. This distinction matters to someone who has grown up fearing that God is waiting for a reason to reject them. Grace means God comes to meet a need we could never satisfy by our own effort."
+        },
+        {
+          "title": "Forgiveness and new life belong together",
+          "scripture": "2 Corinthians 5:17–21; Romans 5:10",
+          "insight": "The Bible speaks of reconciliation—enemies becoming friends—and of a new creation in Christ. The death of Jesus deals with our guilt and estrangement; His risen life is the ground of our hope and continuing transformation. Receiving salvation is not pretending evil never mattered. It is accepting God’s answer to it, turning away from sin and living in a different relationship with Him. Good works flow from that new life; they are not the price we pay to enter it."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "I have done things I regret. Can God really forgive me?",
+          "answer": "Yes. The invitation of the gospel is for sinners who turn to God in trust and repentance. Forgiveness does not mean pretending harm never happened; where possible we also make things right."
+        },
+        {
+          "question": "Do I have to become good before I come to Jesus?",
+          "answer": "No. Come as you are. Accepting Christ begins a process in which He changes us."
+        },
+        {
+          "question": "Why do commandments matter if salvation is free?",
+          "answer": "Because love changes how we treat God and other people. Obedience grows out of trust and gratitude; it cannot buy salvation."
+        }
+      ],
+      "gtk_practice": "Read Luke 15:11–24. Write a short prayer expressing one thing you need to bring honestly to God, and one promise you want to trust.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24  The seventy weeks and the work of reconciliation",
+          "href": "../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "revelation",
+          "title": "The Lion appears as a slain Lamb",
+          "passage": "Revelation 5:5",
+          "href": "../revelation/index.html#rev-5-5",
+          "anchor": "rev-5-5"
+        },
+        {
+          "source": "revelation",
+          "title": "Everything made new",
+          "passage": "Revelation 21:1",
+          "href": "../revelation/index.html#rev-21-1",
+          "anchor": "rev-21-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 5,
+      "teacher_title": "The Law",
+      "gtk_source_id": "law",
+      "gtk_title": "The Law of God",
+      "gtk_lead": "Are God’s commandments about rules or love?",
+      "gtk_principle": "God’s law reveals the shape of love and freedom. It cannot save us, but the Spirit writes its principles on the hearts of those Christ has saved.",
+      "gtk_connections": [
+        {
+          "title": "Love gives the commandments their meaning",
+          "scripture": "Matthew 22:36–40; Romans 13:8–10",
+          "insight": "Jesus summarised the law as love for God and neighbour. This does not mean loving feelings replace clear moral guidance. Rather, the commandments show love in action: truthful speech, faithfulness, respect for life, honour for family and freedom from greed protect relationships. A rule followed without love can become cold and proud; love with no concern for others’ wellbeing can become an empty slogan. Jesus brings the two together."
+        },
+        {
+          "title": "Rescue came before the commandments",
+          "scripture": "Exodus 20:1–17; Romans 3:20–31",
+          "insight": "Before speaking the Ten Commandments, God reminded Israel that He had brought them out of slavery. The order is important. He did not tell them to obey perfectly so He might consider freeing them. He rescued them and then taught them how free people could live. The law reveals sin and explains God’s will, but cannot wash away guilt or provide the power to change the heart. Salvation is God’s gift; obedience is its fitting response."
+        },
+        {
+          "title": "A law of liberty",
+          "scripture": "James 1:22–25; Psalm 119:32",
+          "insight": "People sometimes imagine that every boundary must be an enemy of freedom. But a world without truthfulness, honesty or faithfulness would leave everyone less safe and less free. Like learning a musical instrument, discipline can open opportunities that carelessness would destroy. James calls God’s instruction a law of liberty because it directs us away from habits that enslave. The question is not simply, “What am I allowed to do?” but “What kind of person is love teaching me to become?”"
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Does keeping the commandments make me worthy of salvation?",
+          "answer": "No. Salvation is a gift through Christ. Keeping God’s commands is a response to grace, not a way to purchase it."
+        },
+        {
+          "question": "What if following God feels restrictive?",
+          "answer": "Ask what each command protects: trust, rest, family, life, truth or contentment. Like healthy boundaries in relationships, loving principles make freedom safer."
+        },
+        {
+          "question": "Are kindness and obedience opposites?",
+          "answer": "No. Jesus showed that true obedience is shaped by mercy, truth and love."
+        }
+      ],
+      "gtk_practice": "Read Exodus 20. For each command, write the positive relationship it protects. Finish by reflecting on how grace changes your motivation.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "href": "../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "The remnant and the testimony of Jesus",
+          "passage": "Revelation 12:17",
+          "href": "../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        },
+        {
+          "source": "revelation",
+          "title": "Third angel: a warning against false worship",
+          "passage": "Revelation 14:9",
+          "href": "../revelation/index.html#rev-14-9",
+          "anchor": "rev-14-9"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 6,
+      "teacher_title": "Antichrist",
+      "gtk_source_id": "antichrist",
+      "gtk_title": "Antichrist",
+      "gtk_lead": "How can a false religion take attention away from Jesus?",
+      "gtk_principle": "Jesus alone saves and deserves our ultimate loyalty. Prophecy warns that religious power can counterfeit His authority and redirect worship away from Him.",
+      "gtk_connections": [
+        {
+          "title": "Begin with the plain passages",
+          "scripture": "1 John 2:18–23; 4:1–3",
+          "insight": "John warns that there are many antichrists and directs attention to what people teach about Jesus. The issue begins with truth about Christ, not speculation about an unfamiliar future villain. Someone can use Christian words yet shift trust away from the real Saviour. Before studying prophetic symbols, learn to ask a basic question: does this teaching lead people toward the Jesus revealed in Scripture, or does it place another authority where only He belongs?"
+        },
+        {
+          "title": "The danger of religious power",
+          "scripture": "2 Thessalonians 2:3–12; Daniel 7:8, 24–25",
+          "insight": "These passages describe rebellion clothed with religious claims and power that opposes God. The study follows the successive kingdoms of Daniel before considering the later religious-political power. In that approach, the symbols concern systems and claims of authority rather than judging the heart of every person connected to an institution. God alone knows individuals. We can oppose false claims and religious coercion while treating people of every faith with dignity and love."
+        },
+        {
+          "title": "Worship cannot be compelled",
+          "scripture": "Revelation 13:11–17; 14:6–12",
+          "insight": "Revelation contrasts a power that applies pressure with God’s call to worship the Creator. Forced religion may create public conformity, but it cannot produce love. This connection brings together earlier lessons about the conflict between good and evil, the gospel, the law and the new covenant. A person who knows Jesus and values conscience is being prepared to choose Him even when that choice is unpopular."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Are Catholic people the enemy?",
+          "answer": "No. Our neighbours are people worthy of respect and love. This study critiques historic structures and claims of authority; it must not be used to judge individual people or their sincerity."
+        },
+        {
+          "question": "Why do Christians interpret these prophecies differently?",
+          "answer": "They use different interpretive approaches. Follow Daniel’s symbols in context and check historical identifications against credible evidence."
+        },
+        {
+          "question": "How do I avoid being deceived?",
+          "answer": "Keep your attention on Jesus, read Scripture in context and resist anyone who demands unquestioning religious loyalty."
+        }
+      ],
+      "gtk_practice": "Make two columns: “the character of Christ” and “claims of counterfeit authority”. Put a verse beside each entry, and pray for faithfulness and love.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:7–8: The fourth beast and the little horn",
+          "href": "../daniel/index.html#section-7-7",
+          "anchor": "section-7-7"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "href": "../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "The sea beast receives authority",
+          "passage": "Revelation 13:1",
+          "href": "../revelation/index.html#rev-13-1",
+          "anchor": "rev-13-1"
+        },
+        {
+          "source": "revelation",
+          "title": "The angel explains the beast",
+          "passage": "Revelation 17:7",
+          "href": "../revelation/index.html#rev-17-7",
+          "anchor": "rev-17-7"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 7,
+      "teacher_title": "The Seventy Week Prophecy",
+      "gtk_source_id": "seventy-weeks",
+      "gtk_title": "The Seventy Week Prophecy",
+      "gtk_lead": "What does Daniel’s timeline say about Jesus?",
+      "gtk_principle": "Daniel 9 provides a prophetic timeline focused on the Messiah. Its significance is that Jesus’ ministry and sacrifice stand at the centre of God’s promises.",
+      "gtk_connections": [
+        {
+          "title": "The setting is a prayer for restoration",
+          "scripture": "Daniel 9:1–23",
+          "insight": "Daniel does not begin by trying to solve a puzzle. He confesses sin, remembers God’s mercy and prays for the restoration of Jerusalem. The angel’s explanation comes in the setting of God’s covenant faithfulness. Reading the chapter this way keeps the dates from becoming an isolated exercise. The point of the prophecy is God’s work of reconciliation and the coming Messiah, not the thrill of calculating numbers."
+        },
+        {
+          "title": "Why the seventy weeks are understood as years",
+          "scripture": "Daniel 9:24–27; Numbers 14:34; Ezekiel 4:6",
+          "insight": "Seventy weeks contain 490 days. The study uses the prophetic day-for-year principle to understand that period as 490 years. This is an interpretive step that should be shown, not assumed: the examples in Numbers and Ezekiel illustrate how a day can stand for a year in a prophetic setting. After identifying the proposed starting decree, readers can follow the reasoning and check whether the resulting timeline fits the ministry of Jesus."
+        },
+        {
+          "title": "The centre is the Messiah",
+          "scripture": "Ezra 7:11–26; Luke 3:21–23; Daniel 9:25–27",
+          "insight": "The outline begins with the restoration decree associated with 457 BC, moves toward the anointing of Jesus in AD 27, and places His death in the middle of the final prophetic week. The framework rests on historical identification and the day-for-year reading, not on a verse that directly prints all those modern dates. The wonder of the lesson is the role of Christ: the promised King comes to save through sacrifice, not merely to seize a throne."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Do I need to understand all the numbers to follow Jesus?",
+          "answer": "No. First see the central message: God keeps His promises and Jesus is the promised Saviour. You can learn the timeline a step at a time."
+        },
+        {
+          "question": "Are all Christians agreed on the dates?",
+          "answer": "No. Christians differ about Daniel 9 and some historical dates. Compare the verses, the starting decree and the year-day reasoning before deciding what the timeline means."
+        },
+        {
+          "question": "What is the most important part of the prophecy?",
+          "answer": "Its focus on the Messiah and the meaning of His death—not winning an argument about arithmetic."
+        }
+      ],
+      "gtk_practice": "Draw a timeline labelled 457 BC, AD 27, AD 31 and AD 34. Beside each point write the relevant event and a supporting biblical passage.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24  The seventy weeks and the work of reconciliation",
+          "href": "../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 9:25–25: 9:25  From the command to restore Jerusalem to Messiah",
+          "href": "../daniel/index.html#section-9-25",
+          "anchor": "section-9-25"
+        },
+        {
+          "source": "revelation",
+          "title": "First angel: everlasting gospel and judgment",
+          "passage": "Revelation 14:6",
+          "href": "../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 8,
+      "teacher_title": "Historicity of Jesus",
+      "gtk_source_id": "history",
+      "gtk_title": "The Historicity of Jesus",
+      "gtk_lead": "Was Jesus really a person in history?",
+      "gtk_principle": "Christian faith is rooted in claims about real people, events and witnesses. Evidence should be investigated with care, not exaggerated.",
+      "gtk_connections": [
+        {
+          "title": "Christian faith makes historical claims",
+          "scripture": "Luke 1:1–4; 1 Corinthians 15:3–8",
+          "insight": "The Gospel writers place Jesus among real people and rulers, and the earliest Christians proclaimed His death and resurrection as events rather than mere moral symbols. History cannot prove every theological conclusion the Bible draws, but it can help us examine whether the movement began in a real time and place. Faith and careful investigation need not be enemies."
+        },
+        {
+          "title": "Look at the earliest testimony",
+          "scripture": "Acts 2:22–36; 1 Corinthians 15:12–19",
+          "insight": "Peter’s preaching centred on Jesus’ ministry, crucifixion and resurrection. Paul wrote that if Christ had not risen, Christian preaching would be empty. These bold claims should encourage thoughtful questions. What were the apostles trying to persuade their listeners to believe? What changed in the early community? Why did people continue to proclaim Christ despite opposition? The Christian message invites us to consider the evidence and the meaning together."
+        },
+        {
+          "title": "Outside references have limits and value",
+          "scripture": "Luke 2:1–2; Acts 18:12–17",
+          "insight": "Writers such as Tacitus and Josephus can help establish that Jesus and the early Christians belonged to the world of ancient Roman history. They are not substitutes for the Gospels, and later historians do not give us an eyewitness account of every miracle. Distinguish what an outside source actually says from conclusions we might want it to support. This is a stronger approach than repeating dramatic statistics about manuscripts or historians without checking them."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Is it wrong to look for evidence?",
+          "answer": "No. Christians can welcome honest historical inquiry. A claim should be evaluated on its evidence, not protected from questions."
+        },
+        {
+          "question": "Do Roman historians prove the resurrection?",
+          "answer": "No. They support certain historical facts about Jesus and early Christians. The resurrection claim rests especially on the early Christian testimony."
+        },
+        {
+          "question": "What if I am not ready to believe everything?",
+          "answer": "Read one Gospel, note the claims you can assess, and keep asking fair questions. A thoughtful process is valuable."
+        }
+      ],
+      "gtk_practice": "Read 1 Corinthians 15 and one resurrection account in a Gospel. Note what each writer claims, what evidence is presented and what question you want to explore next.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:25–25: 9:25  From the command to restore Jerusalem to Messiah",
+          "href": "../daniel/index.html#section-9-25",
+          "anchor": "section-9-25"
+        },
+        {
+          "source": "revelation",
+          "title": "Fear not: the living Christ",
+          "passage": "Revelation 1:17",
+          "href": "../revelation/index.html#rev-1-17",
+          "anchor": "rev-1-17"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 9,
+      "teacher_title": "The Judgement",
+      "gtk_source_id": "judgement",
+      "gtk_title": "The Judgement",
+      "gtk_lead": "Should God’s judgement make us afraid?",
+      "gtk_principle": "God’s judgment reveals His justice and the truth about human choices. The good news is that Jesus is both the righteous Judge and the Advocate of those who trust Him.",
+      "gtk_connections": [
+        {
+          "title": "Judgment protects the moral meaning of life",
+          "scripture": "Ecclesiastes 12:13–14; Hebrews 9:27",
+          "insight": "If injustice, secrecy and cruelty never came to light, there would be no final answer for their victims. The Bible speaks of a judgment in which God takes human choices seriously. This should not be reduced to a picture of a harsh examiner waiting to catch mistakes. God’s judgment vindicates what is true and right, reveals the outcomes of choices and shows that mercy is not indifference to evil."
+        },
+        {
+          "title": "The heavenly books and the open court",
+          "scripture": "Daniel 7:9–14; Revelation 20:11–12",
+          "insight": "Daniel describes a heavenly court and books that are opened. The imagery communicates that divine judgment is open, careful and accountable, not arbitrary. God does not need books to help Himself remember. The picture assures creation that His decisions are just. In Daniel 7, judgment is also connected with the kingdom being given to the Son of Man. That keeps our hope centred on Christ rather than on a fear of records."
+        },
+        {
+          "title": "Jesus is our representative",
+          "scripture": "Romans 8:1, 31–34; 1 John 2:1–2",
+          "insight": "For someone aware of past failure, judgment may sound frightening. Scripture also presents Jesus as our Advocate and the One who died and rose for us. We do not enter the judgment relying on a spotless personal record that we produced by our own strength. We come to God through Christ, who forgives and changes those who trust Him. Grace never excuses deliberate harm, but it gives real hope to repentant people."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Will every secret mistake be used to humiliate me?",
+          "answer": "God’s judgement is serious, but the gospel promises forgiveness and restoration in Christ. Bring your sins to Him rather than living in secrecy and despair."
+        },
+        {
+          "question": "If God knows everything, why a judgement?",
+          "answer": "The study explains it as a demonstration of justice to the wider universe, not the discovery of hidden information by God."
+        },
+        {
+          "question": "What does judgement mean for someone treated unfairly?",
+          "answer": "It means evil does not receive the final word. God sees what others overlook and promises ultimate justice."
+        }
+      ],
+      "gtk_practice": "Write down the difference between “God has a true judgment” and “I must save myself by perfection”. Read Romans 8:31–34 whenever fear of judgment returns.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:9–10: The Ancient of Days takes His seat",
+          "href": "../daniel/index.html#section-7-9",
+          "anchor": "section-7-9"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 7:26–28: Judgment reverses the verdict of earth",
+          "href": "../daniel/index.html#section-7-26",
+          "anchor": "section-7-26"
+        },
+        {
+          "source": "revelation",
+          "title": "The great white throne",
+          "passage": "Revelation 20:11",
+          "href": "../revelation/index.html#rev-20-11",
+          "anchor": "rev-20-11"
+        },
+        {
+          "source": "revelation",
+          "title": "First angel: everlasting gospel and judgment",
+          "passage": "Revelation 14:6",
+          "href": "../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 10,
+      "teacher_title": "1844",
+      "gtk_source_id": "1844",
+      "gtk_title": "1844 and the Heavenly Sanctuary",
+      "gtk_lead": "How does the sanctuary prophecy lead to 1844?",
+      "gtk_principle": "The study connects Daniel’s long prophecy with Jesus’ ongoing priestly ministry and the call to take God’s judgment seriously. Jesus remains the centre of the message.",
+      "gtk_connections": [
+        {
+          "title": "The judgment belongs to the gospel",
+          "scripture": "Acts 17:30–31; Revelation 14:6–7",
+          "insight": "The New Testament speaks of a coming judgment alongside the announcement of good news. There is no need to treat those messages as enemies. A loving God must ultimately deal with evil and restore justice, and the One appointed to judge is Jesus. This study approaches the prophetic timetable as an extension of the lessons on salvation, the sanctuary and judgment, rather than as a separate way of earning acceptance."
+        },
+        {
+          "title": "Earthly services point to heavenly realities",
+          "scripture": "Exodus 25:8–9, 40; Hebrews 8:1–6; 9:23–24",
+          "insight": "The sanctuary in the wilderness followed a pattern, and Hebrews explains that Jesus now ministers in the heavenly sanctuary. The Day of Atonement brought Israel face to face with cleansing, responsibility and restored fellowship. This pattern helps readers understand why Scripture can speak of both Christ’s finished sacrifice and His ongoing work as High Priest. The work of Jesus is the centre of the teaching, not the fascination of a date."
+        },
+        {
+          "title": "Follow the calculation carefully",
+          "scripture": "Daniel 8:14; 9:24–27",
+          "insight": "The study connects Daniel’s 2,300 prophetic evenings and mornings to the seventy-week prophecy. Using the day-for-year principle and the starting date of 457 BC, the longer period reaches 1844. The link between the chapters, the symbolic time principle and the historical starting point are interpretive steps. They need to be explained openly so learners can evaluate the Bible passages and reasoning for themselves. Do not confuse those steps with a date printed directly in the Bible."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Is 1844 a verse in the Bible?",
+          "answer": "No. It is a year calculated from a particular reading of Daniel’s prophetic periods. The underlying verses and reasoning should be open for examination."
+        },
+        {
+          "question": "Does this mean Jesus only started forgiving people in 1844?",
+          "answer": "No. Christ’s saving sacrifice and intercession are not postponed to that date. The timeline is understood as concerning a distinct final phase of His heavenly ministry."
+        },
+        {
+          "question": "What if this feels very complicated?",
+          "answer": "That is understandable. Review the sanctuary and Daniel 9 studies first. There is no need to rush past questions."
+        }
+      ],
+      "gtk_practice": "Recreate the timeline from Daniel 9 and extend it to the 2,300-year period. For each interpretive step, write the actual verse and the conclusion drawn from it.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 8:13–14: How long until the sanctuary is put right?",
+          "href": "../daniel/index.html#section-8-13",
+          "anchor": "section-8-13"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24  The seventy weeks and the work of reconciliation",
+          "href": "../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "revelation",
+          "title": "First angel: everlasting gospel and judgment",
+          "passage": "Revelation 14:6",
+          "href": "../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        },
+        {
+          "source": "revelation",
+          "title": "The seventh trumpet and opened temple",
+          "passage": "Revelation 11:15",
+          "href": "../revelation/index.html#rev-11-15",
+          "anchor": "rev-11-15"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 11,
+      "teacher_title": "America in Bible Prophecy",
+      "gtk_source_id": "america",
+      "gtk_title": "America in Bible Prophecy",
+      "gtk_lead": "What does Revelation say about power and freedom?",
+      "gtk_principle": "The second beast of Revelation is examined as a symbol of a rising power that eventually supports coerced worship. The central spiritual issue is freedom of conscience.",
+      "gtk_connections": [
+        {
+          "title": "Read the second beast in its chapter",
+          "scripture": "Revelation 13:1–18",
+          "insight": "The second beast is introduced in connection with the earlier sea beast. It rises from the earth, has two horns like a lamb and speaks like a dragon. Those contrasts matter: an outward appearance of gentleness is not the same as a commitment to freedom. The vision goes on to describe pressure on conscience and worship. Its warning is wider than the identity of one nation: religious conviction must never be imposed by force."
+        },
+        {
+          "title": "How the identification is reasoned",
+          "scripture": "Revelation 13:10–12; 17:15",
+          "insight": "The original study connects the beast’s emergence, geography and later influence with the rise of the United States. To follow the argument, keep the symbols and chronology separate: the sea is associated with peoples, the earth suggests a contrasting setting, and the second power becomes prominent as the first suffers captivity. Those clues are used in the historical identification; the verse itself does not name a modern country. Explaining the evidence carefully is more useful than presenting conclusions without a trail."
+        },
+        {
+          "title": "Liberty is a gift worth protecting",
+          "scripture": "Daniel 3:13–18; Acts 5:27–29",
+          "insight": "In Daniel, faithful people refused to bow when a king commanded worship. In Acts, the apostles answered that they must obey God rather than human authorities when commanded to silence their witness. Most governments perform legitimate public functions; these stories address the point at which power claims authority over a person’s worship and conscience. Respectful citizenship and faithfulness to God can belong together until they truly come into conflict."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Does this mean everyone in America is bad?",
+          "answer": "No. A prophecy about institutions and choices is not a judgement on individual citizens."
+        },
+        {
+          "question": "Is every political news event a fulfilment?",
+          "answer": "No. Avoid sensational predictions. Check claims carefully and distinguish a biblical principle from a speculative headline."
+        },
+        {
+          "question": "What should I do with this warning?",
+          "answer": "Practise and defend freedom of conscience, follow Jesus faithfully and treat others respectfully."
+        }
+      ],
+      "gtk_practice": "Write down the differences between persuasion, invitation and coercion. Compare Revelation 13:11–17 with Revelation 14:6–12.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:7–8: The fourth beast and the little horn",
+          "href": "../daniel/index.html#section-7-7",
+          "anchor": "section-7-7"
+        },
+        {
+          "source": "revelation",
+          "title": "The earth beast rises",
+          "passage": "Revelation 13:11",
+          "href": "../revelation/index.html#rev-13-11",
+          "anchor": "rev-13-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Image and deceptive wonders",
+          "passage": "Revelation 13:13",
+          "href": "../revelation/index.html#rev-13-13",
+          "anchor": "rev-13-13"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 12,
+      "teacher_title": "The Blue Stone:",
+      "gtk_source_id": "blue-stone",
+      "gtk_title": "The Blue Stone",
+      "gtk_lead": "How do sanctuary symbols connect worship and God’s law?",
+      "gtk_principle": "The colours and materials surrounding God’s law are used in this study as visual reminders of His holiness. We must distinguish what Scripture states from an illustration drawn from it.",
+      "gtk_connections": [
+        {
+          "title": "Why this unusual lesson matters",
+          "scripture": "Exodus 24:9–12; 31:18",
+          "insight": "This study uses the imagery of stone, colour and the sanctuary to draw attention to the Ten Commandments and their connection with God’s rule. Scripture explicitly says that God gave Moses stone tablets written by His finger. It also describes a sapphire-like pavement in the vision of His glory. The suggestion that the tablets themselves were made of blue sapphire is a connection, not something Exodus states plainly. We should appreciate the illustration without treating the colour of the tablets as a test of faith."
+        },
+        {
+          "title": "The law belongs near mercy",
+          "scripture": "Exodus 25:16–22; Deuteronomy 10:1–5",
+          "insight": "The tablets were placed inside the ark, beneath the mercy seat. The arrangement teaches an important principle: God’s moral government and His mercy are not opposites. He does not change the definition of goodness in order to forgive people who break His law. Instead, the sanctuary points to a way for sinners to return to Him. This is why the earlier lessons on grace and the sanctuary are essential before discussing prophetic attacks on God’s commandments."
+        },
+        {
+          "title": "Symbolism must be tested by Scripture",
+          "scripture": "Exodus 28:31–35; Numbers 15:37–41; Revelation 17:1–6",
+          "insight": "The priests’ garments and Israel’s garments included colours with symbolic reminders. Revelation uses striking clothing imagery for a corrupt religious power. The source lesson compares these descriptions as an illustration of lost faithfulness to God’s law. Such visual parallels can help us remember a principle, but an absent colour is not an explicit biblical definition of a prophecy. Read the passages as they stand before drawing the connection."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Were the Ten Commandments written on blue sapphire?",
+          "answer": "The Bible says they were written on stone tablets. The exact material and colour are not explicitly given in those passages."
+        },
+        {
+          "question": "Do colours automatically identify a church?",
+          "answer": "No. Symbols need their full context. Similar colours alone do not prove an interpretation."
+        },
+        {
+          "question": "Why include this lesson at all?",
+          "answer": "It connects sanctuary imagery, God’s law and the question of worship. It is best approached after the foundational lessons with care about what Scripture actually says."
+        }
+      ],
+      "gtk_practice": "Read Exodus 24 and Numbers 15. Make two columns headed “What the text says” and “What the illustration suggests”. Keep them separate.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "href": "../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "The woman upon the scarlet beast",
+          "passage": "Revelation 17:1",
+          "href": "../revelation/index.html#rev-17-1",
+          "anchor": "rev-17-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 13,
+      "teacher_title": "The Sabbath",
+      "gtk_source_id": "sabbath",
+      "gtk_title": "The Sabbath",
+      "gtk_lead": "Could one day each week be a gift from God?",
+      "gtk_principle": "The seventh-day Sabbath is God’s gift of time to remember creation, celebrate redemption and enjoy relationship with Him.",
+      "gtk_connections": [
+        {
+          "title": "Rest begins with creation",
+          "scripture": "Genesis 2:1–3; Exodus 20:8–11",
+          "insight": "Before there was a nation of Israel or a law given at Sinai, Genesis says God rested, blessed and sanctified the seventh day. He did not rest from exhaustion; He established a gift of time for His creatures. The fourth commandment later directs people back to that creation story. Sabbath rest reminds us that life is more than work, production and achievement. We belong to our Creator, not to the endless demands of our schedules."
+        },
+        {
+          "title": "A reminder of freedom and care",
+          "scripture": "Deuteronomy 5:12–15; Isaiah 58:13–14",
+          "insight": "When Moses repeated the commandment, he connected Sabbath with deliverance from slavery. Rest was not a privilege reserved for those who could afford to stop working; servants and foreigners were included. This gives the Sabbath a social meaning: other people need rest and dignity too. Isaiah describes it as a delight. A day centred on God is not meant to be a burden of anxious rules but a weekly opportunity for worship, mercy, refreshment and love."
+        },
+        {
+          "title": "Jesus shows how to keep it",
+          "scripture": "Mark 2:23–28; Luke 13:10–17; Luke 4:16",
+          "insight": "Jesus attended worship on the Sabbath and healed people on that day. When religious leaders turned the day into an occasion for condemnation, He showed its true purpose. Doing good, relieving suffering and honouring God fit the spirit of the Sabbath. This keeps us from two extremes: treating the day as meaningless and turning it into a list of man-made restrictions. The Lord of the Sabbath teaches us how rest and compassion belong together."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Why Saturday rather than Sunday?",
+          "answer": "The Sabbath command identifies the seventh day. The day identified by the fourth commandment corresponds to Saturday. The Bible does not give a command transferring the Sabbath’s holiness to Sunday."
+        },
+        {
+          "question": "Can I do good for someone on Sabbath?",
+          "answer": "Yes. Jesus showed that mercy and doing good are appropriate on Sabbath."
+        },
+        {
+          "question": "Does keeping Sabbath save me?",
+          "answer": "No. Salvation is by grace through faith. Sabbath observance is a response of love and trust, not a purchase price for heaven."
+        }
+      ],
+      "gtk_practice": "Plan one Sabbath beginning Friday sunset: worship, rest, time with others and an act of kindness. Write how each part reflects the Creator’s love.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "href": "../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "First angel: everlasting gospel and judgment",
+          "passage": "Revelation 14:6",
+          "href": "../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        },
+        {
+          "source": "revelation",
+          "title": "The remnant and the testimony of Jesus",
+          "passage": "Revelation 12:17",
+          "href": "../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 14,
+      "teacher_title": "The Second Coming",
+      "gtk_source_id": "second-coming",
+      "gtk_title": "The Second Coming",
+      "gtk_lead": "What will Jesus’ return be like?",
+      "gtk_principle": "The return of Jesus is a personal, visible and hopeful event, not merely a symbol for human progress or a secret happening.",
+      "gtk_connections": [
+        {
+          "title": "A promise made by Jesus",
+          "scripture": "John 14:1–3; Acts 1:9–11",
+          "insight": "Jesus comforts His followers by promising to return and receive them to Himself. The angels at His ascension say that the same Jesus who was taken into heaven will come again. The hope of His return is therefore not built on a prediction about political events alone. It begins with His personal promise to people He loves. Christians need not know the date to know the One who is coming."
+        },
+        {
+          "title": "Visible, glorious and unmistakable",
+          "scripture": "Matthew 24:23–27, 30–31; Revelation 1:7",
+          "insight": "Jesus warned that some would claim He had returned secretly or could be found in a special hidden place. Instead, He described His coming as public and unmistakable, like lightning visible across the sky. Revelation says every eye will see Him. This matters when a persuasive speaker claims special access to Christ. We can compare their claim with Scripture rather than being led by fear, spectacular signs or a confident personality."
+        },
+        {
+          "title": "Resurrection and reunion",
+          "scripture": "1 Thessalonians 4:13–18; 1 Corinthians 15:51–55",
+          "insight": "Paul gives comfort to believers grieving loved ones: the dead in Christ will rise, and those who belong to Jesus will be with Him. The second coming is not merely an announcement that the world is ending. It is the promised reunion and the defeat of death. This teaching also connects with the later lessons about the state of the dead and the millennium, giving mourners hope grounded in Jesus’ resurrection."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Should I fear that I will miss Jesus’ return?",
+          "answer": "The passages portray a visible, unmistakable event. The invitation is to trust Him, not chase secret signs."
+        },
+        {
+          "question": "Can someone calculate the exact date?",
+          "answer": "No. Jesus warned against claiming to know the day or hour."
+        },
+        {
+          "question": "What if life is difficult now?",
+          "answer": "The return of Christ promises an end to separation, grief and the brokenness we experience."
+        }
+      ],
+      "gtk_practice": "Read 1 Thessalonians 4:13–18. Write a message of comfort to someone grieving, using only the promises found in the passage.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 2:44–45: God establishes the kingdom that will never end",
+          "href": "../daniel/index.html#section-2-44",
+          "anchor": "section-2-44"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 12:1–1: 12:1  Michael stands and the people of God are delivered",
+          "href": "../daniel/index.html#section-12-1",
+          "anchor": "section-12-1"
+        },
+        {
+          "source": "revelation",
+          "title": "The rider called Faithful and True",
+          "passage": "Revelation 19:11",
+          "href": "../revelation/index.html#rev-19-11",
+          "anchor": "rev-19-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Behold I come quickly",
+          "passage": "Revelation 22:12",
+          "href": "../revelation/index.html#rev-22-12",
+          "anchor": "rev-22-12"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 15,
+      "teacher_title": "The Nature of Man",
+      "gtk_source_id": "nature",
+      "gtk_title": "The Nature of Man",
+      "gtk_lead": "What are we, and what happens when we die?",
+      "gtk_principle": "The Bible describes human life as a gift from God and death as an unconscious sleep until the resurrection. Immortality comes through Christ, not as an independent possession.",
+      "gtk_connections": [
+        {
+          "title": "What makes a human being alive?",
+          "scripture": "Genesis 2:7; Ecclesiastes 12:7",
+          "insight": "Genesis describes God forming the man from dust and breathing life into him; the man becomes a living being. This study understands a person as a whole created life rather than an immortal soul temporarily imprisoned in a body. Death reverses the gift of life: the body returns to dust and the life-giving breath belongs to God. That is not a statement that a person becomes less valuable after death. It emphasises our complete dependence on the Creator."
+        },
+        {
+          "title": "What do the dead know?",
+          "scripture": "Ecclesiastes 9:5–6, 10; Psalm 146:3–4",
+          "insight": "These passages describe death as a condition in which ordinary thought, work and participation in earthly affairs cease. Other passages use language about spirits and souls, so careful readers should consider their contexts rather than collecting isolated phrases. The teaching developed here is that human beings do not possess independent, natural immortality. Life is the gift of God, and the Bible directs the bereaved toward a future resurrection."
+        },
+        {
+          "title": "Jesus called death a sleep",
+          "scripture": "John 11:11–15, 21–26; 1 Thessalonians 4:13–18",
+          "insight": "When Lazarus died, Jesus first used the image of sleep, then explained clearly that His friend was dead. Sleep is a fitting picture because someone sleeping does not experience the passage of time as those awake do, and because awakening points toward resurrection. Jesus did not tell Martha to put her trust in disembodied life. He called Himself the resurrection and the life. In grief, hope rests upon the power and promise of Christ."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Is my loved one watching over me from heaven?",
+          "answer": "Ecclesiastes 9:5 and John 11 describe death as an unconscious rest until resurrection. Grief deserves tenderness rather than arguments."
+        },
+        {
+          "question": "Will I see people I love again?",
+          "answer": "The Bible holds out the promise of resurrection in Christ. It is a reason for hope even while we mourn."
+        },
+        {
+          "question": "What is the difference between a soul and a person?",
+          "answer": "In Genesis 2:7, humanity becomes a living being when God gives the breath of life. The original study reads “soul” in this integrated sense."
+        }
+      ],
+      "gtk_practice": "Draw the sequence in Genesis 2:7 and the resurrection promise in 1 Corinthians 15. Use the passages to explain what death and hope mean in your own words.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 12:2–3: Resurrection and the reward of those who lead others to truth",
+          "href": "../daniel/index.html#section-12-2",
+          "anchor": "section-12-2"
+        },
+        {
+          "source": "revelation",
+          "title": "The first resurrection and reign",
+          "passage": "Revelation 20:4",
+          "href": "../revelation/index.html#rev-20-4",
+          "anchor": "rev-20-4"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 16,
+      "teacher_title": "The Mark of the Beast",
+      "gtk_source_id": "mark",
+      "gtk_title": "The Mark of the Beast",
+      "gtk_lead": "What does it mean to give God our allegiance?",
+      "gtk_principle": "The final conflict in Revelation concerns worship and allegiance. A mark of loyalty cannot be understood apart from the contrasting call to worship the Creator and follow Jesus.",
+      "gtk_connections": [
+        {
+          "title": "Read the warning together with the good news",
+          "scripture": "Revelation 13:11–17; 14:6–12",
+          "insight": "The mark of the beast appears in a prophecy about authority, worship and pressure to conform. Immediately beside the warning, Revelation describes the everlasting gospel and a call to worship the Creator. That order matters. A study about the mark that leaves people terrified but never points them to Jesus has missed the centre of the passage. God is not trying to trap sincere people with an obscure technicality; He is calling for informed faithfulness."
+        },
+        {
+          "title": "Worship reaches the heart and the life",
+          "scripture": "Exodus 20:8–11; Hebrews 8:10; Revelation 14:12",
+          "insight": "The earlier lessons have shown that God’s law expresses His character and that the Spirit writes it on hearts. Revelation’s picture of forehead and hand communicates loyalty in thought and action. The conflict concerns whether people will follow the Creator or give ultimate authority to a competing system. The Sabbath has an important place in the argument because the fourth commandment identifies God as Creator. The reasoning should be studied as a connected Bible argument rather than a one-sentence slogan."
+        },
+        {
+          "title": "Coercion is the sign of counterfeit religion",
+          "scripture": "Daniel 3:4–18; Revelation 13:15–17",
+          "insight": "In Daniel 3, a ruler commanded everyone to worship an image under threat of punishment. Faithful people refused because conscience belongs to God. Revelation uses similar themes of an image, worship and penalties. This is why religious liberty is not a side issue. Pressure to buy, sell or remain socially secure becomes dangerous when it is used to force worship. We can disagree seriously about teaching while continuing to protect every person’s freedom of conscience."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Does a Sunday-worshipping Christian already have the mark?",
+          "answer": "No. The prophecy is understood to concern a future, informed crisis of conscience and coercion. We cannot judge another person’s heart."
+        },
+        {
+          "question": "Is the mark just a barcode or computer chip?",
+          "answer": "The source study understands it primarily in terms of worship, authority and allegiance, not a particular consumer technology."
+        },
+        {
+          "question": "What should I focus on?",
+          "answer": "Know Jesus, take Scripture seriously, respect others’ conscience and refuse fear-driven speculation."
+        }
+      ],
+      "gtk_practice": "Read Revelation 13 and 14 together. Mark every reference to worship, faith, commandments, coercion and the gospel. Summarise the choice being described.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: War against the saints and the appointed time",
+          "href": "../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "The mark, buying and selling, and 666",
+          "passage": "Revelation 13:16",
+          "href": "../revelation/index.html#rev-13-16",
+          "anchor": "rev-13-16"
+        },
+        {
+          "source": "revelation",
+          "title": "Third angel: a warning against false worship",
+          "passage": "Revelation 14:9",
+          "href": "../revelation/index.html#rev-14-9",
+          "anchor": "rev-14-9"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 17,
+      "teacher_title": "The Millennium",
+      "gtk_source_id": "millennium",
+      "gtk_title": "The Millennium",
+      "gtk_lead": "What happens during the thousand years?",
+      "gtk_principle": "Revelation presents a thousand-year period after Christ’s return in which the justice of God is made clear and sin moves toward its final end.",
+      "gtk_connections": [
+        {
+          "title": "The resurrection gives the timeline its starting point",
+          "scripture": "Revelation 20:1–6; 1 Thessalonians 4:16–17",
+          "insight": "The millennium means a thousand-year period described in Revelation 20. To understand it, begin with Jesus’ return and the resurrection of believers. Revelation distinguishes the first resurrection from the later events. A clear sequence helps prevent confusion: Christ returns, His people share in His victory, the thousand years pass, and the final judgment and restoration follow. The passage gives an outline, not a detailed diary of every year."
+        },
+        {
+          "title": "What does binding Satan mean?",
+          "scripture": "Revelation 20:1–3; Jeremiah 4:23–27",
+          "insight": "Revelation uses symbolic language about an angel, a chain and an abyss. The original study connects Satan’s binding with the desolation of the earth and the absence of people he can deceive during that period. A literal iron chain is not the point: Satan’s opportunities for deception are restrained. Reading the symbol beside the wider biblical sequence is more helpful than imagining details the chapter does not supply."
+        },
+        {
+          "title": "God makes His judgments understandable",
+          "scripture": "Revelation 20:4, 11–15; 1 Corinthians 6:2–3",
+          "insight": "Revelation speaks of judgment given to God’s people. The picture suggests that the redeemed are not kept in the dark about God’s dealings with evil. Questions about suffering, choices and justice will not be dismissed as unimportant. God’s purpose is not merely to announce that He is right but to demonstrate the goodness and fairness of His decisions. This continues the lesson on judgment and the great controversy."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Do I need to memorise every event in order?",
+          "answer": "No. First understand the big picture: Christ returns, God’s justice is made clear and evil finally ends."
+        },
+        {
+          "question": "Why allow a period of review?",
+          "answer": "The review reveals that God’s judgments are fair rather than arbitrary."
+        },
+        {
+          "question": "What is the ultimate point?",
+          "answer": "A universe free from sin, with life and fellowship restored."
+        }
+      ],
+      "gtk_practice": "Make a simple sequence: Christ returns; resurrection; thousand years; final judgment; new earth. Put biblical references beside each stage.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 12:1–1: 12:1  Michael stands and the people of God are delivered",
+          "href": "../daniel/index.html#section-12-1",
+          "anchor": "section-12-1"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 12:2–3: Resurrection and the reward of those who lead others to truth",
+          "href": "../daniel/index.html#section-12-2",
+          "anchor": "section-12-2"
+        },
+        {
+          "source": "revelation",
+          "title": "Satan bound for a thousand years",
+          "passage": "Revelation 20:1",
+          "href": "../revelation/index.html#rev-20-1",
+          "anchor": "rev-20-1"
+        },
+        {
+          "source": "revelation",
+          "title": "The first resurrection and reign",
+          "passage": "Revelation 20:4",
+          "href": "../revelation/index.html#rev-20-4",
+          "anchor": "rev-20-4"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 18,
+      "teacher_title": "Hell – Is God a Sadist?",
+      "gtk_source_id": "hell",
+      "gtk_title": "Hell — Is God a Sadist?",
+      "gtk_lead": "Would a loving God torment people forever?",
+      "gtk_principle": "God’s final judgment is real and just, but the study teaches that the wicked will finally perish rather than remain alive in endless torture. The picture of God must be consistent with His love and justice.",
+      "gtk_connections": [
+        {
+          "title": "Begin with the God revealed in Jesus",
+          "scripture": "1 John 4:8–10; John 3:16–17",
+          "insight": "Questions about hell often arise when someone has imagined a God who takes pleasure in the endless suffering of people. The study begins elsewhere: Scripture describes God as love, giving His Son to save rather than to condemn the world. Whatever we conclude about the final destruction of evil must be understood alongside that revelation of His character. We cannot simply ignore passages about judgment, but neither should we interpret them in ways that make God delight in cruelty."
+        },
+        {
+          "title": "The contrast is life and death",
+          "scripture": "Romans 6:23; Matthew 10:28; John 3:16",
+          "insight": "Paul contrasts the wages of sin—death—with God’s gift of eternal life. Jesus speaks of the destruction of both body and soul. These passages are central to the conclusion that the lost do not receive the gift of endless conscious life in suffering; they face final destruction. The seriousness of that end should never be made trivial. It represents an irreversible loss, and the loving God of Scripture calls people away from it."
+        },
+        {
+          "title": "Everlasting results are not the same as endless burning",
+          "scripture": "Jude 7; Malachi 4:1–3; Revelation 20:9–15",
+          "insight": "Jude describes Sodom as an example of eternal fire, even though the city is not visibly burning today. That suggests fire whose judgment is final. Malachi pictures wickedness consumed, not preserved without end. Revelation’s symbolic language can be difficult and deserves careful study in its wider setting. We should distinguish between an everlasting outcome and an unending process rather than assuming the two mean the same thing."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Does the Bible teach endless conscious torture?",
+          "answer": "No. The passages contrast the gift of immortality with the final destruction of the wicked, not eternal conscious torment."
+        },
+        {
+          "question": "Does that mean wrong actions do not matter?",
+          "answer": "No. Judgement remains serious. The difference concerns the nature and duration of final punishment."
+        },
+        {
+          "question": "How should I talk about this with someone frightened of hell?",
+          "answer": "Begin with God’s love and Jesus’ promise of life. Take their fear seriously, avoid threats and study Scripture together gently."
+        }
+      ],
+      "gtk_practice": "Compare Romans 6:23, Malachi 4:1–3 and Revelation 21:4. Describe the contrast between eternal life and the final end of sin.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 12:2–3: Resurrection and the reward of those who lead others to truth",
+          "href": "../daniel/index.html#section-12-2",
+          "anchor": "section-12-2"
+        },
+        {
+          "source": "revelation",
+          "title": "The great white throne",
+          "passage": "Revelation 20:11",
+          "href": "../revelation/index.html#rev-20-11",
+          "anchor": "rev-20-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Everything made new",
+          "passage": "Revelation 21:1",
+          "href": "../revelation/index.html#rev-21-1",
+          "anchor": "rev-21-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 19,
+      "teacher_title": "The Gift of Prophecy",
+      "gtk_source_id": "prophecy-gift",
+      "gtk_title": "The Gift of Prophecy",
+      "gtk_lead": "Does God still guide His people?",
+      "gtk_principle": "The Holy Spirit gives gifts for the building up of God’s people, including prophecy. A genuine claim to speak for God must be tested by Scripture and by its fruits.",
+      "gtk_connections": [
+        {
+          "title": "God’s gifts are for service",
+          "scripture": "1 Corinthians 12:4–11, 27–31; Ephesians 4:11–16",
+          "insight": "The Holy Spirit equips believers in different ways for the good of the whole church. A genuine gift does not exist to make one person famous or to create unquestionable control over others. Prophetic ministry calls people toward truth, encouragement, correction and faithfulness to God. As with any teaching ministry, its value is measured in service to Christ and His people."
+        },
+        {
+          "title": "God has spoken through human messengers",
+          "scripture": "Amos 3:7; Hebrews 1:1–2; Joel 2:28–29",
+          "insight": "The Bible contains many examples of God sending messages through prophets, and Joel promises that prophetic activity would not be confined to ancient times. Hebrews also places Jesus at the centre of God’s revelation. This means later spiritual claims must never replace the gospel or become a new authority higher than Scripture. The Spirit who inspired Scripture will not contradict its clear message about Christ."
+        },
+        {
+          "title": "Every claim must be tested",
+          "scripture": "1 Thessalonians 5:19–22; 1 John 4:1–3; Isaiah 8:20",
+          "insight": "Scripture instructs believers not to despise prophecy and not to accept every claimed spirit. Both warnings matter. A person may be sincere and mistaken, persuasive and wrong, or faithful and worth hearing. Test the content by the Bible, the confession of Jesus, the fruit produced and the accuracy of genuine predictive claims. Where an assertion cannot be verified, say so. Testing is an act of faithfulness, not disrespect."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Do I need to read Ellen White before reading the Bible?",
+          "answer": "No. Begin with Scripture. Her writings may be used as supporting reading, but they should point you toward Jesus and the Bible."
+        },
+        {
+          "question": "Can someone claim God told them something and therefore never be questioned?",
+          "answer": "No. Scripture calls us to test such claims. Humility and accountability are important."
+        },
+        {
+          "question": "How can I check a quote attributed to Ellen White?",
+          "answer": "Look it up in EGW Writings, read the surrounding paragraph and verify the book and page rather than sharing unsourced snippets."
+        }
+      ],
+      "gtk_practice": "Make a checklist from Isaiah 8:20, Matthew 7:15–20 and 1 John 4:1–3 for evaluating spiritual claims with humility and care.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:20–23: Gabriel returns with further understanding",
+          "href": "../daniel/index.html#section-9-20",
+          "anchor": "section-9-20"
+        },
+        {
+          "source": "revelation",
+          "title": "The unveiling and its blessing",
+          "passage": "Revelation 1:1",
+          "href": "../revelation/index.html#rev-1-1",
+          "anchor": "rev-1-1"
+        },
+        {
+          "source": "revelation",
+          "title": "The marriage supper of the Lamb",
+          "passage": "Revelation 19:7",
+          "href": "../revelation/index.html#rev-19-7",
+          "anchor": "rev-19-7"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 20,
+      "teacher_title": "The Remnant Church",
+      "gtk_source_id": "remnant",
+      "gtk_title": "The Remnant Church",
+      "gtk_lead": "How can I recognise a faithful Christian community?",
+      "gtk_principle": "God calls people to remain faithful to Jesus and His word in a world of confusion. The focus is a mission of truth, love, obedience and witness, never a claim of personal superiority.",
+      "gtk_connections": [
+        {
+          "title": "God has always called people to faithfulness",
+          "scripture": "1 Kings 19:14–18; Romans 11:1–5",
+          "insight": "When Elijah thought he was the only faithful person remaining, God revealed that others had not bowed to false worship. The word remnant describes people preserved by God’s grace when many turn away. It must not become a source of boasting. The biblical emphasis is God’s faithfulness, not the superiority of those who recognise themselves as part of His people."
+        },
+        {
+          "title": "Jesus seeks one flock",
+          "scripture": "John 10:11–16; 17:20–23",
+          "insight": "Jesus compared Himself to a good shepherd who gathers sheep. He also prayed for unity among His followers. Christian unity is not created by merely avoiding difficult questions, nor by forcing agreement. It develops as people hear His voice, love one another and respond to revealed truth. The practical question is whether a community makes Jesus clearer and helps people follow Him in sincerity."
+        },
+        {
+          "title": "Revelation describes the last-day people of God",
+          "scripture": "Revelation 12:17; 14:6–12",
+          "insight": "The book of Revelation pictures a people who hold to God’s commandments and the faith of Jesus while proclaiming an urgent message about the Creator, judgment and true worship. The lesson traces the connection between gospel faith, obedience and mission. These are characteristics to take seriously, not excuses for contempt toward Christians of other communities. God knows people in every place, and His call is to all who will hear Him."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Does joining one denomination automatically save me?",
+          "answer": "No. Salvation is through Christ, not a membership record. A healthy church helps people grow in faith and love."
+        },
+        {
+          "question": "Are sincere Christians found in other churches?",
+          "answer": "Yes. Jesus knows His sheep, including those who follow Him sincerely in different congregations."
+        },
+        {
+          "question": "What should I look for in a church?",
+          "answer": "Faithfulness to Scripture, a Christ-centred message, humility, genuine care, freedom of conscience and practical service."
+        }
+      ],
+      "gtk_practice": "Write how you would explain a “faithful remnant” to a friend without making them feel unwelcome. Include Revelation 14:6 and John 10:16.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:26–28: Judgment reverses the verdict of earth",
+          "href": "../daniel/index.html#section-7-26",
+          "anchor": "section-7-26"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 12:1–1: 12:1  Michael stands and the people of God are delivered",
+          "href": "../daniel/index.html#section-12-1",
+          "anchor": "section-12-1"
+        },
+        {
+          "source": "revelation",
+          "title": "The remnant and the testimony of Jesus",
+          "passage": "Revelation 12:17",
+          "href": "../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        },
+        {
+          "source": "revelation",
+          "title": "Third angel: a warning against false worship",
+          "passage": "Revelation 14:9",
+          "href": "../revelation/index.html#rev-14-9",
+          "anchor": "rev-14-9"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 21,
+      "teacher_title": "Christian living",
+      "gtk_source_id": "living",
+      "gtk_title": "Christian Living",
+      "gtk_lead": "How should faith influence our choices and appearance?",
+      "gtk_principle": "Following Jesus changes priorities, appearance and habits. The study especially examines adornment, modesty and humility, asking what helps or distracts from a Christ-centred life.",
+      "gtk_connections": [
+        {
+          "title": "The question is the heart, not appearances alone",
+          "scripture": "1 Samuel 16:7; Matthew 6:19–24",
+          "insight": "God looks at the heart, and Jesus warned that treasures can capture our loyalty. Questions about dress, jewellery, possessions and entertainment are therefore more than arguments about lists. We should ask whether something encourages pride, waste, dishonesty, lust, exclusion or an unhealthy hunger for attention. The same outward choice can involve different motives, so discussions should be thoughtful and avoid judging someone’s worth by appearance."
+        },
+        {
+          "title": "Beauty is not inherently evil",
+          "scripture": "Ezekiel 16:8–14; Revelation 21:18–21",
+          "insight": "Scripture can use jewellery, rich materials and beauty positively. It can also warn of decoration used for self-glory and spiritual unfaithfulness. The source study makes this contrast in order to question when adornment moves from appreciation to self-exaltation. That means we should not claim every ornament is automatically sinful, while also recognising that outward display can become an idol. Simplicity can be a valuable expression of humility and wise stewardship."
+        },
+        {
+          "title": "A renewed life changes priorities",
+          "scripture": "Romans 12:1–2; 1 Peter 3:3–4",
+          "insight": "Paul calls for transformation through the renewing of the mind. Peter directs attention to the lasting beauty of a gentle and quiet spirit. These teachings concern priorities: how much time, money and attention are spent cultivating an image, and how much is invested in kindness, integrity and service? The Spirit works with conscience over time, helping believers reconsider habits without turning growth into a competition."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Is every piece of jewellery automatically sinful?",
+          "answer": "The original study asks this question and notes biblical examples of ornamentation. It argues for caution about pride and display rather than assuming every instance has the same meaning."
+        },
+        {
+          "question": "How do I know whether something is appropriate?",
+          "answer": "Ask what motivates you, what it communicates, whether it is responsible, and whether it honours God and others. Seek wisdom without judging appearances."
+        },
+        {
+          "question": "Does God only accept me if I dress a certain way?",
+          "answer": "No. God loves people before their outward habits change. Growth in Christian character should not become shame or social pressure."
+        }
+      ],
+      "gtk_practice": "Choose one decision about clothes, spending, entertainment or social media. Ask: Does this encourage humility, love and a clear conscience before God?",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 1:8–10: Daniel decides before the crisis grows",
+          "href": "../daniel/index.html#section-1-8",
+          "anchor": "section-1-8"
+        },
+        {
+          "source": "revelation",
+          "title": "The Saviour at the door",
+          "passage": "Revelation 3:19",
+          "href": "../revelation/index.html#rev-3-19",
+          "anchor": "rev-3-19"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 22,
+      "teacher_title": "Prayer",
+      "gtk_source_id": "prayer",
+      "gtk_title": "Prayer",
+      "gtk_lead": "How do I talk to a God I cannot see?",
+      "gtk_principle": "Prayer is a real relationship with our heavenly Father. It includes worship, confession, asking, listening and trust rather than a formula for controlling outcomes.",
+      "gtk_connections": [
+        {
+          "title": "Jesus treated prayer as essential",
+          "scripture": "Mark 1:35; Luke 6:12; Luke 9:28",
+          "insight": "Even with many people wanting His attention, Jesus made space for prayer, sometimes before major decisions. Prayer is not an emergency device reserved for desperate moments. It is a relationship in which we turn toward our Father, listen to Scripture, express gratitude and seek guidance. Beginners need not use impressive words. They can start by telling God the truth about the day and asking for wisdom."
+        },
+        {
+          "title": "The Lord’s Prayer teaches priorities",
+          "scripture": "Matthew 6:5–13",
+          "insight": "Jesus taught His followers to pray for God’s name to be honoured, His kingdom to come and His will to be done. Only then does the prayer turn to daily bread, forgiveness and protection. These are not magic words that must be repeated a certain number of times. They are a pattern for putting trust, dependence and relationships before selfish demands. The prayer includes both personal needs and responsibility to forgive others."
+        },
+        {
+          "title": "Confidence is different from controlling God",
+          "scripture": "Matthew 7:7–11; 1 John 5:14–15; James 4:2–3",
+          "insight": "Jesus invites us to ask, seek and knock because God is a loving Father. But prayer is not a promise that God must obey our timetable or deliver anything we demand. Scripture calls us to pray according to His will, to examine selfish motives and to trust His wisdom. A painful unanswered prayer does not prove that God has stopped loving us. Sometimes a faithful prayer is simply, “Help me to trust You while I wait.”"
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "What if I do not know the right words?",
+          "answer": "Start simply: “God, I am here. I need help.” Jesus taught a model prayer, not a complicated formula."
+        },
+        {
+          "question": "What if my prayer seems unanswered?",
+          "answer": "That can be painful. The Bible encourages persistent trust but does not promise every outcome we want. Seek support from people who care and keep speaking honestly to God."
+        },
+        {
+          "question": "Can I pray when I have done something wrong?",
+          "answer": "Yes. Come humbly and honestly. Prayer is especially important when we need forgiveness and a new start."
+        }
+      ],
+      "gtk_practice": "Use the Lord’s Prayer as a guide. Write one sentence of praise, one request for provision, one confession, and one prayer for another person.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 6:10–11: Daniel continues his customary prayer",
+          "href": "../daniel/index.html#section-6-10",
+          "anchor": "section-6-10"
+        },
+        {
+          "source": "revelation",
+          "title": "Silence and prayers at the altar",
+          "passage": "Revelation 8:1",
+          "href": "../revelation/index.html#rev-8-1",
+          "anchor": "rev-8-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 23,
+      "teacher_title": "Health",
+      "gtk_source_id": "health",
+      "gtk_title": "Health",
+      "gtk_lead": "Does God care about my everyday wellbeing?",
+      "gtk_principle": "Our bodies and minds are gifts to be cared for. God’s concern for health includes food, rest, temperance, service and hope—not judgment of people who become ill.",
+      "gtk_connections": [
+        {
+          "title": "God cares about the whole person",
+          "scripture": "John 10:10; 3 John 2; Luke 10:27",
+          "insight": "Life with God touches the mind, body, relationships and spirit. Jesus healed people, fed the hungry and cared about their suffering. Health principles should therefore be presented as an invitation to care for God’s gifts rather than a claim that people with illness have weak faith. Bodies change, some conditions are inherited and many causes of suffering are outside a person’s control. Compassion belongs at the centre of a biblical approach to wellbeing."
+        },
+        {
+          "title": "Stewardship begins with everyday choices",
+          "scripture": "1 Corinthians 6:19–20; Romans 12:1",
+          "insight": "Paul speaks of the believer’s body as belonging to God and being a place where the Spirit is honoured. That gives meaning to eating, activity, sleep and avoiding harmful substances. The source study uses the memory guide NEWSTART—nutrition, exercise, water, sunlight, temperance, air, rest and trust in God—to organise practical habits. It is a helpful reminder, not a substitute for individual medical advice."
+        },
+        {
+          "title": "Self-control is a gift for service",
+          "scripture": "Galatians 5:22–23; Proverbs 23:29–35",
+          "insight": "The Bible warns against intoxication and celebrates self-control. The purpose of temperance is to keep our judgment clear, protect relationships and care responsibly for life. It is not a reason to shame someone struggling with addiction. Such struggles can require medical, psychological, community and spiritual support. A wise believer combines prayer with sensible help and learns to encourage rather than condemn."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "If I become sick, have I failed spiritually?",
+          "answer": "No. Illness has many causes and must not be used as a measure of faith. Offer compassion and appropriate care."
+        },
+        {
+          "question": "Must everyone follow an identical diet?",
+          "answer": "The source encourages a healthful diet and discusses nutrition. A plant-centred way of eating may be helpful, but personal medical needs and wise practical choices matter."
+        },
+        {
+          "question": "Is this medical advice?",
+          "answer": "No. It is a faith-and-wellbeing lesson, not a diagnosis or substitute for guidance from qualified clinicians."
+        }
+      ],
+      "gtk_practice": "Choose one sustainable health habit to improve this week. Make a realistic plan and remember that illness or disability is never evidence of spiritual failure.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 1:8–10: Daniel decides before the crisis grows",
+          "href": "../daniel/index.html#section-1-8",
+          "anchor": "section-1-8"
+        },
+        {
+          "source": "revelation",
+          "title": "The river, tree and restored face-to-face fellowship",
+          "passage": "Revelation 22:1",
+          "href": "../revelation/index.html#rev-22-1",
+          "anchor": "rev-22-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 24,
+      "teacher_title": "Baptism",
+      "gtk_source_id": "baptism",
+      "gtk_title": "Baptism",
+      "gtk_lead": "What does baptism mean, and am I ready?",
+      "gtk_principle": "Baptism is the public expression of trusting Jesus, turning from the old life and beginning a new life with Him. It is a response to grace, not a payment for salvation.",
+      "gtk_connections": [
+        {
+          "title": "Jesus gave the example",
+          "scripture": "Matthew 3:13–17; Matthew 28:18–20",
+          "insight": "Jesus was baptised and later commanded His followers to make disciples and baptise them. Baptism is therefore more than joining a social group or performing a family tradition. It is a public response to Christ. Jesus’ baptism also reminds us that baptism points beyond the person carrying it out; it belongs to God’s saving work and the new relationship He offers."
+        },
+        {
+          "title": "Repentance means a change of direction",
+          "scripture": "Acts 2:37–41; John 3:3–8",
+          "insight": "When listeners asked Peter what to do, he called them to repentance and baptism. Repentance includes recognising wrong, changing our mind and turning toward God. It is not merely feeling embarrassed after being caught. Jesus spoke of the new birth as a work of the Spirit. Baptism expresses that inward change but cannot mechanically create it. We respond to grace with faith, confession and a willingness to follow."
+        },
+        {
+          "title": "Immersion pictures death and new life",
+          "scripture": "Romans 6:3–6; Colossians 2:12",
+          "insight": "Paul explains baptism as being buried with Christ and raised to walk in newness of life. Going down into and rising from the water makes the picture visible. The old direction of life is surrendered; a new life of trusting Jesus begins. This does not mean a baptised person will never fail. It means they now belong to Christ and seek His power to leave sin behind."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Do I have to know every Bible teaching first?",
+          "answer": "Baptism should be thoughtful and informed, but no one understands everything. Speak with a pastor or mentor about the core beliefs and questions that matter to you."
+        },
+        {
+          "question": "What if I still struggle with old habits?",
+          "answer": "Baptism does not promise a struggle-free life. It marks a commitment to trust Christ and grow with His help."
+        },
+        {
+          "question": "Why immersion?",
+          "answer": "The original study connects immersion with the picture of burial and resurrection in Romans 6 and the baptisms described in Acts."
+        }
+      ],
+      "gtk_practice": "Read Romans 6:1–11. Write what you are leaving behind, what new life means to you and any questions you would want answered before baptism.",
+      "deep_reading_links": [
+        {
+          "source": "revelation",
+          "title": "Behold I come quickly",
+          "passage": "Revelation 22:12",
+          "href": "../revelation/index.html#rev-22-12",
+          "anchor": "rev-22-12"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 25,
+      "teacher_title": "The Godhead",
+      "gtk_source_id": "godhead",
+      "gtk_title": "The Godhead",
+      "gtk_lead": "Who are the Father, Son and Holy Spirit?",
+      "gtk_principle": "The Bible reveals one God as Father, Son and Holy Spirit. Their perfect unity and love are the foundation of how God makes Himself known.",
+      "gtk_connections": [
+        {
+          "title": "The Bible declares one God",
+          "scripture": "Deuteronomy 6:4; Isaiah 45:5–6",
+          "insight": "Israel’s confession that the Lord is one is foundational. Christians do not worship three competing gods. When the Bible also speaks about Father, Son and Holy Spirit, the task is to understand those passages without denying the oneness of God. Some things about God exceed our full understanding, but Scripture tells us enough to know His character, receive His salvation and worship Him faithfully."
+        },
+        {
+          "title": "The Son shares the divine identity",
+          "scripture": "John 1:1–3, 14; John 10:30–33; Hebrews 1:1–3",
+          "insight": "John describes the Word as with God and as God, and says the Word became flesh. Jesus is not merely a helpful religious teacher or the first creature God made. The Gospels describe Him receiving worship, revealing the Father and acting with divine authority. His full deity matters for salvation: in Christ, God Himself has come near to rescue humanity."
+        },
+        {
+          "title": "The Spirit is more than an impersonal power",
+          "scripture": "John 14:16–17, 26; Acts 5:3–4",
+          "insight": "Jesus promised another Helper who would teach and remind His followers of His words. Acts speaks of lying to the Holy Spirit as lying to God. The Spirit is not simply an electrical force or a feeling. He works personally, leading people into truth and forming Christlike lives. We need not understand every mystery of divine existence before responding to His guidance."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Are Christians worshipping three gods?",
+          "answer": "No. Scripture reveals one God as Father, Son and Holy Spirit."
+        },
+        {
+          "question": "Is Jesus less than God?",
+          "answer": "Jesus is fully divine and eternal, while also truly becoming human for our salvation."
+        },
+        {
+          "question": "Must I understand every detail to begin faith?",
+          "answer": "No. You do not need to understand every mystery or settle every theological term before you begin trusting Jesus. Scripture warns against rejecting the Son (1 John 2:23) and speaks seriously about resisting the Spirit, but this study is not a test for condemning sincere learners. Keep seeking God through Jesus with humility."
+        }
+      ],
+      "gtk_practice": "Read John 14–16 over several days. Make three lists of what Scripture says the Father, Son and Spirit do.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:11–14: The proud power ends and the Son of man receives dominion",
+          "href": "../daniel/index.html#section-7-11",
+          "anchor": "section-7-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Grace to the seven churches",
+          "passage": "Revelation 1:4",
+          "href": "../revelation/index.html#rev-1-4",
+          "anchor": "rev-1-4"
+        },
+        {
+          "source": "revelation",
+          "title": "The Lion appears as a slain Lamb",
+          "passage": "Revelation 5:5",
+          "href": "../revelation/index.html#rev-5-5",
+          "anchor": "rev-5-5"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 26,
+      "teacher_title": "Stewardship",
+      "gtk_source_id": "stewardship",
+      "gtk_title": "Stewardship",
+      "gtk_lead": "What does faith have to do with money and time?",
+      "gtk_principle": "God owns everything; we are entrusted with life, abilities, time, money and creation. Giving is an act of worship and service rather than a purchase of blessing.",
+      "gtk_connections": [
+        {
+          "title": "Ownership changes how we view possessions",
+          "scripture": "Psalm 24:1; 1 Corinthians 6:19–20",
+          "insight": "The Bible begins with God as Creator. Our time, abilities, money, relationships and physical lives are entrusted to us; we are not their ultimate owners. This does not mean we should despise what we have. It means we can use gifts gratefully rather than letting them rule us. Even ordinary decisions about budgets and schedules can become expressions of worship when they are made with honesty and love."
+        },
+        {
+          "title": "Giving is a response to grace",
+          "scripture": "2 Corinthians 8:9; 9:6–8",
+          "insight": "Paul’s teaching about generosity begins with the grace of Jesus, who gave Himself for us. God is interested in willing giving, not coercion or showing off. Christians should be free to ask responsible questions about how offerings are used. Generosity can include financial support, hospitality, service and care for people in difficulty. The heart of stewardship is trust in God and concern for others."
+        },
+        {
+          "title": "Understand the tithe principle",
+          "scripture": "Genesis 14:18–20; Malachi 3:8–12; Leviticus 27:30",
+          "insight": "The Bible speaks of a tithe, a tenth, set apart for God. The source lesson follows the principle through Abraham, Israel and the stewardship of God’s people. As with every biblical practice, read the original covenant setting before applying it today. The aim is not to purchase blessings with money or make people feel condemned when they are poor. Giving should express gratitude, trust and a desire to support God’s work faithfully."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Will God make me wealthy if I tithe?",
+          "answer": "The lesson does not promise a guaranteed financial return. Giving expresses faith and gratitude, not a transaction that obligates God to enrich us."
+        },
+        {
+          "question": "What if I am struggling to pay necessities?",
+          "answer": "God knows your circumstances. Seek wise financial support, act responsibly and speak with a trustworthy church leader about questions rather than responding to pressure."
+        },
+        {
+          "question": "Does stewardship only mean money?",
+          "answer": "No. It also includes time, gifts, caring for people and looking after creation."
+        }
+      ],
+      "gtk_practice": "Make four columns: time, abilities, money and relationships. In each list one gift, one responsibility and one generous next step.",
+      "deep_reading_links": [
+        {
+          "source": "revelation",
+          "title": "The remnant and the testimony of Jesus",
+          "passage": "Revelation 12:17",
+          "href": "../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 27,
+      "teacher_title": "Witnessing",
+      "gtk_source_id": "witnessing",
+      "gtk_title": "Witnessing",
+      "gtk_lead": "How can I share my faith without pushing people away?",
+      "gtk_principle": "We share faith by showing the character of Jesus, speaking truthfully, caring for people and respecting their freedom to respond.",
+      "gtk_connections": [
+        {
+          "title": "Compassion comes before a programme",
+          "scripture": "Matthew 9:35–38; Mark 6:34",
+          "insight": "When Jesus saw crowds, He recognised people who were weary and lacking guidance. His response was compassion, teaching and practical care. Sharing faith begins with seeing others as people, not as targets or numbers. Before explaining a doctrine, listen to what someone has experienced, what they fear and what they hope for. Kindness is not an advertising technique; it is part of the message about Jesus."
+        },
+        {
+          "title": "An ordinary testimony is valuable",
+          "scripture": "John 1:40–46; Luke 8:38–39",
+          "insight": "Andrew brought his brother to Jesus, Philip invited a friend to come and see, and a healed man told others what God had done for him. None of these examples requires a public platform or specialised training. You can speak naturally about what you have learned and invite someone to investigate the Scriptures with you. It is better to admit that you do not know an answer than to pretend certainty."
+        },
+        {
+          "title": "The message is Jesus, not ourselves",
+          "scripture": "Romans 1:16; John 12:32; 1 Corinthians 2:1–5",
+          "insight": "Paul was not ashamed of the gospel because its saving power comes from God. Jesus said that when He is lifted up, He will draw people to Himself. Christian witnessing should therefore introduce people to His character, grace, truth and invitation. We do not need to become performers or pressure someone into a decision. Clear Bible teaching and a sincere life are stronger than exaggeration or manipulation."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "What if someone says they are not interested?",
+          "answer": "Respect their answer. Genuine friendship should not depend on agreement about faith."
+        },
+        {
+          "question": "Do I have to know every answer?",
+          "answer": "No. Be honest when you do not know something, listen well and offer to explore a question together."
+        },
+        {
+          "question": "What if I am shy?",
+          "answer": "Acts of kindness, a brief personal story and patient friendship can be powerful ways to witness."
+        }
+      ],
+      "gtk_practice": "Think of one person you can support in a practical way. Write an invitation or encouraging message that allows them freedom to decline.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 2:17–18: Four friends pray rather than compete",
+          "href": "../daniel/index.html#section-2-17",
+          "anchor": "section-2-17"
+        },
+        {
+          "source": "revelation",
+          "title": "First angel: everlasting gospel and judgment",
+          "passage": "Revelation 14:6",
+          "href": "../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        },
+        {
+          "source": "revelation",
+          "title": "Behold I come quickly",
+          "passage": "Revelation 22:12",
+          "href": "../revelation/index.html#rev-22-12",
+          "anchor": "rev-22-12"
+        }
+      ]
+    }
+  ]
+}
