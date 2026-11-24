@@ -1,9 +1,7 @@
 name: Build Teachers Guide V2 Tagalog from approved V2 source
+# Disabled automatic translation: Daniel/Revelation translation is authored in
+# ChatGPT from the English Word master, not by GitHub Models in Actions.
 on:
-  push:
-    paths:
-      - 'tools/build_teachers_v2_tl_ai.py'
-      - '.github/workflows/teachers-v2-tl-ai.yml'
   workflow_dispatch:
 permissions:
   contents: write
