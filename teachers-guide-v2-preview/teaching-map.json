@@ -21,31 +21,49 @@
           "kind": "core",
           "start": 3,
           "end": 11,
-          "label": "Scripture's claims"
+          "label": "The Bible's claim to inspiration"
         },
         {
           "kind": "core",
           "start": 12,
           "end": 17,
-          "label": "God's character revealed"
+          "label": "Evidence — God's character"
         },
         {
           "kind": "core",
           "start": 18,
-          "end": 35,
-          "label": "Predictive prophecy and Daniel 2"
+          "end": 34,
+          "label": "Evidence — predictive prophecy"
         },
         {
           "kind": "core",
-          "start": 36,
+          "start": 35,
+          "end": 39,
+          "label": "Consistency — cultural"
+        },
+        {
+          "kind": "core",
+          "start": 40,
+          "end": 43,
+          "label": "Consistency — internal"
+        },
+        {
+          "kind": "core",
+          "start": 44,
+          "end": 52,
+          "label": "Consistency — manuscripts and translation"
+        },
+        {
+          "kind": "core",
+          "start": 53,
           "end": 55,
-          "label": "Consistency of Scripture"
+          "label": "Consistency — experiential"
         },
         {
           "kind": "core",
           "start": 56,
           "end": 56,
-          "label": "Invitation to continue"
+          "label": "Invitation to keep studying"
         }
       ],
       "application": {
