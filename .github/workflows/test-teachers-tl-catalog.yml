@@ -30,9 +30,33 @@ jobs:
           assert len({x['source_id'] for x in d['items']})==len(d['items'])
           print('Tagalog field inventory:',len(d['items']),'entries, across',d['study_count'],'studies and',d['unit_count'],'study items.')
           PY
-      - name: Upload review translation catalog
+      - name: Reuse approved Tagalog GTKJ study titles
+        run: |
+          python teachers-guide-tl-v2-draft/seed_gtk_titles.py \
+            --site teachers-guide --gtk-tl-lessons tl/lessons.js \
+            --out /tmp/tg-tl-seeded.json
+      - name: Prepare unchanged 1905 Tagalog Bible references
+        run: |
+          python teachers-guide-tl-v2-draft/build_tagalog_verse_lookup.py \
+            --source tl/bible --out /tmp/tg-tl-verses.json
+      - name: Validate partial-seed status and verse coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('/tmp/tg-tl-seeded.json').read_text())
+          n=sum(bool(x['tagalog']) for x in d['items'])
+          verses=json.loads(Path('/tmp/tg-tl-verses.json').read_text())
+          assert 28<=n<=84,n
+          assert n<len(d['items']),'A title seed cannot pass full translation coverage'
+          assert len(verses)>=30000
+          print('TL seed verified:',n,'approved fields;',len(verses),'Bible verses; full teacher translation still pending')
+          PY
+      - name: Upload Tagalog translation and Bible preparation
         uses: actions/upload-artifact@v4
         with:
-          name: Teachers_Guide_TL_Translation_Catalog
-          path: /tmp/tg-tl-catalog.json
+          name: Teachers_Guide_TL_Source_Preparation
+          path: |
+            /tmp/tg-tl-seeded.json
+            /tmp/tg-tl-verses.json
           retention-days: 14
