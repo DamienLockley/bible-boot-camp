@@ -56,7 +56,8 @@ async function flush(){
  assert.ok(columns[0].querySelectorAll('.bible-ref').length < 12,'Legacy combined Word reference list must not all appear as main readings');
  assert.match(columns[0].textContent,/2 Tim 3:16/);
  assert.match(columns[1].textContent,/1 John 4:8|Daniel|John 3:16/);
- assert.ok(!columns[0].textContent.includes('1 John 4:8'),'Embedded supporting reference was incorrectly treated as a main reading');
+ assert.ok(!columns[0].textContent.includes('Acts 17:10'),'GTKJ supplementary reference should not be a primary reading');
+ assert.match(columns[1].textContent,/Acts 17:10/,'GTKJ supporting Scripture should appear in the supplementary list');
  const originalData=JSON.parse(fs.readFileSync(path.join(root,'teachers-guide/study-data.json'),'utf8'));
  assert.ok(originalData.sections[0].verses.length>columns[0].querySelectorAll('.bible-ref').length,'Original combined verse list no longer determines main references');
  const language=document.getElementById('teacher-tl-button');
