@@ -1,0 +1,544 @@
+{
+  "id": 9,
+  "title": "Ang Paghuhukom",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Ang Paghuhukom",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Layunin: Ang Paghuhukom ay upang maipagtanggol at mapatunayang matuwid ang karakter ng Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nakasentro sa: Sa Paghuhukom, ang Diyos mismo ang tila sinusuri at hindi lamang tayo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Bakit mahalaga ang paghuhukom: Kung mahalaga sa Diyos ang kalupitan, panlilinlang, at pang-aapi ngunit hindi kailanman haharapin ang mga ito, mawawalan ng saysay ang Kanyang katarungan. Ipinapangako ng Kasulatan na ang mga nakatagong bagay ay mahahayag sa liwanag. Ang paghuhukom ay hindi lamang isang banta; nangangahulugan itong hindi binabalewala ang kasamaan.",
+      "stage": [
+        "core",
+        "Ang kahulugan ng makatarungang paghuhukom"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang mawawala sa isang mundong hindi kailanman tinutugunan ang kawalang-katarungan?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Katarungan, pananagutan, at ang pagpapawalang-sala sa mga nagdusa.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang katotohanang ang Diyos ay tila sinusuri ay nagbibigay ng ganap na ibang pananaw sa tagpo ng paghuhukom. Kapag iniisip ng karamihan ang paghuhukom, madalas ay nakasentro sila sa kanilang sarili. Hindi iyon ang inilalarawan ng Biblia. Matutuklasan nating inilalarawan ng Biblia ang paghuhukom sa isang lubhang naiibang pananaw… kung saan ang Diyos ang tila sinusuri. Malugod na tinanggap ng mga manunulat ng Biblia ang paghuhukom; ito ay kanilang ipinanalangin at inasahan. Magandang balita ang paghuhukom.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "Unang bahagi:",
+      "stage": [
+        "core",
+        "Ang huwaran ng paghuhukom ng Diyos"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 9:27… Walang makatatakas sa Paghuhukom; maging ang kamatayan ay hindi makatatakas dito!",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Bakit kailangang magkaroon ng Paghuhukom:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 3:23… Lahat ay nagkasala.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 3:16… Inanyayahan ang lahat sa kaligtasan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 10:38-39… Ayon sa talatang ito, posibleng talikuran at maiwala ang kaligtasan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "2 Peter 2:20-22… Isa pang halimbawa ng pagtalikod sa kaligtasan. Mahalaga ito sapagkat ipinakikita nitong pinahahalagahan ng Diyos ang kalayaang pumili, bago at pagkatapos lumapit kay Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang salitang Paghuhukom ay nangangahulugan lamang ng “suriin at magpasiya.” Kung aalisin ng Diyos ang kalayaang pumili ng lahat ng tao, hindi na kakailanganin ang paghuhukom. Ang layunin ng Paghuhukom ay gawing pinal ang mga pasiyang ginagawa ng mga tao. Bago dumating si Hesus, magkakaroon ng pagpapatibay sa mga pasiyang ito.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 7:10… Pansinin ang pagbanggit sa mga aklat.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 20:12… Muling binabanggit ang mga aklat na marahil ay ginagamit upang itala ang mga kilos at gawa.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Psalm 139:1-4… Pinatutunayan ng Lumang Tipan na alam ng Diyos ang lahat ng bagay.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 10:30… Halos imposibleng manlinlang sa Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Isang mahalagang tanong na dapat pag-isipan:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya bakit kailangan ang paghuhukom kung alam na ng Diyos ang lahat? Alalahaning ang Paghuhukom ay proseso ng pagsusuri sa lahat ng kaugnay na impormasyon upang makapagpasiya. Kung alam na ng Diyos ang lahat, bakit kailangan pa Niyang suriin ang buhay ng mga tao upang makapagbigay ng hatol?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kung alam ng Diyos ang lahat, nangangahulugang ang pagsisiyasat at proseso ng paghuhukom ay hindi upang ipaalam sa Kanya ang isang bagay na hindi pa Niya alam. Hindi ito para madagdagan ang Kanyang kaalaman kundi para sa ating kapakinabangan. Nagsisiyasat Siya bago kumilos upang magkaroon ng pagtitiwala sa Kanya ang lahat ng iba pa.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang higit nating maunawaan ang Paghuhukom sa wakas, kailangan muna nating maunawaan ang paraan ng paghuhukom ng Diyos sa pasimula.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Huwaran ng Paghuhukom ng Diyos:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 3:8-11… Makikitang nagtatanong ang Diyos. Alam na Niya ang sagot sa lahat ng Kanyang tanong. Hindi ang mga tanong ay para sa Kanya kundi para kina Adan at Eva. Nais ng Diyos na ganap na maunawaan ni Adan na nagsisiyasat Siya bago kumilos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Paano tumugon ang Diyos sa kasalanan sa pasimula?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 4:9-10… Muling nagtatanong ang Diyos kahit alam na Niya ang sagot. Malapit na Siyang magpahayag ng hatol. Kanyang kikilalanin at pagtitibayin ang mga pasiyang ginawa na mismo ni Cain… Pagsisiyasat bago kumilos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 6:5… Personal na nakikibahagi ang Diyos sa pagsisiyasat bago ipatupad ang Kanyang hatol.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 11:5… Bumaba ang Diyos?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 18:17… Sinasabi ng Diyos na hindi Niya ililihim ang Kanyang proseso at mga dahilan (pagsisiyasat) bago ipatupad ang hatol sa Sodoma at Gomorra.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 18:20-21… Ano? Alam na iyon ng Diyos, hindi ba? Kumilos ang Diyos nang hayagan upang makita ng lahat ang Kanyang pagiging makatarungan sa paghatol. Bakit napakahalaga sa Diyos na magtatag ng pagtitiwala sa Kanyang paghuhukom?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Jude 1:7… Ang nangyari sa Sodoma at Gomorra ay halimbawa ng mangyayari sa mga huling araw (pagsisiyasat bago ang paghatol upang maipakita ang Kanyang mga gawa).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Satanas: Ang tagapag-akusa.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 12:10… Si Satanas ang tagapag-akusa ng mga kapatid at maging ng Diyos mismo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 3:4-5… Ang mga paratang ni Satanas laban sa Diyos: (Tingnan din ang Job.)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sinungaling ang Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Walang halaga ang salita ng Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "May ipinagkakait ang Diyos sa atin.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang pagwawalang-bahala sa Diyos ay nagdudulot ng kaligayahan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nagpapakita si Satanas na parang nagmamalasakit siya sa kapakanan ng babae.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa sandaling kumuha si Eva ng bunga sa puno, tinanggap niya sa kanyang kalooban ang lahat ng mga paratang ni Satanas. Naging bahagi ang mga ito ng kanyang kalikasan! Para sa kanya ay naging totoo ang mga iyon! Ang usapin ng pagiging makatarungan at matuwid ng Diyos ay napakahalaga sa labanan ng Mabuti at Masama.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ephesians 3:10… May sari-saring karunungan ang Diyos na nais Niyang ipahayag sa pamamagitan ng iglesia sa mga pamunuan at kapangyarihan sa mga dako sa langit.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kabilang sa pandaigdigang layunin ng pagtubos ang pagpapatunay sa pangalan at karakter ng Diyos, na hinamon ni Satanas at kinuwestiyon ng mga anghel. Ito ang pinakadakilang tanawing maaaring pagmasdan ng mga nilalang sa langit (1 Cor 4:9). Ano kaya ang hitsura ng kasaysayan sa kanilang paningin habang nasasaksihan nila ang magkakaugnay na puwersa at pangyayari?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Peter 1:12… Lubhang interesado ang mga anghel sa plano ng pagtubos. Ipinakikita ng Diyos sa sansinukob na maaari tayong maging karapat-dapat sa langit.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Konklusyon:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang Paghuhukom ay hindi ang pagpili ng Diyos kung sino ang maliligtas o mapapahamak, kundi ang pagkilala Niya sa mga taong pumili mismo ng kaligtasan o kapahamakan. Sa huli, may dalawang uri ng tao: yaong nagsasabi sa Diyos, “Mangyari ang Iyong kalooban,” at yaong sinasabihan ng Diyos, “Mangyari ang iyong kalooban.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 22:11… Hindi dumarating ang Diyos upang gumawa ng mga bagong pasiya; dumarating Siya upang ibigay sa mga tao ang kanilang pinili. Ang mga pasiyang ginagawa natin ngayon ang dapat nating pagtuunan. Sa huli ay may dalawang uri ng tao: ang mga nagsasabi sa Diyos, “Mangyari ang Iyong kalooban,” at ang mga sinasabihan ng Diyos, “Mangyari ang iyong kalooban.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang paghuhukom at ang ebanghelyo: Inilalagay ng Apocalipsis ang oras ng paghuhukom ng Diyos sa parehong mensaheng naglalaman ng walang-hanggang ebanghelyo. Magkaugnay ang mga ito sapagkat ang karakter ng Diyos ay kapwa makatarungan at mapagmahal. Ang mga aklat ay larawan ng tapat na talaan—hindi ng isang Diyos na kailangang mabigyan ng lihim na impormasyon.",
+      "stage": [
+        "core",
+        "Ang paghuhukom at ebanghelyo"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Bakit ipinahahayag ang paghuhukom kasabay ng magandang balita?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Sapagkat makatarungang haharapin ng Diyos ang kasamaan at tatapusin ang Kanyang mga layunin ng pagliligtas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "daniel",
+      "text": "KONTEKSTONG PANGKASAYSAYAN / PANGPROPESIYA — Ang hukuman sa langit at ang Anak ng tao: Inilalarawan ng Daniel 7:9-14 ang hukuman sa langit at ang Anak ng tao na tumatanggap ng pamamahala. Iniuugnay naman ng Revelation 14:6-7 ang oras ng paghuhukom sa walang-hanggang ebanghelyo. Dapat ipaliwanag sa pagtuturo kung paano magkakaugnay ang mga talatang ito sa halip na ihiwalay ang paghuhukom sa karakter at ministeryo ng pagliligtas ni Hesus.",
+      "stage": [
+        "core",
+        "Ang hukuman sa langit at Anak ng tao"
+      ],
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "Ikalawang bahagi:",
+      "stage": [
+        "supplement",
+        "Tatlong yugto ng paghuhukom"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tatlong yugto ng paghuhukom:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Paghuhukom Bago ang Pagdating ni Cristo (Pagsisiyasat na Paghuhukom).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Paghuhukom sa Panahon ng Isang Libong Taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pagpapatupad ng Hatol.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa mensahe ng paghuhukom, malinaw na iniugnay ng Biblia ang Paghuhukom sa ministeryo ni Hesus. Halimbawa, sa paglilitis sa isang hukuman sa lupa, may ilang kinakailangang kalahok:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hukom.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Abogado.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Saksi.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 5:22… Ayon sa talatang ito, si Hesus ang magiging ating Hukom.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 17:31… Hahatulan ng Diyos ang sanlibutan sa pamamagitan Niya na binuhay mula sa mga patay… si Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 John 2:1… Ang tagapamagitan o tagapagtanggol ay isang taong nangangatwiran at nagtatanggol para sa iba. Sa isang paglilitis, ito ay tinatawag na abogado.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 1:5… Dito, si Hesus ay tinatawag na “tapat na saksi.” Ipinahihiwatig nito na lagi Siyang nagsasabi ng katotohanan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 3:14… Muling inilarawan si Hesus bilang tapat at tunay na saksi.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kapag Naligtas na, Lagi nang Ligtas",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 10:28 — tingnan ang talata 27; 1 Cor 9:27; Ps 51:11 — ipinahihiwatig na posibleng umalis ang Espiritu.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Isang pasiyang may kabuluhan: Tumatawag ang Biblia sa atin na tunay na tumugon kay Cristo sa kasalukuyan. Ang buhay ng pananampalataya ay hindi paggawa ng perpektong talaan sa sariling lakas; ito ay pagpili sa Kanya na ang biyaya ay nagbabago sa atin. Sineseryoso ng paghuhukom ang ating mga tugon at pasiya.",
+      "stage": [
+        "core",
+        "Ang tugon ng pananampalataya sa paghuhukom"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang paanyaya sa John 5:24?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Pakinggan ang salita ni Hesus at manampalataya sa nagsugo sa Kanya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ano ang hinahatulan?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 4:13… Walang anumang nakatago sa Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ecclesiastes 12:13, 14… Bawat lihim na bagay? Kasama rito ang mga motibo ng puso.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mahalagang punto: Upang magkaroon ng paghuhukom, kailangan ng pamantayang pagbabatayan ng hatol.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "James 2:10-12… Binanggit ni Santiago na hahatulan tayo ayon sa kautusan ng kalayaan at pagkatapos ay sinipi ang dalawa sa Sampung Utos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Galatians 2:20… Madalas gamitin nang mali ang talatang ito; kapag inalis sa konteksto ay ginagamit ito upang suportahan ang pag-aalis sa Sampung Utos. Sa katunayan, itinuturo lamang ni Pablo na ang katuwiran ay nanggagaling sa buhay at bisa ni Hesus sa halip na sa mga gawa ng kautusan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Napakong kasama ni Cristo: Tinanggap ni Pablo ang pagtubos na ibinigay ng kamatayan ni Cristo sa krus (Rom. 6:3–11; Phil. 3:8–10). Itinuring niya ang sarili na patay na sa kasalanan, sa sanlibutan, at sa mga paraang gawa ng tao upang makamit ang katuwiran, na para bang siya mismo ay napako. Hindi na siya naaakit ng mga paraang iyon at wala nang pagtugon sa kanyang puso sa mga iyon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hindi na ako ang nabubuhay: Bagama't patay na si Pablo sa ilang bagay, buhay na buhay naman siya sa iba. Kasing-sigla pa rin siya sa pagkilos pagkatapos niyang mahikayat, sapagkat ang buhay Cristiano ay hindi buhay ng kawalan ng gawain. Tinawag ni Hesus ang bagong buhay na ito na higit na masaganang buhay (John 10:10). Dahil si Hesus ang bukal ng buhay, walang tunay na pagpapahalaga sa buhay kung hiwalay sa Kanya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Si Cristo ang nabubuhay sa akin: Ito ang lihim ng matagumpay na buhay Cristiano—si Cristo na nananahan sa loob natin at ipinapamuhay sa atin ang parehong sakdal na buhay na ipinamuhay Niya sa lupa. Ang pag-ibig ni Cristo ang nag-uudyok sa kanya (2 Cor. 5:14), at ang katuwiran ni Cristo ay nagiging katotohanan sa kanyang buhay (Rom. 8:3, 4).",
+      "stage": null,
+      "images": []
+    }
+  ],
+  "verses": [
+    "Hebrews 9: 27",
+    "Romans 3: 23",
+    "John 3: 16",
+    "Hebrews 10: 38-39",
+    "2 Peter 2: 20-22",
+    "Daniel 7: 10",
+    "Revelation 20: 12",
+    "Psalm 139: 1-4",
+    "Matthew 10: 30",
+    "Genesis 3: 8-11",
+    "Genesis 4: 9-10",
+    "Genesis 6: 5",
+    "Genesis 11: 5",
+    "Genesis 18: 17",
+    "Genesis 18: 20-21",
+    "Jude 1: 7",
+    "Revelation 12: 10",
+    "Genesis 3: 4-5",
+    "Ephesians 3: 10",
+    "1 Cor 4: 9",
+    "1 Peter 1: 12",
+    "Revelation 22: 11",
+    "Daniel 7:9–14",
+    "Revelation 14:6–7",
+    "John 5: 22",
+    "Acts 17: 31",
+    "1 John 2: 1",
+    "Revelation 1: 5",
+    "Revelation 3: 14",
+    "John 10:28",
+    "1 Cor 9:27",
+    "Ps 51:11",
+    "John 5:24",
+    "Hebrews 4: 13",
+    "Ecclesiastes 12: 13,14",
+    "James 2: 10-12",
+    "Galatians 2: 20",
+    "Rom. 6:3–11",
+    "Phil. 3:8–10",
+    "John 10:10",
+    "2 Cor. 5:14",
+    "Rom. 8:3, 4"
+  ],
+  "application": "Ipinapakita ng paghuhukom na ang Diyos ay makatarungan, hayag, at mapagmahal. Tinatawag Niya tayong magtiwala kay Hesus at tumugon sa Kanyang biyaya ngayon.",
+  "response": "Anong pasiya ang nais mong gawin ngayon bilang pagtugon sa katarungan at pag-ibig ng Diyos?"
+}
