@@ -1,13 +1,13 @@
 # Teachers' Guide V2 — Tagalog translation work
 
-**Status (25 November 2026):** First-pass Tagalog study text exists for all **28 studies / 2,662 units**, with **17 image positions**, the original KJV Scripture metadata, and the main/supplementary stage structure preserved. Study 28 was individually corrected against the English source.
+**Status (25 November 2026):** The unpublished Tagalog review package has been rebuilt after recovering and translating the eight previously truncated English Daniel excerpts. First-pass Tagalog study text exists for all **28 studies / 2,662 units**, with **17 image positions**, the original KJV Scripture metadata, and the main/supplementary stage structure preserved. Study 28 was individually corrected against the English source.
 
 ## Supporting lessons
 
 - All **28 GTKJ-linked supplementary lesson sections** have now been translated in `related-study-resources.tl.draft.json`, including their introductions, principles, three teaching connections, questions and answers, practices and linked reading titles.
 - The builder incorporates this text into `review/related-study-resources.json`, while explicitly checking that scripture references, source identities, cross-site links, passage anchors and order match the English source.
-- All **17 optional Daniel context passages** now have first-pass Tagalog translations in `main-pathway-enrichments.tl.draft.json` and are assembled into `review/main-pathway-enrichments.json`. The eight incomplete source fields are explicitly identified in `review/translation-audit.json`; do not invent missing English source text.
-- The Tagalog review interface has translated study/navigation/search and feedback labels, but still requires a complete manual visual and language review. **The original English study PDFs remain placeholders** and must not be presented as translated documents.
+- All **17 optional Daniel context passages** now have first-pass Tagalog translations in `main-pathway-enrichments.tl.draft.json` and are assembled into `review/main-pathway-enrichments.json`. All eight incomplete source fields were recovered verbatim from `daniel/index.html` (see `recovered-daniel-source-endings.en.json`) and their Tagalog endings have been translated. The generated `review/translation-audit.json` now requires **zero unresolved source-truncation warnings**.
+- The Tagalog review interface has translated study/navigation/search, feedback, and error messages, but still requires a complete manual visual and native-language review. **The original English study PDFs remain placeholders** and must not be presented as translated documents.
 
 ## Editing and review
 
@@ -24,4 +24,4 @@ Pull the latest `bible-boot-camp` and `Website-Manager` repositories, then use *
 
 ## Publication rule
 
-**The Tagalog site is not yet live.** First-pass translations and machine checks are not a substitute for a final language/content review, full UI/link checks and user-approved PDFs. Do not publish `teachers-guide/tl/` until those tasks are completed.
+**The Tagalog site is not yet live.** Machine checks and source recovery are complete, but are not a substitute for final native-speaker language/content review, live-device UI/link checks and approved Tagalog PDFs. Do not publish `teachers-guide/tl/` until those tasks are completed.
