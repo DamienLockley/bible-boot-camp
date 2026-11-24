@@ -193,6 +193,30 @@ def prepare_html(english):
     html=html.replace("../teachers-guide/study-pdfs/","../../study-pdfs/")
     html=html.replace("const TEACHERS_TL_PUBLISHED=false;","const TEACHERS_TL_PUBLISHED=true;")
     html=html.replace("const TEACHERS_TL_URL='./tl/';","const TEACHERS_TL_URL='../../index.html';")
+    # The TL page must show a real AU flag leading back to English.
+    from urllib.parse import quote
+    au_svg=(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">'
+      '<rect width="60" height="30" fill="#00008b"/>'
+      '<path d="M0 0L30 15M30 0L0 15" stroke="#fff" stroke-width="4"/>'
+      '<path d="M0 0L30 15M30 0L0 15" stroke="#c8102e" stroke-width="1.8"/>'
+      '<path d="M15 0V15M0 7.5H30" stroke="#fff" stroke-width="6"/>'
+      '<path d="M15 0V15M0 7.5H30" stroke="#c8102e" stroke-width="3"/>'
+      '<g fill="#fff"><polygon points="14,19 15.7,22.4 19.4,22.7 16.7,25.2 17.5,28.8 14,27 10.5,28.8 11.3,25.2 8.6,22.7 12.3,22.4"/>'
+      '<polygon points="45,3 46,5.6 48.8,5.7 46.7,7.5 47.4,10.2 45,8.7 42.6,10.2 43.3,7.5 41.2,5.7 44,5.6"/>'
+      '<polygon points="53,12 53.8,14.2 56.1,14.3 54.3,15.8 54.9,18 53,16.7 51.1,18 51.7,15.8 49.9,14.3 52.2,14.2"/>'
+      '<polygon points="44,22 44.8,24.2 47.1,24.3 45.3,25.8 45.9,28 44,26.7 42.1,28 42.7,25.8 40.9,24.3 43.2,24.2"/>'
+      '<polygon points="35,13 35.8,15.2 38.1,15.3 36.3,16.8 36.9,19 35,17.7 33.1,19 33.7,16.8 31.9,15.3 34.2,15.2"/></g></svg>'
+    )
+    button=(
+      '<button class="nav-link language-button" id="teacher-tl-button" type="button" '
+      'aria-label="English Teachers Guide" title="English Teachers Guide">'
+      '<img class="teacher-language-flag" src="data:image/svg+xml,'
+      +quote(au_svg,safe='')+'" alt="" aria-hidden="true"> English</button>'
+    )
+    html,n=re.subn(r'<button\b[^>]*\bid="teacher-tl-button"[^>]*>.*?</button>',
+                   lambda m:button,html,count=1,flags=re.S)
+    if n!=1: raise ValueError("English language button missing from TL preview")
     replacements = {
       "Teachers’ Guide":"Gabay ng Guro",
       "Study Library":"Aklatan ng mga Pag-aaral",
