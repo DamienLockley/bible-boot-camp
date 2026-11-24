@@ -213,7 +213,26 @@ def html_translate(html):
         for attr in ('title','alt','aria-label','placeholder'):
             if item.has_attr(attr) and translatable(item[attr]):
                 item[attr]=localized(item[attr])
-    page=str(soup).replace('src="../site-config.js"','src="../../site-config.js"')
+    # The Tagalog edition is one directory deeper than the English page.
+    # Keep the same CSS and JavaScript, but correct the relative URLs.
+    for item in soup.find_all(True):
+        for attr in ('href','src'):
+            val=item.get(attr)
+            if isinstance(val,str) and val.startswith('../'):
+                item[attr]='../'+val
+    button=soup.select_one('#teacher-tl-button')
+    if button:
+        button['title']='English Teachers Guide'
+        button['aria-label']='English Teachers Guide'
+        button.clear()
+        button.append('🇦🇺 English')
+    page=str(soup)
+    # Shared KJV data remains in /teachers-guide/; study content must
+    # resolve to /teachers-guide/tl/ rather than the English source.
+    page=page.replace('../teachers-guide/kjv-verses.json','../kjv-verses.json')
+    page=page.replace('../teachers-guide/study-data.json','./study-data.json')
+    page=page.replace('const TEACHERS_TL_PUBLISHED=false;','const TEACHERS_TL_PUBLISHED=true;')
+    page=page.replace("const TEACHERS_TL_URL='./tl/';","const TEACHERS_TL_URL='../';")
     return page
 
 def custom(doc,name):
