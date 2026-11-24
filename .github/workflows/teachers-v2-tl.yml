@@ -1,9 +1,8 @@
 name: Generate Teachers Guide V2 Tagalog
+# Manual recovery/testing only. Translation of the final V2 edition is being
+# prepared from the approved source by the passage-based Word-master process.
+# Do not launch expensive automated translation on repository pushes.
 on:
-  push:
-    paths:
-      - 'tools/build_teachers_v2_tagalog.py'
-      - '.github/workflows/teachers-v2-tl.yml'
   workflow_dispatch:
 permissions:
   contents: write
