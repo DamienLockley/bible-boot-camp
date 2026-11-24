@@ -247,6 +247,7 @@ def make_word(sections,study_map,asset_dir,out):
     doc.styles['Normal'].font.size=Pt(10)
     for name in ('TG Stage','TG Extra','TG Purpose','TG Central Truth',
                  'TG Application','TG Response','TG Note',
+                 'TG Insight','TG Question','TG Answer','TG Daniel',
                  'TG Main Scripture','TG Supplementary Scripture'):
         custom(doc,name)
     for n,(study,mapped) in enumerate(zip(sections,study_map['studies'])):
@@ -271,8 +272,10 @@ def make_word(sections,study_map,asset_dir,out):
                 marker=doc.add_paragraph(group['label'])
                 marker.style='TG Stage' if group['kind']=='core' else 'TG Extra'
             kind=unit['kind']
+            role_style={'insight':'TG Insight','question':'TG Question',
+                        'answer':'TG Answer','daniel':'TG Daniel'}
             style=('Heading 2' if kind=='heading' else
-                   'TG Note' if kind in ('insight','question','answer','daniel') else
+                   role_style[kind] if kind in role_style else
                    'TG Main Scripture' if unit.get('scripture_role')=='main' else
                    'TG Supplementary Scripture' if unit.get('scripture_role')=='supplementary'
                    else 'Normal')
