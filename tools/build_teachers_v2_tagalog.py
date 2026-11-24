@@ -3,6 +3,7 @@
 This generator fails closed if translation is unavailable; it never publishes EN as TL.
 """
 import json, os, re, shutil, tempfile, time, hashlib
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup, Comment, NavigableString
@@ -27,7 +28,6 @@ LABELS={'Teachers’ Guide':'Gabay ng mga Guro',"Teacher's Guide":'Gabay ng mga 
 'Other question':'Ibang tanong'}
 CACHE=Path(__file__).resolve().parent/'.teacher-tl-cache.json'
 memo=json.loads(CACHE.read_text('utf8')) if CACHE.exists() else {}
-session=requests.Session()
 calls=0
 def save():
  t=CACHE.with_suffix('.tmp');t.write_text(json.dumps(memo,ensure_ascii=False),'utf8');t.replace(CACHE)
@@ -51,7 +51,7 @@ def translate(s):
  for piece in pieces:
   for attempt in range(8):
    try:
-    response=session.get('https://translate.googleapis.com/translate_a/single',
+    response=requests.get('https://translate.googleapis.com/translate_a/single',
       params={'client':'gtx','sl':'en','tl':'tl','dt':'t','q':piece},timeout=40)
     response.raise_for_status()
     translated=''.join(c[0] or '' for c in response.json()[0])
@@ -63,9 +63,48 @@ def translate(s):
  for token,original in preserved.items():
   result=re.sub(r'\s*'.join(map(re.escape,token)),lambda _:original,result,flags=re.I)
  result=re.sub(r'\bJesus\b','Hesus',result,flags=re.I)
- memo[s]=result;calls+=1
- if calls%25==0:save();print('Translations:',calls,flush=True)
  return result
+def pretranslate_all():
+ # Prepare unique JSON and interface strings before generating content.
+ # Requests run concurrently, rather than taking one network round-trip
+ # for every teaching unit and resource in sequence.
+ pending=set()
+ def collect(value,key=''):
+  if isinstance(value,dict):
+   for k,v in value.items():collect(v,k)
+  elif isinstance(value,list):
+   for v in value:collect(v,key)
+  elif isinstance(value,str) and key not in SKIP and value.strip():
+   pending.add(value)
+ for name in NAMES:
+  collect(json.loads((BASE/name).read_text('utf8')))
+ html=BeautifulSoup((BASE/'index.html').read_text('utf8'),'html.parser')
+ for node in html.find_all(string=True):
+  if not isinstance(node,Comment) and node.parent.name not in ('script','style','pre','code','noscript') and node.strip():
+   pending.add(str(node))
+ for el in html.find_all(True):
+  for key in ('title','alt','aria-label','placeholder'):
+   if el.has_attr(key) and isinstance(el[key],str):pending.add(el[key])
+ pending.difference_update(memo)
+ pending.difference_update(LABELS)
+ total=len(pending)
+ if not total:return
+ print('Translating',total,'unique remaining texts using concurrent requests',flush=True)
+ completed=0
+ errors=[]
+ with ThreadPoolExecutor(max_workers=10) as pool:
+  futures={pool.submit(translate,item):item for item in pending}
+  for future in as_completed(futures):
+   item=futures[future]
+   try:memo[item]=future.result()
+   except Exception as exc:errors.append((item[:75],str(exc)))
+   completed+=1
+   if completed%40==0:
+    save()
+    print('Completed:',completed,'of',total,'failed:',len(errors),flush=True)
+ save()
+ if errors:
+  raise RuntimeError(str(len(errors))+' translations failed, first: '+repr(errors[:3]))
 def tree(value,key=''):
  if isinstance(value,dict):return {k:tree(v,k) for k,v in value.items()}
  if isinstance(value,list):return [tree(v,key) for v in value]
@@ -104,6 +143,7 @@ def word(studies,path,assets):
 def build():
  en=json.loads((BASE/NAMES[0]).read_text('utf8'))['sections']
  assert len(en)==28
+ pretranslate_all()
  with tempfile.TemporaryDirectory(prefix='v2-tl-') as temp:
   stage=Path(temp)/'tl'
   shutil.copytree(BASE,stage,ignore=lambda folder,names: {'tl','study-pdfs','.git'}.intersection(names))
