@@ -1497,47 +1497,47 @@
     },
     {
       "teacher_study_id": 24,
-      "teacher_title": "Baptism",
+      "teacher_title": "Bautismo",
       "gtk_source_id": "baptism",
-      "gtk_title": "Baptism",
-      "gtk_lead": "What does baptism mean, and am I ready?",
-      "gtk_principle": "Baptism is the public expression of trusting Jesus, turning from the old life and beginning a new life with Him. It is a response to grace, not a payment for salvation.",
+      "gtk_title": "Bautismo",
+      "gtk_lead": "Ano ang kahulugan ng bautismo, at handa na ba ako?",
+      "gtk_principle": "Ang bautismo ay hayagang pagpapahayag ng pagtitiwala kay Hesus, pagtalikod sa dating buhay, at pagsisimula ng bagong buhay kasama Niya. Tugon ito sa biyaya, hindi kabayaran para sa kaligtasan.",
       "gtk_connections": [
         {
-          "title": "Jesus gave the example",
+          "title": "Nagbigay ng halimbawa si Hesus",
           "scripture": "Matthew 3:13–17; Matthew 28:18–20",
-          "insight": "Jesus was baptised and later commanded His followers to make disciples and baptise them. Baptism is therefore more than joining a social group or performing a family tradition. It is a public response to Christ. Jesus’ baptism also reminds us that baptism points beyond the person carrying it out; it belongs to God’s saving work and the new relationship He offers."
+          "insight": "Nagpabautismo si Hesus at kalaunan ay inutusan ang Kaniyang mga tagasunod na gumawa ng mga alagad at bautismuhan sila. Kaya ang bautismo ay higit pa sa pagsapi sa isang pangkat o pagtupad sa tradisyon ng pamilya. Ito ay hayagang pagtugon kay Cristo. Ipinapaalala rin ng bautismo ni Hesus na ang bautismo ay tumuturo sa higit pa sa taong nagsasagawa nito; bahagi ito ng nagliligtas na gawain ng Diyos at ng bagong ugnayang iniaalok Niya."
         },
         {
-          "title": "Repentance means a change of direction",
+          "title": "Ang pagsisisi ay pagbabago ng direksiyon",
           "scripture": "Acts 2:37–41; John 3:3–8",
-          "insight": "When listeners asked Peter what to do, he called them to repentance and baptism. Repentance includes recognising wrong, changing our mind and turning toward God. It is not merely feeling embarrassed after being caught. Jesus spoke of the new birth as a work of the Spirit. Baptism expresses that inward change but cannot mechanically create it. We respond to grace with faith, confession and a willingness to follow."
+          "insight": "Nang itanong ng mga tagapakinig kay Pedro kung ano ang dapat nilang gawin, tinawag niya sila sa pagsisisi at bautismo. Kabilang sa pagsisisi ang pagkilala sa mali, pagbabago ng pag-iisip, at pagbaling sa Diyos. Hindi lamang ito pagkapahiya dahil nahuli sa pagkakamali. Binanggit ni Hesus ang bagong kapanganakan bilang gawain ng Espiritu. Ipinahahayag ng bautismo ang panloob na pagbabagong iyon ngunit hindi ito awtomatikong nalilikha ng ritwal. Tumutugon tayo sa biyaya nang may pananampalataya, pagtatapat, at kahandaang sumunod."
         },
         {
-          "title": "Immersion pictures death and new life",
+          "title": "Inilalarawan ng paglulubog ang kamatayan at bagong buhay",
           "scripture": "Romans 6:3–6; Colossians 2:12",
-          "insight": "Paul explains baptism as being buried with Christ and raised to walk in newness of life. Going down into and rising from the water makes the picture visible. The old direction of life is surrendered; a new life of trusting Jesus begins. This does not mean a baptised person will never fail. It means they now belong to Christ and seek His power to leave sin behind."
+          "insight": "Ipinaliwanag ni Pablo ang bautismo bilang pakikilibing kay Cristo at muling pagkabuhay upang lumakad sa panibagong buhay. Ginagawang nakikita ng paglubog sa tubig at pag-ahon mula rito ang larawang ito. Isinusuko ang dating direksiyon ng buhay; nagsisimula ang bagong buhay ng pagtitiwala kay Hesus. Hindi nito ibig sabihing hindi na kailanman magkakamali ang nabautismuhan. Nangangahulugan itong kay Cristo na siya nabibilang at hinahanap niya ang Kaniyang kapangyarihang iwanan ang kasalanan."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Do I have to know every Bible teaching first?",
-          "answer": "Baptism should be thoughtful and informed, but no one understands everything. Speak with a pastor or mentor about the core beliefs and questions that matter to you."
+          "question": "Kailangan ko bang malaman muna ang bawat turo ng Biblia?",
+          "answer": "Dapat pinag-isipan at may sapat na pagkaunawa ang bautismo, ngunit walang taong nakauunawa sa lahat. Makipag-usap sa pastor o tagapayo tungkol sa mga pangunahing paniniwala at sa mga tanong na mahalaga sa iyo."
         },
         {
-          "question": "What if I still struggle with old habits?",
-          "answer": "Baptism does not promise a struggle-free life. It marks a commitment to trust Christ and grow with His help."
+          "question": "Paano kung nahihirapan pa rin ako sa mga dating gawi?",
+          "answer": "Hindi ipinangangako ng bautismo ang buhay na wala nang pakikibaka. Tanda ito ng pasiyang magtiwala kay Cristo at lumago sa tulong Niya."
         },
         {
-          "question": "Why immersion?",
-          "answer": "The original study connects immersion with the picture of burial and resurrection in Romans 6 and the baptisms described in Acts."
+          "question": "Bakit sa pamamagitan ng paglulubog?",
+          "answer": "Iniuugnay ng orihinal na pag-aaral ang paglulubog sa larawan ng paglilibing at muling pagkabuhay sa Roma 6 at sa mga bautismong inilalarawan sa Mga Gawa."
         }
       ],
-      "gtk_practice": "Read Romans 6:1–11. Write what you are leaving behind, what new life means to you and any questions you would want answered before baptism.",
+      "gtk_practice": "Basahin ang Roma 6:1–11. Isulat kung ano ang iyong iniiwan, ano ang kahulugan sa iyo ng bagong buhay, at anong mga tanong ang gusto mong masagot bago magpabautismo.",
       "deep_reading_links": [
         {
           "source": "revelation",
-          "title": "Behold I come quickly",
+          "title": "Narito, ako'y madaling pumaparito",
           "passage": "Revelation 22:12",
           "href": "../revelation/index.html#rev-22-12",
           "anchor": "rev-22-12"
@@ -1546,60 +1546,60 @@
     },
     {
       "teacher_study_id": 25,
-      "teacher_title": "The Godhead",
+      "teacher_title": "Ang Pagka-Diyos",
       "gtk_source_id": "godhead",
-      "gtk_title": "The Godhead",
-      "gtk_lead": "Who are the Father, Son and Holy Spirit?",
-      "gtk_principle": "The Bible reveals one God as Father, Son and Holy Spirit. Their perfect unity and love are the foundation of how God makes Himself known.",
+      "gtk_title": "Ang Pagka-Diyos",
+      "gtk_lead": "Sino ang Ama, Anak, at Banal na Espiritu?",
+      "gtk_principle": "Ipinahahayag ng Biblia ang iisang Diyos bilang Ama, Anak, at Banal na Espiritu. Ang kanilang ganap na pagkakaisa at pag-ibig ang saligan ng pagpapakilala ng Diyos sa Kaniyang sarili.",
       "gtk_connections": [
         {
-          "title": "The Bible declares one God",
+          "title": "Ipinahahayag ng Biblia ang iisang Diyos",
           "scripture": "Deuteronomy 6:4; Isaiah 45:5–6",
-          "insight": "Israel’s confession that the Lord is one is foundational. Christians do not worship three competing gods. When the Bible also speaks about Father, Son and Holy Spirit, the task is to understand those passages without denying the oneness of God. Some things about God exceed our full understanding, but Scripture tells us enough to know His character, receive His salvation and worship Him faithfully."
+          "insight": "Ang pagpapahayag ng Israel na ang Panginoon ay iisa ay isang mahalagang saligan. Hindi sumasamba ang mga Kristiyano sa tatlong magkakatunggaling diyos. Kapag binabanggit din ng Biblia ang Ama, Anak, at Banal na Espiritu, kailangan nating unawain ang mga talatang iyon nang hindi itinatanggi ang pagiging iisa ng Diyos. May mga bagay tungkol sa Diyos na lampas sa ganap nating pagkaunawa, ngunit sapat ang sinasabi ng Kasulatan upang makilala ang Kaniyang karakter, matanggap ang Kaniyang kaligtasan, at tapat Siyang sambahin."
         },
         {
-          "title": "The Son shares the divine identity",
+          "title": "Kabahagi ang Anak sa banal na pagkakakilanlan",
           "scripture": "John 1:1–3, 14; John 10:30–33; Hebrews 1:1–3",
-          "insight": "John describes the Word as with God and as God, and says the Word became flesh. Jesus is not merely a helpful religious teacher or the first creature God made. The Gospels describe Him receiving worship, revealing the Father and acting with divine authority. His full deity matters for salvation: in Christ, God Himself has come near to rescue humanity."
+          "insight": "Inilalarawan ni Juan ang Salita na kasama ng Diyos at Diyos, at sinasabi niyang nagkatawang-tao ang Salita. Hindi lamang si Hesus isang kapaki-pakinabang na gurong panrelihiyon o ang unang nilikhang ginawa ng Diyos. Inilalarawan ng mga Ebanghelyo na tumatanggap Siya ng pagsamba, nagpapakilala sa Ama, at kumikilos nang may banal na awtoridad. Mahalaga ang ganap Niyang pagka-Diyos sa kaligtasan: kay Cristo, ang Diyos mismo ay lumapit upang iligtas ang sangkatauhan."
         },
         {
-          "title": "The Spirit is more than an impersonal power",
+          "title": "Higit pa sa puwersang walang personalidad ang Espiritu",
           "scripture": "John 14:16–17, 26; Acts 5:3–4",
-          "insight": "Jesus promised another Helper who would teach and remind His followers of His words. Acts speaks of lying to the Holy Spirit as lying to God. The Spirit is not simply an electrical force or a feeling. He works personally, leading people into truth and forming Christlike lives. We need not understand every mystery of divine existence before responding to His guidance."
+          "insight": "Ipinangako ni Hesus ang isa pang Tagapagtulong na magtuturo at magpapaalala sa Kaniyang mga tagasunod ng Kaniyang mga salita. Binabanggit ng Mga Gawa na ang pagsisinungaling sa Banal na Espiritu ay pagsisinungaling sa Diyos. Hindi lamang isang puwersang tulad ng kuryente o isang damdamin ang Espiritu. Personal Siyang kumikilos, inaakay ang mga tao sa katotohanan, at humuhubog ng buhay na katulad kay Cristo. Hindi natin kailangang maunawaan ang bawat hiwaga ng banal na pag-iral bago tumugon sa Kaniyang paggabay."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Are Christians worshipping three gods?",
-          "answer": "No. Scripture reveals one God as Father, Son and Holy Spirit."
+          "question": "Tatlong diyos ba ang sinasamba ng mga Kristiyano?",
+          "answer": "Hindi. Ipinahahayag ng Kasulatan ang iisang Diyos bilang Ama, Anak, at Banal na Espiritu."
         },
         {
-          "question": "Is Jesus less than God?",
-          "answer": "Jesus is fully divine and eternal, while also truly becoming human for our salvation."
+          "question": "Mas mababa ba si Hesus kaysa sa Diyos?",
+          "answer": "Si Hesus ay ganap na banal at walang hanggan, at tunay ding naging tao para sa ating kaligtasan."
         },
         {
-          "question": "Must I understand every detail to begin faith?",
-          "answer": "No. You do not need to understand every mystery or settle every theological term before you begin trusting Jesus. Scripture warns against rejecting the Son (1 John 2:23) and speaks seriously about resisting the Spirit, but this study is not a test for condemning sincere learners. Keep seeking God through Jesus with humility."
+          "question": "Kailangan ko bang maunawaan ang bawat detalye upang magsimulang manampalataya?",
+          "answer": "Hindi. Hindi mo kailangang maunawaan ang bawat hiwaga o malutas ang bawat terminong teolohikal bago magsimulang magtiwala kay Hesus. Nagbababala ang Kasulatan laban sa pagtanggi sa Anak (1 Juan 2:23) at seryosong tinatalakay ang paglaban sa Espiritu, ngunit hindi layunin ng pag-aaral na ito na hatulan ang mga tapat na nag-aaral. Patuloy na hanapin ang Diyos sa pamamagitan ni Hesus nang may pagpapakumbaba."
         }
       ],
-      "gtk_practice": "Read John 14–16 over several days. Make three lists of what Scripture says the Father, Son and Spirit do.",
+      "gtk_practice": "Basahin ang Juan 14–16 sa loob ng ilang araw. Gumawa ng tatlong listahan ng sinasabi ng Kasulatan tungkol sa ginagawa ng Ama, Anak, at Espiritu.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 7:11–14: The proud power ends and the Son of man receives dominion",
+          "title": "Daniel 7:11–14: Nagwakas ang mapagmataas na kapangyarihan at tumanggap ng pamamahala ang Anak ng Tao",
           "href": "../daniel/index.html#section-7-11",
           "anchor": "section-7-11"
         },
         {
           "source": "revelation",
-          "title": "Grace to the seven churches",
+          "title": "Biyaya sa pitong iglesia",
           "passage": "Revelation 1:4",
           "href": "../revelation/index.html#rev-1-4",
           "anchor": "rev-1-4"
         },
         {
           "source": "revelation",
-          "title": "The Lion appears as a slain Lamb",
+          "title": "Ang Leon ay nahayag bilang Korderong pinatay",
           "passage": "Revelation 5:5",
           "href": "../revelation/index.html#rev-5-5",
           "anchor": "rev-5-5"
@@ -1608,47 +1608,47 @@
     },
     {
       "teacher_study_id": 26,
-      "teacher_title": "Stewardship",
+      "teacher_title": "Pangangasiwa ng mga Kaloob ng Diyos",
       "gtk_source_id": "stewardship",
-      "gtk_title": "Stewardship",
-      "gtk_lead": "What does faith have to do with money and time?",
-      "gtk_principle": "God owns everything; we are entrusted with life, abilities, time, money and creation. Giving is an act of worship and service rather than a purchase of blessing.",
+      "gtk_title": "Pangangasiwa ng mga Kaloob ng Diyos",
+      "gtk_lead": "Ano ang kaugnayan ng pananampalataya sa salapi at oras?",
+      "gtk_principle": "Pag-aari ng Diyos ang lahat; ipinagkatiwala sa atin ang buhay, mga kakayahan, oras, salapi, at nilikha. Ang pagbibigay ay gawa ng pagsamba at paglilingkod, hindi paraan upang bilhin ang pagpapala.",
       "gtk_connections": [
         {
-          "title": "Ownership changes how we view possessions",
+          "title": "Binabago ng pagmamay-ari ang pagtingin natin sa mga ari-arian",
           "scripture": "Psalm 24:1; 1 Corinthians 6:19–20",
-          "insight": "The Bible begins with God as Creator. Our time, abilities, money, relationships and physical lives are entrusted to us; we are not their ultimate owners. This does not mean we should despise what we have. It means we can use gifts gratefully rather than letting them rule us. Even ordinary decisions about budgets and schedules can become expressions of worship when they are made with honesty and love."
+          "insight": "Nagsisimula ang Biblia sa Diyos bilang Manlilikha. Ipinagkatiwala sa atin ang ating oras, kakayahan, salapi, mga ugnayan, at pisikal na buhay; hindi tayo ang pangwakas na may-ari ng mga ito. Hindi nito ibig sabihing dapat hamakin ang ating mga pag-aari. Sa halip, maaari nating gamitin ang mga kaloob nang may pasasalamat, hindi nagpapahari sa mga ito. Maging ang karaniwang mga pasiya tungkol sa badyet at iskedyul ay maaaring maging pagpapahayag ng pagsamba kung ginagawa nang may katapatan at pag-ibig."
         },
         {
-          "title": "Giving is a response to grace",
+          "title": "Ang pagbibigay ay tugon sa biyaya",
           "scripture": "2 Corinthians 8:9; 9:6–8",
-          "insight": "Paul’s teaching about generosity begins with the grace of Jesus, who gave Himself for us. God is interested in willing giving, not coercion or showing off. Christians should be free to ask responsible questions about how offerings are used. Generosity can include financial support, hospitality, service and care for people in difficulty. The heart of stewardship is trust in God and concern for others."
+          "insight": "Nagsisimula ang turo ni Pablo tungkol sa pagiging bukas-palad sa biyaya ni Hesus, na ibinigay ang Kaniyang sarili para sa atin. Mahalaga sa Diyos ang kusang-loob na pagbibigay, hindi ang pamimilit o pagpapakitang-gilas. Dapat malayang makapagtanong ang mga Kristiyano kung paano ginagamit ang mga handog. Maaaring kabilang sa pagiging bukas-palad ang tulong na salapi, pagpapatuloy ng panauhin, paglilingkod, at pag-aaruga sa mga nahihirapan. Ang sentro ng pangangasiwa ay pagtitiwala sa Diyos at malasakit sa iba."
         },
         {
-          "title": "Understand the tithe principle",
+          "title": "Unawain ang simulain ng ikapu",
           "scripture": "Genesis 14:18–20; Malachi 3:8–12; Leviticus 27:30",
-          "insight": "The Bible speaks of a tithe, a tenth, set apart for God. The source lesson follows the principle through Abraham, Israel and the stewardship of God’s people. As with every biblical practice, read the original covenant setting before applying it today. The aim is not to purchase blessings with money or make people feel condemned when they are poor. Giving should express gratitude, trust and a desire to support God’s work faithfully."
+          "insight": "Binabanggit ng Biblia ang ikapu, isang ikasampung bahagi, na inihihiwalay para sa Diyos. Sinusundan ng pinagmulang aralin ang simulaing ito mula kay Abraham, sa Israel, at sa pangangasiwa ng bayan ng Diyos. Gaya ng bawat gawaing biblikal, basahin ang orihinal na konteksto ng tipan bago ito ilapat sa kasalukuyan. Hindi layunin nitong bilhin ang pagpapala sa salapi o iparamdam sa mahihirap na sila ay hinatulan. Ang pagbibigay ay dapat magpahayag ng pasasalamat, pagtitiwala, at hangaring tapat na suportahan ang gawain ng Diyos."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Will God make me wealthy if I tithe?",
-          "answer": "The lesson does not promise a guaranteed financial return. Giving expresses faith and gratitude, not a transaction that obligates God to enrich us."
+          "question": "Payayamanin ba ako ng Diyos kung magbibigay ako ng ikapu?",
+          "answer": "Hindi nangangako ang aralin ng tiyak na balik na salapi. Ang pagbibigay ay pagpapahayag ng pananampalataya at pasasalamat, hindi transaksiyong nag-oobliga sa Diyos na payamanin tayo."
         },
         {
-          "question": "What if I am struggling to pay necessities?",
-          "answer": "God knows your circumstances. Seek wise financial support, act responsibly and speak with a trustworthy church leader about questions rather than responding to pressure."
+          "question": "Paano kung nahihirapan akong tustusan ang mga pangunahing pangangailangan?",
+          "answer": "Alam ng Diyos ang iyong kalagayan. Humanap ng matalinong tulong sa pananalapi, kumilos nang responsable, at makipag-usap sa mapagkakatiwalaang pinuno ng iglesia tungkol sa mga tanong sa halip na magpadala sa pamimilit."
         },
         {
-          "question": "Does stewardship only mean money?",
-          "answer": "No. It also includes time, gifts, caring for people and looking after creation."
+          "question": "Salapi lamang ba ang ibig sabihin ng pangangasiwa?",
+          "answer": "Hindi. Kabilang din dito ang oras, mga kaloob, pag-aalaga sa mga tao, at pangangalaga sa nilikha."
         }
       ],
-      "gtk_practice": "Make four columns: time, abilities, money and relationships. In each list one gift, one responsibility and one generous next step.",
+      "gtk_practice": "Gumawa ng apat na hanay: oras, kakayahan, salapi, at mga ugnayan. Sa bawat isa, maglista ng isang kaloob, isang pananagutan, at isang susunod na hakbang ng bukas-palad na paglilingkod.",
       "deep_reading_links": [
         {
           "source": "revelation",
-          "title": "The remnant and the testimony of Jesus",
+          "title": "Ang nalabi at ang patotoo ni Hesus",
           "passage": "Revelation 12:17",
           "href": "../revelation/index.html#rev-12-17",
           "anchor": "rev-12-17"
@@ -1657,60 +1657,60 @@
     },
     {
       "teacher_study_id": 27,
-      "teacher_title": "Witnessing",
+      "teacher_title": "Pagpapatotoo",
       "gtk_source_id": "witnessing",
-      "gtk_title": "Witnessing",
-      "gtk_lead": "How can I share my faith without pushing people away?",
-      "gtk_principle": "We share faith by showing the character of Jesus, speaking truthfully, caring for people and respecting their freedom to respond.",
+      "gtk_title": "Pagpapatotoo",
+      "gtk_lead": "Paano ko maibabahagi ang aking pananampalataya nang hindi itinutulak palayo ang mga tao?",
+      "gtk_principle": "Ibinabahagi natin ang pananampalataya sa pamamagitan ng pagpapakita ng karakter ni Hesus, pagsasalita nang tapat, pagmamalasakit sa mga tao, at paggalang sa kanilang kalayaang tumugon.",
       "gtk_connections": [
         {
-          "title": "Compassion comes before a programme",
+          "title": "Nauuna ang habag bago ang programa",
           "scripture": "Matthew 9:35–38; Mark 6:34",
-          "insight": "When Jesus saw crowds, He recognised people who were weary and lacking guidance. His response was compassion, teaching and practical care. Sharing faith begins with seeing others as people, not as targets or numbers. Before explaining a doctrine, listen to what someone has experienced, what they fear and what they hope for. Kindness is not an advertising technique; it is part of the message about Jesus."
+          "insight": "Nang makita ni Hesus ang mga karamihan, napansin Niya ang mga taong pagod at walang gabay. Ang Kaniyang tugon ay habag, pagtuturo, at praktikal na pag-aalaga. Nagsisimula ang pagbabahagi ng pananampalataya sa pagkilala sa iba bilang mga tao, hindi bilang mga target o bilang lamang. Bago magpaliwanag ng isang doktrina, pakinggan kung ano ang kanilang naranasan, kinatatakutan, at inaasahan. Hindi pamamaraan ng pag-aanunsiyo ang kabaitan; bahagi ito ng mensahe tungkol kay Hesus."
         },
         {
-          "title": "An ordinary testimony is valuable",
+          "title": "Mahalaga ang isang simpleng personal na patotoo",
           "scripture": "John 1:40–46; Luke 8:38–39",
-          "insight": "Andrew brought his brother to Jesus, Philip invited a friend to come and see, and a healed man told others what God had done for him. None of these examples requires a public platform or specialised training. You can speak naturally about what you have learned and invite someone to investigate the Scriptures with you. It is better to admit that you do not know an answer than to pretend certainty."
+          "insight": "Dinala ni Andres ang kaniyang kapatid kay Hesus, inimbitahan ni Felipe ang isang kaibigan na pumunta at tumingin, at sinabi ng isang lalaking pinagaling sa iba ang ginawa ng Diyos para sa kaniya. Wala sa mga halimbawang ito ang nangangailangan ng pampublikong entablado o espesyal na pagsasanay. Maaari kang magsalita nang natural tungkol sa iyong natutuhan at mag-anyaya ng isang tao na pag-aralan ang Kasulatan kasama mo. Mas mabuting amining hindi mo alam ang isang sagot kaysa magkunwaring tiyak."
         },
         {
-          "title": "The message is Jesus, not ourselves",
+          "title": "Si Hesus ang mensahe, hindi ang ating sarili",
           "scripture": "Romans 1:16; John 12:32; 1 Corinthians 2:1–5",
-          "insight": "Paul was not ashamed of the gospel because its saving power comes from God. Jesus said that when He is lifted up, He will draw people to Himself. Christian witnessing should therefore introduce people to His character, grace, truth and invitation. We do not need to become performers or pressure someone into a decision. Clear Bible teaching and a sincere life are stronger than exaggeration or manipulation."
+          "insight": "Hindi ikinahiya ni Pablo ang ebanghelyo sapagkat sa Diyos nanggagaling ang kapangyarihan nitong magligtas. Sinabi ni Hesus na kapag Siya ay itinaas, ilalapit Niya ang mga tao sa Kaniya. Kaya dapat ipakilala ng pagpapatotoong Kristiyano ang Kaniyang karakter, biyaya, katotohanan, at paanyaya. Hindi natin kailangang maging mga tagapagtanghal o pilitin ang isang tao na magpasya. Mas matibay ang malinaw na pagtuturo sa Biblia at tapat na pamumuhay kaysa sa pagmamalabis o pagmamanipula."
         }
       ],
       "gtk_questions": [
         {
-          "question": "What if someone says they are not interested?",
-          "answer": "Respect their answer. Genuine friendship should not depend on agreement about faith."
+          "question": "Paano kung sabihin ng isang tao na hindi siya interesado?",
+          "answer": "Igalang ang kaniyang sagot. Ang tunay na pagkakaibigan ay hindi dapat nakadepende sa pagkakasundo tungkol sa pananampalataya."
         },
         {
-          "question": "Do I have to know every answer?",
-          "answer": "No. Be honest when you do not know something, listen well and offer to explore a question together."
+          "question": "Kailangan ko bang alam ang lahat ng sagot?",
+          "answer": "Hindi. Maging tapat kapag hindi mo alam ang isang bagay, makinig nang mabuti, at mag-alok na sama-samang pag-aralan ang tanong."
         },
         {
-          "question": "What if I am shy?",
-          "answer": "Acts of kindness, a brief personal story and patient friendship can be powerful ways to witness."
+          "question": "Paano kung mahiyain ako?",
+          "answer": "Maaaring maging makapangyarihang paraan ng pagpapatotoo ang mga gawa ng kabaitan, maikling personal na kuwento, at matiyagang pagkakaibigan."
         }
       ],
-      "gtk_practice": "Think of one person you can support in a practical way. Write an invitation or encouraging message that allows them freedom to decline.",
+      "gtk_practice": "Mag-isip ng isang taong maaari mong tulungan sa praktikal na paraan. Sumulat ng paanyaya o mensaheng pampalakas ng loob na nagbibigay sa kaniya ng kalayaang tumanggi.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 2:17–18: Four friends pray rather than compete",
+          "title": "Daniel 2:17–18: Nanalangin ang apat na magkakaibigan sa halip na magpaligsahan",
           "href": "../daniel/index.html#section-2-17",
           "anchor": "section-2-17"
         },
         {
           "source": "revelation",
-          "title": "First angel: everlasting gospel and judgment",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
           "passage": "Revelation 14:6",
           "href": "../revelation/index.html#rev-14-6",
           "anchor": "rev-14-6"
         },
         {
           "source": "revelation",
-          "title": "Behold I come quickly",
+          "title": "Narito, ako'y madaling pumaparito",
           "passage": "Revelation 22:12",
           "href": "../revelation/index.html#rev-22-12",
           "anchor": "rev-22-12"
@@ -1744,10 +1744,14 @@
       20,
       21,
       22,
-      23
+      23,
+      24,
+      25,
+      26,
+      27
     ],
     "source_file": "teachers-guide/related-study-resources.json",
     "unpublished": true,
-    "note": "First twenty-four supporting resource studies translated; remaining four are still English and unpublished."
+    "note": "All 28 study-specific GTKJ supporting resources translated first-pass; other supporting resources and site UI still require translation and review; unpublished."
   }
 }
