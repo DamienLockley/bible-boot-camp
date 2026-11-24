@@ -1,0 +1,348 @@
+{
+  "id": 17,
+  "title": "Ang Isang Libong Taon",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Ang Isang Libong Taon",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Layunin: Ipaliwanag ang isang libong taon at ang layunin nito—ano ang nangyayari sa panahong ito at pagkatapos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nakasentro sa: Ang kabutihan ng Diyos na nakita sa krus ay ipinakikita sa Paghuhukom sa Isang Libong Taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Nauuna ang pagkabuhay na mag-uli: Nakaugnay ang pagbabalik ni Hesus sa pagkabuhay na mag-uli ng mga matuwid. Ito ang pag-asang ibinibigay ni Pablo sa mga humaharap sa kamatayan. Ang pagkaunawa sa pagkakasunod-sunod ng mga pangyayari ay nakatutulong upang maiwasan ang pagkalito sa pagbasa ng Revelation 20.",
+      "stage": [
+        "core",
+        "Pagkabuhay na mag-uli sa pagdating ni Hesus"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang mangyayari sa mga mananampalatayang namatay na sa pagdating ni Cristo?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Sila ay bubuhaying muli.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tatlong yugto ng paghuhukom:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Paghuhukom Bago ang Pagdating (Pagsisiyasat na Paghuhukom).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Paghuhukom sa Isang Libong Taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pagpapatupad ng Hatol.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 5:28-29… Dito ay nagbibigay si Hesus ng pagkaunawa tungkol sa dalawang pagkabuhay na mag-uli.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 20:4-6… Sa talata 4, makikita nating maghahari ang mga tinubos kasama ni Cristo sa loob ng isang libong taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mahalagang pag-isipan: Si Juan ang sumulat ng Apocalipsis. Dapat pansining dahil sa kanyang mabisang patotoo para kay Cristo, ipinatapon siya ng mga awtoridad na Romano sa maliit at ilang na isla ng Patmos sa Dagat Egeo, isang lugar na pinagtatapunan ng mga Romano ng mga kriminal at kalabang pampolitika. Naranasan ni Juan ang maling paghuhukom ng tao (mga taong nakaupo sa mga trono), kaya maiisip natin ang kanyang kapanatagan nang makita niya sa pangitain ang tagpong ito ng paghuhukom kung saan sa wakas ay pinawalang-sala ang mga tagasunod ni Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa talata 5 naman ay sinasabing ang ibang mga patay (ang mga nangaligaw) ay hindi muling nabuhay hanggang matapos ang isang libong taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya mayroon na tayong ideya kung tungkol saan ang isang libong taon:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang isang libong taon: Nakita ni Juan si Satanas na nakagapos at ang mga tapat na naghaharing kasama ni Cristo sa loob ng isang libong taon. Nauunawaan ng orihinal na pag-aaral na ang mga tinubos ay kasama ni Cristo sa langit sa panahong ito habang tiwangwang ang lupa. Basahing mabuti ang teksto at ihiwalay ang mga inilalarawang pangyayari sa mga konklusyon tungkol sa kanilang kinalalagyan.",
+      "stage": [
+        "core",
+        "Ang kahulugan ng isang libong taon"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Sino ang ipinakikitang naghaharing kasama ni Cristo?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Yaong mga kabilang sa unang pagkabuhay na mag-uli.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Alam natin kung ano ang nagsisimula sa isang libong taon (ang ikalawang pagdating).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Alam natin kung ano ang ginagawa ng mga tinubos (nasa trono kasama ni Cristo).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Alam natin kung ano ang nangyayari sa masasama (nasa libingan).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Binabanggit ng talata 6 ang unang pagkabuhay na mag-uli at ikalawang kamatayan… kaya maliwanag na mayroon ding isa pang pagkabuhay na mag-uli at unang kamatayan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tingnan naman natin kung ano ang ginagawa ni Satanas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 19:11-21… Ikalawang pagdating ni Cristo; ibinabangon ang mga matuwid na patay, naghahari si Hesus; pagkatapos nito sa kabanata 20 ay ginagapos si Satanas sa loob ng 1,000 taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Thessalonians 4:16-17… “Ang mga patay na na kay Cristo” (ang mga matuwid).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong: Ayon sa talatang ito, kailan nagaganap ang pagkabuhay na mag-uli?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Sagot: Sa ikalawang pagdating (talata 16).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kung sinasabi ni Pablo na sila ang unang babangon, ipinahihiwatig na may isa pang pagkabuhay na mag-uling susunod.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Cor 15:51-54… Babaguhin ang mga buhay na matuwid. Kung hindi ito magaganap sa sandaling iyon, paano natin kakayanin ang gayong napakagandang pangyayari—ang pagbabangon ng lahat ng matuwid na patay sa gitna ng kaguluhan habang nakikita ang buong hukbo ng langit, at iba pa?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang tiwangwang na lupa: Iniuugnay ng dokumento ang mga larawang ginamit ni Jeremias tungkol sa pagkatiwangwang sa kalagayan ng lupa sa loob ng isang libong taon. Ang tuwirang konteksto ni Jeremias ay paghuhukom sa Juda, kaya isa itong propetikong paghahambing, hindi talatang tuwirang pinapangalanan ang isang libong taon.",
+      "stage": [
+        "core",
+        "Paghahambing sa tiwangwang na lupa"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Paano dapat gawin ang maingat na pagbasa sa Biblia kapag naghahambing ng mga propesiya?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Suriin muna ang orihinal na konteksto at pagkatapos ang dahilan ng pag-uugnay ng mga talata.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Jeremiah 25:33… Malilipol ang masasama sa ikalawang pagdating. Walang matitirang magluluksa para sa kanila. (2 Thes 1:7-10.)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 20:1-3… Maaari bang literal na kadena ang gumagapos kay Satanas? Pansinin: pinipigilan siyang linlangin ang mga bansa hanggang matapos ang isang libong taon. Ang mga kadena ay mga kadena ng mga pangyayari—ang pagkatiwangwang ng lupa at kawalan ng taong malilinlang. Ang kalalimang walang hangganan ay ang lupa sa loob ng 1,000 taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang kalalimang walang hangganan: Inihahagis ang diyablo sa “hukay” (RSV), “kalalimang walang hangganan” (KJV), o “abyss” (NASB, NIV). Ang Griyegong abyssos ay lumilitaw sa iba pang mga talata ng Bagong Tipan bilang lugar ng masasamang espiritu (Luke 8:31) o tirahan ng mga patay (Rom 10:7); ginagamit din ito sa panitikang Judio sa pagitan ng mga Tipan bilang lugar ng kaparusahan (1 Enoch 10:4–6; Jubilees 5:6–10). Sa Revelation 11:7 at 17:8, ang abyssos ay ang lugar na pinagmumulan ng halimaw. Pareho ang salitang ginamit sa Septuagint (LXX), ang sinaunang salin sa Griyego ng Lumang Tipan bago ang Cristianismo, sa Genesis 1:2 upang ilarawan ang magulong kalagayan ng lupa sa Paglalang, nang ang kadiliman ay “nasa ibabaw ng kalaliman.” Muling nagiging magulo ang lupa sa ikalawang pagdating ni Cristo at sa simula ng 1,000 taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kalagayan ng lupa sa loob ng isang libong taon:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Jeremiah 4:23-27… Pansinin ang mga salitang “walang anyo at walang laman.” Sa Genesis 1:2, makikita ang parehong mga salita. Sa Revelation 20, nasa kalagayan ang lupa na malapit nang may gawin dito ang Diyos. Muli Niya itong lilikhain! (Kalalimang walang hangganan/abyss.)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pansinin: Maraming manunulat ng Lumang Tipan ang gumagamit ng dalawang paglalapat ng propesiya. Madalas silang magsalita tungkol sa paghuhukom sa mga bansang umiiral noon at iugnay rin ang propesiya sa wakas ng panahon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Halimbawa, sa Ezekiel 28 ay tungkol sa paghuhukom sa hari ng Tiro, ngunit biglang nagsimulang magsalita tungkol kay Lucifer! Maraming manunulat ang tumatalakay sa mga tiyak na hari o kaharian at pagkatapos ay ipinakikita ang kaugnayan sa dakilang tunggalian. Isa pang halimbawa ang Matthew 24, kung saan nagsasalita si Hesus tungkol sa pagkawasak ng Jerusalem ngunit ginagamit din itong halimbawa ng pagkawasak ng mundo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Rev 20:4… Sa loob ng 1,000 taon, ano ang ipinagkatiwala sa mga banal?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Corinthians 6:1-3… Hahatulan natin ang sanlibutan, maging ang mga anghel (mga nahulog na anghel).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Bagong paglalang: Ang salaysay ay nagpapatuloy lampas sa paghuhukom tungo sa paninirahan ng Diyos kasama ng Kanyang bayan, pagpahid sa lahat ng luha, at pagwawakas ng kamatayan. Ang isang libong taon ay bahagi ng mas malaking pangako ng pagpapanumbalik.",
+      "stage": [
+        "core",
+        "Ang bagong paglalang"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang dapat maging pinakahuling pokus natin sa pag-aaral ng mga pangyayaring ito?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Ang bagong lupa ng Diyos at ang Kanyang walang-hanggang presensiya kasama ng Kanyang bayan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa diwa, susuriin natin ang Diyos! Ibibigay sa atin ang pribilehiyong suriin ang mga motibo at layunin ng Diyos at ang lahat ng ginawa Niya upang tubusin ang tao. Bago buhayin ng Diyos ang masasama, mawawala ang lahat ng pag-aalinlangan kung makatarungan Siya. Alalahanin: sa simula ng dakilang tunggalian, inakusahan ang Diyos na sinungaling at nagnanais maghari sa pamamagitan ng puwersa. Hinamon ni Satanas ang katotohanan ng salita ng Diyos sa isang hayagang kasinungalingan at ipinakilala sa diwa ang ibang larawan ng Diyos. Kaya tama si Cristo sa pagtawag sa kanya bilang ama ng kasinungalingan (John 8:44). Bago ipatupad ng Diyos ang Kanyang hatol sa masasama, lilinawin Niya sa mga tinubos ang Kanyang mga pasiya at karakter.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Corinthians 4:5… Kung hindi natin dapat hatulan ang anuman bago dumating ang panahon, ipinahihiwatig na may paghuhukom pagkatapos ng panahong iyon (pagdating ng Panginoon). Napakahalaga ng yugtong ito ng paghuhukom sapagkat inilalantad ng Diyos ang mga nakatagong bagay sa kadiliman at inihahayag ang mga payo at motibo ng puso. Nais ng Diyos na maging panatag tayo sa Kanyang mga pasiya. Ang pananaw natin sa mundo ay hinubog ng mundong ito sapagkat ito lamang ang nakilala natin. (Pangalawang pagtitipon ng pamilya.)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 20:7, 8, 5… Pakakawalan si Satanas mula sa kanyang bilangguan (ang kalagayan ng pagkatiwangwang) sa pagkabuhay na mag-uli ng masasama. Sa puntong iyon, lahat ng taong nabuhay ay magiging buhay upang masaksihan ang malapit nang mangyari.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 21:2-8… Bababa ang Bagong Jerusalem at sa huli ay tuluyang malilipol ang masasama. Tingnan din ang huling kabanata, Revelation 20:9.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 20:9… Pansinin sa talata 9 na papalibutan ng masasama ang mga banal at ang minamahal na lungsod. “At bumaba ang apoy mula sa Diyos mula sa langit at nilamon sila.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 21:1… Ginagawang bago ang lupa.",
+      "stage": null,
+      "images": []
+    }
+  ],
+  "verses": [
+    "Revelation 20",
+    "John 5: 28-29",
+    "Revelation 20: 4-6",
+    "Revelation 19:11-21",
+    "1 Thessalonians 4: 16-17",
+    "1 Cor 15:51-54",
+    "Jeremiah 25:33",
+    "Revelation 20: 1-3",
+    "Luke 8: 31",
+    "Rom 10: 7",
+    "Revelation 11: 7",
+    "Genesis 1: 2",
+    "Jeremiah 4: 23-27",
+    "Genesis 1: 2",
+    "revelation 20",
+    "Ezekiel 28",
+    "Matthew 24",
+    "Rev 20:4",
+    "1 Corinthians 6: 1-3",
+    "John 8: 44",
+    "1 Corinthians 4: 5",
+    "Revelation 20: 7, 8, 5",
+    "Revelation 21:2-8",
+    "Revelation 20:9",
+    "Revelation 20: 9",
+    "Revelation 21:1"
+  ],
+  "application": "Ipinapakita ng paghuhukom na makatarungan ang Diyos at na ang hangganan ng Kanyang layunin ay ang panibagong lupa kung saan wala nang kamatayan.",
+  "response": "Paano nagbibigay sa iyo ng pag-asa ang pangako ng Diyos tungkol sa bagong lupa at Kanyang presensiya?"
+}
