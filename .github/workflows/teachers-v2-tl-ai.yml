@@ -84,5 +84,7 @@ jobs:
           git add teachers-guide/tl teachers-guide/Teachers_Guide_V2_TL_Master.docx
           if ! git diff --cached --quiet; then
             git commit -m "Build Tagalog Teachers Guide V2 Word master and independent website"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
