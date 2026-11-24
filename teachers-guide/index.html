@@ -1002,8 +1002,20 @@ function closeTeacherFeedback(){
 const TEACHERS_TL_PUBLISHED=false;
 const TEACHERS_TL_URL='./tl/';
 function closeTeacherTLNotice(){$('tagalog-notice').classList.add('hidden')}
-$('teacher-tl-button').onclick=()=>{
- if(TEACHERS_TL_PUBLISHED){window.location.assign(new URL(TEACHERS_TL_URL,window.location.href).href);return}
+$('teacher-tl-button').onclick=async()=>{
+ const target=new URL(TEACHERS_TL_URL,window.location.href);
+ if(TEACHERS_TL_PUBLISHED){window.location.assign(target.href);return}
+ // A finished TL edition carries its own validation audit. The English
+ // button activates automatically once those complete files are published.
+ try{
+  const check=await fetch(new URL('translation-audit.json',target.href),{cache:'no-store'});
+  if(check.ok){
+   const audit=await check.json();
+   if(audit.language==='tl' && audit.study_count===28 && audit.unit_count===2378){
+    window.location.assign(target.href);return;
+   }
+  }
+ }catch(_){}
  $('tagalog-notice').classList.remove('hidden');$('close-tagalog-notice').focus();
 };
 $('close-tagalog-notice').onclick=closeTeacherTLNotice;
