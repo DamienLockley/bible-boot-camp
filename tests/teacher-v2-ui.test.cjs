@@ -53,6 +53,14 @@ async function flush(){
  assert.match(columns[1].textContent,/Supplementary Scriptures/);
  assert.ok(columns[0].querySelectorAll('.bible-ref').length>0,'Missing core Scriptures');
  assert.ok(columns[1].querySelectorAll('.bible-ref').length>0,'Missing supplementary Scriptures');
+ const language=document.getElementById('teacher-tl-button');
+ assert.ok(language,'Tagalog flag language button missing');
+ assert.match(language.textContent,/🇵🇭\s*Tagalog/);
+ language.click();
+ assert.equal(document.getElementById('tagalog-notice').classList.contains('hidden'),false,
+   'The unpublished Tagalog edition must not be opened as a broken link');
+ document.getElementById('close-tagalog-notice').click();
+ assert.equal(document.getElementById('tagalog-notice').classList.contains('hidden'),true);
  document.getElementById('help-feedback').click();
  assert.equal(document.getElementById('feedback-modal').classList.contains('hidden'),false,'Feedback must open locally');
  assert.ok(document.querySelectorAll('#feedback-country option').length>200);
