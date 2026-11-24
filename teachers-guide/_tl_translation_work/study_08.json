@@ -1,0 +1,804 @@
+{
+  "id": 7,
+  "title": "Ang Propesiya ng Pitumpung Linggo",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Ang Propesiya ng Pitumpung Linggo",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Layunin: Ihayag ang lubhang kapani-paniwalang katibayan na si Jesu-Cristo ang Mesiyas! Ituon ang pansin sa isang sinaunang propesiya na nagbibigay ng susi upang maunawaan ang pinakamahalagang pangyayaring nasaksihan ng sanlibutan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nakasentro sa: Daniel 9.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang kalagayan sa panahon ng propesiya: Nabagabag si Daniel sa isang pangitain at humingi ng pagkaunawa. Bumalik si Gabriel habang nananalangin si Daniel. Iniuugnay ng pag-aaral na ito ang panahong hindi naipaliwanag sa Daniel 8 sa paliwanag na ibinigay sa Daniel 9. Basahin ang dalawang kabanata sa halip na pag-aralan ang mga bilang nang hiwalay sa kanilang konteksto.",
+      "stage": [
+        "core",
+        "Ang kalagayan ng propesiya"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang ginagawa ni Daniel nang lumapit si Gabriel sa kanya?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Siya ay nananalangin, nagpapahayag ng kasalanan, at humihingi ng pagkaunawa.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "daniel",
+      "text": "KONTEKSTONG PANGKASAYSAYAN / PANGPROPESIYA — Kung saan nagsisimula ang pitumpung linggo: Sa makasaysayang pagkakasunod-sunod ng mga petsang ginagamit sa mga pag-aaral na ito, ang utos ni Artaxerxes na nakatala sa Ezra 7 ay may petsang 457 B.C. Ang pitumpung linggo ay nauunawaang 490 propetikong taon. Ipakita ang panimulang petsa bilang isang utos na may petsang itinatala ng kasaysayan, at ang prinsipyong isang araw para sa isang taon bilang hakbang ng pagpapaliwanag—hindi bilang petsang tuwirang nakasulat sa Daniel.",
+      "stage": [
+        "core",
+        "Ang simula ng pitumpung linggo"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 8:13-14… Alalahanin ang prinsipyong isang araw para sa isang taon sa propesiya ng Biblia (Ezekiel 4:6; Numbers 14:34).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang talatang ito ay tumutukoy sa santuwaryo. Kahit wala na tayong ibang alam, alam man lamang nating may kaugnayan ito sa buhay at ministeryo ni Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 8:16-17… Pansinin: Si Gabriel ang sugo na dumating upang tulungan si Daniel na maunawaan ang pangitain. Ang pangitain ay may kaugnayan din sa panahon ng kawakasan. Sa kabuuan:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "May kaugnayan sa buhay at ministeryo ni Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "May kaugnayan sa panahon ng kawakasan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 8:26-27… Pansining hindi naunawaan ni Daniel ang pangitain.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 9:20-23… Balikan natin: Dinalaw ni Gabriel si Daniel sa kabanata 8 upang ipaliwanag ang pangitain tungkol sa “dalawang libo tatlong daang araw.” Hindi pa ito naunawaan ni Daniel. Ngayon sa Daniel 9, nagsisimulang manalangin si Daniel. Bago matapos ang kanyang panalangin, sino ang dumalaw sa kanya? Muling nagpakita si Gabriel upang ipaliwanag ang pangitaing sinimulan sa kabanata 8.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 9:24… Ang pitumpung linggo ay “itinakda.” Sa Hebreo: chathak (“putulin”). Dahil ang kabanata 9 ay nagpapaliwanag sa bahaging hindi naunawaan ng pangitain sa kabanata 8, at ang bahaging iyon ay tungkol sa 2,300 araw, makatuwirang ipalagay na ang 70 linggo, o 490 taon, ay “ihihiwalay” o “puputulin” mula sa mas mahabang panahong iyon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Panloob na ebidensiya para sa prinsipyong isang araw para sa isang taon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Anim na pangyayaring itinakdang maganap sa loob ng 490 taon.",
+      "stage": null,
+      "images": [
+        "image-034.png"
+      ]
+    },
+    {
+      "kind": "text",
+      "text": "Upang wakasan ang pagsalangsang.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang tapusin ang mga kasalanan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang gumawa ng pagkakasundo para sa kasamaan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang dalhin ang walang-hanggang katuwiran.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang Pinahiran: Ang Mesiyas ay nangangahulugang “Pinahiran.” Ang bautismo ni Hesus at ang pagpapahid sa Kanya ng Banal na Espiritu ang tanda ng pagsisimula ng Kanyang hayag na ministeryo. Inilalagay ng pag-aaral na ito ang pangyayari sa A.D. 27, sa pagtatapos ng unang 69 propetikong linggo. Ang mahalaga ay kung sino si Hesus, hindi ang mga palaisipang numerikal lamang.",
+      "stage": [
+        "core",
+        "Ang Mesiyas na Pinahiran"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang nangyari sa bautismo ni Hesus na tumutugma sa titulong Mesiyas?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Bumaba sa Kanya ang Banal na Espiritu nang simulan Niya ang Kanyang hayag na ministeryo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "daniel",
+      "text": "KONTEKSTONG PANGKASAYSAYAN / PANGPROPESIYA — Ang Mesiyas sa sentro ng takdang panahon: Inilalagay ng paliwanag na ito ang pagsisimula ng hayag na ministeryo at pagpapahid kay Hesus sa A.D. 27, ang pagpapako sa Kanya sa krus sa A.D. 31, at ang pagtatapos ng pitumpung linggo sa A.D. 34, na inuugnay kay Esteban at sa mas malawak na paglaganap ng ebanghelyo. Ipaliwanag ang mga talata ng Kasulatan kasabay ng bawat pagkakakilanlang pangkasaysayan.",
+      "stage": [
+        "core",
+        "Ang Mesiyas sa sentro ng panahon"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang tatakan ang pangitain at propesiya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Upang pahiran ang Kabanal-banalan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 9:25… Ibinibigay rito ang panimulang punto ng pitumpung linggo. Magsisimula ang propesiya kapag pinahintulutan ang mga Judio na bumalik sa Jerusalem upang muling itayo ang kanilang lungsod. Noong ibinigay ang pangitaing ito, wasak pa ang Jerusalem at ang Templo. Ipinahayag ng langit na may ilalabas na utos upang itayo at ibalik ang lungsod. Mula sa petsang iyon, ang isang tiyak na bilang ng mga taon ay hahantong sa matagal nang hinihintay na Mesiyas. Kaya kailan ang petsang iyon? (Mat 18:22) Ang Hebreong salitang Mesiyas ay katumbas ng Cristo—“Ang Pinahiran.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ezra 7:11-26… Ibinigay ni Haring Artaxerxes ang utos na ito noong ikapitong taon ng kanyang paghahari nang pahintulutan niya ang mga Judio na bumalik sa Jerusalem at muling itayo ang kanilang lungsod.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pansinin: Ang panimulang petsang 457 B.C. ay pinatutunayan sa kasaysayan sa pamamagitan ng mga akda ng mananalaysay na Griyegong si Herodotus, mga tala ng Babilonia, at ng astronomong Alexandrino na si Ptolemy (Kanon ni Ptolemy). Itinala ni Sir Isaac Newton, isa sa pinakadakilang siyentipiko, ang panimulang petsang ito bilang “isa sa pinakamadaling matiyak na mga petsa sa kasaysayan” (Observations upon the Prophecies of the Bible, pp. 154–157).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Isang kawili-wiling bagay: Malinaw na may malalaking implikasyon ang propesiyang ito sa mga Judio. Alam ba nila ang propesiyang ito? Ano ang tingin nila rito? Dapat bang matapos na ang kanilang paghahanap sa Mesiyas? Sa isang kakaibang pangyayari, hindi lamang kilala ng mga iskolar na Judio ang propesiyang ito; mayroon ding sumpang rabiniko laban sa sinumang Judiong magbabasa ng kodigong ito upang tukuyin ang panahon ng pagdating ng Mesiyas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sinabi ng isang pantas na Judio:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Maglaho nawa ang mga espiritu ng mga nagtatangkang kalkulahin ang huling panahon ng pagdating ng Mashiach” (Sanhedrin 97B, sinipi sa Kabanata 12 ng Hillchos Melachim mula sa Mishneh Tora ni Rambam). (Pansinin: Ang “Mashiach” ay Hebreo para sa “Mesiyas.”)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 9:25… Sinabi kay Daniel na darating ang Mesiyas 69 na linggo pagkatapos ng utos na muling itayo ang Jerusalem. Kung ang utos ay ibinigay noong 457 B.C., ang 69 na linggo (483 literal na taon) ay aabot sa A.D. 27 (alalahaning walang taong sero). Kaya ayon sa propesiyang ito tungkol sa panahon, darating ang Mesiyas noong A.D. 27.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ito ang isa sa pinakakapana-panabik na bahagi ng propesiyang ito. Ang “Mesiyas” ay nangangahulugang “ang Pinahiran.” Hanggang A.D. 27, si Hesus ay isang manggagawang karpintero. Noong A.D. 27, ganap na nagbago ang Kanyang buhay. Nabautismuhan si Hesus sa Ilog Jordan at pinahiran ng Banal na Espiritu (Acts 10:37-38). Iniwan Niya ang Kanyang gawaing hanapbuhay at sinimulan ang hayag na ministeryo bilang Mesiyas para sa mga Judio.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 10:37-38… Inilalarawan si Hesus na pinahiran ng Banal na Espiritu sa Kanyang bautismo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 3:16-17… Mukhang binibigyang-diin dito ang bautismo ni Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 1:32, 41… Binibigyang-diin din ni Juan si Hesus. Sa talata 41, sinasabi ng mga tao, “Natagpuan namin ang Mesiyas.” Si Hesus ang Mesiyas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya ano ang layunin ng pagpapahid?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Luke 4:18… Upang ipangaral ang Ebanghelyo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mark 1:14-15… Ang unang sermon ni Hesus: “Natupad na ang panahon.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Alam na alam ni Hesus ang mga propetikong pahiwatig sa Daniel. Sinabi pa Niya, “Ang bumabasa ay umunawa” (Matthew 24:15). Nauunawaan ni Hesus ang Kanyang tungkulin sa buhay, at alam Niyang ang Kanyang bautismo ang simula ng Kanyang hayag na buhay at ministeryo bilang Mesiyas. (Luke 3:1—ayon sa sekular na kasaysayan, si Tiberius Caesar, A.D. 27.)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ngunit bahagi lamang ito ng propesiya. May natitira pang isang linggo sa kabuuang 70 linggo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 9:26-27… Sa isang kahanga-hangang pagbabago ng pangyayari, makikita nating ang Mesiyas ay “puputulin” (o papatayin). Sa halip na isang haring magliligtas sa mga Judio mula sa pagkaalipin, makikita ang isang haring naghihirap at namamatay. Sinasabi ng propesiya na ang haring Mesiyas ay hindi namatay para sa Kanyang sarili. Hindi karapat-dapat mamatay si Hesus—hindi Siya nagkasala kailanman. Namatay Siya para sa atin. Inihandog ang Kanyang sakdal na buhay upang iligtas ka sa iyong mga kasalanan at bigyan ka ng pag-asa sa hinaharap.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 9:27… Pagkatapos ay pagtitibayin Niya ang isang tipan sa marami sa loob ng isang linggo? (Higit pa tungkol dito mamaya.)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang mensahe ay umaabot sa mga bansa: Iniuugnay ng orihinal na pag-aaral ang pagtatapos ng 490 taon sa mga pangyayari kay Esteban at sa paglaganap ng ebanghelyo sa labas ng Jerusalem noong mga A.D. 34. Bahagi ng propetikong pagkakasunod-sunod nito ang petsa; binibigyang-diin naman ng Mga Gawa ang lumalawak na misyon. Mula pa sa simula, nilayon ng Diyos na makarating ang Kanyang pagpapala sa bawat bansa.",
+      "stage": [
+        "core",
+        "Paglaganap ng ebanghelyo sa mga bansa"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang hindi inaasahang naging bunga ng pag-uusig sa Acts 8?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Nagkahiwa-hiwalay ang mga mananampalataya at dinala nila ang salita sa mas maraming lugar.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 26:28… Ipinahahayag ni Hesus ang tuwirang katuparan ng Daniel 9:27.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Daniel 9:27… Ang “kalagitnaan” ng huling linggo (kalahati ng huling pitong taon) ay tatlo at kalahating taon mula sa pagdating ng Mesiyas noong A.D. 27. Dadalhin tayo nito sa A.D. 31—eksakto ayon sa propesiya ng Biblia.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 27:51… Nang mamatay si Hesus, mahimalang napunit mula itaas hanggang ibaba ang tabing sa templo. Sumasagisag ito sa pagtatapos ng mga paghahain ng hayop, gaya ng ipinahayag ng Biblia.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa paglilingkod sa templo, ang kordero ng Paskuwa ay inihahain minsan sa isang taon sa isang tiyak na araw at oras (hapon ng ika-14 na araw ng Hebreong buwan ng Nisan). Habang naghahanda ang mga pari na patayin ang kordero ng Paskuwa, namamatay naman si Hesus sa isang malungkot na krus. Noong madilim na hapong iyon, natupad ang propesiya sapagkat “si Cristo na ating Paskuwa ay inihain para sa atin” (1 Corinthians 5:7).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 10:5-6… Malinaw na inuutusan ni Hesus na sa bansang Judio LAMANG muna mangaral!",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matapos pahiran bilang Mesiyas noong A.D. 27, alam ni Hesus na pitong taon na lamang ang natitira upang magsisi ang bansang Judio at tanggapin Siya bilang Mesiyas at Tagapagligtas mula sa kasalanan. Inutusan Niya ang mga alagad na ituon ang pangangaral sa Israel. Pinanabikan Niyang tanggapin Siya ng bansang Judio at ipakilala Siya bilang Mesiyas sa buong daigdig. Maging pagkamatay Niya, sinabi ni Hesus sa mga alagad na simulan ang kanilang ministeryo sa Jerusalem. Hindi Niya sinusukuan ang mga tao roon. May panahon pa upang tanggapin nila si Hesus bilang Tagapagligtas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 21:43, 45… Alam ni Hesus ang propesiya ng Daniel 9 at buong pagsusumigasig silang binalaan tungkol sa pagtanggi sa Kanya bilang Mesiyas. Ipinahayag Niyang ang dakilang mga pangako ng maluwalhating hinaharap ay aalisin sa mga Judio at ibibigay sa ibang bayan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 13:46-47… Naunawaan ng mga alagad ang kanilang atas at isinagawa ang ministeryo sa bansang Judio, ngunit alam nilang darating ang pagtatapos ng panahong iyon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Romans 2:10… Muli nating nakikita ang pagkakasunod-sunod ng mga bagay tungkol sa ebanghelyo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 1:11… Inilalarawan ni Juan kung paano tinanggihan ng bansang Judio ang Mesiyas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 22:18… Ang pangangaral sa mga Judio ay nilayong maging daan upang “pagpalain ang lahat ng mga bansa sa lupa” sa pamamagitan ng pagkakilala sa kaligtasan kay Jesu-Cristo. Tinanggihan nila ang pribilehiyong ito. Gayunman, naihatid pa rin ang mensahe sa mga Hentil.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya kailan nagsimulang maipangaral ang ebanghelyo sa mga bansang Hentil?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 7:59; 8:1-4… Nang patayin si Esteban ng mga pinunong panrelihiyon ng mga Judio, siya ang naging unang martir na Cristiano. Nangyari ito noong A.D. 34, eksaktong 490 taon matapos magsimula ang propesiya. Itinuring ang taong ito bilang pagtatapos ng panahon ng pagsubok para sa bansang Judio. Nang makita ng Diyos ang ginawa ng mga pinunong Judio sa pinuno ng Kanyang umuusbong na iglesia, marahil ay sinabi Niya sa Kanyang puso: “Sapat na. Humayo na kayo at ipangaral ang ebanghelyo sa mga Hentil.” Dahil pinatigas ng bansang Judio ang kanilang puso laban sa mahabang pagtitiis at pag-ibig ng Diyos, nagtapos ang panahon ng propesiya. *Tingnan ang apendiks.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang Cristianismo ay humihiling na gamitin mo ang iyong isip.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hindi inaasahan ng Diyos na maniwala ka nang hindi nagbibigay ng sapat na katibayan para sa iyong pananampalataya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pinatutunayan sa atin ng propesiyang ito na hindi kailanman sisirain ng Diyos ang Kanyang mga pangako.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nahikayat si Pablo sa parehong taon ng pagbato kay Esteban (Acts 7, 9). Gal 1:18 (unang pagdalaw sa Jerusalem makalipas ang 3 taon); Gal 2:1 (ikalawang pagdalaw makalipas ang 14 na taon = 17 taon); Acts 18:12 (Gallio).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Isang batong may inskripsiyon ang natagpuan sa Corinto na nagpaparangal kay Gallio, na nanungkulan nang isang taon at may petsang A.D. 51—“ang inskripsiyon sa Delphi.” Sa pagbabalik sa mga pangyayari, dinadala tayo nito sa A.D. 34. Ipinahayag ni Esteban ang alok ng awa ng Diyos sa Israel sa buong kasaysayan upang makabalik sila sa Kanya bago matapos ang panahon ng pagsubok noong A.D. 34. Mat 18:22 (490 taon).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "Karagdagang mga punto:",
+      "stage": [
+        "supplement",
+        "Karagdagang mga punto"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 2:4…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 7:6…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 7:30… Kumilos si Hesus ayon sa isang takdang panahon!",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 12:23, 27…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 17:1…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mahahalagang puntong dapat maunawaan tungkol sa propesiya ng 70 linggo:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nagbibigay ang propesiyang ito ng pangunahing susi upang maunawaan ang iba pang mga talata sa Biblia.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pinatitibay ng propesiyang ito ang ating pagtitiwala sa pagiging kinasihan ng Kasulatan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pinatutunayan nito ang ating pananampalatayang si Jesu-Cristo nga ang Mesiyas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ipinakikita ng propesiya ang pag-ibig ng Diyos (kahit na tumalikod ang Kanyang iglesia sa pananampalataya, binigyan Niya sila ng mahabang panahon upang magsisi at bumalik sa Kanya. Hindi kailanman sisirain ng Diyos ang Kanyang tipan sa Kanyang bayan).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "Apendiks: Ang Propesiya ng Pitumpung Linggo [LARAWANG PAPALITAN: image-015.png]",
+      "stage": [
+        "supplement",
+        "Apendiks: Ang propesiya ng pitumpung linggo"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang Pagbato kay Esteban:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Maaaring makita ang tatlong medyo malinaw na layunin ng talumpati ni Esteban:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1. Makamit ang pagsang-ayon, o kahit mabawasan ang pagtutol, sa pamamagitan ng pagpapakitang pamilyar siya sa kasaysayan ng mga Hebreo sa harap ng Sanedrin at maglatag ng batayan upang patunayang tama ang kanyang pananampalataya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "2. Ipakita mula sa kasaysayan kung paano sinikap ng Diyos na pangunahan ang mga Hebreo at kung paanong paulit-ulit nilang tinanggihan ang pamumunong iyon na inihatid sa pamamagitan ni Moises, ng mga propeta, at ng matagal nang ipinangakong Mesiyas.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "3. Ipakita ang kalikasan at kahulugan ng pagsambang iniutos ng Diyos sa mga patriarka at sa Kanyang piniling bayan, kaugnay ng bagong sinimulang gawain ni Cristo sa kanan ng Diyos. Maaari itong ituring na pinakamahalaga, bagama't hindi pinakamalinaw na ipinahayag, na layunin. May apat na bagay na dapat pansinin tungkol dito:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "a. Nang simulan ng mga diyakono, na si Esteban ang pangunahing ebanghelista, ang hayag na ministeryo, unang binanggit na “maraming mga pari” ang “sumunod sa pananampalataya” (kabanata 6:7). Maaaring nagmula ang bungang ito sa natatanging pagbibigay-diin sa paglalahad ng ebanghelyo nina Esteban at ng iba pang mga diyakono.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "b. Ibinintang kay Esteban ang seryosong paratang na nagtuturo siya laban sa “banal na dakong ito,” ibig sabihin ang Templo; laban sa “kautusan”; at laban sa “mga kaugalian” (kabanata 6:13, 14).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "c. Binigyang-diin ni Esteban ang pagtawag kay Abraham at ang pangangalaga ng Diyos kay Jacob at sa kanyang mga inapo (kabanata 7:2–17); ang pagpapalaya sa mga Hebreo mula sa Ehipto sa ilalim ni Moises (mga talata 18–36); ang patotoo ni Moises tungkol sa darating na propeta para sa iglesia sa ilang (mga talata 37, 38); ang huwad na pagsamba at mga paghahaing walang kabanalan ng mga Hebreo (mga talata 39–43); ang tabernakulo sa ilang na itinayo ayon sa huwarang ipinakita kay Moises (mga talata 44, 45); ang Templo ni Solomon (mga talata 46, 47); at ang katotohanang hindi nangangailangan ang Diyos ng mga templong gawa ng tao (mga talata 48–50). Ang pagbibigay-diin sa pagsamba ay nagpapahiwatig na papunta ang talumpati ni Esteban sa ministeryo ni Cristo sa langit.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "d. May makikilalang kaugnayan ang karanasan ni Esteban sa propesiya ng 70 linggo (Dan. 9:24–27), na nagsimula noong 457 B.C. Sa huling linggo, “puputulin” ang Mesiyas, “hindi para sa Kanyang sarili,” at magwawakas ang makalupang sistemang paghahain bilang mabisang paraan ng pamamagitan, na mangangahulugan din ng pagtatapos ng makalupang pagkasaserdote. Tinatanggap ng komentaryong ito ang pananaw na ang pagpapako sa krus ay naganap noong A.D. 31, “sa kalagitnaan ng linggo.” Kaya ang huling bahagi ng 70 propetikong linggo ay dapat magwakas noong A.D. 34. Sa gayon, maaaring tingnan ang ministeryo ni Esteban bilang masidhing simbolo ng panawagan ng Diyos sa Kanyang piniling bayan sa huling propetikong linggo bago ialok ang ebanghelyo sa mga Hentil. Makatuwirang ilagay sa A.D. 34 ang pagiging martir ni Esteban, sapagkat maaaring ituring ang pagpatay sa kanya bilang huling gawa ng pagtanggi sa ebanghelyo ng mga Judio bilang isang bansa.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kapag tiningnan ang talumpati ni Esteban ayon sa kontekstong ito, makikitang isa itong mahalaga at madulang pangyayari sa isang kritikal na panahon ng kasaysayan ng unang iglesia.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pangitain ng 2,300 araw: [LARAWANG PAPALITAN: image-016.png]",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Isang pamamaraang nakabatay sa konteksto at wika:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matitiyak ba nating may anumang kaugnayan ang propesiya ng pitumpung linggo sa Daniel 9:24-27 sa 2,300 araw sa Daniel 8:14? Walang pag-aalinlangan: oo! Sa katunayan, sa paggamit ng pangunahing pamamaraan ng pagpapaliwanag ng Kasulatan noong Repormasyon—ang “sola scriptura”—matutuklasan nating ang pitumpung linggo ay hindi lamang may kaugnayan dito kundi isang mas maliit na bahagi ng mas malaking larawan…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa simula, ang Daniel 2, Daniel 7, at Daniel 8 ay mga kabanatang naglalaman ng mga panaginip o pangitain na sinusundan ng paliwanag, bagama't sa Daniel 8 ay hindi kumpleto ang paliwanag. Sa kabaligtaran, ang Daniel 9 ay walang panaginip o pangitain gaya ng mga naunang kabanata; binubuo lamang ito ng isang paliwanag—ang propesiya ng pitumpung linggo na ibinigay ni Gabriel kay Daniel.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ganito inilarawan ni Daniel ang pagdating ni Gabriel:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Oo, samantalang nagsasalita pa ako sa panalangin, ang lalaking si Gabriel na nakita ko sa pangitain sa simula ay mabilis na lumipad at hinipo ako sa oras ng handog sa gabi. Ipinaunawa niya sa akin at nagsalita sa akin: O Daniel, naparito ako ngayon upang bigyan ka ng karunungan at pagkaunawa. Sa pasimula ng iyong mga pagsusumamo ay lumabas ang utos, at naparito ako upang ipakita ito sa iyo; sapagkat lubha kang minamahal. Kaya unawain mo ang bagay na ito at isaalang-alang ang pangitain” (Daniel 9:21-23, KJV; isinalin sa Tagalog).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pansinin: ang tatlong bahaging sinalungguhitan sa itaas ay pawang nagpapahayag ng layunin ni Gabriel na magpaliwanag ng isang bagay kay Daniel, upang bigyan siya ng pagkaunawa at ipakita sa kanya ang isang bagay. Tulad ng makikita natin, dumating siya upang ipaliwanag ang iisang bahaging hindi pa naipaliwanag sa pangitain ng kabanata 8—ang 2,300 araw.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang pangitain sa Daniel 8 ay tungkol sa tupang lalaki, kambing na lalaki, munting sungay, at paglilinis ng santuwaryo (ang 2,300 araw). Naipaliwanag ang tupa, ang kambing, at ang munting sungay (Daniel 8:19-25); ang tanging hindi pa naipaliwanag ay ang bahaging tungkol sa 2,300 araw, ang bahaging sinabi ni Daniel na hindi niya naunawaan…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pakinggang mabuti ang sinabi ni Daniel dito:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“At ang pangitain tungkol sa gabi at umaga na sinabi ay totoo; kaya isara mo ang pangitain, sapagkat iyon ay para pa sa maraming araw. 27 At ako, si Daniel, ay nanghina at nagkasakit nang ilang araw; pagkatapos ay bumangon ako at ginawa ang gawain ng hari. Namangha ako sa pangitain, ngunit walang nakaunawa rito” (Daniel 8:26, 27, KJV; isinalin sa Tagalog).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Una, nang magsalita si Gabriel tungkol sa pangitain ng “gabi at umaga” sa talata sa itaas, tinutukoy niya ang Daniel 8:14, na mas literal na mababasa, “hanggang sa gabi at umaga, 2300….” Kaya ang pagbanggit ni Gabriel sa talata 26 sa pangitain ng “gabi at umaga” ay tiyak na tumutukoy sa 2,300 araw sa Daniel 8:14. Sinabi ni Daniel na hindi niya ito naunawaan—ang pangitain tungkol sa 2,300 araw—at hindi ito kataka-taka sapagkat naipaliwanag na ang lahat ng iba pang bahagi sa kabanata 8.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mayroon ding dalawang magkaibang salitang Hebreo na isinaling “pangitain” sa Daniel 8. Sa mga talata 1 at 2, tatlong ulit tinukoy ni Daniel ang “pangitain” ng kabanata, at sa bawat pagkakataon ay ginamit ang parehong salitang Hebreo na hazon:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Sa ikatlong taon ng paghahari ni Haring Belshazzar ay nagpakita sa akin, sa akin mismong si Daniel, ang isang pangitain (hazon) pagkatapos ng naunang nagpakita sa akin. 2 At nakita ko sa isang pangitain (hazon) na ako ay nasa Shushan sa palasyo, sa lalawigan ng Elam; at nakita ko sa isang pangitain (hazon) na ako ay nasa tabi ng Ilog Ulai” (Daniel 8:1, 2; isinalin sa Tagalog).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pagkatapos ay inilarawan ni Daniel ang nakita niya sa hazon: ang tupa, kambing, munting sungay, at iba pa. Kaya ang hazon ay tumutukoy sa pangkalahatang pangitain sa kabanata 8. Sa kabaligtaran, kapag tiyak niyang tinutukoy ang 2,300 araw, ibang salita para sa pangitain ang ginagamit niya: mareh…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“At ang pangitain [mareh] tungkol sa gabi at umaga na sinabi ay totoo; kaya isara mo ang pangitain (hazon), sapagkat iyon ay para pa sa maraming araw. At ako, si Daniel, ay nanghina at nagkasakit nang ilang araw; pagkatapos ay bumangon ako at ginawa ang gawain ng hari. Namangha ako sa pangitain [mareh], ngunit walang nakaunawa rito” (Daniel 8:26, 27; isinalin sa Tagalog).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya may dalawang salita para sa “pangitain” sa Daniel 8: hazon para sa buong pangitain, at mareh para sa Daniel 8:14, ang pangitain tungkol sa 2,300 araw at sa paglilinis ng santuwaryo—ang tanging bahaging hindi naunawaan ni Daniel (Daniel 8:27).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ngayon, muling lumitaw ang dalawang salitang ito sa Daniel 9 nang magpakita si Gabriel kay Daniel pagkatapos ng kanyang panalangin…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Oo, samantalang nagsasalita pa ako sa panalangin, ang lalaking si Gabriel na nakita ko sa pangitain (hazon) sa simula ay mabilis na lumipad at hinipo ako sa oras ng handog sa gabi. Ipinaunawa niya sa akin at nagsalita sa akin: O Daniel, naparito ako ngayon upang bigyan ka ng karunungan at pagkaunawa. Sa pasimula ng iyong mga pagsusumamo ay lumabas ang utos, at naparito ako upang ipakita ito sa iyo; sapagkat lubha kang minamahal. Kaya unawain mo ang bagay na ito at isaalang-alang ang pangitain [mareh]” (Daniel 9:21-23; isinalin sa Tagalog).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pansinin: tinutukoy ni Daniel si Gabriel, ang anghel na nakita niya sa hazon ng Daniel 8. Pansinin ding dumating si Gabriel at sinabing naroon siya upang bigyan si Daniel ng “karunungan at pagkaunawa.” Pagkaunawa tungkol saan? Sa huling bahagi ng Daniel 8 ay hindi pa naunawaan ni Daniel ang mareh ng Daniel 8:14. Kaya waring nagpakita si Gabriel sa kabanata 9 upang ibigay ang pagkaunawang hindi pa natamo ni Daniel sa kabanata 8. Lalong lumilinaw ito kapag sinuri natin ang salitang ginamit ni Gabriel para sa “pangitain” sa talata 23 bago ibigay ang propesiya ng pitumpung linggo…",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tingnan itong mabuti:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Sa pasimula ng iyong mga pagsusumamo ay lumabas ang utos, at naparito ako upang ipakita ito sa iyo; sapagkat lubha kang minamahal. Kaya unawain mo ang bagay na ito at isaalang-alang ang pangitain” [mareh] (Daniel 9:23; isinalin sa Tagalog).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mareh? Aling mareh? Iisa lamang—ang mareh tungkol sa 2,300 gabi at umaga sa Daniel 8:14 na hindi naunawaan ni Daniel. Isa pang punto: Anong uri ng propesiya ang mareh sa Daniel 8:14? Isa itong propesiya tungkol sa panahon. At ano ang unang ibinigay ni Gabriel kay Daniel? Siyempre, isa ring propesiya tungkol sa panahon—ang pitumpung linggo—na sinimulan niyang ipaliwanag sa Daniel 9:24. Walang pag-aalinlangan, dumating si Gabriel kay Daniel sa kabanata 9 upang ipaliwanag ang 2,300 araw sa kabanata 8.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kawili-wili ring pansinin na ang mareh sa Daniel 8:14, hindi tulad ng natitirang bahagi ng hazon, ay isang bagay na narinig ni Daniel sa halip na nakita. Sa Daniel 8, ang mareh tungkol sa 2,300 araw ay ipinahayag sa mga salita, hindi sa mga nakikitang simbolo. Sa Daniel 9, nang bumalik si Gabriel upang magpaliwanag, hindi siya nagbigay ng bagong pangitain ng mga tupa, kambing, o munting sungay; binigyan niya si Daniel ng mga salitang pakikinggan, gaya ng mareh sa kabanata 8.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Pinutol”:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Pitumpung linggo ang itinakda (Chatchak) para sa iyong bayan at sa iyong banal na lungsod…” (Daniel 9:24; isinalin sa Tagalog).",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Karamihan sa mga leksikong Hebreo ay nagbibigay ng isa sa mga kahulugan ng Chatchak, na madalas pangunahing kahulugan, bilang “putulin, hatiin,” na may ideya ng pagpapalabas ng isang utos. Kung magiging tapat tayo sa konteksto, mayroon tayong dalawang propesiya tungkol sa panahon: nauna ang mas mahaba, pagkatapos ay ang mas maikli na ipinakilala (sa konteksto ng mas mahaba) sa pamamagitan ng pandiwang “Chatchak,” na may batayang kahulugang “putulin.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kaya kalabisan bang ipalagay na ang mas maikling panahon, ang pitumpung linggo, ay pinutol mula sa mas mahaba, ang 2,300 araw? Hindi. Sa katunayan, ito ang tanging makatuwirang konklusyon.",
+      "stage": null,
+      "images": []
+    }
+  ],
+  "verses": [
+    "Daniel 9",
+    "Daniel 8",
+    "Daniel 9",
+    "Ezra 7",
+    "Daniel 8: 13-14",
+    "Ezekiel 4: 6",
+    "Numbers 14: 34",
+    "Daniel 8: 16-17",
+    "Daniel 8: 26-27",
+    "Daniel 9: 20-23",
+    "Daniel 9",
+    "Daniel 9: 24",
+    "Daniel 9: 25",
+    "Mat 18:22",
+    "Ezra 7: 11-26",
+    "Daniel 9: 25",
+    "Acts 10: 37-38",
+    "Acts 10: 37-38",
+    "Matthew 3: 16-17",
+    "John 1: 32,41",
+    "Luke 4: 18",
+    "Mark 1: 14-15",
+    "Matthew 24: 15",
+    "Daniel 9: 26-27",
+    "Daniel 9: 27",
+    "Acts 8",
+    "Matthew 26: 28",
+    "Daniel 9: 27",
+    "Daniel 9: 27",
+    "Matthew 27: 51",
+    "1 Corinthians 5: 7",
+    "Matthew 10: 5-6",
+    "Matthew 21: 43, 45",
+    "Daniel 9",
+    "Acts 13: 46-47",
+    "Romans 2: 10",
+    "John 1: 11",
+    "Genesis 22: 18",
+    "Acts 7:59; 8: 1-4",
+    "acts 7",
+    "Gal 1:18",
+    "Gal 2:1",
+    "Acts 18:12",
+    "Mat 18:22",
+    "John 2: 4",
+    "John 7: 6",
+    "John 7: 30",
+    "John 12: 23, 27",
+    "John 17: 1",
+    "Dan. 9:24–27",
+    "Daniel 9: 24-27",
+    "Daniel 8: 14",
+    "Daniel 2",
+    "Daniel 7",
+    "Daniel 8",
+    "Daniel 8",
+    "Daniel 9",
+    "Daniel 9: 21-23",
+    "Daniel 8",
+    "Daniel 8: 19-25",
+    "Daniel 8: 26, 27",
+    "Daniel 8: 14",
+    "Daniel 8: 14",
+    "Daniel 8",
+    "Daniel 8: 1, 2",
+    "Daniel 8: 26, 27",
+    "Daniel 8",
+    "Daniel 8: 14",
+    "Daniel 8: 27",
+    "Daniel 9",
+    "Daniel 9: 21-23",
+    "Daniel 8",
+    "Daniel 8: 14",
+    "Daniel 9: 23",
+    "Daniel 8: 14",
+    "Daniel 8: 14",
+    "Daniel 9:24",
+    "Daniel 8: 14",
+    "Daniel 8",
+    "Daniel 9",
+    "Daniel 9: 24"
+  ],
+  "application": "Ipinapakita ng takdang panahon ng propesiya ang katapatan ng Diyos sa Kanyang mga pangako at itinuturo tayong magtiwala kay Jesu-Cristo bilang Mesiyas at Tagapagligtas.",
+  "response": "Paano pinatitibay ng mga pangako ng Diyos at ng katuparan ng propesiya ang iyong pagtitiwala kay Hesus?"
+}
