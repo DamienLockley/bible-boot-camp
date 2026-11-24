@@ -1264,66 +1264,66 @@
     },
     {
       "teacher_study_id": 20,
-      "teacher_title": "The Remnant Church",
+      "teacher_title": "Ang Nalabing Iglesia",
       "gtk_source_id": "remnant",
-      "gtk_title": "The Remnant Church",
-      "gtk_lead": "How can I recognise a faithful Christian community?",
-      "gtk_principle": "God calls people to remain faithful to Jesus and His word in a world of confusion. The focus is a mission of truth, love, obedience and witness, never a claim of personal superiority.",
+      "gtk_title": "Ang Nalabing Iglesia",
+      "gtk_lead": "Paano ko makikilala ang isang tapat na pamayanang Kristiyano?",
+      "gtk_principle": "Tinatawag ng Diyos ang mga tao na manatiling tapat kay Hesus at sa Kaniyang salita sa isang mundong puno ng kalituhan. Ang pokus ay misyon ng katotohanan, pag-ibig, pagsunod, at pagpapatotoo, hindi kailanman pag-aangking nakahihigit ang sarili.",
       "gtk_connections": [
         {
-          "title": "God has always called people to faithfulness",
+          "title": "Palaging tumatawag ang Diyos ng mga tao sa katapatan",
           "scripture": "1 Kings 19:14–18; Romans 11:1–5",
-          "insight": "When Elijah thought he was the only faithful person remaining, God revealed that others had not bowed to false worship. The word remnant describes people preserved by God’s grace when many turn away. It must not become a source of boasting. The biblical emphasis is God’s faithfulness, not the superiority of those who recognise themselves as part of His people."
+          "insight": "Nang isipin ni Elias na siya na lamang ang natitirang tapat, ipinahayag ng Diyos na may iba pang hindi yumukod sa huwad na pagsamba. Inilalarawan ng salitang nalabi ang mga taong iningatan ng biyaya ng Diyos habang marami ang tumatalikod. Hindi ito dapat maging dahilan ng pagmamayabang. Ang diin ng Biblia ay ang katapatan ng Diyos, hindi ang pagiging nakahihigit ng mga kumikilalang bahagi ng Kaniyang bayan."
         },
         {
-          "title": "Jesus seeks one flock",
+          "title": "Hinahanap ni Hesus ang isang kawan",
           "scripture": "John 10:11–16; 17:20–23",
-          "insight": "Jesus compared Himself to a good shepherd who gathers sheep. He also prayed for unity among His followers. Christian unity is not created by merely avoiding difficult questions, nor by forcing agreement. It develops as people hear His voice, love one another and respond to revealed truth. The practical question is whether a community makes Jesus clearer and helps people follow Him in sincerity."
+          "insight": "Inihambing ni Hesus ang Kaniyang sarili sa mabuting pastol na nagtitipon ng mga tupa. Nanalangin din Siya para sa pagkakaisa ng mga tagasunod Niya. Hindi nabubuo ang pagkakaisang Kristiyano sa simpleng pag-iwas sa mahihirap na tanong o sa sapilitang pagkakasundo. Lumalago ito habang pinakikinggan ng mga tao ang Kaniyang tinig, minamahal ang isa't isa, at tumutugon sa inihayag na katotohanan. Ang praktikal na tanong ay kung mas malinaw bang naipakikilala ng isang pamayanan si Hesus at natutulungan nitong tapat Siyang sundin ng mga tao."
         },
         {
-          "title": "Revelation describes the last-day people of God",
+          "title": "Inilalarawan ng Apocalipsis ang bayan ng Diyos sa mga huling araw",
           "scripture": "Revelation 12:17; 14:6–12",
-          "insight": "The book of Revelation pictures a people who hold to God’s commandments and the faith of Jesus while proclaiming an urgent message about the Creator, judgment and true worship. The lesson traces the connection between gospel faith, obedience and mission. These are characteristics to take seriously, not excuses for contempt toward Christians of other communities. God knows people in every place, and His call is to all who will hear Him."
+          "insight": "Inilalarawan ng Apocalipsis ang mga taong tumutupad sa mga utos ng Diyos at nananatili sa pananampalataya kay Hesus habang ipinahahayag ang mahalagang mensahe tungkol sa Manlilikha, paghuhukom, at tunay na pagsamba. Sinusundan ng aralin ang ugnayan ng pananampalataya sa ebanghelyo, pagsunod, at misyon. Mahahalagang katangian ang mga ito, hindi dahilan upang hamakin ang mga Kristiyano sa ibang pamayanan. Kilala ng Diyos ang mga tao sa lahat ng lugar, at ang Kaniyang paanyaya ay para sa lahat ng makikinig sa Kaniya."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Does joining one denomination automatically save me?",
-          "answer": "No. Salvation is through Christ, not a membership record. A healthy church helps people grow in faith and love."
+          "question": "Awtomatiko ba akong maliligtas kapag sumapi ako sa isang denominasyon?",
+          "answer": "Hindi. Ang kaligtasan ay sa pamamagitan ni Cristo, hindi sa talaan ng kasapi. Tinutulungan ng isang malusog na iglesia ang mga tao na lumago sa pananampalataya at pag-ibig."
         },
         {
-          "question": "Are sincere Christians found in other churches?",
-          "answer": "Yes. Jesus knows His sheep, including those who follow Him sincerely in different congregations."
+          "question": "May mga tapat bang Kristiyano sa ibang mga iglesia?",
+          "answer": "Oo. Kilala ni Hesus ang Kaniyang mga tupa, kabilang ang mga tapat na sumusunod sa Kaniya sa iba't ibang kongregasyon."
         },
         {
-          "question": "What should I look for in a church?",
-          "answer": "Faithfulness to Scripture, a Christ-centred message, humility, genuine care, freedom of conscience and practical service."
+          "question": "Ano ang dapat kong hanapin sa isang iglesia?",
+          "answer": "Katapatan sa Kasulatan, mensaheng nakasentro kay Cristo, pagpapakumbaba, tunay na pagmamalasakit, kalayaan ng budhi, at praktikal na paglilingkod."
         }
       ],
-      "gtk_practice": "Write how you would explain a “faithful remnant” to a friend without making them feel unwelcome. Include Revelation 14:6 and John 10:16.",
+      "gtk_practice": "Isulat kung paano mo ipaliliwanag sa isang kaibigan ang “tapat na nalabi” nang hindi niya maramdamang hindi siya tanggap. Isama ang Apocalipsis 14:6 at Juan 10:16.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 7:26–28: Judgment reverses the verdict of earth",
+          "title": "Daniel 7:26–28: Binabaligtad ng paghuhukom ang hatol ng lupa",
           "href": "../daniel/index.html#section-7-26",
           "anchor": "section-7-26"
         },
         {
           "source": "daniel",
-          "title": "Daniel 12:1–1: 12:1  Michael stands and the people of God are delivered",
+          "title": "Daniel 12:1–1: 12:1 Tumindig si Miguel at iniligtas ang bayan ng Diyos",
           "href": "../daniel/index.html#section-12-1",
           "anchor": "section-12-1"
         },
         {
           "source": "revelation",
-          "title": "The remnant and the testimony of Jesus",
+          "title": "Ang nalabi at ang patotoo ni Hesus",
           "passage": "Revelation 12:17",
           "href": "../revelation/index.html#rev-12-17",
           "anchor": "rev-12-17"
         },
         {
           "source": "revelation",
-          "title": "Third angel: a warning against false worship",
+          "title": "Ikatlong anghel: babala laban sa huwad na pagsamba",
           "passage": "Revelation 14:9",
           "href": "../revelation/index.html#rev-14-9",
           "anchor": "rev-14-9"
@@ -1332,53 +1332,53 @@
     },
     {
       "teacher_study_id": 21,
-      "teacher_title": "Christian living",
+      "teacher_title": "Pamumuhay Kristiyano",
       "gtk_source_id": "living",
-      "gtk_title": "Christian Living",
-      "gtk_lead": "How should faith influence our choices and appearance?",
-      "gtk_principle": "Following Jesus changes priorities, appearance and habits. The study especially examines adornment, modesty and humility, asking what helps or distracts from a Christ-centred life.",
+      "gtk_title": "Pamumuhay Kristiyano",
+      "gtk_lead": "Paano dapat makaapekto ang pananampalataya sa ating mga pasiya at panlabas na anyo?",
+      "gtk_principle": "Binabago ng pagsunod kay Hesus ang mga prayoridad, panlabas na anyo, at mga gawi. Partikular na sinusuri ng pag-aaral ang palamuti, kahinhinan, at pagpapakumbaba, at itinatanong kung ano ang tumutulong o umaagaw sa pansin mula sa buhay na nakasentro kay Cristo.",
       "gtk_connections": [
         {
-          "title": "The question is the heart, not appearances alone",
+          "title": "Ang puso ang usapin, hindi lamang ang panlabas na anyo",
           "scripture": "1 Samuel 16:7; Matthew 6:19–24",
-          "insight": "God looks at the heart, and Jesus warned that treasures can capture our loyalty. Questions about dress, jewellery, possessions and entertainment are therefore more than arguments about lists. We should ask whether something encourages pride, waste, dishonesty, lust, exclusion or an unhealthy hunger for attention. The same outward choice can involve different motives, so discussions should be thoughtful and avoid judging someone’s worth by appearance."
+          "insight": "Tumitingin ang Diyos sa puso, at nagbabala si Hesus na maaaring bihagin ng mga kayamanan ang ating katapatan. Kaya ang mga tanong tungkol sa pananamit, alahas, ari-arian, at libangan ay higit pa sa pagtatalo tungkol sa mga listahan. Dapat nating itanong kung ang isang bagay ay naghihikayat ng pagmamataas, pag-aaksaya, kawalang-katapatan, pagnanasa, pagbubukod sa iba, o di-malusog na paghahangad ng pansin. Maaaring magkaiba ang dahilan ng parehong panlabas na pasiya, kaya dapat maging maingat ang pag-uusap at iwasang hatulan ang halaga ng isang tao batay sa anyo."
         },
         {
-          "title": "Beauty is not inherently evil",
+          "title": "Hindi likas na masama ang kagandahan",
           "scripture": "Ezekiel 16:8–14; Revelation 21:18–21",
-          "insight": "Scripture can use jewellery, rich materials and beauty positively. It can also warn of decoration used for self-glory and spiritual unfaithfulness. The source study makes this contrast in order to question when adornment moves from appreciation to self-exaltation. That means we should not claim every ornament is automatically sinful, while also recognising that outward display can become an idol. Simplicity can be a valuable expression of humility and wise stewardship."
+          "insight": "Maaaring gamitin ng Kasulatan nang positibo ang alahas, mamahaling materyales, at kagandahan. Maaari rin itong magbabala laban sa palamuting ginagamit para sa sariling kapurihan at espirituwal na kawalang-katapatan. Ginagamit ng pinagmulang aralin ang pagkakaibang ito upang suriin kung kailan lumilipat ang pagpapahalaga sa palamuti tungo sa pagpapataas sa sarili. Kaya hindi natin dapat sabihing awtomatikong makasalanan ang bawat palamuti, habang kinikilalang maaaring maging diyus-diyosan ang panlabas na pagpapakitang-gilas. Ang kasimplehan ay maaaring maging mahalagang pagpapahayag ng pagpapakumbaba at matalinong pangangasiwa."
         },
         {
-          "title": "A renewed life changes priorities",
+          "title": "Binabago ng panibagong buhay ang mga prayoridad",
           "scripture": "Romans 12:1–2; 1 Peter 3:3–4",
-          "insight": "Paul calls for transformation through the renewing of the mind. Peter directs attention to the lasting beauty of a gentle and quiet spirit. These teachings concern priorities: how much time, money and attention are spent cultivating an image, and how much is invested in kindness, integrity and service? The Spirit works with conscience over time, helping believers reconsider habits without turning growth into a competition."
+          "insight": "Tumatawag si Pablo sa pagbabago sa pamamagitan ng pagpapanibago ng isip. Itinuturo ni Pedro ang pansin sa nagtatagal na kagandahan ng maamo at tahimik na espiritu. Tungkol ito sa mga prayoridad: gaano karaming oras, salapi, at pansin ang ginugugol sa paglikha ng isang imahe, at gaano karami ang inilalaan sa kabaitan, katapatan, at paglilingkod? Gumagawa ang Espiritu sa budhi sa paglipas ng panahon, na tumutulong sa mga mananampalataya na muling suriin ang mga gawi nang hindi ginagawang paligsahan ang paglago."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Is every piece of jewellery automatically sinful?",
-          "answer": "The original study asks this question and notes biblical examples of ornamentation. It argues for caution about pride and display rather than assuming every instance has the same meaning."
+          "question": "Awtomatiko bang makasalanan ang bawat alahas?",
+          "answer": "Itinatanong ito ng orihinal na pag-aaral at binabanggit ang mga halimbawa ng palamuti sa Biblia. Iminumungkahi nito ang pag-iingat laban sa pagmamataas at pagpapakitang-gilas, hindi ang pag-aakalang pare-pareho ang kahulugan ng bawat pagkakataon."
         },
         {
-          "question": "How do I know whether something is appropriate?",
-          "answer": "Ask what motivates you, what it communicates, whether it is responsible, and whether it honours God and others. Seek wisdom without judging appearances."
+          "question": "Paano ko malalaman kung ang isang bagay ay angkop?",
+          "answer": "Itanong kung ano ang nag-uudyok sa iyo, ano ang ipinahihiwatig nito, kung ito ay responsable, at kung pinararangalan nito ang Diyos at ang iba. Humingi ng karunungan nang hindi hinahatulan ang panlabas na anyo."
         },
         {
-          "question": "Does God only accept me if I dress a certain way?",
-          "answer": "No. God loves people before their outward habits change. Growth in Christian character should not become shame or social pressure."
+          "question": "Tatanggapin lamang ba ako ng Diyos kung sa isang tiyak na paraan ako mananamit?",
+          "answer": "Hindi. Minamahal ng Diyos ang mga tao bago pa mabago ang kanilang panlabas na mga gawi. Ang paglago sa karakter na Kristiyano ay hindi dapat maging kahihiyan o panlipunang pamimilit."
         }
       ],
-      "gtk_practice": "Choose one decision about clothes, spending, entertainment or social media. Ask: Does this encourage humility, love and a clear conscience before God?",
+      "gtk_practice": "Pumili ng isang pasiya tungkol sa damit, paggastos, libangan, o social media. Itanong: Hinihikayat ba nito ang pagpapakumbaba, pag-ibig, at malinis na budhi sa harap ng Diyos?",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 1:8–10: Daniel decides before the crisis grows",
+          "title": "Daniel 1:8–10: Nagpasya si Daniel bago lumala ang pagsubok",
           "href": "../daniel/index.html#section-1-8",
           "anchor": "section-1-8"
         },
         {
           "source": "revelation",
-          "title": "The Saviour at the door",
+          "title": "Ang Tagapagligtas sa pintuan",
           "passage": "Revelation 3:19",
           "href": "../revelation/index.html#rev-3-19",
           "anchor": "rev-3-19"
@@ -1387,53 +1387,53 @@
     },
     {
       "teacher_study_id": 22,
-      "teacher_title": "Prayer",
+      "teacher_title": "Panalangin",
       "gtk_source_id": "prayer",
-      "gtk_title": "Prayer",
-      "gtk_lead": "How do I talk to a God I cannot see?",
-      "gtk_principle": "Prayer is a real relationship with our heavenly Father. It includes worship, confession, asking, listening and trust rather than a formula for controlling outcomes.",
+      "gtk_title": "Panalangin",
+      "gtk_lead": "Paano ako makikipag-usap sa Diyos na hindi ko nakikita?",
+      "gtk_principle": "Ang panalangin ay tunay na pakikipag-ugnayan sa ating Ama sa langit. Kabilang dito ang pagsamba, pagtatapat, paghingi, pakikinig, at pagtitiwala, hindi isang pormula para kontrolin ang mga resulta.",
       "gtk_connections": [
         {
-          "title": "Jesus treated prayer as essential",
+          "title": "Itinuring ni Hesus na mahalaga ang panalangin",
           "scripture": "Mark 1:35; Luke 6:12; Luke 9:28",
-          "insight": "Even with many people wanting His attention, Jesus made space for prayer, sometimes before major decisions. Prayer is not an emergency device reserved for desperate moments. It is a relationship in which we turn toward our Father, listen to Scripture, express gratitude and seek guidance. Beginners need not use impressive words. They can start by telling God the truth about the day and asking for wisdom."
+          "insight": "Kahit marami ang naghahangad ng Kaniyang pansin, naglaan si Hesus ng oras para manalangin, kung minsan bago ang mahahalagang pasiya. Ang panalangin ay hindi kagamitang pang-emerhensiya na para lamang sa mga sandali ng matinding pangangailangan. Isa itong ugnayang lumalapit tayo sa ating Ama, nakikinig sa Kasulatan, nagpapahayag ng pasasalamat, at humihingi ng patnubay. Hindi kailangang gumamit ng kahanga-hangang pananalita ang mga baguhan. Maaari silang magsimula sa pagsasabi sa Diyos ng katotohanan tungkol sa kanilang araw at paghingi ng karunungan."
         },
         {
-          "title": "The Lord’s Prayer teaches priorities",
+          "title": "Itinuturo ng Panalangin ng Panginoon ang mga prayoridad",
           "scripture": "Matthew 6:5–13",
-          "insight": "Jesus taught His followers to pray for God’s name to be honoured, His kingdom to come and His will to be done. Only then does the prayer turn to daily bread, forgiveness and protection. These are not magic words that must be repeated a certain number of times. They are a pattern for putting trust, dependence and relationships before selfish demands. The prayer includes both personal needs and responsibility to forgive others."
+          "insight": "Itinuro ni Hesus sa Kaniyang mga tagasunod na ipanalanging parangalan ang pangalan ng Diyos, dumating ang Kaniyang kaharian, at matupad ang Kaniyang kalooban. Saka lamang bumabaling ang panalangin sa pagkain sa araw-araw, kapatawaran, at pag-iingat. Hindi ito mga mahikang salitang kailangang ulitin nang tiyak na dami ng beses. Ito ay huwaran ng paglalagay sa pagtitiwala, pagdepende sa Diyos, at mga ugnayan bago ang makasariling mga kahilingan. Kasama sa panalangin ang personal na pangangailangan at ang pananagutang patawarin ang iba."
         },
         {
-          "title": "Confidence is different from controlling God",
+          "title": "Iba ang pagtitiwala sa pagkontrol sa Diyos",
           "scripture": "Matthew 7:7–11; 1 John 5:14–15; James 4:2–3",
-          "insight": "Jesus invites us to ask, seek and knock because God is a loving Father. But prayer is not a promise that God must obey our timetable or deliver anything we demand. Scripture calls us to pray according to His will, to examine selfish motives and to trust His wisdom. A painful unanswered prayer does not prove that God has stopped loving us. Sometimes a faithful prayer is simply, “Help me to trust You while I wait.”"
+          "insight": "Inaanyayahan tayo ni Hesus na humingi, maghanap, at kumatok dahil ang Diyos ay mapagmahal na Ama. Ngunit ang panalangin ay hindi pangakong kailangang sundin ng Diyos ang ating takdang panahon o ibigay ang lahat ng ating hinihingi. Tinatawag tayo ng Kasulatan na manalangin ayon sa Kaniyang kalooban, suriin ang makasariling mga hangarin, at magtiwala sa Kaniyang karunungan. Ang masakit na panalanging tila walang sagot ay hindi patunay na tumigil ang Diyos sa pagmamahal sa atin. Minsan, ang isang tapat na panalangin ay, “Tulungan Mo akong magtiwala sa Iyo habang naghihintay ako.”"
         }
       ],
       "gtk_questions": [
         {
-          "question": "What if I do not know the right words?",
-          "answer": "Start simply: “God, I am here. I need help.” Jesus taught a model prayer, not a complicated formula."
+          "question": "Paano kung hindi ko alam ang tamang sasabihin?",
+          "answer": "Magsimula nang simple: “Diyos, narito ako. Kailangan ko ng tulong.” Nagturo si Hesus ng huwarang panalangin, hindi ng kumplikadong pormula."
         },
         {
-          "question": "What if my prayer seems unanswered?",
-          "answer": "That can be painful. The Bible encourages persistent trust but does not promise every outcome we want. Seek support from people who care and keep speaking honestly to God."
+          "question": "Paano kung tila walang sagot ang panalangin ko?",
+          "answer": "Maaaring masakit iyon. Hinihikayat ng Biblia ang patuloy na pagtitiwala ngunit hindi ipinangangako ang bawat resultang gusto natin. Humingi ng suporta sa mga taong nagmamalasakit at patuloy na maging tapat sa pakikipag-usap sa Diyos."
         },
         {
-          "question": "Can I pray when I have done something wrong?",
-          "answer": "Yes. Come humbly and honestly. Prayer is especially important when we need forgiveness and a new start."
+          "question": "Maaari ba akong manalangin kapag may nagawa akong mali?",
+          "answer": "Oo. Lumapit nang may pagpapakumbaba at katapatan. Lalong mahalaga ang panalangin kapag kailangan natin ng kapatawaran at bagong simula."
         }
       ],
-      "gtk_practice": "Use the Lord’s Prayer as a guide. Write one sentence of praise, one request for provision, one confession, and one prayer for another person.",
+      "gtk_practice": "Gamitin ang Panalangin ng Panginoon bilang gabay. Sumulat ng isang pangungusap ng pagpupuri, isang kahilingan para sa pangangailangan, isang pagtatapat, at isang panalangin para sa ibang tao.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 6:10–11: Daniel continues his customary prayer",
+          "title": "Daniel 6:10–11: Ipinagpatuloy ni Daniel ang nakagawian niyang panalangin",
           "href": "../daniel/index.html#section-6-10",
           "anchor": "section-6-10"
         },
         {
           "source": "revelation",
-          "title": "Silence and prayers at the altar",
+          "title": "Katahimikan at mga panalangin sa dambana",
           "passage": "Revelation 8:1",
           "href": "../revelation/index.html#rev-8-1",
           "anchor": "rev-8-1"
@@ -1442,53 +1442,53 @@
     },
     {
       "teacher_study_id": 23,
-      "teacher_title": "Health",
+      "teacher_title": "Kalusugan",
       "gtk_source_id": "health",
-      "gtk_title": "Health",
-      "gtk_lead": "Does God care about my everyday wellbeing?",
-      "gtk_principle": "Our bodies and minds are gifts to be cared for. God’s concern for health includes food, rest, temperance, service and hope—not judgment of people who become ill.",
+      "gtk_title": "Kalusugan",
+      "gtk_lead": "Mahalaga ba sa Diyos ang aking pang-araw-araw na kalusugan at kagalingan?",
+      "gtk_principle": "Ang ating katawan at isip ay mga kaloob na dapat pangalagaan. Kabilang sa pagmamalasakit ng Diyos sa kalusugan ang pagkain, kapahingahan, pagpipigil sa sarili, paglilingkod, at pag-asa—hindi paghatol sa mga nagkakasakit.",
       "gtk_connections": [
         {
-          "title": "God cares about the whole person",
+          "title": "Nagmamalasakit ang Diyos sa buong pagkatao",
           "scripture": "John 10:10; 3 John 2; Luke 10:27",
-          "insight": "Life with God touches the mind, body, relationships and spirit. Jesus healed people, fed the hungry and cared about their suffering. Health principles should therefore be presented as an invitation to care for God’s gifts rather than a claim that people with illness have weak faith. Bodies change, some conditions are inherited and many causes of suffering are outside a person’s control. Compassion belongs at the centre of a biblical approach to wellbeing."
+          "insight": "Umaabot ang buhay kasama ng Diyos sa isip, katawan, mga ugnayan, at espiritu. Nagpagaling si Hesus ng mga tao, nagpakain sa nagugutom, at nagmalasakit sa kanilang pagdurusa. Kaya dapat iharap ang mga simulain sa kalusugan bilang paanyayang pangalagaan ang mga kaloob ng Diyos, hindi bilang pag-aangking mahina ang pananampalataya ng mga nagkakasakit. Nagbabago ang mga katawan, may mga karamdamang namamana, at maraming sanhi ng pagdurusa ang hindi kayang kontrolin ng isang tao. Ang habag ang dapat maging sentro ng maka-Bibliang paglapit sa kagalingan."
         },
         {
-          "title": "Stewardship begins with everyday choices",
+          "title": "Nagsisimula sa pang-araw-araw na pagpili ang pangangasiwa",
           "scripture": "1 Corinthians 6:19–20; Romans 12:1",
-          "insight": "Paul speaks of the believer’s body as belonging to God and being a place where the Spirit is honoured. That gives meaning to eating, activity, sleep and avoiding harmful substances. The source study uses the memory guide NEWSTART—nutrition, exercise, water, sunlight, temperance, air, rest and trust in God—to organise practical habits. It is a helpful reminder, not a substitute for individual medical advice."
+          "insight": "Binabanggit ni Pablo na ang katawan ng mananampalataya ay kabilang sa Diyos at isang lugar kung saan pinararangalan ang Espiritu. Nagbibigay ito ng kahulugan sa pagkain, pagkilos, pagtulog, at pag-iwas sa mga nakapipinsalang sangkap. Ginagamit ng pinagmulang pag-aaral ang gabay sa pag-alalang NEWSTART—nutrisyon, ehersisyo, tubig, sikat ng araw, pagpipigil sa sarili, sariwang hangin, pahinga, at pagtitiwala sa Diyos—upang ayusin ang mga praktikal na gawi. Kapaki-pakinabang itong paalala, hindi kapalit ng medikal na payong angkop sa bawat tao."
         },
         {
-          "title": "Self-control is a gift for service",
+          "title": "Ang pagpipigil sa sarili ay kaloob para sa paglilingkod",
           "scripture": "Galatians 5:22–23; Proverbs 23:29–35",
-          "insight": "The Bible warns against intoxication and celebrates self-control. The purpose of temperance is to keep our judgment clear, protect relationships and care responsibly for life. It is not a reason to shame someone struggling with addiction. Such struggles can require medical, psychological, community and spiritual support. A wise believer combines prayer with sensible help and learns to encourage rather than condemn."
+          "insight": "Nagbababala ang Biblia laban sa pagkalasing at pinahahalagahan nito ang pagpipigil sa sarili. Layunin ng kahinahunan na panatilihing malinaw ang ating pagpapasya, pangalagaan ang mga ugnayan, at responsableng alagaan ang buhay. Hindi ito dahilan upang hiyain ang taong nahihirapan sa pagkaadik. Maaaring mangailangan ang gayong mga pagsubok ng tulong na medikal, sikolohikal, mula sa pamayanan, at espirituwal. Pinagsasama ng matalinong mananampalataya ang panalangin at ang angkop na tulong at natututong magpalakas ng loob sa halip na humatol."
         }
       ],
       "gtk_questions": [
         {
-          "question": "If I become sick, have I failed spiritually?",
-          "answer": "No. Illness has many causes and must not be used as a measure of faith. Offer compassion and appropriate care."
+          "question": "Kung magkasakit ako, nangangahulugan bang nabigo ako sa espirituwal?",
+          "answer": "Hindi. Maraming sanhi ang karamdaman at hindi ito dapat gawing sukatan ng pananampalataya. Magpakita ng habag at magbigay ng angkop na pangangalaga."
         },
         {
-          "question": "Must everyone follow an identical diet?",
-          "answer": "The source encourages a healthful diet and discusses nutrition. A plant-centred way of eating may be helpful, but personal medical needs and wise practical choices matter."
+          "question": "Kailangan bang pare-pareho ang pagkain ng lahat?",
+          "answer": "Hinihikayat ng pinagmulang aralin ang masustansiyang pagkain at tinatalakay ang nutrisyon. Maaaring makatulong ang pagkaing nakasentro sa mga halaman, ngunit mahalaga ang personal na pangangailangang medikal at matalinong praktikal na pagpili."
         },
         {
-          "question": "Is this medical advice?",
-          "answer": "No. It is a faith-and-wellbeing lesson, not a diagnosis or substitute for guidance from qualified clinicians."
+          "question": "Ito ba ay medikal na payo?",
+          "answer": "Hindi. Aralin ito tungkol sa pananampalataya at kalusugan, hindi pagsusuri ng karamdaman o kapalit ng payo mula sa mga kwalipikadong propesyonal sa kalusugan."
         }
       ],
-      "gtk_practice": "Choose one sustainable health habit to improve this week. Make a realistic plan and remember that illness or disability is never evidence of spiritual failure.",
+      "gtk_practice": "Pumili ng isang napapanatiling gawi para sa kalusugan na nais mong pagbutihin ngayong linggo. Gumawa ng makatotohanang plano at alalahaning ang karamdaman o kapansanan ay hindi kailanman patunay ng espirituwal na kabiguan.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 1:8–10: Daniel decides before the crisis grows",
+          "title": "Daniel 1:8–10: Nagpasya si Daniel bago lumala ang pagsubok",
           "href": "../daniel/index.html#section-1-8",
           "anchor": "section-1-8"
         },
         {
           "source": "revelation",
-          "title": "The river, tree and restored face-to-face fellowship",
+          "title": "Ang ilog, puno, at naibalik na harapang pakikisama",
           "passage": "Revelation 22:1",
           "href": "../revelation/index.html#rev-22-1",
           "anchor": "rev-22-1"
@@ -1740,10 +1740,14 @@
       16,
       17,
       18,
-      19
+      19,
+      20,
+      21,
+      22,
+      23
     ],
     "source_file": "teachers-guide/related-study-resources.json",
     "unpublished": true,
-    "note": "First twenty supporting resource studies translated; remaining eight are still English and unpublished."
+    "note": "First twenty-four supporting resource studies translated; remaining four are still English and unpublished."
   }
 }
