@@ -94,7 +94,7 @@ jobs:
                   assert a['spiritual_application']!=b['spiritual_application']
                   contexts+=1
           assert contexts==audit['optional_daniel_contexts_translated']==17
-          assert len(audit['source_truncation_warnings'])>=8
+          assert audit['source_truncation_warnings']==[], 'Unresolved Tagalog source truncations'
           master=Document(review/'Teachers_Guide_V2_TL_Master.docx')
           assert sum(p.style.name=='Heading 1' for p in master.paragraphs)==28
           assert sum(p.style.name=='TG Stage' for p in master.paragraphs)>=28
