@@ -1,0 +1,953 @@
+{
+  "id": 3,
+  "title": "Ang Santuwaryo",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Ang Santuwaryo",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Layunin: Isalaysay ang kuwento ng pagtubos at ihayag ang plano ng Diyos na ihiwalay ang makasalanan sa kasalanan. (Ang Diyos ay hindi nagbabago / Ang tao ay nagbabago.)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Pangunahing diwa: Si Hesus. Kung paano tinutugunan ng Diyos ang suliranin ng pagkakahiwalay.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang suliranin ng pagkakahiwalay: Pagpasok ng kasalanan sa sanlibutan, nagtago sina Adan at Eva dahil sa takot, kahihiyan, at pagkakasala. Itinuturo ng Kasulatan na ang kasalanan ang naghihiwalay sa mga tao sa Diyos. Kaya ang unang tanong sa pagtubos ay tungkol sa ugnayan: paano maibabalik sa Kanya ang mga taong natatakot sa Diyos?",
+      "images": [],
+      "stage": [
+        "core",
+        "Ang pagkakahiwalay na dulot ng kasalanan"
+      ]
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Sa Genesis 3, sino ang nagtago at sino ang lumapit upang hanapin sila?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Nagtago sina Adan at Eva; ang Diyos ang naghanap sa kanila.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Basahin muna — Jer 29:13 at Ps 77:13.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Una sa lahat, tingnan natin ang problema ng kasalanan mula sa pananaw ng Biblia. Ipinakikita nito ang isang mahalagang pangangailangan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Isaiah 59: 2… Ang kasalanan (ang dahilan) ang naging sanhi ng pagkakahiwalay (ang pangunahing suliranin) sa pagitan ng Diyos at ng Kanyang mga nilalang.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Hindi lamang ipinahahayag ng Biblia ang katotohanang ito; inilalarawan at isinasalaysay din nito kung paano naganap ang pagkakahiwalay.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 3: 7-10… Makikita rito ang nangyayari kapag pumasok ang kasalanan. Pansinin: bagaman kahanga-hanga ang isip at talino ng taong kamakailan lamang ay nahulog, at alam nilang ang Diyos ay nasa lahat ng dako, nagtangka pa rin silang magtago sa likod ng puno! (Ginagawa pa rin ito ng mga tao ngayon.) Bakit? Sa kauna-unahang pagkakataon, naranasan nila ang PAGKAKASALA + KAHIHIYAN + TAKOT.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Pinapamanhid ng kasalanan ang isip. Isang mahalagang katotohanan dito: ang tao ang tumatakas mula sa Diyos. Salungat sa karaniwang paniniwala, hindi ang Diyos ang lumayo sa atin; bunga ito ng ating nahulog na kalikasan. Sa ubod nito, ang kasalanan ay pagnanais na maging malaya sa Diyos. Pagkakasala — matinding pagnanais na magsarili nang hiwalay sa Diyos (pagkamakasarili). Para sa pagninilay mamaya: Gen 3:21… Mga kasuotang yari sa balat.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ano kaya ang nadarama ng Diyos sa ganitong kalagayan? (Paano?)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 1: 9… Kinamumuhian ni Hesus ang pagsuway sa kautusan o kasamaan. Bakit? Sapagkat nagdudulot ito ng pagkakahiwalay sa Kanya at sa Kanyang nilikha, na siyang minamahal Niya. Matindi ang pagkapoot ni Hesus sa kasalanan. Isang napakamasalimuot na tunggalian ang nagaganap sa puso ng bawat tao.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Mahal ng Diyos ang katuwiran kung gaano Niya kinamumuhian ang kasalanan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(i) Halimbawa: Isang sampung-taóng-gulang na batang dinukot at hindi nakita sa loob ng 18 taon — ano ang mararamdaman mo? Ang mga anak ng Diyos ay para bang dinukot nang 6,000 taon. Mas malaki ang suliraning kinakaharap ng Diyos.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ngayong nauunawaan na natin ang suliranin ng kasalanan, isipin natin ang kalagayang kinakaharap ng Manlilikha.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(A) Ang pinakakinamumuhian ng Diyos ay nasa loob ng pinakamamahal Niya.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(B) Ang pinakamamahal ng Diyos ay umiibig sa bagay na pinakakinamumuhian Niya.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Kaya narito ang tanong: paano ihihiwalay ng Diyos ang bagay na Kanyang kinamumuhian mula sa bagay na Kanyang minamahal (ang kasalanan mula sa makasalanan)? Ang sagot ay tila isang operasyon, at ipinapakita ang operasyong ito sa mensahe ng santuwaryo.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Nais ng Diyos na manahan kasama natin: Iniutos ng Diyos sa Israel na gumawa ng santuwaryo upang makapanahan Siya sa gitna ng Kanyang bayan. Hindi ito upang ang isang malayong Diyos ay mapalapit sa pamamagitan ng imbensiyon ng tao. Ang Diyos Mismo ang naglaan ng daan upang maging malapit sa Kanyang bayan at turuan sila tungkol sa Kanyang plano ng pagliligtas.",
+      "images": [],
+      "stage": [
+        "core",
+        "Nais ng Diyos na manahan kasama natin"
+      ]
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Anong dahilan ang ibinigay ng Diyos para sa santuwaryo?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Upang Siya ay makapanahan kasama ng Kanyang bayan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Exodus 25: 8,9… Dito ay binibigyan ng Diyos ng tagubilin ang Kanyang bayan. Tanong: ayon sa talata 8, ano ang layunin ng santuwaryo? (John 1:14) — Ugnayan at paghahayag.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Sagot: Upang manahan ang Diyos sa gitna nila. Dito ay makikita natin ang pagbabaligtad ng pagkakahiwalay na dulot ng kasalanan. Pagkatapos ay ibinigay ng Diyos ang mga tagubilin kung paano ito itatayo ayon sa huwaran.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Exodus 25: 22… Muli, makikita natin ang usapin ng pagiging malapit ng Diyos.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(Iguhit ang Santuwaryo.)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "image",
+      "text": "",
+      "images": [
+        "image-022.png"
+      ],
+      "stage": null
+    },
+    {
+      "kind": "image",
+      "text": "",
+      "images": [
+        "image-023.png"
+      ],
+      "stage": null
+    },
+    {
+      "kind": "image",
+      "text": "",
+      "images": [
+        "image-024.png"
+      ],
+      "stage": null
+    },
+    {
+      "kind": "image",
+      "text": "",
+      "images": [
+        "image-025.png"
+      ],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang buong sistema ng kampo at santuwaryo ng mga Hebreo ay nakasentro sa nasa loob ng Kaban, na nasa Dakong Kabanal-banalan. Bakit napakahalaga nito?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Deuteronomy 10: 4-5… Dito inilagay ni Moises ang banal na kautusan ng Diyos — ang Sampung Utos, na siyang batayan ng kanilang kasunduan sa tipan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Kaya maaari nating itanong: ano ang kinalaman ng isang tolda sa gitna ng disyerto at ng maraming kakaibang seremonya sa paglutas ng problema ng kasalanan?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Leviticus 1: 1-5… Itinuturo ng Diyos sa Kanyang bayan na magdala ng handog upang gawin ang pagtubos para sa nagsisising makasalanan. Pansinin sa talata 5: “papatayin niya ang toro.” Mahalagang maunawaan na ang makasalanan mismo ang papatay sa handog. Layunin din nitong harapin ang kahihiyan, takot, at pagkakasala.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Buhay ang kabayaran ng kasalanan: Sa sistemang paghahandog, ang sumasamba ang nagdadala ng handog. Ang dugo ay sumasagisag sa buhay, at ang paghahain ay nagtuturo kung gaano kaseryoso ang kasalanan. Hindi ibig sabihin ng mga gawaing ito na nalulugod ang Diyos sa karahasan. Itinuturo ng mga ito ang napakalaking halaga ng nasirang ugnayan at ang pangangailangan ng isang kahalili.",
+      "images": [],
+      "stage": [
+        "core",
+        "Itinuturo ng santuwaryo ang tungkol kay Hesus"
+      ]
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Anong katotohanan tungkol sa kasalanan ang inilalarawan ng paghahain?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Nagdadala ng kamatayan ang kasalanan; napakalaki ng halaga ng kapatawaran at panunumbalik.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Pagkatapos, kukuha ang pari ng bahagi ng dugo at iwiwisik ito sa dambana. Susunod, pupunta siya sa Dakong Banal at magwiwisik pa ng dugo sa harap ng tabing na naghihiwalay sa Dakong Banal at sa Dakong Kabanal-banalan. Isinasagawa ang buong ritwal para sa “pagtubos” at pakikipagkasundo sa Diyos. Ngunit bakit iniuutos ng Diyos ang gayong madugong proseso? Bakit kailangang dumanak ang dugo? (i) Ang makasalanan ay maglalakad sa kampo patungo sa pintuan ng santuwaryo, ipapatong ang kamay sa kordero, at siya mismo ang papatay rito dahil sa kanyang kasalanan. (Ilarawan ang pagpatay sa isang walang-salang hayop.)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Sa ganitong paraan, naiuugnay ng makasalanan ang kasalanan sa kamatayan at pagdurusa (ang pagpatay sa kordero). Kapag alam mo ang halaga ng pagpapalit sa isang bagay na nasira, mas matindi ang pakiramdam ng pananagutan at mas hindi kaakit-akit ang pagsira. Napakamahal ng kasalanan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang Diyos ba ay isang malupit na pinunong nauuhaw sa dugo? Bakit iwiwisik ang dugo sa harap ng tabing? (Alalahanin ang kautusan sa likod nito — hindi nagbabago.)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Leviticus 17: 11… Ang dugo ay kumakatawan sa buhay. Hinihingi ng kasalanan ang buhay ng makasalanan (Rom 6:23).",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 9: 22… Kung walang pagbubuhos ng dugo, walang kapatawaran ng mga kasalanan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang aral na nais ipakita ng Diyos ay pumapatay ang kasalanan. Napakalaki ng kabayaran sa pagtubos, at iyon ang nais ipabatid ng Diyos.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "1 John 3: 4… Ayon sa Kasulatan, ang kasalanan ay paglabag sa kautusan. Inilagay ng Diyos ang kautusan sa loob ng Kaban bilang palagiang paalala ng tunay na kahulugan ng kasalanan! Hinihingi ng kautusan ang dugo. Hinihingi ng kautusan ng Diyos ang ganap na pagsunod; buhay lamang ang maaaring maging kabayaran ng kasalanan. Kasalanan = Kamatayan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Maaari na tayong lumipat mula sa mga seremonya ng Lumang Tipan patungo sa katuparan sa Bagong Tipan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 10: 1-4… Makikita rito ang paalala ni Pablo na ang sistemang paghahain sa Lumang Tipan ay larawan o anino ng isang pangyayaring darating. Ang paulit-ulit na paghahain sa dambana ay nilayon upang ipaalala sa atin ang kasalanan at ang darating na Mesiyas. Hindi natin lubos na nauunawaan kung gaano kasama ang kasalanan kaya ipinakikita ito ng Diyos sa santuwaryo bilang isang modelo. Ang kasalanan ay hindi lamang isang kilos; ito ay isang kalagayan. Nais ng Diyos na putulin ang ating pagmamahal sa kasalanan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Tingnan natin ang katuparan ng pangakong ito sa Lumang Tipan: si HESUS.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 10: 10… Si Hesus ang katuparan ng sistema ng santuwaryo. Ang Kanyang handog ay minsan para sa lahat.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "1 Peter 1: 19… Namuhay si Hesus nang walang dungis. Ganap Niyang tinupad ang kautusan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "John 1: 29… Maiintindihan lamang nang lubos ang pahayag na ito sa pamamagitan ng pagkaunawang Judio tungkol sa sistemang paghahain. Upang maging posible ito, kailangan ang pag-ibig sa Tagapagbigay ng kautusan — si Hesus ang ating Kahalili.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ngayon tingnan natin ang nangyari pagkatapos ng krus sa Kalbaryo.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "2 Corinthians 5: 17-21… Si Hesus ang sagot sa suliranin ng kasalanan at pagkakahiwalay. Tinrato si Cristo ayon sa nararapat sa atin upang tayo ay tratuhin ayon sa nararapat sa Kanya. Nananalangin tayo sa pangalan ni Hesus nang may pananampalataya sa Korderong inihain — Siya ang Kahaliling pumalit sa akin at nagdala ng aking kasalanan. Pag-aaring-ganap (na para bang hindi kailanman ako nagkasala).",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Tinrato si Cristo ayon sa nararapat sa atin upang tayo ay tratuhin ayon sa nararapat sa Kanya. (EGW — DA 25.2) Gal 2:20.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Kaya ano ang kinalaman nito sa akin ngayon?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Hebrews 6: 6… Dito ay kinakausap ni Pablo ang mga Cristiano. Kung tatalikuran nila ang kanilang Tagapagligtas at babalik sa dating pamumuhay, para bang muli nilang ipinapako Siya sa krus. Ito ang kahulugan ng krus ngayon. Tinitingnan natin ang nakaraan; si Adan naman ay tumingin sa hinaharap tungo rito. (James 2:17-24 — pananampalataya at mga gawa.)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Si Hesus, ang tunay na Kordero: Tinawag ni Juan si Hesus na Kordero ng Diyos. Sinasabi ng Hebrews na ang paulit-ulit na paghahandog ng mga hayop ay aninong tumuturo sa hinaharap, at na minsan para sa lahat ay inialay ni Hesus ang Kanyang Sarili. Hindi kailanman nagligtas ang mga handog sa pamamagitan ng sarili nilang kapangyarihan; ang kahulugan ng mga ito ay nakasalalay sa ipinangakong Tagapagligtas.",
+      "images": [],
+      "stage": [
+        "core",
+        "Personal na paanyaya at tugon"
+      ]
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang nagbabago kapag dumating na ang ipinangakong handog?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Tinutupad ni Hesus ang ipinahihiwatig ng mga paulit-ulit na paghahain.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Panawagan:",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Alisin si Hesus mula sa santuwaryo at mawawalan ng saysay ang lahat.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang mga paghahain sa Lumang Tipan ay tila isang simpleng paglalakad lamang kung ihahambing sa dinanas ni Hesus.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang pinakamasakit sa Diyos ay ang diwa ng kasalanan — ang pagkakahiwalay — hindi lamang ang krus at mga pako.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang ginagawa mo sa iyong buhay ay may tuwirang epekto sa damdamin ng Diyos.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Nagdudulot ang kasalanan ng sakit sa Diyos, na nakadarama ng kagalakan at kaligayahan ngunit nakibahagi rin sa ating pagdurusa.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Malapit sa atin ang Diyos at hinahayaan Niyang maging bukas ang Kanyang puso sa atin.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Nagsasalita Siya sa atin sa pamamagitan ng Kanyang salita upang wakasan ang Kanyang sakit.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Handa ka bang sumuko sa Diyos at hayaan Siyang gawin ang operasyong maghihiwalay sa bagay na Kanyang minamahal — IKAW — mula sa bagay na Kanyang kinamumuhian?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "heading",
+      "text": "Mga kasangkapan sa loob ng santuwaryo:",
+      "images": [],
+      "stage": [
+        "supplement",
+        "Ano ang kinakatawan ng mga kasangkapan?"
+      ]
+    },
+    {
+      "kind": "text",
+      "text": "Upang higit na maunawaan ang kahulugan ng mga larawan o tipo sa santuwaryo at ang kontribusyon nito sa ating pag-unawa sa ministeryo ni Cristo bilang Dakilang Saserdote, kailangang pag-aralan nang masusi ang iba't ibang bahagi at tungkulin ng santuwaryo.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ipinagawa ng Diyos ang tabernakulo sa gitna ng mga Israelita matapos silang lumabas sa Ehipto at pumasok sa isang tipan sa Kanya (Ex. 25: 8). Ipinahihiwatig nito na nauuna ang pagtubos bago ang paglapit sa santuwaryo, sapagkat ang mga tinubos at pumasok sa isang ugnayang may tipan sa Diyos ang lubos na makatatamasa ng pakikisama sa Kanya. Sa isang diwa, ang santuwaryo ay paraan upang maibalik ang malapit na pakikisama sa Diyos na tulad noong Eden.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "image",
+      "text": "",
+      "images": [
+        "image-026.png"
+      ],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Paliwanag ng larawan:",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(9) Ikalawang Silid — Dakong Kabanal-banalan",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(8) Ang Kaban ng Patotoo ng Diyos, na kinalalagyan ng Sampung Utos",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(7) Ang Mesa ng mga Tinapay na Handog",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(6) Ang Gintong Dambana ng Insenso",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(5) Unang Silid — Dakong Banal",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(4) Ang Gintong Kandelero",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(3) Ang Hugasan",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(2) Ang Tansong Dambana para sa mga Handog na Sinusunog",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "(1) Ang Paghahain ng Kordero",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Sa panahon ng Lumang Tipan, sinabi ng Diyos sa Kanyang bayan na mayroon Siyang plano upang iligtas sila. Sinabi Niyang balang araw ay mamamatay si Hesus para sa kanila. Ipinaliwanag Niya ang mga katotohanan tungkol sa pagtubos. Ngunit hindi pa iyon sapat. Pinili rin ng Diyos na ipakita sa Kanyang bayan kung ano ang hitsura ng kaligtasan. Hinayaan Niya silang maranasan ito sa pamamagitan ng kanilang pandama — makita, marinig, mahawakan, maamoy, at malasahan ang nais Niyang maunawaan nila. Bawat bahagi ng santuwaryo ay nagbubukas ng kanilang mga mata sa isang aspekto ng kaligtasan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang korderong inihahain:",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Nakita na natin sa John 1: 29 na ang kordero ay kumakatawan sa darating na Mesiyas. Tingnan pa natin ang ibang detalye.",
+      "images": [],
+      "stage": [
+        "supplement",
+        "Paano itinuturo ng mga kasangkapan ang tungkol kay Cristo?"
+      ]
+    },
+    {
+      "kind": "text",
+      "text": "Ang tansong dambana: (Ex 27:1-8, 38:1-7)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ephesians 5: 2… Paulit-ulit na sinasabi sa Lumang Tipan na ang mga handog ay umaakyat bilang mabangong samyo sa Diyos. John 1:29, Heb 10:10.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang hugasan: (Ex 30:18-21,38:8)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "1 Corinthians 6: 11… Nahugasan na kayo.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Titus 3: 5… Hindi sa pamamagitan ng mga gawa kundi sa Kanyang paghuhugas ng muling kapanganakan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "image",
+      "text": "",
+      "images": [
+        "image-027.png"
+      ],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang mga gintong kandelero: (Ex 25:31-39,37:17-24; Eph 2:10)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "John 8: 12… Bakit gumagawa si Hesus ng mga pahayag na eksaktong tumutugma sa mga larawan sa sinaunang santuwaryo ng mga Hebreo? May nais Siyang ipabatid: Siya ang katuparan ng lahat ng mga ito.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 1: 12… Dito makikita natin si Hesus na lumalakad sa gitna ng pitong gintong patungan ng ilawan. Samakatuwid, sa aklat ng Revelation, nakikita natin si Hesus sa Dakong Banal! Ang pitong patungan ng ilawan ay kumakatawan din sa pitong iglesia sa buong kasaysayan (Rev 1: 20). Bukod dito, ayon sa Matthew 5: 14, kayo ang ilaw ng sanlibutan!",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Si Hesus ang ilaw at ang Kanyang mga tagasunod ay ilaw din. Kaya sa Dakong Banal ng santuwaryo, ang Pitong Gintong Kandelero ay kumakatawan sa ministeryo ni Hesus at sa pagkakatatag ng iglesiang Cristiano. (Mat 5:14)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang Mesa ng Tinapay na Handog: (Ex 25:23-30,37:10-16)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "John 6: 35… Muling humihiram si Hesus ng larawan mula sa santuwaryo. Ang tinapay ay kumakatawan kay Hesus; Siya ang nagbibigay ng ikabubuhay, hindi lamang sa katawan kundi maging sa espiritu.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 4: 4… Dito ay iniuugnay ni Hesus ang tinapay sa salita ng Diyos. Sa madaling salita, kailangan nating tanggapin at namnamin ang salita ng Diyos gaya ng pagkain. Higit itong ipinaliwanag sa Revelation 10: 9, kung saan ginagamit ng anghel ang pananalitang “kunin mo at kainin” tungkol sa salita ng Diyos. Ang Salita ay nagkatawang-tao.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang Dambana ng Insenso:",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Exodus 30: 1-10… Ang dambana ng insenso, na nasa tabi ng tabing, ay may sungay sa bawat sulok. Ginagamit ito upang magsunog ng insenso dalawang beses sa isang araw sa harap ng Panginoon. Ang insensong ito ay kumakatawan sa mga panalangin ng mga banal na umaakyat sa Diyos (Psalm 141: 2).",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ephesians 5: 2… Ayon sa talatang ito, ang mga merito ni Cristo ang mabangong samyo na ginagawang katanggap-tanggap sa Panginoon ang ating mga panalangin.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Revelation 8: 3-4… Inilalarawan ang isang anghel na nagdaragdag ng insenso sa mga panalangin ng mga banal habang umaakyat ang mga ito sa trono ng Diyos. Maaaring unawain ang tagpong ito bilang sagisag ng paglilingkod ni Cristo para sa Kanyang bayan (Rom. 8: 34; 1 John 2: 1; Psalm 141:2).",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Ang Kaban ng Tipan (Lev 16:15; John 15:10)",
+      "images": [],
+      "stage": [
+        "supplement",
+        "Ano ang itinuturo ng mga silid at kasangkapan?"
+      ]
+    },
+    {
+      "kind": "text",
+      "text": "Ang dalawang tapyas ng bato na kinauukitan ng Sampung Utos, na isinulat ng Diyos Mismo, ay inilagay sa loob ng Kaban. Paano makikita sa dalawang batong ito ang larawan ni Hesus?",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Lumang Tipan:",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Lev 16:15",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Psalm 42: 9… Inihahambing ang Diyos sa isang Bato.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "2 Samuel 23: 2-3… Ang Diyos ang Bato ng Israel.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Deuteronomy 32: 3-4… Ang Diyos ang Bato.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Isaiah 26: 4… “Walang-hanggang lakas.” Sa literal na Hebreo, “isang walang-hanggang bato.” Si Cristo ang Bato ng mga Panahon para sa lahat ng natututong magtiwala sa Kanya.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Bagong Tipan:",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 16: 18… Sinasabi rito ni Hesus na Siya ang pundasyon ng iglesia! Sa Kanya lamang dapat itatag at isentro ang iglesia.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "1 Corinthians 10: 1-4… Si Cristo ang Bato.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Si Hesus ang buhay na pagsasakatawan ng kautusan. Lubos Siyang sumunod sa mga hinihingi nito. Sinasabi ng ilan na si Hesus ang “Sampung Utos na nakasandalyas.” Ang mga utos ay larawan o kopya ng karakter ng Diyos.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "John 15: 10… Sa paglingon sa nakaraan, buong katiyakang nasabi ni Hesus: “Tinupad Ko ang mga utos ng Aking Ama.” Lagi Niyang ginawa ang mga bagay na nakalulugod sa Kanyang Ama (John 8: 29). “Hindi Siya nagkasala at walang daya na nasumpungan sa Kanyang bibig” (1 Peter 2: 22). Pinatunayan ng Kanyang buhay na walang kasalanan na sa tulong ng Diyos, maaari ring sundin ng mga tao ang mga utos.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Maiisip mo ba kung titingnan natin ang sistemang paghahain sa Lumang Tipan ngunit hindi makikita si Hesus saanman? Subukan nating alisin si Hesus sa sistema ng santuwaryo! Walang anumang bahagi nito ang magkakaroon ng tunay na saysay kung aalisin Siya sa larawan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Isaalang-alang ito: Marahil narinig mo nang ang mga tao sa Lumang Tipan ay naligtas sa pagsunod sa kautusan, samantalang sa Bagong Tipan ay naliligtas tayo sa biyaya. Hindi iyon tama! Hindi kailanman nagligtas ang mga gawa; tayo ay naliligtas sa pamamagitan ng biyaya at mga merito ni Cristo. Mula kay Adan hanggang ngayon, umaasa tayo sa krus ng Kalbaryo.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 3: 15-21… Narito ang unang pangako. Nang masumpungang hubad sina Adan at Eva, dinamitan sila ng Diyos. Dito nagsimula ang sistema ng paghahain. Dito unang ipinakita ng Diyos sa Kanyang mga nilalang kung paano Niya tutubusin ang nahulog na tao.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Mga damit na yari sa balat: Bago pinalabas sina Adan at Eva sa halamanan, binigyan sila ng Diyos ng mas matibay na damit na angkop sa mabigat na gawaing naghihintay sa kanila at bilang proteksiyon laban sa matinding init at lamig pagkatapos ng pagkahulog. Ang mga balat ay palagiang paalala rin ng nawalang kawalang-sala, ng kamatayan bilang kabayaran ng kasalanan, at ng ipinangakong Kordero ng Diyos na mag-aalis ng kasalanan ng sanlibutan sa pamamagitan ng Kanyang kamatayang kahalili. Siya na dating inatasang mangalaga sa mga hayop ay napilitang kitlin ang buhay ng isa sa mga ito. Kailangang mamatay ang mga hayop upang mabuhay ang tao.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Bagaman hindi tuwirang binanggit dito ang paglilingkod na paghahain, dito ito itinatag. Ipinakikita ng kuwento tungkol sa mga handog nina Cain at Abel sa susunod na kabanata na lubos na alam ng unang mga anak nina Adan at Eva ang ritwal. Kung hindi nagbigay ang Diyos ng tiyak na mga tagubilin tungkol sa mga handog, magiging arbitraryo ang Kanyang pagtanggap sa handog ni Abel at pagtanggi sa handog ni Cain. Ang hindi pag-akusa ni Cain sa Diyos ng pagkiling ay katibayang siya, gaya ng kanyang kapatid, ay nakaaalam ng hinihingi. Ang laganap na paghahandog ng mga hayop sa sinaunang panahon ay tumuturo sa iisang pinagmulan ng gawaing ito.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Sino si Hesus? (Ang Diyos ba sa Lumang Tipan ay malupit, at sa Bagong Tipan ay mabait?)",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Genesis 15: 1-7… Gumawa ang Diyos ng isang tipan kay Abraham at ipinakilala ang Kanyang sarili sa simpleng mga salitang: “AKO ANG IYONG KALASAG” at “AKO ANG PANGINOON,” na naglabas sa iyo mula sa Ur ng mga Caldeo.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Exodus 3: 14… Nagpakita ang Diyos kay Moises at muling ipinakilala ang Kanyang sarili bilang “AKO NGA.” Maaari nating sabihin na sa Biblia, ang natatanging pangalan o pagkakakilanlan ng Diyos ay “AKO NGA.”",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "John 8: 58… Alam ni Hesus kung ano ang magiging dating ng pahayag na ito. Alam Niyang lubhang pamilyar ang mga Judio sa kuwento ni Abraham at ng nagliliyab na palumpong. Para bang sinabi ni Hesus: “Naaalala ninyo ang Diyos na nakipag-usap sa inyong ama na si Moises? Ako iyon!”",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Numbers 21: 4-6… Ayon sa talatang ito, nagpadala ang Diyos ng maaapoy na ahas sa mga tumukso sa Kanya.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "1 Corinthians 10: 8-9… Binalikan ni Pablo ang panahon ni Moises bilang babala sa mga alagad. Pansinin na tinukoy niya si Cristo bilang ang Siyang tinukso!",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Si Hesus ang pinakadiwa ng Lumang Tipan. Naroon Siya sa Lumang Tipan sa anyo ng mga anino, tipo, at seremonya.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Exodus 17: 6… Sinabi ng Diyos ng Israel sa Lumang Tipan na hampasin ang bato, at Siya ang maglalaan ng tubig para sa Kanyang bayan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "1 Corinthians 10: 4… Inuugnay ni Pablo ang pakikitungo ng Diyos sa Kanyang bayan sa Lumang Tipan at ipinakikitang si Hesus ang nasa likod ng mga pangyayaring ito.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Nakalulungkot, hanggang ngayon ay hindi pa kinikilala ng bansang Judio ang kanilang ipinangakong Mesiyas. Maging sa panahon ni Pablo ay nararanasan niya ang hirap na maipaunawa ang Kasulatan sa mga Judio. Binanggit ni Pablo na si Cristo ang batong katitisuran sa kanila.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Luke 24: 27… Si Hesus Mismo ang naghayag na Siya ang pangunahing paksa ng Lumang Tipan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "2 Corinthians 3: 14… Inatasan si Pablo bilang lingkod ng bagong tipan, ngunit ang ministeryo niya sa mga Judio sa kanyang panahon ay hindi naging higit na mabisa kaysa sa ministeryo ni Moises noon. Ito ay dahil nananatili ang parehong “tabing” sa kanilang puso at isipan.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Tatlong yugto ng kaligtasan:",
+      "images": [],
+      "stage": [
+        "supplement",
+        "Paano nauugnay ang mga yugto ng kaligtasan?"
+      ]
+    },
+    {
+      "kind": "text",
+      "text": "Pag-aaring-ganap — kaparusahan — unang silid.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Pagpapabanal — kapangyarihan — ikalawang silid.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Pagluluwalhati — presensya — ikatlong bahagi.",
+      "images": [],
+      "stage": null
+    },
+    {
+      "kind": "text",
+      "text": "Pagtatanggol sa pananampalataya: Kapag naligtas na, ligtas na magpakailanman!",
+      "images": [],
+      "stage": [
+        "supplement",
+        "Maaari bang tanggihan ang kaligtasan?"
+      ]
+    },
+    {
+      "kind": "text",
+      "text": "John 10:27-28; 2 Peter 2:20-22; 1 Cor 9:27 — Si Satanas ay minsang nasa kalagayan ng kaligtasan.",
+      "images": [],
+      "stage": null
+    }
+  ],
+  "verses": [
+    "Genesis 3",
+    "Jer 29:13",
+    "Ps 77:13",
+    "Isaiah 59: 2",
+    "Genesis 3: 7-10",
+    "Gen 3:21",
+    "Hebrews 1: 9",
+    "Exodus 25: 8,9",
+    "John 1:14",
+    "Exodus 25: 22",
+    "Deuteronomy 10: 4-5",
+    "Leviticus 1: 1-5",
+    "Leviticus 17: 11",
+    "Rom 6:23",
+    "Hebrews 9: 22",
+    "1 John 3: 4",
+    "Hebrews 10: 1-4",
+    "Hebrews 10: 10",
+    "1 Peter 1: 19",
+    "John 1: 29",
+    "2 Corinthians 5: 17-21",
+    "Gal 2:20",
+    "Hebrews 6: 6",
+    "James 2:17-24",
+    "Ex. 25: 8",
+    "John 1: 29",
+    "Ex 27:1-8, 38:1-7",
+    "Ephesians 5: 2",
+    "John 1:29",
+    "Heb 10:10",
+    "Ex 30:18-21,38:8",
+    "1 Corinthians 6: 11",
+    "Titus 3: 5",
+    "Ex 25:31-39,37:17-24",
+    "Eph 2:10",
+    "John 8: 12",
+    "Revelation 1: 12",
+    "Rev 1: 20",
+    "Matthew 5: 14",
+    "Mat 5:14",
+    "Ex 25:23-30,37:10-16",
+    "John 6: 35",
+    "Matthew 4: 4",
+    "Revelation 10: 9",
+    "Exodus 30: 1-10",
+    "Psalm 141: 2",
+    "Ephesians 5: 2",
+    "Revelation 8: 3-4",
+    "Rom. 8: 34",
+    "1 John 2: 1",
+    "Psalm 141:2",
+    "Lev 16:15",
+    "John 15:10",
+    "Lev 16:15",
+    "Psalm 42: 9",
+    "2 Samuel 23: 2-3",
+    "Deuteronomy 32: 3-4",
+    "Isaiah 26: 4",
+    "Matthew 16: 18",
+    "1 Corinthians 10: 1-4",
+    "John 15: 10",
+    "John 8: 29",
+    "1 Peter 2: 22",
+    "Genesis 3: 15-21",
+    "Genesis 15: 1-7",
+    "Exodus 3: 14",
+    "John 8: 58",
+    "Numbers 21: 4-6",
+    "1 Corinthians 10: 8-9",
+    "Exodus 17: 6",
+    "1 Corinthians 10: 4",
+    "Luke 24: 27",
+    "2 Corinthians 3: 14",
+    "John 10:27-28",
+    "2 Peter 2:20-22",
+    "1 Cor 9:27"
+  ],
+  "application": "Lumapit ang Diyos upang ibalik ang ugnayang sinira ng kasalanan.",
+  "response": "Ano ang kahulugan para sa iyo ng pagnanais ng Diyos na manahan malapit sa iyo?"
+}
