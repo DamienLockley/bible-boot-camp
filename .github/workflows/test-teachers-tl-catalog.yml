@@ -1,0 +1,38 @@
+name: Validate Teachers Guide Tagalog Translation Inventory
+on:
+  push:
+    branches:
+      - teachers-guide-tl-v2-draft-20261124
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-alignment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate full Tagalog translation catalog
+        run: |
+          python teachers-guide-tl-v2-draft/prepare_tl_catalog.py \
+            --site teachers-guide \
+            --catalog /tmp/tg-tl-catalog.json --prepare
+      - name: Verify translation inventory covers every teaching unit
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('/tmp/tg-tl-catalog.json').read_text())
+          assert d['study_count']==28
+          assert d['unit_count']==2378, d['unit_count']
+          assert len(d['items'])>2400
+          assert len({x['source_id'] for x in d['items']})==len(d['items'])
+          print('Tagalog field inventory:',len(d['items']),'entries, across',d['study_count'],'studies and',d['unit_count'],'study items.')
+          PY
+      - name: Upload review translation catalog
+        uses: actions/upload-artifact@v4
+        with:
+          name: Teachers_Guide_TL_Translation_Catalog
+          path: /tmp/tg-tl-catalog.json
+          retention-days: 14
