@@ -472,7 +472,7 @@ def main():
     audit={
         "language":"tl",
         "build_inputs_sha256":fingerprint.hexdigest(),
-        "status":"unpublished_first_pass_review",
+        "status":"unpublished_recovered_sources_pending_native_review",
         **stats,
         "complete_study_units":True,
         "scripture_metadata_unchanged":True,
@@ -482,7 +482,7 @@ def main():
         "optional_daniel_contexts_translated":context_count,
         "source_truncation_warnings":tl_enrichments["translation_progress"]["source_warnings"],
         "supplementary_gtk_structure_verified":True,
-        "supporting_metadata_note":"All 28 GTKJ supplementary resources and 17 Daniel context candidates have first-pass Tagalog. Truncated English source excerpts are flagged; interface labels/PDFs need translation and QA.",
+        "supporting_metadata_note":"All 28 GTKJ supplementary resources and 17 Daniel context candidates have first-pass Tagalog. Eight incomplete Daniel source excerpts were recovered and their Tagalog endings translated; final native-speaker visual/content review and Tagalog PDFs remain outstanding.",
         "english_source_sha256":hashlib.sha256((ROOT/"study-data.json").read_bytes()).hexdigest(),
         "word_bytes":word.stat().st_size,
     }
