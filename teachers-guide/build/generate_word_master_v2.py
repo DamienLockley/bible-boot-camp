@@ -44,23 +44,34 @@ def page_number(p):
     run._r.addnext(fld)
 
 def safe_picture(paragraph, asset_path):
+    # The old converter sometimes gave WMF/EMF bytes a .jpg filename. In
+    # that case do NOT discard the illustration position or pretend it was
+    # converted. Give the editor an explicit editable replacement slot.
     if not asset_path.exists():
         raise ValueError(f"Missing study illustration: {asset_path}")
-    with Image.open(asset_path) as im:
-        im.seek(0)
-        im.load()
-        if im.width <= 0 or im.height <= 0:
-            raise ValueError("Invalid image: "+str(asset_path))
-        # Word does not support many GIF/WebP variants reliably; save to
-        # PNG *only inside the Word document*, preserving the site assets.
-        out = io.BytesIO()
-        if im.mode not in ("RGB", "RGBA"):
-            im = im.convert("RGBA")
-        im.save(out, format="PNG", optimize=True)
-        out.seek(0)
-        maxw = 6.0 if im.width < im.height else 6.5
-        paragraph.add_run().add_picture(out, width=Inches(maxw))
-    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    try:
+        with Image.open(asset_path) as im:
+            im.seek(0)
+            im.load()
+            if im.width <= 0 or im.height <= 0:
+                raise ValueError("Invalid image: "+str(asset_path))
+            # Save a valid PNG inside the DOCX without modifying site assets.
+            out = io.BytesIO()
+            if im.mode not in ("RGB", "RGBA"):
+                im = im.convert("RGBA")
+            im.save(out, format="PNG", optimize=True)
+            out.seek(0)
+            maxw = 6.0 if im.width < im.height else 6.5
+            paragraph.add_run().add_picture(out, width=Inches(maxw))
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        return True
+    except (OSError, ValueError, SyntaxError) as exc:
+        label = paragraph.add_run("[IMAGE TO REPLACE: "+asset_path.name+"]")
+        label.bold = True
+        label.font.color.rgb = RGBColor.from_string("986330")
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        print("IMAGE PLACEHOLDER:",asset_path.name,"—",str(exc))
+        return False
 
 def style_for(doc, name, hex_color, bold=False):
     styles = doc.styles
@@ -147,6 +158,7 @@ def make_doc(root):
 
     num_units=0
     num_images=0
+    num_embedded=0
     for i,(s,meta) in enumerate(zip(source,m)):
         if i: doc.add_page_break()
         groups=sorted(meta["groups"],key=lambda g:g["start"])
@@ -212,7 +224,7 @@ def make_doc(root):
             p=doc.add_paragraph(u["text"],style)
             if kind=="question" and p.runs: p.runs[0].bold=True
             for image in u.get("images",[]):
-                safe_picture(p,root/"assets"/image)
+                num_embedded+=int(safe_picture(p,root/"assets"/image))
                 num_images+=1
             num_units+=1
             idx+=1
@@ -224,6 +236,7 @@ def make_doc(root):
         raise ValueError(f"Teaching units mismatch: {num_units}")
     if num_images!=sum(len(u.get("images",[])) for s in source for u in s["units"]):
         raise ValueError(f"Image count mismatch: {num_images}")
+    print(f"Images: {num_embedded} embedded; {num_images-num_embedded} labelled replacement slots")
     return doc, num_units,num_images
 
 def main():
