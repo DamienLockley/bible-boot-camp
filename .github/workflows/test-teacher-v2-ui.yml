@@ -1,0 +1,23 @@
+name: Teachers Guide V2 UI regression checks
+on:
+  push:
+    branches: [teachers-guide-layout-feedback-20261124]
+  pull_request:
+    paths:
+      - 'teachers-guide/index.html'
+      - 'tests/teacher-v2-ui.test.cjs'
+      - '.github/workflows/test-teacher-v2-ui.yml'
+permissions:
+  contents: read
+jobs:
+  ui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated test DOM
+        run: npm install --no-save --no-package-lock jsdom@26
+      - name: Verify complete Teachers Guide V2 UI interactions
+        run: node tests/teacher-v2-ui.test.cjs
