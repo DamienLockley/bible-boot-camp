@@ -299,7 +299,41 @@ def main():
         if "caption" in t:
             t["caption"]="Talahanayan: "+translated[t["study_id"]]["title"]
     store(REVIEW/"table-layouts.json",tables)
-    for n in ("related-study-resources.json","main-pathway-enrichments.json","main-historical-notes.json"):
+    # The Tagalog supporting GTKJ material must exactly match the English
+    # structure. Never change citations, study IDs, link destinations or order.
+    original_resources=load(ROOT/"related-study-resources.json")
+    tl_resources=load(WORK/"related-study-resources.tl.draft.json")
+    if len(original_resources["items"])!=28 or len(tl_resources["items"])!=28:
+        raise ValueError("Supplementary resource study count changed")
+    if tl_resources.get("translation_progress",{}).get("completed_study_ids")!=list(range(28)):
+        raise ValueError("Supplementary resources are not translated for every study")
+    for i,(original,translation) in enumerate(zip(original_resources["items"],tl_resources["items"])):
+        for field in ("teacher_study_id","gtk_source_id"):
+            if original[field]!=translation[field]:
+                raise ValueError(f"Supporting study {i+1} changed {field}")
+        for field in ("gtk_connections","gtk_questions","deep_reading_links"):
+            if len(original[field])!=len(translation[field]):
+                raise ValueError(f"Supporting study {i+1} changed {field} count")
+        for j,(a,b) in enumerate(zip(original["gtk_connections"],translation["gtk_connections"])):
+            if a["scripture"]!=b["scripture"]:
+                raise ValueError(f"Supporting study {i+1} changed scripture {j}")
+        for j,(a,b) in enumerate(zip(original["deep_reading_links"],translation["deep_reading_links"])):
+            for field in ("source","href","anchor","passage"):
+                if a.get(field)!=b.get(field):
+                    raise ValueError(f"Supporting study {i+1} changed deep link {j}/{field}")
+        for field in ("gtk_lead","gtk_principle","gtk_practice"):
+            if not translation.get(field, "").strip() or original[field]==translation[field]:
+                raise ValueError(f"Supporting study {i+1} lacks translation for {field}")
+        for a,b in zip(original["gtk_connections"],translation["gtk_connections"]):
+            if not b["title"].strip() or not b["insight"].strip() or a["insight"]==b["insight"]:
+                raise ValueError(f"Supporting study {i+1} has untranslated connection")
+        for a,b in zip(original["gtk_questions"],translation["gtk_questions"]):
+            if not b["question"].strip() or not b["answer"].strip() or a["answer"]==b["answer"]:
+                raise ValueError(f"Supporting study {i+1} has untranslated question")
+    store(REVIEW/"related-study-resources.json",tl_resources)
+    # Historical notes and other enrichment panels still require their own
+    # Tagalog review. Preserve the sources instead of pretending they are done.
+    for n in ("main-pathway-enrichments.json","main-historical-notes.json"):
         shutil.copyfile(ROOT/n,REVIEW/n)
     html=prepare_html((ROOT/"index.html").read_text("utf-8"))
     (REVIEW/"index.html").write_text(html,encoding="utf-8")
@@ -322,7 +356,9 @@ def main():
         "scripture_metadata_unchanged":True,
         "study_order_unchanged":True,
         "supplemental_stages_preserved":True,
-        "supporting_metadata_note":"Supporting enrichment/resource prose still requires separate Tagalog verification.",
+        "supplementary_gtk_studies_translated":len(tl_resources["items"]),
+        "supplementary_gtk_structure_verified":True,
+        "supporting_metadata_note":"All 28 GTKJ supplementary resources translated first-pass; pathway-enrichment prose and remaining site interface still require Tagalog translation/review.",
         "english_source_sha256":hashlib.sha256((ROOT/"study-data.json").read_bytes()).hexdigest(),
         "word_bytes":word.stat().st_size,
     }
