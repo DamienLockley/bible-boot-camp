@@ -1,12 +1,14 @@
 name: Generate Teachers Guide V2 Tagalog
+# Manual recovery/testing only. Translation of the final V2 edition is being
+# prepared from the approved source by the passage-based Word-master process.
+# Do not launch expensive automated translation on repository pushes.
 on:
-  push:
-    paths:
-      - 'tools/build_teachers_v2_tagalog.py'
-      - '.github/workflows/teachers-v2-tl.yml'
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: teachers-v2-tl-generator
+  cancel-in-progress: true
 jobs:
   build-tl:
     runs-on: ubuntu-latest
@@ -20,8 +22,29 @@ jobs:
           python-version: '3.11'
       - name: Install translation and Word dependencies
         run: python -m pip install requests beautifulsoup4 python-docx pillow
+      - name: Restore translation cache from earlier builds
+        uses: actions/cache/restore@v4
+        with:
+          path: tools/.teacher-tl-cache.json
+          key: teachers-v2-tl-cache-${{ github.run_id }}
+          restore-keys: |
+            teachers-v2-tl-cache-
       - name: Translate all V2 studies and build Tagalog Word master
         run: python tools/build_teachers_v2_tagalog.py
+      - name: Save translated texts even if build validation fails
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: tools/.teacher-tl-cache.json
+          key: teachers-v2-tl-cache-${{ github.run_id }}
+      - name: Retain recovery cache as downloadable artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: teachers-tl-translation-checkpoint-${{ github.run_id }}
+          path: tools/.teacher-tl-cache.json
+          if-no-files-found: warn
+          retention-days: 14
       - name: Check language and structural consistency
         run: |
           python - <<'PY'

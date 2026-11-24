@@ -1,0 +1,88 @@
+name: Build Teachers Guide V2 Tagalog from approved V2 source
+# Disabled automatic translation: Daniel/Revelation translation is authored in
+# ChatGPT from the English Word master, not by GitHub Models in Actions.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  models: read
+concurrency:
+  group: teachers-v2-tl-ai
+  cancel-in-progress: false
+jobs:
+  translate-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      TEACHER_TL_MODEL: openai/gpt-4.1-mini
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install requests beautifulsoup4 python-docx pillow
+      - name: Check translation code syntax
+        run: python -m py_compile tools/build_teachers_v2_tl_ai.py
+      - name: Restore validated passage translations
+        uses: actions/cache/restore@v4
+        with:
+          path: tools/.teacher-v2-ai-tl-cache.json
+          key: teachers-v2-ai-passages-${{ github.run_id }}
+          restore-keys: |
+            teachers-v2-ai-passages-
+      - name: Translate V2 passages and generate Tagalog Word and HTML
+        run: python -u tools/build_teachers_v2_tl_ai.py
+      - name: Keep completed translation checkpoints
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: tools/.teacher-v2-ai-tl-cache.json
+          key: teachers-v2-ai-passages-${{ github.run_id }}
+      - name: Preserve recovery checkpoint as downloadable artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: teachers-v2-tl-ai-checkpoint
+          path: tools/.teacher-v2-ai-tl-cache.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Validate Tagalog V2 Word and HTML package
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from docx import Document
+          root=Path('teachers-guide')
+          e=json.loads((root/'study-data.json').read_text('utf-8'))['sections']
+          t=json.loads((root/'tl/study-data.json').read_text('utf-8'))['sections']
+          assert len(e)==len(t)==28
+          assert sum(len(s['units']) for s in e)==sum(len(s['units']) for s in t)==2378
+          assert all(a['id']==b['id'] and a['verses']==b['verses'] and
+                     len(a['units'])==len(b['units']) and
+                     [x['kind'] for x in a['units']]==[x['kind'] for x in b['units']]
+                     for a,b in zip(e,t))
+          h=(root/'tl/index.html').read_text('utf-8')
+          assert '<html lang="tl"' in h.lower()
+          assert '../../site-config.js' in h
+          assert './study-data.json' in h
+          assert '../kjv-verses.json' in h
+          word=Document(root/'Teachers_Guide_V2_TL_Master.docx')
+          assert sum(p.style.name=='Heading 1' for p in word.paragraphs)==28
+          assert sum(p.style.name=='TG Stage' for p in word.paragraphs)>=28
+          print('Word & HTML structural checks passed',flush=True)
+          PY
+      - name: Commit independent Tagalog release only after validation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add teachers-guide/tl teachers-guide/Teachers_Guide_V2_TL_Master.docx
+          if ! git diff --cached --quiet; then
+            git commit -m "Build Tagalog Teachers Guide V2 Word master and independent website"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
