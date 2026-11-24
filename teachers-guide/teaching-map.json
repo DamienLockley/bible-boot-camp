@@ -12,7 +12,7 @@
     {
       "id": 0,
       "title": "The Word of God",
-      "source_unit_count": 57,
+      "source_unit_count": 69,
       "purpose": "To show the Bible is trustworthy",
       "central_truth": "Claims ,Content & Consistency; God wants to commune with us",
       "intro_origin": "source",
@@ -20,65 +20,65 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 11,
+          "end": 14,
           "label": "The Bible's claim to inspiration"
         },
         {
           "kind": "core",
-          "start": 12,
-          "end": 17,
+          "start": 15,
+          "end": 23,
           "label": "Evidence — God's character"
         },
         {
           "kind": "core",
-          "start": 18,
-          "end": 34,
+          "start": 24,
+          "end": 43,
           "label": "Evidence — predictive prophecy"
         },
         {
           "kind": "core",
-          "start": 35,
-          "end": 39,
+          "start": 44,
+          "end": 48,
           "label": "Consistency — cultural"
         },
         {
           "kind": "core",
-          "start": 40,
-          "end": 43,
+          "start": 49,
+          "end": 52,
           "label": "Consistency — internal"
         },
         {
           "kind": "core",
-          "start": 44,
-          "end": 52,
+          "start": 53,
+          "end": 61,
           "label": "Consistency — manuscripts and translation"
         },
         {
           "kind": "core",
-          "start": 53,
-          "end": 55,
+          "start": 62,
+          "end": 64,
           "label": "Consistency — experiential"
         },
         {
           "kind": "core",
-          "start": 56,
-          "end": 56,
+          "start": 65,
+          "end": 68,
           "label": "Invitation to keep studying"
         }
       ],
       "application": {
         "text": "Scripture is an invitation to know God's character, not merely collect information.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "Would you like to keep discovering what Scripture reveals about God?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 1,
       "title": "The Great Controversy",
-      "source_unit_count": 105,
+      "source_unit_count": 115,
       "purpose": "To show there is a cosmic conflict between God and Satan, that planet Earth is its theatre and worship is its centre",
       "central_truth": "Origin of evil, Outworking of evil & Obsolescence (end) of evil.",
       "intro_origin": "source",
@@ -86,59 +86,59 @@
         {
           "kind": "core",
           "start": 4,
-          "end": 27,
+          "end": 30,
           "label": "Where did evil begin?"
         },
         {
           "kind": "core",
-          "start": 28,
-          "end": 39,
+          "start": 31,
+          "end": 45,
           "label": "The conflict over worship"
         },
         {
           "kind": "core",
-          "start": 40,
-          "end": 46,
+          "start": 46,
+          "end": 56,
           "label": "God's answer and the end of evil"
         },
         {
           "kind": "supplement",
-          "start": 47,
-          "end": 62,
+          "start": 57,
+          "end": 72,
           "label": "Why did God create Lucifer, and why did he rebel?"
         },
         {
           "kind": "supplement",
-          "start": 63,
-          "end": 75,
+          "start": 73,
+          "end": 85,
           "label": "Why does genuine love require freedom?"
         },
         {
           "kind": "supplement",
-          "start": 76,
-          "end": 90,
+          "start": 86,
+          "end": 100,
           "label": "Why does God allow evil to continue?"
         },
         {
           "kind": "supplement",
-          "start": 91,
-          "end": 104,
+          "start": 101,
+          "end": 114,
           "label": "How does the cross answer the controversy?"
         }
       ],
       "application": {
         "text": "Contrast God's love and compassion with coercion and rebellion.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What does the contrast between God's way and Satan's way show you about His character?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 2,
       "title": "The Work of the Holy Spirit",
-      "source_unit_count": 48,
+      "source_unit_count": 60,
       "purpose": "To show how the spirit works on you & in you to bring about conversion.",
       "central_truth": "The work of the Holy Spirit",
       "intro_origin": "source",
@@ -146,41 +146,41 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 12,
+          "end": 15,
           "label": "The Spirit convicts and guides"
         },
         {
           "kind": "core",
-          "start": 13,
-          "end": 25,
+          "start": 16,
+          "end": 31,
           "label": "The Spirit and God's Word"
         },
         {
           "kind": "core",
-          "start": 26,
-          "end": 39,
+          "start": 32,
+          "end": 48,
           "label": "New life in Christ"
         },
         {
           "kind": "core",
-          "start": 40,
-          "end": 47,
+          "start": 49,
+          "end": 59,
           "label": "The Spirit changes the heart"
         }
       ],
       "application": {
         "text": "Transformation involves the Spirit's work, not mere agreement with a doctrine.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "Where might you invite the Holy Spirit to lead you?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 3,
       "title": "The Sanctuary",
-      "source_unit_count": 126,
+      "source_unit_count": 138,
       "purpose": "To tell the story of redemption and reveal Gods plan to separate sinners from sin. (God is constant / Man is variable)",
       "central_truth": "Jesus. How God deals with the separation problem.",
       "intro_origin": "source",
@@ -188,71 +188,71 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 16,
+          "end": 19,
           "label": "The separation caused by sin"
         },
         {
           "kind": "core",
-          "start": 17,
-          "end": 28,
+          "start": 20,
+          "end": 34,
           "label": "God seeks to dwell with us"
         },
         {
           "kind": "core",
-          "start": 29,
-          "end": 46,
+          "start": 35,
+          "end": 55,
           "label": "The sanctuary points to Jesus"
         },
         {
           "kind": "core",
-          "start": 47,
-          "end": 55,
+          "start": 56,
+          "end": 67,
           "label": "Personal invitation and response"
         },
         {
           "kind": "supplement",
-          "start": 56,
-          "end": 71,
+          "start": 68,
+          "end": 83,
           "label": "What does the furniture represent?"
         },
         {
           "kind": "supplement",
-          "start": 72,
-          "end": 89,
+          "start": 84,
+          "end": 101,
           "label": "How do the furnishings point to Christ?"
         },
         {
           "kind": "supplement",
-          "start": 90,
-          "end": 119,
+          "start": 102,
+          "end": 131,
           "label": "What do the rooms and furnishings teach?"
         },
         {
           "kind": "supplement",
-          "start": 120,
-          "end": 123,
+          "start": 132,
+          "end": 135,
           "label": "How do the stages of salvation relate?"
         },
         {
           "kind": "supplement",
-          "start": 124,
-          "end": 125,
+          "start": 136,
+          "end": 137,
           "label": "Can salvation be rejected?"
         }
       ],
       "application": {
         "text": "God has moved toward us to restore the relationship damaged by sin.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What does God's desire to live close to you mean personally?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 4,
       "title": "The Plan of Salvation",
-      "source_unit_count": 62,
+      "source_unit_count": 77,
       "purpose": "To show that salvation is by Grace alone through faith alone to the Glory of God alone.",
       "central_truth": "The problem and the solution.",
       "intro_origin": "source",
@@ -260,47 +260,47 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 22,
+          "end": 25,
           "label": "Sin and our need"
         },
         {
           "kind": "core",
-          "start": 23,
-          "end": 36,
+          "start": 26,
+          "end": 42,
           "label": "God's love revealed at the cross"
         },
         {
           "kind": "core",
-          "start": 37,
-          "end": 47,
+          "start": 43,
+          "end": 56,
           "label": "What Jesus accomplished"
         },
         {
           "kind": "core",
-          "start": 48,
-          "end": 57,
+          "start": 57,
+          "end": 69,
           "label": "Receiving the gift"
         },
         {
           "kind": "core",
-          "start": 58,
-          "end": 61,
+          "start": 70,
+          "end": 76,
           "label": "An appropriate invitation"
         }
       ],
       "application": {
         "text": "Grace is received, not earned; the cross reveals God's love.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How might you respond to God's gift of grace?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 5,
       "title": "The Law",
-      "source_unit_count": 69,
+      "source_unit_count": 75,
       "purpose": "To demonstrate from scripture that God’s law is all about love and liberty, that is to be internally written rather than externally imposed and it is eternal.",
       "central_truth": "The Decalogue.",
       "intro_origin": "source",
@@ -308,47 +308,47 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 10,
+          "end": 13,
           "label": "The law of love and liberty"
         },
         {
           "kind": "core",
-          "start": 11,
-          "end": 16,
+          "start": 14,
+          "end": 22,
           "label": "Grace produces obedience from the heart"
         },
         {
           "kind": "supplement",
-          "start": 17,
-          "end": 35,
+          "start": 23,
+          "end": 41,
           "label": "Is the law still relevant under the new covenant?"
         },
         {
           "kind": "supplement",
-          "start": 36,
-          "end": 52,
+          "start": 42,
+          "end": 58,
           "label": "Does Christ as the end of the law abolish it?"
         },
         {
           "kind": "supplement",
-          "start": 53,
-          "end": 68,
+          "start": 59,
+          "end": 74,
           "label": "What does it mean to die to the law?"
         }
       ],
       "application": {
         "text": "Obedience is the fruit of salvation, not its price.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How would following Jesus from love differ from trying to earn His favour?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 6,
       "title": "Antichrist",
-      "source_unit_count": 362,
+      "source_unit_count": 372,
       "purpose": "To identify the person and principle of antichrist.",
       "central_truth": "Jesus is Christ and anyone who turns people from Jesus or attempts to occupy the place of Jesus is putting themselves in the place of Christ and is antichrist. Jesus only is our guide and anything and everything that scatters from him is antichrist.",
       "intro_origin": "source",
@@ -356,95 +356,95 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 8,
+          "end": 11,
           "label": "The meaning and spirit of antichrist"
         },
         {
           "kind": "core",
-          "start": 9,
-          "end": 15,
+          "start": 12,
+          "end": 22,
           "label": "Daniel 7 and identifying characteristics"
         },
         {
           "kind": "core",
-          "start": 16,
-          "end": 19,
+          "start": 23,
+          "end": 29,
           "label": "Keeping Jesus at the centre"
         },
         {
           "kind": "supplement",
-          "start": 20,
-          "end": 33,
+          "start": 30,
+          "end": 43,
           "label": "Does anti mean against or in place of?"
         },
         {
           "kind": "supplement",
-          "start": 34,
-          "end": 85,
+          "start": 44,
+          "end": 95,
           "label": "What are the issues of worship and obedience?"
         },
         {
           "kind": "supplement",
-          "start": 86,
-          "end": 120,
+          "start": 96,
+          "end": 130,
           "label": "How are the beasts and prophetic symbols interpreted?"
         },
         {
           "kind": "supplement",
-          "start": 121,
-          "end": 174,
+          "start": 131,
+          "end": 184,
           "label": "What historical identifying characteristics are discussed?"
         },
         {
           "kind": "supplement",
-          "start": 175,
-          "end": 209,
+          "start": 185,
+          "end": 219,
           "label": "Who were the ten horns and divided kingdoms?"
         },
         {
           "kind": "supplement",
-          "start": 210,
-          "end": 230,
+          "start": 220,
+          "end": 240,
           "label": "What authority claims are cited?"
         },
         {
           "kind": "supplement",
-          "start": 231,
-          "end": 254,
+          "start": 241,
+          "end": 264,
           "label": "What sources discuss persecution and prophetic time?"
         },
         {
           "kind": "supplement",
-          "start": 255,
-          "end": 319,
+          "start": 265,
+          "end": 329,
           "label": "What claims about papal authority are quoted?"
         },
         {
           "kind": "supplement",
-          "start": 320,
-          "end": 326,
+          "start": 330,
+          "end": 336,
           "label": "What is said about forgiveness of sins?"
         },
         {
           "kind": "supplement",
-          "start": 327,
-          "end": 361,
+          "start": 337,
+          "end": 371,
           "label": "How can the teacher mark Bible references?"
         }
       ],
       "application": {
         "text": "Keep loyalty to Jesus central, without directing hostility toward individual believers.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What would keeping Christ at the centre of your faith look like?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 7,
       "title": "The Seventy Week Prophecy",
-      "source_unit_count": 104,
+      "source_unit_count": 115,
       "purpose": "To reveal the absolutely compelling evidence that Jesus Christ is the Messiah! To draw attention to an ancient prophecy that’s gives the key to unlock the most significant event this world has ever witnessed.",
       "central_truth": "Daniel 9.",
       "intro_origin": "source",
@@ -452,53 +452,53 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 16,
+          "end": 20,
           "label": "The prophecy and its purpose"
         },
         {
           "kind": "core",
-          "start": 17,
-          "end": 36,
+          "start": 21,
+          "end": 44,
           "label": "The Messiah and prophetic milestones"
         },
         {
           "kind": "core",
-          "start": 37,
-          "end": 54,
+          "start": 45,
+          "end": 65,
           "label": "Fulfilment and gospel proclamation"
         },
         {
           "kind": "supplement",
-          "start": 55,
-          "end": 65,
+          "start": 66,
+          "end": 76,
           "label": "What other evidence and details are given?"
         },
         {
           "kind": "supplement",
-          "start": 66,
-          "end": 80,
+          "start": 77,
+          "end": 91,
           "label": "How does Stephen's ministry connect?"
         },
         {
           "kind": "supplement",
-          "start": 81,
-          "end": 103,
+          "start": 92,
+          "end": 114,
           "label": "How do Daniel 8 and 9 connect?"
         }
       ],
       "application": {
         "text": "Prophecy is intended to strengthen confidence in Jesus as Messiah.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How do these Bible connections affect your confidence in Christ?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 8,
       "title": "Historicity of Jesus",
-      "source_unit_count": 53,
+      "source_unit_count": 62,
       "purpose": "To examine non-Christian historical references to Jesus and the evidence for His ministry and the early Christian movement.",
       "central_truth": "Historical sources and evidence surrounding the person of Jesus.",
       "intro_origin": "proposed",
@@ -506,47 +506,47 @@
         {
           "kind": "core",
           "start": 1,
-          "end": 16,
+          "end": 19,
           "label": "Non-Christian Greco-Roman sources"
         },
         {
           "kind": "core",
-          "start": 17,
-          "end": 28,
+          "start": 20,
+          "end": 34,
           "label": "Ancient Jewish sources"
         },
         {
           "kind": "core",
-          "start": 29,
-          "end": 40,
+          "start": 35,
+          "end": 49,
           "label": "What these sources say about Jesus"
         },
         {
           "kind": "supplement",
-          "start": 41,
-          "end": 46,
+          "start": 50,
+          "end": 55,
           "label": "How does this relate to holiness and salvation?"
         },
         {
           "kind": "supplement",
-          "start": 47,
-          "end": 52,
+          "start": 56,
+          "end": 61,
           "label": "Five points of Calvinism (placement for review)"
         }
       ],
       "application": {
         "text": "Examine historical evidence carefully without fearing honest questions.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "Would you like to examine the Gospels in the light of these historical sources?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 9,
       "title": "The Judgement",
-      "source_unit_count": 69,
+      "source_unit_count": 79,
       "purpose": "The Judgement is to vindicate the Character of God.",
       "central_truth": "In the Judgement, God is really on trial and not just us.",
       "intro_origin": "source",
@@ -554,35 +554,35 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 43,
+          "end": 46,
           "label": "Why judgement reveals God's character"
         },
         {
           "kind": "core",
-          "start": 44,
-          "end": 59,
+          "start": 47,
+          "end": 66,
           "label": "The stages and participants of judgement"
         },
         {
           "kind": "core",
-          "start": 60,
-          "end": 68,
+          "start": 67,
+          "end": 78,
           "label": "The standard and Christ's role"
         }
       ],
       "application": {
         "text": "Consider the fairness and openness of God's judgement alongside Jesus' saving work.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What does God's commitment to justice mean to you?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 10,
       "title": "1844",
-      "source_unit_count": 82,
+      "source_unit_count": 96,
       "purpose": "To show that the judgement is the culmination of the cross and that the final phase of Christs ministry in the heavenly sanctuary began in 1844.",
       "central_truth": "The climax of the Gospel.",
       "intro_origin": "source",
@@ -590,41 +590,41 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 20,
+          "end": 24,
           "label": "Sanctuary and Day of Atonement"
         },
         {
           "kind": "core",
-          "start": 21,
-          "end": 40,
+          "start": 25,
+          "end": 48,
           "label": "Christ's heavenly ministry"
         },
         {
           "kind": "core",
-          "start": 41,
-          "end": 46,
+          "start": 49,
+          "end": 58,
           "label": "The gospel significance"
         },
         {
           "kind": "supplement",
-          "start": 47,
-          "end": 81,
+          "start": 59,
+          "end": 95,
           "label": "How do Daniel 2, 7, 8 and 9 compare—and what does the 1844 controversy involve?"
         }
       ],
       "application": {
         "text": "Jesus' ministry is presented as an expression of God's commitment to salvation and justice.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How does Christ's continuing ministry encourage your trust?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 11,
       "title": "America in Bible Prophecy",
-      "source_unit_count": 181,
+      "source_unit_count": 187,
       "purpose": "To identify the second beast of Revelation 13.",
       "central_truth": "The identification characteristics.",
       "intro_origin": "source",
@@ -632,59 +632,59 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 16,
+          "end": 19,
           "label": "The second beast"
         },
         {
           "kind": "core",
-          "start": 17,
-          "end": 39,
+          "start": 20,
+          "end": 45,
           "label": "Religion, government and freedom"
         },
         {
           "kind": "supplement",
-          "start": 40,
-          "end": 69,
+          "start": 46,
+          "end": 75,
           "label": "What quotations concern religion and government?"
         },
         {
           "kind": "supplement",
-          "start": 70,
-          "end": 112,
+          "start": 76,
+          "end": 118,
           "label": "What is said about church and state?"
         },
         {
           "kind": "supplement",
-          "start": 113,
-          "end": 139,
+          "start": 119,
+          "end": 145,
           "label": "What is the historical Holy Office discussion?"
         },
         {
           "kind": "supplement",
-          "start": 140,
-          "end": 166,
+          "start": 146,
+          "end": 172,
           "label": "What is quoted about Sunday?"
         },
         {
           "kind": "supplement",
-          "start": 167,
-          "end": 180,
+          "start": 173,
+          "end": 186,
           "label": "What other political quotations are included?"
         }
       ],
       "application": {
         "text": "True worship involves freedom of conscience rather than coercion.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How can we respect conscience while remaining faithful to our convictions?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 12,
       "title": "The Blue Stone:",
-      "source_unit_count": 24,
+      "source_unit_count": 33,
       "purpose": "To explore the links presented between sanctuary imagery, prophecy and God's law, leading to our need of Jesus.",
       "central_truth": "The law reveals God's righteousness and our need of a Saviour; obedience responds to grace.",
       "intro_origin": "proposed",
@@ -692,35 +692,35 @@
         {
           "kind": "core",
           "start": 1,
-          "end": 5,
+          "end": 8,
           "label": "Prophetic symbols in Revelation 17"
         },
         {
           "kind": "core",
-          "start": 6,
-          "end": 14,
+          "start": 9,
+          "end": 20,
           "label": "Sanctuary colours and imagery"
         },
         {
           "kind": "core",
-          "start": 15,
-          "end": 23,
+          "start": 21,
+          "end": 32,
           "label": "God's law leads us to Jesus"
         }
       ],
       "application": {
         "text": "God's law reveals our need of Christ; it does not replace His grace.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How does the law point you toward Jesus rather than self-reliance?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 13,
       "title": "The Sabbath",
-      "source_unit_count": 135,
+      "source_unit_count": 144,
       "purpose": "To demonstrate from scripture that the Sabbath is a memorial of both salvation & creation.",
       "central_truth": "Jesus came to our world as the creator to re-create humanity in God’s image. By his life and death he finished the work of salvation and rested in the tomb on the Sabbath.",
       "intro_origin": "source",
@@ -728,65 +728,65 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 11,
+          "end": 14,
           "label": "Sabbath and Creation"
         },
         {
           "kind": "core",
-          "start": 12,
-          "end": 23,
+          "start": 15,
+          "end": 29,
           "label": "Creation, re-creation and salvation"
         },
         {
           "kind": "core",
-          "start": 24,
-          "end": 42,
+          "start": 30,
+          "end": 51,
           "label": "Worship and seventh-day rest"
         },
         {
           "kind": "supplement",
-          "start": 43,
-          "end": 59,
+          "start": 52,
+          "end": 68,
           "label": "What early Christian sources discuss Sunday?"
         },
         {
           "kind": "supplement",
-          "start": 60,
-          "end": 69,
+          "start": 69,
+          "end": 78,
           "label": "What does Acts 20:7 mean?"
         },
         {
           "kind": "supplement",
-          "start": 70,
-          "end": 95,
+          "start": 79,
+          "end": 104,
           "label": "How are the difficult passages interpreted?"
         },
         {
           "kind": "supplement",
-          "start": 96,
-          "end": 119,
+          "start": 105,
+          "end": 128,
           "label": "What about Colossians and other texts?"
         },
         {
           "kind": "supplement",
-          "start": 120,
-          "end": 134,
+          "start": 129,
+          "end": 143,
           "label": "What does the historical appendix say?"
         }
       ],
       "application": {
         "text": "Sabbath rest points to our Creator and Redeemer, not earned salvation.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How might time with God deepen your relationship with Him?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 14,
       "title": "The Second Coming",
-      "source_unit_count": 37,
+      "source_unit_count": 43,
       "purpose": "To show that the second coming of Christ is the pinnacle of salvation history and that it is literal, visible, audible and POWERFUL.",
       "central_truth": "Jesus is coming to restore to deliver and to make an end of sin, pain and death.",
       "intro_origin": "source",
@@ -794,41 +794,41 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 10,
+          "end": 13,
           "label": "The promise of Christ's return"
         },
         {
           "kind": "core",
-          "start": 11,
-          "end": 17,
+          "start": 14,
+          "end": 23,
           "label": "What happens at His coming?"
         },
         {
           "kind": "supplement",
-          "start": 18,
-          "end": 29,
+          "start": 24,
+          "end": 35,
           "label": "Will the coming be literal, visible and audible?"
         },
         {
           "kind": "supplement",
-          "start": 30,
-          "end": 36,
+          "start": 36,
+          "end": 42,
           "label": "What about coming as a thief?"
         }
       ],
       "application": {
         "text": "Christ's return offers hope that suffering and evil will end.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How does the promise of Jesus' return affect your hope?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 15,
       "title": "The Nature of Man",
-      "source_unit_count": 41,
+      "source_unit_count": 50,
       "purpose": "To show that man does not possess immortality, life is found in Christ alone. To identify man’s soul and what happens when we die.",
       "central_truth": "Jesus holds the keys of hell and death that unlocks the mystery of these important subjects. Jesus’ death loses its mystery and its sting and becomes a blessed rest on the journey home.",
       "intro_origin": "source",
@@ -836,41 +836,41 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 18,
+          "end": 21,
           "label": "What is a living soul?"
         },
         {
           "kind": "core",
-          "start": 19,
-          "end": 28,
+          "start": 22,
+          "end": 34,
           "label": "How Scripture describes death"
         },
         {
           "kind": "core",
-          "start": 29,
-          "end": 30,
+          "start": 35,
+          "end": 39,
           "label": "Hope in the resurrection"
         },
         {
           "kind": "supplement",
-          "start": 31,
-          "end": 40,
+          "start": 40,
+          "end": 49,
           "label": "How should difficult passages about death be understood?"
         }
       ],
       "application": {
         "text": "Hope in life after death rests in Christ and His resurrection promise.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How does the resurrection promise speak to your experience of loss?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 16,
       "title": "The Mark of the Beast",
-      "source_unit_count": 188,
+      "source_unit_count": 195,
       "purpose": "To identify the Beast and its Mark.",
       "central_truth": "Jesus alone is worthy of our Worship and Allegiance, for he is our God, Creator and Redeemer.",
       "intro_origin": "source",
@@ -878,65 +878,65 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 14,
+          "end": 18,
           "label": "Worship and the mark"
         },
         {
           "kind": "core",
-          "start": 15,
-          "end": 16,
+          "start": 19,
+          "end": 23,
           "label": "An appeal to follow Christ"
         },
         {
           "kind": "supplement",
-          "start": 17,
-          "end": 36,
+          "start": 24,
+          "end": 43,
           "label": "What does the symbolism mean?"
         },
         {
           "kind": "supplement",
-          "start": 37,
-          "end": 75,
+          "start": 44,
+          "end": 82,
           "label": "What sources discuss the Sabbath and Sunday?"
         },
         {
           "kind": "supplement",
-          "start": 76,
-          "end": 110,
+          "start": 83,
+          "end": 117,
           "label": "What denominational statements are quoted?"
         },
         {
           "kind": "supplement",
-          "start": 111,
-          "end": 144,
+          "start": 118,
+          "end": 151,
           "label": "What other historical sources are cited?"
         },
         {
           "kind": "supplement",
-          "start": 145,
-          "end": 170,
+          "start": 152,
+          "end": 177,
           "label": "What claims are made about enforcement?"
         },
         {
           "kind": "supplement",
-          "start": 171,
-          "end": 187,
+          "start": 178,
+          "end": 194,
           "label": "What else does the historical appendix contain?"
         }
       ],
       "application": {
         "text": "Allegiance to Jesus matters more than condemnation of other people.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "Whose authority do you trust when your convictions are challenged?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 17,
       "title": "The Millennium",
-      "source_unit_count": 38,
+      "source_unit_count": 50,
       "purpose": "To explain millennium and purpose – What happens during and after it.",
       "central_truth": "The Goodness of God, seen at the cross is demonstrated in the Millennium Judgement.",
       "intro_origin": "source",
@@ -944,41 +944,41 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 11,
+          "end": 14,
           "label": "Why a millennium?"
         },
         {
           "kind": "core",
-          "start": 12,
-          "end": 22,
+          "start": 15,
+          "end": 28,
           "label": "Coming and resurrection"
         },
         {
           "kind": "core",
-          "start": 23,
-          "end": 31,
+          "start": 29,
+          "end": 40,
           "label": "The thousand years"
         },
         {
           "kind": "core",
-          "start": 32,
-          "end": 37,
+          "start": 41,
+          "end": 49,
           "label": "The end of the conflict"
         }
       ],
       "application": {
         "text": "God's final resolution of evil is presented as fair and transparent.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What picture of God's fairness emerges from this study?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 18,
       "title": "Hell – Is God a Sadist?",
-      "source_unit_count": 112,
+      "source_unit_count": 124,
       "purpose": "To show that the purpose of Hell is to destroy sin forever.",
       "central_truth": "God’s righteousness.",
       "intro_origin": "source",
@@ -986,71 +986,71 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 16,
+          "end": 19,
           "label": "What does Scripture say about hell?"
         },
         {
           "kind": "core",
-          "start": 17,
-          "end": 34,
+          "start": 20,
+          "end": 40,
           "label": "When and how judgement occurs"
         },
         {
           "kind": "core",
-          "start": 35,
-          "end": 45,
+          "start": 41,
+          "end": 54,
           "label": "God's character and the end of sin"
         },
         {
           "kind": "core",
-          "start": 46,
-          "end": 51,
+          "start": 55,
+          "end": 63,
           "label": "An appeal grounded in mercy"
         },
         {
           "kind": "supplement",
-          "start": 52,
-          "end": 67,
+          "start": 64,
+          "end": 79,
           "label": "What about the rich man and Lazarus?"
         },
         {
           "kind": "supplement",
-          "start": 68,
-          "end": 75,
+          "start": 80,
+          "end": 87,
           "label": "Does forever always mean endless duration?"
         },
         {
           "kind": "supplement",
-          "start": 76,
-          "end": 79,
+          "start": 88,
+          "end": 91,
           "label": "What about the worm?"
         },
         {
           "kind": "supplement",
-          "start": 80,
-          "end": 81,
+          "start": 92,
+          "end": 93,
           "label": "Are there spirits in hell?"
         },
         {
           "kind": "supplement",
-          "start": 82,
-          "end": 111,
+          "start": 94,
+          "end": 123,
           "label": "What does the great gulf mean?"
         }
       ],
       "application": {
         "text": "God's judgement should be considered alongside His desire to end suffering.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What picture of God's character emerges from these passages?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 19,
       "title": "The Gift of Prophecy",
-      "source_unit_count": 92,
+      "source_unit_count": 104,
       "purpose": "To show how God does everything in his power to guide us thru the gift of prophecy.",
       "central_truth": "Jesus Christ gives the right message at the right time.",
       "intro_origin": "source",
@@ -1058,53 +1058,53 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 13,
+          "end": 16,
           "label": "Why God sends prophets"
         },
         {
           "kind": "core",
-          "start": 14,
-          "end": 51,
+          "start": 17,
+          "end": 57,
           "label": "A pattern of prophetic guidance"
         },
         {
           "kind": "core",
-          "start": 52,
-          "end": 68,
+          "start": 58,
+          "end": 77,
           "label": "Testing prophetic claims"
         },
         {
           "kind": "core",
-          "start": 69,
-          "end": 70,
+          "start": 78,
+          "end": 82,
           "label": "Responding to God's guidance"
         },
         {
           "kind": "supplement",
-          "start": 71,
-          "end": 79,
+          "start": 83,
+          "end": 91,
           "label": "Can women be prophets?"
         },
         {
           "kind": "supplement",
-          "start": 80,
-          "end": 91,
+          "start": 92,
+          "end": 103,
           "label": "How should prophetic writings be tested?"
         }
       ],
       "application": {
         "text": "Prophetic guidance must deepen trust in Jesus and be tested against Scripture.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How can you be open to guidance while remaining grounded in the Bible?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 20,
       "title": "The Remnant Church",
-      "source_unit_count": 90,
+      "source_unit_count": 102,
       "purpose": "To Discover which Church is theremnant church of the last days.",
       "central_truth": "Since JESUS gives his life his sheep follow him wherever he goes.",
       "intro_origin": "source",
@@ -1112,53 +1112,53 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 15,
+          "end": 18,
           "label": "Christ gathers His flock"
         },
         {
           "kind": "core",
-          "start": 16,
-          "end": 34,
+          "start": 19,
+          "end": 40,
           "label": "Symbols and God's people"
         },
         {
           "kind": "core",
-          "start": 35,
-          "end": 53,
+          "start": 41,
+          "end": 62,
           "label": "Identifying characteristics"
         },
         {
           "kind": "core",
-          "start": 54,
-          "end": 56,
+          "start": 63,
+          "end": 68,
           "label": "Responding to Christ"
         },
         {
           "kind": "supplement",
-          "start": 57,
-          "end": 71,
+          "start": 69,
+          "end": 83,
           "label": "What difficult texts concern the church?"
         },
         {
           "kind": "supplement",
-          "start": 72,
-          "end": 89,
+          "start": 84,
+          "end": 101,
           "label": "What historical events relate to 1798?"
         }
       ],
       "application": {
         "text": "Belonging to God's people means following Jesus and treating others with love.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What does it mean to follow the Shepherd wherever He leads?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 21,
       "title": "Christian living",
-      "source_unit_count": 56,
+      "source_unit_count": 68,
       "purpose": "To explore the topic of adornment and to find out how much is too much.",
       "central_truth": "Jewellery and other associated material.",
       "intro_origin": "source",
@@ -1166,41 +1166,41 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 13,
+          "end": 16,
           "label": "Identity and inner change"
         },
         {
           "kind": "core",
-          "start": 14,
-          "end": 30,
+          "start": 17,
+          "end": 36,
           "label": "Adornment and priorities"
         },
         {
           "kind": "core",
-          "start": 31,
-          "end": 52,
+          "start": 37,
+          "end": 61,
           "label": "Humility and witness"
         },
         {
           "kind": "core",
-          "start": 53,
-          "end": 55,
+          "start": 62,
+          "end": 67,
           "label": "Christ our example"
         }
       ],
       "application": {
         "text": "Christian choices should flow from a changed heart rather than mere appearance.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What priorities might Christ be inviting you to reconsider?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 22,
       "title": "Prayer",
-      "source_unit_count": 37,
+      "source_unit_count": 49,
       "purpose": "Prayer is powerful, effectual, and necessary for the disciple of Christ. There are certain conditions that will ensure that our prayers are heard.",
       "central_truth": "Prayer is how we communicate with our saviour.",
       "intro_origin": "source",
@@ -1208,53 +1208,53 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 10,
+          "end": 13,
           "label": "Jesus' example of prayer"
         },
         {
           "kind": "core",
-          "start": 11,
-          "end": 19,
+          "start": 14,
+          "end": 25,
           "label": "Faith and God's will"
         },
         {
           "kind": "core",
-          "start": 20,
-          "end": 24,
+          "start": 26,
+          "end": 33,
           "label": "A life of prayer"
         },
         {
           "kind": "core",
-          "start": 25,
-          "end": 28,
+          "start": 34,
+          "end": 40,
           "label": "An invitation to pray"
         },
         {
           "kind": "supplement",
-          "start": 29,
-          "end": 31,
+          "start": 41,
+          "end": 43,
           "label": "Does posture matter in prayer?"
         },
         {
           "kind": "supplement",
-          "start": 32,
-          "end": 36,
+          "start": 44,
+          "end": 48,
           "label": "What about faith and unanswered prayer?"
         }
       ],
       "application": {
         "text": "Prayer is trustful relationship with God, not a method of controlling outcomes.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What would you like to bring to God in prayer?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 23,
       "title": "Health",
-      "source_unit_count": 86,
+      "source_unit_count": 98,
       "purpose": "To show our bodies are the temple of the Holy Spirit. As our creator, redeemer and father, God is intimately concerned with the health of the whole person-body, mind & spirit.",
       "central_truth": "Jesus Christ came so that we may have life & life more abundantly.",
       "intro_origin": "source",
@@ -1262,59 +1262,59 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 13,
+          "end": 16,
           "label": "Health and the whole person"
         },
         {
           "kind": "core",
-          "start": 14,
-          "end": 23,
+          "start": 17,
+          "end": 29,
           "label": "God's original plan"
         },
         {
           "kind": "core",
-          "start": 24,
-          "end": 45,
+          "start": 30,
+          "end": 54,
           "label": "Nutrition and care"
         },
         {
           "kind": "core",
-          "start": 46,
-          "end": 52,
+          "start": 55,
+          "end": 64,
           "label": "Temperance"
         },
         {
           "kind": "supplement",
-          "start": 53,
-          "end": 63,
+          "start": 65,
+          "end": 75,
           "label": "What about ritual cleanliness?"
         },
         {
           "kind": "supplement",
-          "start": 64,
-          "end": 79,
+          "start": 76,
+          "end": 91,
           "label": "What passages discuss wine?"
         },
         {
           "kind": "supplement",
-          "start": 80,
-          "end": 85,
+          "start": 92,
+          "end": 97,
           "label": "What about Paul's advice and dietary liberty?"
         }
       ],
       "application": {
         "text": "Caring for health expresses gratitude and stewardship rather than human worth.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What practical step toward healthier living would you consider?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 24,
       "title": "Baptism",
-      "source_unit_count": 38,
+      "source_unit_count": 47,
       "purpose": "To show the ritual/ceremony of Baptism is a symbol of the turning away from sin and a turning to the Lord.",
       "central_truth": "Baptism by immersion.",
       "intro_origin": "source",
@@ -1322,41 +1322,41 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 20,
+          "end": 23,
           "label": "The example and meaning of baptism"
         },
         {
           "kind": "core",
-          "start": 21,
-          "end": 30,
+          "start": 24,
+          "end": 36,
           "label": "Repentance and discipleship"
         },
         {
           "kind": "core",
-          "start": 31,
-          "end": 33,
+          "start": 37,
+          "end": 42,
           "label": "Invitation to follow Christ"
         },
         {
           "kind": "supplement",
-          "start": 34,
-          "end": 37,
+          "start": 43,
+          "end": 46,
           "label": "What about baptism objections?"
         }
       ],
       "application": {
         "text": "Baptism represents turning from sin and beginning a life of discipleship.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What further step of following Jesus might you take?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 25,
       "title": "The Godhead",
-      "source_unit_count": 47,
+      "source_unit_count": 53,
       "purpose": "To show the Father, Son and the Holy Spirit are a unity of 3 co-eternal persons.",
       "central_truth": "Jesus, Love and unity",
       "intro_origin": "source",
@@ -1364,35 +1364,35 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 17,
+          "end": 20,
           "label": "The Father and the Son"
         },
         {
           "kind": "core",
-          "start": 18,
-          "end": 34,
+          "start": 21,
+          "end": 40,
           "label": "The Spirit and the unity of the Godhead"
         },
         {
           "kind": "supplement",
-          "start": 35,
-          "end": 46,
+          "start": 41,
+          "end": 52,
           "label": "What does Scripture say about Christ's divinity?"
         }
       ],
       "application": {
         "text": "Knowledge about the Godhead should deepen love, worship and trust.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "What have you discovered about the Father, Son and Holy Spirit?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 26,
       "title": "Stewardship",
-      "source_unit_count": 22,
+      "source_unit_count": 31,
       "purpose": "Everything belongs to God; as stewards we are responsible to Him for all that He has entrusted to us.",
       "central_truth": "Jesus Christ gave all for us and calls us to be fully surrendered to Him.",
       "intro_origin": "source",
@@ -1400,35 +1400,35 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 9,
+          "end": 12,
           "label": "Everything belongs to God"
         },
         {
           "kind": "core",
-          "start": 10,
-          "end": 16,
+          "start": 13,
+          "end": 22,
           "label": "Stewardship and faithful giving"
         },
         {
           "kind": "core",
-          "start": 17,
-          "end": 21,
+          "start": 23,
+          "end": 30,
           "label": "Following Jesus' example"
         }
       ],
       "application": {
         "text": "Stewardship reflects gratitude for what God has entrusted to us.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "How might God's generosity change your use of resources and time?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     },
     {
       "id": 27,
       "title": "Witnessing",
-      "source_unit_count": 17,
+      "source_unit_count": 26,
       "purpose": "To show that every true disciple of Christ is born into the kingdom of God as a missionary.",
       "central_truth": "Jesus.",
       "intro_origin": "source",
@@ -1436,29 +1436,29 @@
         {
           "kind": "core",
           "start": 3,
-          "end": 9,
+          "end": 12,
           "label": "Called to witness"
         },
         {
           "kind": "core",
-          "start": 10,
-          "end": 14,
+          "start": 13,
+          "end": 20,
           "label": "Sharing what Christ has done"
         },
         {
           "kind": "core",
-          "start": 15,
-          "end": 16,
+          "start": 21,
+          "end": 25,
           "label": "A personal invitation to serve"
         }
       ],
       "application": {
         "text": "Witnessing flows from personally knowing and following Jesus.",
-        "origin": "proposed"
+        "origin": "Word master"
       },
       "response": {
         "text": "Who might benefit from hearing what Jesus has done in your life?",
-        "origin": "proposed"
+        "origin": "Word master"
       }
     }
   ]
