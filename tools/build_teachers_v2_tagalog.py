@@ -14,7 +14,8 @@ OUT=BASE/'tl'
 NAMES=['study-data.json','teaching-map.json','main-pathway-enrichments.json','main-historical-notes.json','related-study-resources.json','table-layouts.json']
 SKIP={'id','kind','type','images','image','url','href','slug','status','source','sources',
 'source_blob_sha','source_versions','source_sites','source_unit_count','study_id',
-'start','end','path','filename','file','class','tag','hash','anchor','review_status'}
+'start','end','path','filename','file','class','tag','hash','anchor','review_status',
+'verses','scripture_ref','verse_reference','reference','references','chapter_verse'}
 REF=re.compile(r'\b(?:(?:[1-3]\s*)?(?:Gen(?:esis)?|Ex(?:odus)?|Lev(?:iticus)?|Num(?:bers)?|Deut(?:eronomy)?|Joshua|Judges|Ruth|Samuel|Kings|Chronicles|Ezra|Nehemiah|Esther|Job|Psalms?|Proverbs|Ecclesiastes|Isaiah|Jeremiah|Ezekiel|Daniel|Hosea|Joel|Amos|Jonah|Micah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|Corinthians|Galatians|Ephesians|Philippians|Colossians|Thessalonians|Timothy|Titus|Hebrews|James|Peter|Jude|Revelation|Rev|Ps|Isa|Dan|Matt?|Cor|Tim|Pet|Gen|Ex|Rom))\.?\s+\d+(?::\d+(?:[-–]\d+)?)?',re.I)
 LABELS={'Teachers’ Guide':'Gabay ng mga Guro',"Teacher's Guide":'Gabay ng mga Guro',
 'Study Library':'Aklatan ng mga Pag-aaral','Guided Teaching':'Gabay sa Pagtuturo',
@@ -116,7 +117,8 @@ def build():
    assert source['id']==target['id']
    assert len(source['units'])==len(target['units'])
    assert [u['kind'] for u in source['units']]==[u['kind'] for u in target['units']]
-   assert source['verses']==target['verses']
+   if source['verses'] != target['verses']:
+   raise ValueError('Study %d Scripture reference list changed in translation' % (source['id'] + 1))
   (stage/'index.html').write_text(html_translate((BASE/'index.html').read_text('utf8')),'utf8')
   assert 'lang="tl"' in (stage/'index.html').read_text('utf8')
   master=Path(temp)/'Teachers_Guide_V2_TL_Master.docx'
