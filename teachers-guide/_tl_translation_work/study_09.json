@@ -1,0 +1,398 @@
+{
+  "id": 8,
+  "title": "Ang Pagiging Makasaysayan ni Hesus",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Ang Pagiging Makasaysayan ni Hesus",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Bakit itinala ng mga manunulat ang mga pangyayari: Ipinakilala ni Lucas ang kanyang Ebanghelyo bilang isang salaysay na maingat na sinaliksik. Sinabi ni Juan na pinili niya ang ilang mga tanda upang maniwala ang mga tao kay Hesus. Hindi nila inilalarawan ang Cristianismo bilang pilosopiya lamang; ipinahahayag nilang may mga tunay na pangyayaring naganap.",
+      "stage": [
+        "core",
+        "Kasaysayan at patotoo tungkol kay Hesus"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ayon kay Lucas, ano ang nais niyang matamo ng kanyang mambabasa?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Katiyakan o pagtitiwala sa mga bagay na itinuro, sa pamamagitan ng isang maayos na salaysay.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang Biblia ay hindi para sa mga taong hangal at madaling malinlang; ito ay para sa mga taong nag-iisip at nahihikayat ng bigat ng katibayan. Maraming relihiyon ang nakabatay sa “bulag na pananampalataya,” samantalang ang Cristianismo ay may higit pa sa sapat na katibayan upang suportahan ang pagsasabuhay nito.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Kahit wala tayong Bagong Tipan, maaari pa ring buuin ang pangunahing salaysay ng Ebanghelyo mula sa mga sinaunang sangguniang ito na laban sa Cristianismo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "MGA SINAUNANG PAGANONG SANGGUNIAN (Laban sa Cristianismo)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tacitus (A.D. 56–117)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Si Tacitus ang pinakadakilang mananalaysay ng sinaunang Roma. Isa rin siyang mahusay na mananalumpati at opisyal ng pamahalaan. Marami sa natutuhan natin sa paaralan tungkol sa mga emperador ng Roma ay mula sa kanya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Annals 15.44",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Kaya upang alisin ang ulat na iyon, ibinintang ni Nero ang kasalanan at ipinataw ang pinakamalulupit na pagpapahirap sa isang pangkat na kinamumuhian dahil sa kanilang mga kasuklam-suklam na gawain, na tinatawag ng mga tao na mga Cristiano. Si Christus, na pinagmulan ng pangalang ito, ay dumanas ng pinakamabigat na parusa noong paghahari ni Tiberius, sa kamay ng isa sa ating mga gobernador, si Pontius Pilatus. Ang napakasamang pamahiing ito, na pansamantalang napigil, ay muling kumalat hindi lamang sa Judea, ang unang pinagmulan nito, kundi maging sa Roma, kung saan nagtitipon at sumisikat ang lahat ng nakaririmarim at kahiya-hiyang bagay mula sa iba't ibang panig ng mundo.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mara bar Serapion (mga A.D. 73)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Si Mara bar Serapion ay isang taga-Syria na nabuhay noong unang siglo. Ang kanyang liham ay nasa pangangalaga ngayon ng British Museum.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Ano ang napala ng mga taga-Athens sa pagpatay kay Socrates, na sinuklian ng taggutom at salot? O ng mga taga-Samos sa pagsunog kay Pythagoras, na ang kanilang lupain ay lubusang natabunan ng buhangin sa loob lamang ng isang oras? Ano ang napala ng mga Judio sa pagpatay sa kanilang matalinong Hari? Hindi nagtagal pagkatapos noon ay nawala ang kanilang kaharian… Ngunit hindi lubusang namatay si Socrates; nabuhay siya sa pagtuturo ni Plato. Hindi rin lubusang namatay si Pythagoras; nabuhay siya sa estatwa ni Hera. Ni hindi rin lubusang namatay ang matalinong hari; nabuhay siya sa mga aral na kanyang ibinigay.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Pliny the Younger (A.D. 112)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Si Pliny ay isang mayamang Romanong administrador na nakatalaga sa hilagang Turkey. Noong A.D. 110, sumulat siya kay Emperador Trajan upang humingi ng payo kung paano haharapin ang mga Cristiano. Itinanong niya kung dapat pa niyang ipagpatuloy ang pagpatay sa mga tagasunod ni Cristo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Ang kabuuan ng kanilang pagkakasala o pagkakamali ay walang higit sa mga sumusunod. Palagi silang nagtitipon bago magbukang-liwayway sa isang itinakdang araw at halinhinang umaawit ng himno kay Cristo na parang sa isang diyos. Nanunumpa rin sila, hindi upang gumawa ng krimen kundi upang umiwas sa pagnanakaw, panloloob, pangangalunya, at hindi pagtupad sa anumang pangako.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Suetonius (A.D. 120)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Isang Romanong mananalaysay at tagatala ng sambahayan ng emperador sa ilalim ni Emperador Hadrian. Binabanggit niya si Cristo at ang mga Cristiano at ang “mga kaguluhang” iniuugnay sa kanila, gaya ng hindi pagsamba sa mga diyus-diyosan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Dahil patuloy na nagdudulot ng mga kaguluhan ang mga Judio sa Roma sa pag-uudyok ni Chrestus [Cristo], pinalayas sila ni [Claudius] mula sa lungsod [Roma].” (Tingnan ang Acts 18:2.)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Basahin ang mga saksi ayon sa kanilang konteksto: Nagkakasundo ang apat na Ebanghelyo sa sentro ng salaysay bagama't magkakaiba ang mga detalyeng pinili nila. Basahin muna ang bawat salaysay sa sarili nitong kalagayan bago ihambing sa iba. Hindi kailangang magkunwari ng ganap na katiyakan sa mga bahaging limitado ang ebidensiya upang maging tapat ang pag-aaral ng kasaysayan.",
+      "stage": [
+        "core",
+        "Ang mga saksi ayon sa konteksto"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Bakit maaaring pumili ang dalawang saksi ng magkaibang detalye tungkol sa iisang pangyayari?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Maaaring magkaiba ang layunin ng kanilang pagsulat nang hindi naman nagkakasalungat sa pangunahing pangyayaring pareho nilang inilarawan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "MGA SINAUNANG SANGGUNIANG JUDIO (Laban sa Cristianismo)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Flavius Josephus (A.D. 37–101)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ipinanganak si Josephus sa Jerusalem ilang taon matapos mamatay si Hesus. Siya ay isang Judiong aristokrata at mananalaysay ng mga digmaan.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Jewish Antiquities, 18.63–64",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Noong panahong iyon ay may isang taong nagngangalang Hesus, isang matalinong tao, kung nararapat nga siyang tawaging tao; sapagkat gumawa siya ng mga kamangha-manghang gawa at nagturo sa mga taong masayang tumatanggap ng katotohanan. Marami siyang naakit na mga Judio at Hentil. Siya ang [ang] Cristo. At nang ipahatol ni Pilato, sa udyok ng mga pangunahing tao sa atin, ang Kanyang pagpapako sa krus, hindi Siya iniwan ng mga unang umibig sa Kanya; sapagkat nagpakita Siyang buhay sa kanila sa ikatlong araw, gaya ng ipinahayag ng mga banal na propeta tungkol dito at sa sampung libong iba pang kahanga-hangang bagay tungkol sa Kanya. At ang pangkat ng mga Cristiano, na ipinangalan sa Kanya, ay hindi pa naglalaho hanggang sa araw na ito.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Jewish Antiquities, 20.200",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Sa sumusunod na sipi, inilalarawan ni Josephus ang mga ginawa ni Ananus, ang mataas na pari sa Jerusalem, at ang pagtrato niya kay Santiago, kapatid ni Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Ngunit ang mas batang si Ananus, na gaya ng nasabi na namin ay tumanggap ng tungkulin ng mataas na pari, ay isang taong matapang ang ugali at lubhang mapagmataas… Tinipon niya ang Sanedrin ng mga hukom at iniharap sa kanila ang kapatid ni Hesus na tinatawag na Mesiyas-Cristo, na ang pangalan ay Santiago, at ilan pang iba. Matapos paratangan silang lumalabag sa kautusan, ipinahatid niya sila upang batuhin hanggang mamatay.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Talmud (A.D. 100–200)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang sumusunod na sanggunian ay mula sa Talmud, isang sinaunang pagpapaliwanag ng kautusang Judio. Dito ay makikita ang isang ulat tungkol sa mga ibinintang na krimen, paglilitis, at pagpatay kay Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Talmud (baraitha Sanhedrin 43a–b)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "“Noong bisperas ng Paskuwa ay ibinitin si Hesus (sa krus). Sa loob ng apatnapung araw bago ang pagpatay ay may tagapagbalitang lumabas at sumigaw: ‘Ilalabas siya upang batuhin sapagkat gumawa siya ng pangkukulam at inakit at iniligaw ang Israel. Ang sinumang may masasabi para sa kanyang kapakanan ay lumapit at ipagtanggol siya.’ Ngunit dahil walang iniharap para sa kanyang kapakanan, ibinitin siya noong bisperas ng Paskuwa.”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Ang ebidensiya ay tumuturo sa isang Tao: Maaaring makatulong ang mga sangguniang pangkasaysayan sa labas ng Kasulatan upang maunawaan ang kalagayan ng buhay ni Hesus, ngunit hindi nila pinapalitan ang mga Ebanghelyo. Sa huli, ang tanong ay kung ano ang iyong magiging pagtugon kay Hesus at sa mensaheng ipinagkatiwala Niya sa Kanyang mga tagasunod.",
+      "stage": [
+        "core",
+        "Ang ebidensiya ay tumuturo kay Hesus"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang nilalayong bunga ng pagkatuto tungkol kay Hesus?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Makilala Siya, magtiwala sa Kanya, at tumugon sa Kanyang mensahe.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nagbibigay ang mga sangguniang Griyego-Romano at Judio na ito ng mahalagang impormasyon. Nararapat ilista ang mahahalagang detalyeng makukuha tungkol kay Hesus mula sa mga tekstong hindi Cristiano:",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang pangalang “Hesus”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang lugar at panahon ng Kanyang hayag na ministeryo (Palestina noong pamamahala ni Pontius Pilato, A.D. 26–36)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang pangalan ng isa sa Kanyang mga kapatid (Santiago)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang Kanyang katanyagan bilang guro",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang Kanyang katanyagan bilang gumagawa ng himala o diumano'y salamangkero",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang pagtawag sa Kanya bilang “Mesiyas/Cristo”",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang Kanyang katayuang “hari” sa paningin ng ilan",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang panahon at paraan ng Kanyang pagpatay (pagpapako sa krus sa panahon ng Paskuwa)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang paglahok ng mga pinunong Romano at Judio sa Kanyang kamatayan",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang mga ulat ng pagpapakita ni Hesus sa Kanyang mga tagasunod pagkatapos ng Kanyang kamatayan",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "• Ang paglaganap ng kilusang sumasamba kay Hesus pagkatapos ng Kanyang kamatayan",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Ang Kabanalan ay Nangangahulugang Pagiging Naiiba",
+      "stage": [
+        "supplement",
+        "Kabanalan at buhay na binago"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "DIYOS — GANAP NA BANAL",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Hangganan ng Kaligtasan",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "HESUS (KRUS)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Rom 8:29-31; 1 Pet 3:21;",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Col 3:1-5 — Ang nakaraan ay napagtagumpayan na, ang kasalukuyan ay ligtas, at ang hinaharap ay tiyak. Ang tanging makapagbibigay sa iyo ng moral na lakas upang magtagumpay laban sa kasalanan ay ang pagtitiwalang may ugnayan ka sa Diyos.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "LIMANG PUNTO NG CALVINISMO",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "T — Lubos na kasamaan ng tao (total depravity)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "U — Pagkahirang na walang kondisyon (unconditional election) ∞∞∞∞∞",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "L — Limitadong pagtubos (limited atonement)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "I — Biyayang hindi mapipigilan (irresistible grace)",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "P — Pananatili ng mga banal (perseverance of the saints)",
+      "stage": null,
+      "images": []
+    }
+  ],
+  "verses": [
+    "Acts 18:2",
+    "Rom 8:29-31",
+    "1 Pet 3:21",
+    "Col 3:1-5"
+  ],
+  "application": "Ang pagtitiwala sa makasaysayang katibayan tungkol kay Hesus ay dapat humantong sa personal na pagkakilala sa Kanya at sa pagbabagong-buhay.",
+  "response": "Paano ka tutugon kay Hesus batay sa mga patotoong ito at sa mensahe ng mga Ebanghelyo?"
+}
