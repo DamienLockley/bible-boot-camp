@@ -30,24 +30,41 @@ details{border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin:
 .history-note.daniel h3,.resource-depth.daniel summary{color:#7c5226}
 .history-note.revelation,.resource-depth.revelation{background:#f0f7ff;border-color:#bed4e9;border-left:4px solid #326c9e}
 .history-note.revelation h3,.resource-depth.revelation summary{color:#245e92}
+
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.global-search{position:relative;flex:0 1 220px;min-width:155px;z-index:6}
+.global-search .compact-search{width:100%;padding:8px 30px 8px 12px;font-size:14px;background:#fff;border:1px solid #8cb5d2}
+.global-search .search-clear{position:absolute;right:3px;top:3px;border:0;padding:3px 9px;font-size:18px;color:#315b7a}
+.search-results{position:absolute;right:0;top:calc(100% + 11px);width:min(570px,calc(100vw - 26px));max-height:min(68vh,650px);overflow:auto;background:#fff;border:1px solid #aec8db;border-radius:12px;box-shadow:0 14px 34px #163c5a34;padding:12px;z-index:20}
+.search-summary{position:sticky;top:-12px;background:#fff;z-index:1;border-bottom:1px solid var(--line);padding:8px 4px 12px;display:flex;align-items:center;gap:5px;justify-content:space-between;flex-wrap:wrap;font-size:13px;color:#48617a}
+.search-summary strong{color:#183d5d}.search-summary button{font-size:12px;padding:4px 7px}
+.search-study{border-bottom:1px solid var(--line);padding:10px 0 12px}.search-study:last-child{border-bottom:0}.search-study h3{margin:0 0 5px;font-size:15px;color:#1b4b70}
+.search-study .snippet{border:0;border-radius:7px;padding:9px 10px;margin:3px 0;line-height:1.4}.search-study .snippet:hover,.search-study .snippet:focus-visible{background:#e6f3fb}
+.search-more{font-size:12px;color:#175f8a;border:0;padding:7px 9px}.search-empty{padding:12px;font-size:14px}
+mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2px}
+.search-target{outline:2px solid #f0be54;outline-offset:4px;border-radius:3px;scroll-margin-top:110px}
+.top .head-actions{flex:1;justify-content:flex-end}
+@media(max-width:800px){.top-inner{flex-wrap:wrap}.top .head-actions{width:100%;justify-content:flex-start}.global-search{flex:1 1 220px}.search-results{left:0;right:auto;max-width:calc(100vw - 22px)}}
+@media(max-width:480px){.top-inner{gap:7px;padding:8px 11px}.brand strong{font-size:15px}.global-search{flex:1 1 100%;order:2}.review{font-size:10px}.nav-link{padding:7px}.top .head-actions{gap:5px}}
 </style>
 </head>
 <body>
-<header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teacher's Guide V2</strong><div class="tiny">Teaching companion • working review</div></div><div class="head-actions"><span class="review">REVIEW ONLY</span><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><a class="nav-link" href="https://endtimebiblestudies.org/#help" title="Contact, request help or give feedback">Help / Feedback</a><button id="home" type="button">Home</button></div></div></header>
+<header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teacher's Guide V2</strong><div class="tiny">Teaching companion • working review</div></div><div class="head-actions"><div class="global-search" role="search"><label for="search" class="sr-only">Find words in all studies</label><input class="compact-search" id="search" aria-label="Find words in all studies" placeholder="Find words…" autocomplete="off"><button id="clear-search" class="search-clear hidden" type="button" aria-label="Clear search">×</button><div id="search-results" class="search-results hidden" role="region" aria-label="Word search matches"></div></div><span class="review">REVIEW ONLY</span><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><a class="nav-link" href="https://endtimebiblestudies.org/#help" title="Contact, request help or give feedback">Help / Feedback</a><button id="home" type="button">Home</button></div></div></header>
 <main>
 <div id="loading" class="panel">Loading unchanged study material and proposed teaching map…</div>
 <section id="library" class="hidden">
-<div class="panel"><div class="row"><div><h1 class="heading" style="margin:0">Study Library</h1><div class="tiny">Choose any study, in any order</div></div><div class="row"><input class="compact-search" id="search" aria-label="Find words within study content" placeholder="Find words in studies…" autocomplete="off"><button id="sort" type="button" title="Toggle alphabetical or original order">A–Z</button></div></div><div class="tiny" style="margin-top:10px">Search looks inside the study text. Matching passages appear under their study title.</div></div>
+<div class="panel"><div class="row"><div><h1 class="heading" style="margin:0">Study Library</h1><div class="tiny">Choose any study, in any order</div></div><button id="sort" type="button" title="Toggle alphabetical or original order">A–Z</button></div></div>
 <div class="panel" id="library-list"></div></section>
 <section id="study" class="hidden">
 <div class="panel"><div id="study-number" class="tiny"></div><h1 id="study-title" class="heading"></h1><div class="ribbon"><div class="label">Purpose</div><div id="purpose"></div></div><div class="ribbon"><div class="label">Central truth</div><div id="central"></div></div><div class="mode-buttons"><button id="mode-guided">Main Study</button><button id="mode-verses">Scriptures</button><button id="pdf-button" title="Shares the existing study PDF during this V2 preview. The redesigned PDF is still in development.">Share</button></div></div>
-<div id="guide-view" class="layout"><aside class="panel side"><h3>Main teaching pathway</h3><div id="core-nav"></div><h3 style="margin-top:20px">Explore deeper • questions</h3><input id="supp-search" aria-label="Search supplementary questions" placeholder="Find a question…"><div id="extra-nav"></div></aside><article id="stage" class="panel"></article></div>
+<div id="guide-view" class="layout"><aside class="panel side"><h3>Main teaching pathway</h3><div id="core-nav"></div><h3 style="margin-top:20px">Explore deeper • questions</h3><div id="extra-nav"></div></aside><article id="stage" class="panel"></article></div>
 <div id="verses-view" class="panel hidden"></div>
 </section></main>
 <div id="verse-modal" class="modal hidden" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel"><button onclick="closeVerse()">Close ✕</button><h2 id="verse-title"></h2><div id="verse-text"></div></div></div>
 <div id="image-modal" class="modal hidden" onclick="if(event.target.id==='image-modal')closeImage()"><div class="panel"><button onclick="closeImage()">Close ✕</button><div id="image-content" style="text-align:center;margin-top:10px"></div></div></div>
 <script>
 let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,tableLayouts=null,historicalNotes=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=true,kjv=null,kjvStatus='Loading stored KJV verses…';
+let searchHits=[],searchExpanded=new Set();
 const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const bibleBook = String.raw`(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Songs?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Nah|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev)`;
 const verseSpan = String.raw`\d+(?:\s*[-‐‑‒–—−]\s*(?:\d+\s*[:：]\s*)?\d+)?`;
@@ -105,18 +122,18 @@ function numberedQuestionBlock(units,start,end){
  const questions=[];let j=start+1;
  for(;j<=end;j++){
    const m=(units[j]?.text||'').trim().match(/^#\s*(\d+)\s*[\.\)]?\s*(.+)$/);
-   if(!m)break;questions.push({number:Number(m[1]),text:m[2]});
+   if(!m)break;questions.push({number:Number(m[1]),text:m[2],unit:j});
  }
  if(!questions.length||!/^answers?\s*:?\s*$/i.test((units[j]?.text||'').trim()))return null;
  const answers=[];j++;
  for(;j<=end;j++){
    const m=(units[j]?.text||'').trim().match(/^#\s*(\d+)\s*[\.\)]?\s*(.+)$/);
-   if(!m)break;answers.push({number:Number(m[1]),text:m[2]});
+   if(!m)break;answers.push({number:Number(m[1]),text:m[2],unit:j});
  }
  if(questions.length!==answers.length||questions.some((q,i)=>q.number!==answers[i].number))return null;
  const html='<div class="question-bundle"><h3>Questions and answers</h3>'+questions.map((q,i)=>
-  '<section class="qa-pair"><div class="qa-heading">Question '+q.number+'</div><div class="qa-question">'+highlightRefs(q.text)+'</div>'+
-  '<div class="qa-heading answer-label">Answer</div><div class="qa-answer">'+highlightRefs(answers[i].text)+'</div></section>'
+  '<section class="qa-pair"><div class="qa-heading">Question '+q.number+'</div><div class="qa-question" data-unit="'+q.unit+'">'+highlightRefs(q.text)+'</div>'+
+  '<div class="qa-heading answer-label">Answer</div><div class="qa-answer" data-unit="'+answers[i].unit+'">'+highlightRefs(answers[i].text)+'</div></section>'
  ).join('')+'</div>';
  return {html,lastIndex:j-1};
 }
@@ -132,7 +149,7 @@ function unitsMarkup(from,to){
    for(let k=0;k<table.rows.length;k++){
     html+='<tr>'+table.rows[k].map(index=>{
        const val=highlightRefs(units[index].text||'');
-       return (table.column_headers&&k===0?'<th scope="col">':'<td>')+val+(table.column_headers&&k===0?'</th>':'</td>');
+       return (table.column_headers&&k===0?'<th scope="col" data-unit="'+index+'">':'<td data-unit="'+index+'">')+val+(table.column_headers&&k===0?'</th>':'</td>');
     }).join('')+'</tr>';
    }
    html+='</table></div>';j=table.end;continue;
@@ -142,7 +159,7 @@ function unitsMarkup(from,to){
   if(bundle){html+=bundle.html;j=bundle.lastIndex;continue}
   const u=units[j];if(!u)continue;
   const kind=u.kind||'text', txt=highlightRefs(u.text||'');
-  html+='<div class="text-item '+(kind==='heading'?'heading':kind==='question'?'question':kind==='answer'?'answer':'')+'">'+txt+'</div>';
+  html+='<div data-unit="'+j+'" class="text-item '+(kind==='heading'?'heading':kind==='question'?'question':kind==='answer'?'answer':'')+'">'+txt+'</div>';
   if(u.images&&u.images.length)u.images.forEach(name=>{
    html+='<button class="image-btn" data-image="'+esc(name)+'" type="button">View illustration</button>';
   });
@@ -152,35 +169,70 @@ function unitsMarkup(from,to){
 function closeImage(){$('image-modal').classList.add('hidden');$('image-content').textContent=''}
 function showImage(filename){const path='../teachers-guide/assets/'+encodeURIComponent(filename);$('image-content').innerHTML='<img src="'+path+'" alt="Original teaching illustration">';$('image-modal').classList.remove('hidden')}
 function showLibrary(){current=-1;$('loading').classList.add('hidden');$('study').classList.add('hidden');$('library').classList.remove('hidden');renderLibrary();scrollTo(0,0)}
-function searchExcerpt(text,needle){
- const raw=String(text||''), low=raw.toLocaleLowerCase(),at=low.indexOf(needle);
- if(at<0)return '';
- const from=Math.max(0,at-58),to=Math.min(raw.length,at+needle.length+96);
- const before=esc(raw.slice(from,at)),word=esc(raw.slice(at,at+needle.length)),after=esc(raw.slice(at+needle.length,to));
- return (from?'…':'')+before+'<mark>'+word+'</mark>'+after+(to<raw.length?'…':'');
+function normalizeSearch(v){return String(v||'').trim().toLocaleLowerCase().replace(/\s+/g,' ')}
+function highlightedExcerpt(raw,words){
+ raw=String(raw||'');const low=raw.toLocaleLowerCase();
+ const at=words.reduce((n,w)=>{const p=low.indexOf(w);return p<0?n:Math.min(n,p)},Infinity);
+ const from=Number.isFinite(at)?Math.max(0,at-58):0,to=Math.min(raw.length,(Number.isFinite(at)?at:0)+155);
+ const t=raw.slice(from,to),matches=[];
+ for(const word of words){let pos=0;while(word&&pos<t.length){let x=t.toLocaleLowerCase().indexOf(word,pos);if(x<0)break;matches.push([x,x+word.length]);pos=x+word.length}}
+ matches.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);let html='',offset=0;
+ for(const [a,b] of matches){if(a<offset)continue;html+=esc(t.slice(offset,a))+'<mark>'+esc(t.slice(a,b))+'</mark>';offset=b}
+ return (from?'…':'')+html+esc(t.slice(offset))+(to<raw.length?'…':'');
+}
+function closeSearch(){$('search-results').classList.add('hidden');$('search').setAttribute('aria-expanded','false')}
+function renderSearch(){
+ const q=normalizeSearch($('search').value),panel=$('search-results');
+ $('clear-search').classList.toggle('hidden',!q);
+ if(!q||!studyData||!teachMap){searchHits=[];closeSearch();return}
+ const words=q.split(' ').filter(Boolean),hits=[];
+ for(const study of teachMap.studies){
+  for(let i=0;i<studyData[study.id].units.length;i++){
+   const txt=String(studyData[study.id].units[i].text||'');
+   if(words.every(w=>txt.toLocaleLowerCase().includes(w)))hits.push({study:study.id,index:i,text:txt});
+  }
+ }
+ searchHits=hits;
+ const groups=teachMap.studies.map(study=>({study,hits:hits.filter(x=>x.study===study.id)})).filter(g=>g.hits.length);
+ let html='<div class="search-summary"><strong>'+hits.length+' matching passage'+(hits.length===1?'':'s')+'</strong> in '+groups.length+' studies <button type="button" data-close-search>Close ×</button></div>';
+ if(!groups.length)html+='<p class="search-empty">No matches found in the studies.</p>';
+ for(const g of groups){
+  const expanded=searchExpanded.has(g.study.id),shown=expanded?g.hits:g.hits.slice(0,6);
+  html+='<section class="search-study"><h3>'+esc(g.study.title)+' <span class="find-count">'+g.hits.length+' matches</span></h3>';
+  html+=shown.map(hit=>'<button class="snippet" type="button" data-match-study="'+hit.study+'" data-match-unit="'+hit.index+'">'+highlightedExcerpt(hit.text,words)+'</button>').join('');
+  if(!expanded&&g.hits.length>6)html+='<button type="button" class="search-more" data-more-study="'+g.study.id+'">Show all '+g.hits.length+' matches</button>';
+  html+='</section>';
+ }
+ panel.innerHTML=html;panel.classList.remove('hidden');$('search').setAttribute('aria-expanded','true');
 }
 function renderLibrary(){
- const query=$('search').value.trim().toLocaleLowerCase();
  let arr=teachMap.studies.slice();if(sortAZ)arr.sort((a,b)=>a.title.localeCompare(b.title));
  $('sort').textContent=sortAZ?'A–Z':'Original order';
- if(!query){$('library-list').innerHTML=arr.map(x=>'<button class="lib-item" data-study="'+x.id+'"><strong>'+esc(x.title)+'</strong><span>'+esc(x.purpose)+'</span></button>').join('');return}
- const words=query.split(/\s+/).filter(Boolean);let total=0;
- const results=arr.map(x=>{
-   const matches=studyData[x.id].units.map((u,i)=>({text:String(u.text||''),index:i})).filter(u=>words.every(w=>u.text.toLocaleLowerCase().includes(w)));
-   if(!matches.length)return '';
-   total+=matches.length;
-   return '<div class="lib-study"><h3>'+esc(x.title)+' <span class="find-count">'+matches.length+' passage'+(matches.length===1?'':'s')+'</span></h3>'+
-     matches.slice(0,5).map(m=>'<button class="snippet" data-match-study="'+x.id+'" data-match-unit="'+m.index+'">'+searchExcerpt(m.text,words[0])+'</button>').join('')+
-     (matches.length>5?'<button class="snippet" data-study="'+x.id+'">Open study to see all '+matches.length+' matches…</button>':'')+'</div>';
- }).filter(Boolean);
- $('library-list').innerHTML=results.length?'<div class="tiny">'+results.length+' studies • '+total+' matching passages</div>'+results.join(''):'<p>No matching text found in the studies.</p>';
+ $('library-list').innerHTML=arr.map(x=>'<button class="lib-item" data-study="'+x.id+'"><strong>'+esc(x.title)+'</strong><span>'+esc(x.purpose)+'</span></button>').join('');
 }
-function openStudy(i){current=i;stageKind='core';stageIndex=0;mode='guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('study-title').textContent=studyData[i].title;$('study-number').textContent='STUDY '+(i+1)+' • freely selected';const t=teachMap.studies[i];$('purpose').textContent=t.purpose;$('central').textContent=t.central_truth;renderMode();scrollTo(0,0)}
+function openStudy(i){closeSearch();current=i;stageKind='core';stageIndex=0;mode='guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('study-title').textContent=studyData[i].title;$('study-number').textContent='STUDY '+(i+1)+' • freely selected';const t=teachMap.studies[i];$('purpose').textContent=t.purpose;$('central').textContent=t.central_truth;renderMode();scrollTo(0,0)}
 function openMatch(studyIndex,unitIndex){
+ const words=normalizeSearch($('search').value).split(' ').filter(Boolean);
  openStudy(studyIndex);
  const groups=teachMap.studies[studyIndex].groups;
  const found=groups.find(g=>g.start<=unitIndex&&unitIndex<=g.end);
- if(found){stageKind=found.kind;stageIndex=groups.filter(x=>x.kind===found.kind).indexOf(found);renderGuide();}
+ if(!found)return;
+ stageKind=found.kind;stageIndex=groups.filter(x=>x.kind===found.kind).indexOf(found);renderGuide();
+ requestAnimationFrame(()=>focusSearchHit(unitIndex,words));
+}
+function focusSearchHit(index,words){
+ const target=$('stage').querySelector('[data-unit="'+index+'"]');
+ if(!target)return;
+ const walker=document.createTreeWalker(target,NodeFilter.SHOW_TEXT);
+ const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+ for(const node of nodes){
+  const text=node.nodeValue,low=text.toLocaleLowerCase(),spans=[];
+  for(const word of words){let pos=0;while(word&&pos<text.length){const at=low.indexOf(word,pos);if(at<0)break;spans.push([at,at+word.length]);pos=at+word.length}}
+  spans.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);let html=document.createDocumentFragment(),offset=0;
+  for(const [a,b] of spans){if(a<offset)continue;html.append(document.createTextNode(text.slice(offset,a)));const mark=document.createElement('mark');mark.className='search-hit';mark.textContent=text.slice(a,b);html.append(mark);offset=b;}
+  if(offset){html.append(document.createTextNode(text.slice(offset)));node.replaceWith(html);}
+ }
+ target.classList.add('search-target');target.scrollIntoView({behavior:'auto',block:'center'});
 }
 function setMode(next){mode=next;renderMode()}
 function renderMode(){
@@ -192,7 +244,7 @@ function navButtons(){
  const all=teachMap.studies[current].groups;
  for(const [kind,slot] of [['core','core-nav'],['supplement','extra-nav']]){
   let arr=all.map((g,i)=>({...g,globalIndex:i})).filter(g=>g.kind===kind);
-  if(kind==='supplement'){const q=$('supp-search').value.toLowerCase().trim();arr=arr.filter(x=>x.label.toLowerCase().includes(q))}
+
   $(slot).innerHTML=arr.length?arr.map(g=>'<button class="nav-button '+(stageKind===kind && all.filter(x=>x.kind===kind).indexOf(all[g.globalIndex])===stageIndex?'active':'')+'" data-group="'+kind+'" data-index="'+all.filter(x=>x.kind===kind).indexOf(all[g.globalIndex])+'">'+esc(g.label)+'</button>').join(''):(kind==='supplement'?'<p class="tiny">No matching questions.</p>':'');
  }
 }
@@ -238,12 +290,19 @@ function renderVerses(){
 }
 document.addEventListener('click',e=>{
  const matched=e.target.closest('[data-match-study]');if(matched){openMatch(Number(matched.dataset.matchStudy),Number(matched.dataset.matchUnit));return}
+ const more=e.target.closest('[data-more-study]');if(more){searchExpanded.add(Number(more.dataset.moreStudy));renderSearch();return}
+ if(e.target.closest('[data-close-search]')){closeSearch();return}
  const lib=e.target.closest('[data-study]');if(lib){openStudy(Number(lib.dataset.study));return}
  const nav=e.target.closest('[data-group]');if(nav){chooseStage(nav.dataset.group,Number(nav.dataset.index));return}
  const img=e.target.closest('[data-image]');if(img){showImage(img.dataset.image);return}
 });
-$('home').onclick=showLibrary;$('sort').onclick=()=>{sortAZ=!sortAZ;renderLibrary()};$('search').oninput=renderLibrary;
-$('supp-search').oninput=navButtons;
+$('home').onclick=()=>{closeSearch();showLibrary()};
+$('sort').onclick=()=>{sortAZ=!sortAZ;renderLibrary()};
+$('search').oninput=()=>{searchExpanded.clear();renderSearch()};
+$('search').onfocus=()=>{if(normalizeSearch($('search').value))renderSearch()};
+$('search').onkeydown=e=>{if(e.key==='Escape'){closeSearch();$('search').blur()}if(e.key==='Enter'&&searchHits.length)openMatch(searchHits[0].study,searchHits[0].index)};
+$('clear-search').onclick=()=>{$('search').value='';searchExpanded.clear();renderSearch();$('search').focus()};
+document.addEventListener('click',e=>{if(!e.target.closest('.global-search'))closeSearch()});
 $('mode-guided').onclick=()=>setMode('guided');$('mode-verses').onclick=()=>setMode('verses');
 $('pdf-button').onclick=()=>{
  if(current<0)return;const path='../teachers-guide/study-pdfs/Study_'+String(current+1).padStart(2,'0')+'.pdf';
