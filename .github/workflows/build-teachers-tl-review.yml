@@ -7,6 +7,13 @@ on:
     paths:
       - '.github/workflows/build-teachers-tl-review.yml'
       - 'tools/build_teachers_tl_review.py'
+      - 'teachers-guide/_tl_translation_work/study_*.json'
+      - 'teachers-guide/_tl_translation_work/related-study-resources.tl.draft.json'
+      - 'teachers-guide/related-study-resources.json'
+      - 'teachers-guide/study-data.json'
+      - 'teachers-guide/teaching-map.json'
+      - 'teachers-guide/table-layouts.json'
+      - 'teachers-guide/index.html'
   workflow_dispatch:
 
 permissions:
@@ -58,6 +65,18 @@ jobs:
           assert t[-1]['units'][16]['text'].startswith('John 1:43-51')
           assert t[-1]['units'][17]['text'].startswith('Luke 8:37-40')
           assert audit['image_positions']==sum(len(u.get('images',[])) for study in e for u in study['units'])
+          source_related=json.loads((base/'related-study-resources.json').read_text('utf-8'))['items']
+          tl_related=json.loads((review/'related-study-resources.json').read_text('utf-8'))['items']
+          assert len(source_related)==len(tl_related)==audit['supplementary_gtk_studies_translated']==28
+          assert audit['supplementary_gtk_structure_verified']
+          for en,tl in zip(source_related,tl_related):
+              assert en['teacher_study_id']==tl['teacher_study_id']
+              assert en['gtk_source_id']==tl['gtk_source_id']
+              assert [c['scripture'] for c in en['gtk_connections']]==[c['scripture'] for c in tl['gtk_connections']]
+              assert en['gtk_lead'] != tl['gtk_lead']
+              assert en['gtk_practice'] != tl['gtk_practice']
+              assert len(en['gtk_questions'])==len(tl['gtk_questions'])
+              assert [(x['href'],x.get('anchor'),x.get('passage')) for x in en['deep_reading_links']]==[(x['href'],x.get('anchor'),x.get('passage')) for x in tl['deep_reading_links']]
           master=Document(review/'Teachers_Guide_V2_TL_Master.docx')
           assert sum(p.style.name=='Heading 1' for p in master.paragraphs)==28
           assert sum(p.style.name=='TG Stage' for p in master.paragraphs)>=28
