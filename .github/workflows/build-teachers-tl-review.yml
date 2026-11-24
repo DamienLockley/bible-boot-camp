@@ -9,6 +9,8 @@ on:
       - 'tools/build_teachers_tl_review.py'
       - 'teachers-guide/_tl_translation_work/study_*.json'
       - 'teachers-guide/_tl_translation_work/related-study-resources.tl.draft.json'
+      - 'teachers-guide/_tl_translation_work/main-pathway-enrichments.tl.draft.json'
+      - 'teachers-guide/main-pathway-enrichments.json'
       - 'teachers-guide/related-study-resources.json'
       - 'teachers-guide/study-data.json'
       - 'teachers-guide/teaching-map.json'
@@ -77,6 +79,22 @@ jobs:
               assert en['gtk_practice'] != tl['gtk_practice']
               assert len(en['gtk_questions'])==len(tl['gtk_questions'])
               assert [(x['href'],x.get('anchor'),x.get('passage')) for x in en['deep_reading_links']]==[(x['href'],x.get('anchor'),x.get('passage')) for x in tl['deep_reading_links']]
+          en_enrich=json.loads((base/'main-pathway-enrichments.json').read_text('utf-8'))['studies']
+          tl_enrich=json.loads((review/'main-pathway-enrichments.json').read_text('utf-8'))['studies']
+          assert len(en_enrich)==len(tl_enrich)==28
+          contexts=0
+          for en,tl in zip(en_enrich,tl_enrich):
+              assert en['study_id']==tl['study_id']
+              ea=en['daniel_context_candidates']
+              ta=tl['daniel_context_candidates']
+              assert len(ea)==len(ta)
+              for a,b in zip(ea,ta):
+                  assert (a['source'],a['scripture'],a['url'])==(b['source'],b['scripture'],b['url'])
+                  assert a['history_or_interpretation']!=b['history_or_interpretation']
+                  assert a['spiritual_application']!=b['spiritual_application']
+                  contexts+=1
+          assert contexts==audit['optional_daniel_contexts_translated']==17
+          assert len(audit['source_truncation_warnings'])>=8
           master=Document(review/'Teachers_Guide_V2_TL_Master.docx')
           assert sum(p.style.name=='Heading 1' for p in master.paragraphs)==28
           assert sum(p.style.name=='TG Stage' for p in master.paragraphs)>=28
