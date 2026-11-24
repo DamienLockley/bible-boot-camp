@@ -25,7 +25,7 @@ import tempfile
 from pathlib import Path
 
 try:
-    from convert import extract, split_study_pdf, clean
+    from convert import extract, split_study_pdf, clean, REFS
 except ImportError as exc:
     raise SystemExit(
         "Put convert_v2.py beside your current Word_Converter/convert.py "
@@ -121,6 +121,152 @@ def remap_studies(previous, updated, teaching_map):
     return result
 
 
+
+TEACHER_STYLES = {
+    "tg stage": "core",
+    "tg extra": "supplement",
+    "tg application": "application",
+    "tg response": "response",
+    "tg purpose": "purpose",
+    "tg central truth": "central_truth",
+}
+
+
+def remove_teacher_markers(word_path, sections):
+    """Read editable Word styles as navigation metadata, not study text.
+
+    The existing extractor has already collected the original units/images.
+    Remove only our named V2 marker paragraphs, preserving every other unit
+    exactly and recalculating scripture references from retained text.
+    """
+    from docx import Document
+    from docx.text.paragraph import Paragraph
+    from docx.table import Table
+    from docx.oxml.ns import qn
+    document = Document(word_path)
+    raw_entries = [[] for _ in sections]
+    current = -1
+
+    def scan(p):
+        nonlocal current
+        value = clean(p.text)
+        style = (p.style.name or "").lower().strip()
+        if style.startswith("heading 1") and value:
+            current += 1
+        if current < 0:
+            return
+        if not value and not p._element.xpath(".//a:blip"):
+            return
+        raw_entries[current].append((style, value))
+
+    for child in document.element.body.iterchildren():
+        if child.tag == qn("w:p"):
+            scan(Paragraph(child, document))
+        elif child.tag == qn("w:tbl"):
+            table = Table(child, document)
+            for row in table.rows:
+                for cell in row.cells:
+                    for p in cell.paragraphs:
+                        scan(p)
+
+    markers = []
+    for i, (sec, entries) in enumerate(zip(sections, raw_entries)):
+        if len(entries) != len(sec["units"]):
+            raise ValueError(
+                "Word paragraph scan mismatch for study %d (%d vs %d); "
+                "the master has a structure not supported by the existing extractor." %
+                (i + 1, len(entries), len(sec["units"]))
+            )
+        kept, study_markers = [], []
+        for (style, value), unit in zip(entries, sec["units"]):
+            kind = TEACHER_STYLES.get(style)
+            if kind:
+                if not value:
+                    raise ValueError("Study %d has an empty %s marker." % (i + 1, style))
+                study_markers.append({
+                    "kind": kind,
+                    "start": len(kept),
+                    "text": value,
+                })
+            else:
+                kept.append(unit)
+        sec["units"] = kept
+        sec["verses"] = [
+            match.group().strip()
+            for unit in kept for match in REFS.finditer(unit["text"])
+        ]
+        markers.append(study_markers)
+    if len(raw_entries) != len(sections):
+        raise ValueError("Word marker scanner saw a different number of studies.")
+    return markers
+
+
+def apply_explicit_stages(teaching_map, markers, sections):
+    """Let new styled Word headings define the teaching stages.
+
+    Regular paragraphs, table cells and images may be added or deleted
+    freely inside these sections. Stage titles are ordinary editable text.
+    """
+    updated = copy.deepcopy(teaching_map)
+    for i, marks in enumerate(markers):
+        stages = [m for m in marks if m["kind"] in ("core", "supplement")]
+        if not stages:
+            continue
+        if stages[0]["kind"] != "core":
+            raise ValueError("Study %d must begin its teaching stages with TG Stage." % (i + 1))
+        if len({m["start"] for m in stages}) != len(stages):
+            raise ValueError("Study %d has multiple stage headings without content between them." % (i + 1))
+        ordered = []
+        for j, m in enumerate(stages):
+            start = m["start"]
+            end = stages[j + 1]["start"] - 1 if j + 1 < len(stages) else len(sections[i]["units"]) - 1
+            if not (0 <= start <= end):
+                raise ValueError("Study %d has an empty teaching stage: %s" % (i+1,m["text"]))
+            ordered.append({"kind": m["kind"], "start": start, "end": end, "label": m["text"]})
+        updated["studies"][i]["groups"] = [x for x in ordered if x["kind"]=="core"] + [
+            x for x in ordered if x["kind"]=="supplement"]
+        updated["studies"][i]["source_unit_count"] = len(sections[i]["units"])
+        for m in marks:
+            if m["kind"] in ("purpose", "central_truth"):
+                updated["studies"][i][m["kind"]] = m["text"]
+            if m["kind"] in ("application", "response"):
+                updated["studies"][i][m["kind"]] = {"text": m["text"], "origin": "Word master"}
+    return updated
+
+
+def remap_related_stages(previous_map, updated_map, old_units, new_units, additions, historical):
+    """Preserve enrichment identity when a teacher inserts or moves a stage."""
+    enrich = copy.deepcopy(additions)
+    notes = copy.deepcopy(historical)
+    for i, (old, new) in enumerate(zip(previous_map["studies"], updated_map["studies"])):
+        former = [g for g in old["groups"] if g["kind"]=="core"]
+        current = [g for g in new["groups"] if g["kind"]=="core"]
+        if not current:
+            raise ValueError("Study %d has no main teaching stages." % (i + 1))
+        matches = old_to_new(old_units[i]["units"], new_units[i]["units"])
+        def relocated(k):
+            if k < 0 or k >= len(former):
+                raise ValueError("Old teaching stage %d missing in study %d." % (k, i+1))
+            title = canonical(former[k]["label"])
+            exact = [index for index, group in enumerate(current)
+                     if canonical(group["label"]) == title]
+            if len(exact) == 1:
+                return exact[0]
+            pos = map_boundary(former[k]["start"], matches, len(new_units[i]["units"]))
+            for index, group in enumerate(current):
+                if group["start"] <= pos <= group["end"]:
+                    return index
+            return min(range(len(current)), key=lambda x:abs(current[x]["start"]-pos))
+        for addition in enrich["studies"][i]["main_stage_additions"]:
+            index = relocated(addition["core_stage_index"])
+            addition["core_stage_index"] = index
+            addition["core_label"] = current[index]["label"]
+        for note in notes["notes"]:
+            if note["study_id"] == i:
+                note["stage_index"] = relocated(note["stage_index"])
+    return enrich, notes
+
+
 def add_native_tables(word_path, sections):
     """Record true Word table row/cell coordinates while keeping source units."""
     from docx import Document
@@ -138,6 +284,8 @@ def add_native_tables(word_path, sections):
                 section += 1
                 unit = 0
             if section < 0:
+                continue
+            if (p.style.name or "").lower().strip() in TEACHER_STYLES:
                 continue
             if title or p._element.xpath(".//a:blip"):
                 unit += 1
@@ -228,8 +376,18 @@ def run():
     previous = load(source / "study-data.json")["sections"]
     metadata = load(source / "teaching-map.json")
     sections, images = extract(args.document)
+    markers = remove_teacher_markers(args.document, sections)
     add_native_tables(args.document, sections)
-    new_map = remap_studies(previous, sections, metadata)
+    new_map = remap_studies(previous, sections, metadata) if not any(
+        any(m["kind"] in ("core","supplement") for m in marks) for marks in markers
+    ) else apply_explicit_stages(
+        remap_studies(previous, sections, metadata), markers, sections
+    )
+    new_enrich, new_history = remap_related_stages(
+        metadata, new_map, previous, sections,
+        load(source / "main-pathway-enrichments.json"),
+        load(source / "main-historical-notes.json")
+    )
     for i, (section, mapped) in enumerate(zip(sections, new_map["studies"])):
         for table in section.get("tables", []):
             if not any(g["start"] <= table["start"] and g["end"] >= table["end"] for g in mapped["groups"]):
@@ -242,6 +400,10 @@ def run():
             json.dumps({"sections": sections}, ensure_ascii=False, indent=2), encoding="utf-8")
         (staging / "teaching-map.json").write_text(
             json.dumps(new_map, ensure_ascii=False, indent=2), encoding="utf-8")
+        (staging / "main-pathway-enrichments.json").write_text(
+            json.dumps(new_enrich, ensure_ascii=False, indent=2), encoding="utf-8")
+        (staging / "main-historical-notes.json").write_text(
+            json.dumps(new_history, ensure_ascii=False, indent=2), encoding="utf-8")
         pdfs = staging / "study-pdfs"
         if args.pdf_mode == "update":
             if not args.pdf or not args.pdf.is_file():
