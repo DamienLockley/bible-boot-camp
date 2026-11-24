@@ -53,29 +53,336 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 .text-item.insight{background:#f2faf5;border:1px solid #c6e3d1;border-left:4px solid #3a8a60;border-radius:8px;padding:12px 14px;margin:11px 0;line-height:1.6}
 .text-item.daniel{background:#fbf5ed;border:1px solid #e4cfb6;border-left:4px solid #996c3c;border-radius:8px;padding:12px 14px;margin:11px 0;line-height:1.6}
 
+
+/* The GTKJ order remains the only library order; do not display lesson numbers. */
+#study-title{font-size:clamp(1.75rem,3.2vw,2.35rem);line-height:1.16;margin:3px 0 17px}
+#library-list .lib-item{padding:17px 18px;margin:9px 0}
+#library-list .lib-item strong{font-size:clamp(1.18rem,2vw,1.4rem);line-height:1.24;font-weight:750}
+#library-list .lib-item span{font-size:14px;margin-top:7px}
+.verses-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+.verse-group{border:1px solid #d7e5ef;border-radius:11px;padding:13px 17px;min-width:0}
+.verse-group h3{font-size:1.15rem;color:#15496d;margin:0 0 12px}
+.verse-ref-item{line-height:1.6;padding:5px 0;border-bottom:1px solid #eff3f7;overflow-wrap:anywhere}
+.verse-ref-item:last-child{border:0}
+.feedback-panel{max-width:660px!important;padding:21px}
+.feedback-panel h2{margin:3px 0 8px;color:#164d75}
+.feedback-panel .muted{font-size:14px;margin:4px 0 11px}
+.feedback-panel label{font-weight:650;font-size:13px;display:block}
+.feedback-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px 15px}
+.feedback-fields input,.feedback-fields select,.feedback-fields textarea{width:100%;margin-top:5px;border:1px solid #9bb8cb;border-radius:7px;padding:9px;font:inherit}
+.feedback-fields .feedback-wide{grid-column:1/-1}
+.feedback-actions{display:flex;gap:15px;align-items:center;flex-wrap:wrap;margin-top:16px}
+.feedback-honeypot{position:absolute;width:1px;height:1px;overflow:hidden;left:-10000px}
+#feedback-status{min-height:20px;font-size:13px;color:#235d49}
+@media(max-width:650px){.verses-columns{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}.feedback-panel{padding:16px}}
+
 </style>
 </head>
 <body>
-<header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teachers’ Guide</strong><div class="tiny">Teaching companion</div></div><div class="head-actions"><div class="global-search" role="search"><label for="search" class="sr-only">Find words in all studies</label><input class="compact-search" id="search" aria-label="Find words in all studies" placeholder="Find words…" autocomplete="off"><button id="clear-search" class="search-clear hidden" type="button" aria-label="Clear search">×</button><div id="search-results" class="search-results hidden" role="region" aria-label="Word search matches"></div></div><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><a class="nav-link" href="https://endtimebiblestudies.org/#help" title="Contact, request help or give feedback">Help / Feedback</a><button id="home" type="button">Home</button></div></div></header>
+<header class="top"><div class="top-inner"><div class="brand"><strong>📖 Teachers’ Guide</strong><div class="tiny">Teaching companion</div></div><div class="head-actions"><div class="global-search" role="search"><label for="search" class="sr-only">Find words in all studies</label><input class="compact-search" id="search" aria-label="Find words in all studies" placeholder="Find words…" autocomplete="off"><button id="clear-search" class="search-clear hidden" type="button" aria-label="Clear search">×</button><div id="search-results" class="search-results hidden" role="region" aria-label="Word search matches"></div></div><a class="nav-link" href="../links/" title="Other Bible-study websites">Links</a><button class="nav-link" id="help-feedback" type="button" title="Teachers' Guide help and feedback">Help / Feedback</button><button id="home" type="button">Home</button></div></div></header>
 <main>
 <div id="loading" class="panel">Loading Bible studies…</div>
 <section id="library" class="hidden">
-<div class="panel"><div class="row"><div><h1 class="heading" style="margin:0">Study Library</h1><div class="tiny">Choose any study, in any order</div></div><button id="sort" type="button" title="Toggle alphabetical or original order">A–Z</button></div></div>
+<div class="panel"><h1 class="heading" style="margin:0">Study Library</h1><div class="tiny">Choose any study, in any order</div></div>
 <div class="panel" id="library-list"></div></section>
 <section id="study" class="hidden">
-<div class="panel"><div id="study-number" class="tiny"></div><h1 id="study-title" class="heading"></h1><div class="ribbon"><div class="label">Purpose</div><div id="purpose"></div></div><div class="ribbon"><div class="label">Central truth</div><div id="central"></div></div><div class="mode-buttons"><button id="mode-guided">Main Study</button><button id="mode-verses">Scriptures</button><button id="pdf-button" title="Shares the existing study PDF during this V2 preview. The redesigned PDF is still in development.">Share</button></div></div>
+<div class="panel"><h1 id="study-title" class="heading"></h1><div class="ribbon"><div class="label">Purpose</div><div id="purpose"></div></div><div class="ribbon"><div class="label">Central truth</div><div id="central"></div></div><div class="mode-buttons"><button id="mode-guided">Main Study</button><button id="mode-verses">Scriptures</button><button id="pdf-button" title="Share this study PDF">Share</button></div></div>
 <div id="guide-view" class="layout"><aside class="panel side"><h3>Main teaching pathway</h3><div id="core-nav"></div><h3 style="margin-top:20px">Explore deeper • questions</h3><div id="extra-nav"></div></aside><article id="stage" class="panel"></article></div>
 <div id="verses-view" class="panel hidden"></div>
 </section></main>
+<div id="feedback-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="feedback-title">
+  <div class="panel feedback-panel">
+    <div class="row feedback-head">
+      <div><h2 id="feedback-title">Teachers’ Guide — Help / Feedback</h2>
+        <p class="muted">Ask a question, suggest a correction, or report a problem with this study.</p></div>
+      <button type="button" id="close-feedback" aria-label="Close feedback">Close ×</button>
+    </div>
+    <form id="feedback-form" method="post" target="feedback-response">
+      <input type="hidden" name="nonce" id="feedback-nonce">
+      <input type="hidden" name="startedAt" id="feedback-started">
+      <input type="hidden" name="source" value="Teachers' Guide">
+      <div class="feedback-honeypot" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="feedback-fields">
+        <label>Email address <input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label>Name (optional) <input name="name" type="text" autocomplete="name"></label>
+        <label>Country <select name="country" id="feedback-country" autocomplete="country" required>
+            <option value="">Select a country</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AX">Åland Islands</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AI">Anguilla</option>
+            <option value="AQ">Antarctica</option>
+            <option value="AG">Antigua and Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BB">Barbados</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BZ">Belize</option>
+            <option value="BJ">Benin</option>
+            <option value="BM">Bermuda</option>
+            <option value="BT">Bhutan</option>
+            <option value="BO">Bolivia</option>
+            <option value="BA">Bosnia and Herzegovina</option>
+            <option value="BW">Botswana</option>
+            <option value="BV">Bouvet Island</option>
+            <option value="BR">Brazil</option>
+            <option value="IO">British Indian Ocean Territory</option>
+            <option value="VG">British Virgin Islands</option>
+            <option value="BN">Brunei</option>
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="BI">Burundi</option>
+            <option value="KH">Cambodia</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="CV">Cape Verde</option>
+            <option value="BQ">Caribbean Netherlands</option>
+            <option value="KY">Cayman Islands</option>
+            <option value="CF">Central African Republic</option>
+            <option value="TD">Chad</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CX">Christmas Island</option>
+            <option value="CC">Cocos (Keeling) Islands</option>
+            <option value="CO">Colombia</option>
+            <option value="KM">Comoros</option>
+            <option value="CG">Congo - Brazzaville</option>
+            <option value="CD">Congo - Kinshasa</option>
+            <option value="CK">Cook Islands</option>
+            <option value="CR">Costa Rica</option>
+            <option value="CI">Côte d’Ivoire</option>
+            <option value="HR">Croatia</option>
+            <option value="CU">Cuba</option>
+            <option value="CW">Curaçao</option>
+            <option value="CY">Cyprus</option>
+            <option value="CZ">Czechia</option>
+            <option value="DK">Denmark</option>
+            <option value="DJ">Djibouti</option>
+            <option value="DM">Dominica</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="GQ">Equatorial Guinea</option>
+            <option value="ER">Eritrea</option>
+            <option value="EE">Estonia</option>
+            <option value="SZ">Eswatini</option>
+            <option value="ET">Ethiopia</option>
+            <option value="FK">Falkland Islands (Islas Malvinas)</option>
+            <option value="FO">Faroe Islands</option>
+            <option value="FJ">Fiji</option>
+            <option value="FI">Finland</option>
+            <option value="FR">France</option>
+            <option value="GF">French Guiana</option>
+            <option value="PF">French Polynesia</option>
+            <option value="TF">French Southern Territories</option>
+            <option value="GA">Gabon</option>
+            <option value="GM">Gambia</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="GH">Ghana</option>
+            <option value="GI">Gibraltar</option>
+            <option value="GR">Greece</option>
+            <option value="GL">Greenland</option>
+            <option value="GD">Grenada</option>
+            <option value="GP">Guadeloupe</option>
+            <option value="GU">Guam</option>
+            <option value="GT">Guatemala</option>
+            <option value="GG">Guernsey</option>
+            <option value="GN">Guinea</option>
+            <option value="GW">Guinea-Bissau</option>
+            <option value="GY">Guyana</option>
+            <option value="HT">Haiti</option>
+            <option value="HM">Heard Island and McDonald Islands</option>
+            <option value="HN">Honduras</option>
+            <option value="HK">Hong Kong</option>
+            <option value="HU">Hungary</option>
+            <option value="IS">Iceland</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Iran</option>
+            <option value="IQ">Iraq</option>
+            <option value="IE">Ireland</option>
+            <option value="IM">Isle of Man</option>
+            <option value="IL">Israel</option>
+            <option value="IT">Italy</option>
+            <option value="JM">Jamaica</option>
+            <option value="JP">Japan</option>
+            <option value="JE">Jersey</option>
+            <option value="JO">Jordan</option>
+            <option value="KZ">Kazakhstan</option>
+            <option value="KE">Kenya</option>
+            <option value="KI">Kiribati</option>
+            <option value="KW">Kuwait</option>
+            <option value="KG">Kyrgyzstan</option>
+            <option value="LA">Laos</option>
+            <option value="LV">Latvia</option>
+            <option value="LB">Lebanon</option>
+            <option value="LS">Lesotho</option>
+            <option value="LR">Liberia</option>
+            <option value="LY">Libya</option>
+            <option value="LI">Liechtenstein</option>
+            <option value="LT">Lithuania</option>
+            <option value="LU">Luxembourg</option>
+            <option value="MO">Macao</option>
+            <option value="MG">Madagascar</option>
+            <option value="MW">Malawi</option>
+            <option value="MY">Malaysia</option>
+            <option value="MV">Maldives</option>
+            <option value="ML">Mali</option>
+            <option value="MT">Malta</option>
+            <option value="MH">Marshall Islands</option>
+            <option value="MQ">Martinique</option>
+            <option value="MR">Mauritania</option>
+            <option value="MU">Mauritius</option>
+            <option value="YT">Mayotte</option>
+            <option value="MX">Mexico</option>
+            <option value="FM">Micronesia</option>
+            <option value="MD">Moldova</option>
+            <option value="MC">Monaco</option>
+            <option value="MN">Mongolia</option>
+            <option value="ME">Montenegro</option>
+            <option value="MS">Montserrat</option>
+            <option value="MA">Morocco</option>
+            <option value="MZ">Mozambique</option>
+            <option value="MM">Myanmar (Burma)</option>
+            <option value="NA">Namibia</option>
+            <option value="NR">Nauru</option>
+            <option value="NP">Nepal</option>
+            <option value="NL">Netherlands</option>
+            <option value="NC">New Caledonia</option>
+            <option value="NZ">New Zealand</option>
+            <option value="NI">Nicaragua</option>
+            <option value="NE">Niger</option>
+            <option value="NG">Nigeria</option>
+            <option value="NU">Niue</option>
+            <option value="NF">Norfolk Island</option>
+            <option value="KP">North Korea</option>
+            <option value="MK">North Macedonia</option>
+            <option value="MP">Northern Mariana Islands</option>
+            <option value="NO">Norway</option>
+            <option value="OM">Oman</option>
+            <option value="PK">Pakistan</option>
+            <option value="PW">Palau</option>
+            <option value="PS">Palestine</option>
+            <option value="PA">Panama</option>
+            <option value="PG">Papua New Guinea</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Peru</option>
+            <option value="PH">Philippines</option>
+            <option value="PN">Pitcairn Islands</option>
+            <option value="PL">Poland</option>
+            <option value="PT">Portugal</option>
+            <option value="PR">Puerto Rico</option>
+            <option value="QA">Qatar</option>
+            <option value="RE">Réunion</option>
+            <option value="RO">Romania</option>
+            <option value="RU">Russia</option>
+            <option value="RW">Rwanda</option>
+            <option value="WS">Samoa</option>
+            <option value="SM">San Marino</option>
+            <option value="ST">São Tomé and Príncipe</option>
+            <option value="SA">Saudi Arabia</option>
+            <option value="SN">Senegal</option>
+            <option value="RS">Serbia</option>
+            <option value="SC">Seychelles</option>
+            <option value="SL">Sierra Leone</option>
+            <option value="SG">Singapore</option>
+            <option value="SX">Sint Maarten</option>
+            <option value="SK">Slovakia</option>
+            <option value="SI">Slovenia</option>
+            <option value="SB">Solomon Islands</option>
+            <option value="SO">Somalia</option>
+            <option value="ZA">South Africa</option>
+            <option value="GS">South Georgia and South Sandwich Islands</option>
+            <option value="KR">South Korea</option>
+            <option value="SS">South Sudan</option>
+            <option value="ES">Spain</option>
+            <option value="LK">Sri Lanka</option>
+            <option value="BL">St Barthélemy</option>
+            <option value="SH">St Helena</option>
+            <option value="KN">St Kitts and Nevis</option>
+            <option value="LC">St Lucia</option>
+            <option value="MF">St Martin</option>
+            <option value="PM">St Pierre and Miquelon</option>
+            <option value="VC">St Vincent and the Grenadines</option>
+            <option value="SD">Sudan</option>
+            <option value="SR">Suriname</option>
+            <option value="SJ">Svalbard and Jan Mayen</option>
+            <option value="SE">Sweden</option>
+            <option value="CH">Switzerland</option>
+            <option value="SY">Syria</option>
+            <option value="TW">Taiwan</option>
+            <option value="TJ">Tajikistan</option>
+            <option value="TZ">Tanzania</option>
+            <option value="TH">Thailand</option>
+            <option value="TL">Timor-Leste</option>
+            <option value="TG">Togo</option>
+            <option value="TK">Tokelau</option>
+            <option value="TO">Tonga</option>
+            <option value="TT">Trinidad and Tobago</option>
+            <option value="TN">Tunisia</option>
+            <option value="TR">Türkiye</option>
+            <option value="TM">Turkmenistan</option>
+            <option value="TC">Turks and Caicos Islands</option>
+            <option value="TV">Tuvalu</option>
+            <option value="UG">Uganda</option>
+            <option value="UA">Ukraine</option>
+            <option value="AE">United Arab Emirates</option>
+            <option value="GB">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="UY">Uruguay</option>
+            <option value="UM">US Outlying Islands</option>
+            <option value="VI">US Virgin Islands</option>
+            <option value="UZ">Uzbekistan</option>
+            <option value="VU">Vanuatu</option>
+            <option value="VA">Vatican City</option>
+            <option value="VE">Venezuela</option>
+            <option value="VN">Vietnam</option>
+            <option value="WF">Wallis and Futuna</option>
+            <option value="EH">Western Sahara</option>
+            <option value="YE">Yemen</option>
+            <option value="ZM">Zambia</option>
+            <option value="ZW">Zimbabwe</option>
+          
+        </select></label>
+        <label>Postcode <input name="postcode" type="text" autocomplete="postal-code" required pattern=".*\S.*"></label>
+        <label class="feedback-wide">Reason <select name="helpType" id="feedback-reason">
+          <option value="Teachers' Guide — Bible study help">Help with a study</option>
+          <option value="Teachers' Guide — Correction or feedback">Correction or feedback</option>
+          <option value="Teachers' Guide — Website issue">Website problem</option>
+          <option value="Teachers' Guide — Other question">Other question</option>
+        </select></label>
+        <label class="feedback-wide">Your message <textarea name="message" rows="5" required placeholder="Tell us which study or teaching stage you are referring to."></textarea></label>
+      </div>
+      <div class="feedback-actions"><button type="submit">Send message</button><a href="mailto:mail@endtimebiblestudies.org?subject=Teachers%20Guide%20Feedback">Email instead</a></div>
+      <p id="feedback-status" role="status" aria-live="polite"></p>
+    </form>
+    <iframe id="feedback-response" name="feedback-response" title="Feedback submission response" hidden></iframe>
+  </div>
+</div>
 <div id="verse-modal" class="modal hidden" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel"><button onclick="closeVerse()">Close ✕</button><h2 id="verse-title"></h2><div id="verse-text"></div></div></div>
 <div id="image-modal" class="modal hidden" onclick="if(event.target.id==='image-modal')closeImage()"><div class="panel"><button onclick="closeImage()">Close ✕</button><div id="image-content" style="text-align:center;margin-top:10px"></div></div></div>
+<script src="../site-config.js"></script>
 <script>
-let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,tableLayouts=null,historicalNotes=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=false,kjv=null,kjvStatus='Loading stored KJV verses…';
+let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,tableLayouts=null,historicalNotes=null,current=-1,stageKind='core',stageIndex=0,mode='guided',kjv=null,kjvStatus='Loading stored KJV verses…';
 let searchHits=[],searchExpanded=new Set();
 // Exact published GTKJ study sequence; maps to stable teacher study IDs without reordering their content.
 const GTKJ_ORDER=["word","history","controversy","salvation","spirit","sanctuary","blue-stone","law","sabbath","prayer","baptism","living","health","stewardship","nature","second-coming","millennium","hell","seventy-weeks","judgement","1844","antichrist","america","mark","prophecy-gift","godhead","remnant","witnessing"];
 let gtkjRank=new Map();
-function orderStudies(studies){const sorted=studies.slice();if(sortAZ)sorted.sort((a,b)=>a.title.localeCompare(b.title));else sorted.sort((a,b)=>(gtkjRank.get(a.id)??999)-(gtkjRank.get(b.id)??999));return sorted;}
+function orderStudies(studies){return studies.slice().sort((a,b)=>(gtkjRank.get(a.id)??999)-(gtkjRank.get(b.id)??999));}
 const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const bibleBook = String.raw`(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Songs?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Nah|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev)`;
 const verseSpan = String.raw`\d+(?:\s*[-‐‑‒–—−]\s*(?:\d+\s*[:：]\s*)?\d+)?`;
@@ -220,10 +527,9 @@ function renderSearch(){
 }
 function renderLibrary(){
  const arr=orderStudies(teachMap.studies);
- $('sort').textContent=sortAZ?'A–Z':'GTKJ order';
- $('library-list').innerHTML=arr.map(x=>'<button class="lib-item" data-study="'+x.id+'"><strong><span class="study-order">'+(gtkjRank.get(x.id)??0)+'.</span> '+esc(x.title)+'</strong><span>'+esc(x.purpose)+'</span></button>').join('');
+ $('library-list').innerHTML=arr.map(x=>'<button class="lib-item" data-study="'+x.id+'"><strong>'+esc(x.title)+'</strong><span>'+esc(x.purpose)+'</span></button>').join('');
 }
-function openStudy(i){closeSearch();current=i;stageKind='core';stageIndex=0;mode='guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('study-title').textContent=studyData[i].title;$('study-number').textContent='STUDY '+(gtkjRank.get(i)??i+1)+' • freely selected';const t=teachMap.studies[i];$('purpose').textContent=t.purpose;$('central').textContent=t.central_truth;renderMode();scrollTo(0,0)}
+function openStudy(i){closeSearch();current=i;stageKind='core';stageIndex=0;mode='guided';$('library').classList.add('hidden');$('study').classList.remove('hidden');$('study-title').textContent=studyData[i].title;const t=teachMap.studies[i];$('purpose').textContent=t.purpose;$('central').textContent=t.central_truth;renderMode();scrollTo(0,0)}
 function openMatch(studyIndex,unitIndex){
  const words=normalizeSearch($('search').value).split(' ').filter(Boolean);
  openStudy(studyIndex);
@@ -299,7 +605,48 @@ function renderGuide(){
  if($('back-core'))$('back-core').onclick=()=>chooseStage('core',0);
 }
 function renderVerses(){
- const s=studyData[current];$('verses-view').innerHTML='<h2>Bible verses</h2><p class="muted">Scripture references from the original Word study, in document order.</p>'+s.verses.map((v,i)=>'<div class="text-item">'+(i+1)+'. '+highlightRefs(v)+'</div>').join('');
+ const study=studyData[current],groups=teachMap.studies[current].groups, units=study.units;
+ const main=[],supplementary=[],seenMain=new Set(),seenSupplementary=new Set();
+ const canonical=s=>String(s).toLowerCase().replace(/[\s.]/g,'').replace(/[‐‑‒–—−]/g,'-');
+ function add(target,seen,ref){
+  const text=String(ref||'').trim();if(!text)return;
+  const key=canonical(text);if(!key||seen.has(key))return;
+  seen.add(key);target.push(text);
+ }
+ function collect(text,target,seen){
+  for(const match of String(text||'').matchAll(bibleRefRegex))add(target,seen,match[0]);
+ }
+ const mainGroups=groups.filter(g=>g.kind==='core'),suppGroups=groups.filter(g=>g.kind==='supplement');
+ // The original Word-derived reference list is the primary reading list.
+ // Supplemental readings come from additional cited references in the body,
+ // optional apologetics, and related teacher notes.
+ for(const verse of study.verses||[])add(main,seenMain,verse);
+ for(const group of mainGroups)for(let i=group.start;i<=group.end;i++){
+  const u=units[i];if(!u)continue;
+  for(const ref of String(u.text||'').matchAll(bibleRefRegex)){
+   const key=canonical(ref[0]);if(!seenMain.has(key))add(supplementary,seenSupplementary,ref[0]);
+  }
+ }
+ for(const group of suppGroups)for(let i=group.start;i<=group.end;i++){
+  const u=units[i];if(u)collect(u.text,supplementary,seenSupplementary);
+ }
+ const stageNotes=coreEnrichments?.studies?.[current]?.main_stage_additions||[];
+ for(const addition of stageNotes){
+  const note=addition.teacher_guidance||{};
+  for(const key of ['reading_reference','explanation','question','suggested_answer'])collect(note[key],supplementary,seenSupplementary);
+ }
+ for(const note of historicalNotes?.notes||[]){
+  if(note.study_id!==current)continue;
+  for(const key of ['title','text'])collect(note[key],supplementary,seenSupplementary);
+ }
+ const leftover=supplementary.filter(ref=>!seenMain.has(canonical(ref)));
+ function groupHTML(title,items,empty){
+  return '<section class="verse-group"><h3>'+title+'</h3>'+
+   (items.length?items.map(v=>'<div class="verse-ref-item">'+highlightRefs(v)+'</div>').join(''):'<p class="muted">'+empty+'</p>')+'</section>';
+ }
+ $('verses-view').innerHTML='<h2>Scriptures</h2><p class="muted">Main study readings and additional passages cited throughout the teaching and supplementary material.</p>'+
+  '<div class="verses-columns">'+groupHTML('Main study Scriptures',main,'No main Scripture references listed.')+
+  groupHTML('Supplementary Scriptures',leftover,'No additional Scripture references in this study.')+'</div>';
 }
 document.addEventListener('click',e=>{
  const matched=e.target.closest('[data-match-study]');if(matched){openMatch(Number(matched.dataset.matchStudy),Number(matched.dataset.matchUnit));return}
@@ -310,12 +657,74 @@ document.addEventListener('click',e=>{
  const img=e.target.closest('[data-image]');if(img){showImage(img.dataset.image);return}
 });
 $('home').onclick=()=>{closeSearch();showLibrary()};
-$('sort').onclick=()=>{sortAZ=!sortAZ;renderLibrary()};
+
 $('search').oninput=()=>{searchExpanded.clear();renderSearch()};
 $('search').onfocus=()=>{if(normalizeSearch($('search').value))renderSearch()};
 $('search').onkeydown=e=>{if(e.key==='Escape'){closeSearch();$('search').blur()}if(e.key==='Enter'&&searchHits.length)openMatch(searchHits[0].study,searchHits[0].index)};
 $('clear-search').onclick=()=>{$('search').value='';searchExpanded.clear();renderSearch();$('search').focus()};
 document.addEventListener('click',e=>{if(!e.target.closest('.global-search'))closeSearch()});
+
+let teacherFeedbackPending=null,teacherFeedbackTimer=null;
+function openTeacherFeedback(){
+ $('feedback-modal').classList.remove('hidden');
+ $('feedback-started').value=String(Date.now());
+ if(current>=0){
+  const reason=$('feedback-reason');
+  if(reason.selectedIndex===0){
+   const message=$('feedback-form').elements.namedItem('message');
+   if(!message.value)message.placeholder='Regarding '+studyData[current].title+' — tell us what you need help with.';
+  }
+ }
+ $('feedback-form').elements.namedItem('email').focus();
+}
+function closeTeacherFeedback(){
+ $('feedback-modal').classList.add('hidden');
+}
+$('help-feedback').onclick=openTeacherFeedback;
+$('close-feedback').onclick=closeTeacherFeedback;
+$('feedback-modal').addEventListener('click',e=>{if(e.target.id==='feedback-modal')closeTeacherFeedback()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('feedback-modal').classList.contains('hidden'))closeTeacherFeedback()});
+$('feedback-form').addEventListener('formdata',e=>{
+ const country=$('feedback-country'),postcode=$('feedback-form').elements.namedItem('postcode').value.trim();
+ e.formData.set('location',(country.selectedOptions[0]?.textContent||'')+', '+postcode);
+});
+$('feedback-form').addEventListener('submit',e=>{
+ e.preventDefault();
+ const form=$('feedback-form'),status=$('feedback-status'),endpoint=window.SITE_CONFIG?.contactWebAppUrl;
+ if(teacherFeedbackPending){status.textContent='Your previous message is still being processed.';return;}
+ if(!endpoint){status.textContent='Online sending is unavailable. Please use Email instead.';return;}
+ if(!form.reportValidity())return;
+ const nonce=String(Date.now())+'-'+Math.random().toString(36).slice(2);
+ $('feedback-nonce').value=nonce;$('feedback-started').value=String(Date.now());
+ teacherFeedbackPending=nonce;
+ form.action=endpoint;form.target='feedback-response';
+ form.querySelector('[type="submit"]').disabled=true;
+ status.textContent='Sending your message…';
+ clearTimeout(teacherFeedbackTimer);
+ teacherFeedbackTimer=setTimeout(()=>{
+  if(teacherFeedbackPending!==nonce)return;
+  teacherFeedbackPending=null;
+  form.querySelector('[type="submit"]').disabled=false;
+  status.textContent='Delivery could not be confirmed. Check before sending again, or use Email instead.';
+ },20000);
+ form.submit();
+});
+window.addEventListener('message',event=>{
+ const data=event.data;
+ if(!data||data.source!=='rooted-hope-contact'||!teacherFeedbackPending||data.nonce!==teacherFeedbackPending)return;
+ let trustedGoogle=false;
+ try{
+  const url=new URL(event.origin);
+  trustedGoogle=url.protocol==='https:'&&(url.hostname==='script.google.com'||url.hostname==='script.googleusercontent.com'||url.hostname.endsWith('.googleusercontent.com')||url.hostname.endsWith('.google.com'));
+ }catch(e){}
+ const frame=$('feedback-response');
+ if(!trustedGoogle&&!(event.origin==='null'&&event.source===frame.contentWindow))return;
+ clearTimeout(teacherFeedbackTimer);teacherFeedbackPending=null;
+ $('feedback-form').querySelector('[type="submit"]').disabled=false;
+ $('feedback-status').textContent=data.ok?'Your message has been sent. Thank you.':(data.message||'The message could not be sent.');
+ if(data.ok)$('feedback-form').reset();
+});
+
 $('mode-guided').onclick=()=>setMode('guided');$('mode-verses').onclick=()=>setMode('verses');
 $('pdf-button').onclick=()=>{
  if(current<0)return;const path='../teachers-guide/study-pdfs/Study_'+String(current+1).padStart(2,'0')+'.pdf';
