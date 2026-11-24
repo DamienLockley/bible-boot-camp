@@ -18,7 +18,7 @@
       "main_stage_additions": [
         {
           "core_stage_index": 0,
-          "core_label": "Scripture's claims",
+          "core_label": "The Bible's claim to inspiration",
           "teacher_guidance": {
             "source": "GTKJ revised guided reading",
             "source_key": "word",
@@ -32,7 +32,7 @@
         },
         {
           "core_stage_index": 1,
-          "core_label": "God's character revealed",
+          "core_label": "Evidence — God's character",
           "teacher_guidance": {
             "source": "GTKJ revised guided reading",
             "source_key": "word",
@@ -46,7 +46,7 @@
         },
         {
           "core_stage_index": 2,
-          "core_label": "Predictive prophecy and Daniel 2",
+          "core_label": "Evidence — predictive prophecy",
           "teacher_guidance": {
             "source": "GTKJ revised guided reading",
             "source_key": "word",
@@ -59,22 +59,8 @@
           }
         },
         {
-          "core_stage_index": 3,
-          "core_label": "Consistency of Scripture",
-          "teacher_guidance": {
-            "source": "GTKJ revised guided reading",
-            "source_key": "word",
-            "reading_reference": "Daniel 2:1–23, 31–45",
-            "title": "From Babylon to the feet of the image",
-            "explanation": "Begin with Daniel 2:31–35. Picture the statue from head to foot and notice where the stone strikes. Now read Daniel 2:36–43. Daniel identifies Nebuchadnezzar as the head of gold and says another kingdom will follow his. In the historical reading followed here, the gold is Babylon, the silver is Medo-Persia, the brass is Greece, and the iron is Rome. Pause at the feet. Daniel says “the kingdom shall be divided” (Daniel 2:41). When the Western Roman Empire broke apart, separate kingdoms arose across its former territory. Think of Italy, France and Spain on a map today. Their borders have changed over the centuries, yet these lands once ruled by Rome remain distinct nations. Now read Daniel 2:44–45. What does God promise beyond this divided stage?",
-            "question": "Which part of the dream can you recognise in European history, and which part does Daniel describe as still ahead of us?",
-            "suggested_answer": "The iron mixed with clay pictures a divided kingdom. We can look back on Rome’s breakup and still recognise separate nations across its former western lands. The stone points to God bringing earthly rule to an end and establishing His own lasting kingdom. The first gives us a reason to trust the second.",
-            "placement_status": "PROPOSED — candidate improvement to main teaching pathway"
-          }
-        },
-        {
-          "core_stage_index": 4,
-          "core_label": "Invitation to continue",
+          "core_stage_index": 7,
+          "core_label": "Invitation to keep studying",
           "teacher_guidance": {
             "source": "GTKJ revised guided reading",
             "source_key": "word",
