@@ -32,7 +32,7 @@ details{border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin:
 <div id="verse-modal" class="modal hidden" onclick="if(event.target.id==='verse-modal')closeVerse()"><div class="panel"><button onclick="closeVerse()">Close ✕</button><h2 id="verse-title"></h2><div id="verse-text"></div></div></div>
 <div id="image-modal" class="modal hidden" onclick="if(event.target.id==='image-modal')closeImage()"><div class="panel"><button onclick="closeImage()">Close ✕</button><div id="image-content" style="text-align:center;margin-top:10px"></div></div></div>
 <script>
-let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=true,kjv=null,kjvStatus='Loading stored KJV verses…';
+let studyData=null,teachMap=null,relatedResources=null,coreEnrichments=null,tableLayouts=null,current=-1,stageKind='core',stageIndex=0,mode='guided',sortAZ=true,kjv=null,kjvStatus='Loading stored KJV verses…';
 const $=id=>document.getElementById(id),esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const bibleBook = String.raw`(?:[1-3]\s*)?(?:Genesis|Gen|Exodus|Ex|Leviticus|Lev|Numbers|Num|Deuteronomy|Deut|Joshua|Josh|Judges|Judg|Ruth|Samuel|Sam|Kings|Kgs|Chronicles|Chron|Chr|Ezra|Nehemiah|Neh|Esther|Est|Job|Psalms?|Ps|Proverbs|Prov|Ecclesiastes|Eccl|Song(?:\s+of\s+Solomon)?|Songs?|Isaiah|Isa|Jeremiah|Jer|Lamentations|Lam|Ezekiel|Ezek|Daniel|Dan|Hosea|Hos|Joel|Amos|Obadiah|Obad|Jonah|Micah|Mic|Nahum|Nah|Habakkuk|Hab|Zephaniah|Zeph|Haggai|Hag|Zechariah|Zech|Malachi|Mal|Matthew|Matt|Mat|Mt|Mark|Mk|Luke|Lk|John|Jn|Acts|Romans|Rom|Corinthians|Cor|Galatians|Gal|Ephesians|Eph|Philippians|Phil|Colossians|Col|Thessalonians|Thess|Timothy|Tim|Titus|Philemon|Philem|Hebrews|Heb|James|Jas|Peter|Pet|Jude|Revelation|Rev)`;
 const verseSpan = String.raw`\d+(?:\s*[-‐‑‒–—−]\s*(?:\d+\s*[:：]\s*)?\d+)?`;
@@ -86,7 +86,21 @@ async function loadKjv(){try{const r=await fetch('../teachers-guide/kjv-verses.j
 function unitsMarkup(from,to){
  let html='';
  const units=studyData[current].units;
+ const tables=(tableLayouts?.tables||[]).filter(t=>t.study_id===current);
  for(let j=from;j<=to;j++){
+  const table=tables.find(t=>t.start===j);
+  if(table){
+   if(table.end>to){html+='<p class="table-notice">Table spans beyond this teaching stage. Review stage boundaries before publishing.</p>';continue}
+   html+='<div class="table-wrap"><table class="study-table"><caption>'+esc(table.caption)+'</caption>';
+   for(let k=0;k<table.rows.length;k++){
+    html+='<tr>'+table.rows[k].map(index=>{
+       const val=highlightRefs(units[index].text||'');
+       return (table.column_headers&&k===0?'<th scope="col">':'<td>')+val+(table.column_headers&&k===0?'</th>':'</td>');
+    }).join('')+'</tr>';
+   }
+   html+='</table></div>';j=table.end;continue;
+  }
+  if(tables.some(t=>j>t.start&&j<=t.end))continue;
   const u=units[j];if(!u)continue;
   const kind=u.kind||'text', txt=highlightRefs(u.text||'');
   if(kind==='answer')html+='<details><summary>Reveal answer</summary><div class="text-item">'+txt+'</div></details>';
@@ -197,13 +211,15 @@ Promise.all([
  fetch('../teachers-guide/study-data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Study data HTTP '+r.status);return r.json()}),
  fetch('./teaching-map.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Teaching map HTTP '+r.status);return r.json()}),
  fetch('./related-study-resources.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Related resources HTTP '+r.status);return r.json()}),
- fetch('./main-pathway-enrichments.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Main additions HTTP '+r.status);return r.json()})
-]).then(([source,map,related,enriched])=>{
+ fetch('./main-pathway-enrichments.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Main additions HTTP '+r.status);return r.json()}),
+ fetch('./table-layouts.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Tables HTTP '+r.status);return r.json()})
+]).then(([source,map,related,enriched,tables])=>{
  if(!Array.isArray(source.sections)||!Array.isArray(map.studies)||source.sections.length!==map.studies.length)throw Error('Study count mismatch');
  for(let i=0;i<source.sections.length;i++)if(source.sections[i].title!==map.studies[i].title||source.sections[i].units.length!==map.studies[i].source_unit_count)throw Error('Source mismatch: '+i);
  if(related.items.length!==map.studies.length||enriched.studies.length!==map.studies.length)throw Error('Resource count mismatch');
  for(let i=0;i<enriched.studies.length;i++)if(enriched.studies[i].main_stage_additions.length!==map.studies[i].groups.filter(g=>g.kind==='core').length)throw Error('Stage mapping changed: '+i);
- studyData=source.sections;teachMap=map;relatedResources=related;coreEnrichments=enriched;showLibrary();
+ for(const t of tables.tables){const sec=source.sections[t.study_id];if(!sec||sec.title!==t.study_title||t.rows.flat().length!==t.end-t.start+1||t.rows.flat().some((j,k)=>j!==t.start+k))throw Error('Table source structure changed: '+t.study_title)}
+ studyData=source.sections;teachMap=map;relatedResources=related;coreEnrichments=enriched;tableLayouts=tables;showLibrary();
 }).catch(err=>{$('loading').textContent='Preview could not load: '+err.message+'. Serve the repository folder using the manager Run Local Site option or a local web server; no live files are changed.'});
 </script>
 </body></html>
