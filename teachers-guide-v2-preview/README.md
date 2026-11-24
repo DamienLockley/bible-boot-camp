@@ -12,7 +12,7 @@
 - Teacher-only *proposed* spiritual application and response prompt for every study.
 - Proposed introductions for the two studies currently missing them.
 - Clickable King James Version references using the existing Teachers' Guide parsing logic and the original KJV JSON.
-- Study library with search and optional alphabetical or original ordering.
+- Study library defaults to the exact current **GTKJ sequence** (all 28 matched by stable GTKJ study ID), with optional alphabetical sorting. Any study remains freely selectable, without prerequisites. Study headings show GTKJ order; underlying teacher data/PDF asset indices are unchanged.
 - Persistent **Find words** search in the sticky header, available from Home and any study. Results are grouped by study, with highlighted matching excerpts. Clicking a result opens that study's exact core or supplementary teaching stage, scrolls to the matching passage, and highlights the term there.
 - Search results initially display six passages per study, with a **Show all** option. The separate sidebar question-search input was removed; all supplementary questions remain in the navigation list. Press Escape to close search, Enter to open the first match, or × to clear.
 - Proposed GTKJ teaching additions integrated into **92 main pathway stages**, clearly marked for review (source: GTKJ revised depth readings).
