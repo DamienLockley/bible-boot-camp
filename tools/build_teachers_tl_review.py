@@ -145,8 +145,8 @@ def make_word(sections, translated, mapping, tables):
                 doc.add_paragraph(stage_heading(tl,group,number),style)
             if j in starts:
                 t = starts[j]
-                caption = ("Talahanayan: " + (tl["title"] if t.get("caption") else ""))
-                doc.add_paragraph(caption, style="Caption")
+                # Preserve each table's original cells without inserting extra
+                # caption paragraphs that the Word extractor counts as teaching units.
                 tb=doc.add_table(rows=len(t["rows"]), cols=max(len(row) for row in t["rows"]))
                 tb.style="Light Shading Accent 1"
                 ordered=[]
