@@ -517,53 +517,53 @@
     },
     {
       "teacher_study_id": 8,
-      "teacher_title": "Historicity of Jesus",
+      "teacher_title": "Ang Makasaysayang Pag-iral ni Hesus",
       "gtk_source_id": "history",
-      "gtk_title": "The Historicity of Jesus",
-      "gtk_lead": "Was Jesus really a person in history?",
-      "gtk_principle": "Christian faith is rooted in claims about real people, events and witnesses. Evidence should be investigated with care, not exaggerated.",
+      "gtk_title": "Ang Makasaysayang Pag-iral ni Hesus",
+      "gtk_lead": "Talaga bang nabuhay si Hesus bilang isang tao sa kasaysayan?",
+      "gtk_principle": "Nakaugat ang pananampalatayang Kristiyano sa mga pahayag tungkol sa tunay na mga tao, pangyayari, at saksi. Dapat maingat na siyasatin ang katibayan, hindi palakihin ang sinasabi nito.",
       "gtk_connections": [
         {
-          "title": "Christian faith makes historical claims",
+          "title": "May mga makasaysayang pahayag ang pananampalatayang Kristiyano",
           "scripture": "Luke 1:1–4; 1 Corinthians 15:3–8",
-          "insight": "The Gospel writers place Jesus among real people and rulers, and the earliest Christians proclaimed His death and resurrection as events rather than mere moral symbols. History cannot prove every theological conclusion the Bible draws, but it can help us examine whether the movement began in a real time and place. Faith and careful investigation need not be enemies."
+          "insight": "Inilalagay ng mga manunulat ng Ebanghelyo si Hesus sa gitna ng mga tunay na tao at pinuno, at ipinahayag ng mga unang Kristiyano ang Kaniyang kamatayan at muling pagkabuhay bilang mga pangyayari, hindi lamang bilang sagisag ng mabuting asal. Hindi kayang patunayan ng kasaysayan ang bawat konklusyong teolohikal na hinahango ng Biblia, ngunit makatutulong ito upang suriin kung nagsimula ang kilusan sa tunay na panahon at lugar. Hindi kailangang magkaaway ang pananampalataya at maingat na pagsusuri."
         },
         {
-          "title": "Look at the earliest testimony",
+          "title": "Suriin ang pinakamaagang mga patotoo",
           "scripture": "Acts 2:22–36; 1 Corinthians 15:12–19",
-          "insight": "Peter’s preaching centred on Jesus’ ministry, crucifixion and resurrection. Paul wrote that if Christ had not risen, Christian preaching would be empty. These bold claims should encourage thoughtful questions. What were the apostles trying to persuade their listeners to believe? What changed in the early community? Why did people continue to proclaim Christ despite opposition? The Christian message invites us to consider the evidence and the meaning together."
+          "insight": "Nakasentro ang pangangaral ni Pedro sa ministeryo, pagpapako sa krus, at muling pagkabuhay ni Hesus. Isinulat ni Pablo na kung hindi muling nabuhay si Cristo, walang kabuluhan ang pangangaral ng mga Kristiyano. Dapat mag-udyok ng maingat na mga tanong ang mga matitibay na pahayag na ito. Ano ang sinisikap paniwalain ng mga apostol sa kanilang mga tagapakinig? Ano ang nagbago sa unang pamayanang Kristiyano? Bakit patuloy nilang ipinahayag si Cristo sa kabila ng pagsalungat? Inaanyayahan tayo ng mensaheng Kristiyano na isaalang-alang kapuwa ang katibayan at kahulugan."
         },
         {
-          "title": "Outside references have limits and value",
+          "title": "May halaga at hangganan ang mga sangguniang mula sa labas",
           "scripture": "Luke 2:1–2; Acts 18:12–17",
-          "insight": "Writers such as Tacitus and Josephus can help establish that Jesus and the early Christians belonged to the world of ancient Roman history. They are not substitutes for the Gospels, and later historians do not give us an eyewitness account of every miracle. Distinguish what an outside source actually says from conclusions we might want it to support. This is a stronger approach than repeating dramatic statistics about manuscripts or historians without checking them."
+          "insight": "Makatutulong ang mga manunulat na gaya nina Tacitus at Josephus upang maipakitang bahagi ng sinaunang kasaysayan ng Roma si Hesus at ang mga unang Kristiyano. Hindi nila pinapalitan ang mga Ebanghelyo, at ang mga sumunod na mananalaysay ay hindi nagbibigay ng salaysay na personal nilang nasaksihan para sa bawat himala. Ihiwalay ang tunay na sinasabi ng isang panlabas na sanggunian sa mga konklusyong nais nating masuportahan nito. Mas matibay ang ganitong paraan kaysa sa pag-uulit ng kahanga-hangang mga bilang tungkol sa mga manuskrito o mananalaysay nang hindi sinusuri."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Is it wrong to look for evidence?",
-          "answer": "No. Christians can welcome honest historical inquiry. A claim should be evaluated on its evidence, not protected from questions."
+          "question": "Mali bang maghanap ng katibayan?",
+          "answer": "Hindi. Maaaring malugod na tanggapin ng mga Kristiyano ang tapat na pagsusuring pangkasaysayan. Dapat suriin ang isang pahayag batay sa katibayan nito, hindi ilayo sa mga tanong."
         },
         {
-          "question": "Do Roman historians prove the resurrection?",
-          "answer": "No. They support certain historical facts about Jesus and early Christians. The resurrection claim rests especially on the early Christian testimony."
+          "question": "Pinatutunayan ba ng mga Romanong mananalaysay ang muling pagkabuhay?",
+          "answer": "Hindi. Sinusuportahan nila ang ilang makasaysayang katotohanan tungkol kay Hesus at sa mga unang Kristiyano. Ang pahayag tungkol sa muling pagkabuhay ay pangunahing nakasalig sa patotoo ng mga unang Kristiyano."
         },
         {
-          "question": "What if I am not ready to believe everything?",
-          "answer": "Read one Gospel, note the claims you can assess, and keep asking fair questions. A thoughtful process is valuable."
+          "question": "Paano kung hindi pa ako handang paniwalaan ang lahat?",
+          "answer": "Basahin ang isang Ebanghelyo, itala ang mga pahayag na maaari mong suriin, at patuloy na magtanong nang makatarungan. Mahalaga ang maingat na proseso."
         }
       ],
-      "gtk_practice": "Read 1 Corinthians 15 and one resurrection account in a Gospel. Note what each writer claims, what evidence is presented and what question you want to explore next.",
+      "gtk_practice": "Basahin ang 1 Corinto 15 at isang salaysay ng muling pagkabuhay sa isang Ebanghelyo. Itala ang mga pahayag ng bawat manunulat, ang katibayang ibinigay, at ang susunod na tanong na nais mong siyasatin.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 9:25–25: 9:25  From the command to restore Jerusalem to Messiah",
+          "title": "Daniel 9:25–25: 9:25 Mula sa utos na ibalik ang Jerusalem hanggang sa Mesiyas",
           "href": "../daniel/index.html#section-9-25",
           "anchor": "section-9-25"
         },
         {
           "source": "revelation",
-          "title": "Fear not: the living Christ",
+          "title": "Huwag matakot: ang buhay na Cristo",
           "passage": "Revelation 1:17",
           "href": "../revelation/index.html#rev-1-17",
           "anchor": "rev-1-17"
@@ -572,66 +572,66 @@
     },
     {
       "teacher_study_id": 9,
-      "teacher_title": "The Judgement",
+      "teacher_title": "Ang Paghuhukom",
       "gtk_source_id": "judgement",
-      "gtk_title": "The Judgement",
-      "gtk_lead": "Should God’s judgement make us afraid?",
-      "gtk_principle": "God’s judgment reveals His justice and the truth about human choices. The good news is that Jesus is both the righteous Judge and the Advocate of those who trust Him.",
+      "gtk_title": "Ang Paghuhukom",
+      "gtk_lead": "Dapat ba tayong matakot sa paghuhukom ng Diyos?",
+      "gtk_principle": "Ibinubunyag ng paghuhukom ng Diyos ang Kaniyang katarungan at ang katotohanan tungkol sa mga pagpili ng tao. Ang mabuting balita ay si Hesus ang matuwid na Hukom at ang Tagapagtanggol ng mga nagtitiwala sa Kaniya.",
       "gtk_connections": [
         {
-          "title": "Judgment protects the moral meaning of life",
+          "title": "Ipinagtatanggol ng paghuhukom ang moral na kahulugan ng buhay",
           "scripture": "Ecclesiastes 12:13–14; Hebrews 9:27",
-          "insight": "If injustice, secrecy and cruelty never came to light, there would be no final answer for their victims. The Bible speaks of a judgment in which God takes human choices seriously. This should not be reduced to a picture of a harsh examiner waiting to catch mistakes. God’s judgment vindicates what is true and right, reveals the outcomes of choices and shows that mercy is not indifference to evil."
+          "insight": "Kung ang kawalang-katarungan, pagtatago ng katotohanan, at kalupitan ay hindi kailanman mahahayag, walang magiging pangwakas na katugunan para sa mga biktima nito. Nagsasalita ang Biblia tungkol sa paghuhukom kung saan sineseryoso ng Diyos ang mga pasiya ng tao. Hindi ito dapat gawing larawan ng isang malupit na tagasulit na naghihintay lamang makakita ng pagkakamali. Pinatutunayan ng paghuhukom ng Diyos kung ano ang totoo at matuwid, inilalantad ang bunga ng mga pagpili, at ipinakikitang ang awa ay hindi kawalang-malasakit sa kasamaan."
         },
         {
-          "title": "The heavenly books and the open court",
+          "title": "Ang mga aklat sa langit at ang hayagang hukuman",
           "scripture": "Daniel 7:9–14; Revelation 20:11–12",
-          "insight": "Daniel describes a heavenly court and books that are opened. The imagery communicates that divine judgment is open, careful and accountable, not arbitrary. God does not need books to help Himself remember. The picture assures creation that His decisions are just. In Daniel 7, judgment is also connected with the kingdom being given to the Son of Man. That keeps our hope centred on Christ rather than on a fear of records."
+          "insight": "Inilalarawan ni Daniel ang isang hukuman sa langit at ang pagbubukas ng mga aklat. Ipinahihiwatig ng larawang ito na ang paghuhukom ng Diyos ay hayag, maingat, at makatarungan, hindi pabigla-bigla. Hindi nangangailangan ang Diyos ng mga aklat upang matulungan Siyang makaalala. Tinitiyak ng larawan sa buong nilalang na makatarungan ang Kaniyang mga pasiya. Sa Daniel 7, ang paghuhukom ay may kaugnayan din sa pagbibigay ng kaharian sa Anak ng Tao. Pinananatili nito ang ating pag-asang nakasentro kay Cristo sa halip na sa takot sa mga tala."
         },
         {
-          "title": "Jesus is our representative",
+          "title": "Si Hesus ang ating kinatawan",
           "scripture": "Romans 8:1, 31–34; 1 John 2:1–2",
-          "insight": "For someone aware of past failure, judgment may sound frightening. Scripture also presents Jesus as our Advocate and the One who died and rose for us. We do not enter the judgment relying on a spotless personal record that we produced by our own strength. We come to God through Christ, who forgives and changes those who trust Him. Grace never excuses deliberate harm, but it gives real hope to repentant people."
+          "insight": "Sa taong nakaaalala ng mga nagawang pagkakamali, maaaring nakatatakot pakinggan ang paghuhukom. Ngunit inilalarawan din ng Kasulatan si Hesus bilang ating Tagapagtanggol at ang Isa na namatay at muling nabuhay para sa atin. Hindi tayo humaharap sa paghuhukom na umaasa sa sarili nating malinis na tala na nakamit sa sariling lakas. Lumalapit tayo sa Diyos sa pamamagitan ni Cristo, na nagpapatawad at nagbabago sa mga nagtitiwala sa Kaniya. Hindi kailanman binibigyang-matwid ng biyaya ang sinasadyang pananakit, ngunit nagbibigay ito ng tunay na pag-asa sa mga nagsisisi."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Will every secret mistake be used to humiliate me?",
-          "answer": "God’s judgement is serious, but the gospel promises forgiveness and restoration in Christ. Bring your sins to Him rather than living in secrecy and despair."
+          "question": "Gagamitin ba ang bawat lihim kong pagkakamali upang hiyain ako?",
+          "answer": "Seryoso ang paghuhukom ng Diyos, ngunit ipinangangako ng ebanghelyo ang kapatawaran at pagpapanumbalik kay Cristo. Ilapit ang iyong mga kasalanan sa Kaniya sa halip na mamuhay sa pagtatago at kawalan ng pag-asa."
         },
         {
-          "question": "If God knows everything, why a judgement?",
-          "answer": "The study explains it as a demonstration of justice to the wider universe, not the discovery of hidden information by God."
+          "question": "Kung alam ng Diyos ang lahat, bakit kailangan ang paghuhukom?",
+          "answer": "Ipinaliliwanag ito ng pag-aaral bilang pagpapakita ng katarungan sa buong sansinukob, hindi bilang pagtuklas ng Diyos sa impormasyong hindi Niya alam."
         },
         {
-          "question": "What does judgement mean for someone treated unfairly?",
-          "answer": "It means evil does not receive the final word. God sees what others overlook and promises ultimate justice."
+          "question": "Ano ang kahulugan ng paghuhukom sa taong nakaranas ng kawalang-katarungan?",
+          "answer": "Nangangahulugan itong hindi sa kasamaan ang huling salita. Nakikita ng Diyos ang hindi napapansin ng iba at ipinangangako Niya ang pangwakas na katarungan."
         }
       ],
-      "gtk_practice": "Write down the difference between “God has a true judgment” and “I must save myself by perfection”. Read Romans 8:31–34 whenever fear of judgment returns.",
+      "gtk_practice": "Isulat ang pagkakaiba ng “Totoo at makatarungan ang paghuhukom ng Diyos” at “Kailangan kong iligtas ang sarili sa pagiging sakdal.” Basahin ang Roma 8:31–34 kapag bumabalik ang takot sa paghuhukom.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 7:9–10: The Ancient of Days takes His seat",
+          "title": "Daniel 7:9–10: Naupo ang Matanda sa mga Araw",
           "href": "../daniel/index.html#section-7-9",
           "anchor": "section-7-9"
         },
         {
           "source": "daniel",
-          "title": "Daniel 7:26–28: Judgment reverses the verdict of earth",
+          "title": "Daniel 7:26–28: Binabaligtad ng paghuhukom ang hatol ng lupa",
           "href": "../daniel/index.html#section-7-26",
           "anchor": "section-7-26"
         },
         {
           "source": "revelation",
-          "title": "The great white throne",
+          "title": "Ang dakilang puting trono",
           "passage": "Revelation 20:11",
           "href": "../revelation/index.html#rev-20-11",
           "anchor": "rev-20-11"
         },
         {
           "source": "revelation",
-          "title": "First angel: everlasting gospel and judgment",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
           "passage": "Revelation 14:6",
           "href": "../revelation/index.html#rev-14-6",
           "anchor": "rev-14-6"
@@ -642,64 +642,64 @@
       "teacher_study_id": 10,
       "teacher_title": "1844",
       "gtk_source_id": "1844",
-      "gtk_title": "1844 and the Heavenly Sanctuary",
-      "gtk_lead": "How does the sanctuary prophecy lead to 1844?",
-      "gtk_principle": "The study connects Daniel’s long prophecy with Jesus’ ongoing priestly ministry and the call to take God’s judgment seriously. Jesus remains the centre of the message.",
+      "gtk_title": "1844 at ang Santuwaryo sa Langit",
+      "gtk_lead": "Paano humahantong sa 1844 ang propesiya tungkol sa santuwaryo?",
+      "gtk_principle": "Iniuugnay ng pag-aaral ang mahabang propesiya ni Daniel sa patuloy na ministeryo ni Hesus bilang Saserdote at sa panawagang seryosohin ang paghuhukom ng Diyos. Si Hesus pa rin ang sentro ng mensahe.",
       "gtk_connections": [
         {
-          "title": "The judgment belongs to the gospel",
+          "title": "Bahagi ng ebanghelyo ang paghuhukom",
           "scripture": "Acts 17:30–31; Revelation 14:6–7",
-          "insight": "The New Testament speaks of a coming judgment alongside the announcement of good news. There is no need to treat those messages as enemies. A loving God must ultimately deal with evil and restore justice, and the One appointed to judge is Jesus. This study approaches the prophetic timetable as an extension of the lessons on salvation, the sanctuary and judgment, rather than as a separate way of earning acceptance."
+          "insight": "Binabanggit ng Bagong Tipan ang darating na paghuhukom kasabay ng pagpapahayag ng mabuting balita. Hindi kailangang ituring na magkaaway ang mga mensaheng ito. Sa huli, kailangang tugunan ng mapagmahal na Diyos ang kasamaan at ibalik ang katarungan, at si Hesus ang itinalagang humatol. Tinatalakay ng pag-aaral na ito ang takdang panahon sa propesiya bilang pagpapatuloy ng mga aralin tungkol sa kaligtasan, santuwaryo, at paghuhukom, hindi bilang hiwalay na paraan upang makamit ang pagtanggap ng Diyos."
         },
         {
-          "title": "Earthly services point to heavenly realities",
+          "title": "Itinuturo ng makalupang paglilingkod ang mga katotohanan sa langit",
           "scripture": "Exodus 25:8–9, 40; Hebrews 8:1–6; 9:23–24",
-          "insight": "The sanctuary in the wilderness followed a pattern, and Hebrews explains that Jesus now ministers in the heavenly sanctuary. The Day of Atonement brought Israel face to face with cleansing, responsibility and restored fellowship. This pattern helps readers understand why Scripture can speak of both Christ’s finished sacrifice and His ongoing work as High Priest. The work of Jesus is the centre of the teaching, not the fascination of a date."
+          "insight": "Sinunod ng santuwaryo sa ilang ang isang huwaran, at ipinaliliwanag ng Hebreo na si Hesus ay naglilingkod ngayon sa santuwaryo sa langit. Sa Araw ng Pagtubos, naharap ang Israel sa paglilinis, pananagutan, at panunumbalik ng pakikisama sa Diyos. Tumutulong ang huwarang ito upang maunawaan kung bakit maaaring banggitin ng Kasulatan kapuwa ang natapos na sakripisyo ni Cristo at ang patuloy Niyang gawain bilang Dakilang Saserdote. Ang gawain ni Hesus ang sentro ng turo, hindi ang pagkabighani sa isang petsa."
         },
         {
-          "title": "Follow the calculation carefully",
+          "title": "Maingat na sundan ang pagkukuwenta",
           "scripture": "Daniel 8:14; 9:24–27",
-          "insight": "The study connects Daniel’s 2,300 prophetic evenings and mornings to the seventy-week prophecy. Using the day-for-year principle and the starting date of 457 BC, the longer period reaches 1844. The link between the chapters, the symbolic time principle and the historical starting point are interpretive steps. They need to be explained openly so learners can evaluate the Bible passages and reasoning for themselves. Do not confuse those steps with a date printed directly in the Bible."
+          "insight": "Iniuugnay ng pag-aaral ang 2,300 makahulang gabi at umaga ni Daniel sa propesiya ng pitumpung linggo. Sa paggamit ng simulaing isang araw para sa isang taon at sa panimulang petsang 457 BC, humahantong sa 1844 ang mas mahabang panahon. Ang pag-uugnay ng dalawang kabanata, ang simulaing makahulugan ang panahon, at ang makasaysayang panimulang punto ay mga hakbang sa pagpapakahulugan. Kailangang malinaw itong ipaliwanag upang masuri mismo ng mga mag-aaral ang mga talata sa Biblia at ang pangangatwiran. Huwag ipagkamaling ang mga hakbang na ito ay petsang tuwirang nakasulat sa Biblia."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Is 1844 a verse in the Bible?",
-          "answer": "No. It is a year calculated from a particular reading of Daniel’s prophetic periods. The underlying verses and reasoning should be open for examination."
+          "question": "Talata ba sa Biblia ang 1844?",
+          "answer": "Hindi. Isa itong taong nakuwenta mula sa isang partikular na pagbasa ng mga panahong makahula sa Daniel. Dapat bukas sa pagsusuri ang mga talata at pangangatwirang pinagbabatayan nito."
         },
         {
-          "question": "Does this mean Jesus only started forgiving people in 1844?",
-          "answer": "No. Christ’s saving sacrifice and intercession are not postponed to that date. The timeline is understood as concerning a distinct final phase of His heavenly ministry."
+          "question": "Ibig ba nitong sabihin na noong 1844 lamang nagsimulang magpatawad si Hesus?",
+          "answer": "Hindi. Hindi ipinagpaliban sa petsang iyon ang nagliligtas na sakripisyo at pamamagitan ni Cristo. Ang takdang panahon ay nauunawaan bilang isang natatanging huling yugto ng Kaniyang ministeryo sa langit."
         },
         {
-          "question": "What if this feels very complicated?",
-          "answer": "That is understandable. Review the sanctuary and Daniel 9 studies first. There is no need to rush past questions."
+          "question": "Paano kung napakakumplikado nito para sa akin?",
+          "answer": "Nauunawaan iyon. Balikan muna ang mga pag-aaral tungkol sa santuwaryo at Daniel 9. Hindi kailangang madaliing lampasan ang mga tanong."
         }
       ],
-      "gtk_practice": "Recreate the timeline from Daniel 9 and extend it to the 2,300-year period. For each interpretive step, write the actual verse and the conclusion drawn from it.",
+      "gtk_practice": "Gawing muli ang takdang panahon mula sa Daniel 9 at pahabain ito hanggang sa 2,300 taon. Sa bawat hakbang sa pagpapakahulugan, isulat ang aktuwal na talata at ang konklusyong hinango mula rito.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 8:13–14: How long until the sanctuary is put right?",
+          "title": "Daniel 8:13–14: Hanggang kailan bago maituwid ang santuwaryo?",
           "href": "../daniel/index.html#section-8-13",
           "anchor": "section-8-13"
         },
         {
           "source": "daniel",
-          "title": "Daniel 9:24–24: 9:24  The seventy weeks and the work of reconciliation",
+          "title": "Daniel 9:24–24: 9:24 Ang pitumpung linggo at ang gawain ng pakikipagkasundo",
           "href": "../daniel/index.html#section-9-24",
           "anchor": "section-9-24"
         },
         {
           "source": "revelation",
-          "title": "First angel: everlasting gospel and judgment",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
           "passage": "Revelation 14:6",
           "href": "../revelation/index.html#rev-14-6",
           "anchor": "rev-14-6"
         },
         {
           "source": "revelation",
-          "title": "The seventh trumpet and opened temple",
+          "title": "Ang ikapitong trumpeta at ang nabuksang templo",
           "passage": "Revelation 11:15",
           "href": "../revelation/index.html#rev-11-15",
           "anchor": "rev-11-15"
@@ -708,60 +708,60 @@
     },
     {
       "teacher_study_id": 11,
-      "teacher_title": "America in Bible Prophecy",
+      "teacher_title": "Ang Amerika sa Propesiya ng Biblia",
       "gtk_source_id": "america",
-      "gtk_title": "America in Bible Prophecy",
-      "gtk_lead": "What does Revelation say about power and freedom?",
-      "gtk_principle": "The second beast of Revelation is examined as a symbol of a rising power that eventually supports coerced worship. The central spiritual issue is freedom of conscience.",
+      "gtk_title": "Ang Amerika sa Propesiya ng Biblia",
+      "gtk_lead": "Ano ang sinasabi ng Apocalipsis tungkol sa kapangyarihan at kalayaan?",
+      "gtk_principle": "Sinusuri ang ikalawang hayop sa Apocalipsis bilang sagisag ng isang umuusbong na kapangyarihang sa dakong huli ay susuporta sa sapilitang pagsamba. Ang pangunahing espirituwal na usapin ay kalayaan ng budhi.",
       "gtk_connections": [
         {
-          "title": "Read the second beast in its chapter",
+          "title": "Basahin ang ikalawang hayop ayon sa kabuuan ng kabanata",
           "scripture": "Revelation 13:1–18",
-          "insight": "The second beast is introduced in connection with the earlier sea beast. It rises from the earth, has two horns like a lamb and speaks like a dragon. Those contrasts matter: an outward appearance of gentleness is not the same as a commitment to freedom. The vision goes on to describe pressure on conscience and worship. Its warning is wider than the identity of one nation: religious conviction must never be imposed by force."
+          "insight": "Ipinakikilala ang ikalawang hayop kaugnay ng unang hayop mula sa dagat. Umaahon ito mula sa lupa, may dalawang sungay na gaya ng kordero, at nagsasalitang gaya ng dragon. Mahalaga ang pagkakaibang ito: ang panlabas na anyong maamo ay hindi kapareho ng tunay na pagtataguyod ng kalayaan. Inilalarawan din ng pangitain ang pamimilit sa budhi at pagsamba. Higit na malawak ang babala kaysa sa pagkakakilanlan ng iisang bansa: hindi kailanman dapat ipataw ang paniniwalang panrelihiyon sa pamamagitan ng puwersa."
         },
         {
-          "title": "How the identification is reasoned",
+          "title": "Paano binubuo ang pagkakakilanlan",
           "scripture": "Revelation 13:10–12; 17:15",
-          "insight": "The original study connects the beast’s emergence, geography and later influence with the rise of the United States. To follow the argument, keep the symbols and chronology separate: the sea is associated with peoples, the earth suggests a contrasting setting, and the second power becomes prominent as the first suffers captivity. Those clues are used in the historical identification; the verse itself does not name a modern country. Explaining the evidence carefully is more useful than presenting conclusions without a trail."
+          "insight": "Iniuugnay ng orihinal na pag-aaral ang paglitaw, heograpiya, at sumunod na impluwensiya ng hayop sa pag-angat ng Estados Unidos. Upang sundan ang pangangatwiran, ihiwalay ang mga sagisag at pagkakasunod ng panahon: ang dagat ay kaugnay ng mga bayan, nagpapahiwatig ang lupa ng naiibang kapaligiran, at nagiging tanyag ang ikalawang kapangyarihan habang ang una ay dumaranas ng pagkabihag. Ginagamit ang mga palatandaang ito sa makasaysayang pagkakakilanlan; hindi tahasang pinapangalanan ng talata ang isang makabagong bansa. Higit na kapaki-pakinabang ang maingat na pagpapaliwanag ng katibayan kaysa sa paglalahad ng konklusyon nang hindi ipinakikita ang mga hakbang."
         },
         {
-          "title": "Liberty is a gift worth protecting",
+          "title": "Ang kalayaan ay kaloob na dapat pangalagaan",
           "scripture": "Daniel 3:13–18; Acts 5:27–29",
-          "insight": "In Daniel, faithful people refused to bow when a king commanded worship. In Acts, the apostles answered that they must obey God rather than human authorities when commanded to silence their witness. Most governments perform legitimate public functions; these stories address the point at which power claims authority over a person’s worship and conscience. Respectful citizenship and faithfulness to God can belong together until they truly come into conflict."
+          "insight": "Sa Daniel, tumangging yumukod ang mga tapat na tao nang mag-utos ang isang hari ng pagsamba. Sa Mga Gawa, sumagot ang mga apostol na dapat nilang sundin ang Diyos kaysa sa mga taong may awtoridad nang utusan silang itigil ang pagpapatotoo. May mga lehitimong tungkuling pampubliko ang karamihan sa mga pamahalaan; tumutukoy ang mga kuwentong ito sa sandaling inaangkin ng kapangyarihan ang awtoridad sa pagsamba at budhi ng isang tao. Maaaring magsama ang magalang na pagkamamamayan at katapatan sa Diyos hanggang sa magkaroon ng tunay na pagsasalungatan."
         }
       ],
       "gtk_questions": [
         {
-          "question": "Does this mean everyone in America is bad?",
-          "answer": "No. A prophecy about institutions and choices is not a judgement on individual citizens."
+          "question": "Ibig ba nitong sabihing masasama ang lahat ng tao sa Amerika?",
+          "answer": "Hindi. Ang propesiya tungkol sa mga institusyon at pagpili ay hindi paghatol sa bawat mamamayan."
         },
         {
-          "question": "Is every political news event a fulfilment?",
-          "answer": "No. Avoid sensational predictions. Check claims carefully and distinguish a biblical principle from a speculative headline."
+          "question": "Katuparan ba ng propesiya ang bawat balitang pampolitika?",
+          "answer": "Hindi. Iwasan ang mga nakagugulat ngunit walang-batayang hula. Maingat na suriin ang mga pahayag at ihiwalay ang simulain sa Biblia mula sa haka-hakang ulo ng balita."
         },
         {
-          "question": "What should I do with this warning?",
-          "answer": "Practise and defend freedom of conscience, follow Jesus faithfully and treat others respectfully."
+          "question": "Ano ang dapat kong gawin sa babalang ito?",
+          "answer": "Isabuhay at ipagtanggol ang kalayaan ng budhi, tapat na sundin si Hesus, at pakitunguhan ang iba nang may paggalang."
         }
       ],
-      "gtk_practice": "Write down the differences between persuasion, invitation and coercion. Compare Revelation 13:11–17 with Revelation 14:6–12.",
+      "gtk_practice": "Isulat ang pagkakaiba ng panghihikayat, paanyaya, at pamimilit. Ihambing ang Apocalipsis 13:11–17 sa Apocalipsis 14:6–12.",
       "deep_reading_links": [
         {
           "source": "daniel",
-          "title": "Daniel 7:7–8: The fourth beast and the little horn",
+          "title": "Daniel 7:7–8: Ang ikaapat na hayop at ang maliit na sungay",
           "href": "../daniel/index.html#section-7-7",
           "anchor": "section-7-7"
         },
         {
           "source": "revelation",
-          "title": "The earth beast rises",
+          "title": "Umaahon ang hayop mula sa lupa",
           "passage": "Revelation 13:11",
           "href": "../revelation/index.html#rev-13-11",
           "anchor": "rev-13-11"
         },
         {
           "source": "revelation",
-          "title": "Image and deceptive wonders",
+          "title": "Ang larawan at mga mapanlinlang na kababalaghan",
           "passage": "Revelation 13:13",
           "href": "../revelation/index.html#rev-13-13",
           "anchor": "rev-13-13"
@@ -1728,10 +1728,14 @@
       4,
       5,
       6,
-      7
+      7,
+      8,
+      9,
+      10,
+      11
     ],
     "source_file": "teachers-guide/related-study-resources.json",
     "unpublished": true,
-    "note": "First eight supporting resource studies translated; remaining 20 are still English and unpublished."
+    "note": "First twelve supporting resource studies translated; remaining sixteen are still English and unpublished."
   }
 }
