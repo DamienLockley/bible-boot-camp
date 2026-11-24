@@ -1,0 +1,59 @@
+name: Build Teachers Guide V2 Word Master
+run-name: Create editable Teachers Guide V2 master and validate content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'teachers-guide/build/generate_word_master_v2.py'
+      - '.github/workflows/build-teachers-master.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  word-master:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source content and images
+        uses: actions/checkout@v4
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Word generation dependencies
+        run: python -m pip install python-docx Pillow
+      - name: Build editable 28-study master
+        run: |
+          mkdir -p output
+          python teachers-guide/build/generate_word_master_v2.py --site teachers-guide --out output/Teachers_Guide_V2_EN_Master.docx
+      - name: Audit generated document structure
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from docx import Document
+          from docx.oxml.ns import qn
+          import json
+          source=json.loads(Path('teachers-guide/study-data.json').read_text(encoding='utf-8'))['sections']
+          expected=sum(len(s['units']) for s in source)
+          file=Path('output/Teachers_Guide_V2_EN_Master.docx')
+          doc=Document(file)
+          names={p.style.name for p in doc.paragraphs}
+          for style in ('TG Stage','TG Extra','TG Note','TG Application','TG Response','TG Answer'):
+              assert style in names or style in doc.styles, style
+          count=sum(1 for p in doc.paragraphs if p.style.name=='Heading 1')
+          assert count==28, f'Expected 28 studies, got {count}'
+          assert len(doc.tables)>=2, 'Expected original 1844 comparison tables'
+          img=len(doc.part.inline_shapes) if hasattr(doc.part,'inline_shapes') else len(doc.inline_shapes)
+          assert img==20, f'Expected 20 original images, got {img}'
+          assert file.stat().st_size>150000, 'Word master looks incomplete'
+          print(f'Validated {count} studies, {expected} original units, {len(doc.tables)} tables, {img} pictures and {file.stat().st_size} bytes')
+          PY
+      - name: Upload editable Word master
+        uses: actions/upload-artifact@v4
+        with:
+          name: Teachers_Guide_V2_EN_Master
+          path: output/Teachers_Guide_V2_EN_Master.docx
+          if-no-files-found: error
+          retention-days: 30
