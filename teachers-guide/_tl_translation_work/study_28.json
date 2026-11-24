@@ -1,0 +1,191 @@
+{
+  "id": 27,
+  "title": "Pagpapatotoo",
+  "units": [
+    {
+      "kind": "heading",
+      "text": "Pagpapatotoo",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Layunin: Himukin ang mga alagad ni Cristo na ibahagi ang Kanyang pag-ibig at ang katotohanan ng ebanghelyo sa iba.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Nakasentro sa: Ang pag-ibig ni Hesus ang ating motibo sa pag-abot sa mga tao at sa paggabay sa kanila tungo sa Kanya.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "KAALAMAN SA PAGTUTURO — Isinugo ni Hesus ang Kanyang mga alagad: Iniutos ni Hesus sa mga tagasunod na gumawa ng mga alagad sa lahat ng bansa, bautismuhan, at turuang sundin ang Kanyang mga utos. Ang pangangaral ay hindi lamang paghahatid ng impormasyon; ito ay pagpapakilala sa mga tao kay Hesus at pagtulong sa kanilang mamuhay bilang Kanyang mga alagad.",
+      "stage": [
+        "core",
+        "Isinugo ni Hesus ang Kanyang mga alagad"
+      ],
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "Tanong sa talakayan: Ano ang higit pa sa pagtuturo ng mga katotohanan na kasama sa paggawa ng mga alagad?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Iminungkahing sagot: Pagtulong sa mga tao na makilala at sundin si Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Mark 16:15; Matthew 28:19-20… Humayo sa buong sanlibutan at ipangaral ang ebanghelyo sa bawat nilalang. Gawing alagad ang mga tao, bautismuhan, at patuloy na turuang sumunod kay Cristo. Utos ito sa lahat ng mananampalataya, hindi lamang sa mga pastor at ebanghelista.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Acts 1:8; John 1:40-42… Bibigyan tayo ng Banal na Espiritu ng kapangyarihan upang maging mga saksi ni Hesus. Dinala ni Andres ang kanyang kapatid na si Simon kay Hesus; isang payak na paanyaya ang nagbukas ng daan upang makilala niya ang Panginoon.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "John 4:28-30, 39… Ibinahagi ng babaeng Samaritana ang kanyang karanasan kay Hesus. Hindi niya kailangang malaman muna ang lahat bago magsimulang magpatotoo. Inanyayahan niya ang iba na makita si Hesus.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "KAALAMAN SA PAGTUTURO — Patotoo mula sa personal na karanasan: Ibinahagi ng babaeng Samaritana ang kanyang pagkakilala kay Hesus at maraming tao ang lumapit upang makinig. Hindi kailangang maging dalubhasa sa bawat usapin bago magbahagi nang tapat. Ang simpleng patotoo tungkol sa ginawa ni Hesus ay makapangyarihan.",
+      "stage": [
+        "core",
+        "Personal na patotoo"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tanong sa talakayan: Ano ang maibabahagi mo tungkol sa naging karanasan mo kay Hesus?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Iminungkahing sagot: Isang totoo at personal na halimbawa ng Kanyang tulong, pag-ibig, o patnubay.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "1 Peter 3:15… Maging handang magbigay ng dahilan ng pag-asang nasa iyo, ngunit gawin ito nang may kaamuan at paggalang. Hindi pagtatalo o pamimilit ang layunin ng pagpapatotoo.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "2 Corinthians 5:14-20; Matthew 5:14-16… Ang pag-ibig ni Cristo ang nag-uudyok sa atin. Ipinagkatiwala sa atin ang ministeryo ng pakikipagkasundo. Tinawag tayong maging ilaw ng sanlibutan upang makita ng mga tao ang ating mabubuting gawa at luwalhatiin ang Ama.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "John 13:34-35… Ang pag-ibig sa isa't isa ang pagkakakilanlan ng mga alagad ni Hesus. Dapat umaayon sa mensahe ang ating pakikitungo sa kapwa.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Romans 10:13-15… Paano sila makapaniniwala kung hindi nila naririnig? Paano nila maririnig kung walang mangangaral? Pinahahalagahan ng Diyos ang mga taong naghahatid ng magandang balita.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "KAALAMAN SA PAGTUTURO — Pagmamahal sa mga tao: Sinabi ni Pablo na ang pag-ibig ni Cristo ang nag-uudyok sa kanya. Dapat igalang ng pagbabahagi ng pananampalataya ang kalayaan at dignidad ng bawat tao. Hindi natin tungkuling magpilit ng pasiya kundi magpakilala sa Tagapagligtas.",
+      "stage": [
+        "core",
+        "Pagmamahal at paggalang"
+      ],
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Tanong sa talakayan: Paano magiging kapansin-pansin ang pag-ibig sa paraan ng pagbabahagi natin ng pananampalataya?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Iminungkahing sagot: Pakikinig nang mabuti, paggalang, pagtulong, at tapat na pagsasalita nang walang pamimilit.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Colossians 4:5-6… Lumakad nang may karunungan sa pakikitungo sa mga hindi mananampalataya. Maging magiliw ang inyong pananalita at handang magbigay ng angkop na sagot sa bawat tao.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Matthew 9:35-38; 1 Corinthians 3:6-7… Nahabag si Hesus sa mga tao at hinikayat ang mga alagad na manalangin para sa mga manggagawa sa anihan. May nagtatanim at may nagdidilig, ngunit ang Diyos ang nagpapalago.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "insight",
+      "text": "Isaiah 6:8… “Narito ako; suguin Mo ako.” Ang pagtugon sa panawagan ng Diyos ay nagsisimula sa pusong handang maglingkod.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "question",
+      "text": "KAALAMAN SA PAGTUTURO — Patuloy na alagaan ang mga bagong alagad: Iniutos ni Hesus ang patuloy na pagtuturo sa kanila na sundin ang lahat ng iniutos Niya. Hindi nagtatapos ang pagmamahal kapag may tumanggap ng isang aralin o nagpabautismo.",
+      "stage": [
+        "core",
+        "Pag-aaruga sa mga bagong alagad"
+      ],
+      "images": []
+    },
+    {
+      "kind": "answer",
+      "text": "Tanong sa talakayan: Paano natin matutulungan ang isang bagong mananampalataya pagkatapos ng unang pag-aaral?",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "heading",
+      "text": "Iminungkahing sagot: Panatilihin ang pakikipagkaibigan, makinig, mag-aral ng Kasulatan nang magkasama, at suportahan ang kanyang paglago.",
+      "stage": null,
+      "images": []
+    },
+    {
+      "kind": "text",
+      "text": "Panawagan: Nais mo bang hilingin sa Diyos na bigyan ka ng pagkakataong maibahagi ang pag-ibig ni Hesus sa isang tao ngayong linggo? Manalangin para sa isang partikular na tao, magpakita ng tunay na pagmamalasakit, at mag-alok na magbahagi ng isang aralin sa Biblia sa paraang angkop at malaya niyang matatanggap.",
+      "stage": null,
+      "images": []
+    }
+  ],
+  "verses": [
+    "Matthew 9:35-38",
+    "Matthew 4:19",
+    "Romans 10:13-15",
+    "Matthew 28:18-20",
+    "Romans 1:16",
+    "John 12:32",
+    "John 1:38-42",
+    "John 1:43-51",
+    "Luke 8:37-40",
+    "Isaiah 43:10",
+    "Ezekiel 33:7-9",
+    "Matthew 10:32,33"
+  ],
+  "application": "Ang pagbabahagi ng ebanghelyo ay pagtulong sa kapwa na makilala si Hesus sa pamamagitan ng ating pananalita, gawa, pagkakaibigan, at pag-ibig.",
+  "response": "Sino ang isang taong maaari mong mahalin, ipanalangin, at anyayahang higit na makilala si Hesus?",
+  "qa_note": "First pass; verify semantic alignment of all 26 translated units against source before publication."
+}
