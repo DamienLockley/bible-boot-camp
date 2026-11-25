@@ -20,6 +20,8 @@ window.scrollTo = () => {};
 window.HTMLElement.prototype.scrollIntoView = () => {};
 window.SITE_CONFIG = { contactWebAppUrl: 'https://script.google.com/macros/s/TEST_ENDPOINT/exec' };
 window.fetch = async url => {
+  // Public EN must retain the notice until a real TL homepage is deployed.
+  if(new URL(url,window.location.href).pathname==='/teachers-guide/tl/index.html')return {ok:false,status:404};
   const name = new URL(url,window.location.href).pathname.split('/').pop();
   const file = path.join(root,'teachers-guide',name);
   assert.ok(fs.existsSync(file),'Site JSON missing: '+url);
@@ -68,7 +70,11 @@ async function flush(){
  assert.ok(flag.getAttribute('src').startsWith('data:image/svg+xml,'),'Flag must have embedded SVG graphics');
  assert.equal(flag.getAttribute('aria-hidden'),'true');
  assert.match(html,/\.teacher-language-flag\{/);
+ assert.match(html,/fetch\(new URL\('index\.html',target\.href\)/,'EN must probe translated homepage for automatic live language switching');
+ assert.match(html,/lang=\["'\]tl\["'\]/,'TL homepage must be language-verified');
+
  language.click();
+ await new Promise(resolve=>setTimeout(resolve,0));
  assert.equal(document.getElementById('tagalog-notice').classList.contains('hidden'),false,
    'The unpublished Tagalog edition must not be opened as a broken link');
  document.getElementById('close-tagalog-notice').click();
