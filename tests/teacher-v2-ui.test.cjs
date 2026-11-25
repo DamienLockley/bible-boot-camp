@@ -4,6 +4,16 @@ const { JSDOM } = require('jsdom');
 const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
+for (const lang of ['teachers-guide/index.html','teachers-guide/tl/index.html']) {
+ const content=fs.readFileSync(path.join(root,lang),'utf8');
+ assert.match(content,/const onlyStudyPosition = routeParams\.has\('study'\)/,
+   'HTML Editor must treat study-position params as the same design route: '+lang);
+ assert.match(content,/\(onlyStudyPosition \? '' : location\.search\) \+ location\.hash/,
+   'Study URLs must keep the homepage colour and typography overrides: '+lang);
+ assert.match(content,/START HERE/,'Graphical Editor Start Here text must remain: '+lang);
+ assert.match(content,/#f2e7c0/,'Sabbath card editor colour must remain: '+lang);
+}
+
 const vm = require('node:vm');
 const languageHelper = fs.readFileSync(path.join(root,'language-position.js'),'utf8');
 new vm.Script(languageHelper,{filename:'language-position.js'});
