@@ -1069,38 +1069,31 @@ window.addEventListener('message',event=>{
 });
 
 $('mode-guided').onclick=()=>setMode('guided');$('mode-verses').onclick=()=>setMode('verses');
-// Share a public PDF link only on a public site. Localhost links are NOT
-// reachable by email recipients. Locally, offer the real PDF file where the
-// browser supports file sharing, otherwise download it for manual attachment.
+// Share the actual study PDF in both languages, locally and live.
+// Web Share files work on supported devices; on other browsers, download the
+// PDF for attachment. Never send a localhost URL or substitute a URL-only share.
 $('pdf-button').onclick=async()=>{
  if(current<0)return;
  const name='Study_'+String(current+1).padStart(2,'0')+'.pdf';
  const url=new URL('./study-pdfs/'+name,location.href);
- const local=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
  const title=studyData[current].title;
- if(local){
-  try{
-   const response=await fetch(url.href,{cache:'no-store'});
-   if(!response.ok)throw Error('PDF HTTP '+response.status);
-   const blob=await response.blob();
-   const file=new File([blob],name,{type:'application/pdf'});
-   if(navigator.share && navigator.canShare && navigator.canShare({files:[file]})){
-    try{await navigator.share({title,files:[file]});return}
-    catch(error){if(error && error.name==='AbortError')return}
-   }
-   const link=document.createElement('a');
-   link.href=URL.createObjectURL(blob);link.download=name;
-   document.body.appendChild(link);link.click();link.remove();
-   setTimeout(()=>URL.revokeObjectURL(link.href),60000);
-   window.alert('The PDF has been downloaded. Attach '+name+' to your email. A local testing link cannot be opened by other people.');
-  }catch(error){window.alert('Could not prepare this study PDF: '+error.message)}
-  return;
- }
- if(navigator.share){
-  try{await navigator.share({title,url:url.href});return}
-  catch(error){if(error && error.name==='AbortError')return}
- }
- window.prompt('Copy the public study PDF link:',url.href);
+ try{
+  const response=await fetch(url.href,{cache:'no-store'});
+  if(!response.ok)throw Error('PDF HTTP '+response.status);
+  const blob=await response.blob();
+  if(!blob.size)throw Error('Empty PDF');
+  const file=new File([blob],name,{type:'application/pdf'});
+  if(navigator.share && navigator.canShare && navigator.canShare({files:[file]})){
+   try{await navigator.share({title,files:[file]});return}
+   catch(error){if(error && error.name==='AbortError')return}
+  }
+  const link=document.createElement('a');
+  const download=URL.createObjectURL(blob);
+  link.href=download;link.download=name;
+  document.body.appendChild(link);link.click();link.remove();
+  setTimeout(()=>URL.revokeObjectURL(download),60000);
+  window.alert('The PDF has been downloaded. Attach '+name+' to your email or message.');
+ }catch(error){window.alert('Could not prepare this study PDF: '+error.message)}
 };
 Promise.all([
  fetch('./study-data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Study data HTTP '+r.status);return r.json()}),
