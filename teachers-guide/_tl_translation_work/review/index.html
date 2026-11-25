@@ -84,6 +84,16 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 .language-notice h2{font-size:1.3rem;margin:0 0 15px;color:#174f73}
 .language-notice p{line-height:1.6;margin-bottom:20px}
 
+.nav-bottom #stage-top{display:none}
+@media(max-width:760px){
+ #stage>h2{scroll-margin-top:12px}
+ #mobile-stage-select{scroll-margin-top:16px}
+ .nav-bottom #stage-top{display:inline-flex;align-items:center;justify-content:center;min-width:70px;flex-shrink:0}
+ .nav-bottom .tiny{display:none}
+ .nav-bottom{gap:7px}
+ .nav-bottom button{flex:1;min-width:0}
+ .nav-bottom #stage-top{flex:0 0 auto}
+}
 /* Phone teaching layout: compact header and a stage picker instead of a
    long navigation sidebar. Desktop layout and Word-authored text stay intact. */
 .mobile-stage-picker{display:none}
@@ -911,10 +921,17 @@ function navButtons(){
  }
 
 }
+// Phone navigation always lands at the beginning of the selected teaching
+// item, not at the navigation panel or the Previous/Next buttons.
+function scrollToTeachingItem(){
+ const heading=$('stage').querySelector('h2');
+ if(heading)heading.scrollIntoView({block:'start',behavior:'auto'});
+}
 function chooseStage(kind,i){
  stageKind=kind;stageIndex=i;renderGuide();
  if(matchMedia('(max-width:760px)').matches){
-  $('stage').scrollIntoView({block:'start',behavior:'auto'});
+  // Wait for the new stage markup and mobile selector to be rendered.
+  requestAnimationFrame(scrollToTeachingItem);
  }else scrollTo(0,0);
 }
 $('mobile-stage-select').onchange=e=>{
@@ -951,10 +968,15 @@ function renderGuide(){
   }
  }
  if(stageKind==='core'&&last)html+='<section class="teacher-prompt"><strong>Espirituwal na paglalapat</strong><p>'+esc(t.application.text)+'</p><strong>Paanyaya / talakayan</strong><p>'+esc(t.response.text)+'</p></section>';
- html+='<div class="nav-bottom"><button id="prev" '+(first?'disabled':'')+'>← Nakaraan</button><div class="tiny">'+(stageKind==='core'?'Yugto ng pagtuturo':'Pandagdag na tanong')+'</div><button id="next" '+(last?'disabled':'')+'>Susunod →</button></div>';
+ html+='<div class="nav-bottom"><button id="prev" '+(first?'disabled':'')+'>← Nakaraan</button><button id="stage-top" type="button" title="Return to selected teaching pathway">↑ Top</button><div class="tiny">'+(stageKind==='core'?'Yugto ng pagtuturo':'Pandagdag na tanong')+'</div><button id="next" '+(last?'disabled':'')+'>Susunod →</button></div>';
  if(stageKind==='supplement')html+='<p><button id="back-core">Bumalik sa pangunahing pag-aaral</button></p>';
  $('stage').innerHTML=html;
  $('prev').onclick=()=>chooseStage(stageKind,stageIndex-1);$('next').onclick=()=>chooseStage(stageKind,stageIndex+1);
+ $('stage-top').onclick=()=>{
+  if(matchMedia('(max-width:760px)').matches){
+   $('mobile-stage-select').scrollIntoView({block:'start',behavior:'auto'});
+  }else scrollTo(0,0);
+ };
  if($('back-core'))$('back-core').onclick=()=>chooseStage('core',0);
 }
 function renderVerses(){
