@@ -17,6 +17,7 @@ const dom = new JSDOM(documentHTML, {
 const { window } = dom;
 const { document } = window;
 window.scrollTo = () => {};
+window.matchMedia = () => ({matches:false,addListener(){},removeListener(){}});
 window.HTMLElement.prototype.scrollIntoView = () => {};
 window.SITE_CONFIG = { contactWebAppUrl: 'https://script.google.com/macros/s/TEST_ENDPOINT/exec' };
 window.fetch = async url => {
@@ -48,6 +49,16 @@ async function flush(){
  assert.match(html,/#library-list \.lib-item strong\{font-size:clamp/);
  items[0].click();
  assert.equal(document.getElementById('study-title').textContent,'The Word of God');
+ const mobileStage=document.getElementById('mobile-stage-select');
+ assert.ok(mobileStage,'Mobile teaching stage picker missing');
+ assert.equal(mobileStage.value,'core:0','Initial stage must be selected on phone');
+ assert.ok(mobileStage.options.length>=8,'Mobile picker must contain all core stages');
+ mobileStage.value='core:1';
+ mobileStage.dispatchEvent(new window.Event('change',{bubbles:true}));
+ assert.equal(mobileStage.value,'core:1','Mobile teaching stage selection must remain synchronized');
+ assert.match(document.getElementById('stage').textContent,/Evidence|character/i);
+ assert.match(html,/\.mobile-stage-picker\{display:none\}/);
+ assert.match(html,/#guide-view>\.side\{display:none\}/);
  document.getElementById('mode-verses').click();
  const columns=document.querySelectorAll('#verses-view .verse-group');
  assert.equal(columns.length,2,'Expected two separate Bible reference lists');
