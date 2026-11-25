@@ -1079,6 +1079,15 @@ const TEACHERS_TL_URL='./tl/';
 function closeTeacherTLNotice(){$('tagalog-notice').classList.add('hidden')}
 $('teacher-tl-button').onclick=async()=>{
  const target=new URL(TEACHERS_TL_URL,window.location.href);
+ // Preserve the same study, main/extra pathway and reading mode across
+ // languages. Both Teachers Guides have identical stable study/group order.
+ target.search='';
+ if(current>=0 && studyData && teachMap){
+  target.searchParams.set('study',String(current));
+  target.searchParams.set('kind',stageKind);
+  target.searchParams.set('stage',String(stageIndex));
+  target.searchParams.set('mode',mode);
+ }
  if(TEACHERS_TL_PUBLISHED){window.location.assign(target.href);return}
  // Probe the actual TL homepage, not only a translation audit. The review
  // sources live outside /tl/ until the user publishes them. Avoid showing an
@@ -1195,6 +1204,22 @@ Promise.all([
  for(const t of tables.tables){const sec=source.sections[t.study_id];if(!sec||sec.title!==t.study_title)throw Error('Table study changed: '+t.study_title);if(sec.tables?.length)continue;if(t.rows.flat().length!==t.end-t.start+1||t.rows.flat().some((j,k)=>j!==t.start+k))throw Error('Table source structure changed: '+t.study_title)}
  for(const x of history.notes){if(!map.studies[x.study_id]||!map.studies[x.study_id].groups.filter(g=>g.kind==='core')[x.stage_index])throw Error('Outdated historical note target: '+x.title)}
  studyData=source.sections;teachMap=map;relatedResources=related;coreEnrichments=enriched;tableLayouts=tables;historicalNotes=history;showLibrary();
+ // Restore the exact logical teaching position after a language switch.
+ const position=new URLSearchParams(location.search);
+ if(position.has('study')){
+  const index=Number(position.get('study'));
+  if(Number.isInteger(index)&&index>=0&&index<studyData.length){
+   openStudy(index);
+   const kind=position.get('kind')==='supplement'?'supplement':'core';
+   const choices=teachMap.studies[index].groups.filter(x=>x.kind===kind);
+   const requested=Number(position.get('stage'));
+   stageKind=kind;
+   stageIndex=Number.isInteger(requested)&&requested>=0&&requested<choices.length?requested:0;
+   mode=position.get('mode')==='verses'?'verses':'guided';
+   renderMode();
+   requestAnimationFrame(()=>{if(mode==='guided')scrollToTeachingItem();else $('verses-view').scrollIntoView({block:'start',behavior:'auto'})});
+  }
+ }
 }).catch(err=>{$('loading').textContent='Teachers’ Guide could not load: '+err.message+'. Please refresh or contact Help / Feedback if the issue persists.'});
 </script>
 </body></html>
