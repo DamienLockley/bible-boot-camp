@@ -264,7 +264,14 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
     if (scoped) undoRoute.push(() => wrapper.remove());
   }
   const apply = () => {
-    const route = location.search + location.hash;
+    // A language switch can carry the selected study/pathway in the URL.
+    // Those are navigation state, not a different HTML Editor design route.
+    // Keep the editor's homepage colours, typography and START HERE content.
+    const routeParams = new URLSearchParams(location.search);
+    const positionParams = ['study','kind','stage','mode'];
+    const onlyStudyPosition = routeParams.has('study') &&
+      [...routeParams.keys()].every(key => positionParams.includes(key));
+    const route = (onlyStudyPosition ? '' : location.search) + location.hash;
     if (route !== activeRoute) {
       for (const node of backgroundNodes.keys()) paintBoxBackground(node, null);
       backgroundNodes.clear();
