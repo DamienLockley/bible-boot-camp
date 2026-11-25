@@ -189,3 +189,9 @@ body{background:#f2faff;color:var(--ink)}
   .top-links .language-switch{gap:3px}
   .top-links .language-switch .flag{font-size:1.15rem}
 }
+
+
+/* Official Creation site icon, shared by all EN/TL pages. Keep brand wording. */
+.top a.brand{display:inline-flex;align-items:center;gap:10px;min-width:0}
+.top a.brand::before{content:"";display:block;flex:0 0 42px;width:42px;height:42px;background:url("/creation/icon-192-v2.png") center/contain no-repeat;border-radius:10px}
+@media(max-width:650px){.top a.brand{gap:7px}.top a.brand::before{flex-basis:33px;width:33px;height:33px}}
