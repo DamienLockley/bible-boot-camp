@@ -81,7 +81,7 @@ async function flush(){
  assert.match(html,/\.mobile-stage-picker\{display:none\}/);
  assert.match(html,/#guide-view>\.side\{display:none\}/);
  // On phones, pathway selection and Next must land at the *new stage heading*.
- // Top returns to the selected pathway picker, without jumping to the site header.
+ // Top returns to the absolute app header, not the pathway picker.
  const scrollTargets=[];
  window.matchMedia=()=>({matches:true,addListener(){},removeListener(){}});
  window.HTMLElement.prototype.scrollIntoView=function(){scrollTargets.push(this)};
@@ -94,8 +94,11 @@ async function flush(){
  await afterLayout();
  assert.equal(mobileStage.value,'core:3','Next must advance and synchronize the selected pathway');
  assert.equal(scrollTargets.at(-1),document.querySelector('#stage>h2'),'Next must land at the NEXT teaching heading');
+ let appTop=null;
+ window.scrollTo=options=>{appTop=options};
  document.getElementById('stage-top').click();
- assert.equal(scrollTargets.at(-1),mobileStage,'Top must return to the selected pathway picker');
+ assert.deepEqual(appTop,{top:0,left:0,behavior:'instant'},'Top must return to the top of the entire app');
+ assert.equal(scrollTargets.at(-1),document.querySelector('#stage>h2'),'Top must NOT return to the pathway selector');
  assert.match(html,/#stage>h2\{scroll-margin-top:12px\}/);
  window.matchMedia=()=>({matches:false,addListener(){},removeListener(){}});
 
