@@ -97,7 +97,9 @@ async function flush(){
  let appTop=null;
  window.scrollTo=options=>{appTop=options};
  document.getElementById('stage-top').click();
- assert.deepEqual(appTop,{top:0,left:0,behavior:'instant'},'Top must return to the top of the entire app');
+ assert.equal(appTop?.top,0,'Top must return to the top of the entire app');
+ assert.equal(appTop?.left,0,'Top must not move horizontally');
+ assert.equal(appTop?.behavior,'instant','Top must jump to app header without scrolling back through stages');
  assert.equal(scrollTargets.at(-1),document.querySelector('#stage>h2'),'Top must NOT return to the pathway selector');
  assert.match(html,/#stage>h2\{scroll-margin-top:12px\}/);
  window.matchMedia=()=>({matches:false,addListener(){},removeListener(){}});
