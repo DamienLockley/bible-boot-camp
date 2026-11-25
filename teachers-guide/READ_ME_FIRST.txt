@@ -1,6 +1,16 @@
 TEACHERS’ GUIDE V2 — PUBLISHED WEBSITE
 =====================================
 
+TAGALOG EDITION — LIVE CONTENT REVIEW (25 NOVEMBER 2026)
+------------------------------------------------------
+- Separate Tagalog site: teachers-guide/tl/index.html
+- 28 translated studies, 17 image positions and supporting teaching JSON are published.
+- The English guide at teachers-guide/index.html remains unchanged.
+- Text/language review continues in the live TL edition; corrections must go through its TL Word master and the Website Manager.
+- IMPORTANT: 28 individual TL PDFs are not yet committed to teachers-guide/tl/study-pdfs/. Do not use the English PDFs as Tagalog. The live Tagalog Share action will report missing PDFs until they are generated.
+- To complete PDF publication: pull both repositories, select Teacher's Guide — Tagalog in Website Manager, tick Update study PDFs and GitHub Repository, build, then commit/push using GitHub Desktop. The manager splits Word into Study_01.pdf to Study_28.pdf and preserves the English PDF set. Review several of the 28 PDFs and verify Share before announcing them.
+- The old _tl_translation_work/review/ folder remains an archived source/review workspace, not the live website.
+
 The live site is served from this folder: teachers-guide/
 The 28-study V2 interface uses:
 - index.html, teaching-map.json, related-study-resources.json,
