@@ -1,5 +1,5 @@
-const CACHE = 'bbc-teacher-tl-v2-live-20261125';
-const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
+const CACHE = 'bbc-teacher-tl-v2-live-20261125-supp-v4';
+const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./supplementary-data.js", "./supplementary-studies.js"];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });
@@ -17,7 +17,7 @@ self.addEventListener('fetch', event => {
     event.respondWith(fetch(event.request));
     return;
   }
-  const fresh=/\/(?:index\.html|study-data\.json|teaching-map\.json|related-study-resources\.json|main-pathway-enrichments\.json|main-historical-notes\.json|table-layouts\.json|service-worker\.js)$/.test(url.pathname)||url.pathname.endsWith('/');
+  const fresh=/\/(?:index\.html|study-data\.json|teaching-map\.json|related-study-resources\.json|main-pathway-enrichments\.json|main-historical-notes\.json|table-layouts\.json|supplementary-data\.js|supplementary-studies\.js|service-worker\.js)$/.test(url.pathname)||url.pathname.endsWith('/');
   if(fresh){
     event.respondWith(fetch(event.request).then(response => {
       if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}
