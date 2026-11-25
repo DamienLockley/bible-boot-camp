@@ -83,6 +83,38 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 .language-notice{max-width:490px!important;text-align:center;padding:26px 25px}
 .language-notice h2{font-size:1.3rem;margin:0 0 15px;color:#174f73}
 .language-notice p{line-height:1.6;margin-bottom:20px}
+
+/* Phone teaching layout: compact header and a stage picker instead of a
+   long navigation sidebar. Desktop layout and Word-authored text stay intact. */
+.mobile-stage-picker{display:none}
+@media(max-width:760px){
+ .top{position:relative}
+ .top-inner{display:block;padding:9px 12px}
+ .brand{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+ .brand strong{font-size:16px}
+ .brand .tiny{font-size:11px}
+ .top .head-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;width:100%;justify-content:stretch}
+ .top .head-actions>.global-search{grid-column:1/-1;grid-row:2;min-width:0;width:100%;order:0}
+ .top .head-actions>.nav-link,.top .head-actions>button{grid-row:1;min-width:0;text-align:center;display:flex;justify-content:center;align-items:center;padding:8px 4px;font-size:12px;white-space:normal;line-height:1.2}
+ .top .head-actions>.language-button{gap:3px}
+ .compact-search{width:100%;min-height:40px}
+ .layout{display:flex;flex-direction:column;gap:9px}
+ #guide-view>.side{display:none}
+ .mobile-stage-picker{display:block;width:100%;margin:0 0 1px;background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 12px}
+ .mobile-stage-picker label{display:block;margin-bottom:5px;font-size:12px;font-weight:750;color:var(--muted)}
+ .mobile-stage-picker select{display:block;width:100%;min-height:44px;max-width:100%;padding:8px 10px;border:1px solid #8cb5d2;border-radius:8px;color:#14587e;background:#fff;font:inherit;font-size:15px}
+ #stage{width:100%;min-width:0}
+ #stage>h2{font-size:clamp(22px,6vw,29px);line-height:1.23;margin:14px 0 9px}
+ #study-title{font-size:clamp(23px,6vw,29px)}
+ .nav-bottom{position:sticky;bottom:0;z-index:2;margin-top:16px;padding:9px 4px max(9px,env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#f3f7fb}
+ .nav-bottom button{min-height:42px;min-width:88px}
+ .search-target{scroll-margin-top:20px}
+}
+@media(max-width:390px){
+ .top .head-actions>.nav-link,.top .head-actions>button{font-size:11px;padding:8px 2px}
+ .teacher-language-flag{width:20px;height:14px}
+ .nav-bottom .tiny{font-size:10px;text-align:center}
+}
 </style>
 <script type="application/json" data-graphical-editor-overrides="">[{"selector":"#library > div:nth-of-type(1) > h1:nth-of-type(1)","tag":"h1","original":"Aklatan ng mga Pag-aaral","style":{"font-size":"36px","text-align":"center","text-shadow":"2px 5px 6px #36507a"},"attributes":{},"route":""},{"selector":"#help-feedback","tag":"button","original":"Tulong / Puna","style":{"opacity":"1","border-color":"#8dd3bc","border-width":"4px"},"attributes":{},"route":""},{"selector":"#home","tag":"button","original":"Home","style":{"border-width":"4px"},"attributes":{},"route":""},{"selector":"#teacher-tl-button","tag":"button","original":" Tagalog","style":{"border-width":"4px"},"attributes":{},"route":""},{"selector":"html > body:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(1)","tag":"a","original":"Links","style":{"border-width":"4px"},"attributes":{},"route":""},{"selector":"#search","tag":"input","original":"","style":{"border-width":"4px"},"attributes":{},"route":""},{"selector":"#library > div:nth-of-type(1)","tag":"div","original":"Study LibraryChoose any study, in any order","style":{"border-width":"4px"},"attributes":{},"route":""},{"selector":"#library-list > button:nth-of-type(9)","tag":"button","original":"The SabbathTo demonstrate from scripture that the Sabbath is a memorial of both salvation & creation.","style":{"border-color":"#d4ab16","border-width":"2px","background-color":"#f2e7c0"},"attributes":{},"route":""},{"selector":"#library-list > button:nth-of-type(6)","tag":"button","original":"The SanctuaryTo tell the story of redemption and reveal Gods plan to separate sinners from sin. (God is constant / Man is variable)","style":{"border-color":"#1982d2","border-width":"2px","box-shadow":"0 2px 8px #0002","background-color":"#f6f8fa"},"attributes":{},"route":""},{"selector":"#library-list > button:nth-of-type(8)","tag":"button","original":"The LawTo demonstrate from scripture that God’s law is all about love and liberty, that is to be internally written rather than externally imposed and it is eternal.","style":{"background-color":"#77a6ca"},"attributes":{},"route":""},{"selector":"#visual-item-d18c6813-81a9-4649-b944-3b619adc408c","tag":"span","insert":{"id":"visual-item-d18c6813-81a9-4649-b944-3b619adc408c","tag":"span","text":"START HERE","title":"More information","anchor":"#library-list > button:nth-of-type(1)","position":"inside","attributes":{"style":"white-space:pre-wrap;display:block;white-space:pre-wrap;position:static;max-width:100%"}},"route":"","style":{"box-sizing":"border-box","max-width":"100%","width":"201px","height":"auto","display":"block","position":"static","transform":"none","translate":"none","margin-inline-end":"auto","margin-block-start":"0px","margin-inline-start":"auto","color":"#46d312","font-size":"25px","text-align":"center","border-radius":"10px","box-shadow":"0 8px 24px #0003","text-shadow":"1px 2px 4px #00000055","border-style":"solid","border-width":"2px"},"attributes":{}},{"selector":"#library-list > button:nth-of-type(1) > span:nth-of-type(1)","tag":"span","style":{"box-sizing":"border-box","max-width":"100%","width":"311px","height":"auto"},"route":""},{"selector":"#visual-item-d18c6813-81a9-4649-b944-3b619adc408c","tag":"span","move":{"key":"ghe-7e5849da-eb13-4f6d-8b4e-833fd55d6782","anchor":"#library-list > button:nth-of-type(1) > strong:nth-of-type(1)","anchorOriginal":"#library-list > button:nth-of-type(1) > strong:nth-of-type(1)","position":"after"},"route":""}]</script><script data-graphical-editor-runner="" data-graphical-editor-depth="1">(() => {
   function paintBoxBackground(node, settings, imageUrl, preview = false) {
@@ -386,7 +418,7 @@ mark,.search-hit{background:#ffdf79;color:#183146;border-radius:3px;padding:0 2p
 <div class="panel" id="library-list"></div></section>
 <section id="study" class="hidden">
 <div class="panel"><h1 id="study-title" class="heading"></h1><div class="ribbon"><div class="label">Layunin</div><div id="purpose"></div></div><div class="ribbon"><div class="label">Pangunahing katotohanan</div><div id="central"></div></div><div class="mode-buttons"><button id="mode-guided">Pangunahing pag-aaral</button><button id="mode-verses">Mga Talata sa Biblia</button><button id="pdf-button" title="Ibahagi ang PDF ng pag-aaral (Ingles)">Ibahagi</button></div></div>
-<div id="guide-view" class="layout"><aside class="panel side"><h3>Pangunahing gabay sa pagtuturo</h3><div id="core-nav"></div><h3 style="margin-top:20px">Palalimin ang pag-aaral • mga tanong</h3><div id="extra-nav"></div></aside><article id="stage" class="panel"></article></div>
+<div id="guide-view" class="layout"><div class="mobile-stage-picker"><label for="mobile-stage-select">Yugto ng pagtuturo / mga tanong</label><select id="mobile-stage-select" aria-label="Pumili ng yugto ng pagtuturo"></select></div><aside class="panel side"><h3>Pangunahing gabay sa pagtuturo</h3><div id="core-nav"></div><h3 style="margin-top:20px">Palalimin ang pag-aaral • mga tanong</h3><div id="extra-nav"></div></aside><article id="stage" class="panel"></article></div>
 <div id="verses-view" class="panel hidden"></div>
 </section></main>
 <div id="tagalog-notice" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="tagalog-notice-title"><div class="panel language-notice"><h2 id="tagalog-notice-title"><img class="teacher-language-flag" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2030%22%20aria-hidden%3D%22true%22%3E%3Cpath%20fill%3D%22%230038a8%22%20d%3D%22M0%200h60v15H0z%22%2F%3E%3Cpath%20fill%3D%22%23ce1126%22%20d%3D%22M0%2015h60v15H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M0%200%2026%2015%200%2030z%22%2F%3E%3Ccircle%20cx%3D%2210.5%22%20cy%3D%2215%22%20r%3D%223%22%20fill%3D%22%23fcd116%22%2F%3E%3Cg%20stroke%3D%22%23fcd116%22%20stroke-width%3D%221.2%22%3E%3Cpath%20d%3D%22M10.5%209V6m0%2018v-3M4.5%2015h3m6%200h3M6.4%2010.9l2.1%202.1m4%204%202.1%202.1m0-8.2-2.1%202.1m-4%204-2.1%202.1%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fcd116%22%3E%3Cpath%20d%3D%22m2.9%203.2%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3Cpath%20d%3D%22m2.9%2021%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3Cpath%20d%3D%22m21%2013%201%201.7%202-.1-1%201.7.9%201.7-2-.5-1.4%201.4-.1-2-1.8-.8%201.8-.8z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="" aria-hidden="true"> Tagalog Teachers’ Guide</h2><p>The Tagalog Teachers’ Guide is being prepared. For now, all 28 studies are available in English.</p><button type="button" id="close-tagalog-notice">Continue in English</button></div></div>
@@ -866,8 +898,29 @@ function navButtons(){
 
   $(slot).innerHTML=arr.length?arr.map(g=>'<button class="nav-button '+(stageKind===kind && all.filter(x=>x.kind===kind).indexOf(all[g.globalIndex])===stageIndex?'active':'')+'" data-group="'+kind+'" data-index="'+all.filter(x=>x.kind===kind).indexOf(all[g.globalIndex])+'">'+esc(g.label)+'</button>').join(''):(kind==='supplement'?'<p class="tiny">Walang kaugnay na tanong.</p>':'');
  }
+ const selector=$('mobile-stage-select');
+ if(selector){
+  const kindLabel={core:'Pangunahing pag-aaral',supplement:'Mas malalim na pag-aaral / mga tanong'};
+  selector.innerHTML=['core','supplement'].map(kind=>{
+   const groups=all.filter(g=>g.kind===kind);
+   if(!groups.length)return '';
+   return '<optgroup label="'+kindLabel[kind]+'">'+groups.map((g,index)=>
+    '<option value="'+kind+':'+index+'">'+esc(g.label)+'</option>').join('')+'</optgroup>';
+  }).join('');
+  selector.value=stageKind+':'+stageIndex;
+ }
+
 }
-function chooseStage(kind,i){stageKind=kind;stageIndex=i;renderGuide();scrollTo(0,0)}
+function chooseStage(kind,i){
+ stageKind=kind;stageIndex=i;renderGuide();
+ if(matchMedia('(max-width:760px)').matches){
+  $('stage').scrollIntoView({block:'start',behavior:'auto'});
+ }else scrollTo(0,0);
+}
+$('mobile-stage-select').onchange=e=>{
+ const parts=e.target.value.split(':');
+ if(parts.length===2)chooseStage(parts[0],Number(parts[1]));
+};
 function renderGuide(){
  const t=teachMap.studies[current],groups=t.groups.filter(g=>g.kind===stageKind),g=groups[stageIndex];
  navButtons();if(!g)return;
