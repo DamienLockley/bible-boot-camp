@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, '..');
 for(const site of ['index.html','tl/index.html']){
  const html=fs.readFileSync(path.join(root,site),'utf8');
  assert.match(html,/class="brand-mark gtkj-official-brand-icon"/,'GTKJ must show its official logo: '+site);
- assert.match(html,/src="\/gtkj-header-logo\.png\?v=2"/,'GTKJ logo should use dedicated verified JESUS artwork: '+site);
+ assert.match(html,/src="\/etbs-official-header-icon\.png\?v=1"/,'GTKJ logo should use verified official End Time Bible Studies artwork: '+site);
  assert.match(html,/id="gtkj-official-brand-icon-style"/,'GTKJ logo must scale on phones: '+site);
 }
 assert.match(fs.readFileSync(path.join(root,'creation/assets/style.css'),'utf8'),
