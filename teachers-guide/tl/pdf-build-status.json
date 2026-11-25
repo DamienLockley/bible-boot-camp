@@ -1,5 +1,6 @@
 {
-  "pdf_mode": "pending",
-  "status": "Tagalog PDFs not yet committed. Generate 28 files using Website Manager Update study PDFs and publish them before sharing PDF handouts.",
-  "expected_count": 28
+  "pdf_mode": "update",
+  "status": "Updated all 28 study PDFs",
+  "word_sha256": "4eb021bdb8c2f86c440edfc7d9ae045c4bb53684ab6fe0709d598be45cf8dca0",
+  "source_site": "C:\\Dropbox\\Bible study\\Website\\Github\\bible-boot-camp\\teachers-guide\\tl"
 }

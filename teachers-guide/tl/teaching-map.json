@@ -67,12 +67,12 @@
         }
       ],
       "application": {
-        "text": "",
-        "origin": "Tagalog review"
+        "text": "Paglalapat: Ilapit ang aral kay Hesus sa iyong pang-araw-araw na buhay.",
+        "origin": "Word master"
       },
       "response": {
-        "text": "",
-        "origin": "Tagalog review"
+        "text": "Paano ka tutugon kay Hesus?",
+        "origin": "Word master"
       }
     },
     {
@@ -127,12 +127,12 @@
         }
       ],
       "application": {
-        "text": "",
-        "origin": "Tagalog review"
+        "text": "Paglalapat: Ilapit ang aral kay Hesus sa iyong pang-araw-araw na buhay.",
+        "origin": "Word master"
       },
       "response": {
-        "text": "",
-        "origin": "Tagalog review"
+        "text": "Paano ka tutugon kay Hesus?",
+        "origin": "Word master"
       }
     },
     {
@@ -170,11 +170,11 @@
       ],
       "application": {
         "text": "Ang tunay na pagbabago ay gawain ng Banal na Espiritu, hindi lamang pagsang-ayon sa isang doktrina.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Saang bahagi ng iyong buhay mo nais anyayahan ang Banal na Espiritu upang Siya ang gumabay?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -242,11 +242,11 @@
       ],
       "application": {
         "text": "Lumapit ang Diyos upang ibalik ang ugnayang sinira ng kasalanan.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Ano ang kahulugan para sa iyo ng pagnanais ng Diyos na manahan malapit sa iyo?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -290,11 +290,11 @@
       ],
       "application": {
         "text": "Ang kaligtasan ay isang kaloob ng biyaya ng Diyos na humahantong sa pagbabago ng buhay.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Handa ka bang lumapit sa Diyos sa pananampalataya at tanggapin ang Kanyang kaloob?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -338,11 +338,11 @@
       ],
       "application": {
         "text": "Ang pag-ibig sa Diyos ay humuhubog sa pagsunod mula sa binagong puso, hindi sa pamamagitan ng pagtatrabaho para sa kaligtasan.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano maipakikita ng iyong pagsunod ang pag-ibig at pasasalamat sa Diyos?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -387,13 +387,13 @@
           "kind": "supplement",
           "start": 96,
           "end": 130,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 3"
         },
         {
           "kind": "supplement",
           "start": 131,
           "end": 184,
-          "label": "Karagdagang Pag-aaral 7"
+          "label": "Karagdagang Pag-aaral 4"
         },
         {
           "kind": "supplement",
@@ -405,25 +405,25 @@
           "kind": "supplement",
           "start": 220,
           "end": 240,
-          "label": "Karagdagang Pag-aaral 9"
+          "label": "Karagdagang Pag-aaral 6"
         },
         {
           "kind": "supplement",
           "start": 241,
           "end": 264,
-          "label": "Karagdagang Pag-aaral 10"
+          "label": "Karagdagang Pag-aaral 7"
         },
         {
           "kind": "supplement",
           "start": 265,
           "end": 329,
-          "label": "Karagdagang Pag-aaral 11"
+          "label": "Karagdagang Pag-aaral 8"
         },
         {
           "kind": "supplement",
           "start": 330,
           "end": 336,
-          "label": "Karagdagang Pag-aaral 12"
+          "label": "Karagdagang Pag-aaral 9"
         },
         {
           "kind": "supplement",
@@ -434,11 +434,11 @@
       ],
       "application": {
         "text": "Manatiling nakasentro kay Hesus at suriin sa Kasulatan ang bawat aral at pag-aangkin ng awtoridad. Ang layunin ng propesiya ay higit na katapatan sa Kanya at pag-ibig sa kapwa.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano mo mapananatiling si Hesus, sa halip na takot o isang taong pinuno, ang sentro ng iyong pananampalataya at pagsamba?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -483,16 +483,16 @@
           "kind": "supplement",
           "start": 92,
           "end": 114,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 3"
         }
       ],
       "application": {
         "text": "Ipinapakita ng takdang panahon ng propesiya ang katapatan ng Diyos sa Kanyang mga pangako at itinuturo tayong magtiwala kay Jesu-Cristo bilang Mesiyas at Tagapagligtas.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano pinatitibay ng mga pangako ng Diyos at ng katuparan ng propesiya ang iyong pagtitiwala kay Hesus?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -531,16 +531,16 @@
           "kind": "supplement",
           "start": 56,
           "end": 61,
-          "label": "Karagdagang Pag-aaral 5"
+          "label": "Karagdagang Pag-aaral 2"
         }
       ],
       "application": {
         "text": "Ang pagtitiwala sa makasaysayang katibayan tungkol kay Hesus ay dapat humantong sa personal na pagkakilala sa Kanya at sa pagbabagong-buhay.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano ka tutugon kay Hesus batay sa mga patotoong ito at sa mensahe ng mga Ebanghelyo?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -572,11 +572,11 @@
       ],
       "application": {
         "text": "Ipinapakita ng paghuhukom na ang Diyos ay makatarungan, hayag, at mapagmahal. Tinatawag Niya tayong magtiwala kay Hesus at tumugon sa Kanyang biyaya ngayon.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Anong pasiya ang nais mong gawin ngayon bilang pagtugon sa katarungan at pag-ibig ng Diyos?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -596,29 +596,17 @@
         {
           "kind": "core",
           "start": 25,
-          "end": 48,
-          "label": "Ang huwaran ng Araw ng Pagtubos"
-        },
-        {
-          "kind": "core",
-          "start": 49,
-          "end": 58,
-          "label": "Ang mensahe ng paghuhukom at pagsamba"
-        },
-        {
-          "kind": "supplement",
-          "start": 59,
           "end": 95,
-          "label": "Paghahambing ng mga propesiya"
+          "label": "Ang huwaran ng Araw ng Pagtubos"
         }
       ],
       "application": {
         "text": "Ang mensahe ng 1844 at ng santuwaryo ay dapat magpalalim ng pagtitiwala sa natapos na sakripisyo ni Cristo, sa Kanyang pamamagitan, at sa awa ng Diyos.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano nakatutulong ang pagkaunawa sa ministeryo ni Hesus bilang Dakilang Saserdote upang mamuhay kang handang salubungin Siya?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -651,7 +639,7 @@
           "kind": "supplement",
           "start": 76,
           "end": 118,
-          "label": "Karagdagang Pag-aaral 4"
+          "label": "Karagdagang Pag-aaral 2"
         },
         {
           "kind": "supplement",
@@ -663,22 +651,22 @@
           "kind": "supplement",
           "start": 146,
           "end": 172,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 4"
         },
         {
           "kind": "supplement",
           "start": 173,
           "end": 186,
-          "label": "Karagdagang Pag-aaral 7"
+          "label": "Karagdagang Pag-aaral 5"
         }
       ],
       "application": {
         "text": "Manatiling tapat sa Diyos at igalang ang kalayaan ng budhi. Ang tunay na pagsamba ay nagmumula sa pag-ibig kay Hesus at hindi sa pamimilit ng pamahalaan.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano ka makapaninindigan sa katotohanan at kasabay nito ay maipagtatanggol ang kalayaang panrelihiyon ng iba?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -710,11 +698,11 @@
       ],
       "application": {
         "text": "Ang mga larawan ng santuwaryo at ang kautusan ay nagtuturo kay Hesus, na nagliligtas sa pamamagitan ng biyaya at nagsusulat ng Kanyang kautusan sa ating puso.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano mo pahihintulutang hubugin ng pag-ibig at biyaya ni Hesus ang pagsunod mo sa Diyos?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -753,19 +741,19 @@
           "kind": "supplement",
           "start": 69,
           "end": 78,
-          "label": "Karagdagang Pag-aaral 5"
+          "label": "Karagdagang Pag-aaral 2"
         },
         {
           "kind": "supplement",
           "start": 79,
           "end": 104,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 3"
         },
         {
           "kind": "supplement",
           "start": 105,
           "end": 128,
-          "label": "Karagdagang Pag-aaral 7"
+          "label": "Karagdagang Pag-aaral 4"
         },
         {
           "kind": "supplement",
@@ -776,11 +764,11 @@
       ],
       "application": {
         "text": "Ang Sabbath ay kaloob ng Diyos na nagpapaalala sa paglalang at kaligtasan kay Hesus; ang pagtupad dito ay tugon ng pag-ibig at pagtitiwala sa Kanya.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano mo gagawing panahon ng kagalakan, pagsamba, at paglapit kay Hesus ang Sabbath?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -813,16 +801,16 @@
           "kind": "supplement",
           "start": 36,
           "end": 42,
-          "label": "Karagdagang Pag-aaral 4"
+          "label": "Karagdagang Pag-aaral 2"
         }
       ],
       "application": {
         "text": "Dumarating si Hesus upang kunin ang Kanyang bayan at wakasan ang kasalanan at kamatayan. Ang ating paghahanda ay ang pagtitiwala sa Kanya ngayon.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano mo ipamumuhay ang pag-asang muling darating si Hesus upang makasama ka?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -860,11 +848,11 @@
       ],
       "application": {
         "text": "Kay Hesus lamang matatagpuan ang buhay na walang kamatayan. Sa Kanya ay may pag-asa at katiyakan ng pagkabuhay na mag-uli para sa mga nagtitiwala.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano ka inaaliw ng pangako ni Hesus tungkol sa pagkabuhay na mag-uli sa harap ng kamatayan?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -903,34 +891,34 @@
           "kind": "supplement",
           "start": 83,
           "end": 117,
-          "label": "Karagdagang Pag-aaral 5"
+          "label": "Karagdagang Pag-aaral 3"
         },
         {
           "kind": "supplement",
           "start": 118,
           "end": 151,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 4"
         },
         {
           "kind": "supplement",
           "start": 152,
           "end": 177,
-          "label": "Karagdagang Pag-aaral 7"
+          "label": "Karagdagang Pag-aaral 5"
         },
         {
           "kind": "supplement",
           "start": 178,
           "end": 194,
-          "label": "Karagdagang Pag-aaral 8"
+          "label": "Karagdagang Pag-aaral 6"
         }
       ],
       "application": {
         "text": "Ang sentrong usapin sa propesiya ay ang ating katapatan kay Hesus. Ang pag-ibig, pagtitiwala sa Kanyang Salita, at kalayaan ng budhi ang dapat mag-udyok sa pagsamba.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano mo maipapakita ang tapat na pagsamba kay Hesus nang walang takot at nang may paggalang sa budhi ng iba?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -968,11 +956,11 @@
       ],
       "application": {
         "text": "Ipinapakita ng paghuhukom na makatarungan ang Diyos at na ang hangganan ng Kanyang layunin ay ang panibagong lupa kung saan wala nang kamatayan.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano nagbibigay sa iyo ng pag-asa ang pangako ng Diyos tungkol sa bagong lupa at Kanyang presensiya?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1017,19 +1005,19 @@
           "kind": "supplement",
           "start": 80,
           "end": 87,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 2"
         },
         {
           "kind": "supplement",
           "start": 88,
           "end": 91,
-          "label": "Karagdagang Pag-aaral 7"
+          "label": "Karagdagang Pag-aaral 3"
         },
         {
           "kind": "supplement",
           "start": 92,
           "end": 93,
-          "label": "Karagdagang Pag-aaral 8"
+          "label": "Karagdagang Pag-aaral 4"
         },
         {
           "kind": "supplement",
@@ -1040,11 +1028,11 @@
       ],
       "application": {
         "text": "Hindi sadista ang Diyos. Ang Kanyang paghatol ay dapat maunawaan ayon sa karakter na ipinahayag kay Hesus—pag-ibig, katarungan, at hangaring wakasan ang kasalanan.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano binabago ng pag-ibig at sakripisyo ni Hesus ang iyong pagkaunawa sa paghuhukom at sa karakter ng Diyos?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1089,16 +1077,16 @@
           "kind": "supplement",
           "start": 92,
           "end": 103,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 2"
         }
       ],
       "application": {
         "text": "Ang anumang kaloob ng propesiya ay dapat sumaksi kay Jesu-Cristo, magpatibay sa Kanyang bayan at masuri ayon sa Kasulatan.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano mo susubukin ang isang mensaheng sinasabing mula sa Diyos nang nananatiling nakasentro kay Hesus?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1148,11 +1136,11 @@
       ],
       "application": {
         "text": "Tinatawag ni Hesus ang Kanyang bayan na pakinggan ang Kanyang tinig, mamuhay nang tapat, at ibahagi ang ebanghelyo sa buong mundo nang may pagpapakumbaba.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano mo susundin ang tinig ng Mabuting Pastol at maglilingkod sa Kanyang mga tupa nang may pag-ibig?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1190,11 +1178,11 @@
       ],
       "application": {
         "text": "Ang pagiging simple, mapagpakumbaba, at mapagbigay ay dapat magmula sa pusong binabago ni Hesus, hindi sa paghamak sa ibang tao.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Mayroon bang gawi o pag-aari na nais mong isantabi upang mas malaya kang makapaglingkod kay Hesus?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1239,16 +1227,16 @@
           "kind": "supplement",
           "start": 44,
           "end": 48,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 2"
         }
       ],
       "application": {
         "text": "Inaanyayahan tayo ni Hesus na lumapit sa Ama araw-araw nang may pagpapakumbaba, katiyakan, at pagtitiwala sa Kanyang kalooban.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Anong alalahanin ang nais mong ipagkatiwala sa Diyos sa panalangin ngayon?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1293,22 +1281,22 @@
           "kind": "supplement",
           "start": 76,
           "end": 91,
-          "label": "Karagdagang Pag-aaral 6"
+          "label": "Karagdagang Pag-aaral 2"
         },
         {
           "kind": "supplement",
           "start": 92,
           "end": 97,
-          "label": "Karagdagang Pag-aaral 7"
+          "label": "Karagdagang Pag-aaral 3"
         }
       ],
       "application": {
         "text": "Pinahahalagahan ng Diyos ang buong tao—katawan, isip, at espiritu. Ang pag-aalaga sa kalusugan ay dapat maging tugon ng pasasalamat at pagmamahal, hindi sukatan ng pagiging higit sa iba.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Anong makabuluhang pagbabago sa pang-araw-araw mong gawi ang maaari mong gawin bilang mabuting katiwala ng kalusugang ipinagkaloob ng Diyos?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1346,11 +1334,11 @@
       ],
       "application": {
         "text": "Ang bautismo ay hayagang pagpapahayag ng pananampalataya kay Hesus at ng pagsisimula ng bagong buhay na sumusunod sa Kanya.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Ano ang kahulugan para sa iyo ng pagsunod kay Hesus at pagpapabautismo bilang Kanyang alagad?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1382,11 +1370,11 @@
       ],
       "application": {
         "text": "Tinatawag tayong sumamba sa iisang Diyos at kilalanin ang pag-ibig at pagkakaisang ipinahahayag sa Ama, Anak, at Banal na Espiritu.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Paano nakatutulong ang pagkakilala sa Ama, Anak, at Banal na Espiritu upang lumalim ang pagtitiwala at pag-ibig mo sa Diyos?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1418,11 +1406,11 @@
       ],
       "application": {
         "text": "Ang lahat ng bagay ay kaloob ng Diyos. Ang tapat na pagiging katiwala ay tugon ng pasasalamat at pagtitiwala kay Hesus, hindi pag-asang bumili ng pagpapala.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Anong panahon, kakayahan, o ari-arian ang nais mong higit na ilaan sa paglilingkod sa Diyos at sa kapwa?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     },
     {
@@ -1454,11 +1442,11 @@
       ],
       "application": {
         "text": "Ang pagbabahagi ng ebanghelyo ay pagtulong sa kapwa na makilala si Hesus sa pamamagitan ng ating pananalita, gawa, pagkakaibigan, at pag-ibig.",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       },
       "response": {
         "text": "Sino ang isang taong maaari mong mahalin, ipanalangin, at anyayahang higit na makilala si Hesus?",
-        "origin": "Tagalog review"
+        "origin": "Word master"
       }
     }
   ]
