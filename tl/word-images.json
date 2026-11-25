@@ -1,142 +1,142 @@
 [
   {
     "study": "word",
-    "path": "assets/word-master/word.jpg",
-    "sha256": "3334bc7aab1724765488ec1fc8d3fb31fa6ee39e2fb7360eaa9899fff2ecca55"
+    "path": "assets/word-master/word.png",
+    "sha256": "bc8c8ec638c7c1842590d765e70cb38b5ab434cb6849e3a1b1741dd4fe170fd8"
   },
   {
     "study": "history",
-    "path": "assets/word-master/history.jpg",
-    "sha256": "8321e5b537041ed99699c10ae08822c48ad7edb63425fd8f3073bde37bf3630e"
+    "path": "assets/word-master/history.png",
+    "sha256": "4d16f5b44456249324ba11a72c323809ccf041c2ab91798c684afb9d112c5661"
   },
   {
     "study": "controversy",
-    "path": "assets/word-master/controversy.jpg",
-    "sha256": "1d89be7488827735bd5cb559e1213c05204c4d53505463af9e54bdf679cbd577"
+    "path": "assets/word-master/controversy.png",
+    "sha256": "4b3213c224a9c19c4a7fed839c7ca7c5b9ad16d55459761a2931572092d551ea"
   },
   {
     "study": "salvation",
-    "path": "assets/word-master/salvation.jpg",
-    "sha256": "8cb0bf4c360c92e583d28eb99069ef47d27d157d4d75652ffd25c4de5da0b498"
+    "path": "assets/word-master/salvation.png",
+    "sha256": "793e70e37cb58395a65343dd4707a7df375aa60e347ff6d9bc10d10d0d5ccf63"
   },
   {
     "study": "spirit",
-    "path": "assets/word-master/spirit.jpg",
-    "sha256": "5c17b798a1062f992e36bf558813327c32901a0368d6a37ffe8e3bd1ceb0e941"
+    "path": "assets/word-master/spirit.png",
+    "sha256": "4448a664dbbeab184e7705f2f14a3b903bacb80b8339ce2030a9cfb8c110c373"
   },
   {
     "study": "sanctuary",
-    "path": "assets/word-master/sanctuary.jpg",
-    "sha256": "0e8159109ab3578083e2450ef82059791eb3a753b0e94174160e5892c4aa1ac9"
+    "path": "assets/word-master/sanctuary.png",
+    "sha256": "55952b58befbbcc09bd8d9ae56b54e93c79f6e150d22da49f1c66040c600be22"
   },
   {
     "study": "blue-stone",
-    "path": "assets/word-master/blue-stone.jpg",
-    "sha256": "2274d826f65c369a3edf423d67927f481ecd8bb77a7184047e9f2df1dacde874"
+    "path": "assets/word-master/blue-stone.png",
+    "sha256": "0fc7dd79c8bb2e052959e1362a3b183b9a65cd50e12579de4e3ef504846a34ba"
   },
   {
     "study": "law",
-    "path": "assets/word-master/law.jpg",
-    "sha256": "3716076b086f4df560a7dd25e2d7d9042af0f0765f1dcb6eaf0d52883083705a"
+    "path": "assets/word-master/law.png",
+    "sha256": "9c572031903717022d0b53a111fa5aa4c5a07323a94302e5e24619e75cd18c07"
   },
   {
     "study": "sabbath",
-    "path": "assets/word-master/sabbath.jpg",
-    "sha256": "55e84ce1715018b815455f25bb6f1f57129e8b330e4e2e179049182f5d6f00ce"
+    "path": "assets/word-master/sabbath.png",
+    "sha256": "bc2d593eda6ba5579203ae3787ce7c4985fb60f59946b224d299b8cf136f1063"
   },
   {
     "study": "prayer",
-    "path": "assets/word-master/prayer.jpg",
-    "sha256": "f6962f34619e829a6011f0ba19cfc545d0a5172c4a7cd553f9c98157dab60ae5"
+    "path": "assets/word-master/prayer.png",
+    "sha256": "e720d820876b13cdeaa2c7a857795608d521004c02eb025d5b4004fef374f88e"
   },
   {
     "study": "baptism",
-    "path": "assets/word-master/baptism.jpg",
-    "sha256": "5e60d76f20b2e4634ed39d1783ae8f3e60f2b5dbdcb2a0d819707e9f50872ab0"
+    "path": "assets/word-master/baptism.png",
+    "sha256": "0ecad9134a7d35986f2521328b9a8df7fe6cfcf3b7284f54a58eb929f2514232"
   },
   {
     "study": "living",
-    "path": "assets/word-master/living.jpg",
-    "sha256": "31f0542c967bedd4d1eab81563499885cf81b0fcfbf9de94a12bfd593ba63723"
+    "path": "assets/word-master/living.png",
+    "sha256": "1fe45c7c1d2ab84749187e7ae365764763c427e840b84aca93c165eee0be39e4"
   },
   {
     "study": "health",
-    "path": "assets/word-master/health.jpg",
-    "sha256": "b896637639e37895bc2a89e18e1a53b5456e38703d467c5f9deb75dd5d056aba"
+    "path": "assets/word-master/health.png",
+    "sha256": "ebab5a37dc8aedda03d0444fe3c5f61ad74c597226722013a2b03231344329b7"
   },
   {
     "study": "stewardship",
-    "path": "assets/word-master/stewardship.jpg",
-    "sha256": "7c0f6814774aa0807f2079161abb1454da3e43f848ed00b2450487536d62f6d0"
+    "path": "assets/word-master/stewardship.png",
+    "sha256": "d2d9067f6f14e6e90ff89f59908012024cc558e854821b0381fe54800b279dbb"
   },
   {
     "study": "nature",
-    "path": "assets/word-master/nature.jpg",
-    "sha256": "a2e166575fea85bc2d1209acf8661e7b6a9272e1c3ca99e708f41e3b7b62930c"
+    "path": "assets/word-master/nature.png",
+    "sha256": "84d3c6d757b651a601593ddf23719a60f4485407386aba4eaf53de3742a24fe7"
   },
   {
     "study": "second-coming",
-    "path": "assets/word-master/second-coming.jpg",
-    "sha256": "5b4440d250e4f880f13203718ff8b1d4f5aad12e3c81f617ec58404a3917d0df"
+    "path": "assets/word-master/second-coming.png",
+    "sha256": "7ac5be91f8ca881c2beb791f8963fe5c43315b609e7b147f3287b6bbffb7b34a"
   },
   {
     "study": "millennium",
-    "path": "assets/word-master/millennium.jpg",
-    "sha256": "19e3024857d0d74c595a2219216af8168503e41a4c43435c872567541edd9e81"
+    "path": "assets/word-master/millennium.png",
+    "sha256": "2b9d6ce1ef046017a549bfde554dcd692856ddc41fdfc7f7b86a22e815aba811"
   },
   {
     "study": "hell",
-    "path": "assets/word-master/hell.jpg",
-    "sha256": "d090a5aad1927c34b5bcdf22296c1886787048f6b4ea8cdd1ba4755c697d7fc8"
+    "path": "assets/word-master/hell.png",
+    "sha256": "5c5a8228ba4d901c4f224d6ce4759ebee9124eb627ff4723bd1d4b4df1a0e408"
   },
   {
     "study": "seventy-weeks",
-    "path": "assets/word-master/seventy-weeks.jpg",
-    "sha256": "724ce531e4ed1dc77b9ea97f81c59210f81079528b22b55f4dcdfeb2fcee02bc"
+    "path": "assets/word-master/seventy-weeks.png",
+    "sha256": "a3d150e1df960cca54ca42206c1138920225333f19edb91cc223f73c6ff01ce6"
   },
   {
     "study": "judgement",
-    "path": "assets/word-master/judgement.jpg",
-    "sha256": "cee5c26ad233a8be9dccae5f3c397530bef296684671bf89fb0166c7a43d8897"
+    "path": "assets/word-master/judgement.png",
+    "sha256": "a3b0105fe6f0790b454f574c897eb2c57588306a15620e781c43def52b2513af"
   },
   {
     "study": "1844",
-    "path": "assets/word-master/1844.jpg",
-    "sha256": "8321e5b537041ed99699c10ae08822c48ad7edb63425fd8f3073bde37bf3630e"
+    "path": "assets/word-master/1844.png",
+    "sha256": "4d16f5b44456249324ba11a72c323809ccf041c2ab91798c684afb9d112c5661"
   },
   {
     "study": "antichrist",
-    "path": "assets/word-master/antichrist.jpg",
-    "sha256": "d7f251b58d79cf3788c678f7ea3b6b880a612df7b2a34e99367972b8eba00bd0"
+    "path": "assets/word-master/antichrist.png",
+    "sha256": "955733ed0854ecc680916bd1326539f6835536b2a0c1925d429c0bb4829ba0bc"
   },
   {
     "study": "america",
-    "path": "assets/word-master/america.jpg",
-    "sha256": "7c417d407f7c1530ec88e0e2f35e5bdc10c615bcd5ccd91a139026ff10b18001"
+    "path": "assets/word-master/america.png",
+    "sha256": "900d6f5c637f13f86071799f8f3a0b3754a29801e39ebb86f6fad8d284353ab5"
   },
   {
     "study": "mark",
-    "path": "assets/word-master/mark.jpg",
-    "sha256": "08c25a7de9a196df41e1ee622027a706e5e215490a392c94fc33d9d55bc87ef5"
+    "path": "assets/word-master/mark.png",
+    "sha256": "5878af48fa1dc75b5f14c8feccd5300fbcdc0d68222724308c359336c50aa977"
   },
   {
     "study": "prophecy-gift",
-    "path": "assets/word-master/prophecy-gift.jpg",
-    "sha256": "67944af00cde3372f9f0793c6152b6d616f40f63dafae6494c4698af635c0e42"
+    "path": "assets/word-master/prophecy-gift.png",
+    "sha256": "0695156e1f6f0f68e54562a950b2cdf84ec393a9ae04ed5a32ed9f7811d5ac38"
   },
   {
     "study": "godhead",
-    "path": "assets/word-master/godhead.jpg",
-    "sha256": "030f744dbbbae52949acb32c6c393de6b17c6662fcf8d45172e16bef79cdf9f8"
+    "path": "assets/word-master/godhead.png",
+    "sha256": "a0599c1ea023dc0a058d8a4da2dfb489cc6ed0f3758c0a73e9f310deac16393c"
   },
   {
     "study": "remnant",
-    "path": "assets/word-master/remnant.jpg",
-    "sha256": "dcf77b67a8b690da8206619f426da275d12baa95b08223dfaf4147dec87882d8"
+    "path": "assets/word-master/remnant.png",
+    "sha256": "0ed7ed4819f6c048da9a9a2f2e576365c61ff6b5217e673bd9b7d26999909799"
   },
   {
     "study": "witnessing",
-    "path": "assets/word-master/witnessing.jpg",
-    "sha256": "71b8adbc851ecc020ee2c20a0930170485c0bc5137930c66912e5702c9856520"
+    "path": "assets/word-master/witnessing.png",
+    "sha256": "3b8ac1ac4c5abaad549c51d4200807397aae40cd6a5c14d6ee49147f70805ebb"
   }
 ]

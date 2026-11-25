@@ -241,7 +241,7 @@ const DEPTH = {
     "practice": "Basahin ang Galacia 5:22–23. Pumili ng isang bunga, ipanalangin ito at itala ang isang praktikal na pagkakataong maipakikita ito sa loob ng susunod na pitong araw."
   },
   "sanctuary": {
-    "principle": "Isinasalaysay ng santuwaryo kung paano hinaharap ng Diyos ang kasalanan upang ibalik ang pakikisama sa Kaniya. Bawat bahagi ng paglilingkod ay tumuturo sa higit na dakilang katotohanan—si Hesus.",
+    "principle": "Isinasalaysay ng santuwaryo kung paano hinaharap ng Diyos ang kasalanan upang ibalik ang pakikisama sa Kaniya. Bawat bahagi ng paglilingkod ay tumuturo sa higit na dakilang katotohanan—si Hesus. Inilalarawan ng Hebrews 6:19–20 at Hebrews 10:19–21 kung paano binuksan ni Hesus ang daan patungo sa presensya ng Diyos. Ang pagpasok Niya sa loob ng tabing sa Kaniyang pag-akyat sa langit ay hindi sapat na patunay na nagsimula na noon ang Araw ng Pagtubos. Ang pagtatalaga ng santuwaryo sa lupa (Exodus 40:9–10; Numbers 7:1) ay naiiba sa taunang paglilinis nito (Leviticus 16). Ipinaaalaala ng Pentecostes na ang ministeryo ni Hesus sa langit ay nagdudulot ng mga pagpapala sa Kaniyang bayan sa lupa (Acts 2:1–4).",
     "steps": [
       [
         "Isaiah 59:1–2; Genesis 3:7–10",
@@ -913,7 +913,7 @@ const DEPTH = {
     "practice": "Gumuhit ng takdang panahon na may 457 BC, AD 27, AD 31 at AD 34. Isulat sa tabi ng bawat petsa ang kaugnay na pangyayari at talata sa Biblia."
   },
   "judgement": {
-    "principle": "Inihahayag ng paghuhukom ng Diyos ang Kaniyang katarungan at ang katotohanan tungkol sa mga pagpili ng tao. Ang mabuting balita ay si Hesus kapwa ang matuwid na Hukom at Tagapagtanggol ng mga nagtitiwala sa Kaniya.",
+    "principle": "Inihahayag ng paghuhukom ng Diyos ang Kaniyang katarungan at ang katotohanan tungkol sa mga pagpili ng tao. Ang mabuting balita ay si Hesus kapwa ang matuwid na Hukom at Tagapagtanggol ng mga nagtitiwala sa Kaniya. Ang gawain ni Hesus ay hindi lamang ang pagbibigay ng hatol kundi ang pagpapanumbalik din sa mga nagpapasakop sa Kaniya. Inilalarawan ng Malachi 3:1–3 ang paglilinis ng Panginoon sa Kaniyang bayan. Kaya maaari nating harapin ang paghuhukom nang may pagtitiwala sa Kaniyang awa, na hinihiling sa Kaniya na linisin ang ating puso at baguhin ang ating buhay sa halip na hintayin ang isang krisis sa hinaharap upang tayo ay magbago.",
     "steps": [
       [
         "Ecclesiastes 12:13–14; Hebrews 9:27",
@@ -1105,7 +1105,7 @@ const DEPTH = {
     "practice": "Isulat ang pagkakaiba ng panghihikayat, paanyaya at pamimilit. Ihambing ang Apocalipsis 13:11–17 sa Apocalipsis 14:6–12."
   },
   "mark": {
-    "principle": "Ang huling tunggalian sa Apocalipsis ay tungkol sa pagsamba at katapatan. Hindi mauunawaan ang tanda ng katapatan kung ihihiwalay sa panawagang sambahin ang Manlilikha at sumunod kay Hesus.",
+    "principle": "Ang huling tunggalian sa Apocalipsis ay tungkol sa pagsamba at katapatan. Hindi mauunawaan ang tanda ng katapatan kung ihihiwalay sa panawagang sambahin ang Manlilikha at sumunod kay Hesus. Iniuugnay ng Revelation 7:1–3 at Revelation 14:1, 12 ang pagtatatak sa mga lingkod ng Diyos sa kanilang katapatan sa Kaniya. Ang pangalan ng Ama ay tumutukoy sa Kaniyang katangian, na nasasalamin sa mga taong nagtitiwala kay Hesus at tumutupad sa mga utos ng Diyos. Ang kanilang pagsunod ay bunga ng katuwirang tinatanggap sa pamamagitan ng pananampalataya, hindi paraan upang makamit ang kaligtasan. Inihahayag ng huling krisis ang katapatang nahuhubog sa araw-araw na pakikipag-ugnayan kay Hesus.",
     "steps": [
       [
         "Revelation 13:11–17",

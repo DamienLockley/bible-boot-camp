@@ -4,7 +4,7 @@ const CONNECTIONS = {
     [
       "Isang pahayag na nararapat suriin",
       "2 Timothy 3:16–17; 2 Peter 1:19–21",
-      "Kapag binabasa natin ang Biblia, higit pa sa mga sinaunang kasabihan ng marurunong ang makikita natin dito. Ayon sa mga sumulat nito, nagsalita ang Diyos sa pamamagitan ng mga taong isinugo Niya. Hindi ibig sabihin nito na tama ang bawat pagpapaliwanag sa isang talata o magkaparehong-magkapareho ang lahat ng kopya ng mga manuskrito. Kaya lalong mahalaga ang maingat na pagbabasa. Sino ang sumulat? Para kanino siya sumulat? Ano ang nangyayari noon? Paano nauugnay ang mensahe niya sa iba pang bahagi ng Kasulatan? Kung tunay ang ating tiwala, malaya tayong magtanong at matiyagang maghanap ng sagot."
+      "Kapag binabasa natin ang Biblia, higit pa sa mga sinaunang kasabihan ng marurunong ang makikita natin dito. Ayon sa mga sumulat nito, nagsalita ang Diyos sa pamamagitan ng mga taong isinugo Niya. Hindi ibig sabihin nito na tama ang bawat pagpapaliwanag sa isang talata o magkaparehong-magkapareho ang lahat ng kopya ng mga manuskrito. Kaya lalong mahalaga ang maingat na pagbabasa. Sino ang sumulat? Para kanino siya sumulat? Ano ang nangyayari noon? Paano nauugnay ang mensahe niya sa iba pang bahagi ng Kasulatan? Kung tunay ang ating tiwala, malaya tayong magtanong at matiyagang maghanap ng sagot. Itinatala ng Biblia ang pananampalataya at mga pagkukulang. Pinuri si Rahab sa pagtanggap sa mga sugo nang may pananampalataya, hindi tahasang dahil sa kanyang pagsisinungaling. Ang pagsisisi ni David, hindi ang kanyang kasalanan, ang dapat tularan (Joshua 2:1–7; Hebrews 11:31; James 2:25; Psalm 51)."
     ],
     [
       "Ang Diyos na nagmamahal at nagbibigay ng sarili",
@@ -70,7 +70,7 @@ const CONNECTIONS = {
     [
       "Ang unang sugat ay ang maling pagkakilala sa Diyos",
       "Genesis 3:1–13",
-      "Nagtanim ang ahas ng pagdududa sa salita at kabutihan ng Diyos bago kumain sina Adan at Eva ng bunga. Mula sa pagtitiwala ay napunta sila sa takot, pagtatago at paninisi. Nakikilala rin natin ito kapag nagdududa tayong hangad ng Diyos ang ating kabutihan, ipinagtatanggol ang sarili o sinisisi ang iba sa sariling pagpili. Higit sa pagpapawalang-bisa ng parusa ang kaligtasan. Kailangang ibalik ng Diyos ang ating pagtitiwala, pagalingin ang ating pagkamakasarili at ibalik tayo sa mapagmahal na pakikisama sa Kaniya."
+      "Nagtanim ang ahas ng pagdududa sa salita at kabutihan ng Diyos bago kumain sina Adan at Eva ng bunga. Mula sa pagtitiwala ay napunta sila sa takot, pagtatago at paninisi. Nakikilala rin natin ito kapag nagdududa tayong hangad ng Diyos ang ating kabutihan, ipinagtatanggol ang sarili o sinisisi ang iba sa sariling pagpili. Higit sa pagpapawalang-bisa ng parusa ang kaligtasan. Kailangang ibalik ng Diyos ang ating pagtitiwala, pagalingin ang ating pagkamakasarili at ibalik tayo sa mapagmahal na pakikisama sa Kaniya. Patuloy na nanawagan si Hesus kay Judas. Ang tunay na pagsisisi ay higit sa kalungkutan dahil sa bunga ng kasalanan; ito ay pagbaling kay Kristo para sa kapatawaran at pagbabago ng puso (John 13:1–30; 2 Corinthians 7:10; 1 John 1:9)."
     ],
     [
       "Ang Diyos ang unang kumikilos",
@@ -92,7 +92,7 @@ const CONNECTIONS = {
     [
       "Ang pagkakumbinsi sa kasalanan ay dapat humantong sa pagtitiwala",
       "John 16:7–13; John 3:16–17",
-      "Maaaring maging simula ang pagkabalisa sa isang maling ginawa, ngunit hindi makapagbabago ng tao ang pagkakasala lamang. Sinabi ni Hesus na ihahayag ng Espiritu ang kasalanan at aakayin ang mga tao sa katotohanan. Hindi tungkulin ng Espiritu na durugin ang tao sa kawalang-pag-asa, kundi dalhin siya sa Tagapagligtas na nagpapatawad at nagbabago ng buhay. Kung napagtanto mong may nasirang ugnayan o itinagong kasinungalingan, lumapit kay Hesus, magtapat nang tapat at gawin ang susunod na tamang hakbang."
+      "Maaaring maging simula ang pagkabalisa sa isang maling ginawa, ngunit hindi makapagbabago ng tao ang pagkakasala lamang. Sinabi ni Hesus na ihahayag ng Espiritu ang kasalanan at aakayin ang mga tao sa katotohanan. Hindi tungkulin ng Espiritu na durugin ang tao sa kawalang-pag-asa, kundi dalhin siya sa Tagapagligtas na nagpapatawad at nagbabago ng buhay. Kung napagtanto mong may nasirang ugnayan o itinagong kasinungalingan, lumapit kay Hesus, magtapat nang tapat at gawin ang susunod na tamang hakbang. Tulad ng halamang nangangailangan ng tubig habang lumalaki, kailangan natin ang Banal na Espiritu sa buong buhay Kristiyano. Huwag hintayin ang krisis bago magsimulang lumago kay Hesus (Joel 2:23–29; John 15:4–5; Acts 2:1–4)."
     ],
     [
       "Ang pagiging kabilang ay nauuna sa espirituwal na paglago",
@@ -114,7 +114,7 @@ const CONNECTIONS = {
     [
       "Ang tunay na suliranin ay pagkakahiwalay",
       "Isaiah 59:1–2; Genesis 3:7–10",
-      "Nagtago sina Adan at Eva matapos silang sumuway. Ang Diyos ang naghanap sa kanila. Ipinakikita ng kanilang takot at kahihiyan kung paano sinisira ng kasalanan ang pagtitiwala at ugnayan. Dito nagsisimula ang mensahe ng santuwaryo: paano muling mamumuhay sa presensya ng Diyos ang mga taong tumalikod sa Kaniya? Hindi iniwan ng Diyos ang sangkatauhan. Nagbigay Siya ng nakikitang paraan ng pagtuturo upang ipakitang seryoso ang kasalanan, may habag at maaaring maibalik ang pakikisama sa Kaniya. Kuwento ito ng ugnayan, hindi lamang ng sinaunang kasangkapang panrelihiyon."
+      "Nagtago sina Adan at Eva matapos silang sumuway. Ang Diyos ang naghanap sa kanila. Ipinakikita ng kanilang takot at kahihiyan kung paano sinisira ng kasalanan ang pagtitiwala at ugnayan. Dito nagsisimula ang mensahe ng santuwaryo: paano muling mamumuhay sa presensya ng Diyos ang mga taong tumalikod sa Kaniya? Hindi iniwan ng Diyos ang sangkatauhan. Nagbigay Siya ng nakikitang paraan ng pagtuturo upang ipakitang seryoso ang kasalanan, may habag at maaaring maibalik ang pakikisama sa Kaniya. Kuwento ito ng ugnayan, hindi lamang ng sinaunang kasangkapang panrelihiyon. Ang santuwaryo sa lupa ay may pagtatalaga at hiwalay na Araw ng Pagtubos. Gayundin, may magkakaibang layunin ang ministeryo ni Kristo sa langit, na nakasalig sa Kanyang minsanang sakripisyo (Numbers 7:1; Leviticus 16; Hebrews 4:14–16; 8:1–2)."
     ],
     [
       "Inihahayag ng mga simbolo ang halaga ng pagliligtas",
@@ -158,7 +158,7 @@ const CONNECTIONS = {
     [
       "Binibigyang-kahulugan ng pag-ibig ang mga kautusan",
       "Matthew 22:36–40; Romans 13:8–10",
-      "Ibinuod ni Hesus ang kautusan bilang pag-ibig sa Diyos at sa kapwa. Hindi nangangahulugang sapat na ang damdamin ng pagmamahal bilang kapalit ng malinaw na patnubay sa tama at mali. Sa halip, inilalarawan ng mga kautusan ang pag-ibig sa gawa: ang katotohanan sa pagsasalita, katapatan, paggalang sa buhay, pagpapahalaga sa pamilya at pag-iwas sa kasakiman ay nangangalaga ng mga ugnayan. Ang pagsunod nang walang pag-ibig ay maaaring maging malamig at mapagmataas; ang pag-ibig na walang malasakit sa kapwa ay maaaring maging hungkag na salita. Pinag-uugnay ni Hesus ang dalawa."
+      "Ibinuod ni Hesus ang kautusan bilang pag-ibig sa Diyos at sa kapwa. Hindi nangangahulugang sapat na ang damdamin ng pagmamahal bilang kapalit ng malinaw na patnubay sa tama at mali. Sa halip, inilalarawan ng mga kautusan ang pag-ibig sa gawa: ang katotohanan sa pagsasalita, katapatan, paggalang sa buhay, pagpapahalaga sa pamilya at pag-iwas sa kasakiman ay nangangalaga ng mga ugnayan. Ang pagsunod nang walang pag-ibig ay maaaring maging malamig at mapagmataas; ang pag-ibig na walang malasakit sa kapwa ay maaaring maging hungkag na salita. Pinag-uugnay ni Hesus ang dalawa. Alam ng tatlong Hebreo na kaya silang iligtas ng Diyos, ngunit pinili nilang sumunod kahit hindi Niya sila iligtas. Ang katapatan ay hindi pakikipagtawaran para sa maginhawang buhay (Daniel 3:16–18; John 14:15; Hebrews 11:6)."
     ],
     [
       "Nauuna ang pagliligtas sa mga kautusan",
@@ -334,7 +334,7 @@ const CONNECTIONS = {
     [
       "Pangakong binitiwan ni Hesus",
       "John 14:1–3; Acts 1:9–11",
-      "Inaliw ni Hesus ang mga tagasunod sa pangakong babalik at tatanggapin sila sa Kaniya. Sinabi ng mga anghel sa Kaniyang pag-akyat na ang mismong Hesus na umakyat sa langit ay muling darating. Kaya ang pag-asa sa Kaniyang pagbabalik ay hindi lamang nakabatay sa mga hula tungkol sa politika. Nagsisimula ito sa personal na pangako Niya sa mga minamahal. Hindi kailangang malaman ng Kristiyano ang petsa upang makilala ang Darating."
+      "Inaliw ni Hesus ang mga tagasunod sa pangakong babalik at tatanggapin sila sa Kaniya. Sinabi ng mga anghel sa Kaniyang pag-akyat na ang mismong Hesus na umakyat sa langit ay muling darating. Kaya ang pag-asa sa Kaniyang pagbabalik ay hindi lamang nakabatay sa mga hula tungkol sa politika. Nagsisimula ito sa personal na pangako Niya sa mga minamahal. Hindi kailangang malaman ng Kristiyano ang petsa upang makilala ang Darating. Pumasok si Noe sa daong bago ang baha, at naghanda ang matatalinong dalaga bago dumating ang kasintahang lalaki. Ang kahandaan ay lumalago sa pagtitiwala kay Kristo at pagtugon sa Kanyang biyaya ngayon (Genesis 7:16; Matthew 24:37–39; 25:1–13)."
     ],
     [
       "Nakikita, maluwalhati at hindi mapagkakamalan",
@@ -400,7 +400,7 @@ const CONNECTIONS = {
     [
       "Ang konteksto ay panalangin para sa pagpapanumbalik",
       "Daniel 9:1–23",
-      "Hindi nagsimula si Daniel sa paglutas ng palaisipan. Ipinagtapat niya ang kasalanan, inalala ang habag ng Diyos at nanalangin para sa pagpapanumbalik ng Jerusalem. Dumating ang paliwanag ng anghel sa konteksto ng katapatan ng Diyos sa tipan. Sa ganitong pagbasa, hindi nagiging hiwalay na laro ng bilang ang mga petsa. Ang layunin ng propesiya ay ang gawain ng Diyos sa pakikipagkasundo at ang pagdating ng Mesiyas, hindi ang kasiyahan sa pagkalkula."
+      "Hindi nagsimula si Daniel sa paglutas ng palaisipan. Ipinagtapat niya ang kasalanan, inalala ang habag ng Diyos at nanalangin para sa pagpapanumbalik ng Jerusalem. Dumating ang paliwanag ng anghel sa konteksto ng katapatan ng Diyos sa tipan. Sa ganitong pagbasa, hindi nagiging hiwalay na laro ng bilang ang mga petsa. Ang layunin ng propesiya ay ang gawain ng Diyos sa pakikipagkasundo at ang pagdating ng Mesiyas, hindi ang kasiyahan sa pagkalkula. Sinuportahan ng mga naunang hari ng Persia ang muling pagtatayo ng templo. Binigyan din ni Artajerjes si Ezra ng kapangyarihang ituro ang kautusan at magtalaga ng mga hukom. Sa pagkaunawang Adventista, nagsimula ang panahon ng propesiya sa mas malawak na pagpapanumbalik noong 457 BC. Ang animnapu’t siyam na linggo ay tumutukoy sa ministeryo ni Hesus at ang kalagitnaan ng huling linggo sa Kanyang sakripisyo. Itinuturo rin ng pagpapanumbalik ang pangako ng Diyos na baguhin ang ating puso (Ezra 7:7–9, 25–26; Daniel 9:24–27; Jeremiah 31:31–34)."
     ],
     [
       "Bakit itinuturing na mga taon ang pitumpung linggo?",
@@ -444,7 +444,7 @@ const CONNECTIONS = {
     [
       "Bahagi ng ebanghelyo ang paghuhukom",
       "Acts 17:30–31; Revelation 14:6–7",
-      "Binabanggit ng Bagong Tipan ang darating na paghuhukom kasama ng pagpapahayag ng mabuting balita. Hindi kailangang pag-awayin ang mga mensaheng iyon. Kailangang harapin ng mapagmahal na Diyos ang kasamaan at ibalik ang katarungan, at si Hesus ang itinalagang Hukom. Pinag-aaralan dito ang propetikong takdang panahon bilang pagpapatuloy ng mga aralin sa kaligtasan, santuwaryo at paghuhukom, hindi bilang hiwalay na paraan upang maging karapat-dapat sa Diyos."
+      "Binabanggit ng Bagong Tipan ang darating na paghuhukom kasama ng pagpapahayag ng mabuting balita. Hindi kailangang pag-awayin ang mga mensaheng iyon. Kailangang harapin ng mapagmahal na Diyos ang kasamaan at ibalik ang katarungan, at si Hesus ang itinalagang Hukom. Pinag-aaralan dito ang propetikong takdang panahon bilang pagpapatuloy ng mga aralin sa kaligtasan, santuwaryo at paghuhukom, hindi bilang hiwalay na paraan upang maging karapat-dapat sa Diyos. Sa historisistang pagkaunawang Adventista, ang pitumpung linggo ay bahagi ng mas mahabang panahon na 2,300 taon. Ang pagbibilang mula 457 BC, nang walang taong sero, ay umaabot sa AD 1844. Pinag-uugnay nito ang Daniel 8 at 9; ang sakripisyo ni Kristo ang nananatiling saligan ng Kanyang ministeryo bilang saserdote (Daniel 8:14; 9:21–27; Hebrews 9:24–28)."
     ],
     [
       "Tumuturo ang paglilingkod sa lupa sa mga katotohanan sa langit",
@@ -510,7 +510,7 @@ const CONNECTIONS = {
     [
       "Basahin ang babala kasama ng mabuting balita",
       "Revelation 13:11–17; 14:6–12",
-      "Lumilitaw ang tanda ng hayop sa propesiya tungkol sa awtoridad, pagsamba at pamimilit na sumunod. Kaagad na inilalarawan ng Apocalipsis ang walang hanggang ebanghelyo at panawagang sambahin ang Manlilikha. Mahalaga ang pagkakasunod na iyon. Kapag iniwan ng aralin tungkol sa tanda ang mga tao na natatakot ngunit hindi itinuro kay Hesus, naligtaan nito ang sentro ng talata. Hindi naghahanap ang Diyos ng malabong teknikalidad upang mahuli ang tapat na mga tao; tinatawag Niya sila sa may-kaalamang katapatan."
+      "Lumilitaw ang tanda ng hayop sa propesiya tungkol sa awtoridad, pagsamba at pamimilit na sumunod. Kaagad na inilalarawan ng Apocalipsis ang walang hanggang ebanghelyo at panawagang sambahin ang Manlilikha. Mahalaga ang pagkakasunod na iyon. Kapag iniwan ng aralin tungkol sa tanda ang mga tao na natatakot ngunit hindi itinuro kay Hesus, naligtaan nito ang sentro ng talata. Hindi naghahanap ang Diyos ng malabong teknikalidad upang mahuli ang tapat na mga tao; tinatawag Niya sila sa may-kaalamang katapatan. Ang huling pagsubok sa pagsamba ay nagpapaalala sa Daniel 3. Hindi hinintay ng tatlong Hebreo ang hurno bago magpasya kung kanino sila magtitiwala. Ang ating araw-araw na pagpili ay nagpapahayag at nagpapatatag ng ugnayan natin kay Hesus (Daniel 3:16–18; Revelation 7:1–3; 13:15–17; 14:1, 12)."
     ],
     [
       "Saklaw ng pagsamba ang puso at pamumuhay",

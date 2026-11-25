@@ -1,6 +1,6 @@
 {
-  "pdf_mode": "update",
-  "status": "Updated all 28 study PDFs",
-  "word_sha256": "4eb021bdb8c2f86c440edfc7d9ae045c4bb53684ab6fe0709d598be45cf8dca0",
+  "pdf_mode": "keep",
+  "status": "Kept existing PDFs (did not regenerate)",
+  "word_sha256": "12f051fb72c51407daf78c74c8103442e85b42cc4d984e1390878186ae3d5f27",
   "source_site": "C:\\Dropbox\\Bible study\\Website\\Github\\bible-boot-camp\\teachers-guide\\tl"
 }

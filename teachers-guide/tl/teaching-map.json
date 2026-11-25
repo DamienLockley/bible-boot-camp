@@ -12,7 +12,7 @@
     {
       "id": 0,
       "title": "Ang Salita ng Diyos",
-      "source_unit_count": 69,
+      "source_unit_count": 70,
       "purpose": "Layunin: Ipakita na ang Biblia ay mapagkakatiwalaan.",
       "central_truth": "Pangunahing diwa: Mga pahayag, nilalaman, at pagkakapare-pareho ng Biblia; nais ng Diyos na makipag-ugnayan sa atin.",
       "intro_origin": "source",
@@ -62,7 +62,7 @@
         {
           "kind": "core",
           "start": 65,
-          "end": 68,
+          "end": 69,
           "label": "Suriin ang naririnig"
         }
       ],
@@ -138,7 +138,7 @@
     {
       "id": 2,
       "title": "Ang Gawain ng Banal na Espiritu",
-      "source_unit_count": 60,
+      "source_unit_count": 61,
       "purpose": "Layunin: Ipakita kung paano kumikilos ang Banal na Espiritu sa iyo at sa iyong kalooban upang akayin ka sa pagbabalik-loob.",
       "central_truth": "Pangunahing diwa: Ang gawain ng Banal na Espiritu.",
       "intro_origin": "source",
@@ -164,7 +164,7 @@
         {
           "kind": "core",
           "start": 49,
-          "end": 59,
+          "end": 60,
           "label": "Binabago ng Espiritu ang puso"
         }
       ],
@@ -180,7 +180,7 @@
     {
       "id": 3,
       "title": "Ang Santuwaryo",
-      "source_unit_count": 138,
+      "source_unit_count": 139,
       "purpose": "Layunin: Isalaysay ang kuwento ng pagtubos at ihayag ang plano ng Diyos na ihiwalay ang makasalanan sa kasalanan. (Ang Diyos ay hindi nagbabago / Ang tao ay nagbabago.)",
       "central_truth": "Pangunahing diwa: Si Hesus. Kung paano tinutugunan ng Diyos ang suliranin ng pagkakahiwalay.",
       "intro_origin": "source",
@@ -236,7 +236,7 @@
         {
           "kind": "supplement",
           "start": 136,
-          "end": 137,
+          "end": 138,
           "label": "Maaari bang tanggihan ang kaligtasan?"
         }
       ],
@@ -252,7 +252,7 @@
     {
       "id": 4,
       "title": "Ang Plano ng Kaligtasan",
-      "source_unit_count": 77,
+      "source_unit_count": 78,
       "purpose": "Layunin: Ipakita na ang kaligtasan ay sa biyaya lamang, sa pamamagitan ng pananampalataya lamang, para sa kaluwalhatian ng Diyos lamang.",
       "central_truth": "Pangunahing diwa: Ang problema at ang lunas.",
       "intro_origin": "source",
@@ -284,7 +284,7 @@
         {
           "kind": "core",
           "start": 70,
-          "end": 76,
+          "end": 77,
           "label": "Ang angkop na paanyaya"
         }
       ],
@@ -300,7 +300,7 @@
     {
       "id": 5,
       "title": "Ang Kautusan",
-      "source_unit_count": 75,
+      "source_unit_count": 76,
       "purpose": "Layunin: Ipakita mula sa Kasulatan na ang kautusan ng Diyos ay tungkol sa pag-ibig at kalayaan, na dapat itong isulat sa kalooban at hindi ipilit mula sa labas, at na ito ay walang hanggan.",
       "central_truth": "Pangunahing diwa: Ang Sampung Utos.",
       "intro_origin": "source",
@@ -332,7 +332,7 @@
         {
           "kind": "supplement",
           "start": 59,
-          "end": 74,
+          "end": 75,
           "label": "Ano ang ibig sabihin ng mamatay sa kautusan?"
         }
       ],
@@ -444,7 +444,7 @@
     {
       "id": 7,
       "title": "Ang Propesiya ng Pitumpung Linggo",
-      "source_unit_count": 115,
+      "source_unit_count": 121,
       "purpose": "Layunin: Ihayag ang lubhang kapani-paniwalang katibayan na si Jesu-Cristo ang Mesiyas! Ituon ang pansin sa isang sinaunang propesiya na nagbibigay ng susi upang maunawaan ang pinakamahalagang pangyayaring nasaksihan ng sanlibutan.",
       "central_truth": "Nakasentro sa: Daniel 9.",
       "intro_origin": "source",
@@ -482,7 +482,7 @@
         {
           "kind": "supplement",
           "start": 92,
-          "end": 114,
+          "end": 120,
           "label": "Karagdagang Pag-aaral 3"
         }
       ],
@@ -546,7 +546,7 @@
     {
       "id": 9,
       "title": "Ang Paghuhukom",
-      "source_unit_count": 79,
+      "source_unit_count": 80,
       "purpose": "Layunin: Ang Paghuhukom ay upang maipagtanggol at mapatunayang matuwid ang karakter ng Diyos.",
       "central_truth": "Nakasentro sa: Sa Paghuhukom, ang Diyos mismo ang tila sinusuri at hindi lamang tayo.",
       "intro_origin": "source",
@@ -566,7 +566,7 @@
         {
           "kind": "core",
           "start": 67,
-          "end": 78,
+          "end": 79,
           "label": "Ang tugon ng pananampalataya sa paghuhukom"
         }
       ],
@@ -582,7 +582,7 @@
     {
       "id": 10,
       "title": "1844",
-      "source_unit_count": 96,
+      "source_unit_count": 98,
       "purpose": "Layunin: Ipakita na ang paghuhukom ay ang kasukdulan ng kahulugan ng krus at na nagsimula noong 1844 ang huling yugto ng ministeryo ni Cristo sa santuwaryo sa langit.",
       "central_truth": "Nakasentro sa: Ang kasukdulan ng Ebanghelyo.",
       "intro_origin": "source",
@@ -596,7 +596,7 @@
         {
           "kind": "core",
           "start": 25,
-          "end": 95,
+          "end": 97,
           "label": "Ang huwaran ng Araw ng Pagtubos"
         }
       ],
@@ -774,7 +774,7 @@
     {
       "id": 14,
       "title": "Ang Ikalawang Pagdating",
-      "source_unit_count": 43,
+      "source_unit_count": 44,
       "purpose": "Layunin: Ipakita na ang ikalawang pagdating ni Cristo ang sukdulan ng kasaysayan ng kaligtasan, at na ito ay literal, makikita, maririnig, at MAKAPANGYARIHAN.",
       "central_truth": "Nakasentro sa: Darating si Hesus upang ibalik ang lahat ng bagay, magligtas, at wakasan ang kasalanan, sakit, at kamatayan.",
       "intro_origin": "source",
@@ -800,7 +800,7 @@
         {
           "kind": "supplement",
           "start": 36,
-          "end": 42,
+          "end": 43,
           "label": "Karagdagang Pag-aaral 2"
         }
       ],
@@ -858,7 +858,7 @@
     {
       "id": 16,
       "title": "Ang Tanda ng Halimaw",
-      "source_unit_count": 195,
+      "source_unit_count": 196,
       "purpose": "Layunin: Kilalanin ang Halimaw at ang Tanda nito.",
       "central_truth": "Nakasentro sa: Si Hesus lamang ang karapat-dapat sa ating Pagsamba at Katapatan, sapagkat Siya ang ating Diyos, Manlilikha, at Manunubos.",
       "intro_origin": "source",
@@ -908,7 +908,7 @@
         {
           "kind": "supplement",
           "start": 178,
-          "end": 194,
+          "end": 195,
           "label": "Karagdagang Pag-aaral 6"
         }
       ],

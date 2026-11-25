@@ -241,7 +241,7 @@ const DEPTH = {
     "practice": "Read Galatians 5:22–23. Choose one fruit, pray about it, and record one practical opportunity to show it over the next seven days."
   },
   "sanctuary": {
-    "principle": "The sanctuary tells the story of how God deals with sin in order to restore fellowship. Every part of the service directs attention beyond itself to Jesus.",
+    "principle": "The sanctuary tells the story of how God deals with sin in order to restore fellowship. Every part of the service directs attention beyond itself to Jesus. Hebrews 6:19–20 and Hebrews 10:19–21 describe Christ opening the way into God’s presence. Entrance within the veil at His ascension does not by itself establish that the Day of Atonement began then. The dedication of the earthly sanctuary (Exodus 40:9–10; Numbers 7:1) was distinct from its annual cleansing (Leviticus 16). Pentecost reminds us that Christ’s heavenly ministry brings blessings to His people on earth (Acts 2:1–4).",
     "steps": [
       [
         "Isaiah 59:1–2; Genesis 3:7–10",
@@ -913,7 +913,7 @@ const DEPTH = {
     "practice": "Draw a timeline labelled 457 BC, AD 27, AD 31 and AD 34. Beside each point write the relevant event and a supporting biblical passage."
   },
   "judgement": {
-    "principle": "God’s judgment reveals His justice and the truth about human choices. The good news is that Jesus is both the righteous Judge and the Advocate of those who trust Him.",
+    "principle": "God’s judgment reveals His justice and the truth about human choices. The good news is that Jesus is both the righteous Judge and the Advocate of those who trust Him. Christ’s work is not merely to pronounce a verdict but also to restore those who surrender to Him. Malachi 3:1–3 pictures the Lord purifying His people. We can therefore approach judgment with confidence in His mercy, asking Him to cleanse our hearts and transform our lives rather than waiting for a future crisis to change us.",
     "steps": [
       [
         "Ecclesiastes 12:13–14; Hebrews 9:27",
@@ -1105,7 +1105,7 @@ const DEPTH = {
     "practice": "Write down the differences between persuasion, invitation and coercion. Compare Revelation 13:11–17 with Revelation 14:6–12."
   },
   "mark": {
-    "principle": "The final conflict in Revelation concerns worship and allegiance. A mark of loyalty cannot be understood apart from the contrasting call to worship the Creator and follow Jesus.",
+    "principle": "The final conflict in Revelation concerns worship and allegiance. A mark of loyalty cannot be understood apart from the contrasting call to worship the Creator and follow Jesus. Revelation 7:1–3 and Revelation 14:1, 12 connect the sealing of God’s servants with allegiance to Him. The Father’s name points to His character, reflected in people who trust Jesus and keep God’s commandments. Their obedience is the fruit of righteousness received by faith, not a means of earning salvation. The final crisis reveals the loyalty cultivated through daily fellowship with Christ.",
     "steps": [
       [
         "Revelation 13:11–17",

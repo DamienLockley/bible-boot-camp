@@ -4,7 +4,7 @@ const CONNECTIONS = {
     [
       "A claim worth testing",
       "2 Timothy 3:16–17; 2 Peter 1:19–21",
-      "Peter describes people speaking under the guidance of the Holy Spirit. Daniel gives you a particular message to examine. You can read his words to the king and weigh the explanation for yourself."
+      "Peter describes people speaking under the guidance of the Holy Spirit. Daniel gives you a particular message to examine. You can read his words to the king and weigh the explanation for yourself. The Bible records both faith and failure. Rahab is commended for receiving the messengers in faith, not explicitly for her lie. David’s repentance, not his sin, is an example to follow (Joshua 2:1–7; Hebrews 11:31; James 2:25; Psalm 51)."
     ],
     [
       "A God of self-giving love",
@@ -70,7 +70,7 @@ const CONNECTIONS = {
     [
       "The first wound was a broken picture of God",
       "Genesis 3:1–13",
-      "The serpent planted doubt about God’s word and goodness before Adam and Eve ate the fruit. They then moved from trust to fear, hiding and blaming. We recognise the same pattern when we doubt that God wants our good, try to justify ourselves or blame someone else for our choices. Salvation therefore includes more than cancelling a penalty. God must restore our trust, heal our inward selfishness and bring us back into a loving relationship with Him."
+      "The serpent planted doubt about God’s word and goodness before Adam and Eve ate the fruit. They then moved from trust to fear, hiding and blaming. We recognise the same pattern when we doubt that God wants our good, try to justify ourselves or blame someone else for our choices. Salvation therefore includes more than cancelling a penalty. God must restore our trust, heal our inward selfishness and bring us back into a loving relationship with Him. Jesus continued to appeal to Judas. True repentance is more than sorrow over consequences; it means turning to Christ for forgiveness and a changed heart (John 13:1–30; 2 Corinthians 7:10; 1 John 1:9)."
     ],
     [
       "God takes the initiative",
@@ -92,7 +92,7 @@ const CONNECTIONS = {
     [
       "Conviction is meant to lead to trust",
       "John 16:7–13; John 3:16–17",
-      "Feeling uncomfortable about something wrong can be a beginning, but guilt alone cannot make anyone new. Jesus said the Spirit would expose sin and lead people into truth. The Spirit’s work is not to crush a person into hopelessness; it is to bring them to the Saviour who can forgive and transform. If conviction makes you aware of a broken relationship or hidden dishonesty, respond by turning toward Jesus, confessing honestly and taking the next faithful step."
+      "Feeling uncomfortable about something wrong can be a beginning, but guilt alone cannot make anyone new. Jesus said the Spirit would expose sin and lead people into truth. The Spirit’s work is not to crush a person into hopelessness; it is to bring them to the Saviour who can forgive and transform. If conviction makes you aware of a broken relationship or hidden dishonesty, respond by turning toward Jesus, confessing honestly and taking the next faithful step. Like a plant needing water throughout its growth, we need the Holy Spirit throughout our Christian experience. Do not wait for a future crisis to begin growing with Jesus (Joel 2:23–29; John 15:4–5; Acts 2:1–4)."
     ],
     [
       "Belonging comes before spiritual maturity",
@@ -114,7 +114,7 @@ const CONNECTIONS = {
     [
       "The real problem is separation",
       "Isaiah 59:1–2; Genesis 3:7–10",
-      "After Adam and Eve disobeyed, they hid. God came looking for them. Their fear and shame show how sin breaks trust and damages relationship. The sanctuary message begins here: how can people who have turned away live in God’s presence again? God’s answer is not to abandon the human family. He gives a visible teaching system to show that sin is serious, mercy is available and fellowship can be restored. It is a story about relationship, not merely ancient religious furniture."
+      "After Adam and Eve disobeyed, they hid. God came looking for them. Their fear and shame show how sin breaks trust and damages relationship. The sanctuary message begins here: how can people who have turned away live in God’s presence again? God’s answer is not to abandon the human family. He gives a visible teaching system to show that sin is serious, mercy is available and fellowship can be restored. It is a story about relationship, not merely ancient religious furniture. The earthly sanctuary had a dedication and a distinct Day of Atonement. Christ’s heavenly ministry likewise has distinct purposes, founded on His once-for-all sacrifice (Numbers 7:1; Leviticus 16; Hebrews 4:14–16; 8:1–2)."
     ],
     [
       "The symbols reveal the cost of rescue",
@@ -158,7 +158,7 @@ const CONNECTIONS = {
     [
       "Love gives the commandments their meaning",
       "Matthew 22:36–40; Romans 13:8–10",
-      "Jesus summarised the law as love for God and neighbour. This does not mean loving feelings replace clear moral guidance. Rather, the commandments show love in action: truthful speech, faithfulness, respect for life, honour for family and freedom from greed protect relationships. A rule followed without love can become cold and proud; love with no concern for others’ wellbeing can become an empty slogan. Jesus brings the two together."
+      "Jesus summarised the law as love for God and neighbour. This does not mean loving feelings replace clear moral guidance. Rather, the commandments show love in action: truthful speech, faithfulness, respect for life, honour for family and freedom from greed protect relationships. A rule followed without love can become cold and proud; love with no concern for others’ wellbeing can become an empty slogan. Jesus brings the two together. The three Hebrews knew God could deliver them, but chose obedience even if He did not. Faithfulness is not a bargain for an easy life (Daniel 3:16–18; John 14:15; Hebrews 11:6)."
     ],
     [
       "Rescue came before the commandments",
@@ -334,7 +334,7 @@ const CONNECTIONS = {
     [
       "A promise made by Jesus",
       "John 14:1–3; Acts 1:9–11",
-      "Jesus comforts His followers by promising to return and receive them to Himself. The angels at His ascension say that the same Jesus who was taken into heaven will come again. The hope of His return is therefore not built on a prediction about political events alone. It begins with His personal promise to people He loves. Christians need not know the date to know the One who is coming."
+      "Jesus comforts His followers by promising to return and receive them to Himself. The angels at His ascension say that the same Jesus who was taken into heaven will come again. The hope of His return is therefore not built on a prediction about political events alone. It begins with His personal promise to people He loves. Christians need not know the date to know the One who is coming. Noah entered the ark before the flood, and the wise virgins prepared before the bridegroom arrived. Readiness grows through trusting Christ and responding to His grace now (Genesis 7:16; Matthew 24:37–39; 25:1–13)."
     ],
     [
       "Visible, glorious and unmistakable",
@@ -400,7 +400,7 @@ const CONNECTIONS = {
     [
       "The setting is a prayer for restoration",
       "Daniel 9:1–23",
-      "Daniel does not begin by trying to solve a puzzle. He confesses sin, remembers God’s mercy and prays for the restoration of Jerusalem. The angel’s explanation comes in the setting of God’s covenant faithfulness. Reading the chapter this way keeps the dates from becoming an isolated exercise. The point of the prophecy is God’s work of reconciliation and the coming Messiah, not the thrill of calculating numbers."
+      "Daniel does not begin by trying to solve a puzzle. He confesses sin, remembers God’s mercy and prays for the restoration of Jerusalem. The angel’s explanation comes in the setting of God’s covenant faithfulness. Reading the chapter this way keeps the dates from becoming an isolated exercise. The point of the prophecy is God’s work of reconciliation and the coming Messiah, not the thrill of calculating numbers. Earlier Persian kings supported rebuilding the temple. Artaxerxes also authorised Ezra to teach the law and appoint judges. In the Adventist interpretation this wider restoration begins the prophetic period in 457 BC. The sixty-nine weeks point to Jesus’ ministry and the middle of the final week to His sacrifice. Restoration also points to God’s promise to renew our hearts (Ezra 7:7–9, 25–26; Daniel 9:24–27; Jeremiah 31:31–34)."
     ],
     [
       "Why the seventy weeks are understood as years",
@@ -444,7 +444,7 @@ const CONNECTIONS = {
     [
       "The judgment belongs to the gospel",
       "Acts 17:30–31; Revelation 14:6–7",
-      "The New Testament speaks of a coming judgment alongside the announcement of good news. There is no need to treat those messages as enemies. A loving God must ultimately deal with evil and restore justice, and the One appointed to judge is Jesus. This study approaches the prophetic timetable as an extension of the lessons on salvation, the sanctuary and judgment, rather than as a separate way of earning acceptance."
+      "The New Testament speaks of a coming judgment alongside the announcement of good news. There is no need to treat those messages as enemies. A loving God must ultimately deal with evil and restore justice, and the One appointed to judge is Jesus. This study approaches the prophetic timetable as an extension of the lessons on salvation, the sanctuary and judgment, rather than as a separate way of earning acceptance. In the Adventist historicist interpretation, the seventy weeks are allotted from the longer 2,300-year period. Counting from 457 BC without a year zero reaches AD 1844. This interpretation connects Daniel 8 and 9; Christ’s sacrifice remains the foundation of His priestly ministry (Daniel 8:14; 9:21–27; Hebrews 9:24–28)."
     ],
     [
       "Earthly services point to heavenly realities",
@@ -510,7 +510,7 @@ const CONNECTIONS = {
     [
       "Read the warning together with the good news",
       "Revelation 13:11–17; 14:6–12",
-      "The mark of the beast appears in a prophecy about authority, worship and pressure to conform. Immediately beside the warning, Revelation describes the everlasting gospel and a call to worship the Creator. That order matters. A study about the mark that leaves people terrified but never points them to Jesus has missed the centre of the passage. God is not trying to trap sincere people with an obscure technicality; He is calling for informed faithfulness."
+      "The mark of the beast appears in a prophecy about authority, worship and pressure to conform. Immediately beside the warning, Revelation describes the everlasting gospel and a call to worship the Creator. That order matters. A study about the mark that leaves people terrified but never points them to Jesus has missed the centre of the passage. God is not trying to trap sincere people with an obscure technicality; He is calling for informed faithfulness. The final test of worship recalls Daniel 3. The three Hebrews did not wait until the furnace to decide whom they trusted. Our daily choices express and strengthen our relationship with Jesus (Daniel 3:16–18; Revelation 7:1–3; 13:15–17; 14:1, 12)."
     ],
     [
       "Worship reaches the heart and the life",
