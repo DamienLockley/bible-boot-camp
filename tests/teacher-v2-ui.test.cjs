@@ -59,6 +59,25 @@ async function flush(){
  assert.match(document.getElementById('stage').textContent,/Evidence|character/i);
  assert.match(html,/\.mobile-stage-picker\{display:none\}/);
  assert.match(html,/#guide-view>\.side\{display:none\}/);
+ // On phones, pathway selection and Next must land at the *new stage heading*.
+ // Top returns to the selected pathway picker, without jumping to the site header.
+ const scrollTargets=[];
+ window.matchMedia=()=>({matches:true,addListener(){},removeListener(){}});
+ window.HTMLElement.prototype.scrollIntoView=function(){scrollTargets.push(this)};
+ const afterLayout=()=>new Promise(resolve=>window.requestAnimationFrame(resolve));
+ mobileStage.value='core:2';
+ mobileStage.dispatchEvent(new window.Event('change',{bubbles:true}));
+ await afterLayout();
+ assert.equal(scrollTargets.at(-1),document.querySelector('#stage>h2'),'Mobile pathway must scroll to teaching item heading');
+ document.getElementById('next').click();
+ await afterLayout();
+ assert.equal(mobileStage.value,'core:3','Next must advance and synchronize the selected pathway');
+ assert.equal(scrollTargets.at(-1),document.querySelector('#stage>h2'),'Next must land at the NEXT teaching heading');
+ document.getElementById('stage-top').click();
+ assert.equal(scrollTargets.at(-1),mobileStage,'Top must return to the selected pathway picker');
+ assert.match(html,/#stage>h2\{scroll-margin-top:12px\}/);
+ window.matchMedia=()=>({matches:false,addListener(){},removeListener(){}});
+
  document.getElementById('mode-verses').click();
  const columns=document.querySelectorAll('#verses-view .verse-group');
  assert.equal(columns.length,2,'Expected two separate Bible reference lists');
