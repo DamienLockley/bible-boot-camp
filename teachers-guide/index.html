@@ -1012,7 +1012,7 @@ $('teacher-tl-button').onclick=async()=>{
   const response=await fetch(new URL('index.html',target.href),{cache:'no-store'});
   if(response.ok){
    const html=await response.text();
-   if(/<html\\b[^>]*\\blang=["']tl["']/i.test(html) && html.includes('study-data.json')){
+   if(/<html\b[^>]*\blang=["']tl["']/i.test(html) && html.includes('study-data.json')){
     window.location.assign(target.href);return;
    }
   }
