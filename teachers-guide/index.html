@@ -980,9 +980,8 @@ function renderGuide(){
  $('stage').innerHTML=html;
  $('prev').onclick=()=>chooseStage(stageKind,stageIndex-1);$('next').onclick=()=>chooseStage(stageKind,stageIndex+1);
  $('stage-top').onclick=()=>{
-  if(matchMedia('(max-width:760px)').matches){
-   $('mobile-stage-select').scrollIntoView({block:'start',behavior:'auto'});
-  }else scrollTo(0,0);
+  // Return to the absolute top of the app, including the site header.
+  window.scrollTo({top:0,left:0,behavior:'instant'});
  };
  if($('back-core'))$('back-core').onclick=()=>chooseStage('core',0);
 }
