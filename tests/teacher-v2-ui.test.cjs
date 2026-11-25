@@ -4,6 +4,15 @@ const { JSDOM } = require('jsdom');
 const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
+for(const site of ['index.html','tl/index.html']){
+ const html=fs.readFileSync(path.join(root,site),'utf8');
+ assert.match(html,/class="brand-mark gtkj-official-brand-icon"/,'GTKJ must show its official logo: '+site);
+ assert.match(html,/src="\/icon-192\.png"/,'GTKJ logo should use the official app artwork: '+site);
+ assert.match(html,/id="gtkj-official-brand-icon-style"/,'GTKJ logo must scale on phones: '+site);
+}
+assert.match(fs.readFileSync(path.join(root,'creation/assets/style.css'),'utf8'),
+ /\/creation\/icon-192-v2\.png/,'Creation EN and TL headers should use official Creation icon');
+
 for (const lang of ['teachers-guide/index.html','teachers-guide/tl/index.html']) {
  const content=fs.readFileSync(path.join(root,lang),'utf8');
  assert.match(content,/const onlyStudyPosition = routeParams\.has\('study'\)/,
