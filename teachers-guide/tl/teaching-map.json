@@ -1,0 +1,1465 @@
+{
+  "status": "DRAFT — teacher review only",
+  "source": "main:teachers-guide/study-data.json",
+  "source_blob_sha": "d15392e5424bb382893414fe28dc31ee7c56898a",
+  "notes": [
+    "Teaching ranges are inclusive original zero-based unit indexes, no content removed or changed.",
+    "Supplement subjects are navigation aids, not claims of independent historical verification.",
+    "Applications and response prompts are proposals to review before Word master/manager integration.",
+    "Do not replace or publish live site."
+  ],
+  "studies": [
+    {
+      "id": 0,
+      "title": "Ang Salita ng Diyos",
+      "source_unit_count": 69,
+      "purpose": "Layunin: Ipakita na ang Biblia ay mapagkakatiwalaan.",
+      "central_truth": "Pangunahing diwa: Mga pahayag, nilalaman, at pagkakapare-pareho ng Biblia; nais ng Diyos na makipag-ugnayan sa atin.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 14,
+          "label": "Ang pahayag ng Biblia"
+        },
+        {
+          "kind": "core",
+          "start": 15,
+          "end": 23,
+          "label": "Magsimula sa karakter ng Diyos"
+        },
+        {
+          "kind": "core",
+          "start": 24,
+          "end": 43,
+          "label": "Bakit mahalaga ang propesiya"
+        },
+        {
+          "kind": "core",
+          "start": 44,
+          "end": 48,
+          "label": "Pangunahing Pag-aaral 4"
+        },
+        {
+          "kind": "core",
+          "start": 49,
+          "end": 52,
+          "label": "Pangunahing Pag-aaral 5"
+        },
+        {
+          "kind": "core",
+          "start": 53,
+          "end": 61,
+          "label": "Pangunahing Pag-aaral 6"
+        },
+        {
+          "kind": "core",
+          "start": 62,
+          "end": 64,
+          "label": "Pangunahing Pag-aaral 7"
+        },
+        {
+          "kind": "core",
+          "start": 65,
+          "end": 68,
+          "label": "Suriin ang naririnig"
+        }
+      ],
+      "application": {
+        "text": "",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 1,
+      "title": "Ang Dakilang Tunggalian",
+      "source_unit_count": 115,
+      "purpose": "(Ang Pinagmulan ng Kasamaan)",
+      "central_truth": "Layunin: Ipakita na may isang kosmikong tunggalian sa pagitan ng Diyos at ni Satanas, na ang daigdig ang pinangyayarihan nito at ang pagsamba ang sentrong usapin.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 4,
+          "end": 30,
+          "label": "Saan nagsimula ang kasamaan?"
+        },
+        {
+          "kind": "core",
+          "start": 31,
+          "end": 45,
+          "label": "Ang tunggalian tungkol sa pagsamba"
+        },
+        {
+          "kind": "core",
+          "start": 46,
+          "end": 56,
+          "label": "Ang tugon ng Diyos at ang wakas ng kasamaan"
+        },
+        {
+          "kind": "supplement",
+          "start": 57,
+          "end": 72,
+          "label": "Bakit nilikha ng Diyos si Lucifer, at bakit siya naghimagsik?"
+        },
+        {
+          "kind": "supplement",
+          "start": 73,
+          "end": 85,
+          "label": "Bakit nangangailangan ng kalayaan ang tunay na pag-ibig?"
+        },
+        {
+          "kind": "supplement",
+          "start": 86,
+          "end": 100,
+          "label": "Bakit hinahayaan ng Diyos na magpatuloy ang kasamaan?"
+        },
+        {
+          "kind": "supplement",
+          "start": 101,
+          "end": 114,
+          "label": "Paano sinasagot ng krus ang dakilang tunggalian?"
+        }
+      ],
+      "application": {
+        "text": "",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Ang Gawain ng Banal na Espiritu",
+      "source_unit_count": 60,
+      "purpose": "Layunin: Ipakita kung paano kumikilos ang Banal na Espiritu sa iyo at sa iyong kalooban upang akayin ka sa pagbabalik-loob.",
+      "central_truth": "Pangunahing diwa: Ang gawain ng Banal na Espiritu.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 15,
+          "label": "Ang Espiritu ay kumukumbinsi at gumagabay"
+        },
+        {
+          "kind": "core",
+          "start": 16,
+          "end": 31,
+          "label": "Ang Espiritu at ang Salita ng Diyos"
+        },
+        {
+          "kind": "core",
+          "start": 32,
+          "end": 48,
+          "label": "Bagong buhay kay Cristo"
+        },
+        {
+          "kind": "core",
+          "start": 49,
+          "end": 59,
+          "label": "Binabago ng Espiritu ang puso"
+        }
+      ],
+      "application": {
+        "text": "Ang tunay na pagbabago ay gawain ng Banal na Espiritu, hindi lamang pagsang-ayon sa isang doktrina.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Saang bahagi ng iyong buhay mo nais anyayahan ang Banal na Espiritu upang Siya ang gumabay?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Ang Santuwaryo",
+      "source_unit_count": 138,
+      "purpose": "Layunin: Isalaysay ang kuwento ng pagtubos at ihayag ang plano ng Diyos na ihiwalay ang makasalanan sa kasalanan. (Ang Diyos ay hindi nagbabago / Ang tao ay nagbabago.)",
+      "central_truth": "Pangunahing diwa: Si Hesus. Kung paano tinutugunan ng Diyos ang suliranin ng pagkakahiwalay.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 19,
+          "label": "Ang pagkakahiwalay na dulot ng kasalanan"
+        },
+        {
+          "kind": "core",
+          "start": 20,
+          "end": 34,
+          "label": "Nais ng Diyos na manahan kasama natin"
+        },
+        {
+          "kind": "core",
+          "start": 35,
+          "end": 55,
+          "label": "Itinuturo ng santuwaryo ang tungkol kay Hesus"
+        },
+        {
+          "kind": "core",
+          "start": 56,
+          "end": 67,
+          "label": "Personal na paanyaya at tugon"
+        },
+        {
+          "kind": "supplement",
+          "start": 68,
+          "end": 83,
+          "label": "Ano ang kinakatawan ng mga kasangkapan?"
+        },
+        {
+          "kind": "supplement",
+          "start": 84,
+          "end": 101,
+          "label": "Paano itinuturo ng mga kasangkapan ang tungkol kay Cristo?"
+        },
+        {
+          "kind": "supplement",
+          "start": 102,
+          "end": 131,
+          "label": "Ano ang itinuturo ng mga silid at kasangkapan?"
+        },
+        {
+          "kind": "supplement",
+          "start": 132,
+          "end": 135,
+          "label": "Paano nauugnay ang mga yugto ng kaligtasan?"
+        },
+        {
+          "kind": "supplement",
+          "start": 136,
+          "end": 137,
+          "label": "Maaari bang tanggihan ang kaligtasan?"
+        }
+      ],
+      "application": {
+        "text": "Lumapit ang Diyos upang ibalik ang ugnayang sinira ng kasalanan.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Ano ang kahulugan para sa iyo ng pagnanais ng Diyos na manahan malapit sa iyo?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Ang Plano ng Kaligtasan",
+      "source_unit_count": 77,
+      "purpose": "Layunin: Ipakita na ang kaligtasan ay sa biyaya lamang, sa pamamagitan ng pananampalataya lamang, para sa kaluwalhatian ng Diyos lamang.",
+      "central_truth": "Pangunahing diwa: Ang problema at ang lunas.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 25,
+          "label": "Ang kasalanan at ang ating pangangailangan"
+        },
+        {
+          "kind": "core",
+          "start": 26,
+          "end": 42,
+          "label": "Pag-ibig ng Diyos na nahayag sa krus"
+        },
+        {
+          "kind": "core",
+          "start": 43,
+          "end": 56,
+          "label": "Ang natapos na gawain ni Hesus"
+        },
+        {
+          "kind": "core",
+          "start": 57,
+          "end": 69,
+          "label": "Pagtanggap sa kaloob"
+        },
+        {
+          "kind": "core",
+          "start": 70,
+          "end": 76,
+          "label": "Ang angkop na paanyaya"
+        }
+      ],
+      "application": {
+        "text": "Ang kaligtasan ay isang kaloob ng biyaya ng Diyos na humahantong sa pagbabago ng buhay.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Handa ka bang lumapit sa Diyos sa pananampalataya at tanggapin ang Kanyang kaloob?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Ang Kautusan",
+      "source_unit_count": 75,
+      "purpose": "Layunin: Ipakita mula sa Kasulatan na ang kautusan ng Diyos ay tungkol sa pag-ibig at kalayaan, na dapat itong isulat sa kalooban at hindi ipilit mula sa labas, at na ito ay walang hanggan.",
+      "central_truth": "Pangunahing diwa: Ang Sampung Utos.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 13,
+          "label": "Ang kautusan ng pag-ibig at kalayaan"
+        },
+        {
+          "kind": "core",
+          "start": 14,
+          "end": 22,
+          "label": "Ang biyaya ay nagbubunga ng pagsunod mula sa puso"
+        },
+        {
+          "kind": "supplement",
+          "start": 23,
+          "end": 41,
+          "label": "Mahalaga pa ba ang kautusan sa ilalim ng bagong tipan?"
+        },
+        {
+          "kind": "supplement",
+          "start": 42,
+          "end": 58,
+          "label": "Inalis ba ni Cristo ang kautusan bilang wakas nito?"
+        },
+        {
+          "kind": "supplement",
+          "start": 59,
+          "end": 74,
+          "label": "Ano ang ibig sabihin ng mamatay sa kautusan?"
+        }
+      ],
+      "application": {
+        "text": "Ang pag-ibig sa Diyos ay humuhubog sa pagsunod mula sa binagong puso, hindi sa pamamagitan ng pagtatrabaho para sa kaligtasan.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano maipakikita ng iyong pagsunod ang pag-ibig at pasasalamat sa Diyos?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Ang Antikristo",
+      "source_unit_count": 372,
+      "purpose": "Layunin: Kilalanin ang tao at prinsipyong kumakatawan sa antikristo.",
+      "central_truth": "Nakasentro sa: Si Hesus ang Cristo. Ang sinumang naglalayo sa mga tao kay Hesus o nagtatangkang pumalit sa Kanyang lugar ay inilalagay ang sarili sa katayuan ni Cristo at kumikilos bilang antikristo. Si Hesus lamang ang ating gabay, at ang anumang naglalayo sa atin sa Kanya ay laban kay Cristo.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 11,
+          "label": "Sino ang antikristo ayon kay Juan?"
+        },
+        {
+          "kind": "core",
+          "start": 12,
+          "end": 22,
+          "label": "Ang mga kapangyarihan sa propesiya ni Daniel"
+        },
+        {
+          "kind": "core",
+          "start": 23,
+          "end": 29,
+          "label": "Si Cristo ang sentro ng babala"
+        },
+        {
+          "kind": "supplement",
+          "start": 30,
+          "end": 43,
+          "label": "Ipagtanggol ang katotohanan tungkol sa antikristo"
+        },
+        {
+          "kind": "supplement",
+          "start": 44,
+          "end": 95,
+          "label": "Buod ng huling tunggalian"
+        },
+        {
+          "kind": "supplement",
+          "start": 96,
+          "end": 130,
+          "label": "Karagdagang Pag-aaral 6"
+        },
+        {
+          "kind": "supplement",
+          "start": 131,
+          "end": 184,
+          "label": "Karagdagang Pag-aaral 7"
+        },
+        {
+          "kind": "supplement",
+          "start": 185,
+          "end": 219,
+          "label": "Mga sangguniang pangkasaysayan tungkol sa antikristo"
+        },
+        {
+          "kind": "supplement",
+          "start": 220,
+          "end": 240,
+          "label": "Karagdagang Pag-aaral 9"
+        },
+        {
+          "kind": "supplement",
+          "start": 241,
+          "end": 264,
+          "label": "Karagdagang Pag-aaral 10"
+        },
+        {
+          "kind": "supplement",
+          "start": 265,
+          "end": 329,
+          "label": "Karagdagang Pag-aaral 11"
+        },
+        {
+          "kind": "supplement",
+          "start": 330,
+          "end": 336,
+          "label": "Karagdagang Pag-aaral 12"
+        },
+        {
+          "kind": "supplement",
+          "start": 337,
+          "end": 371,
+          "label": "Mga puntong mamarkahan sa Biblia"
+        }
+      ],
+      "application": {
+        "text": "Manatiling nakasentro kay Hesus at suriin sa Kasulatan ang bawat aral at pag-aangkin ng awtoridad. Ang layunin ng propesiya ay higit na katapatan sa Kanya at pag-ibig sa kapwa.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano mo mapananatiling si Hesus, sa halip na takot o isang taong pinuno, ang sentro ng iyong pananampalataya at pagsamba?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Ang Propesiya ng Pitumpung Linggo",
+      "source_unit_count": 115,
+      "purpose": "Layunin: Ihayag ang lubhang kapani-paniwalang katibayan na si Jesu-Cristo ang Mesiyas! Ituon ang pansin sa isang sinaunang propesiya na nagbibigay ng susi upang maunawaan ang pinakamahalagang pangyayaring nasaksihan ng sanlibutan.",
+      "central_truth": "Nakasentro sa: Daniel 9.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 20,
+          "label": "Ang kalagayan ng propesiya"
+        },
+        {
+          "kind": "core",
+          "start": 21,
+          "end": 44,
+          "label": "Ang Mesiyas na Pinahiran"
+        },
+        {
+          "kind": "core",
+          "start": 45,
+          "end": 65,
+          "label": "Paglaganap ng ebanghelyo sa mga bansa"
+        },
+        {
+          "kind": "supplement",
+          "start": 66,
+          "end": 76,
+          "label": "Karagdagang mga punto"
+        },
+        {
+          "kind": "supplement",
+          "start": 77,
+          "end": 91,
+          "label": "Apendiks: Ang propesiya ng pitumpung linggo"
+        },
+        {
+          "kind": "supplement",
+          "start": 92,
+          "end": 114,
+          "label": "Karagdagang Pag-aaral 6"
+        }
+      ],
+      "application": {
+        "text": "Ipinapakita ng takdang panahon ng propesiya ang katapatan ng Diyos sa Kanyang mga pangako at itinuturo tayong magtiwala kay Jesu-Cristo bilang Mesiyas at Tagapagligtas.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano pinatitibay ng mga pangako ng Diyos at ng katuparan ng propesiya ang iyong pagtitiwala kay Hesus?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Ang Pagiging Makasaysayan ni Hesus",
+      "source_unit_count": 62,
+      "purpose": "KAALAMAN SA PAGTUTURO — Bakit itinala ng mga manunulat ang mga pangyayari: Ipinakilala ni Lucas ang kanyang Ebanghelyo bilang isang salaysay na maingat na sinaliksik. Sinabi ni Juan na pinili niya ang ilang mga tanda upang maniwala ang mga tao kay Hesus. Hindi nila inilalarawan ang Cristianismo bilang pilosopiya lamang; ipinahahayag nilang may mga tunay na pangyayaring naganap.",
+      "central_truth": "Tanong sa talakayan: Ayon kay Lucas, ano ang nais niyang matamo ng kanyang mambabasa?",
+      "intro_origin": "proposed",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 1,
+          "end": 19,
+          "label": "Kasaysayan at patotoo tungkol kay Hesus"
+        },
+        {
+          "kind": "core",
+          "start": 20,
+          "end": 34,
+          "label": "Ang mga saksi ayon sa konteksto"
+        },
+        {
+          "kind": "core",
+          "start": 35,
+          "end": 49,
+          "label": "Ang ebidensiya ay tumuturo kay Hesus"
+        },
+        {
+          "kind": "supplement",
+          "start": 50,
+          "end": 55,
+          "label": "Kabanalan at buhay na binago"
+        },
+        {
+          "kind": "supplement",
+          "start": 56,
+          "end": 61,
+          "label": "Karagdagang Pag-aaral 5"
+        }
+      ],
+      "application": {
+        "text": "Ang pagtitiwala sa makasaysayang katibayan tungkol kay Hesus ay dapat humantong sa personal na pagkakilala sa Kanya at sa pagbabagong-buhay.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano ka tutugon kay Hesus batay sa mga patotoong ito at sa mensahe ng mga Ebanghelyo?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Ang Paghuhukom",
+      "source_unit_count": 79,
+      "purpose": "Layunin: Ang Paghuhukom ay upang maipagtanggol at mapatunayang matuwid ang karakter ng Diyos.",
+      "central_truth": "Nakasentro sa: Sa Paghuhukom, ang Diyos mismo ang tila sinusuri at hindi lamang tayo.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 46,
+          "label": "Ang kahulugan ng makatarungang paghuhukom"
+        },
+        {
+          "kind": "core",
+          "start": 47,
+          "end": 66,
+          "label": "Ang paghuhukom at ebanghelyo"
+        },
+        {
+          "kind": "core",
+          "start": 67,
+          "end": 78,
+          "label": "Ang tugon ng pananampalataya sa paghuhukom"
+        }
+      ],
+      "application": {
+        "text": "Ipinapakita ng paghuhukom na ang Diyos ay makatarungan, hayag, at mapagmahal. Tinatawag Niya tayong magtiwala kay Hesus at tumugon sa Kanyang biyaya ngayon.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Anong pasiya ang nais mong gawin ngayon bilang pagtugon sa katarungan at pag-ibig ng Diyos?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 10,
+      "title": "1844",
+      "source_unit_count": 96,
+      "purpose": "Layunin: Ipakita na ang paghuhukom ay ang kasukdulan ng kahulugan ng krus at na nagsimula noong 1844 ang huling yugto ng ministeryo ni Cristo sa santuwaryo sa langit.",
+      "central_truth": "Nakasentro sa: Ang kasukdulan ng Ebanghelyo.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 24,
+          "label": "Ang mahabang panahong propetiko"
+        },
+        {
+          "kind": "core",
+          "start": 25,
+          "end": 48,
+          "label": "Ang huwaran ng Araw ng Pagtubos"
+        },
+        {
+          "kind": "core",
+          "start": 49,
+          "end": 58,
+          "label": "Ang mensahe ng paghuhukom at pagsamba"
+        },
+        {
+          "kind": "supplement",
+          "start": 59,
+          "end": 95,
+          "label": "Paghahambing ng mga propesiya"
+        }
+      ],
+      "application": {
+        "text": "Ang mensahe ng 1844 at ng santuwaryo ay dapat magpalalim ng pagtitiwala sa natapos na sakripisyo ni Cristo, sa Kanyang pamamagitan, at sa awa ng Diyos.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano nakatutulong ang pagkaunawa sa ministeryo ni Hesus bilang Dakilang Saserdote upang mamuhay kang handang salubungin Siya?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Amerika sa Propesiya ng Biblia",
+      "source_unit_count": 187,
+      "purpose": "Layunin: Kilalanin ang ikalawang halimaw ng Revelation 13.",
+      "central_truth": "Nakasentro sa: Mga katangiang nagpapakilala.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 19,
+          "label": "Mga simbolo ayon sa Kasulatan"
+        },
+        {
+          "kind": "core",
+          "start": 20,
+          "end": 45,
+          "label": "Kalayaan sa halip na sapilitang pagsamba"
+        },
+        {
+          "kind": "supplement",
+          "start": 46,
+          "end": 75,
+          "label": "Apendiks: Mga sipi at sangguniang pangkasaysayan"
+        },
+        {
+          "kind": "supplement",
+          "start": 76,
+          "end": 118,
+          "label": "Karagdagang Pag-aaral 4"
+        },
+        {
+          "kind": "supplement",
+          "start": 119,
+          "end": 145,
+          "label": "Mga pahayag tungkol sa Holy Office"
+        },
+        {
+          "kind": "supplement",
+          "start": 146,
+          "end": 172,
+          "label": "Karagdagang Pag-aaral 6"
+        },
+        {
+          "kind": "supplement",
+          "start": 173,
+          "end": 186,
+          "label": "Karagdagang Pag-aaral 7"
+        }
+      ],
+      "application": {
+        "text": "Manatiling tapat sa Diyos at igalang ang kalayaan ng budhi. Ang tunay na pagsamba ay nagmumula sa pag-ibig kay Hesus at hindi sa pamimilit ng pamahalaan.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano ka makapaninindigan sa katotohanan at kasabay nito ay maipagtatanggol ang kalayaang panrelihiyon ng iba?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Ang Bughaw na Bato:",
+      "source_unit_count": 33,
+      "purpose": "KAALAMAN SA PAGTUTURO — Ang bundok at mga tapyas na bato: Nakakita sina Moises at ang mga matatanda ng isang sahig na inilarawang parang sapiro sa ilalim ng mga paa ng Diyos, at tinanggap ni Moises ang mga tapyas na bato. Pareho itong binanggit sa iisang kabanata. Hindi tuwirang sinasabi ng teksto na gawa sa sapiro ang mga tapyas; ang pag-uugnay sa dalawa ay isang mungkahing ilustrasyon at hindi isang nakasaad na katotohanan.",
+      "central_truth": "Tanong sa talakayan: Ano talaga ang sinasabi ng Exodo na parang sapiro?",
+      "intro_origin": "proposed",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 1,
+          "end": 8,
+          "label": "Ang bundok at mga tapyas na bato"
+        },
+        {
+          "kind": "core",
+          "start": 9,
+          "end": 20,
+          "label": "Paglilingkod ng saserdote at kabanalan"
+        },
+        {
+          "kind": "core",
+          "start": 21,
+          "end": 32,
+          "label": "Isinusulat ng Diyos ang kautusan sa puso"
+        }
+      ],
+      "application": {
+        "text": "Ang mga larawan ng santuwaryo at ang kautusan ay nagtuturo kay Hesus, na nagliligtas sa pamamagitan ng biyaya at nagsusulat ng Kanyang kautusan sa ating puso.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano mo pahihintulutang hubugin ng pag-ibig at biyaya ni Hesus ang pagsunod mo sa Diyos?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Ang Sabbath",
+      "source_unit_count": 144,
+      "purpose": "Layunin: Ipakita mula sa Kasulatan na ang Sabbath ay alaala ng kapwa kaligtasan at paglalang.",
+      "central_truth": "Nakasentro sa: Dumating si Hesus sa ating mundo bilang Manlilikha upang muling likhain ang sangkatauhan ayon sa larawan ng Diyos. Sa pamamagitan ng Kanyang buhay at kamatayan, natapos Niya ang gawain ng kaligtasan at nagpahinga sa libingan sa Sabbath.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 14,
+          "label": "Pinagpala ang ikapitong araw"
+        },
+        {
+          "kind": "core",
+          "start": 15,
+          "end": 29,
+          "label": "Paglalang at muling paglalang"
+        },
+        {
+          "kind": "core",
+          "start": 30,
+          "end": 51,
+          "label": "Pahinga, kagalakan at pagsamba"
+        },
+        {
+          "kind": "supplement",
+          "start": 52,
+          "end": 68,
+          "label": "Mahihirap na mga talata"
+        },
+        {
+          "kind": "supplement",
+          "start": 69,
+          "end": 78,
+          "label": "Karagdagang Pag-aaral 5"
+        },
+        {
+          "kind": "supplement",
+          "start": 79,
+          "end": 104,
+          "label": "Karagdagang Pag-aaral 6"
+        },
+        {
+          "kind": "supplement",
+          "start": 105,
+          "end": 128,
+          "label": "Karagdagang Pag-aaral 7"
+        },
+        {
+          "kind": "supplement",
+          "start": 129,
+          "end": 143,
+          "label": "Apendiks: Ang Sabbath"
+        }
+      ],
+      "application": {
+        "text": "Ang Sabbath ay kaloob ng Diyos na nagpapaalala sa paglalang at kaligtasan kay Hesus; ang pagtupad dito ay tugon ng pag-ibig at pagtitiwala sa Kanya.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano mo gagawing panahon ng kagalakan, pagsamba, at paglapit kay Hesus ang Sabbath?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Ang Ikalawang Pagdating",
+      "source_unit_count": 43,
+      "purpose": "Layunin: Ipakita na ang ikalawang pagdating ni Cristo ang sukdulan ng kasaysayan ng kaligtasan, at na ito ay literal, makikita, maririnig, at MAKAPANGYARIHAN.",
+      "central_truth": "Nakasentro sa: Darating si Hesus upang ibalik ang lahat ng bagay, magligtas, at wakasan ang kasalanan, sakit, at kamatayan.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 13,
+          "label": "Nangangako si Hesus na babalik"
+        },
+        {
+          "kind": "core",
+          "start": 14,
+          "end": 23,
+          "label": "Pagkabuhay na mag-uli at muling pagkikita"
+        },
+        {
+          "kind": "supplement",
+          "start": 24,
+          "end": 35,
+          "label": "Mga pagtutol sa hayag na ikalawang pagdating"
+        },
+        {
+          "kind": "supplement",
+          "start": 36,
+          "end": 42,
+          "label": "Karagdagang Pag-aaral 4"
+        }
+      ],
+      "application": {
+        "text": "Dumarating si Hesus upang kunin ang Kanyang bayan at wakasan ang kasalanan at kamatayan. Ang ating paghahanda ay ang pagtitiwala sa Kanya ngayon.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano mo ipamumuhay ang pag-asang muling darating si Hesus upang makasama ka?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Ang Kalikasan ng Tao",
+      "source_unit_count": 50,
+      "purpose": "Layunin: Ipakita na walang likas na buhay na walang kamatayan ang tao; kay Cristo lamang matatagpuan ang buhay. Kilalanin kung ano ang kaluluwa at kung ano ang nangyayari kapag tayo ay namatay.",
+      "central_truth": "Nakasentro sa: Hawak ni Hesus ang mga susi ng impiyerno at kamatayan na nagbubukas sa hiwaga ng mahahalagang paksang ito. Dahil kay Hesus, nawawala ang hiwaga at tibo ng kamatayan, at ito ay nagiging isang pinagpalang pahinga sa paglalakbay pauwi.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 21,
+          "label": "Paano nagsisimula ang buhay ng tao"
+        },
+        {
+          "kind": "core",
+          "start": 22,
+          "end": 34,
+          "label": "Ang kamatayan bilang pagtulog"
+        },
+        {
+          "kind": "core",
+          "start": 35,
+          "end": 39,
+          "label": "Pag-asa ng pagkabuhay na mag-uli"
+        },
+        {
+          "kind": "supplement",
+          "start": 40,
+          "end": 49,
+          "label": "Mga mahihirap na talata tungkol sa kamatayan"
+        }
+      ],
+      "application": {
+        "text": "Kay Hesus lamang matatagpuan ang buhay na walang kamatayan. Sa Kanya ay may pag-asa at katiyakan ng pagkabuhay na mag-uli para sa mga nagtitiwala.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano ka inaaliw ng pangako ni Hesus tungkol sa pagkabuhay na mag-uli sa harap ng kamatayan?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Ang Tanda ng Halimaw",
+      "source_unit_count": 195,
+      "purpose": "Layunin: Kilalanin ang Halimaw at ang Tanda nito.",
+      "central_truth": "Nakasentro sa: Si Hesus lamang ang karapat-dapat sa ating Pagsamba at Katapatan, sapagkat Siya ang ating Diyos, Manlilikha, at Manunubos.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 18,
+          "label": "Ang usapin ng tanda ay katapatan"
+        },
+        {
+          "kind": "core",
+          "start": 19,
+          "end": 23,
+          "label": "Tumugon kay Hesus, hindi sa takot"
+        },
+        {
+          "kind": "supplement",
+          "start": 24,
+          "end": 43,
+          "label": "Mga katibayan at pananaw tungkol sa tanda"
+        },
+        {
+          "kind": "supplement",
+          "start": 44,
+          "end": 82,
+          "label": "Apendiks: Ang tanda ng halimaw"
+        },
+        {
+          "kind": "supplement",
+          "start": 83,
+          "end": 117,
+          "label": "Karagdagang Pag-aaral 5"
+        },
+        {
+          "kind": "supplement",
+          "start": 118,
+          "end": 151,
+          "label": "Karagdagang Pag-aaral 6"
+        },
+        {
+          "kind": "supplement",
+          "start": 152,
+          "end": 177,
+          "label": "Karagdagang Pag-aaral 7"
+        },
+        {
+          "kind": "supplement",
+          "start": 178,
+          "end": 194,
+          "label": "Karagdagang Pag-aaral 8"
+        }
+      ],
+      "application": {
+        "text": "Ang sentrong usapin sa propesiya ay ang ating katapatan kay Hesus. Ang pag-ibig, pagtitiwala sa Kanyang Salita, at kalayaan ng budhi ang dapat mag-udyok sa pagsamba.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano mo maipapakita ang tapat na pagsamba kay Hesus nang walang takot at nang may paggalang sa budhi ng iba?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Ang Isang Libong Taon",
+      "source_unit_count": 50,
+      "purpose": "Layunin: Ipaliwanag ang isang libong taon at ang layunin nito—ano ang nangyayari sa panahong ito at pagkatapos.",
+      "central_truth": "Nakasentro sa: Ang kabutihan ng Diyos na nakita sa krus ay ipinakikita sa Paghuhukom sa Isang Libong Taon.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 14,
+          "label": "Pagkabuhay na mag-uli sa pagdating ni Hesus"
+        },
+        {
+          "kind": "core",
+          "start": 15,
+          "end": 28,
+          "label": "Ang kahulugan ng isang libong taon"
+        },
+        {
+          "kind": "core",
+          "start": 29,
+          "end": 40,
+          "label": "Paghahambing sa tiwangwang na lupa"
+        },
+        {
+          "kind": "core",
+          "start": 41,
+          "end": 49,
+          "label": "Ang bagong paglalang"
+        }
+      ],
+      "application": {
+        "text": "Ipinapakita ng paghuhukom na makatarungan ang Diyos at na ang hangganan ng Kanyang layunin ay ang panibagong lupa kung saan wala nang kamatayan.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano nagbibigay sa iyo ng pag-asa ang pangako ng Diyos tungkol sa bagong lupa at Kanyang presensiya?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Impiyerno — Sadista ba ang Diyos?",
+      "source_unit_count": 124,
+      "purpose": "Layunin: Ipakita na ang layunin ng impiyerno ay tuluyang lipulin ang kasalanan.",
+      "central_truth": "Nakasentro sa: Ang katuwiran ng Diyos.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 19,
+          "label": "Ang pag-ibig at katarungan ng Diyos"
+        },
+        {
+          "kind": "core",
+          "start": 20,
+          "end": 40,
+          "label": "Ang katapusan ng kasamaan"
+        },
+        {
+          "kind": "core",
+          "start": 41,
+          "end": 54,
+          "label": "Walang-hanggang epekto ng paghuhukom"
+        },
+        {
+          "kind": "core",
+          "start": 55,
+          "end": 63,
+          "label": "Ang mundong walang kamatayan"
+        },
+        {
+          "kind": "supplement",
+          "start": 64,
+          "end": 79,
+          "label": "Mahihirap na mga talata"
+        },
+        {
+          "kind": "supplement",
+          "start": 80,
+          "end": 87,
+          "label": "Karagdagang Pag-aaral 6"
+        },
+        {
+          "kind": "supplement",
+          "start": 88,
+          "end": 91,
+          "label": "Karagdagang Pag-aaral 7"
+        },
+        {
+          "kind": "supplement",
+          "start": 92,
+          "end": 93,
+          "label": "Karagdagang Pag-aaral 8"
+        },
+        {
+          "kind": "supplement",
+          "start": 94,
+          "end": 123,
+          "label": "Isang malawak na bangin"
+        }
+      ],
+      "application": {
+        "text": "Hindi sadista ang Diyos. Ang Kanyang paghatol ay dapat maunawaan ayon sa karakter na ipinahayag kay Hesus—pag-ibig, katarungan, at hangaring wakasan ang kasalanan.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano binabago ng pag-ibig at sakripisyo ni Hesus ang iyong pagkaunawa sa paghuhukom at sa karakter ng Diyos?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Ang Kaloob ng Propesiya",
+      "source_unit_count": 104,
+      "purpose": "Layunin: Ipakita kung paanong ginagawa ng Diyos ang lahat ng Kanyang makakaya upang gabayan tayo sa pamamagitan ng kaloob ng propesiya.",
+      "central_truth": "Nakasentro sa: Ibinibigay ni Jesu-Cristo ang tamang mensahe sa tamang panahon.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 16,
+          "label": "Mga kaloob para sa paglilingkod"
+        },
+        {
+          "kind": "core",
+          "start": 17,
+          "end": 57,
+          "label": "Ang kaloob sa unang iglesia"
+        },
+        {
+          "kind": "core",
+          "start": 58,
+          "end": 77,
+          "label": "Subukin ang turo at bunga"
+        },
+        {
+          "kind": "core",
+          "start": 78,
+          "end": 82,
+          "label": "Ang patotoo ni Hesus"
+        },
+        {
+          "kind": "supplement",
+          "start": 83,
+          "end": 91,
+          "label": "Paglilinaw sa mga tanong tungkol sa propesiya"
+        },
+        {
+          "kind": "supplement",
+          "start": 92,
+          "end": 103,
+          "label": "Karagdagang Pag-aaral 6"
+        }
+      ],
+      "application": {
+        "text": "Ang anumang kaloob ng propesiya ay dapat sumaksi kay Jesu-Cristo, magpatibay sa Kanyang bayan at masuri ayon sa Kasulatan.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano mo susubukin ang isang mensaheng sinasabing mula sa Diyos nang nananatiling nakasentro kay Hesus?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Ang Natitirang Iglesia",
+      "source_unit_count": 102,
+      "purpose": "Layunin: Tuklasin kung alin ang natitirang iglesia sa mga huling araw.",
+      "central_truth": "Nakasentro sa: Dahil ibinigay ni HESUS ang Kanyang buhay, sinusundan Siya ng Kanyang mga tupa saan man Siya pumunta.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 18,
+          "label": "Ang bayan at mensahe"
+        },
+        {
+          "kind": "core",
+          "start": 19,
+          "end": 40,
+          "label": "Isang kawan at isang Pastol"
+        },
+        {
+          "kind": "core",
+          "start": 41,
+          "end": 62,
+          "label": "Misyon sa buong mundo"
+        },
+        {
+          "kind": "core",
+          "start": 63,
+          "end": 68,
+          "label": "Katapatan sa araw-araw"
+        },
+        {
+          "kind": "supplement",
+          "start": 69,
+          "end": 83,
+          "label": "Mga tanong tungkol sa iglesia"
+        },
+        {
+          "kind": "supplement",
+          "start": 84,
+          "end": 101,
+          "label": "Apendiks: Ang Natitirang Iglesia"
+        }
+      ],
+      "application": {
+        "text": "Tinatawag ni Hesus ang Kanyang bayan na pakinggan ang Kanyang tinig, mamuhay nang tapat, at ibahagi ang ebanghelyo sa buong mundo nang may pagpapakumbaba.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano mo susundin ang tinig ng Mabuting Pastol at maglilingkod sa Kanyang mga tupa nang may pag-ibig?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Pamumuhay Cristiano",
+      "source_unit_count": 68,
+      "purpose": "Layunin: Suriin ang paksa ng palamuti at alamin kung kailan ito nagiging labis.",
+      "central_truth": "Nakasentro sa: Alahas at iba pang kaugnay na materyal na bagay.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 16,
+          "label": "Ang buong buhay ay para sa Diyos"
+        },
+        {
+          "kind": "core",
+          "start": 17,
+          "end": 36,
+          "label": "Kapag nagiging diyus-diyosan ang pag-aari"
+        },
+        {
+          "kind": "core",
+          "start": 37,
+          "end": 61,
+          "label": "Isantabi ang humahadlang"
+        },
+        {
+          "kind": "core",
+          "start": 62,
+          "end": 67,
+          "label": "Pagiging simple na gaya ni Cristo"
+        }
+      ],
+      "application": {
+        "text": "Ang pagiging simple, mapagpakumbaba, at mapagbigay ay dapat magmula sa pusong binabago ni Hesus, hindi sa paghamak sa ibang tao.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Mayroon bang gawi o pag-aari na nais mong isantabi upang mas malaya kang makapaglingkod kay Hesus?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Panalangin",
+      "source_unit_count": 49,
+      "purpose": "Layunin: Ang panalangin ay makapangyarihan, mabisa, at kailangan ng alagad ni Cristo. May ilang kundisyong tumutulong upang ang ating mga panalangin ay marinig.",
+      "central_truth": "Nakasentro sa: Ang panalangin ang paraan ng pakikipag-usap natin sa Tagapagligtas.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 13,
+          "label": "Si Hesus at ang panalangin"
+        },
+        {
+          "kind": "core",
+          "start": 14,
+          "end": 25,
+          "label": "Ang Amang nakikinig"
+        },
+        {
+          "kind": "core",
+          "start": 26,
+          "end": 33,
+          "label": "Panalangin ayon sa kalooban ng Diyos"
+        },
+        {
+          "kind": "core",
+          "start": 34,
+          "end": 40,
+          "label": "Patuloy na panalangin"
+        },
+        {
+          "kind": "supplement",
+          "start": 41,
+          "end": 43,
+          "label": "Mga tanong tungkol sa panalangin"
+        },
+        {
+          "kind": "supplement",
+          "start": 44,
+          "end": 48,
+          "label": "Karagdagang Pag-aaral 6"
+        }
+      ],
+      "application": {
+        "text": "Inaanyayahan tayo ni Hesus na lumapit sa Ama araw-araw nang may pagpapakumbaba, katiyakan, at pagtitiwala sa Kanyang kalooban.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Anong alalahanin ang nais mong ipagkatiwala sa Diyos sa panalangin ngayon?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Kalusugan",
+      "source_unit_count": 98,
+      "purpose": "Layunin: Ipakita na ang ating katawan ay templo ng Banal na Espiritu. Bilang Manlilikha, Manunubos, at Ama, lubhang nagmamalasakit ang Diyos sa kalusugan ng buong tao—katawan, isip, at espiritu.",
+      "central_truth": "Nakasentro sa: Dumating si Jesu-Cristo upang magkaroon tayo ng buhay at higit na masaganang buhay.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 16,
+          "label": "Pagmamalasakit sa buong tao"
+        },
+        {
+          "kind": "core",
+          "start": 17,
+          "end": 29,
+          "label": "Pangangalaga sa nilikha"
+        },
+        {
+          "kind": "core",
+          "start": 30,
+          "end": 54,
+          "label": "Ang katawan bilang templo"
+        },
+        {
+          "kind": "core",
+          "start": 55,
+          "end": 64,
+          "label": "Pagpipigil sa sarili at malinaw na pag-iisip"
+        },
+        {
+          "kind": "supplement",
+          "start": 65,
+          "end": 75,
+          "label": "Mga tanong tungkol sa pagkain at kalusugan"
+        },
+        {
+          "kind": "supplement",
+          "start": 76,
+          "end": 91,
+          "label": "Karagdagang Pag-aaral 6"
+        },
+        {
+          "kind": "supplement",
+          "start": 92,
+          "end": 97,
+          "label": "Karagdagang Pag-aaral 7"
+        }
+      ],
+      "application": {
+        "text": "Pinahahalagahan ng Diyos ang buong tao—katawan, isip, at espiritu. Ang pag-aalaga sa kalusugan ay dapat maging tugon ng pasasalamat at pagmamahal, hindi sukatan ng pagiging higit sa iba.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Anong makabuluhang pagbabago sa pang-araw-araw mong gawi ang maaari mong gawin bilang mabuting katiwala ng kalusugang ipinagkaloob ng Diyos?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Bautismo",
+      "source_unit_count": 47,
+      "purpose": "Layunin: Ipakita na ang seremonya ng bautismo ay simbolo ng pagtalikod sa kasalanan at paglapit sa Panginoon.",
+      "central_truth": "Nakasentro sa: Bautismo sa pamamagitan ng paglulubog sa tubig.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 23,
+          "label": "Ang halimbawa ni Hesus"
+        },
+        {
+          "kind": "core",
+          "start": 24,
+          "end": 36,
+          "label": "Inilibing at ibinangon kasama ni Cristo"
+        },
+        {
+          "kind": "core",
+          "start": 37,
+          "end": 42,
+          "label": "Bautismo at habambuhay na pagiging alagad"
+        },
+        {
+          "kind": "supplement",
+          "start": 43,
+          "end": 46,
+          "label": "Mga tanong tungkol sa bautismo"
+        }
+      ],
+      "application": {
+        "text": "Ang bautismo ay hayagang pagpapahayag ng pananampalataya kay Hesus at ng pagsisimula ng bagong buhay na sumusunod sa Kanya.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Ano ang kahulugan para sa iyo ng pagsunod kay Hesus at pagpapabautismo bilang Kanyang alagad?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Ang Pagka-Diyos",
+      "source_unit_count": 53,
+      "purpose": "Layunin: Ipakita na ang Ama, Anak, at Banal na Espiritu ay nagkakaisa bilang tatlong Persona na kapwa walang hanggan.",
+      "central_truth": "Nakasentro sa: Si Hesus, pag-ibig, at pagkakaisa.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 20,
+          "label": "Iisa ang Diyos"
+        },
+        {
+          "kind": "core",
+          "start": 21,
+          "end": 40,
+          "label": "Ama, Anak at Banal na Espiritu"
+        },
+        {
+          "kind": "supplement",
+          "start": 41,
+          "end": 52,
+          "label": "Mga tanong sa pagka-Diyos ni Hesus"
+        }
+      ],
+      "application": {
+        "text": "Tinatawag tayong sumamba sa iisang Diyos at kilalanin ang pag-ibig at pagkakaisang ipinahahayag sa Ama, Anak, at Banal na Espiritu.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Paano nakatutulong ang pagkakilala sa Ama, Anak, at Banal na Espiritu upang lumalim ang pagtitiwala at pag-ibig mo sa Diyos?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 26,
+      "title": "Pagiging Katiwala",
+      "source_unit_count": 31,
+      "purpose": "Layunin: Ang lahat ng bagay ay pag-aari ng Diyos; bilang mga katiwala ay mananagot tayo sa Kanya sa lahat ng Kanyang ipinagkatiwala sa atin.",
+      "central_truth": "Nakasentro sa: Ibinigay ni Jesu-Cristo ang lahat para sa atin at tinatawag tayong lubusang magpasakop sa Kanya.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 12,
+          "label": "Ang lahat ay pag-aari ng Diyos"
+        },
+        {
+          "kind": "core",
+          "start": 13,
+          "end": 22,
+          "label": "Ikapu at pagtitiwala"
+        },
+        {
+          "kind": "core",
+          "start": 23,
+          "end": 30,
+          "label": "Panahon at kakayahan bilang mga kaloob"
+        }
+      ],
+      "application": {
+        "text": "Ang lahat ng bagay ay kaloob ng Diyos. Ang tapat na pagiging katiwala ay tugon ng pasasalamat at pagtitiwala kay Hesus, hindi pag-asang bumili ng pagpapala.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Anong panahon, kakayahan, o ari-arian ang nais mong higit na ilaan sa paglilingkod sa Diyos at sa kapwa?",
+        "origin": "Tagalog review"
+      }
+    },
+    {
+      "id": 27,
+      "title": "Pagpapatotoo",
+      "source_unit_count": 26,
+      "purpose": "Layunin: Ipakita na ang bawat tunay na alagad ni Cristo ay ipinanganganak sa kaharian ng Diyos bilang isang misyonero.",
+      "central_truth": "Nakasentro sa: Si Hesus.",
+      "intro_origin": "source",
+      "groups": [
+        {
+          "kind": "core",
+          "start": 3,
+          "end": 12,
+          "label": "Isinugo ni Hesus ang Kanyang mga alagad"
+        },
+        {
+          "kind": "core",
+          "start": 13,
+          "end": 20,
+          "label": "Gumawa ng mga alagad"
+        },
+        {
+          "kind": "core",
+          "start": 21,
+          "end": 25,
+          "label": "Ipagkatiwala sa Diyos ang mga bunga"
+        }
+      ],
+      "application": {
+        "text": "Ang pagbabahagi ng ebanghelyo ay pagtulong sa kapwa na makilala si Hesus sa pamamagitan ng ating pananalita, gawa, pagkakaibigan, at pag-ibig.",
+        "origin": "Tagalog review"
+      },
+      "response": {
+        "text": "Sino ang isang taong maaari mong mahalin, ipanalangin, at anyayahang higit na makilala si Hesus?",
+        "origin": "Tagalog review"
+      }
+    }
+  ]
+}

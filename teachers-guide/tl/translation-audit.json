@@ -1,0 +1,23 @@
+{
+  "language": "tl",
+  "build_inputs_sha256": "037ba34c6b3c6d86200caeed6a2585a8ab6fa4db86e6e751f788c8bff05ffb99",
+  "status": "published_language_review_open",
+  "study_count": 28,
+  "unit_count": 2662,
+  "image_positions": 17,
+  "images_embedded": 17,
+  "image_replacement_slots": 0,
+  "complete_study_units": true,
+  "scripture_metadata_unchanged": true,
+  "study_order_unchanged": true,
+  "supplemental_stages_preserved": true,
+  "supplementary_gtk_studies_translated": 28,
+  "optional_daniel_contexts_translated": 17,
+  "source_truncation_warnings": [],
+  "supplementary_gtk_structure_verified": true,
+  "supporting_metadata_note": "All 28 GTKJ supplementary resources and 17 Daniel context candidates have first-pass Tagalog. Eight incomplete Daniel source excerpts were recovered and their Tagalog endings translated; final native-speaker visual/content review and Tagalog PDFs remain outstanding.",
+  "english_source_sha256": "f7ca52d9ca4fcd873d603cda7e33a3a9f794b2a220db2d1e2a580b59c56f6cdd",
+  "word_bytes": 3311278,
+  "pdfs_published": false,
+  "publication_note": "Language and content review continues after launch. Upload 28 individual Tagalog PDFs through Website Manager with Update study PDFs selected; do not use English PDFs in TL."
+}

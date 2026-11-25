@@ -1,0 +1,1757 @@
+{
+  "status": "DRAFT supplementary cross-study materials. Original teacher text and PDFs are untouched.",
+  "source_versions": {
+    "gtk_lessons_sha": "a2be0d941c5ac8c1086a5475448050d500aac446",
+    "gtk_depth_sha": "b7d4d910c6ce200641cc7aaeaa4e7587d6094a92",
+    "gtk_connections_sha": "5fdc1f32003c9631db3d81c96cde1559e5b622f7",
+    "daniel_html_sha": "718c9005085eeb8b3a26f5eadf6d8347c0eb737d",
+    "revelation_html_sha": "64f36fff24c48d37e5881aecd9e9e3551ef99a56"
+  },
+  "validation": "Every Daniel and Revelation link points to an anchor defined by the actual source site. GTKJ mapping is by stable study ID, not order.",
+  "editorial": "GTKJ materials are proposed learner-facing insights, not replacements for Teachers' Guide wording. Daniel and Revelation are deeper reading links, not mandatory stops. Avoid duplicated prose; consider differences in interpretation during review.",
+  "items": [
+    {
+      "teacher_study_id": 0,
+      "teacher_title": "Ang Salita ng Diyos",
+      "gtk_source_id": "word",
+      "gtk_title": "Ang Salita ng Diyos",
+      "gtk_lead": "Mapagkakatiwalaan ba ang Biblia?",
+      "gtk_principle": "Alam ng Diyos ang wakas mula pa sa pasimula. Ang nakikilala mo sa kasaysayan ng mga kaharian ay nagbibigay ng dahilan upang magtiwala sa Kanyang pangako tungkol sa kahariang darating pa.",
+      "gtk_connections": [
+        {
+          "title": "Isang pahayag na nararapat subukin",
+          "scripture": "2 Timothy 3:16–17; 2 Peter 1:19–21",
+          "insight": "Inilalarawan ni Pedro ang mga taong nagsalita sa patnubay ng Banal na Espiritu. Nagbibigay si Daniel ng isang tiyak na mensaheng maaari mong suriin. Mababasa mo ang sinabi niya sa hari at matitimbang ang paliwanag sa iyong sarili."
+        },
+        {
+          "title": "Ang Diyos na nagmamahal nang walang pag-iimbot",
+          "scripture": "1 John 4:7–10; John 3:16–17",
+          "insight": "Sinabi ni Juan na minahal ng Diyos ang mundo at ibinigay ang Kanyang Anak. Tandaan ang larawang ito ng Diyos habang binabasa mo ang tungkol sa Kanyang kapangyarihan sa mga hari. Ano ang kahulugan ng pagkakaroon ng huling salita sa kasaysayan ng Siyang nagmahal sa iyo nang sapat upang ibigay ang Kanyang Anak?"
+        },
+        {
+          "title": "Ang haring tumanggap ng isang kaharian",
+          "scripture": "Daniel 2:37–39",
+          "insight": "Pakinggan ang mga salitang pinili ni Daniel. Sinabi niya kay Nabucodonosor na ang Diyos ng langit ang nagbigay sa kanya ng kaharian. Nangailangan ng tapang ang isang bihag upang sabihin iyon sa pinunong lumupig sa kanyang bayan. Hindi kailanman nailayo si Daniel sa abot ng Diyos dahil sa tagumpay ng Babilonia."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "May pag-aalinlangan ako. Ibig bang sabihin nito ay kulang ang pananampalataya ko?",
+          "answer": "Hindi. Ang isang pinag-isipang tanong ay maaaring simula ng tapat na pananampalataya. Basahin ang talata ayon sa konteksto, itanong kung ano talaga ang sinasabi nito, at suriin ang ebidensiya sa halip na magkunwaring tiyak ka."
+        },
+        {
+          "question": "Sinasabi ba ng panaginip kung aling makabagong bansa ang kinakatawan ng bawat daliri sa paa?",
+          "answer": "Ipinaliwanag ni Daniel na ang bakal at putik ay isang nahating kaharian, na bahaging malakas at bahaging marupok. Hindi siya nagbigay ng listahang nagtutugma sa bawat daliri sa paa at isang bansa. Sapat ang kanyang paliwanag upang masundan mo ang panaginip hanggang sa katapusan nito."
+        },
+        {
+          "question": "Anong pag-asa ang nasa batong dumudurog sa rebulto?",
+          "answer": "Para sa isang taong nabubuhay sa ilalim ng malupit na pinuno, maaaring magandang balita ang pagtatapos ng kapangyarihan ng pinunong iyon. Ipinakikita ng bato na hahatulan ng Diyos ang mga kapangyarihan sa lupa at tatapusin ang kanilang pamamahala. Nangangako ang Daniel 2:44 ng kahariang hindi kailanman magigiba."
+        }
+      ],
+      "gtk_practice": "Kung nais mo pang magsaliksik sa ibang araw, basahin ang Daniel 2 bilang isang buong kuwento, mula sa gabing nabagabag ang hari hanggang sa kanyang pagtugon matapos marinig ang paliwanag.\nIlustrasyon (palitan ang larawang ito kung nais)\nPagninilay at pagrerepaso ng pag-aaral",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 2:31–35: Ang napakalaking rebulto at ang bato",
+          "href": "../../daniel/index.html#section-2-31",
+          "anchor": "section-2-31"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 2:44–45: Itinatatag ng Diyos ang kahariang hindi magwawakas",
+          "href": "../../daniel/index.html#section-2-44",
+          "anchor": "section-2-44"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang kapahayagan at ang pagpapala nito",
+          "passage": "Revelation 1:1",
+          "href": "../../revelation/index.html#rev-1-1",
+          "anchor": "rev-1-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 1,
+      "teacher_title": "Ang Dakilang Tunggalian",
+      "gtk_source_id": "controversy",
+      "gtk_title": "Ang Dakilang Tunggalian",
+      "gtk_lead": "Kung mapagmahal ang Diyos, bakit may kasamaan?",
+      "gtk_principle": "Hindi maaaring ipilit ang pag-ibig. Inilalarawan ng Kasulatan ang kasamaan bilang tunay na kaaway ng mabuting nilikha ng Diyos, hindi bilang bahagi ng orihinal Niyang layunin. Ipinakikita ni Hesus ang sagot ng Diyos sa pamamagitan ng pag-ibig na nagsasakripisyo para sa iba at ng pangakong magwawakas ang kasamaan.",
+      "gtk_connections": [
+        {
+          "title": "Ang mabuting paglalang at pagpasok ng kasamaan",
+          "scripture": "Genesis 1:31; Matthew 13:24–30, 36–43",
+          "insight": "Likas na itanong: kung mapagmahal at makapangyarihan ang Diyos, bakit napakaraming pagdurusa sa mundo? Nagsisimula ang Genesis sa paglalarawang napakabuti ng paglalang. Sa talinghaga ni Hesus tungkol sa trigo at mga damo, isang kaaway ang nagpasok ng mapanirang bagay sa bukiring nahasikan ng mabuting binhi. Hindi ipinaliliwanag ng Biblia ang bawat trahedya o binibigyang-katwiran ang maling gawa, ngunit hinihiling nitong huwag nating ipagkamali ang orihinal na layunin ng Diyos sa pinsalang dulot ng paghihimagsik at kasalanan. Hindi inilalarawang nalulugod ang Diyos sa pagdurusa."
+        },
+        {
+          "title": "Ginagawang posible ng kalayaan ang pag-ibig",
+          "scripture": "Joshua 24:15; Isaiah 14:12–15; Philippians 2:5–8",
+          "insight": "Ang katapatang nakukuha sa pamimilit ay panlabas na pagsunod, hindi tunay na pag-ibig. Makikita sa buong pag-aaral na ito ang pagkakaiba ng pagtataas sa sarili at ng pagpapakumbaba ni Hesus. Inilalarawan ng Kasulatan ang kaaway na nagnanais ng katayuang para sa Diyos, samantalang pinili ni Cristo na maglingkod at ibigay ang Kanyang sarili. Ang tanong ay hindi lamang kung sino ang mas makapangyarihan, kundi kung kaninong karakter ang mapagkakatiwalaan. Kasama sa kalayaan ang posibilidad ng maling pagpili, at maaaring makapinsala sa iba ang gayong mga pagpili."
+        },
+        {
+          "title": "Sinasagot ng krus ang mga paratang",
+          "scripture": "John 12:31–32; Romans 5:6–8",
+          "insight": "Maaaring ipagtanggol ng isang taong inaakusahan ng pagkamakasarili ang sarili sa pamamagitan ng mga salita. Sinasagot ni Hesus ang pinakamalalalim na paratang laban sa Diyos sa pamamagitan ng Kanyang ginagawa. Ang Siyang may buong karapatang paglingkuran ay pumasok sa ating sirang mundo at nagbigay ng Kanyang buhay para sa mga tumalikod sa Kanya. Hindi ibig sabihin nito na nalutas na ang bawat hiwaga tungkol sa pagdurusa. Ibig sabihin nito, ang krus ang nagbibigay sa atin ng pinakamalinaw na katibayan na handang magdusa ang Diyos para sa Kanyang nilikha sa halip na talikuran ito."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Nilikha ba ng Diyos si Satanas na masama?",
+          "answer": "Itinuturo ng pag-aaral na nilikha ng Diyos ang isang mabuting anghel na may kalayaan, hindi isang diyablong itinakdang gumawa ng mali. Inilalarawan ng Kasulatan ang paghihimagsik ngunit hindi nito ipinaliliwanag ang pinakahuling dahilan ng kasalanan."
+        },
+        {
+          "question": "Bakit hindi agad pinipigilan ng Diyos ang bawat trahedya?",
+          "answer": "Hindi nagbibigay ang Biblia ng isang simpleng paliwanag sa sakit ng bawat tao. Sinasabi nitong laban ang Diyos sa kasamaan, iginagalang Niya ang kalayaan, at ipinangangako Niya ang panghuling pagwawakas ng pagdurusa. Dapat tayong tumugon sa pagdurusa nang may habag, hindi paninisi."
+        },
+        {
+          "question": "Ibig bang sabihin ng pagdurusa ay pinarurusahan ako ng Diyos?",
+          "answer": "Hindi kinakailangan. Hindi natin dapat ipalagay na ang paghihirap ng isang tao ay tuwirang parusa sa kanyang personal na kasalanan. Pinakitunguhan ni Hesus nang may habag ang mga nagdurusa."
+        }
+      ],
+      "gtk_practice": "Mag-isip ng isang karanasan ng kawalang-katarungan. Isulat kung ano ang binabago—o hindi pa nababago—ng pagkakaiba sa pagitan ng karakter ng Diyos at ng mga gawa ng kasamaan sa iyong pagkaunawa.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 3:1–7: Isang ginintuang larawan at utos na yumukod",
+          "href": "../../daniel/index.html#section-3-1",
+          "anchor": "section-3-1"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
+          "href": "../../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "Digmaan sa langit",
+          "passage": "Revelation 12:7",
+          "href": "../../revelation/index.html#rev-12-7",
+          "anchor": "rev-12-7"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang tagumpay ng Kordero",
+          "passage": "Revelation 12:10",
+          "href": "../../revelation/index.html#rev-12-10",
+          "anchor": "rev-12-10"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 2,
+      "teacher_title": "Ang Gawain ng Banal na Espiritu",
+      "gtk_source_id": "spirit",
+      "gtk_title": "Ang Gawain ng Banal na Espiritu",
+      "gtk_lead": "Paano binabago ng Diyos ang isang tao mula sa loob?",
+      "gtk_principle": "Tinutulungan tayo ng Espiritu na tumugon kay Hesus, tinitiyak na tayo ay kabilang sa Diyos, at hinuhubog sa atin ang pag-ibig na hindi kayang likhain ng kautusan lamang.",
+      "gtk_connections": [
+        {
+          "title": "Ang paghatol sa kasalanan ay nilalayong maghatid sa pagtitiwala",
+          "scripture": "John 16:7–13; John 3:16–17",
+          "insight": "Maaaring maging simula ang pagkabahala sa isang maling gawa, ngunit hindi kayang baguhin ng pagkakasala lamang ang isang tao. Sinabi ni Hesus na ihahayag ng Espiritu ang kasalanan at aakayin ang mga tao sa katotohanan. Ang gawain ng Espiritu ay hindi ang durugin ang isang tao sa kawalan ng pag-asa, kundi dalhin siya sa Tagapagligtas na kayang magpatawad at magbago. Kung ang pagkakonsensiya ay nagpaalala sa iyo ng isang sirang relasyon o nakatagong panlilinlang, tumugon sa pamamagitan ng paglapit kay Hesus, tapat na pag-amin, at paggawa ng kasunod na hakbang ng pananampalataya."
+        },
+        {
+          "title": "Ang pagiging kabilang ay nauuna sa espirituwal na pagkahinog",
+          "scripture": "Ephesians 1:13–14; Romans 8:14–17",
+          "insight": "Inilalarawan ni Pablo ang mga taong nakarinig ng mabuting balita, nanampalataya, at tumanggap ng Banal na Espiritu bilang tatak ng pangako ng Diyos. Maaaring nahihirapan pa rin ang bagong mananampalataya sa mga nakasanayan, pag-aalinlangan, at damdamin. Hindi itinuturo ng mga talatang ito na kailangan muna tayong maging sakdal bago tayo tanggapin ng Diyos. Itinuturo nilang tinatanggap tayo ng Diyos sa pamamagitan ni Cristo at sinisimulan Niyang gumawa sa atin. Isipin ang isang batang natututo sa mga kaugalian ng pamilya dahil kabilang na siya rito, sa halip na nagsisikap munang makamit ang karapatang maging anak."
+        },
+        {
+          "title": "Binabago ng bagong tipan ang panloob na buhay",
+          "scripture": "Jeremiah 31:31–34; Hebrews 10:15–17",
+          "insight": "Ang pangako ng Diyos ay hindi lamang panibagong hanay ng mga panlabas na tuntunin. Nag-aalok Siya ng kapatawaran at isinusulat ang Kanyang kalooban sa puso at isipan. Ang parehong mga prinsipyong moral na naghahayag ng pagkamakasarili ay nagiging bagay na ninanais natin habang tinuturuan tayo ng Espiritu na umibig. Pinangangalagaan nito ang dalawang mahalagang katotohanan: hindi tayo naliligtas sa pagsunod sa mga tuntunin, at hindi tayo iniiwan ng biyaya na walang pagbabago. Kapag nagbago ang puso, ang pagsunod ay nagiging mapagpasalamat na tugon sa pag-ibig ng Diyos, hindi pagtatangkang bilhin iyon."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Nagkakamali pa rin ako. Wala ba sa akin ang Espiritu?",
+          "answer": "Ang espirituwal na paglago ay isang paglalakbay. Tapat na ilapit sa Diyos ang iyong mga pagkabigo, magsisi kung kailangan, at hingin ang Kanyang tulong upang lumago. Hindi katumbas ng biglaang kasakdalan ang pag-unlad."
+        },
+        {
+          "question": "Paano ko makikilala ang paggabay ng Espiritu?",
+          "answer": "Ihambing ang iyong mga impresyon sa Kasulatan at sa karakter ni Hesus. Humingi ng payo sa mga taong may karunungan. Hindi tayo hinihiling ng Espiritu na talikuran ang katotohanan, kabaitan, o katapatan."
+        },
+        {
+          "question": "Kailangan ko ba ng isang pambihirang karanasang espirituwal?",
+          "answer": "Hindi lahat ay nakararanas nito. Ang tahimik na pagbabago sa pagtitiwala, pag-ibig, at pagsunod ay maaari ring tunay na katibayan ng gawain ng Diyos."
+        }
+      ],
+      "gtk_practice": "Basahin ang Galatians 5:22–23. Pumili ng isang bunga ng Espiritu, ipanalangin iyon, at itala ang isang praktikal na pagkakataong maipakita iyon sa susunod na pitong araw.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 10:10–12: Huwag matakot—narinig ang panalangin mula pa sa unang araw",
+          "href": "../../daniel/index.html#section-10-10",
+          "anchor": "section-10-10"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang Tagapagligtas sa pintuan",
+          "passage": "Revelation 3:19",
+          "href": "../../revelation/index.html#rev-3-19",
+          "anchor": "rev-3-19"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 3,
+      "teacher_title": "Ang Santuwaryo",
+      "gtk_source_id": "sanctuary",
+      "gtk_title": "Ang Santuwaryo",
+      "gtk_lead": "Ano ang itinuturo ng sinaunang santuwaryo tungkol kay Hesus?",
+      "gtk_principle": "Isinasalaysay ng santuwaryo kung paano pinakikitunguhan ng Diyos ang kasalanan upang maibalik ang pakikisama sa Kanya. Ang bawat bahagi ng paglilingkod ay nagtuturo sa kabila ng sarili nito, patungo kay Hesus.",
+      "gtk_connections": [
+        {
+          "title": "Ang tunay na suliranin ay pagkakahiwalay",
+          "scripture": "Isaiah 59:1–2; Genesis 3:7–10",
+          "insight": "Matapos sumuway sina Adan at Eva, nagtago sila. Hinanap sila ng Diyos. Ipinakikita ng kanilang takot at kahihiyan kung paano sinisira ng kasalanan ang pagtitiwala at relasyon. Dito nagsisimula ang mensahe ng santuwaryo: paano muling mamumuhay sa presensiya ng Diyos ang mga taong tumalikod sa Kanya? Ang sagot ng Diyos ay hindi ang talikuran ang pamilya ng sangkatauhan. Nagbigay Siya ng nakikitang sistema ng pagtuturo upang ipakitang seryoso ang kasalanan, maaaring tumanggap ng awa, at maaaring maibalik ang pakikisama sa Kanya. Kuwento ito ng relasyon, hindi lamang ng mga sinaunang kagamitan sa pagsamba."
+        },
+        {
+          "title": "Ipinakikita ng mga simbolo ang halaga ng pagliligtas",
+          "scripture": "Exodus 25:8–9; Leviticus 1:1–5; Hebrews 10:1–10",
+          "insight": "Inutusan ng Diyos ang Israel na gumawa ng santuwaryo upang makapanahan Siya sa gitna nila. Itinuro ng mga hain na may halaga ang maling gawa at sentro ng pagkakasundo ang walang-salang Kahalili. Walang sariling kapangyarihang magligtas ang paulit-ulit na pag-aalay ng mga hayop. Itinuro ng mga iyon ang darating na si Hesus, na kusang ibinigay ang Kanyang sarili minsan para sa lahat. Pinangangalagaan ng pagkaunawang ito laban sa maling palagay na sa sinaunang panahon ay naliligtas ang tao sa pamamagitan ng mga hayop, ngunit ngayon lamang sa biyaya. Ang plano ng Diyos sa pagliligtas ay palaging nakasalalay kay Cristo."
+        },
+        {
+          "title": "Ang bawat bahagi ay nagtuturo kay Hesus",
+          "scripture": "John 1:29; John 6:35; John 8:12; Revelation 8:3–4",
+          "insight": "Itinuturo ng kordero ang ating pansin sa sakripisyo ni Hesus. Ipinahihiwatig ng paghuhugas sa hugasan ang paglilinis at bagong buhay. Ipinapaalala ng tinapay na pinatitibay tayo ni Cristo; ng ilaw na ginagabayan Niya tayo; at ng insenso na maaari nating maunawaan ang panalangin at pamamagitan. Nasa loob ng kaban ang mga utos, na nagpapakitang hindi ibig sabihin ng kapatawaran ay wala nang pagpapahalaga ang Diyos sa katuwiran. Mga larawang panturo ang mga ugnayang ito, hindi hiwalay na pinagmumulan ng awtoridad. Ipinaliliwanag ng Kasulatan ang kahulugan ng mga ito at pinananatili si Hesus sa sentro."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Bakit naghahain ng mga hayop ang mga tao?",
+          "answer": "Gumamit ang sistema ng santuwaryo ng mga nakikitang simbolo upang ituro ang bigat ng kasalanan at ang plano ng Diyos na magligtas. Sinasabi ng Hebreo na ang paulit-ulit na mga hain ay mga aninong nagtuturo sa darating na si Cristo."
+        },
+        {
+          "question": "Kailangan ko ba ng pari upang makalapit sa Diyos ngayon?",
+          "answer": "Si Hesus ang ating Tagapagligtas at Dakilang Saserdote sa langit. Lumalapit tayo sa Diyos sa pamamagitan ng pananampalataya sa Kanya."
+        },
+        {
+          "question": "Ang santuwaryo ba ay sinaunang kasaysayan lamang?",
+          "answer": "Inilalarawan nito ang kaligtasan at ang patuloy na ministeryo ni Hesus, na pinananatiling sentro ang Kanyang biyaya at pag-ibig."
+        }
+      ],
+      "gtk_practice": "Iguhit ang patyo, ang Dakong Banal, at ang Dakong Kabanal-banalan. Isulat sa tabi ng handog, hugasan, tinapay, ilawan, insenso, at kaban ang itinuturo ng bawat isa tungkol kay Hesus.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 8:13–14: Hanggang kailan bago maituwid ang santuwaryo?",
+          "href": "../../daniel/index.html#section-8-13",
+          "anchor": "section-8-13"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24 Ang pitumpung linggo at ang gawain ng pakikipagkasundo",
+          "href": "../../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang ikapitong trumpeta at ang nabuksang templo",
+          "passage": "Revelation 11:15",
+          "href": "../../revelation/index.html#rev-11-15",
+          "anchor": "rev-11-15"
+        },
+        {
+          "source": "revelation",
+          "title": "Katahimikan at mga panalangin sa dambana",
+          "passage": "Revelation 8:1",
+          "href": "../../revelation/index.html#rev-8-1",
+          "anchor": "rev-8-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 4,
+      "teacher_title": "Ang Plano ng Kaligtasan",
+      "gtk_source_id": "salvation",
+      "gtk_title": "Ang Plano ng Kaligtasan",
+      "gtk_lead": "Paano ako mapapatawad at makapagsisimulang muli?",
+      "gtk_principle": "Naliligtas tayo sa biyaya ng Diyos sa pamamagitan ng pananampalataya kay Hesus, hindi dahil sa ating mga nagawang panrelihiyon. Ang biyaya ring nagpapatawad sa atin ang nagsisimulang magbago sa paraan ng ating pamumuhay.",
+      "gtk_connections": [
+        {
+          "title": "Ang unang sugat ay ang nasirang pagkakilala sa Diyos",
+          "scripture": "Genesis 3:1–13",
+          "insight": "Bago kinain nina Adan at Eva ang bunga, nagtanim muna ang ahas ng pag-aalinlangan sa salita at kabutihan ng Diyos. Mula sa pagtitiwala, napunta sila sa takot, pagtatago, at paninisi. Nakikita natin ang gayunding huwaran kapag nagdududa tayong ninanais ng Diyos ang ating kabutihan, nagsisikap na bigyang-katwiran ang sarili, o sinisisi ang iba sa ating mga pasiya. Kaya ang kaligtasan ay higit pa sa pagpapawalang-bisa ng kaparusahan. Kailangang ibalik ng Diyos ang ating pagtitiwala, pagalingin ang makasariling kalooban, at akayin tayong muli sa mapagmahal na pakikipag-ugnayan sa Kaniya."
+        },
+        {
+          "title": "Ang Diyos ang unang kumikilos",
+          "scripture": "Romans 3:23–26; 5:6–11; John 3:16–17",
+          "insight": "Hindi natin kailangang hikayatin ang isang Diyos na ayaw magmahal upang mahalin tayo. Sinasabi ng Kasulatan na inibig ng Diyos ang sanlibutan at isinugo ang Kaniyang Anak noong tayo ay mga makasalanan pa. Hindi namatay si Hesus upang gawing maawain ang Ama; inihahayag ng Kaniyang kamatayan ang pag-ibig ng Ama. Mahalaga ang pagkakaibang ito sa taong lumaking natatakot na naghahanap lamang ang Diyos ng dahilan upang siya ay itakwil. Ang biyaya ay nangangahulugang lumalapit ang Diyos upang tugunan ang pangangailangang hindi natin kailanman matutugunan sa sariling pagsisikap."
+        },
+        {
+          "title": "Magkaugnay ang kapatawaran at bagong buhay",
+          "scripture": "2 Corinthians 5:17–21; Romans 5:10",
+          "insight": "Binabanggit ng Biblia ang pakikipagkasundo—ang dating magkaaway ay nagiging magkaibigan—at ang pagiging bagong nilalang kay Cristo. Tinutugunan ng kamatayan ni Hesus ang ating pagkakasala at pagkakahiwalay; ang Kaniyang muling nabuhay na buhay ang saligan ng ating pag-asa at patuloy na pagbabago. Ang pagtanggap sa kaligtasan ay hindi pagkukunwaring walang kabuluhan ang kasamaan. Ito ay pagtanggap sa tugon ng Diyos dito, pagtalikod sa kasalanan, at pamumuhay sa panibagong pakikipag-ugnayan sa Kaniya. Ang mabubuting gawa ay bunga ng bagong buhay, hindi ang halagang ibinabayad natin upang matamo ito."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "May mga nagawa akong pinagsisisihan. Mapapatawad ba talaga ako ng Diyos?",
+          "answer": "Oo. Ang paanyaya ng ebanghelyo ay para sa mga makasalanang lumalapit sa Diyos nang may pagtitiwala at pagsisisi. Ang kapatawaran ay hindi pagkukunwaring walang nagawang pinsala; kung maaari, sinisikap din nating ituwid ang ating pagkakamali."
+        },
+        {
+          "question": "Kailangan ko bang maging mabuti muna bago lumapit kay Hesus?",
+          "answer": "Hindi. Lumapit ka sa kalagayan mo ngayon. Sa pagtanggap kay Cristo, nagsisimula ang prosesong binabago Niya tayo."
+        },
+        {
+          "question": "Bakit mahalaga pa ang mga utos kung libre ang kaligtasan?",
+          "answer": "Dahil binabago ng pag-ibig ang pakikitungo natin sa Diyos at sa kapwa. Ang pagsunod ay lumalago mula sa pagtitiwala at pasasalamat; hindi nito mabibili ang kaligtasan."
+        }
+      ],
+      "gtk_practice": "Basahin ang Lucas 15:11–24. Sumulat ng maikling panalangin na tapat na nagsasabi ng isang bagay na kailangan mong dalhin sa Diyos at isang pangakong nais mong panghawakan.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24 Ang pitumpung linggo at ang gawain ng pakikipagkasundo",
+          "href": "../../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang Leon ay nahayag bilang Korderong pinatay",
+          "passage": "Revelation 5:5",
+          "href": "../../revelation/index.html#rev-5-5",
+          "anchor": "rev-5-5"
+        },
+        {
+          "source": "revelation",
+          "title": "Ginagawang bago ang lahat",
+          "passage": "Revelation 21:1",
+          "href": "../../revelation/index.html#rev-21-1",
+          "anchor": "rev-21-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 5,
+      "teacher_title": "Ang Kautusan",
+      "gtk_source_id": "law",
+      "gtk_title": "Ang Kautusan ng Diyos",
+      "gtk_lead": "Ang mga utos ba ng Diyos ay tungkol lamang sa mga tuntunin, o tungkol sa pag-ibig?",
+      "gtk_principle": "Ipinakikita ng kautusan ng Diyos ang anyo ng pag-ibig at kalayaan. Hindi tayo nito kayang iligtas, ngunit isinusulat ng Espiritu ang mga simulain nito sa puso ng mga iniligtas ni Cristo.",
+      "gtk_connections": [
+        {
+          "title": "Ang pag-ibig ang nagbibigay-kahulugan sa mga utos",
+          "scripture": "Matthew 22:36–40; Romans 13:8–10",
+          "insight": "Binuod ni Hesus ang kautusan bilang pag-ibig sa Diyos at sa kapwa. Hindi nito ibig sabihing papalitan ng damdaming mapagmahal ang malinaw na patnubay sa mabuting asal. Sa halip, ipinakikita ng mga utos ang pag-ibig sa gawa: ang pagsasalita ng katotohanan, katapatan, paggalang sa buhay, pagpaparangal sa pamilya, at pag-iwas sa kasakiman ay nangangalaga sa mga ugnayan. Ang tuntuning sinusunod nang walang pag-ibig ay maaaring maging malamig at mapagmataas; ang pag-ibig na walang malasakit sa kapakanan ng iba ay maaaring maging hungkag na pananalita. Pinag-uugnay ni Hesus ang dalawa."
+        },
+        {
+          "title": "Nauna ang pagliligtas bago ang mga utos",
+          "scripture": "Exodus 20:1–17; Romans 3:20–31",
+          "insight": "Bago ibinigay ng Diyos ang Sampung Utos, ipinaalala Niya sa Israel na inilabas Niya sila sa pagkaalipin. Mahalaga ang pagkakasunod-sunod na ito. Hindi Niya sinabing kailangan muna silang sumunod nang ganap bago Niya isaalang-alang ang pagpapalaya sa kanila. Iniligtas muna Niya sila, saka itinuro kung paano mamuhay ang mga taong malaya. Ibinubunyag ng kautusan ang kasalanan at ipinapaliwanag ang kalooban ng Diyos, ngunit hindi nito mahuhugasan ang kasalanan o mabibigyan ng kapangyarihang baguhin ang puso. Ang kaligtasan ay kaloob ng Diyos; ang pagsunod ang nararapat na pagtugon."
+        },
+        {
+          "title": "Isang kautusan ng kalayaan",
+          "scripture": "James 1:22–25; Psalm 119:32",
+          "insight": "Iniisip minsan ng tao na ang lahat ng hangganan ay kaaway ng kalayaan. Ngunit sa isang mundong walang katotohanan, katapatan, o pagtupad sa pangako, mas mababawasan ang kaligtasan at kalayaan ng bawat isa. Tulad ng pag-aaral tumugtog ng instrumento, ang disiplina ay maaaring magbukas ng mga pagkakataong sinisira ng kawalang-ingat. Tinatawag ni Santiago ang tagubilin ng Diyos na kautusan ng kalayaan sapagkat inilalayo tayo nito sa mga kaugaliang umaalipin. Ang tanong ay hindi lamang, “Ano ang pinapayagan kong gawin?” kundi “Anong uri ng tao ang itinuturo ng pag-ibig na maging ako?”"
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Ginagawa ba akong karapat-dapat sa kaligtasan ng pagtupad sa mga utos?",
+          "answer": "Hindi. Ang kaligtasan ay kaloob sa pamamagitan ni Cristo. Ang pagsunod sa mga utos ng Diyos ay tugon sa biyaya, hindi paraan upang bilhin ito."
+        },
+        {
+          "question": "Paano kung parang naghihigpit sa akin ang pagsunod sa Diyos?",
+          "answer": "Itanong kung ano ang pinangangalagaan ng bawat utos: pagtitiwala, kapahingahan, pamilya, buhay, katotohanan, o pagkakontento. Gaya ng mabubuting hangganan sa mga relasyon, ginagawang mas ligtas ng mapagmahal na mga simulain ang kalayaan."
+        },
+        {
+          "question": "Magkasalungat ba ang kabaitan at pagsunod?",
+          "answer": "Hindi. Ipinakita ni Hesus na ang tunay na pagsunod ay hinuhubog ng awa, katotohanan, at pag-ibig."
+        }
+      ],
+      "gtk_practice": "Basahin ang Exodo 20. Sa bawat utos, isulat ang mabuting ugnayang pinangangalagaan nito. Pagkatapos, pagnilayan kung paano binabago ng biyaya ang dahilan ng iyong pagsunod.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
+          "href": "../../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang nalabi at ang patotoo ni Hesus",
+          "passage": "Revelation 12:17",
+          "href": "../../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        },
+        {
+          "source": "revelation",
+          "title": "Ikatlong anghel: babala laban sa huwad na pagsamba",
+          "passage": "Revelation 14:9",
+          "href": "../../revelation/index.html#rev-14-9",
+          "anchor": "rev-14-9"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 6,
+      "teacher_title": "Ang Anticristo",
+      "gtk_source_id": "antichrist",
+      "gtk_title": "Ang Anticristo",
+      "gtk_lead": "Paano maililihis ng huwad na relihiyon ang pansin mula kay Hesus?",
+      "gtk_principle": "Si Hesus lamang ang nagliligtas at karapat-dapat sa ating pinakamataas na katapatan. Nagbababala ang propesiya na maaaring gayahin ng kapangyarihang panrelihiyon ang Kaniyang awtoridad at ilihis ang pagsamba palayo sa Kaniya.",
+      "gtk_connections": [
+        {
+          "title": "Magsimula sa malinaw na mga talata",
+          "scripture": "1 John 2:18–23; 4:1–3",
+          "insight": "Nagbabala si Juan na maraming anticristo at itinuon niya ang pansin sa itinuturo ng mga tao tungkol kay Hesus. Nagsisimula ang usapin sa katotohanan tungkol kay Cristo, hindi sa haka-haka tungkol sa isang di-kilalang kontrabida sa hinaharap. Maaaring gumamit ang isang tao ng mga salitang Kristiyano ngunit ilihis ang pagtitiwala mula sa tunay na Tagapagligtas. Bago pag-aralan ang mga sagisag ng propesiya, matutuhang itanong ang pangunahing tanong: inaakay ba ng turong ito ang mga tao sa Hesus na ipinakikilala ng Kasulatan, o inilalagay nito ang ibang awtoridad sa lugar na sa Kaniya lamang nararapat?"
+        },
+        {
+          "title": "Ang panganib ng kapangyarihang panrelihiyon",
+          "scripture": "2 Thessalonians 2:3–12; Daniel 7:8, 24–25",
+          "insight": "Inilalarawan ng mga talatang ito ang paghihimagsik na nababalutan ng mga pag-aangking panrelihiyon at isang kapangyarihang sumasalungat sa Diyos. Sinusundan ng pag-aaral ang magkakasunod na kaharian sa Daniel bago talakayin ang sumunod na kapangyarihang panrelihiyon at pampolitika. Sa ganitong pag-unawa, ang mga sagisag ay tumutukoy sa mga sistema at pag-aangkin ng awtoridad, hindi sa paghatol sa puso ng bawat taong kaugnay ng isang institusyon. Diyos lamang ang nakaaalam sa bawat tao. Maaari nating tutulan ang mga maling pag-aangkin at pamimilit sa relihiyon habang pinakikitunguhan nang may dignidad at pag-ibig ang mga tao sa lahat ng pananampalataya."
+        },
+        {
+          "title": "Hindi maaaring ipilit ang pagsamba",
+          "scripture": "Revelation 13:11–17; 14:6–12",
+          "insight": "Inihahambing ng Apocalipsis ang kapangyarihang namimilit sa panawagan ng Diyos na sambahin ang Manlilikha. Maaaring makalikha ng panlabas na pagsunod ang sapilitang relihiyon, ngunit hindi ito makalilikha ng pag-ibig. Pinag-uugnay nito ang mga naunang aralin tungkol sa tunggalian ng mabuti at masama, ebanghelyo, kautusan, at bagong tipan. Ang taong nakakakilala kay Hesus at nagpapahalaga sa kalayaan ng budhi ay inihahandang piliin Siya kahit hindi iyon popular."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Kaaway ba ang mga Katoliko?",
+          "answer": "Hindi. Ang ating kapwa ay mga taong nararapat igalang at mahalin. Sinusuri ng pag-aaral na ito ang makasaysayang mga estruktura at pag-aangkin ng awtoridad; hindi ito dapat gamitin upang hatulan ang mga indibidwal o ang katapatan ng kanilang pananampalataya."
+        },
+        {
+          "question": "Bakit magkakaiba ang pagkaunawa ng mga Kristiyano sa mga propesiyang ito?",
+          "answer": "Magkakaiba ang ginagamit nilang paraan ng pagpapakahulugan. Sundan ang mga sagisag ng Daniel ayon sa konteksto at suriin ang mga makasaysayang pagtukoy gamit ang mapagkakatiwalaang katibayan."
+        },
+        {
+          "question": "Paano ako makaiiwas sa panlilinlang?",
+          "answer": "Ituon ang pansin kay Hesus, basahin ang Kasulatan ayon sa konteksto, at huwag magpadala sa sinumang humihingi ng walang-pasubaling katapatang panrelihiyon."
+        }
+      ],
+      "gtk_practice": "Gumawa ng dalawang hanay: “ang karakter ni Cristo” at “mga pag-aangkin ng huwad na awtoridad”. Maglagay ng isang talata sa Biblia sa tabi ng bawat entry at manalangin para sa katapatan at pag-ibig.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:7–8: Ang ikaapat na hayop at ang maliit na sungay",
+          "href": "../../daniel/index.html#section-7-7",
+          "anchor": "section-7-7"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
+          "href": "../../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "Tumanggap ng kapangyarihan ang hayop mula sa dagat",
+          "passage": "Revelation 13:1",
+          "href": "../../revelation/index.html#rev-13-1",
+          "anchor": "rev-13-1"
+        },
+        {
+          "source": "revelation",
+          "title": "Ipinaliwanag ng anghel ang hayop",
+          "passage": "Revelation 17:7",
+          "href": "../../revelation/index.html#rev-17-7",
+          "anchor": "rev-17-7"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 7,
+      "teacher_title": "Ang Propesiya ng Pitumpung Linggo",
+      "gtk_source_id": "seventy-weeks",
+      "gtk_title": "Ang Propesiya ng Pitumpung Linggo",
+      "gtk_lead": "Ano ang ipinahihiwatig ng takdang panahon sa Daniel tungkol kay Hesus?",
+      "gtk_principle": "Nagbibigay ang Daniel 9 ng isang takdang panahon sa propesiya na nakatuon sa Mesiyas. Mahalaga ito sapagkat ang ministeryo at sakripisyo ni Hesus ang sentro ng mga pangako ng Diyos.",
+      "gtk_connections": [
+        {
+          "title": "Ang konteksto ay isang panalangin para sa pagpapanumbalik",
+          "scripture": "Daniel 9:1–23",
+          "insight": "Hindi nagsimula si Daniel sa pagtatangkang lumutas ng palaisipan. Ipinahayag niya ang kasalanan, inalala ang awa ng Diyos, at nanalangin para sa pagpapanumbalik ng Jerusalem. Dumating ang paliwanag ng anghel sa konteksto ng katapatan ng Diyos sa Kaniyang tipan. Sa ganitong pagbasa, ang mga petsa ay hindi nagiging hiwalay na pagsasanay lamang sa pagkukuwenta. Ang layunin ng propesiya ay ang gawain ng Diyos sa pakikipagkasundo at ang pagdating ng Mesiyas, hindi ang kasabikang magkuwenta ng mga numero."
+        },
+        {
+          "title": "Bakit itinuturing na mga taon ang pitumpung linggo",
+          "scripture": "Daniel 9:24–27; Numbers 14:34; Ezekiel 4:6",
+          "insight": "Ang pitumpung linggo ay may 490 araw. Ginagamit ng pag-aaral ang simulaing isang araw para sa isang taon sa propesiya upang unawain ang panahong ito bilang 490 taon. Isa itong hakbang sa pagpapakahulugan na dapat ipaliwanag, hindi basta ipalagay: ipinakikita ng mga halimbawa sa Mga Bilang at Ezekiel kung paano maaaring kumatawan ang isang araw sa isang taon sa konteksto ng propesiya. Pagkatapos tukuyin ang ipinapanukalang panimulang utos, maaaring sundan ng mambabasa ang pangangatwiran at suriin kung naaayon sa ministeryo ni Hesus ang resulta ng takdang panahon."
+        },
+        {
+          "title": "Ang sentro ay ang Mesiyas",
+          "scripture": "Ezra 7:11–26; Luke 3:21–23; Daniel 9:25–27",
+          "insight": "Nagsisimula ang balangkas sa utos na may kaugnayan sa pagpapanumbalik noong 457 BC, sumusulong patungo sa pagpapahid kay Hesus noong AD 27, at inilalagay ang Kaniyang kamatayan sa kalagitnaan ng huling linggo ng propesiya. Ang balangkas na ito ay nakasalig sa makasaysayang pagtukoy at sa pagbasa ng isang araw bilang isang taon, hindi sa isang talatang tuwirang nagtatala ng lahat ng makabagong petsang iyon. Ang kahanga-hanga sa aralin ay ang papel ni Cristo: dumarating ang ipinangakong Hari upang magligtas sa pamamagitan ng sakripisyo, hindi lamang upang agawin ang isang trono."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Kailangan ko bang maunawaan ang lahat ng numero upang sumunod kay Hesus?",
+          "answer": "Hindi. Unawain muna ang pangunahing mensahe: tinutupad ng Diyos ang Kaniyang mga pangako, at si Hesus ang ipinangakong Tagapagligtas. Maaari mong pag-aralan ang takdang panahon nang paisa-isang hakbang."
+        },
+        {
+          "question": "Nagkakaisa ba ang lahat ng Kristiyano sa mga petsa?",
+          "answer": "Hindi. Magkakaiba ang pagkaunawa ng mga Kristiyano sa Daniel 9 at sa ilang makasaysayang petsa. Ihambing ang mga talata, ang panimulang utos, at ang pangangatwirang isang araw para sa isang taon bago magpasya kung ano ang kahulugan ng takdang panahon."
+        },
+        {
+          "question": "Ano ang pinakamahalagang bahagi ng propesiya?",
+          "answer": "Ang pagtutok nito sa Mesiyas at ang kahulugan ng Kaniyang kamatayan—hindi ang pagkapanalo sa pagtatalo tungkol sa mga numero."
+        }
+      ],
+      "gtk_practice": "Gumuhit ng takdang panahon na may mga tandang 457 BC, AD 27, AD 31, at AD 34. Sa tabi ng bawat isa, isulat ang kaugnay na pangyayari at isang talata sa Biblia na sumusuporta rito.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24 Ang pitumpung linggo at ang gawain ng pakikipagkasundo",
+          "href": "../../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 9:25–25: 9:25 Mula sa utos na ibalik ang Jerusalem hanggang sa Mesiyas",
+          "href": "../../daniel/index.html#section-9-25",
+          "anchor": "section-9-25"
+        },
+        {
+          "source": "revelation",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
+          "passage": "Revelation 14:6",
+          "href": "../../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 8,
+      "teacher_title": "Ang Makasaysayang Pag-iral ni Hesus",
+      "gtk_source_id": "history",
+      "gtk_title": "Ang Makasaysayang Pag-iral ni Hesus",
+      "gtk_lead": "Talaga bang nabuhay si Hesus bilang isang tao sa kasaysayan?",
+      "gtk_principle": "Nakaugat ang pananampalatayang Kristiyano sa mga pahayag tungkol sa tunay na mga tao, pangyayari, at saksi. Dapat maingat na siyasatin ang katibayan, hindi palakihin ang sinasabi nito.",
+      "gtk_connections": [
+        {
+          "title": "May mga makasaysayang pahayag ang pananampalatayang Kristiyano",
+          "scripture": "Luke 1:1–4; 1 Corinthians 15:3–8",
+          "insight": "Inilalagay ng mga manunulat ng Ebanghelyo si Hesus sa gitna ng mga tunay na tao at pinuno, at ipinahayag ng mga unang Kristiyano ang Kaniyang kamatayan at muling pagkabuhay bilang mga pangyayari, hindi lamang bilang sagisag ng mabuting asal. Hindi kayang patunayan ng kasaysayan ang bawat konklusyong teolohikal na hinahango ng Biblia, ngunit makatutulong ito upang suriin kung nagsimula ang kilusan sa tunay na panahon at lugar. Hindi kailangang magkaaway ang pananampalataya at maingat na pagsusuri."
+        },
+        {
+          "title": "Suriin ang pinakamaagang mga patotoo",
+          "scripture": "Acts 2:22–36; 1 Corinthians 15:12–19",
+          "insight": "Nakasentro ang pangangaral ni Pedro sa ministeryo, pagpapako sa krus, at muling pagkabuhay ni Hesus. Isinulat ni Pablo na kung hindi muling nabuhay si Cristo, walang kabuluhan ang pangangaral ng mga Kristiyano. Dapat mag-udyok ng maingat na mga tanong ang mga matitibay na pahayag na ito. Ano ang sinisikap paniwalain ng mga apostol sa kanilang mga tagapakinig? Ano ang nagbago sa unang pamayanang Kristiyano? Bakit patuloy nilang ipinahayag si Cristo sa kabila ng pagsalungat? Inaanyayahan tayo ng mensaheng Kristiyano na isaalang-alang kapuwa ang katibayan at kahulugan."
+        },
+        {
+          "title": "May halaga at hangganan ang mga sangguniang mula sa labas",
+          "scripture": "Luke 2:1–2; Acts 18:12–17",
+          "insight": "Makatutulong ang mga manunulat na gaya nina Tacitus at Josephus upang maipakitang bahagi ng sinaunang kasaysayan ng Roma si Hesus at ang mga unang Kristiyano. Hindi nila pinapalitan ang mga Ebanghelyo, at ang mga sumunod na mananalaysay ay hindi nagbibigay ng salaysay na personal nilang nasaksihan para sa bawat himala. Ihiwalay ang tunay na sinasabi ng isang panlabas na sanggunian sa mga konklusyong nais nating masuportahan nito. Mas matibay ang ganitong paraan kaysa sa pag-uulit ng kahanga-hangang mga bilang tungkol sa mga manuskrito o mananalaysay nang hindi sinusuri."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Mali bang maghanap ng katibayan?",
+          "answer": "Hindi. Maaaring malugod na tanggapin ng mga Kristiyano ang tapat na pagsusuring pangkasaysayan. Dapat suriin ang isang pahayag batay sa katibayan nito, hindi ilayo sa mga tanong."
+        },
+        {
+          "question": "Pinatutunayan ba ng mga Romanong mananalaysay ang muling pagkabuhay?",
+          "answer": "Hindi. Sinusuportahan nila ang ilang makasaysayang katotohanan tungkol kay Hesus at sa mga unang Kristiyano. Ang pahayag tungkol sa muling pagkabuhay ay pangunahing nakasalig sa patotoo ng mga unang Kristiyano."
+        },
+        {
+          "question": "Paano kung hindi pa ako handang paniwalaan ang lahat?",
+          "answer": "Basahin ang isang Ebanghelyo, itala ang mga pahayag na maaari mong suriin, at patuloy na magtanong nang makatarungan. Mahalaga ang maingat na proseso."
+        }
+      ],
+      "gtk_practice": "Basahin ang 1 Corinto 15 at isang salaysay ng muling pagkabuhay sa isang Ebanghelyo. Itala ang mga pahayag ng bawat manunulat, ang katibayang ibinigay, at ang susunod na tanong na nais mong siyasatin.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:25–25: 9:25 Mula sa utos na ibalik ang Jerusalem hanggang sa Mesiyas",
+          "href": "../../daniel/index.html#section-9-25",
+          "anchor": "section-9-25"
+        },
+        {
+          "source": "revelation",
+          "title": "Huwag matakot: ang buhay na Cristo",
+          "passage": "Revelation 1:17",
+          "href": "../../revelation/index.html#rev-1-17",
+          "anchor": "rev-1-17"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 9,
+      "teacher_title": "Ang Paghuhukom",
+      "gtk_source_id": "judgement",
+      "gtk_title": "Ang Paghuhukom",
+      "gtk_lead": "Dapat ba tayong matakot sa paghuhukom ng Diyos?",
+      "gtk_principle": "Ibinubunyag ng paghuhukom ng Diyos ang Kaniyang katarungan at ang katotohanan tungkol sa mga pagpili ng tao. Ang mabuting balita ay si Hesus ang matuwid na Hukom at ang Tagapagtanggol ng mga nagtitiwala sa Kaniya.",
+      "gtk_connections": [
+        {
+          "title": "Ipinagtatanggol ng paghuhukom ang moral na kahulugan ng buhay",
+          "scripture": "Ecclesiastes 12:13–14; Hebrews 9:27",
+          "insight": "Kung ang kawalang-katarungan, pagtatago ng katotohanan, at kalupitan ay hindi kailanman mahahayag, walang magiging pangwakas na katugunan para sa mga biktima nito. Nagsasalita ang Biblia tungkol sa paghuhukom kung saan sineseryoso ng Diyos ang mga pasiya ng tao. Hindi ito dapat gawing larawan ng isang malupit na tagasulit na naghihintay lamang makakita ng pagkakamali. Pinatutunayan ng paghuhukom ng Diyos kung ano ang totoo at matuwid, inilalantad ang bunga ng mga pagpili, at ipinakikitang ang awa ay hindi kawalang-malasakit sa kasamaan."
+        },
+        {
+          "title": "Ang mga aklat sa langit at ang hayagang hukuman",
+          "scripture": "Daniel 7:9–14; Revelation 20:11–12",
+          "insight": "Inilalarawan ni Daniel ang isang hukuman sa langit at ang pagbubukas ng mga aklat. Ipinahihiwatig ng larawang ito na ang paghuhukom ng Diyos ay hayag, maingat, at makatarungan, hindi pabigla-bigla. Hindi nangangailangan ang Diyos ng mga aklat upang matulungan Siyang makaalala. Tinitiyak ng larawan sa buong nilalang na makatarungan ang Kaniyang mga pasiya. Sa Daniel 7, ang paghuhukom ay may kaugnayan din sa pagbibigay ng kaharian sa Anak ng Tao. Pinananatili nito ang ating pag-asang nakasentro kay Cristo sa halip na sa takot sa mga tala."
+        },
+        {
+          "title": "Si Hesus ang ating kinatawan",
+          "scripture": "Romans 8:1, 31–34; 1 John 2:1–2",
+          "insight": "Sa taong nakaaalala ng mga nagawang pagkakamali, maaaring nakatatakot pakinggan ang paghuhukom. Ngunit inilalarawan din ng Kasulatan si Hesus bilang ating Tagapagtanggol at ang Isa na namatay at muling nabuhay para sa atin. Hindi tayo humaharap sa paghuhukom na umaasa sa sarili nating malinis na tala na nakamit sa sariling lakas. Lumalapit tayo sa Diyos sa pamamagitan ni Cristo, na nagpapatawad at nagbabago sa mga nagtitiwala sa Kaniya. Hindi kailanman binibigyang-matwid ng biyaya ang sinasadyang pananakit, ngunit nagbibigay ito ng tunay na pag-asa sa mga nagsisisi."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Gagamitin ba ang bawat lihim kong pagkakamali upang hiyain ako?",
+          "answer": "Seryoso ang paghuhukom ng Diyos, ngunit ipinangangako ng ebanghelyo ang kapatawaran at pagpapanumbalik kay Cristo. Ilapit ang iyong mga kasalanan sa Kaniya sa halip na mamuhay sa pagtatago at kawalan ng pag-asa."
+        },
+        {
+          "question": "Kung alam ng Diyos ang lahat, bakit kailangan ang paghuhukom?",
+          "answer": "Ipinaliliwanag ito ng pag-aaral bilang pagpapakita ng katarungan sa buong sansinukob, hindi bilang pagtuklas ng Diyos sa impormasyong hindi Niya alam."
+        },
+        {
+          "question": "Ano ang kahulugan ng paghuhukom sa taong nakaranas ng kawalang-katarungan?",
+          "answer": "Nangangahulugan itong hindi sa kasamaan ang huling salita. Nakikita ng Diyos ang hindi napapansin ng iba at ipinangangako Niya ang pangwakas na katarungan."
+        }
+      ],
+      "gtk_practice": "Isulat ang pagkakaiba ng “Totoo at makatarungan ang paghuhukom ng Diyos” at “Kailangan kong iligtas ang sarili sa pagiging sakdal.” Basahin ang Roma 8:31–34 kapag bumabalik ang takot sa paghuhukom.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:9–10: Naupo ang Matanda sa mga Araw",
+          "href": "../../daniel/index.html#section-7-9",
+          "anchor": "section-7-9"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 7:26–28: Binabaligtad ng paghuhukom ang hatol ng lupa",
+          "href": "../../daniel/index.html#section-7-26",
+          "anchor": "section-7-26"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang dakilang puting trono",
+          "passage": "Revelation 20:11",
+          "href": "../../revelation/index.html#rev-20-11",
+          "anchor": "rev-20-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
+          "passage": "Revelation 14:6",
+          "href": "../../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 10,
+      "teacher_title": "1844",
+      "gtk_source_id": "1844",
+      "gtk_title": "1844 at ang Santuwaryo sa Langit",
+      "gtk_lead": "Paano humahantong sa 1844 ang propesiya tungkol sa santuwaryo?",
+      "gtk_principle": "Iniuugnay ng pag-aaral ang mahabang propesiya ni Daniel sa patuloy na ministeryo ni Hesus bilang Saserdote at sa panawagang seryosohin ang paghuhukom ng Diyos. Si Hesus pa rin ang sentro ng mensahe.",
+      "gtk_connections": [
+        {
+          "title": "Bahagi ng ebanghelyo ang paghuhukom",
+          "scripture": "Acts 17:30–31; Revelation 14:6–7",
+          "insight": "Binabanggit ng Bagong Tipan ang darating na paghuhukom kasabay ng pagpapahayag ng mabuting balita. Hindi kailangang ituring na magkaaway ang mga mensaheng ito. Sa huli, kailangang tugunan ng mapagmahal na Diyos ang kasamaan at ibalik ang katarungan, at si Hesus ang itinalagang humatol. Tinatalakay ng pag-aaral na ito ang takdang panahon sa propesiya bilang pagpapatuloy ng mga aralin tungkol sa kaligtasan, santuwaryo, at paghuhukom, hindi bilang hiwalay na paraan upang makamit ang pagtanggap ng Diyos."
+        },
+        {
+          "title": "Itinuturo ng makalupang paglilingkod ang mga katotohanan sa langit",
+          "scripture": "Exodus 25:8–9, 40; Hebrews 8:1–6; 9:23–24",
+          "insight": "Sinunod ng santuwaryo sa ilang ang isang huwaran, at ipinaliliwanag ng Hebreo na si Hesus ay naglilingkod ngayon sa santuwaryo sa langit. Sa Araw ng Pagtubos, naharap ang Israel sa paglilinis, pananagutan, at panunumbalik ng pakikisama sa Diyos. Tumutulong ang huwarang ito upang maunawaan kung bakit maaaring banggitin ng Kasulatan kapuwa ang natapos na sakripisyo ni Cristo at ang patuloy Niyang gawain bilang Dakilang Saserdote. Ang gawain ni Hesus ang sentro ng turo, hindi ang pagkabighani sa isang petsa."
+        },
+        {
+          "title": "Maingat na sundan ang pagkukuwenta",
+          "scripture": "Daniel 8:14; 9:24–27",
+          "insight": "Iniuugnay ng pag-aaral ang 2,300 makahulang gabi at umaga ni Daniel sa propesiya ng pitumpung linggo. Sa paggamit ng simulaing isang araw para sa isang taon at sa panimulang petsang 457 BC, humahantong sa 1844 ang mas mahabang panahon. Ang pag-uugnay ng dalawang kabanata, ang simulaing makahulugan ang panahon, at ang makasaysayang panimulang punto ay mga hakbang sa pagpapakahulugan. Kailangang malinaw itong ipaliwanag upang masuri mismo ng mga mag-aaral ang mga talata sa Biblia at ang pangangatwiran. Huwag ipagkamaling ang mga hakbang na ito ay petsang tuwirang nakasulat sa Biblia."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Talata ba sa Biblia ang 1844?",
+          "answer": "Hindi. Isa itong taong nakuwenta mula sa isang partikular na pagbasa ng mga panahong makahula sa Daniel. Dapat bukas sa pagsusuri ang mga talata at pangangatwirang pinagbabatayan nito."
+        },
+        {
+          "question": "Ibig ba nitong sabihin na noong 1844 lamang nagsimulang magpatawad si Hesus?",
+          "answer": "Hindi. Hindi ipinagpaliban sa petsang iyon ang nagliligtas na sakripisyo at pamamagitan ni Cristo. Ang takdang panahon ay nauunawaan bilang isang natatanging huling yugto ng Kaniyang ministeryo sa langit."
+        },
+        {
+          "question": "Paano kung napakakumplikado nito para sa akin?",
+          "answer": "Nauunawaan iyon. Balikan muna ang mga pag-aaral tungkol sa santuwaryo at Daniel 9. Hindi kailangang madaliing lampasan ang mga tanong."
+        }
+      ],
+      "gtk_practice": "Gawing muli ang takdang panahon mula sa Daniel 9 at pahabain ito hanggang sa 2,300 taon. Sa bawat hakbang sa pagpapakahulugan, isulat ang aktuwal na talata at ang konklusyong hinango mula rito.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 8:13–14: Hanggang kailan bago maituwid ang santuwaryo?",
+          "href": "../../daniel/index.html#section-8-13",
+          "anchor": "section-8-13"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 9:24–24: 9:24 Ang pitumpung linggo at ang gawain ng pakikipagkasundo",
+          "href": "../../daniel/index.html#section-9-24",
+          "anchor": "section-9-24"
+        },
+        {
+          "source": "revelation",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
+          "passage": "Revelation 14:6",
+          "href": "../../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang ikapitong trumpeta at ang nabuksang templo",
+          "passage": "Revelation 11:15",
+          "href": "../../revelation/index.html#rev-11-15",
+          "anchor": "rev-11-15"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 11,
+      "teacher_title": "Ang Amerika sa Propesiya ng Biblia",
+      "gtk_source_id": "america",
+      "gtk_title": "Ang Amerika sa Propesiya ng Biblia",
+      "gtk_lead": "Ano ang sinasabi ng Apocalipsis tungkol sa kapangyarihan at kalayaan?",
+      "gtk_principle": "Sinusuri ang ikalawang hayop sa Apocalipsis bilang sagisag ng isang umuusbong na kapangyarihang sa dakong huli ay susuporta sa sapilitang pagsamba. Ang pangunahing espirituwal na usapin ay kalayaan ng budhi.",
+      "gtk_connections": [
+        {
+          "title": "Basahin ang ikalawang hayop ayon sa kabuuan ng kabanata",
+          "scripture": "Revelation 13:1–18",
+          "insight": "Ipinakikilala ang ikalawang hayop kaugnay ng unang hayop mula sa dagat. Umaahon ito mula sa lupa, may dalawang sungay na gaya ng kordero, at nagsasalitang gaya ng dragon. Mahalaga ang pagkakaibang ito: ang panlabas na anyong maamo ay hindi kapareho ng tunay na pagtataguyod ng kalayaan. Inilalarawan din ng pangitain ang pamimilit sa budhi at pagsamba. Higit na malawak ang babala kaysa sa pagkakakilanlan ng iisang bansa: hindi kailanman dapat ipataw ang paniniwalang panrelihiyon sa pamamagitan ng puwersa."
+        },
+        {
+          "title": "Paano binubuo ang pagkakakilanlan",
+          "scripture": "Revelation 13:10–12; 17:15",
+          "insight": "Iniuugnay ng orihinal na pag-aaral ang paglitaw, heograpiya, at sumunod na impluwensiya ng hayop sa pag-angat ng Estados Unidos. Upang sundan ang pangangatwiran, ihiwalay ang mga sagisag at pagkakasunod ng panahon: ang dagat ay kaugnay ng mga bayan, nagpapahiwatig ang lupa ng naiibang kapaligiran, at nagiging tanyag ang ikalawang kapangyarihan habang ang una ay dumaranas ng pagkabihag. Ginagamit ang mga palatandaang ito sa makasaysayang pagkakakilanlan; hindi tahasang pinapangalanan ng talata ang isang makabagong bansa. Higit na kapaki-pakinabang ang maingat na pagpapaliwanag ng katibayan kaysa sa paglalahad ng konklusyon nang hindi ipinakikita ang mga hakbang."
+        },
+        {
+          "title": "Ang kalayaan ay kaloob na dapat pangalagaan",
+          "scripture": "Daniel 3:13–18; Acts 5:27–29",
+          "insight": "Sa Daniel, tumangging yumukod ang mga tapat na tao nang mag-utos ang isang hari ng pagsamba. Sa Mga Gawa, sumagot ang mga apostol na dapat nilang sundin ang Diyos kaysa sa mga taong may awtoridad nang utusan silang itigil ang pagpapatotoo. May mga lehitimong tungkuling pampubliko ang karamihan sa mga pamahalaan; tumutukoy ang mga kuwentong ito sa sandaling inaangkin ng kapangyarihan ang awtoridad sa pagsamba at budhi ng isang tao. Maaaring magsama ang magalang na pagkamamamayan at katapatan sa Diyos hanggang sa magkaroon ng tunay na pagsasalungatan."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Ibig ba nitong sabihing masasama ang lahat ng tao sa Amerika?",
+          "answer": "Hindi. Ang propesiya tungkol sa mga institusyon at pagpili ay hindi paghatol sa bawat mamamayan."
+        },
+        {
+          "question": "Katuparan ba ng propesiya ang bawat balitang pampolitika?",
+          "answer": "Hindi. Iwasan ang mga nakagugulat ngunit walang-batayang hula. Maingat na suriin ang mga pahayag at ihiwalay ang simulain sa Biblia mula sa haka-hakang ulo ng balita."
+        },
+        {
+          "question": "Ano ang dapat kong gawin sa babalang ito?",
+          "answer": "Isabuhay at ipagtanggol ang kalayaan ng budhi, tapat na sundin si Hesus, at pakitunguhan ang iba nang may paggalang."
+        }
+      ],
+      "gtk_practice": "Isulat ang pagkakaiba ng panghihikayat, paanyaya, at pamimilit. Ihambing ang Apocalipsis 13:11–17 sa Apocalipsis 14:6–12.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:7–8: Ang ikaapat na hayop at ang maliit na sungay",
+          "href": "../../daniel/index.html#section-7-7",
+          "anchor": "section-7-7"
+        },
+        {
+          "source": "revelation",
+          "title": "Umaahon ang hayop mula sa lupa",
+          "passage": "Revelation 13:11",
+          "href": "../../revelation/index.html#rev-13-11",
+          "anchor": "rev-13-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang larawan at mga mapanlinlang na kababalaghan",
+          "passage": "Revelation 13:13",
+          "href": "../../revelation/index.html#rev-13-13",
+          "anchor": "rev-13-13"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 12,
+      "teacher_title": "Ang Asul na Bato",
+      "gtk_source_id": "blue-stone",
+      "gtk_title": "Ang Asul na Bato",
+      "gtk_lead": "Paano iniuugnay ng mga sagisag sa santuwaryo ang pagsamba at kautusan ng Diyos?",
+      "gtk_principle": "Ginagamit sa pag-aaral na ito ang mga kulay at materyales na nakapalibot sa kautusan ng Diyos bilang mga larawang nagpapaalala ng Kaniyang kabanalan. Dapat nating ihiwalay ang tahasang sinasabi ng Kasulatan sa isang paglalarawang hinango mula rito.",
+      "gtk_connections": [
+        {
+          "title": "Bakit mahalaga ang kakaibang araling ito",
+          "scripture": "Exodus 24:9–12; 31:18",
+          "insight": "Ginagamit ng pag-aaral na ito ang larawan ng bato, kulay, at santuwaryo upang ituon ang pansin sa Sampung Utos at sa kaugnayan ng mga ito sa pamamahala ng Diyos. Tahasang sinasabi ng Kasulatan na ibinigay ng Diyos kay Moises ang mga tapyas na bato na sinulatan ng Kaniyang daliri. Inilalarawan din nito ang isang sahig na tulad ng sapiro sa pangitain ng Kaniyang kaluwalhatian. Ang mungkahing ang mismong mga tapyas ay gawa sa asul na sapiro ay isang pag-uugnay, hindi isang bagay na tuwirang sinasabi ng Exodo. Maaari nating pahalagahan ang paglalarawan nang hindi ginagawang pagsubok sa pananampalataya ang kulay ng mga tapyas."
+        },
+        {
+          "title": "Malapit sa awa ang kautusan",
+          "scripture": "Exodus 25:16–22; Deuteronomy 10:1–5",
+          "insight": "Inilagay ang mga tapyas sa loob ng kaban ng tipan, sa ilalim ng luklukan ng awa. Itinuturo ng kaayusang ito ang isang mahalagang simulain: hindi magkasalungat ang matuwid na pamamahala ng Diyos at ang Kaniyang awa. Hindi Niya binabago ang kahulugan ng kabutihan upang patawarin ang mga taong lumabag sa Kaniyang kautusan. Sa halip, itinuturo ng santuwaryo ang daan upang makabalik sa Kaniya ang mga makasalanan. Kaya mahalagang maunawaan muna ang mga naunang aralin tungkol sa biyaya at santuwaryo bago talakayin ang makahulang mga pagsalakay sa mga utos ng Diyos."
+        },
+        {
+          "title": "Kailangang subukin sa Kasulatan ang mga sagisag",
+          "scripture": "Exodus 28:31–35; Numbers 15:37–41; Revelation 17:1–6",
+          "insight": "May mga kulay sa kasuotan ng mga saserdote at ng mga Israelita na nagsisilbing makahulugang paalala. Gumagamit ang Apocalipsis ng matingkad na larawan ng kasuotan upang ilarawan ang isang tiwaling kapangyarihang panrelihiyon. Inihahambing ng pinagmulang aralin ang mga paglalarawang ito bilang larawan ng pagkawala ng katapatan sa kautusan ng Diyos. Maaaring tumulong ang ganitong mga pagkakahawig sa larawan upang maalala ang isang simulain, ngunit ang kawalan ng isang kulay ay hindi tahasang biblikal na kahulugan ng isang propesiya. Basahin muna ang mga talata ayon sa kanilang sinasabi bago bumuo ng pag-uugnay."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Isinulat ba ang Sampung Utos sa asul na sapiro?",
+          "answer": "Sinasabi ng Biblia na isinulat ang mga ito sa mga tapyas na bato. Hindi tahasang tinutukoy ng mga talatang iyon ang eksaktong materyales at kulay."
+        },
+        {
+          "question": "Awtomatiko bang natutukoy ang isang simbahan sa mga kulay?",
+          "answer": "Hindi. Kailangan ang buong konteksto ng mga sagisag. Hindi sapat ang magkahawig na kulay lamang upang patunayan ang isang pagpapakahulugan."
+        },
+        {
+          "question": "Bakit kailangan pang isama ang araling ito?",
+          "answer": "Iniuugnay nito ang larawan ng santuwaryo, kautusan ng Diyos, at ang usapin ng pagsamba. Pinakamainam itong pag-aralan pagkatapos ng mga batayang aralin, nang may pag-iingat sa kung ano talaga ang sinasabi ng Kasulatan."
+        }
+      ],
+      "gtk_practice": "Basahin ang Exodo 24 at Mga Bilang 15. Gumawa ng dalawang hanay na may pamagat na “Ano ang sinasabi ng teksto” at “Ano ang ipinahihiwatig ng paglalarawan.” Panatilihing magkahiwalay ang mga ito.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
+          "href": "../../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang babae sa ibabaw ng iskarlatang hayop",
+          "passage": "Revelation 17:1",
+          "href": "../../revelation/index.html#rev-17-1",
+          "anchor": "rev-17-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 13,
+      "teacher_title": "Ang Sabbath",
+      "gtk_source_id": "sabbath",
+      "gtk_title": "Ang Sabbath",
+      "gtk_lead": "Maaari bang maging kaloob ng Diyos ang isang araw bawat linggo?",
+      "gtk_principle": "Ang Sabbath sa ikapitong araw ay kaloob ng panahon mula sa Diyos upang alalahanin ang paglalang, ipagdiwang ang pagtubos, at tamasahin ang pakikipag-ugnayan sa Kaniya.",
+      "gtk_connections": [
+        {
+          "title": "Nagsisimula sa paglalang ang kapahingahan",
+          "scripture": "Genesis 2:1–3; Exodus 20:8–11",
+          "insight": "Bago pa nagkaroon ng bansang Israel o ibinigay ang kautusan sa Sinai, sinasabi ng Genesis na nagpahinga ang Diyos, pinagpala, at pinabanal ang ikapitong araw. Hindi Siya nagpahinga dahil sa pagod; nagtatag Siya ng kaloob na panahon para sa Kaniyang mga nilalang. Ibinalik ng ikaapat na utos ang pansin ng mga tao sa salaysay ng paglalang na iyon. Ipinapaalala ng kapahingahang Sabbath na higit ang buhay sa trabaho, paggawa, at tagumpay. Tayo ay pag-aari ng ating Manlilikha, hindi ng walang katapusang hinihingi ng ating iskedyul."
+        },
+        {
+          "title": "Paalala ng kalayaan at pagmamalasakit",
+          "scripture": "Deuteronomy 5:12–15; Isaiah 58:13–14",
+          "insight": "Nang ulitin ni Moises ang utos, iniugnay niya ang Sabbath sa pagliligtas mula sa pagkaalipin. Ang kapahingahan ay hindi pribilehiyong nakalaan lamang sa mga kayang tumigil sa pagtatrabaho; kasama rito ang mga lingkod at dayuhan. Nagbibigay ito ng kahulugang panlipunan sa Sabbath: nangangailangan din ng kapahingahan at dignidad ang ibang tao. Inilalarawan ito ni Isaias bilang kaluguran. Ang araw na nakasentro sa Diyos ay hindi dapat maging pasanin ng mga tuntuning nagdudulot ng pagkabalisa, kundi lingguhang pagkakataon para sa pagsamba, awa, pagpapanibagong-lakas, at pag-ibig."
+        },
+        {
+          "title": "Ipinakikita ni Hesus kung paano ito ipangingilin",
+          "scripture": "Mark 2:23–28; Luke 13:10–17; Luke 4:16",
+          "insight": "Dumalo si Hesus sa pagsamba tuwing Sabbath at nagpagaling ng mga tao sa araw na iyon. Nang gawing pagkakataon ito ng mga pinunong panrelihiyon upang humatol, ipinakita Niya ang tunay nitong layunin. Ang paggawa ng mabuti, pagpapagaan ng pagdurusa, at pagpaparangal sa Diyos ay kaayon ng diwa ng Sabbath. Inilalayo tayo nito sa dalawang sukdulan: ang pagtrato sa araw na walang kabuluhan at ang paggawa rito bilang listahan ng mga paghihigpit na gawa ng tao. Itinuturo ng Panginoon ng Sabbath na magkaugnay ang kapahingahan at habag."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Bakit Sabado sa halip na Linggo?",
+          "answer": "Tinutukoy ng utos ng Sabbath ang ikapitong araw. Ang araw na tinutukoy ng ikaapat na utos ay tumutugma sa Sabado. Walang utos sa Biblia na naglilipat ng kabanalan ng Sabbath sa Linggo."
+        },
+        {
+          "question": "Maaari ba akong gumawa ng mabuti para sa iba sa Sabbath?",
+          "answer": "Oo. Ipinakita ni Hesus na nararapat ang pagkahabag at paggawa ng mabuti sa Sabbath."
+        },
+        {
+          "question": "Nagliligtas ba sa akin ang pangingilin ng Sabbath?",
+          "answer": "Hindi. Ang kaligtasan ay sa biyaya sa pamamagitan ng pananampalataya. Ang pangingilin ng Sabbath ay tugon ng pag-ibig at pagtitiwala, hindi halagang pambayad sa langit."
+        }
+      ],
+      "gtk_practice": "Magplano ng isang Sabbath mula sa paglubog ng araw sa Biyernes: pagsamba, kapahingahan, panahon kasama ng iba, at isang gawa ng kabaitan. Isulat kung paano sinasalamin ng bawat bahagi ang pag-ibig ng Manlilikha.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
+          "href": "../../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
+          "passage": "Revelation 14:6",
+          "href": "../../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang nalabi at ang patotoo ni Hesus",
+          "passage": "Revelation 12:17",
+          "href": "../../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 14,
+      "teacher_title": "Ang Ikalawang Pagparito",
+      "gtk_source_id": "second-coming",
+      "gtk_title": "Ang Ikalawang Pagparito",
+      "gtk_lead": "Ano ang magiging katulad ng pagbabalik ni Hesus?",
+      "gtk_principle": "Ang pagbabalik ni Hesus ay isang personal, nakikita, at punô ng pag-asang pangyayari, hindi lamang sagisag ng pagsulong ng tao o lihim na pangyayari.",
+      "gtk_connections": [
+        {
+          "title": "Isang pangako mula kay Hesus",
+          "scripture": "John 14:1–3; Acts 1:9–11",
+          "insight": "Inaaliw ni Hesus ang Kaniyang mga tagasunod sa pangakong babalik Siya at tatanggapin sila sa Kaniyang piling. Sinasabi ng mga anghel sa Kaniyang pag-akyat sa langit na ang Hesus ding umakyat ay muling darating. Kaya ang pag-asa sa Kaniyang pagbabalik ay hindi nakasalig lamang sa hula tungkol sa mga pangyayaring pampolitika. Nagsisimula ito sa Kaniyang personal na pangako sa mga taong iniibig Niya. Hindi kailangang malaman ng mga Kristiyano ang petsa upang makilala ang Darating."
+        },
+        {
+          "title": "Makikita, maluwalhati, at hindi mapag-aalinlanganan",
+          "scripture": "Matthew 24:23–27, 30–31; Revelation 1:7",
+          "insight": "Nagbabala si Hesus na may mga magsasabing lihim na bumalik Siya o matatagpuan Siya sa isang natatagong lugar. Sa halip, inilalarawan Niya ang pagparito bilang hayag at hindi mapag-aalinlanganan, tulad ng kidlat na nakikita sa buong kalangitan. Sinasabi ng Apocalipsis na makikita Siya ng bawat mata. Mahalaga ito kapag may mapanghikayat na tagapagsalitang nag-aangking may natatanging daan kay Cristo. Maaari nating ihambing ang kaniyang pahayag sa Kasulatan sa halip na maakay ng takot, kamangha-manghang mga tanda, o kumpiyansang personalidad."
+        },
+        {
+          "title": "Muling pagkabuhay at muling pagsasama",
+          "scripture": "1 Thessalonians 4:13–18; 1 Corinthians 15:51–55",
+          "insight": "Inaaliw ni Pablo ang mga mananampalatayang nagdadalamhati sa mga mahal sa buhay: babangon ang mga namatay kay Cristo, at ang mga kabilang kay Hesus ay makakasama Niya. Ang ikalawang pagparito ay hindi lamang pahayag na magwawakas na ang mundo. Ito ang ipinangakong muling pagsasama at ang pagkatalo ng kamatayan. Kaugnay rin ng turong ito ang mga susunod na aralin tungkol sa kalagayan ng mga patay at sa milenyo, na nagbibigay sa mga nagluluksa ng pag-asang nakaugat sa muling pagkabuhay ni Hesus."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Dapat ba akong matakot na hindi ko mapapansin ang pagbabalik ni Hesus?",
+          "answer": "Inilalarawan ito ng mga talata bilang hayag at hindi mapag-aalinlanganang pangyayari. Ang paanyaya ay magtiwala sa Kaniya, hindi humabol sa mga lihim na tanda."
+        },
+        {
+          "question": "May makakakuwenta ba ng eksaktong petsa?",
+          "answer": "Wala. Nagbabala si Hesus laban sa pag-aangking nalalaman ang araw o oras."
+        },
+        {
+          "question": "Paano kung mahirap ang buhay ngayon?",
+          "answer": "Ipinangangako ng pagbabalik ni Cristo ang wakas ng pagkakahiwalay, pagdadalamhati, at pagkasira na nararanasan natin."
+        }
+      ],
+      "gtk_practice": "Basahin ang 1 Tesalonica 4:13–18. Sumulat ng mensahe ng pag-aliw para sa isang nagdadalamhati gamit lamang ang mga pangakong nasa talata.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 2:44–45: Itinatatag ng Diyos ang kahariang hindi magwawakas",
+          "href": "../../daniel/index.html#section-2-44",
+          "anchor": "section-2-44"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 12:1–1: 12:1 Tumindig si Miguel at iniligtas ang bayan ng Diyos",
+          "href": "../../daniel/index.html#section-12-1",
+          "anchor": "section-12-1"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang nakasakay na tinatawag na Tapat at Totoo",
+          "passage": "Revelation 19:11",
+          "href": "../../revelation/index.html#rev-19-11",
+          "anchor": "rev-19-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Narito, ako'y madaling pumaparito",
+          "passage": "Revelation 22:12",
+          "href": "../../revelation/index.html#rev-22-12",
+          "anchor": "rev-22-12"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 15,
+      "teacher_title": "Ang Kalikasan ng Tao",
+      "gtk_source_id": "nature",
+      "gtk_title": "Ang Kalikasan ng Tao",
+      "gtk_lead": "Ano tayo, at ano ang nangyayari kapag tayo ay namatay?",
+      "gtk_principle": "Inilalarawan ng Biblia ang buhay ng tao bilang kaloob ng Diyos at ang kamatayan bilang pagtulog na walang malay hanggang sa muling pagkabuhay. Ang kawalang-kamatayan ay dumarating sa pamamagitan ni Cristo, hindi bilang likas na pag-aaring hiwalay sa Kaniya.",
+      "gtk_connections": [
+        {
+          "title": "Ano ang nagbibigay-buhay sa tao?",
+          "scripture": "Genesis 2:7; Ecclesiastes 12:7",
+          "insight": "Inilalarawan ng Genesis na hinubog ng Diyos ang tao mula sa alabok at hiningahan siya ng buhay; kaya ang tao ay naging nilalang na may buhay. Nauunawaan ng pag-aaral na ito ang tao bilang isang buo at nilikhang buhay, hindi isang kaluluwang walang kamatayan na pansamantalang nakakulong sa katawan. Binabaligtad ng kamatayan ang kaloob ng buhay: ang katawan ay bumabalik sa alabok at ang hiningang nagbibigay-buhay ay sa Diyos. Hindi ibig sabihin nito na nababawasan ang halaga ng isang tao pagkatapos mamatay. Binibigyang-diin nito ang ating ganap na pagdepende sa Manlilikha."
+        },
+        {
+          "title": "Ano ang nalalaman ng mga patay?",
+          "scripture": "Ecclesiastes 9:5–6, 10; Psalm 146:3–4",
+          "insight": "Inilalarawan ng mga talatang ito ang kamatayan bilang kalagayang humihinto ang karaniwang pag-iisip, paggawa, at pakikilahok sa mga gawain sa lupa. May iba pang talatang gumagamit ng mga salitang tungkol sa mga espiritu at kaluluwa, kaya dapat isaalang-alang ng maingat na mambabasa ang konteksto ng mga iyon sa halip na magtipon lamang ng mga hiwa-hiwalay na parirala. Ang turong binubuo rito ay hindi nagtataglay ang tao ng likas at hiwalay na kawalang-kamatayan. Kaloob ng Diyos ang buhay, at inaakay ng Biblia ang mga nagdadalamhati tungo sa darating na muling pagkabuhay."
+        },
+        {
+          "title": "Tinawag ni Hesus na pagtulog ang kamatayan",
+          "scripture": "John 11:11–15, 21–26; 1 Thessalonians 4:13–18",
+          "insight": "Nang mamatay si Lazaro, ginamit muna ni Hesus ang larawan ng pagtulog at saka malinaw na ipinaliwanag na patay ang Kaniyang kaibigan. Ang pagtulog ay angkop na larawan sapagkat hindi nararanasan ng natutulog ang paglipas ng panahon gaya ng gising, at dahil ang paggising ay nagtuturo sa muling pagkabuhay. Hindi sinabi ni Hesus kay Marta na magtiwala sa buhay na hiwalay sa katawan. Tinawag Niya ang Kaniyang sarili na muling pagkabuhay at buhay. Sa pagdadalamhati, ang pag-asa ay nakasalig sa kapangyarihan at pangako ni Cristo."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Binabantayan ba ako ng aking mahal sa buhay mula sa langit?",
+          "answer": "Inilalarawan ng Eclesiastes 9:5 at Juan 11 ang kamatayan bilang pahingang walang malay hanggang sa muling pagkabuhay. Ang pagdadalamhati ay dapat tugunan nang may paglalambing, hindi pakikipagtalo."
+        },
+        {
+          "question": "Makikita ko bang muli ang mga taong mahal ko?",
+          "answer": "Inihaharap ng Biblia ang pangako ng muling pagkabuhay kay Cristo. Dahilan ito ng pag-asa kahit tayo ay nagluluksa."
+        },
+        {
+          "question": "Ano ang pagkakaiba ng kaluluwa at tao?",
+          "answer": "Sa Genesis 2:7, nagiging isang nilalang na may buhay ang tao nang ibigay ng Diyos ang hininga ng buhay. Ganito nauunawaan ng orihinal na pag-aaral ang “kaluluwa” bilang isang buo."
+        }
+      ],
+      "gtk_practice": "Iguhit ang pagkakasunod-sunod sa Genesis 2:7 at ang pangako ng muling pagkabuhay sa 1 Corinto 15. Gamitin ang mga talata upang ipaliwanag sa sarili mong mga salita ang kahulugan ng kamatayan at pag-asa.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 12:2–3: Muling pagkabuhay at ang gantimpala ng mga umaakay sa iba sa katotohanan",
+          "href": "../../daniel/index.html#section-12-2",
+          "anchor": "section-12-2"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang unang muling pagkabuhay at paghahari",
+          "passage": "Revelation 20:4",
+          "href": "../../revelation/index.html#rev-20-4",
+          "anchor": "rev-20-4"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 16,
+      "teacher_title": "Ang Tanda ng Hayop",
+      "gtk_source_id": "mark",
+      "gtk_title": "Ang Tanda ng Hayop",
+      "gtk_lead": "Ano ang kahulugan ng pagbibigay ng ating katapatan sa Diyos?",
+      "gtk_principle": "Ang huling tunggalian sa Apocalipsis ay may kinalaman sa pagsamba at katapatan. Hindi mauunawaan ang tanda ng katapatan nang hiwalay sa kabaligtarang panawagang sambahin ang Manlilikha at sundin si Hesus.",
+      "gtk_connections": [
+        {
+          "title": "Basahin ang babala kasama ng mabuting balita",
+          "scripture": "Revelation 13:11–17; 14:6–12",
+          "insight": "Lumilitaw ang tanda ng hayop sa isang propesiya tungkol sa awtoridad, pagsamba, at pamimilit na sumunod. Kasunod mismo ng babala, inilalarawan ng Apocalipsis ang walang-hanggang ebanghelyo at panawagang sambahin ang Manlilikha. Mahalaga ang pagkakasunod-sunod na iyon. Hindi naunawaan ang sentro ng talata ng pag-aaral na nagpapanatili sa mga tao sa matinding takot sa tanda ngunit hindi sila inaakay kay Hesus. Hindi layunin ng Diyos na bitagin ang mga tapat na tao sa isang malabong teknikalidad; tinatawag Niya sila sa katapatang nakabatay sa pagkaunawa."
+        },
+        {
+          "title": "Umaabot sa puso at pamumuhay ang pagsamba",
+          "scripture": "Exodus 20:8–11; Hebrews 8:10; Revelation 14:12",
+          "insight": "Ipinakita ng mga naunang aralin na ang kautusan ng Diyos ay nagpapahayag ng Kaniyang karakter at isinusulat ito ng Espiritu sa mga puso. Ipinahihiwatig ng larawan ng noo at kamay sa Apocalipsis ang katapatan sa pag-iisip at pagkilos. Ang tunggalian ay tungkol sa pagsunod ng mga tao sa Manlilikha o pagbibigay ng pinakamataas na awtoridad sa isang nakikipag-agawang sistema. Mahalaga ang Sabbath sa pangangatwiran sapagkat kinikilala ng ikaapat na utos ang Diyos bilang Manlilikha. Dapat pag-aralan ang pangangatwirang ito bilang magkakaugnay na paliwanag mula sa Biblia, hindi bilang isang maikling sawikain lamang."
+        },
+        {
+          "title": "Ang pamimilit ay tanda ng huwad na relihiyon",
+          "scripture": "Daniel 3:4–18; Revelation 13:15–17",
+          "insight": "Sa Daniel 3, iniutos ng isang pinuno na sambahin ng lahat ang isang larawan sa ilalim ng bantang parusa. Tumanggi ang mga tapat sapagkat sa Diyos nakatalaga ang budhi. Gumagamit ang Apocalipsis ng kahalintulad na mga paksa tungkol sa larawan, pagsamba, at kaparusahan. Kaya hindi maliit na usapin ang kalayaan sa relihiyon. Nagiging mapanganib ang pamimilit na may kinalaman sa pagbili, pagbebenta, o pananatiling ligtas sa lipunan kapag ginagamit ito upang ipilit ang pagsamba. Maaari tayong taimtim na hindi magkasundo sa turo habang patuloy na ipinagtatanggol ang kalayaan ng budhi ng bawat tao."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "May tanda na ba ang Kristiyanong sumasamba tuwing Linggo?",
+          "answer": "Wala. Nauunawaan ang propesiya bilang tumutukoy sa darating na krisis ng budhi at pamimilit kung saan malinaw ang pagpili. Hindi natin maaaring hatulan ang puso ng ibang tao."
+        },
+        {
+          "question": "Ang tanda ba ay basta barcode o computer chip?",
+          "answer": "Pangunahing nauunawaan ito ng pinagmulang pag-aaral sa konteksto ng pagsamba, awtoridad, at katapatan, hindi bilang isang partikular na teknolohiya para sa mamimili."
+        },
+        {
+          "question": "Saan ko dapat ituon ang pansin?",
+          "answer": "Kilalanin si Hesus, seryosohin ang Kasulatan, igalang ang budhi ng iba, at tanggihan ang haka-hakang inuudyukan ng takot."
+        }
+      ],
+      "gtk_practice": "Basahin nang magkasama ang Apocalipsis 13 at 14. Markahan ang bawat pagtukoy sa pagsamba, pananampalataya, mga utos, pamimilit, at ebanghelyo. Ibuod ang pagpiling inilalarawan.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:19–25: Digmaan laban sa mga banal at ang takdang panahon",
+          "href": "../../daniel/index.html#section-7-19",
+          "anchor": "section-7-19"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang tanda, pagbili at pagbebenta, at 666",
+          "passage": "Revelation 13:16",
+          "href": "../../revelation/index.html#rev-13-16",
+          "anchor": "rev-13-16"
+        },
+        {
+          "source": "revelation",
+          "title": "Ikatlong anghel: babala laban sa huwad na pagsamba",
+          "passage": "Revelation 14:9",
+          "href": "../../revelation/index.html#rev-14-9",
+          "anchor": "rev-14-9"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 17,
+      "teacher_title": "Ang Milenyo",
+      "gtk_source_id": "millennium",
+      "gtk_title": "Ang Milenyo",
+      "gtk_lead": "Ano ang mangyayari sa loob ng isang libong taon?",
+      "gtk_principle": "Inilalahad ng Apocalipsis ang isang yugto ng sanlibong taon pagkatapos ng pagbabalik ni Cristo, kung kailan mahahayag ang katarungan ng Diyos at papalapit ang kasalanan sa pangwakas nitong wakas.",
+      "gtk_connections": [
+        {
+          "title": "Ang muling pagkabuhay ang panimulang punto ng takdang panahon",
+          "scripture": "Revelation 20:1–6; 1 Thessalonians 4:16–17",
+          "insight": "Ang milenyo ay ang sanlibong taong inilalarawan sa Apocalipsis 20. Upang maunawaan ito, magsimula sa pagbabalik ni Hesus at sa muling pagkabuhay ng mga mananampalataya. Ipinagkaiba ng Apocalipsis ang unang muling pagkabuhay sa mga kasunod na pangyayari. Tumutulong ang malinaw na pagkakasunod-sunod upang maiwasan ang pagkalito: babalik si Cristo, makikibahagi ang Kaniyang bayan sa Kaniyang tagumpay, lilipas ang sanlibong taon, at susunod ang huling paghuhukom at pagpapanumbalik. Nagbibigay ang talata ng balangkas, hindi ng detalyadong tala ng bawat taon."
+        },
+        {
+          "title": "Ano ang kahulugan ng pagkagapos kay Satanas?",
+          "scripture": "Revelation 20:1–3; Jeremiah 4:23–27",
+          "insight": "Gumagamit ang Apocalipsis ng mga sagisag tungkol sa anghel, tanikala, at kalaliman. Iniuugnay ng orihinal na pag-aaral ang pagkagapos kay Satanas sa pagkawasak at pagkatiwangwang ng lupa at sa kawalan ng mga taong maaari niyang linlangin sa panahong iyon. Hindi ang literal na tanikalang bakal ang punto: napipigilan ang mga pagkakataon ni Satanas na manlinlang. Mas makatutulong ang pagbasa ng sagisag kasama ng mas malawak na pagkakasunod-sunod sa Biblia kaysa sa pag-iisip ng mga detalyeng hindi ibinigay ng kabanata."
+        },
+        {
+          "title": "Ginagawang malinaw ng Diyos ang Kaniyang mga hatol",
+          "scripture": "Revelation 20:4, 11–15; 1 Corinthians 6:2–3",
+          "insight": "Binabanggit ng Apocalipsis ang paghuhukom na ibinigay sa bayan ng Diyos. Ipinahihiwatig ng larawan na hindi itinatago sa mga tinubos ang paraan ng pakikitungo ng Diyos sa kasamaan. Hindi isinasantabi bilang walang kabuluhan ang mga tanong tungkol sa pagdurusa, mga pagpili, at katarungan. Hindi lamang layunin ng Diyos na ipahayag na Siya ang tama, kundi ipakita ang kabutihan at pagiging makatarungan ng Kaniyang mga pasiya. Pagpapatuloy ito ng aralin tungkol sa paghuhukom at sa dakilang tunggalian."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Kailangan ko bang isaulo ang pagkakasunod ng bawat pangyayari?",
+          "answer": "Hindi. Unawain muna ang kabuuang larawan: babalik si Cristo, mahahayag ang katarungan ng Diyos, at tuluyang magwawakas ang kasamaan."
+        },
+        {
+          "question": "Bakit magkakaroon pa ng panahon ng pagsusuri?",
+          "answer": "Ipinakikita ng pagsusuri na makatarungan at hindi pabigla-bigla ang mga hatol ng Diyos."
+        },
+        {
+          "question": "Ano ang pinakahuling layunin?",
+          "answer": "Isang sansinukob na wala nang kasalanan, kung saan naibalik ang buhay at pakikisama."
+        }
+      ],
+      "gtk_practice": "Gumawa ng simpleng pagkakasunod-sunod: pagbabalik ni Cristo; muling pagkabuhay; sanlibong taon; huling paghuhukom; bagong lupa. Maglagay ng mga sanggunian sa Biblia sa tabi ng bawat yugto.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 12:1–1: 12:1 Tumindig si Miguel at iniligtas ang bayan ng Diyos",
+          "href": "../../daniel/index.html#section-12-1",
+          "anchor": "section-12-1"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 12:2–3: Muling pagkabuhay at ang gantimpala ng mga umaakay sa iba sa katotohanan",
+          "href": "../../daniel/index.html#section-12-2",
+          "anchor": "section-12-2"
+        },
+        {
+          "source": "revelation",
+          "title": "Ginapos si Satanas sa loob ng isang libong taon",
+          "passage": "Revelation 20:1",
+          "href": "../../revelation/index.html#rev-20-1",
+          "anchor": "rev-20-1"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang unang muling pagkabuhay at paghahari",
+          "passage": "Revelation 20:4",
+          "href": "../../revelation/index.html#rev-20-4",
+          "anchor": "rev-20-4"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 18,
+      "teacher_title": "Impiyerno — Sadista ba ang Diyos?",
+      "gtk_source_id": "hell",
+      "gtk_title": "Impiyerno — Sadista ba ang Diyos?",
+      "gtk_lead": "Papahirapan ba ng mapagmahal na Diyos ang mga tao magpakailanman?",
+      "gtk_principle": "Totoo at makatarungan ang huling paghuhukom ng Diyos, ngunit itinuturo ng pag-aaral na tuluyang lilipulin ang masasama sa halip na manatiling buhay sa walang-hanggang pagpapahirap. Dapat umayon ang larawan natin ng Diyos sa Kaniyang pag-ibig at katarungan.",
+      "gtk_connections": [
+        {
+          "title": "Magsimula sa Diyos na ipinakilala ni Hesus",
+          "scripture": "1 John 4:8–10; John 3:16–17",
+          "insight": "Madalas lumitaw ang mga tanong tungkol sa impiyerno kapag iniisip ng isang tao ang Diyos bilang nalulugod sa walang katapusang pagdurusa ng mga tao. Sa ibang lugar nagsisimula ang pag-aaral: inilalarawan ng Kasulatan ang Diyos bilang pag-ibig, na ibinigay ang Kaniyang Anak upang iligtas sa halip na hatulan ang sanlibutan. Anuman ang maging konklusyon natin tungkol sa huling paglipol sa kasamaan, dapat itong unawain kasama ng pahayag na iyon ng Kaniyang karakter. Hindi natin basta maaaring balewalain ang mga talata tungkol sa paghuhukom, ngunit hindi rin dapat bigyang-kahulugan ang mga ito na para bang nasisiyahan ang Diyos sa kalupitan."
+        },
+        {
+          "title": "Buhay at kamatayan ang pinaghahambing",
+          "scripture": "Romans 6:23; Matthew 10:28; John 3:16",
+          "insight": "Inihahambing ni Pablo ang kabayaran ng kasalanan—kamatayan—sa kaloob ng Diyos na buhay na walang hanggan. Nagsasalita si Hesus tungkol sa paglipol sa katawan at kaluluwa. Mahalaga ang mga talatang ito sa konklusyong hindi ibinibigay sa mga naliligaw ang kaloob na walang katapusang buhay na may kamalayan habang naghihirap; sa halip, haharap sila sa pangwakas na paglipol. Hindi dapat maliitin ang bigat ng gayong wakas. Isa itong pagkawala na hindi na maibabalik, at tinatawag ng mapagmahal na Diyos ng Kasulatan ang mga tao upang lumayo rito."
+        },
+        {
+          "title": "Ang walang-hanggang bunga ay hindi kapareho ng walang-katapusang pagkasunog",
+          "scripture": "Jude 7; Malachi 4:1–3; Revelation 20:9–15",
+          "insight": "Inilalarawan ni Judas ang Sodoma bilang halimbawa ng walang-hanggang apoy, bagaman hindi nakikitang nasusunog ang lunsod ngayon. Ipinahihiwatig nito ang apoy na ang hatol ay pangwakas. Inilalarawan ni Malakias ang kasamaan bilang natutupok, hindi pinananatili magpakailanman. Maaaring mahirap unawain ang sagisag na pananalita sa Apocalipsis at dapat itong maingat na pag-aralan ayon sa mas malawak nitong konteksto. Ihiwalay natin ang bungang walang hanggan sa prosesong hindi natatapos sa halip na ipalagay na iisa ang ibig sabihin ng dalawa."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Itinuturo ba ng Biblia ang walang-katapusang pagpapahirap na may kamalayan?",
+          "answer": "Hindi. Inihahambing ng mga talata ang kaloob na kawalang-kamatayan sa pangwakas na paglipol sa masasama, hindi sa walang-hanggang pagpapahirap na may kamalayan."
+        },
+        {
+          "question": "Ibig bang sabihin ay hindi mahalaga ang maling gawain?",
+          "answer": "Hindi. Nananatiling seryoso ang paghuhukom. Ang pagkakaiba ay tungkol sa katangian at tagal ng huling kaparusahan."
+        },
+        {
+          "question": "Paano ko ito tatalakayin sa taong takot sa impiyerno?",
+          "answer": "Magsimula sa pag-ibig ng Diyos at sa pangako ni Hesus ng buhay. Seryosohin ang kaniyang takot, iwasan ang mga pananakot, at malumanay na pag-aralan ang Kasulatan nang magkasama."
+        }
+      ],
+      "gtk_practice": "Ihambing ang Roma 6:23, Malakias 4:1–3, at Apocalipsis 21:4. Ilarawan ang pagkakaiba ng buhay na walang hanggan at ng pangwakas na wakas ng kasalanan.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 12:2–3: Muling pagkabuhay at ang gantimpala ng mga umaakay sa iba sa katotohanan",
+          "href": "../../daniel/index.html#section-12-2",
+          "anchor": "section-12-2"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang dakilang puting trono",
+          "passage": "Revelation 20:11",
+          "href": "../../revelation/index.html#rev-20-11",
+          "anchor": "rev-20-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Ginagawang bago ang lahat",
+          "passage": "Revelation 21:1",
+          "href": "../../revelation/index.html#rev-21-1",
+          "anchor": "rev-21-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 19,
+      "teacher_title": "Ang Kaloob ng Propesiya",
+      "gtk_source_id": "prophecy-gift",
+      "gtk_title": "Ang Kaloob ng Propesiya",
+      "gtk_lead": "Patuloy pa bang ginagabayan ng Diyos ang Kaniyang bayan?",
+      "gtk_principle": "Nagbibigay ang Banal na Espiritu ng mga kaloob para sa ikatitibay ng bayan ng Diyos, kabilang ang propesiya. Ang isang tunay na pag-aangking nagsasalita para sa Diyos ay kailangang subukin sa Kasulatan at sa mga bunga nito.",
+      "gtk_connections": [
+        {
+          "title": "Ang mga kaloob ng Diyos ay para sa paglilingkod",
+          "scripture": "1 Corinthians 12:4–11, 27–31; Ephesians 4:11–16",
+          "insight": "Binibigyan ng Banal na Espiritu ng iba't ibang kakayahan ang mga mananampalataya para sa ikabubuti ng buong iglesia. Hindi umiiral ang tunay na kaloob upang pasikatin ang isang tao o magtatag ng kapangyarihang hindi maaaring tanungin. Tinatawag ng paglilingkod na makahula ang mga tao sa katotohanan, pagpapalakas ng loob, pagtutuwid, at katapatan sa Diyos. Gaya ng alinmang ministeryo ng pagtuturo, nasusukat ang halaga nito sa paglilingkod kay Cristo at sa Kaniyang bayan."
+        },
+        {
+          "title": "Nagsalita ang Diyos sa pamamagitan ng mga mensaherong tao",
+          "scripture": "Amos 3:7; Hebrews 1:1–2; Joel 2:28–29",
+          "insight": "Maraming halimbawa sa Biblia ng pagpapadala ng Diyos ng mga mensahe sa pamamagitan ng mga propeta, at ipinangangako ni Joel na hindi lamang sa sinaunang panahon magkakaroon ng gawaing makahula. Inilalagay din ng Hebreo si Hesus sa sentro ng paghahayag ng Diyos. Nangangahulugan itong ang mga susunod na pag-aangking espirituwal ay hindi kailanman dapat pumalit sa ebanghelyo o maging bagong awtoridad na mas mataas sa Kasulatan. Hindi sasalungatin ng Espiritung nagbigay-inspirasyon sa Kasulatan ang malinaw nitong mensahe tungkol kay Cristo."
+        },
+        {
+          "title": "Dapat subukin ang bawat pag-aangkin",
+          "scripture": "1 Thessalonians 5:19–22; 1 John 4:1–3; Isaiah 8:20",
+          "insight": "Inuutusan ng Kasulatan ang mga mananampalataya na huwag hamakin ang propesiya at huwag tanggapin ang bawat espiritung nag-aangkin ng awtoridad. Mahalaga ang dalawang babala. Maaaring tapat ang isang tao ngunit nagkakamali, mapanghikayat ngunit mali, o tapat at karapat-dapat pakinggan. Subukin ang nilalaman sa Biblia, ang pagpapahayag tungkol kay Hesus, ang bungang nalilikha, at ang katumpakan ng mga tunay na pahayag tungkol sa hinaharap. Kapag hindi mapatunayan ang isang pahayag, sabihin iyon. Ang pagsusuri ay gawa ng katapatan, hindi kawalang-galang."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Kailangan ko bang basahin si Ellen White bago basahin ang Biblia?",
+          "answer": "Hindi. Magsimula sa Kasulatan. Maaaring gamitin ang kaniyang mga sinulat bilang pantulong na babasahin, ngunit dapat nitong ituro sa iyo si Hesus at ang Biblia."
+        },
+        {
+          "question": "Maaari bang sabihin ng isang tao na may sinabi sa kaniya ang Diyos at samakatuwid ay hindi na siya maaaring tanungin?",
+          "answer": "Hindi. Tinatawag tayo ng Kasulatan na subukin ang gayong mga pahayag. Mahalaga ang pagpapakumbaba at pananagutan."
+        },
+        {
+          "question": "Paano ko masusuri ang isang siping iniuugnay kay Ellen White?",
+          "answer": "Hanapin ito sa EGW Writings, basahin ang nakapaligid na talata, at tiyakin ang aklat at pahina sa halip na magbahagi ng mga siping walang sanggunian."
+        }
+      ],
+      "gtk_practice": "Gumawa ng talaang susuriin batay sa Isaias 8:20, Mateo 7:15–20, at 1 Juan 4:1–3 upang timbangin ang mga pahayag na espirituwal nang may pagpapakumbaba at pag-iingat.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 9:20–23: Bumalik si Gabriel na may dagdag na pagkaunawa",
+          "href": "../../daniel/index.html#section-9-20",
+          "anchor": "section-9-20"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang kapahayagan at ang pagpapala nito",
+          "passage": "Revelation 1:1",
+          "href": "../../revelation/index.html#rev-1-1",
+          "anchor": "rev-1-1"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang piging sa kasal ng Kordero",
+          "passage": "Revelation 19:7",
+          "href": "../../revelation/index.html#rev-19-7",
+          "anchor": "rev-19-7"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 20,
+      "teacher_title": "Ang Nalabing Iglesia",
+      "gtk_source_id": "remnant",
+      "gtk_title": "Ang Nalabing Iglesia",
+      "gtk_lead": "Paano ko makikilala ang isang tapat na pamayanang Kristiyano?",
+      "gtk_principle": "Tinatawag ng Diyos ang mga tao na manatiling tapat kay Hesus at sa Kaniyang salita sa isang mundong puno ng kalituhan. Ang pokus ay misyon ng katotohanan, pag-ibig, pagsunod, at pagpapatotoo, hindi kailanman pag-aangking nakahihigit ang sarili.",
+      "gtk_connections": [
+        {
+          "title": "Palaging tumatawag ang Diyos ng mga tao sa katapatan",
+          "scripture": "1 Kings 19:14–18; Romans 11:1–5",
+          "insight": "Nang isipin ni Elias na siya na lamang ang natitirang tapat, ipinahayag ng Diyos na may iba pang hindi yumukod sa huwad na pagsamba. Inilalarawan ng salitang nalabi ang mga taong iningatan ng biyaya ng Diyos habang marami ang tumatalikod. Hindi ito dapat maging dahilan ng pagmamayabang. Ang diin ng Biblia ay ang katapatan ng Diyos, hindi ang pagiging nakahihigit ng mga kumikilalang bahagi ng Kaniyang bayan."
+        },
+        {
+          "title": "Hinahanap ni Hesus ang isang kawan",
+          "scripture": "John 10:11–16; 17:20–23",
+          "insight": "Inihambing ni Hesus ang Kaniyang sarili sa mabuting pastol na nagtitipon ng mga tupa. Nanalangin din Siya para sa pagkakaisa ng mga tagasunod Niya. Hindi nabubuo ang pagkakaisang Kristiyano sa simpleng pag-iwas sa mahihirap na tanong o sa sapilitang pagkakasundo. Lumalago ito habang pinakikinggan ng mga tao ang Kaniyang tinig, minamahal ang isa't isa, at tumutugon sa inihayag na katotohanan. Ang praktikal na tanong ay kung mas malinaw bang naipakikilala ng isang pamayanan si Hesus at natutulungan nitong tapat Siyang sundin ng mga tao."
+        },
+        {
+          "title": "Inilalarawan ng Apocalipsis ang bayan ng Diyos sa mga huling araw",
+          "scripture": "Revelation 12:17; 14:6–12",
+          "insight": "Inilalarawan ng Apocalipsis ang mga taong tumutupad sa mga utos ng Diyos at nananatili sa pananampalataya kay Hesus habang ipinahahayag ang mahalagang mensahe tungkol sa Manlilikha, paghuhukom, at tunay na pagsamba. Sinusundan ng aralin ang ugnayan ng pananampalataya sa ebanghelyo, pagsunod, at misyon. Mahahalagang katangian ang mga ito, hindi dahilan upang hamakin ang mga Kristiyano sa ibang pamayanan. Kilala ng Diyos ang mga tao sa lahat ng lugar, at ang Kaniyang paanyaya ay para sa lahat ng makikinig sa Kaniya."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Awtomatiko ba akong maliligtas kapag sumapi ako sa isang denominasyon?",
+          "answer": "Hindi. Ang kaligtasan ay sa pamamagitan ni Cristo, hindi sa talaan ng kasapi. Tinutulungan ng isang malusog na iglesia ang mga tao na lumago sa pananampalataya at pag-ibig."
+        },
+        {
+          "question": "May mga tapat bang Kristiyano sa ibang mga iglesia?",
+          "answer": "Oo. Kilala ni Hesus ang Kaniyang mga tupa, kabilang ang mga tapat na sumusunod sa Kaniya sa iba't ibang kongregasyon."
+        },
+        {
+          "question": "Ano ang dapat kong hanapin sa isang iglesia?",
+          "answer": "Katapatan sa Kasulatan, mensaheng nakasentro kay Cristo, pagpapakumbaba, tunay na pagmamalasakit, kalayaan ng budhi, at praktikal na paglilingkod."
+        }
+      ],
+      "gtk_practice": "Isulat kung paano mo ipaliliwanag sa isang kaibigan ang “tapat na nalabi” nang hindi niya maramdamang hindi siya tanggap. Isama ang Apocalipsis 14:6 at Juan 10:16.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:26–28: Binabaligtad ng paghuhukom ang hatol ng lupa",
+          "href": "../../daniel/index.html#section-7-26",
+          "anchor": "section-7-26"
+        },
+        {
+          "source": "daniel",
+          "title": "Daniel 12:1–1: 12:1 Tumindig si Miguel at iniligtas ang bayan ng Diyos",
+          "href": "../../daniel/index.html#section-12-1",
+          "anchor": "section-12-1"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang nalabi at ang patotoo ni Hesus",
+          "passage": "Revelation 12:17",
+          "href": "../../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        },
+        {
+          "source": "revelation",
+          "title": "Ikatlong anghel: babala laban sa huwad na pagsamba",
+          "passage": "Revelation 14:9",
+          "href": "../../revelation/index.html#rev-14-9",
+          "anchor": "rev-14-9"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 21,
+      "teacher_title": "Pamumuhay Kristiyano",
+      "gtk_source_id": "living",
+      "gtk_title": "Pamumuhay Kristiyano",
+      "gtk_lead": "Paano dapat makaapekto ang pananampalataya sa ating mga pasiya at panlabas na anyo?",
+      "gtk_principle": "Binabago ng pagsunod kay Hesus ang mga prayoridad, panlabas na anyo, at mga gawi. Partikular na sinusuri ng pag-aaral ang palamuti, kahinhinan, at pagpapakumbaba, at itinatanong kung ano ang tumutulong o umaagaw sa pansin mula sa buhay na nakasentro kay Cristo.",
+      "gtk_connections": [
+        {
+          "title": "Ang puso ang usapin, hindi lamang ang panlabas na anyo",
+          "scripture": "1 Samuel 16:7; Matthew 6:19–24",
+          "insight": "Tumitingin ang Diyos sa puso, at nagbabala si Hesus na maaaring bihagin ng mga kayamanan ang ating katapatan. Kaya ang mga tanong tungkol sa pananamit, alahas, ari-arian, at libangan ay higit pa sa pagtatalo tungkol sa mga listahan. Dapat nating itanong kung ang isang bagay ay naghihikayat ng pagmamataas, pag-aaksaya, kawalang-katapatan, pagnanasa, pagbubukod sa iba, o di-malusog na paghahangad ng pansin. Maaaring magkaiba ang dahilan ng parehong panlabas na pasiya, kaya dapat maging maingat ang pag-uusap at iwasang hatulan ang halaga ng isang tao batay sa anyo."
+        },
+        {
+          "title": "Hindi likas na masama ang kagandahan",
+          "scripture": "Ezekiel 16:8–14; Revelation 21:18–21",
+          "insight": "Maaaring gamitin ng Kasulatan nang positibo ang alahas, mamahaling materyales, at kagandahan. Maaari rin itong magbabala laban sa palamuting ginagamit para sa sariling kapurihan at espirituwal na kawalang-katapatan. Ginagamit ng pinagmulang aralin ang pagkakaibang ito upang suriin kung kailan lumilipat ang pagpapahalaga sa palamuti tungo sa pagpapataas sa sarili. Kaya hindi natin dapat sabihing awtomatikong makasalanan ang bawat palamuti, habang kinikilalang maaaring maging diyus-diyosan ang panlabas na pagpapakitang-gilas. Ang kasimplehan ay maaaring maging mahalagang pagpapahayag ng pagpapakumbaba at matalinong pangangasiwa."
+        },
+        {
+          "title": "Binabago ng panibagong buhay ang mga prayoridad",
+          "scripture": "Romans 12:1–2; 1 Peter 3:3–4",
+          "insight": "Tumatawag si Pablo sa pagbabago sa pamamagitan ng pagpapanibago ng isip. Itinuturo ni Pedro ang pansin sa nagtatagal na kagandahan ng maamo at tahimik na espiritu. Tungkol ito sa mga prayoridad: gaano karaming oras, salapi, at pansin ang ginugugol sa paglikha ng isang imahe, at gaano karami ang inilalaan sa kabaitan, katapatan, at paglilingkod? Gumagawa ang Espiritu sa budhi sa paglipas ng panahon, na tumutulong sa mga mananampalataya na muling suriin ang mga gawi nang hindi ginagawang paligsahan ang paglago."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Awtomatiko bang makasalanan ang bawat alahas?",
+          "answer": "Itinatanong ito ng orihinal na pag-aaral at binabanggit ang mga halimbawa ng palamuti sa Biblia. Iminumungkahi nito ang pag-iingat laban sa pagmamataas at pagpapakitang-gilas, hindi ang pag-aakalang pare-pareho ang kahulugan ng bawat pagkakataon."
+        },
+        {
+          "question": "Paano ko malalaman kung ang isang bagay ay angkop?",
+          "answer": "Itanong kung ano ang nag-uudyok sa iyo, ano ang ipinahihiwatig nito, kung ito ay responsable, at kung pinararangalan nito ang Diyos at ang iba. Humingi ng karunungan nang hindi hinahatulan ang panlabas na anyo."
+        },
+        {
+          "question": "Tatanggapin lamang ba ako ng Diyos kung sa isang tiyak na paraan ako mananamit?",
+          "answer": "Hindi. Minamahal ng Diyos ang mga tao bago pa mabago ang kanilang panlabas na mga gawi. Ang paglago sa karakter na Kristiyano ay hindi dapat maging kahihiyan o panlipunang pamimilit."
+        }
+      ],
+      "gtk_practice": "Pumili ng isang pasiya tungkol sa damit, paggastos, libangan, o social media. Itanong: Hinihikayat ba nito ang pagpapakumbaba, pag-ibig, at malinis na budhi sa harap ng Diyos?",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 1:8–10: Nagpasya si Daniel bago lumala ang pagsubok",
+          "href": "../../daniel/index.html#section-1-8",
+          "anchor": "section-1-8"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang Tagapagligtas sa pintuan",
+          "passage": "Revelation 3:19",
+          "href": "../../revelation/index.html#rev-3-19",
+          "anchor": "rev-3-19"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 22,
+      "teacher_title": "Panalangin",
+      "gtk_source_id": "prayer",
+      "gtk_title": "Panalangin",
+      "gtk_lead": "Paano ako makikipag-usap sa Diyos na hindi ko nakikita?",
+      "gtk_principle": "Ang panalangin ay tunay na pakikipag-ugnayan sa ating Ama sa langit. Kabilang dito ang pagsamba, pagtatapat, paghingi, pakikinig, at pagtitiwala, hindi isang pormula para kontrolin ang mga resulta.",
+      "gtk_connections": [
+        {
+          "title": "Itinuring ni Hesus na mahalaga ang panalangin",
+          "scripture": "Mark 1:35; Luke 6:12; Luke 9:28",
+          "insight": "Kahit marami ang naghahangad ng Kaniyang pansin, naglaan si Hesus ng oras para manalangin, kung minsan bago ang mahahalagang pasiya. Ang panalangin ay hindi kagamitang pang-emerhensiya na para lamang sa mga sandali ng matinding pangangailangan. Isa itong ugnayang lumalapit tayo sa ating Ama, nakikinig sa Kasulatan, nagpapahayag ng pasasalamat, at humihingi ng patnubay. Hindi kailangang gumamit ng kahanga-hangang pananalita ang mga baguhan. Maaari silang magsimula sa pagsasabi sa Diyos ng katotohanan tungkol sa kanilang araw at paghingi ng karunungan."
+        },
+        {
+          "title": "Itinuturo ng Panalangin ng Panginoon ang mga prayoridad",
+          "scripture": "Matthew 6:5–13",
+          "insight": "Itinuro ni Hesus sa Kaniyang mga tagasunod na ipanalanging parangalan ang pangalan ng Diyos, dumating ang Kaniyang kaharian, at matupad ang Kaniyang kalooban. Saka lamang bumabaling ang panalangin sa pagkain sa araw-araw, kapatawaran, at pag-iingat. Hindi ito mga mahikang salitang kailangang ulitin nang tiyak na dami ng beses. Ito ay huwaran ng paglalagay sa pagtitiwala, pagdepende sa Diyos, at mga ugnayan bago ang makasariling mga kahilingan. Kasama sa panalangin ang personal na pangangailangan at ang pananagutang patawarin ang iba."
+        },
+        {
+          "title": "Iba ang pagtitiwala sa pagkontrol sa Diyos",
+          "scripture": "Matthew 7:7–11; 1 John 5:14–15; James 4:2–3",
+          "insight": "Inaanyayahan tayo ni Hesus na humingi, maghanap, at kumatok dahil ang Diyos ay mapagmahal na Ama. Ngunit ang panalangin ay hindi pangakong kailangang sundin ng Diyos ang ating takdang panahon o ibigay ang lahat ng ating hinihingi. Tinatawag tayo ng Kasulatan na manalangin ayon sa Kaniyang kalooban, suriin ang makasariling mga hangarin, at magtiwala sa Kaniyang karunungan. Ang masakit na panalanging tila walang sagot ay hindi patunay na tumigil ang Diyos sa pagmamahal sa atin. Minsan, ang isang tapat na panalangin ay, “Tulungan Mo akong magtiwala sa Iyo habang naghihintay ako.”"
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Paano kung hindi ko alam ang tamang sasabihin?",
+          "answer": "Magsimula nang simple: “Diyos, narito ako. Kailangan ko ng tulong.” Nagturo si Hesus ng huwarang panalangin, hindi ng kumplikadong pormula."
+        },
+        {
+          "question": "Paano kung tila walang sagot ang panalangin ko?",
+          "answer": "Maaaring masakit iyon. Hinihikayat ng Biblia ang patuloy na pagtitiwala ngunit hindi ipinangangako ang bawat resultang gusto natin. Humingi ng suporta sa mga taong nagmamalasakit at patuloy na maging tapat sa pakikipag-usap sa Diyos."
+        },
+        {
+          "question": "Maaari ba akong manalangin kapag may nagawa akong mali?",
+          "answer": "Oo. Lumapit nang may pagpapakumbaba at katapatan. Lalong mahalaga ang panalangin kapag kailangan natin ng kapatawaran at bagong simula."
+        }
+      ],
+      "gtk_practice": "Gamitin ang Panalangin ng Panginoon bilang gabay. Sumulat ng isang pangungusap ng pagpupuri, isang kahilingan para sa pangangailangan, isang pagtatapat, at isang panalangin para sa ibang tao.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 6:10–11: Ipinagpatuloy ni Daniel ang nakagawian niyang panalangin",
+          "href": "../../daniel/index.html#section-6-10",
+          "anchor": "section-6-10"
+        },
+        {
+          "source": "revelation",
+          "title": "Katahimikan at mga panalangin sa dambana",
+          "passage": "Revelation 8:1",
+          "href": "../../revelation/index.html#rev-8-1",
+          "anchor": "rev-8-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 23,
+      "teacher_title": "Kalusugan",
+      "gtk_source_id": "health",
+      "gtk_title": "Kalusugan",
+      "gtk_lead": "Mahalaga ba sa Diyos ang aking pang-araw-araw na kalusugan at kagalingan?",
+      "gtk_principle": "Ang ating katawan at isip ay mga kaloob na dapat pangalagaan. Kabilang sa pagmamalasakit ng Diyos sa kalusugan ang pagkain, kapahingahan, pagpipigil sa sarili, paglilingkod, at pag-asa—hindi paghatol sa mga nagkakasakit.",
+      "gtk_connections": [
+        {
+          "title": "Nagmamalasakit ang Diyos sa buong pagkatao",
+          "scripture": "John 10:10; 3 John 2; Luke 10:27",
+          "insight": "Umaabot ang buhay kasama ng Diyos sa isip, katawan, mga ugnayan, at espiritu. Nagpagaling si Hesus ng mga tao, nagpakain sa nagugutom, at nagmalasakit sa kanilang pagdurusa. Kaya dapat iharap ang mga simulain sa kalusugan bilang paanyayang pangalagaan ang mga kaloob ng Diyos, hindi bilang pag-aangking mahina ang pananampalataya ng mga nagkakasakit. Nagbabago ang mga katawan, may mga karamdamang namamana, at maraming sanhi ng pagdurusa ang hindi kayang kontrolin ng isang tao. Ang habag ang dapat maging sentro ng maka-Bibliang paglapit sa kagalingan."
+        },
+        {
+          "title": "Nagsisimula sa pang-araw-araw na pagpili ang pangangasiwa",
+          "scripture": "1 Corinthians 6:19–20; Romans 12:1",
+          "insight": "Binabanggit ni Pablo na ang katawan ng mananampalataya ay kabilang sa Diyos at isang lugar kung saan pinararangalan ang Espiritu. Nagbibigay ito ng kahulugan sa pagkain, pagkilos, pagtulog, at pag-iwas sa mga nakapipinsalang sangkap. Ginagamit ng pinagmulang pag-aaral ang gabay sa pag-alalang NEWSTART—nutrisyon, ehersisyo, tubig, sikat ng araw, pagpipigil sa sarili, sariwang hangin, pahinga, at pagtitiwala sa Diyos—upang ayusin ang mga praktikal na gawi. Kapaki-pakinabang itong paalala, hindi kapalit ng medikal na payong angkop sa bawat tao."
+        },
+        {
+          "title": "Ang pagpipigil sa sarili ay kaloob para sa paglilingkod",
+          "scripture": "Galatians 5:22–23; Proverbs 23:29–35",
+          "insight": "Nagbababala ang Biblia laban sa pagkalasing at pinahahalagahan nito ang pagpipigil sa sarili. Layunin ng kahinahunan na panatilihing malinaw ang ating pagpapasya, pangalagaan ang mga ugnayan, at responsableng alagaan ang buhay. Hindi ito dahilan upang hiyain ang taong nahihirapan sa pagkaadik. Maaaring mangailangan ang gayong mga pagsubok ng tulong na medikal, sikolohikal, mula sa pamayanan, at espirituwal. Pinagsasama ng matalinong mananampalataya ang panalangin at ang angkop na tulong at natututong magpalakas ng loob sa halip na humatol."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Kung magkasakit ako, nangangahulugan bang nabigo ako sa espirituwal?",
+          "answer": "Hindi. Maraming sanhi ang karamdaman at hindi ito dapat gawing sukatan ng pananampalataya. Magpakita ng habag at magbigay ng angkop na pangangalaga."
+        },
+        {
+          "question": "Kailangan bang pare-pareho ang pagkain ng lahat?",
+          "answer": "Hinihikayat ng pinagmulang aralin ang masustansiyang pagkain at tinatalakay ang nutrisyon. Maaaring makatulong ang pagkaing nakasentro sa mga halaman, ngunit mahalaga ang personal na pangangailangang medikal at matalinong praktikal na pagpili."
+        },
+        {
+          "question": "Ito ba ay medikal na payo?",
+          "answer": "Hindi. Aralin ito tungkol sa pananampalataya at kalusugan, hindi pagsusuri ng karamdaman o kapalit ng payo mula sa mga kwalipikadong propesyonal sa kalusugan."
+        }
+      ],
+      "gtk_practice": "Pumili ng isang napapanatiling gawi para sa kalusugan na nais mong pagbutihin ngayong linggo. Gumawa ng makatotohanang plano at alalahaning ang karamdaman o kapansanan ay hindi kailanman patunay ng espirituwal na kabiguan.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 1:8–10: Nagpasya si Daniel bago lumala ang pagsubok",
+          "href": "../../daniel/index.html#section-1-8",
+          "anchor": "section-1-8"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang ilog, puno, at naibalik na harapang pakikisama",
+          "passage": "Revelation 22:1",
+          "href": "../../revelation/index.html#rev-22-1",
+          "anchor": "rev-22-1"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 24,
+      "teacher_title": "Bautismo",
+      "gtk_source_id": "baptism",
+      "gtk_title": "Bautismo",
+      "gtk_lead": "Ano ang kahulugan ng bautismo, at handa na ba ako?",
+      "gtk_principle": "Ang bautismo ay hayagang pagpapahayag ng pagtitiwala kay Hesus, pagtalikod sa dating buhay, at pagsisimula ng bagong buhay kasama Niya. Tugon ito sa biyaya, hindi kabayaran para sa kaligtasan.",
+      "gtk_connections": [
+        {
+          "title": "Nagbigay ng halimbawa si Hesus",
+          "scripture": "Matthew 3:13–17; Matthew 28:18–20",
+          "insight": "Nagpabautismo si Hesus at kalaunan ay inutusan ang Kaniyang mga tagasunod na gumawa ng mga alagad at bautismuhan sila. Kaya ang bautismo ay higit pa sa pagsapi sa isang pangkat o pagtupad sa tradisyon ng pamilya. Ito ay hayagang pagtugon kay Cristo. Ipinapaalala rin ng bautismo ni Hesus na ang bautismo ay tumuturo sa higit pa sa taong nagsasagawa nito; bahagi ito ng nagliligtas na gawain ng Diyos at ng bagong ugnayang iniaalok Niya."
+        },
+        {
+          "title": "Ang pagsisisi ay pagbabago ng direksiyon",
+          "scripture": "Acts 2:37–41; John 3:3–8",
+          "insight": "Nang itanong ng mga tagapakinig kay Pedro kung ano ang dapat nilang gawin, tinawag niya sila sa pagsisisi at bautismo. Kabilang sa pagsisisi ang pagkilala sa mali, pagbabago ng pag-iisip, at pagbaling sa Diyos. Hindi lamang ito pagkapahiya dahil nahuli sa pagkakamali. Binanggit ni Hesus ang bagong kapanganakan bilang gawain ng Espiritu. Ipinahahayag ng bautismo ang panloob na pagbabagong iyon ngunit hindi ito awtomatikong nalilikha ng ritwal. Tumutugon tayo sa biyaya nang may pananampalataya, pagtatapat, at kahandaang sumunod."
+        },
+        {
+          "title": "Inilalarawan ng paglulubog ang kamatayan at bagong buhay",
+          "scripture": "Romans 6:3–6; Colossians 2:12",
+          "insight": "Ipinaliwanag ni Pablo ang bautismo bilang pakikilibing kay Cristo at muling pagkabuhay upang lumakad sa panibagong buhay. Ginagawang nakikita ng paglubog sa tubig at pag-ahon mula rito ang larawang ito. Isinusuko ang dating direksiyon ng buhay; nagsisimula ang bagong buhay ng pagtitiwala kay Hesus. Hindi nito ibig sabihing hindi na kailanman magkakamali ang nabautismuhan. Nangangahulugan itong kay Cristo na siya nabibilang at hinahanap niya ang Kaniyang kapangyarihang iwanan ang kasalanan."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Kailangan ko bang malaman muna ang bawat turo ng Biblia?",
+          "answer": "Dapat pinag-isipan at may sapat na pagkaunawa ang bautismo, ngunit walang taong nakauunawa sa lahat. Makipag-usap sa pastor o tagapayo tungkol sa mga pangunahing paniniwala at sa mga tanong na mahalaga sa iyo."
+        },
+        {
+          "question": "Paano kung nahihirapan pa rin ako sa mga dating gawi?",
+          "answer": "Hindi ipinangangako ng bautismo ang buhay na wala nang pakikibaka. Tanda ito ng pasiyang magtiwala kay Cristo at lumago sa tulong Niya."
+        },
+        {
+          "question": "Bakit sa pamamagitan ng paglulubog?",
+          "answer": "Iniuugnay ng orihinal na pag-aaral ang paglulubog sa larawan ng paglilibing at muling pagkabuhay sa Roma 6 at sa mga bautismong inilalarawan sa Mga Gawa."
+        }
+      ],
+      "gtk_practice": "Basahin ang Roma 6:1–11. Isulat kung ano ang iyong iniiwan, ano ang kahulugan sa iyo ng bagong buhay, at anong mga tanong ang gusto mong masagot bago magpabautismo.",
+      "deep_reading_links": [
+        {
+          "source": "revelation",
+          "title": "Narito, ako'y madaling pumaparito",
+          "passage": "Revelation 22:12",
+          "href": "../../revelation/index.html#rev-22-12",
+          "anchor": "rev-22-12"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 25,
+      "teacher_title": "Ang Pagka-Diyos",
+      "gtk_source_id": "godhead",
+      "gtk_title": "Ang Pagka-Diyos",
+      "gtk_lead": "Sino ang Ama, Anak, at Banal na Espiritu?",
+      "gtk_principle": "Ipinahahayag ng Biblia ang iisang Diyos bilang Ama, Anak, at Banal na Espiritu. Ang kanilang ganap na pagkakaisa at pag-ibig ang saligan ng pagpapakilala ng Diyos sa Kaniyang sarili.",
+      "gtk_connections": [
+        {
+          "title": "Ipinahahayag ng Biblia ang iisang Diyos",
+          "scripture": "Deuteronomy 6:4; Isaiah 45:5–6",
+          "insight": "Ang pagpapahayag ng Israel na ang Panginoon ay iisa ay isang mahalagang saligan. Hindi sumasamba ang mga Kristiyano sa tatlong magkakatunggaling diyos. Kapag binabanggit din ng Biblia ang Ama, Anak, at Banal na Espiritu, kailangan nating unawain ang mga talatang iyon nang hindi itinatanggi ang pagiging iisa ng Diyos. May mga bagay tungkol sa Diyos na lampas sa ganap nating pagkaunawa, ngunit sapat ang sinasabi ng Kasulatan upang makilala ang Kaniyang karakter, matanggap ang Kaniyang kaligtasan, at tapat Siyang sambahin."
+        },
+        {
+          "title": "Kabahagi ang Anak sa banal na pagkakakilanlan",
+          "scripture": "John 1:1–3, 14; John 10:30–33; Hebrews 1:1–3",
+          "insight": "Inilalarawan ni Juan ang Salita na kasama ng Diyos at Diyos, at sinasabi niyang nagkatawang-tao ang Salita. Hindi lamang si Hesus isang kapaki-pakinabang na gurong panrelihiyon o ang unang nilikhang ginawa ng Diyos. Inilalarawan ng mga Ebanghelyo na tumatanggap Siya ng pagsamba, nagpapakilala sa Ama, at kumikilos nang may banal na awtoridad. Mahalaga ang ganap Niyang pagka-Diyos sa kaligtasan: kay Cristo, ang Diyos mismo ay lumapit upang iligtas ang sangkatauhan."
+        },
+        {
+          "title": "Higit pa sa puwersang walang personalidad ang Espiritu",
+          "scripture": "John 14:16–17, 26; Acts 5:3–4",
+          "insight": "Ipinangako ni Hesus ang isa pang Tagapagtulong na magtuturo at magpapaalala sa Kaniyang mga tagasunod ng Kaniyang mga salita. Binabanggit ng Mga Gawa na ang pagsisinungaling sa Banal na Espiritu ay pagsisinungaling sa Diyos. Hindi lamang isang puwersang tulad ng kuryente o isang damdamin ang Espiritu. Personal Siyang kumikilos, inaakay ang mga tao sa katotohanan, at humuhubog ng buhay na katulad kay Cristo. Hindi natin kailangang maunawaan ang bawat hiwaga ng banal na pag-iral bago tumugon sa Kaniyang paggabay."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Tatlong diyos ba ang sinasamba ng mga Kristiyano?",
+          "answer": "Hindi. Ipinahahayag ng Kasulatan ang iisang Diyos bilang Ama, Anak, at Banal na Espiritu."
+        },
+        {
+          "question": "Mas mababa ba si Hesus kaysa sa Diyos?",
+          "answer": "Si Hesus ay ganap na banal at walang hanggan, at tunay ding naging tao para sa ating kaligtasan."
+        },
+        {
+          "question": "Kailangan ko bang maunawaan ang bawat detalye upang magsimulang manampalataya?",
+          "answer": "Hindi. Hindi mo kailangang maunawaan ang bawat hiwaga o malutas ang bawat terminong teolohikal bago magsimulang magtiwala kay Hesus. Nagbababala ang Kasulatan laban sa pagtanggi sa Anak (1 Juan 2:23) at seryosong tinatalakay ang paglaban sa Espiritu, ngunit hindi layunin ng pag-aaral na ito na hatulan ang mga tapat na nag-aaral. Patuloy na hanapin ang Diyos sa pamamagitan ni Hesus nang may pagpapakumbaba."
+        }
+      ],
+      "gtk_practice": "Basahin ang Juan 14–16 sa loob ng ilang araw. Gumawa ng tatlong listahan ng sinasabi ng Kasulatan tungkol sa ginagawa ng Ama, Anak, at Espiritu.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 7:11–14: Nagwakas ang mapagmataas na kapangyarihan at tumanggap ng pamamahala ang Anak ng Tao",
+          "href": "../../daniel/index.html#section-7-11",
+          "anchor": "section-7-11"
+        },
+        {
+          "source": "revelation",
+          "title": "Biyaya sa pitong iglesia",
+          "passage": "Revelation 1:4",
+          "href": "../../revelation/index.html#rev-1-4",
+          "anchor": "rev-1-4"
+        },
+        {
+          "source": "revelation",
+          "title": "Ang Leon ay nahayag bilang Korderong pinatay",
+          "passage": "Revelation 5:5",
+          "href": "../../revelation/index.html#rev-5-5",
+          "anchor": "rev-5-5"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 26,
+      "teacher_title": "Pangangasiwa ng mga Kaloob ng Diyos",
+      "gtk_source_id": "stewardship",
+      "gtk_title": "Pangangasiwa ng mga Kaloob ng Diyos",
+      "gtk_lead": "Ano ang kaugnayan ng pananampalataya sa salapi at oras?",
+      "gtk_principle": "Pag-aari ng Diyos ang lahat; ipinagkatiwala sa atin ang buhay, mga kakayahan, oras, salapi, at nilikha. Ang pagbibigay ay gawa ng pagsamba at paglilingkod, hindi paraan upang bilhin ang pagpapala.",
+      "gtk_connections": [
+        {
+          "title": "Binabago ng pagmamay-ari ang pagtingin natin sa mga ari-arian",
+          "scripture": "Psalm 24:1; 1 Corinthians 6:19–20",
+          "insight": "Nagsisimula ang Biblia sa Diyos bilang Manlilikha. Ipinagkatiwala sa atin ang ating oras, kakayahan, salapi, mga ugnayan, at pisikal na buhay; hindi tayo ang pangwakas na may-ari ng mga ito. Hindi nito ibig sabihing dapat hamakin ang ating mga pag-aari. Sa halip, maaari nating gamitin ang mga kaloob nang may pasasalamat, hindi nagpapahari sa mga ito. Maging ang karaniwang mga pasiya tungkol sa badyet at iskedyul ay maaaring maging pagpapahayag ng pagsamba kung ginagawa nang may katapatan at pag-ibig."
+        },
+        {
+          "title": "Ang pagbibigay ay tugon sa biyaya",
+          "scripture": "2 Corinthians 8:9; 9:6–8",
+          "insight": "Nagsisimula ang turo ni Pablo tungkol sa pagiging bukas-palad sa biyaya ni Hesus, na ibinigay ang Kaniyang sarili para sa atin. Mahalaga sa Diyos ang kusang-loob na pagbibigay, hindi ang pamimilit o pagpapakitang-gilas. Dapat malayang makapagtanong ang mga Kristiyano kung paano ginagamit ang mga handog. Maaaring kabilang sa pagiging bukas-palad ang tulong na salapi, pagpapatuloy ng panauhin, paglilingkod, at pag-aaruga sa mga nahihirapan. Ang sentro ng pangangasiwa ay pagtitiwala sa Diyos at malasakit sa iba."
+        },
+        {
+          "title": "Unawain ang simulain ng ikapu",
+          "scripture": "Genesis 14:18–20; Malachi 3:8–12; Leviticus 27:30",
+          "insight": "Binabanggit ng Biblia ang ikapu, isang ikasampung bahagi, na inihihiwalay para sa Diyos. Sinusundan ng pinagmulang aralin ang simulaing ito mula kay Abraham, sa Israel, at sa pangangasiwa ng bayan ng Diyos. Gaya ng bawat gawaing biblikal, basahin ang orihinal na konteksto ng tipan bago ito ilapat sa kasalukuyan. Hindi layunin nitong bilhin ang pagpapala sa salapi o iparamdam sa mahihirap na sila ay hinatulan. Ang pagbibigay ay dapat magpahayag ng pasasalamat, pagtitiwala, at hangaring tapat na suportahan ang gawain ng Diyos."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Payayamanin ba ako ng Diyos kung magbibigay ako ng ikapu?",
+          "answer": "Hindi nangangako ang aralin ng tiyak na balik na salapi. Ang pagbibigay ay pagpapahayag ng pananampalataya at pasasalamat, hindi transaksiyong nag-oobliga sa Diyos na payamanin tayo."
+        },
+        {
+          "question": "Paano kung nahihirapan akong tustusan ang mga pangunahing pangangailangan?",
+          "answer": "Alam ng Diyos ang iyong kalagayan. Humanap ng matalinong tulong sa pananalapi, kumilos nang responsable, at makipag-usap sa mapagkakatiwalaang pinuno ng iglesia tungkol sa mga tanong sa halip na magpadala sa pamimilit."
+        },
+        {
+          "question": "Salapi lamang ba ang ibig sabihin ng pangangasiwa?",
+          "answer": "Hindi. Kabilang din dito ang oras, mga kaloob, pag-aalaga sa mga tao, at pangangalaga sa nilikha."
+        }
+      ],
+      "gtk_practice": "Gumawa ng apat na hanay: oras, kakayahan, salapi, at mga ugnayan. Sa bawat isa, maglista ng isang kaloob, isang pananagutan, at isang susunod na hakbang ng bukas-palad na paglilingkod.",
+      "deep_reading_links": [
+        {
+          "source": "revelation",
+          "title": "Ang nalabi at ang patotoo ni Hesus",
+          "passage": "Revelation 12:17",
+          "href": "../../revelation/index.html#rev-12-17",
+          "anchor": "rev-12-17"
+        }
+      ]
+    },
+    {
+      "teacher_study_id": 27,
+      "teacher_title": "Pagpapatotoo",
+      "gtk_source_id": "witnessing",
+      "gtk_title": "Pagpapatotoo",
+      "gtk_lead": "Paano ko maibabahagi ang aking pananampalataya nang hindi itinutulak palayo ang mga tao?",
+      "gtk_principle": "Ibinabahagi natin ang pananampalataya sa pamamagitan ng pagpapakita ng karakter ni Hesus, pagsasalita nang tapat, pagmamalasakit sa mga tao, at paggalang sa kanilang kalayaang tumugon.",
+      "gtk_connections": [
+        {
+          "title": "Nauuna ang habag bago ang programa",
+          "scripture": "Matthew 9:35–38; Mark 6:34",
+          "insight": "Nang makita ni Hesus ang mga karamihan, napansin Niya ang mga taong pagod at walang gabay. Ang Kaniyang tugon ay habag, pagtuturo, at praktikal na pag-aalaga. Nagsisimula ang pagbabahagi ng pananampalataya sa pagkilala sa iba bilang mga tao, hindi bilang mga target o bilang lamang. Bago magpaliwanag ng isang doktrina, pakinggan kung ano ang kanilang naranasan, kinatatakutan, at inaasahan. Hindi pamamaraan ng pag-aanunsiyo ang kabaitan; bahagi ito ng mensahe tungkol kay Hesus."
+        },
+        {
+          "title": "Mahalaga ang isang simpleng personal na patotoo",
+          "scripture": "John 1:40–46; Luke 8:38–39",
+          "insight": "Dinala ni Andres ang kaniyang kapatid kay Hesus, inimbitahan ni Felipe ang isang kaibigan na pumunta at tumingin, at sinabi ng isang lalaking pinagaling sa iba ang ginawa ng Diyos para sa kaniya. Wala sa mga halimbawang ito ang nangangailangan ng pampublikong entablado o espesyal na pagsasanay. Maaari kang magsalita nang natural tungkol sa iyong natutuhan at mag-anyaya ng isang tao na pag-aralan ang Kasulatan kasama mo. Mas mabuting amining hindi mo alam ang isang sagot kaysa magkunwaring tiyak."
+        },
+        {
+          "title": "Si Hesus ang mensahe, hindi ang ating sarili",
+          "scripture": "Romans 1:16; John 12:32; 1 Corinthians 2:1–5",
+          "insight": "Hindi ikinahiya ni Pablo ang ebanghelyo sapagkat sa Diyos nanggagaling ang kapangyarihan nitong magligtas. Sinabi ni Hesus na kapag Siya ay itinaas, ilalapit Niya ang mga tao sa Kaniya. Kaya dapat ipakilala ng pagpapatotoong Kristiyano ang Kaniyang karakter, biyaya, katotohanan, at paanyaya. Hindi natin kailangang maging mga tagapagtanghal o pilitin ang isang tao na magpasya. Mas matibay ang malinaw na pagtuturo sa Biblia at tapat na pamumuhay kaysa sa pagmamalabis o pagmamanipula."
+        }
+      ],
+      "gtk_questions": [
+        {
+          "question": "Paano kung sabihin ng isang tao na hindi siya interesado?",
+          "answer": "Igalang ang kaniyang sagot. Ang tunay na pagkakaibigan ay hindi dapat nakadepende sa pagkakasundo tungkol sa pananampalataya."
+        },
+        {
+          "question": "Kailangan ko bang alam ang lahat ng sagot?",
+          "answer": "Hindi. Maging tapat kapag hindi mo alam ang isang bagay, makinig nang mabuti, at mag-alok na sama-samang pag-aralan ang tanong."
+        },
+        {
+          "question": "Paano kung mahiyain ako?",
+          "answer": "Maaaring maging makapangyarihang paraan ng pagpapatotoo ang mga gawa ng kabaitan, maikling personal na kuwento, at matiyagang pagkakaibigan."
+        }
+      ],
+      "gtk_practice": "Mag-isip ng isang taong maaari mong tulungan sa praktikal na paraan. Sumulat ng paanyaya o mensaheng pampalakas ng loob na nagbibigay sa kaniya ng kalayaang tumanggi.",
+      "deep_reading_links": [
+        {
+          "source": "daniel",
+          "title": "Daniel 2:17–18: Nanalangin ang apat na magkakaibigan sa halip na magpaligsahan",
+          "href": "../../daniel/index.html#section-2-17",
+          "anchor": "section-2-17"
+        },
+        {
+          "source": "revelation",
+          "title": "Unang anghel: ang walang-hanggang ebanghelyo at paghuhukom",
+          "passage": "Revelation 14:6",
+          "href": "../../revelation/index.html#rev-14-6",
+          "anchor": "rev-14-6"
+        },
+        {
+          "source": "revelation",
+          "title": "Narito, ako'y madaling pumaparito",
+          "passage": "Revelation 22:12",
+          "href": "../../revelation/index.html#rev-22-12",
+          "anchor": "rev-22-12"
+        }
+      ]
+    }
+  ],
+  "translation_progress": {
+    "language": "tl",
+    "completed_study_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "source_file": "teachers-guide/related-study-resources.json",
+    "unpublished": true,
+    "note": "All 28 study-specific GTKJ supporting resources translated first-pass; other supporting resources and site UI still require translation and review; unpublished."
+  }
+}
