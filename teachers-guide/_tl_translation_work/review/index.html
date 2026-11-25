@@ -996,26 +996,29 @@ function openTeacherFeedback(){
 function closeTeacherFeedback(){
  $('feedback-modal').classList.add('hidden');
 }
-// Turn this on only after all 28 TL studies and PDFs have been reviewed and published.
+// The EN→TL switch detects a real translated site in the SAME environment.
+// No manual flag change is needed when the approved TL site is published.
+// During review the English live site has no /teachers-guide/tl/index.html.
 const TEACHERS_TL_PUBLISHED=true;
 const TEACHERS_TL_URL='../../index.html';
 function closeTeacherTLNotice(){$('tagalog-notice').classList.add('hidden')}
 $('teacher-tl-button').onclick=async()=>{
  const target=new URL(TEACHERS_TL_URL,window.location.href);
  if(TEACHERS_TL_PUBLISHED){window.location.assign(target.href);return}
- // Show an immediate, accessible explanation while checking any completed
- // Tagalog edition; do not navigate to an incomplete or unpublished page.
- $('tagalog-notice').classList.remove('hidden');$('close-tagalog-notice').focus();
+ // Probe the actual TL homepage, not only a translation audit. The review
+ // sources live outside /tl/ until the user publishes them. Avoid showing an
+ // obsolete "being prepared" popup once the translated site is installed.
  try{
-  const check=await fetch(new URL('translation-audit.json',target.href),{cache:'no-store'});
-  if(check.ok){
-   const audit=await check.json();
-   const count=studyData.reduce((sum,s)=>sum+s.units.length,0);
-   if(audit.language==='tl' && audit.study_count===studyData.length && audit.unit_count===count && audit.status!=='unpublished_first_pass_review'){
-    closeTeacherTLNotice();window.location.assign(target.href);return;
+  const response=await fetch(new URL('index.html',target.href),{cache:'no-store'});
+  if(response.ok){
+   const html=await response.text();
+   if(/<html\b[^>]*\blang=["']tl["']/i.test(html) && html.includes('study-data.json')){
+    window.location.assign(target.href);return;
    }
   }
  }catch(_){}
+ $('tagalog-notice').classList.remove('hidden');
+ $('close-tagalog-notice').focus();
 };
 $('close-tagalog-notice').onclick=closeTeacherTLNotice;
 $('tagalog-notice').addEventListener('click',e=>{if(e.target.id==='tagalog-notice')closeTeacherTLNotice()});
