@@ -4,6 +4,17 @@ const { JSDOM } = require('jsdom');
 const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
+const vm = require('node:vm');
+const languageHelper = fs.readFileSync(path.join(root,'language-position.js'),'utf8');
+new vm.Script(languageHelper,{filename:'language-position.js'});
+for(const rel of ['index.html','tl/index.html','creation/index.html',
+                  'creation/tl/day-1.html','daniel/index.html','daniel/tl/index.html',
+                  'revelation/index.html','revelation/tl/index.html']){
+ const html=fs.readFileSync(path.join(root,rel),'utf8');
+ assert.ok(html.includes('id="language-position-loader"'),
+   'Matching-language location continuity missing: '+rel);
+}
+
 const html = fs.readFileSync(path.join(root, 'teachers-guide/index.html'), 'utf8');
 const scripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];
 const inline = scripts.map(x=>x[1]).find(x=>x.includes('function renderVerses()'));
