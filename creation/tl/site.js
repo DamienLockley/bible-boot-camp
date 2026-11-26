@@ -9,4 +9,4 @@ expand?.addEventListener('click',()=>{const displayed=questions.filter(q=>!q.cla
 /* Load shared clickable Scripture references and verse popups. */
 (()=>{const script=document.createElement('script');script.src='/creation/tl/scripture-word-reader.js?v=1';document.body.append(script);})();
 
-(()=>{const script=document.createElement('script');script.src='/creation/tl/scripture-auto.js?v=1';document.body.append(script);})();
+(()=>{const script=document.createElement('script');script.src='/creation/tl/scripture-auto.js?v=3';document.body.append(script);})();
