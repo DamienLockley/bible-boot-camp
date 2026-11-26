@@ -2,4 +2,4 @@ const inp=document.getElementById('qsearch');const qs=[...document.querySelector
 /* Load shared clickable Scripture references and verse popups. */
 (()=>{const script=document.createElement('script');script.src='/creation/assets/scripture-word-reader.js?v=1';document.body.append(script);})();
 
-(()=>{const script=document.createElement('script');script.src='/creation/assets/scripture-auto.js?v=1';document.body.append(script);})();
+(()=>{const script=document.createElement('script');script.src='/creation/assets/scripture-auto.js?v=3';document.body.append(script);})();
