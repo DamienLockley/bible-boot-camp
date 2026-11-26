@@ -359,6 +359,7 @@ function scriptureReader(counts) {
     books.set(alias, "Solomon's Song");
   }
   books.set('psalm', 'Psalms');
+  for(const [alias,book] of Object.entries({eph:'Ephesians',rev:'Revelation',dan:'Daniel',isa:'Isaiah',jn:'John',rom:'Romans',matt:'Matthew',heb:'Hebrews',gen:'Genesis',ex:'Exodus',jas:'James',phil:'Philippians',ps:'Psalms'})) books.set(alias,book);
 
   const names = [...books.keys()].sort((a, b) => b.length - a.length)
     .map(name => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+')).join('|');
@@ -367,7 +368,7 @@ function scriptureReader(counts) {
   const chapter = number + '\\s*:\\s*';
   const span = number + '(?:\\s*' + dash + '\\s*(?:' + chapter + ')?' + number + ')?';
   const singleChapter = 'Obadiah|Philemon|2\\s+John|3\\s+John|Jude';
-  const starts = '(?<![\\w:])(?:(' + names + ')\\s+(' + chapter + ')|('
+  const starts = '(?<![\\w:])(?:(' + names + ')\\.?\\s*(' + chapter + ')|('
     + singleChapter + ')\\s+|(?:(?<=\\()|(?<=\\bin )|(?<=\\bat )|(?<=\\bsee )|(?<=\\bcompare ))(' + chapter + '))';
   const citation = new RegExp(starts + '(' + span + ')(?!\\w)', 'gi');
   const continuation = new RegExp('^(?:\\s*[,;]\\s*|\\s+and\\s+(?=' + chapter
@@ -407,6 +408,7 @@ function scriptureReader(counts) {
       let ch = parseInt(match[2] || match[4] || '1', 10);
       const verses = expand(book, ch, match[5]);
       if (!verses.length) continue;
+      ch = Number(verses[verses.length-1].match(/ (\d+):\d+$/)[1]);
       let nextEnd = match.index + match[0].length;
       if (!match[1] && !match[4] && counts[book + ' 2']) continue;
       for (let next; !nextBook.test(text.slice(nextEnd)) &&
@@ -414,7 +416,7 @@ function scriptureReader(counts) {
         const nextChapter = next[1] ? parseInt(next[1], 10) : ch;
         const more = expand(book, nextChapter, next[2]);
         if (!more.length) break;
-        ch = nextChapter;
+        ch = Number(more[more.length-1].match(/ (\d+):\d+$/)[1]);
         verses.push(...more);
         nextEnd += next[0].length;
       }
