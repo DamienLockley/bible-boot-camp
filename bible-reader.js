@@ -23,24 +23,33 @@ function loadBible(){
 }
 // Expands the same verse-key format used in the Teacher's Guide, including
 // en/em dashes and comma/semicolon groups: John 3:16, 18; 4:1-3.
-function expand(ref){
- const m=ref.trim().replace(/[–—−]/g,'-').match(/^(.+?)\.?\s+(\d+)\s*[:：]\s*(.+)$/);
+function expand(ref, bible){
+ const m=String(ref).trim().replace(/[‐‑‒–—−]/g,'-').replace(/：/g,':').match(/^((?:[1-3]\s*)?[a-z]+(?:[ .]+[a-z]+)*\.?)\s*(\d+)\s*(.*)$/i);
  if(!m)return [];
  const book=aliases[key(m[1])];if(!book)return [];
- let chapter=Number(m[2]),out=[],count=0;
- for(const chunk of m[3].split(';')){
-  for(const item of chunk.split(',')){
-   const p=item.trim();if(!p)continue;
-   const c=p.match(/^(\d+)\s*[:：]\s*(\d+)(?:\s*-\s*(\d+))?$/);
-   const v=p.match(/^(\d+)(?:\s*-\s*(\d+))?$/);
-   if(!c&&!v)continue;
-   if(c)chapter=Number(c[1]);
-   const first=Number(c?c[2]:v[1]),last=Number((c?c[3]:v[2])||(c?c[2]:v[1]));
-   if(chapter<1||first<1||last<first||last-first>150)continue;
-   for(let n=first;n<=last&&count<300;n++,count++)out.push(`${book} ${chapter}:${n}`);
-  }
+ let chapter=Number(m[2]), tail=m[3].trim(), verses=[];
+ const chapterKeys=c=>Object.keys(bible||{}).filter(k=>k.startsWith(book+' '+c+':')).sort((a,b)=>Number(a.split(':').pop())-Number(b.split(':').pop()));
+ const append=(c,first,last)=>{if(first<1||last<first||last-first>1000)return;for(let v=first;v<=last;v++)verses.push(book+' '+c+':'+v);};
+ const chapters=(a,b)=>{if(a<1||b<a||b-a>150)return;for(let c=a;c<=b;c++)verses.push(...chapterKeys(c));};
+ if(!tail){chapters(chapter,chapter);return verses;}
+ if(/^-\s*\d+$/.test(tail)){chapters(chapter,Number(tail.slice(1)));return verses;}
+ if(!tail.startsWith(':'))return [];
+ for(const token of tail.slice(1).split(/\s*[,;]\s*/)){
+   const item=token.trim().match(/^(?:(\d+)\s*:\s*)?(\d+)(?:\s*-\s*(?:(\d+)\s*:\s*)?(\d+))?$/);
+   if(!item)continue;
+   if(item[1])chapter=Number(item[1]);
+   const first=Number(item[2]),last=Number(item[4]||item[2]),endChapter=Number(item[3]||chapter);
+   if(endChapter===chapter)append(chapter,first,last);
+   else if(endChapter>chapter&&endChapter-chapter<=150){
+     const keys=chapterKeys(chapter);
+     if(!keys.length)continue;
+     append(chapter,first,Number(keys[keys.length-1].split(':').pop()));
+     for(let c=chapter+1;c<endChapter;c++)verses.push(...chapterKeys(c));
+     append(endChapter,1,last);
+   }
+   chapter=endChapter;
  }
- return [...new Set(out)];
+ return [...new Set(verses)];
 }
 let requestNumber=0;
 document.addEventListener('click',async event=>{
@@ -49,10 +58,10 @@ document.addEventListener('click',async event=>{
  const ref=(target.dataset.bibleRef||'').trim(),id=++requestNumber;
  heading.textContent=ref;body.textContent='Loading Scripture…';credit.textContent='';
  if(!dialog.open)dialog.showModal();
- const refs=expand(ref);
- if(!refs.length){body.textContent='This Scripture reference could not be interpreted. Please check the reference.';return;}
  try{
   const bible=await loadBible();if(id!==requestNumber||!dialog.open)return;
+  const refs=expand(ref,bible);
+  if(!refs.length){body.textContent='This Scripture reference could not be interpreted. Please check the reference.';return;}
   const found=refs.filter(r=>Object.prototype.hasOwnProperty.call(bible,r));
   if(!found.length)throw Error('No matching verses were found in the local KJV file');
   body.replaceChildren();
