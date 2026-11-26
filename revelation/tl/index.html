@@ -811,4 +811,210 @@ document.addEventListener("keydown",function(event){const h=event.target.closest
         });
         empty.hidden=visible!==0;
       });
-    })();</script></body></html>
+    })();</script><script id="narrative-word-search">
+(() => {
+  const danielInput = document.querySelector('#search');
+  const isDaniel = danielInput && typeof BOOK !== 'undefined' && typeof showDanielSection === 'function';
+  const mobile = document.querySelector('#rev-mobile-chapter-search');
+  const sidebar = document.querySelector('.shell > .sidebar');
+  if (!isDaniel && (!mobile || !sidebar)) return;
+  const tl = document.documentElement.lang.toLowerCase().startsWith('tl');
+  const label = tl ? {
+    search: 'Maghanap ng salita…', results: 'Mga resulta ng paghahanap',
+    close: 'Isara', more: 'Magpakita pa', empty: 'Walang natagpuang tugma.',
+    count: n => n + ' tugmang sipi'
+  } : {
+    search: 'Search for a word…', results: 'Search results',
+    close: 'Close', more: 'Show more', empty: 'No matching excerpts.',
+    count: n => n + (n === 1 ? ' matching excerpt' : ' matching excerpts')
+  };
+  const style = document.createElement('style');
+  style.textContent = `
+    .narrative-search-input{width:100%;box-sizing:border-box;margin:0 0 10px;padding:10px;border:1px solid #bbccd6;border-radius:8px;font:inherit}
+    .narrative-search-results{max-height:44vh;overflow:auto;overscroll-behavior:contain;background:#fff;color:#19384e;border:1px solid #c8d9e1;border-radius:8px;padding:8px;margin:7px 0 12px;text-align:left}
+    .narrative-search-results[hidden]{display:none}
+    .narrative-search-actions{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:6px;font-size:.85rem}
+    .narrative-search-results button{color:#19384e;font:inherit;cursor:pointer}
+    .narrative-search-results .narrative-search-snippet{display:block;width:100%;margin:4px 0;padding:8px;border:1px solid #dce7ed;border-radius:6px;background:#f7fafc;text-align:left;font-size:.84rem;line-height:1.4}
+    .narrative-search-snippet:hover,.narrative-search-snippet:focus-visible{background:#e8f2f7}
+    .narrative-search-snippet strong{display:block;margin-bottom:3px}
+    .narrative-search-results mark,mark.narrative-search-hit{background:#ffeb73;color:#211900}
+    .narrative-search-target{scroll-margin-top:24px}
+  `;
+  document.head.append(style);
+  const units = 'h2,h3,h4,h5,p,li,figcaption,summary,blockquote,.daniel-word-list-item';
+  const blocks = scene => [...scene.querySelectorAll(units)].filter(node => !node.querySelector(units));
+  const node = (tag, text) => Object.assign(document.createElement(tag), {textContent: text || ''});
+  let passages;
+  let highlighted;
+
+  function indexPassages() {
+    if (passages) return passages;
+    const template = document.createElement('template');
+    const scenes = isDaniel ? BOOK.sections.map(section => {
+      template.innerHTML = secHTML(section);
+      return template.content.firstElementChild;
+    }) : [...document.querySelectorAll('#study article.scene[id]')];
+    passages = scenes.flatMap(scene => {
+      const title = scene.querySelector('h3')?.textContent.trim() || scene.id;
+      return blocks(scene).map((block, index) => ({id: scene.id, title, index, text: block.textContent.trim()}));
+    });
+    return passages;
+  }
+
+  function matcher(words) {
+    return new RegExp(words.sort((a, b) => b.length - a.length)
+      .map(word => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'giu');
+  }
+
+  function excerpt(raw, pattern) {
+    const first = raw.search(pattern);
+    const from = Math.max(0, first - 55);
+    const text = raw.slice(from, first + 125);
+    const fragment = document.createDocumentFragment();
+    let cursor = 0;
+    if (from) fragment.append('…');
+    for (const match of text.matchAll(pattern)) {
+      fragment.append(text.slice(cursor, match.index), node('mark', match[0]));
+      cursor = match.index + match[0].length;
+    }
+    fragment.append(text.slice(cursor));
+    if (from + text.length < raw.length) fragment.append('…');
+    return fragment;
+  }
+
+  function highlight(target, pattern) {
+    if (highlighted?.isConnected) {
+      highlighted.querySelectorAll('mark.narrative-search-hit').forEach(mark => mark.replaceWith(mark.textContent));
+      highlighted.normalize();
+      highlighted.classList.remove('narrative-search-target');
+    }
+    highlighted = target;
+    const walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT);
+    const runs = [];
+    let text = '';
+    while (walker.nextNode()) {
+      runs.push({textNode: walker.currentNode, start: text.length});
+      text += walker.currentNode.nodeValue;
+    }
+    const matches = [...text.matchAll(pattern)];
+    for (const {textNode, start} of runs) {
+      const raw = textNode.nodeValue;
+      const fragment = document.createDocumentFragment();
+      let cursor = 0;
+      for (const match of matches) {
+        const from = Math.max(0, match.index - start);
+        const to = Math.min(raw.length, match.index + match[0].length - start);
+        if (from >= to) continue;
+        const mark = node('mark', raw.slice(from, to));
+        mark.className = 'narrative-search-hit';
+        fragment.append(raw.slice(cursor, from), mark);
+        cursor = to;
+      }
+      if (cursor) {
+        fragment.append(raw.slice(cursor));
+        textNode.replaceWith(fragment);
+      }
+    }
+    target.classList.add('narrative-search-target');
+    target.scrollIntoView({block: 'center'});
+  }
+
+  function openHit(hit, pattern) {
+    const hash = '#' + hit.id;
+    if (location.hash !== hash) history.pushState(null, '', hash);
+    if (isDaniel) {
+      goChapter(Number(hit.id.split('-')[1]));
+      showDanielSection(hit.id);
+    } else {
+      window.dispatchEvent(new Event('hashchange'));
+    }
+    requestAnimationFrame(() => {
+      const scene = document.getElementById(hit.id);
+      const target = scene && blocks(scene)[hit.index];
+      if (target) highlight(target, pattern);
+    });
+  }
+
+  function bind(input, replaceChapterFilter) {
+    input.placeholder = label.search;
+    input.setAttribute('aria-label', label.search);
+    const panel = node('section');
+    panel.className = 'narrative-search-results';
+    panel.id = input.id + '-excerpts';
+    panel.setAttribute('aria-label', label.results);
+    input.setAttribute('aria-controls', panel.id);
+    input.after(panel);
+    let timer;
+    function close() {
+      clearTimeout(timer);
+      panel.hidden = true;
+      input.setAttribute('aria-expanded', 'false');
+    }
+    close();
+    function render() {
+      const terms = [...new Set(input.value.trim().toLowerCase().split(/\s+/).filter(Boolean))];
+      if (!terms.length) return close();
+      const hits = indexPassages().filter(hit => terms.every(term => hit.text.toLowerCase().includes(term)));
+      const pattern = matcher(terms);
+      const top = node('div');
+      top.className = 'narrative-search-actions';
+      const count = node('strong', label.count(hits.length));
+      count.setAttribute('role', 'status');
+      const dismiss = node('button', label.close);
+      dismiss.type = 'button';
+      dismiss.onclick = () => { close(); input.focus({preventScroll: true}); };
+      top.append(count, dismiss);
+      const list = node('div');
+      panel.replaceChildren(top, list);
+      let displayed = 0;
+      const more = node('button', label.more);
+      more.type = 'button';
+      function addResults() {
+        const next = hits.slice(displayed, displayed + 20);
+        for (const hit of next) {
+          const button = node('button');
+          button.type = 'button';
+          button.className = 'narrative-search-snippet';
+          button.append(node('strong', hit.title), excerpt(hit.text, pattern));
+          button.onclick = () => { close(); openHit(hit, pattern); };
+          list.append(button);
+        }
+        displayed += next.length;
+        more.hidden = displayed >= hits.length;
+      }
+      more.onclick = addResults;
+      if (hits.length) {
+        panel.append(more);
+        addResults();
+      } else list.append(node('p', label.empty));
+      panel.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    }
+    input.addEventListener('input', event => {
+      if (replaceChapterFilter) event.stopImmediatePropagation();
+      clearTimeout(timer);
+      if (!input.value.trim()) return close();
+      timer = setTimeout(render, 140);
+    }, replaceChapterFilter);
+    input.addEventListener('keydown', event => {
+      if (event.key === 'Escape') close();
+      if (event.key === 'Enter') { event.preventDefault(); clearTimeout(timer); render(); }
+    });
+  }
+
+  if (isDaniel) {
+    danielInput.oninput = null;
+    bind(danielInput, false);
+  } else {
+    const desktop = node('input');
+    desktop.id = 'rev-desktop-word-search';
+    desktop.type = 'search';
+    desktop.className = 'narrative-search-input';
+    sidebar.prepend(desktop);
+    bind(desktop, false);
+    bind(mobile, true);
+  }
+})();
+</script>
+</body></html>
