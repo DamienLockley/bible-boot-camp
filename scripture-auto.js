@@ -38,7 +38,7 @@ for(const [book, sizes] of Object.entries(chapters))sizes.forEach((n,i)=>counts[
   const citation = new RegExp(starts + '(' + span + ')(?!\\w)', 'gi');
   const continuation = new RegExp('^(?:\\s*[,;]\\s*|\\s+(?:and|at)\\s+(?=' + chapter
     + '|' + span + '(?=\\s*(?:$|[).,;!?])))' + ')(' + chapter + ')?(' + span + ')(?!\\w|\\s*:)', 'i');
-  const nextBook = new RegExp('^\\s*[,;]\\s*(?:' + names + ')\\s+' + number, 'i');
+  const nextBook = new RegExp('^\\s*[,;]\\s*(?:' + names + ')\\.?\\s*' + number, 'i');
   const verseSpan = new RegExp('^(' + number + ')(?:\\s*' + dash
     + '\\s*(?:(' + number + ')\\s*:\\s*)?(' + number + '))?$');
 
@@ -73,6 +73,7 @@ for(const [book, sizes] of Object.entries(chapters))sizes.forEach((n,i)=>counts[
       let ch = parseInt(match[2] || match[4] || '1', 10);
       const verses = expand(book, ch, match[5]);
       if (!verses.length) continue;
+      ch = Number(verses[verses.length-1].match(/ (\d+):\d+$/)[1]);
       let nextEnd = match.index + match[0].length;
       if (!match[1] && !match[4] && counts[book + ' 2']) continue;
       for (let next; !nextBook.test(text.slice(nextEnd)) &&
@@ -80,7 +81,7 @@ for(const [book, sizes] of Object.entries(chapters))sizes.forEach((n,i)=>counts[
         const nextChapter = next[1] ? parseInt(next[1], 10) : ch;
         const more = expand(book, nextChapter, next[2]);
         if (!more.length) break;
-        ch = nextChapter;
+        ch = Number(more[more.length-1].match(/ (\d+):\d+$/)[1]);
         verses.push(...more);
         nextEnd += next[0].length;
       }
@@ -154,7 +155,7 @@ document.addEventListener('click',async e=>{
    const match=find(ref,contextBook)[0];
    if(match && match.from===0 && match.to===ref.length)keys=match.verses;
    else {
-     const whole=/^(.+?)\s+(\d+)(?:\s*[-–—]\s*(\d+))?$/.exec(ref);
+     const whole=/^((?:[123]\s*)?[a-z]+(?:[ .'-]+[a-z]+)*?)\.?\s*(\d+)(?:\s*[-‐‑‒–—−]\s*(\d+))?$/i.exec(ref);
      if(!whole)return;
      const book=aliases.get(whole[1].toLowerCase().replace(/\s+/g,' '));
      const first=+whole[2], last=+(whole[3]||first);
